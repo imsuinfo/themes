@@ -18,6 +18,48 @@ form#user-login-form {
 
 
 
+/*** University Police Complaint Log ***/
+div#content div.view-id-university_police_complaint_log table.views-view-grid {
+  margin-bottom: 10px;
+}
+
+div#content div.view-id-university_police_complaint_log div.views-field {
+  display: inline-block;
+
+  width: 360px;
+  max-width: 360px;
+  overflow: wrap;
+}
+
+div#content div.view-id-university_police_complaint_log div.views-label-field-police-nat-of-comp,
+div#content div.view-id-university_police_complaint_log div.views-label-field-police-date,
+div#content div.view-id-university_police_complaint_log div.views-label-field-police-disposition,
+div#content div.view-id-university_police_complaint_log div.views-label-field-police-off-loc,
+div#content div.view-id-university_police_complaint_log div.views-label-field-police-synopsis {
+  display: inline-block;
+
+  font-weight: bold;
+
+  width: 155px;
+  max-width: 155px;
+  overflow: wrap;
+}
+
+div#content div.view-id-university_police_complaint_log div.field-content {
+  display: inline-block;
+
+  width: 200px;
+  max-width: 200px;
+  overflow: wrap;
+}
+
+div#content div.view-id-university_police_complaint_log div.views-field-field-police-synopsis {
+  width: 400px;
+  max-width: 400px;
+}
+
+
+
 /*** Content Specific Customization ***/
 html#ckeditor-wysiwygarea body,
 div.drupal_content {
