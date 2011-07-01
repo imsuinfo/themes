@@ -1,0 +1,43 @@
+name        = McNeese Drupal
+description = "This is the standard McNeese Drupal theme for content editing. This uses HTML5."
+version     = "7.x-2.0"
+core        = 7.x
+engine      = phptemplate
+screenshot  = screenshot.png
+
+stylesheets[all][]     = css/reset.css
+stylesheets[all][]     = css/standard.css
+stylesheets[all][]     = css/common.css
+stylesheets[all][]     = css/workaround.css
+stylesheets[screen][]  = css/screen.css
+stylesheets[print][]   = css/print.css
+stylesheets[braille][] = css/braille.css
+
+settings[shortcut_module_link] = 1
+
+regions[page_top]    = Page Top
+regions[header]      = Header
+regions[sub_header]  = Sub Header
+regions[messages]    = Messages
+regions[help]        = Help
+regions[highlighted] = Highlighted
+regions[the_title]   = Title
+regions[sidebar_left] = Sidebar Left
+regions[sidebar_right] = Sidebar Right
+regions[content]     = Content
+regions[footer]      = Footer
+regions[page_bottom] = Page Bottom
+
+regions[sidebar_first] = First Sidebar
+regions_hidden[] = sidebar_first
+
+features[] = logo
+features[] = name
+; features[] = slogan
+; features[] = node_user_picture
+; features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+

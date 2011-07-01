@@ -1,0 +1,678 @@
+/*** Header ***/
+div#mcneese_drupal-header_region {
+  position: relative;
+
+  background-color: #ffffff;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div#mcneese_drupal-header {
+  position: relative;
+
+  height: 118px;
+  max-height: 118px;
+
+  background-color: #00477f;
+  overflow: hidden;
+}
+
+img#mcneese_drupal-website_logo-image {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+div#mcneese_drupal-header-horizontal_ruler {
+  background-color: #fad703;
+
+  height: 12px;
+}
+
+
+
+/*** Header - Search Box Top ***/
+ul#search_form-top_box_links {
+  position: absolute;
+  display: inline-block;
+
+  top: 8px;
+  right: 20px;
+
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+
+  height: 14px;
+  min-height: 14px;
+  max-height: 14px;
+
+  overflow: hidden;
+
+  color: #ffffff;
+  background-color: #023761;
+
+  font-size: 10px;
+  font-family: arial, helvetica, sans-serif;
+
+  padding: 3px 3px 0 3px;
+  border: 1px solid #065c9f;
+  border-bottom: 0;
+}
+
+ul#search_form-top_box_links li {
+  display: inline-block;
+  text-align: center;
+}
+
+ul#search_form-top_box_links li.search_form-top_box_links-bar {
+  width: 5px;
+}
+
+ul#search_form-top_box_links li.search_form-top_box_links-ada {
+  width: 30px;
+}
+
+ul#search_form-top_box_links li.search_form-top_box_links-staff {
+  width: 120px;
+}
+
+ul#search_form-top_box_links li.search_form-top_box_links-index {
+  width: 50px;
+}
+
+ul#search_form-top_box_links a,
+ul#search_form-top_box_links a:visited {
+}
+
+ul#search_form-top_box_links a,
+ul#search_form-top_box_links a:visited {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+ul#search_form-top_box_links a:focus,
+ul#search_form-top_box_links a:hover,
+ul#search_form-top_box_links a:active {
+  color: #fad703;
+  text-decoration: underline;
+}
+
+
+
+/*** Header - search form ***/
+div#block-search-form {
+  position: absolute;
+  display: inline-block;
+
+  top: 25px;
+  right: 20px;
+
+  height: 26px;
+  min-height: 26px;
+  max-height: 26px;
+  line-height: 26px;
+
+  width: 195px;
+  min-width: 195px;
+  max-width: 195px;
+
+  overflow: hidden;
+
+  background-color: #023761;
+
+  padding: 3px;
+  border: 1px solid #065c9f;
+  border-top: 0;
+}
+
+div#block-search-form > h2 {
+  display: block;
+
+  font-size: 0;
+
+  width: 0;
+  max-width: 0;
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+div#block-search-form > div.block-inner,
+div#block-search-form > div.content {
+  background-color: #ffffff;
+
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  line-height: 24px;
+
+  width: 223px;
+  min-width: 223px;
+  max-width: 223px;
+
+  overflow: hidden;
+
+  border: 1px solid #0f5eff;
+}
+
+div.form-item-search-block-form {
+  display: inline-block;
+}
+
+div#block-search-form div.form-item-search-block-form input.form-text {
+  display: inline-block;
+
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  line-height: 24px;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  vertical-align: baseline;
+}
+
+div#block-search-form form#search-block-form div.form-item-search-block-form {
+  padding: 0;
+  margin: 0;
+}
+
+form#search-block-form div.container-inline div.form-item-search-block-form,
+form#search-block-form div.container-inline div.form-actions {
+  display: inline-block;
+}
+
+form#search-block-form div.container-inline div.form-actions {
+  line-height: 10px;
+}
+
+div#block-search-form h2.block-title {
+  display: none;
+}
+
+div#block-search-form form#search-block-form input#edit-submit--1,
+div#block-search-form form#search-block-form input#edit-submit--2,
+div#block-search-form form#search-block-form input#edit-submit--3,
+div#block-search-form form#search-block-form input#edit-submit,
+div#block-search-form form#search-block-form input.form-submit {
+  background-image: url(../images/search_button.png);
+  background-repeat: no-repeat;
+  background-color: #00477f;
+
+  font-size: 0px;
+
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  overflow: hidden;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div#block-search-form {
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
+}
+
+div#block-search-form div.form-item-search-block-form,
+div#block-search-form input#edit-search-block-form--1,
+div#block-search-form input#edit-search-block-form--2,
+div#block-search-form input#edit-search-block-form--3 {
+  width: 195px;
+  min-width: 195px;
+  max-width: 195px;
+
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+
+  padding-left: 3px;
+}
+
+div#block-search-form div#edit-actions {
+  display: inline-block;
+  float: right;
+}
+
+div#block-search-form form#search-block-form div#edit-actions,
+div#block-search-form form#search-block-form div.form-actions {
+  padding: 0;
+  margin: 2px;
+
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+  overflow: hidden;
+
+  -moz-border-radius: 0;
+  -moz-outline-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+
+
+/*** Header - primary navigation ***/
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation {
+  position: absolute;
+  top: 78px;
+  right: 0;
+
+  clear: both;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation h2 {
+  display: block;
+
+  font-size: 0;
+
+  height: 0;
+  max-height: 0;
+
+  width: 0;
+  max-width: 0;
+
+  overflow: hidden;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation  {
+  height: 35px;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  margin: 0;
+  border: 0;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu {
+  font-size: 12px;
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  vertical-align: top;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li {
+  display: inline-block;
+
+  width: auto;
+
+  list-style: none;
+
+  margin: 0;
+  padding: 6px 0 2px 0px;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a {
+  display: block;
+
+  height: 24px;
+
+  color: #f2f2f2;
+  background-color: #1e1e1e;
+  text-decoration: none;
+
+  padding: 10px 9px 0px 9px;
+
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a:focus,
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a:hover,
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a:active {
+  color: #00477f;
+  background: #fad703;
+}
+
+div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li.active-trail a {
+  color: #00477f;
+  background-color: #fad703;
+}
+
+
+
+/*** Header - secondary navigation ***/
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation {
+  position: relative;
+
+  background-color: #00335b;
+  font-family: Arial,Helvetica,Sans-serif,Serif;
+  font-size: 14px;
+
+  height: 25px;
+  min-height: 25px;
+  max-height: 25px;
+
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+
+  margin-bottom: 5px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation h2 {
+  display: block;
+
+  font-size: 0;
+
+  height: 0;
+  max-height: 0;
+
+  width: 0;
+  max-width: 0;
+
+  overflow: hidden;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf a,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf a:visited {
+  display: block;
+
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 17px;
+
+  padding: 4px 8px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf a:focus,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf a:hover,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf a:active {
+  display: block;
+  color: #000000;
+  background-color: #fad703;
+  padding: 4px 8px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.id-menu-link-menu-secondary-navigation-869,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.id-menu-link-menu-secondary-navigation-880 {
+  vertical-align: top;
+  display: block;
+  float: right;
+
+  padding: 0;
+  margin: 2px 0 0 0px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a:visited,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a:visited {
+  display: inline-block;
+
+  background-repeat: no-repeat;
+
+  font-size: 0px;
+
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  overflow: hidden;
+
+  padding: 0;
+  margin: 0;
+
+  margin-right: 5px;
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a:visited {
+  background-color: #3b5b99;
+  background-image: url(../images/facebook_logo-mini.png);
+}
+
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a,
+div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a:visited {
+  background-color: #3b5b99;
+  background-image: url(../images/twitter_logo-mini.png);
+}
+
+
+
+/*** Content - breadcrumb **/
+div#mcneese_drupal-breadcrumb {
+  position: relative;
+
+  color: #ffffff;
+  background-color: #00335b;
+
+  font-family: Arial,Helvetica,Sans-Serif,Sans;
+  font-size: 12px;
+
+  min-height: 14px;
+
+  margin: 0 5px 5px 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+div#mcneese_drupal-breadcrumb div.breadcrumb,
+div#mcneese_drupal-breadcrumb div.subtitle {
+  display: inline-block;
+
+  padding-bottom: 0;
+}
+
+div#mcneese_drupal-breadcrumb div.breadcrumb {
+  padding-left: 3px;
+}
+
+div#mcneese_drupal-breadcrumb div.subtitle {
+  float: right;
+
+  padding-right: 3px;
+}
+
+div#mcneese_drupal-breadcrumb a,
+div#mcneese_drupal-breadcrumb a:visited {
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 3px 5px;
+}
+
+div#mcneese_drupal-breadcrumb a:focus,
+div#mcneese_drupal-breadcrumb a:hover,
+div#mcneese_drupal-breadcrumb a:active {
+  color: #000000;
+  background-color: #fad703;
+
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+}
+
+div#mcneese_drupal-breadcrumb .views-field-field-event-datetime .field-content {
+  display: inline-block;
+
+  color: #000000;
+  background-color: #fad703;
+
+  font-weight: bold;
+  letter-spacing: 1px;
+  min-height: 14px;
+
+  padding-left: 3px;
+  padding-right: 3px;
+  margin: 0px 2px;
+
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+
+
+/*** Content Bottom ***/
+div#mcneese_drupal-content_bottom {
+  background-color: #ffffff;
+
+  height: 10px;
+  min-height: 10px;
+  max-height: 10px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+
+
+/*** Footer ***/
+div#mcneese_drupal-footer {
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+
+  color: #393939;
+
+  padding: 5px;
+  margin: 5px auto;
+}
+
+
+
+/*** Overlay Settings ***/
+body#mcneese_drupal-body.mcneese_drupal-in_overlay div#overlay-content {
+  background-color: #336699;
+}
+
+body#mcneese_drupal-body.mcneese_drupal-in_overlay div#mcneese_drupal-undercontent {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+
+
+/*** OLD ***/
+body#mcneese_drupal-body,
+div#mcneese_drupal-page div#overlay-content {
+  background-color: #dadada;
+}
+
+div#mcneese_drupal-page {
+  height: 100%;
+}
+
+div#mcneese_drupal-content_region {
+  display: block;
+  min-height: 400px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+  background-color: #ffffff;
+}
+
+div#mcneese_drupal-undercontent {
+  min-height: 16px;
+
+  padding: 0px;
+
+  margin-top:    0px;
+  margin-left:   20px;
+  margin-bottom: 0px;
+  margin-right:  20px;
+
+  border: 0px;
+
+  color: #0000aa;
+  text-shadow: 1px 1px 1px #7fddfa;
+
+  font-size:   10px;
+  font-weight: bold;
+}
+
+div#mcneese_drupal-undercontent div#mcneese_drupal-MSU {
+  display: inline-block;
+
+  float: left;
+
+  text-align: left;
+}
+
+div#mcneese_drupal-undercontent div#mcneese_drupal-UCS {
+  display: inline-block;
+
+  float: right;
+
+  text-align: right;
+}
+
+div#mcneese_drupal-messages,
+div#mcneese_drupal-help {
+  background-color: #ffffff;
+
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div#mcneese_drupal-message_region {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div#mcneese_drupal-messages div.messages {
+  margin: 0px;
+}
+
+div#mcneese_drupal-content {
+  padding: 2px;
+}
+
+div#mcneese_drupal-content div.node {
+  min-height: 400px;
+}

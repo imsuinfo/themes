@@ -1,0 +1,65 @@
+/*** Removal of unwanted elements ***/
+div#mcneese_drupal-skip_nav,
+div#toolbar,
+div#mcneese_drupal-header_region,
+div#sidebar-first,
+div#mcneese_drupal-footer,
+div#mcneese_drupal-primary_tabs,
+div#mcneese_drupal-messages,
+div#mcneese_drupal-undercontent,
+form div.vertical-tabs,
+form div#edit-actions {
+  display: none;
+}
+
+
+
+/*** Print CSS ***/
+@page {
+  margin: 2cm 1.5cm;
+
+  width: auto;
+  max-width: 99%;
+}
+
+
+
+/*** Content ***/
+body#mcneese_drupal-body {
+  padding-top: 0px !important;
+}
+
+body#mcneese_drupal-body,
+div#mcneese_drupal-page {
+  overflow: visible;
+}
+
+div#mcneese_drupal-title_region {
+  font-family: Arial;
+  font-size: 12px;
+  text-align: center;
+}
+
+div#mcneese_drupal-website_title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h1#mcneese_drupal-page_title {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+div#mcneese_drupal-content_region {
+  min-height: 400px;
+
+  background-color: #ffffff;
+}
+
+div#mcneese_drupal-content {
+  padding: 2px;
+}
+
+div#mcneese_drupal-content div.node {
+  min-height: 400px;
+}
