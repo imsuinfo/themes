@@ -384,6 +384,15 @@ div.teaser-checkbox .form-item,
 }
 
 
+
+/*** Messages Region ***/
+div#mcneese_drupal-messages > div.messages {
+  max-height: 250px;
+  overflow: auto;
+}
+
+
+
 /*** TABS ***/
 div#mcneese_drupal-primary_tabs ul.primary {
   border-bottom: none;
