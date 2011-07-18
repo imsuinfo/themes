@@ -10,10 +10,144 @@ fieldset {
 }
 
 
+/*** Unsupported Notice ***/
+div#unsupported {
+  background-color: #ffe0eb;
+
+  border: 2px dotted #ff5555;
+  margin: 5px;
+  padding: 5px;
+
+  font-size: 13px;
+}
+
 
 /*** Login Form ***/
 form#user-login-form {
   text-align: center;
+}
+
+
+
+/*** Footer ***/
+div.drupal_footer div.mcneese_footer_block {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 950px;
+  min-width: 950px;
+  max-width: 950px;
+}
+
+div.drupal_footer div.mcneese_footer_block ul {
+  margin: 0;
+}
+
+div.drupal_footer div.mcneese_footer_block ul li {
+  list-style: none;
+}
+
+div.drupal_footer div.mcneese_footer_block h4 {
+  margin-bottom: 5px;
+}
+
+div.drupal_footer div.mcneese_footer_block a,
+div.drupal_footer div.mcneese_footer_block a:visited {
+  color: #ececec;
+
+  text-decoration: none;
+}
+
+div.drupal_footer div.mcneese_footer_block a:focus,
+div.drupal_footer div.mcneese_footer_block a:hover,
+div.drupal_footer div.mcneese_footer_block a:active {
+  color: #ffcc00;
+
+  text-decoration: underline;
+}
+
+div.drupal_footer div.mcneese_footer_block div.footer {
+  color: #ececec;
+
+  font-size: 11px;
+
+  height: 139px;
+  min-height: 139px;
+  max-height: 139px;
+
+  width: 950px;
+
+  overflow: hidden;
+}
+
+div.drupal_footer div.mcneese_footer_block div#footer-col-1 {
+  display: inline-block;
+  float: left;
+  width: 610px;
+  min-width: 610px;
+  max-width: 610px;
+}
+
+div.drupal_footer div.mcneese_footer_block div#footer-col-2 {
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  height: 139px;
+  width: 340px;
+  min-width: 340px;
+  max-width: 340px;
+}
+
+div.drupal_footer div.mcneese_footer_block h4.column-header {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+div.drupal_footer div.mcneese_footer_block div.footer-column {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 1.6;
+
+  margin: 20px 5px 0 20px;
+}
+
+div.drupal_footer div.mcneese_footer_block div.footer-column li.social {
+  float: left;
+
+  height: 21px;
+
+  margin: 0 8px 0 0;
+
+  width: 21px;
+}
+
+div.drupal_footer div.mcneese_footer_block div#footer-copyright {
+  background-repeat: no-repeat;
+
+  color: #ececec;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  height: 53px;
+
+  width: 950px;
+}
+
+div.drupal_footer div.mcneese_footer_block div.copyright img {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+div.drupal_footer div.mcneese_footer_block div.copyright div.copyright_menus {
+  display: inline-block;
+  line-height: 1.4;
+  margin: 8px 0 0 8px;
+  padding-top: 2px;
+}
+
+div.drupal_footer div.mcneese_footer_block div.copyright div.copyright_menus ul li {
+  display: inline-block;
 }
 
 

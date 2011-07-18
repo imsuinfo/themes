@@ -147,7 +147,7 @@
   <div id="mcneese_drupal-content_bottom"></div>
 
   <?php if (!isset($in_overlay) || !$in_overlay){ ?>
-    <div id="mcneese_drupal-footer">
+    <div id="mcneese_drupal-footer" class="drupal_footer">
       <?php if (isset($page['footer']) && !empty($page['footer'])){ ?>
         <!--(begin_footer)-->
         <?php print(render($page['footer'])); ?>
@@ -155,7 +155,7 @@
       <?php } ?>
     </div>
   <?php } else { ?>
-    <div id="mcneese_drupal-undercontent">
+    <div id="mcneese_drupal-undercontent" class="drupal_footer">
       <!--(begin_undercontent)-->
       <div id="mcneese_drupal-MSU" class="mcneese_drupal-outline" title='McNeese State University'>McNeese State University</div>
       <div id="mcneese_drupal-UCS" class="mcneese_drupal-outline" title='University Computing Services'>University Computing Services</div>

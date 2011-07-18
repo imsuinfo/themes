@@ -34,7 +34,6 @@ div#mcneese_drupal-header-horizontal_ruler {
 }
 
 
-
 /*** Header - Search Box Top ***/
 ul#search_form-top_box_links {
   position: absolute;
@@ -424,53 +423,6 @@ div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul
   padding: 4px 8px;
 }
 
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.id-menu-link-menu-secondary-navigation-869,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.id-menu-link-menu-secondary-navigation-880 {
-  vertical-align: top;
-  display: block;
-  float: right;
-
-  padding: 0;
-  margin: 2px 0 0 0px;
-}
-
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a:visited,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a:visited {
-  display: inline-block;
-
-  background-repeat: no-repeat;
-
-  font-size: 0px;
-
-  width: 20px;
-  min-width: 20px;
-  max-width: 20px;
-
-  height: 20px;
-  min-height: 20px;
-  max-height: 20px;
-  overflow: hidden;
-
-  padding: 0;
-  margin: 0;
-
-  margin-right: 5px;
-}
-
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-869 a:visited {
-  background-color: #3b5b99;
-  background-image: url(../images/facebook_logo-mini.png);
-}
-
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a,
-div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation ul.menu li.leaf.id-menu-link-menu-secondary-navigation-880 a:visited {
-  background-color: #3b5b99;
-  background-image: url(../images/twitter_logo-mini.png);
-}
-
 
 
 /*** Content - breadcrumb **/
@@ -564,20 +516,6 @@ div#mcneese_drupal-content_bottom {
 
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
-}
-
-
-
-/*** Footer ***/
-div#mcneese_drupal-footer {
-  font-size: 11px;
-  line-height: 1.6;
-  text-align: center;
-
-  color: #393939;
-
-  padding: 5px;
-  margin: 5px auto;
 }
 
 
