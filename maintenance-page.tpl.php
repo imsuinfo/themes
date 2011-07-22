@@ -5,6 +5,7 @@
   <!--(begin_head)-->
   <?php print($head); ?>
   <title><?php print($head_title); ?></title>
+  <meta http-equiv="cache-control" content="no-cache">
   <?php print($styles); ?>
   <?php print($scripts);?>
   <!--(end_head)-->
