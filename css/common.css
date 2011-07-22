@@ -297,12 +297,17 @@ div.drupal_content div.node-content .list-box a:visited {
   text-decoration: none;
 }
 
-div.drupal_content div.node-content th {
+div.drupal_content div.node-content th,
+div.drupal_content div.node-content th[scope="col"] {
   color: #ffffff;
   background-color: #00477f;
   margin: 5px;
   border-bottom: 1px;
   text-align: center;
+}
+
+div.drupal_content div.node-content th[scope="row"] {
+  background-color: #00578f;
 }
 
 div.drupal_content div.node-content td {
