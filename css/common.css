@@ -576,7 +576,6 @@ div.drupal_content div.node-content .list-even_odd .list-even-odd-row.views-row-
   background-color: #efefef;
 }
 
-
 html#ckeditor-wysiwygarea body .list-even_odd .list-even_odd-row-title,
 div.drupal_content div.node-content .list-even_odd .list-even_odd-row-title,
 html#ckeditor-wysiwygarea body .list-even_odd .list-even_odd-row-title:visited,
@@ -588,4 +587,34 @@ div.drupal_content div.node-content .list-even_odd .list-even-odd-row.views-row-
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+}
+
+
+
+/*** Content Specific Style: list-inline ***/
+html#ckeditor-wysiwygarea body .list-inline_block,
+div.drupal_content div.node-content .list-inline_block,
+div.drupal_content div.block-inner div.content .list-inline_block {
+  margin: 0;
+}
+
+html#ckeditor-wysiwygarea body .list-inline_block > li,
+div.drupal_content div.node-content .list-inline_block > li,
+div.drupal_content div.block-inner div.content .list-inline_block > li {
+  display: inline-block;
+
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+html#ckeditor-wysiwygarea body .list-inline_block > li.first,
+div.drupal_content div.node-content .list-inline_block > li.first,
+div.drupal_content div.block-inner div.content .list-inline_block > li.first  {
+  padding-left: 0;
+}
+
+html#ckeditor-wysiwygarea body .list-inline_block > li.last,
+div.drupal_content div.node-content .list-inline_block > li.last,
+div.drupal_content div.block-inner div.content .list-inline_block > li.last  {
+  padding-right: 0;
 }
