@@ -280,7 +280,9 @@ div.view-display-id-event_listing div.view-content div.views-field-title a:activ
 div.calendar-standard div.calendar-calendar td.multi-day div.monthview a,
 div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:visited,
 div.calendar-standard div.calendar-calendar td.multi-day div.dayview a,
-div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:visited {
+div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:visited,
+div.calendar-standard div.calendar-calendar td.multi-day div.weekview a,
+div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:visited {
   color: #ffffff;
 }
 
@@ -289,14 +291,19 @@ div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:hover,
 div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:active,
 div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:focus,
 div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:hover,
-div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:active {
+div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:active,
+div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:focus,
+div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:hover,
+div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:active {
   color: #ffee00;
 }
 
 div.calendar-standard div.calendar-calendar td.single-day div.monthview a,
 div.calendar-standard div.calendar-calendar td.single-day div.monthview a:visited,
 div.calendar-standard div.calendar-calendar td.single-day div.dayview a,
-div.calendar-standard div.calendar-calendar td.single-day div.dayview a:visited {
+div.calendar-standard div.calendar-calendar td.single-day div.dayview a:visited,
+div.calendar-standard div.calendar-calendar td.single-day div.weekview a,
+div.calendar-standard div.calendar-calendar td.single-day div.weekview a:visited {
   color: #002080;
 }
 
@@ -305,7 +312,10 @@ div.calendar-standard div.calendar-calendar td.single-day div.monthview a:hover,
 div.calendar-standard div.calendar-calendar td.single-day div.monthview a:active,
 div.calendar-standard div.calendar-calendar td.single-day div.dayview a:focus,
 div.calendar-standard div.calendar-calendar td.single-day div.dayview a:hover,
-div.calendar-standard div.calendar-calendar td.single-day div.dayview a:active {
+div.calendar-standard div.calendar-calendar td.single-day div.dayview a:active,
+div.calendar-standard div.calendar-calendar td.single-day div.weekview a:focus,
+div.calendar-standard div.calendar-calendar td.single-day div.weekview a:hover,
+div.calendar-standard div.calendar-calendar td.single-day div.weekview a:active {
   color: #7f0000;
 }
 
