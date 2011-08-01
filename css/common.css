@@ -710,3 +710,15 @@ div.drupal_content div.node-content .list-inline_block > li.last,
 div.drupal_content div.block-inner div.content .list-inline_block > li.last  {
   padding-right: 0;
 }
+
+
+
+/*** Content Specific Style: calendar-hide_calendar_links ***/
+html#ckeditor-wysiwygarea body .calendar-hide_calendar_links ul.calendar-links,
+div.drupal_content div.node-content .calendar-hide_calendar_links ul.calendar-links,
+div.drupal_content div.block-inner .calendar-hide_calendar_links ul.calendar-links,
+html#ckeditor-wysiwygarea body .calendar-hide-calendar-links ul.calendar-links,
+div.drupal_content div.node-content .calendar-hide-calendar-links ul.calendar-links,
+div.drupal_content div.block-inner .calendar-hide-calendar-links ul.calendar-links {
+  display: none;
+}
