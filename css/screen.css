@@ -480,9 +480,6 @@ div#mcneese_drupal-breadcrumb a:hover,
 div#mcneese_drupal-breadcrumb a:active {
   color: #000000;
   background-color: #fad703;
-
-  -webkit-transition-property: background-color;
-  -webkit-transition-duration: 0.3s;
 }
 
 div#mcneese_drupal-breadcrumb .views-field-field-event-datetime .field-content {
