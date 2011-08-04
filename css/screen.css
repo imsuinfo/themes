@@ -224,6 +224,8 @@ div#block-search-form form#search-block-form input.form-submit {
   border: 0;
   margin: 0;
   padding: 0;
+
+  vertical-align: top;
 }
 
 div#block-search-form {
