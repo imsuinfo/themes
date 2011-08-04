@@ -236,9 +236,9 @@ div#block-search-form div.form-item-search-block-form,
 div#block-search-form input#edit-search-block-form--1,
 div#block-search-form input#edit-search-block-form--2,
 div#block-search-form input#edit-search-block-form--3 {
-  width: 195px;
-  min-width: 195px;
-  max-width: 195px;
+  width: 194px;
+  min-width: 194px;
+  max-width: 194px;
 
   font-family: arial, helvetica, sans-serif;
   font-size: 12px;
