@@ -396,7 +396,7 @@ div#mcneese_drupal-messages > div.messages {
 /*** TABS ***/
 div#mcneese_drupal-primary_tabs ul.primary {
   border-bottom: none;
-  padding: 2px 0 3px 8px;
+  padding: 2px 0 2px 8px;
   text-transform: uppercase;
   font-size: 10px;
 }

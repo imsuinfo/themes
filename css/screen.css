@@ -135,10 +135,14 @@ div#block-search-form > h2 {
 
   font-size: 0;
 
-  width: 0;
-  max-width: 0;
   height: 0;
   max-height: 0;
+  width: 0;
+  max-width: 0;
+
+  padding: 0;
+  margin: 0;
+
   overflow: hidden;
 }
 
@@ -284,9 +288,11 @@ div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation h2 {
 
   height: 0;
   max-height: 0;
-
   width: 0;
   max-width: 0;
+
+  padding: 0;
+  margin: 0;
 
   overflow: hidden;
 }
@@ -381,9 +387,11 @@ div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation h2
 
   height: 0;
   max-height: 0;
-
   width: 0;
   max-width: 0;
+
+  padding: 0;
+  margin: 0;
 
   overflow: hidden;
 }
