@@ -61,3 +61,12 @@ function mcneese_drupal_preprocess_page(&$vars) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter() for search_block_form.
+ */
+function mcneese_drupal_form_search_block_form_alter(&$form, &$form_state, $form_id){
+  // This themes css uses a background image instead of the #value text, therefore the input buttons search text must be removed.
+  // If this is not removed then a number of browser, some webkit-based, some mozilla-based will have presentation problems.
+  $form['actions']['submit'] = array('#type' => 'submit', '#value' => '', '#attributes' => array('title' => t('Search')));
+}
