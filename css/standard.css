@@ -981,6 +981,12 @@ ul.action-links a {
 
 
 
+/*** remove unwanted styling ***/
+div#mcneese_drupal-content_region div#block-system-main table.update tbody tr td ul.links {
+  list-style-type: none;
+}
+
+
 /*** update page colors ***/
 div#mcneese_drupal-content_region div#block-system-main table.update tbody tr {
   border-bottom: 1px solid #999999;
