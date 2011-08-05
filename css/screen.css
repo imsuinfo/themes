@@ -330,7 +330,7 @@ div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.cont
 }
 
 div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a {
-  display: block;
+  display: inline-block;
 
   height: 24px;
 

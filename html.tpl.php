@@ -10,7 +10,7 @@
   <!--(end_head)-->
 </head>
 <body id="mcneese_drupal-body" class="<?php print($classes); print($in_overlay_css); ?>" <?php print($attributes);?>>
-<?php  if (!isset($in_overlay) || $in_overlay != 'child'){ ?><div id="mcneese_drupal-skip_nav" class="clearfix mcneese_drupal-text_shadow">
+<?php  if (!isset($in_overlay) || $in_overlay != 'child'){ ?><div id="mcneese_drupal-skip_nav" class="clearfix">
     <!--(begin_skipnav)-->
     <div id="mcneese_drupal-skip_nav-list">
       <div id="mcneese_drupal-skip_nav-list-content"><a id="mcneese_drupal-skip_nav-list-content-link" class="mcneese_drupal-skipnav-link element-invisible element-focusable" href="#mcneese_drupal-content"><?php print t("Skip to main content"); ?></a></div>
@@ -18,6 +18,14 @@
     </div>
     <!--(end_skipnav)-->
   </div><?php } ?>
+
+  <!--(begin_unsupported)-->
+  <?php if (!empty($unsupported)){ ?>
+    <div id="unsupported" class="mcneese_drupal clearfix">
+      <?php print($unsupported); ?>
+    </div>
+  <?php } ?>
+  <!--(end_unsupported)-->
 
   <!--(begin_body)-->
   <div id="mcneese_drupal-page_top" class="mcneese_drupal">

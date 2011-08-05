@@ -1,0 +1,10 @@
+/** IE8 does not properly use width: auto and fails to make the width of the list work properly **/
+div#block-menu-menu-primary-navigation div.block-inner div.content ul.menu li {
+  min-width: 112px;
+  text-align: center;
+}
+
+/** IE8 does not properly handle width/height properties of images, this causes the images to fall outside of the parent block as if it were set to float **/
+div#content img {
+  display: inline-block;
+}

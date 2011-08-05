@@ -1,0 +1,18 @@
+/** < IE8 hack to make menus sort-of appear **/
+div#block-menu-menu-primary-navigation div.content ul.menu li {
+  float: right;
+}
+
+div#block-menu-menu-secondary-navigation div.content ul.menu li {
+  float: left;
+}
+
+div#block-block-13 ul#search_form-top_box_links li {
+  float: left;
+}
+
+/** manually specify a margin on the menu links **/
+div#block-menu-menu-primary-navigation div.block-inner div.content ul.menu li a {
+  margin-left: 2px;
+  margin-right: 2px;
+}
