@@ -135,7 +135,7 @@
     <?php endif; ?>
 
     <?php if (is_array($page) && array_key_exists('content', $page)){ ?>
-      <div id='mcneese_drupal-content' class='drupal_content clearfix'>
+      <div id='mcneese_drupal-content' class='drupal_content clearfix <?php print($msu['markup_css']['content']['class']); ?>'>
         <!--(begin_content)-->
         <h2 class='element-invisible'><?php print(t("Primary Content")); ?></h2>
         <?php print(render($page['content'])); ?>
