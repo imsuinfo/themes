@@ -1,0 +1,4 @@
+/** Webkit does not properly handle line-height+font-size+overflow:hidden **/
+div#front_page_columns-spotlight div.views-field-nothing div.spotlight-body {
+  line-height: 24px;
+}
