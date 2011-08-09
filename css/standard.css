@@ -55,6 +55,20 @@ div#mcneese_drupal-title h1#mcneese_drupal-page_title {
 
 div#mcneese_drupal-title div.add-or-remove-shortcuts {
   display: inline-block;
+  line-height: 24px;
+  padding-top: 0;
+}
+
+div#mcneese_drupal-title * {
+  vertical-align: baseline;
+}
+
+div#mcneese_drupal-title div.add-or-remove-shortcuts > a {
+  line-height: 24px;
+}
+
+div#mcneese_drupal-title div.add-or-remove-shortcuts > a > span.icon {
+  margin-left: 0;
 }
 
 body#mcneese_drupal-body.maintenance-page div#mcneese_drupal-page div#mcneese_drupal-sidebar_first {
@@ -740,6 +754,7 @@ input#edit-submit {
 
 ul.tabs.secondary {
   padding-top: 6px;
+  margin: 0;
 }
 
 ul.tabs.secondary li a {
@@ -953,19 +968,22 @@ html.js input.throbbing {
 ul.action-links {
   list-style-type: none;
   overflow: hidden;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
 ul.action-links li {
   float: left;
   margin: 0 1px 0 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 ul.action-links a {
   padding-left: 15px;
   background: transparent url(../images/add.png) no-repeat 0 center;
-  line-height: 30px;
 }
 
 
@@ -977,6 +995,13 @@ ul.action-links a {
 
 .views-ui-display-tab-bucket {
   border: 1px solid: #e0e0e0;
+}
+
+
+
+/*** ctools submit form ***/
+form.ctools-auto-submit-full-form div.form-item-search > label {
+  line-height: 22px;
 }
 
 
