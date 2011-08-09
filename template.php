@@ -40,6 +40,18 @@ function mcneese_drupal_preprocess_page(&$vars) {
 
   $vars['primary_local_tasks']   = menu_primary_local_tasks();
   $vars['secondary_local_tasks'] = menu_secondary_local_tasks();
+
+  $keys_to_render = array('logo', 'messages', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
+  msu_generic_theme_render_variables($vars, $keys_to_render);
+
+  $keys_to_render = array('header', 'sub_header', 'help', 'subtitle', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  msu_generic_theme_render_variables($vars, $keys_to_render, 'page');
+
+  // always show the following fields
+  $vars['msu']['show']['title'] = TRUE;
+  $vars['msu']['show']['breadcrumb'] = TRUE;
+  $vars['msu']['show']['page']['content'] = TRUE;
+  $vars['msu']['show']['page']['footer'] = TRUE;
 }
 
 /**
@@ -47,7 +59,8 @@ function mcneese_drupal_preprocess_page(&$vars) {
  */
 function mcneese_drupal_msu_generic_theme_get_variables_alter(&$msu, $variables){
   $msu['theme']['path'] = path_to_theme();
-  $msu['theme']['name'] = t("McNeese Drupal");
+  $msu['theme']['machine_name'] = 'mcneese_drupal';
+  $msu['theme']['human_name'] = t("McNeese Drupal");
 
   if ($msu['is']['unsupported']){
     $msu['is_data']['unsupported'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $msu['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));

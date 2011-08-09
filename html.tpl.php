@@ -21,7 +21,7 @@
   </div><?php } ?>
 
   <!--(begin_unsupported)-->
-  <?php if (!empty($msu['is']['unsupported'])){ ?>
+  <?php if ($msu['is']['unsupported']){ ?>
     <div id="unsupported" class="mcneese_drupal clearfix">
       <?php print($msu['is_data']['unsupported']); ?>
     </div>
