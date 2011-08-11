@@ -63,7 +63,7 @@ function mcneese_drupal_msu_generic_theme_get_variables_alter(&$msu, $variables)
   $msu['theme']['human_name'] = t("McNeese Drupal");
 
   if ($msu['is']['unsupported']){
-    $msu['is_data']['unsupported'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $msu['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
+    $msu['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $msu['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
   }
 
   switch($msu['agent']['machine_name']){

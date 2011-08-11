@@ -23,7 +23,7 @@
   <!--(begin_unsupported)-->
   <?php if ($msu['is']['unsupported']){ ?>
     <div id="unsupported" class="mcneese_drupal clearfix">
-      <?php print($msu['is_data']['unsupported']); ?>
+      <?php print($msu['is_data']['unsupported']['message']); ?>
     </div>
   <?php } ?>
   <!--(end_unsupported)-->
