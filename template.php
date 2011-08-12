@@ -76,14 +76,15 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $cf['theme']['machine_name'] = 'mcneese_drupal';
   $cf['theme']['human_name'] = t("McNeese Drupal");
 
+  $msu['meta']['name']['copyright'] = '2011© McNeese State University';
+  $msu['meta']['name']['description'] = 'McNeese State University Website';
+  $msu['meta']['name']['distribution'] = 'web';
+  $msu['meta']['name']['X-UA-Compatible'] = 'IE=8';
+
   if (!$cf['is']['logged_in']){
     $date_value = strtotime('+1 hour', $cf['request']);
     $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
     $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-  }
-
-  if ($cf['is']['unsupported']){
-    $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
   }
 
   switch($cf['agent']['machine_name']){
@@ -99,6 +100,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
             $custom_css = array();
             $custom_css['data'] = $cf['theme']['path'] . '/css/moz_old.css';
             $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
+            $cf['is']['unsupported'] = TRUE;
 
             //$cf['css'][] = $custom_css;
             drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
@@ -119,6 +121,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
         $custom_css = array();
         $custom_css['data'] = $cf['theme']['path'] . '/css/ie_old.css';
         $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 3);
+        $cf['is']['unsupported'] = TRUE;
 
         //$cf['css'][] = $custom_css;
         drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
@@ -156,7 +159,12 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
           drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
           break;
       }
+
       break;
+  }
+
+  if ($cf['is']['unsupported']){
+    $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
   }
 }
 
