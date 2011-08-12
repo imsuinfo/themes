@@ -76,6 +76,12 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $cf['theme']['machine_name'] = 'mcneese_drupal';
   $cf['theme']['human_name'] = t("McNeese Drupal");
 
+  if (!$cf['is']['logged_in']){
+    $date_value = strtotime('+1 hour', $cf['request']);
+    $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+    $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  }
+
   if ($cf['is']['unsupported']){
     $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
   }
