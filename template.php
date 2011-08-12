@@ -17,14 +17,14 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   // with this enabled on the maintenance page, it should help the user gain access to the website as soon as it is up.
   // TODO: add support for specifying an approximate refresh time when the site is put into maintenance mode.
   // default to a 30-minute page expiration/refresh.
-  $cf['meta']['name']['refresh'] = '1800';
+  $vars['cf']['meta']['name']['refresh'] = '1800';
 
-  $date_value = strtotime('+1800 seconds', $cf['request']);
-  $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-  $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  $date_value = strtotime('+1800 seconds', $vars['cf']['request']);
+  $vars['cf']['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  $vars['cf']['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
 
   // register that this is a maintenance page
-  $cf['is']['maintenance'] = TRUE;
+  $vars['cf']['is']['maintenance'] = TRUE;
 }
 
 /**
@@ -40,7 +40,7 @@ function mcneese_drupal_preprocess_html(&$vars) {
   }
 
   // refresh is considered not accessible
-  $cf['meta']['name']['refresh'] = '';
+  $vars['cf']['meta']['name']['refresh'] = '';
 }
 
 /**
@@ -85,7 +85,13 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $msu['meta']['http-equiv']['X-UA-Compatible'] = 'IE=8';
 
   if (!$cf['is']['logged_in']){
-    $date_value = strtotime('+1 hour', $cf['request']);
+    if ($cf['is']['front']){
+      $date_value = strtotime('+1 hour', $cf['request']);
+    }
+    else {
+      $date_value = strtotime('+3 hours', $cf['request']);
+    }
+
     $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
     $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   }
