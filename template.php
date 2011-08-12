@@ -79,7 +79,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $msu['meta']['name']['copyright'] = '2011© McNeese State University';
   $msu['meta']['name']['description'] = 'McNeese State University Website';
   $msu['meta']['name']['distribution'] = 'web';
-  $msu['meta']['name']['X-UA-Compatible'] = 'IE=8';
+  $msu['meta']['http-equiv']['X-UA-Compatible'] = 'IE=8';
 
   if (!$cf['is']['logged_in']){
     $date_value = strtotime('+1 hour', $cf['request']);
