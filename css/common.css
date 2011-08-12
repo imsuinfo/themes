@@ -216,7 +216,7 @@ html#ckeditor-wysiwygarea body {
 
 h1.drupal_page_title {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   color: #00335b;
 
   text-shadow: -1px 1px 3px #aaaaaa;
