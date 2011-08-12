@@ -5,7 +5,7 @@ core        = 7.x
 engine      = phptemplate
 screenshot  = screenshot.png
 
-dependencies[] = msu_generic_theme
+dependencies[] = cf_theme
 
 stylesheets[all][]     = css/reset.css
 stylesheets[all][]     = css/standard.css
