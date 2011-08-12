@@ -87,6 +87,9 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   }
 
+  // html 5 doctype
+  $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">';
+
   switch($cf['agent']['machine_name']){
     case 'firefox':
       break;
@@ -110,6 +113,8 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
 
       break;
     case 'ie':
+      // IE ignores non-ancient css unless the following doctype is used
+      $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">';
       $custom_css = array();
       $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
       $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 2);
@@ -120,7 +125,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
       if ($cf['agent']['major_version'] < 8){
         $custom_css = array();
         $custom_css['data'] = $cf['theme']['path'] . '/css/ie_old.css';
-        $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 3);
+        $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 3);
         $cf['is']['unsupported'] = TRUE;
 
         //$cf['css'][] = $custom_css;

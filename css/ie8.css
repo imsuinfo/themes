@@ -1,6 +1,12 @@
 /** IE8 does not properly use width: auto and fails to make the width of the list work properly **/
-div#block-menu-menu-primary-navigation div.block-inner div.content ul.menu li {
-  min-width: 112px;
+li.menu-link-name-menu-primary-navigation {
+  min-width: 100px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+li.menu-link-name-menu-primary-navigation a {
+  min-width: 100px;
   text-align: center;
 }
 

@@ -1,4 +1,4 @@
-<?php?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<?php print($cf['agent']['doctype'] . "\n");?>
 <html lang="<?php print($language->language); ?>" dir="<?php print $language->dir; ?>" version="HTML+RDFa 1.1" <?php print $rdf_namespaces; ?>>
 
 <head profile="<?php print $grddl_profile; ?>">
