@@ -117,7 +117,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">';
       $custom_css = array();
       $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
-      $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 2);
+      $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
 
       //$cf['css'][] = $custom_css;
       drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
