@@ -22,6 +22,9 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   $date_value = strtotime('+1800 seconds', $cf['request']);
   $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+
+  // register that this is a maintenance page
+  $cf['is']['maintenance'] = TRUE;
 }
 
 /**
