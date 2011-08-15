@@ -82,7 +82,6 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $msu['meta']['name']['copyright'] = '2011© McNeese State University';
   $msu['meta']['name']['description'] = 'McNeese State University Website';
   $msu['meta']['name']['distribution'] = 'web';
-  $msu['meta']['http-equiv']['X-UA-Compatible'] = 'IE=8';
 
   if (!$cf['is']['logged_in']){
     if ($cf['is']['front']){
@@ -124,6 +123,10 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     case 'ie':
       // IE ignores non-ancient css unless the following doctype is used
       $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">';
+
+      // enforce ie8 compatibility mode
+      $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=8';
+
       $custom_css = array();
       $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
       $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
