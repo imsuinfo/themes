@@ -621,3 +621,17 @@ div#mcneese_drupal-content {
 div#mcneese_drupal-content div.node {
   min-height: 400px;
 }
+
+
+
+/*** Ckeditor WYSIWYG ***/
+html#ckeditor-wysiwygarea {
+  background-color: #dadada;
+}
+
+html#ckeditor-wysiwygarea body {
+  background-color: #ffffff;
+
+  padding: 10px;
+  margin: 10px auto;
+}
