@@ -47,8 +47,8 @@ div#mcneese_drupal-title h1#mcneese_drupal-page_title {
 
 div#mcneese_drupal-title div.add-or-remove-shortcuts {
   display: inline-block;
-  line-height: 24px;
-  padding-top: 0;
+  line-height: 1.5em;
+  padding: 4px 0;
 }
 
 div#mcneese_drupal-title * {
@@ -56,7 +56,7 @@ div#mcneese_drupal-title * {
 }
 
 div#mcneese_drupal-title div.add-or-remove-shortcuts > a {
-  line-height: 24px;
+  line-height: 1.5em;
 }
 
 div#mcneese_drupal-title div.add-or-remove-shortcuts > a > span.icon {
