@@ -41,18 +41,6 @@ div#mcneese_drupal-title_region {
   margin-right: 20px;
 }
 
-div#mcneese_drupal-title h1#mcneese_drupal-page_title {
-  display: inline-block;
-
-  font-size: 24px;
-  font-weight: normal;
-  color: #00335b;
-
-  text-shadow: -1px 1px 3px #aaaaaa;
-
-  padding: 4px 5px;
-}
-
 div#mcneese_drupal-title div.add-or-remove-shortcuts {
   display: inline-block;
   line-height: 24px;

@@ -215,11 +215,11 @@ html#ckeditor-wysiwygarea body {
 }
 
 h1.drupal_page_title {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: normal;
   color: #00335b;
 
-  text-shadow: -1px 1px 3px #dddddd;
+  text-shadow: -1px 1px 3px #bbbbbb;
 
   padding: 4px 0;
   margin: 0;
