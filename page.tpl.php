@@ -5,7 +5,7 @@
         <?php if ($cf['show']['logo']){ ?>
           <div id='mcneese_drupal-website_logo'>
             <!--(begin_website_logo)-->
-            <a id="mcneese_drupal-website_logo-link" href="<?php print($cf['at']['path'] . '/'); ?>" title="<?php print(t("Home Page")); ?>">
+            <a id="mcneese_drupal-website_logo-link" href="/" title="<?php print(t("Home Page")); ?>">
               <img id="mcneese_drupal-website_logo-image" src="<?php print($logo); ?>" alt="<?php print($cf['at']['human_name']); ?>">
             </a>
             <!--(end_website_logo)-->
