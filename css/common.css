@@ -733,3 +733,23 @@ div.drupal_content div.node-content .calendar-hide-calendar-links ul.calendar-li
 div.drupal_content div.block-inner .calendar-hide-calendar-links ul.calendar-links {
   display: none;
 }
+
+
+
+/*** Content Specific Style: box-text ***/
+html#ckeditor-wysiwygarea body .box-text,
+div.drupal_content div.node-content .box-text,
+div.drupal_content div.block-inner .box-text,
+html#ckeditor-wysiwygarea body .box-text-center,
+div.drupal_content div.node-content .box-text-center,
+div.drupal_content div.block-inner .box-text-center {
+  background-color: #eaeaea;
+  border: 1px solid #a9a9a9;
+  margin: 5px auto;
+}
+
+html#ckeditor-wysiwygarea body .box-text-center,
+div.drupal_content div.node-content .box-text-center,
+div.drupal_content div.block-inner .box-text-center {
+  text-align: center;
+}
