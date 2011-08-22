@@ -12,6 +12,18 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
     $vars['cf'] = cf_theme_get_variables($vars);
   }
 
+  $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
+  cf_theme_render_variables($vars, $keys_to_render);
+
+  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'subtitle', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  cf_theme_render_variables($vars, $keys_to_render);
+
+  // always show the following fields
+  $vars['cf']['show']['title'] = TRUE;
+  $vars['cf']['show']['breadcrumb'] = TRUE;
+  $vars['cf']['show']['content'] = TRUE;
+  $vars['cf']['show']['footer'] = TRUE;
+
   // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
   // this is because the maintenance page means the site is not accessible
   // with this enabled on the maintenance page, it should help the user gain access to the website as soon as it is up.
