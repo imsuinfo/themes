@@ -38,11 +38,11 @@
     </div>
 <?php } ?>
   <div id='mcneese_drupal-message_region' class='clearfix'>
-    <?php if ($cf['show']['messages']){ ?>
+    <?php if ($cf['show']['page']['messages']){ ?>
       <!--(begin_messages)-->
       <div id='mcneese_drupal-messages' class='clearfix'>
         <h2 class='element-invisible'><?php print(t("Messages")); ?></h2>
-        <?php print($messages); ?>
+        <?php print($page['messages']); ?>
       </div>
       <!--(end_messages)-->
     <?php } ?>
