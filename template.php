@@ -106,6 +106,9 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
     $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   }
+  else {
+    $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
+  }
 
   // html 5 doctype
   $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">';
