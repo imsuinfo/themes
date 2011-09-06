@@ -7,7 +7,7 @@
   <title><?php print($head_title); ?></title>
   <?php print($styles); ?>
   <?php print($scripts);?>
-  <?php print(cf_theme_generate_headers($cf)); ?>
+  <?php if (function_exists('cf_theme_generate_headers')) print(cf_theme_generate_headers($cf)); ?>
   <!--(end_head)-->
 </head>
 <body id="mcneese_drupal-body" class="<?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>

@@ -8,6 +8,10 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
     $vars = array();
   }
 
+  if (!function_exists('cf_theme_get_variables')){
+    return;
+  }
+
   if (empty($vars['cf'])){
     $vars['cf'] = cf_theme_get_variables($vars);
   }
