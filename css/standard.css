@@ -95,6 +95,7 @@ body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_righ
 
 .element-invisible {
   display: inline-block;
+  position: absolute !important;
 
   font-size: 0;
   line-height: 0;
@@ -107,6 +108,8 @@ body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_righ
 
   margin: 0;
   padding: 0;
+
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 input.form-submit, a.button {
