@@ -396,10 +396,42 @@ div.teaser-checkbox .form-item,
 
 /*** Messages Region ***/
 div#mcneese_drupal-messages > div.messages {
-  max-height: 250px;
+  max-height: 200px;
   overflow: auto;
+
+  border: 0;
+  padding: 10px 10px 10px 40px;
 }
 
+div#mcneese_drupal-messages > div.messages.help {
+  background-image: url("../images/message-24-help.png")
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+div#mcneese_drupal-messages > div.messages.error {
+  background-image: url("../images/message-24-error.png")
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+div#mcneese_drupal-messages > div.messages.warning {
+  background-image: url("../images/message-24-warning.png")
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+
+  color: #884400;
+  background-color: #fffce5;
+}
+
+div#mcneese_drupal-messages > div.messages.status {
+  background-image: url("../images/message-24-status.png")
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+
+  color: #234600;
+  background-color: #f8fff0;
+}
 
 
 /*** TABS ***/
