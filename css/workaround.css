@@ -10,6 +10,29 @@ div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date
 
 
 
+/**
+ * Workaround a calendar prev/next button display issue
+ * see: http://drupal.org/node/1279612
+ */
+div.view div.date-nav-wrapper div.date-nav ul.pager {
+  position: static;
+
+  margin: 0;
+}
+
+/**
+ * Fix padding issues on calendar buttons
+ */
+div.view div.date-nav-wrapper div.date-nav ul.pager li.date-prev {
+  padding-left: 5px;
+}
+
+div.view div.date-nav-wrapper div.date-nav ul.pager li.date-next {
+  padding-right: 5px;
+}
+
+
+
 /* Workaround Search Box + Views bug:
  * views adds their own css, which in this particular case overwrites and breaks the search box
  * the following css groups are fixes to such problems as they are observed
