@@ -17,6 +17,8 @@ div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date
 div.view div.date-nav-wrapper div.date-nav ul.pager {
   position: static;
 
+  font-weight: bold;
+
   margin: 0;
 }
 
