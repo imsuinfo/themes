@@ -2,13 +2,8 @@
 div#mcneese_drupal-header_region {
   position: relative;
 
-  background-color: #ffffff;
-
   padding-left: 5px;
   padding-right: 5px;
-
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 div#mcneese_drupal-header {
@@ -506,17 +501,12 @@ div#mcneese_drupal-breadcrumb .views-field-field-event-datetime .field-content {
 
 /*** Content Bottom ***/
 div#mcneese_drupal-content_bottom {
-  background-color: #ffffff;
-
   height: 10px;
   min-height: 10px;
   max-height: 10px;
 
   padding-left: 5px;
   padding-right: 5px;
-
-  margin-left: 20px;
-  margin-right: 20px;
 
   -moz-border-radius-bottomright: 10px;
   -moz-border-radius-bottomleft: 10px;
@@ -555,11 +545,6 @@ div#mcneese_drupal-content_region {
 
   padding-left: 5px;
   padding-right: 5px;
-
-  margin-left: 20px;
-  margin-right: 20px;
-
-  background-color: #ffffff;
 }
 
 div#mcneese_drupal-undercontent {
@@ -597,17 +582,9 @@ div#mcneese_drupal-undercontent div#mcneese_drupal-UCS {
   text-align: right;
 }
 
-div#mcneese_drupal-messages,
-div#mcneese_drupal-help {
-  background-color: #ffffff;
-
+div#mcneese_drupal-message_region {
   padding-left: 5px;
   padding-right: 5px;
-}
-
-div#mcneese_drupal-message_region {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 div#mcneese_drupal-messages div.messages {

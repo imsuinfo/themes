@@ -35,7 +35,7 @@
     <!--(end_page_top)-->
   </div>
 
-  <div id="mcneese_drupal-page" class="mcneese_drupal">
+  <div id="mcneese_drupal-page" class="mcneese_drupal drupal-page">
     <!--(begin_page)-->
     <?php if (!$cf['is']['overlay']){ ?>
       <div id='mcneese_drupal-header_region' class='clearfix page-header'>

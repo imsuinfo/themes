@@ -32,7 +32,7 @@ div#footer {
   position: relative;
 }
 
-div#mcneese_drupal-title_region {
+div.drupal-page {
   position: relative;
 
   background-color: #ffffff;
@@ -40,7 +40,15 @@ div#mcneese_drupal-title_region {
   margin-left: 20px;
   margin-right: 20px;
 
-  padding-bottom: 1px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+div#mcneese_drupal-title_region {
+  position: relative;
 }
 
 div#mcneese_drupal-title h1#mcneese_drupal-page_title {
@@ -472,7 +480,7 @@ div#mcneese_drupal-primary_tabs ul.primary li.active a,
 div#mcneese_drupal-primary_tabs ul.primary li.active a.active,
 div#mcneese_drupal-primary_tabs ul.primary li.active a:active,
 div#mcneese_drupal-primary_tabs ul.primary li.active a:visited {
-  background-color: #fff;
+  background-color: #ffffff;
   border-color: #c9cac4;
 }
 
