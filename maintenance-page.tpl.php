@@ -44,8 +44,8 @@
           <?php if ($cf['show']['logo']){ ?>
             <div id='mcneese_drupal-website_logo'>
               <!--(begin_website_logo)-->
-              <a id="mcneese_drupal-website_logo-link" href="<?php print($cf['at']['path'] . '/'); ?>" title="<?php print(t("Home Page")); ?>">
-                <img id="mcneese_drupal-website_logo-image" src="<?php print($logo); ?>" alt="<?php print($cf['at']['human_name']); ?>">
+              <a id="mcneese_drupal-website_logo-link" rel="home" title="<?php print(t("Home Page")); ?>" href="/">
+                <img id="mcneese_drupal-website_logo-image" alt="<?php print($cf['at']['human_name']); ?>" title="<?php print($cf['at']['human_name']); ?>" src="<?php print($base_path . path_to_theme());?>/images/web_logo.png">
               </a>
               <!--(end_website_logo)-->
             </div>
