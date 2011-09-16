@@ -10,6 +10,14 @@ fieldset {
 }
 
 
+
+/*** Different Colors ***/
+div.error, .error {
+  color: #731f00;
+}
+
+
+
 /*** Unsupported Notice ***/
 div#unsupported {
   background-color: #ffe0eb;
