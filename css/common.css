@@ -171,8 +171,9 @@ div.drupal_footer div.mcneese_footer_block div.copyright div.copyright_menus ul 
 
 /*** css variables specific ***/
 div.drupal_content .node-unpublished,
-div.drupal-page.is-node.is-unpublished .drupal-page {
-  background-color: #ffebeb;
+body.is-node.is-unpublished .drupal-page,
+div.is-node.is-unpublished.drupal-page {
+  background-color: #ffeeee !important;
 }
 
 
