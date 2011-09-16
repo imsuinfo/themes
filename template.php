@@ -8,6 +8,17 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
     $vars = array();
   }
 
+  // store sidebar_first and sidebar_second in left and right sidebars
+  if (!empty($vars['sidebar_first'])){
+    $vars['sidebar_left'] .= $vars['sidebar_first'];
+    unset($vars['sidebar_first']);
+  }
+
+  if (!empty($vars['sidebar_second'])){
+    $vars['sidebar_right'] .= $vars['sidebar_second'];
+    unset($vars['sidebar_second']);
+  }
+
   if (!function_exists('cf_theme_get_variables')){
     return;
   }
