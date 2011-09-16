@@ -25,6 +25,7 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   // always show the following fields
   $vars['cf']['show']['title'] = TRUE;
   $vars['cf']['show']['breadcrumb'] = TRUE;
+  $vars['cf']['show']['messages'] = TRUE;
   $vars['cf']['show']['content'] = TRUE;
   $vars['cf']['show']['footer'] = TRUE;
 
