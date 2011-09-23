@@ -41,7 +41,7 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   $vars['cf']['show']['footer'] = TRUE;
 
   // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
-  // this is because the maintenance page means the site is not accessible
+  // this is because the maintenance page means the site is not available
   // with this enabled on the maintenance page, it should help the user gain access to the website as soon as it is up.
   // TODO: add support for specifying an approximate refresh time when the site is put into maintenance mode.
   // default to a 30-minute page expiration/refresh.
