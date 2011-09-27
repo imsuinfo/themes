@@ -108,6 +108,8 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $cf['theme']['machine_name'] = 'mcneese_drupal';
   $cf['theme']['human_name'] = t("McNeese Drupal");
 
+  $cf['date']['enabled'] = TRUE;
+
   $msu['meta']['name']['copyright'] = '2011© McNeese State University';
   $msu['meta']['name']['description'] = 'McNeese State University Website';
   $msu['meta']['name']['distribution'] = 'web';
