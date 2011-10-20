@@ -7,8 +7,10 @@ div#mcneese_drupal-footer,
 div#mcneese_drupal-primary_tabs,
 div#mcneese_drupal-messages,
 div#mcneese_drupal-undercontent,
+div#mcneese_drupal-breadcrumb,
 form div.vertical-tabs,
-form div#edit-actions {
+form div#edit-actions,
+div#block-workbench-block {
   display: none;
 }
 
@@ -26,7 +28,20 @@ form div#edit-actions {
 
 /*** Content ***/
 body#mcneese_drupal-body {
+  background-color: #ffffff !important;
+}
+
+
+h1#mcneese_drupal-page_title {
+  color: #000000;
+}
+
+body#mcneese_drupal-body {
   padding-top: 0px !important;
+}
+
+div#mcneese_drupal-page div.drupal-page {
+  margin: 0;
 }
 
 body#mcneese_drupal-body,
