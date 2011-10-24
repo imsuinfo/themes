@@ -136,3 +136,16 @@ div#block-search-form form#search-block-form .form-item-search-block-form {
   background-position: 16px -16px !important;
   background-repeat: repeat !important;
 }
+
+
+
+/**
+ * Workaround workbench left & right width issue.
+ */
+div.admin.my-workbench .right {
+  margin-right: 0;
+}
+
+div.admin.my-workbench .left {
+  margin-left: 0;
+}
