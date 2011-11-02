@@ -268,12 +268,6 @@ div.drupal_content p {
   line-height: 1.2;
 }
 
-html#ckeditor-wysiwygarea h2,
-div.drupal_content h2 {
-  font-weight: normal;
-  margin-bottom: 15px;
-}
-
 
 
 /*** Content Specific Style: calendar pages ***/
