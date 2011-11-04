@@ -939,6 +939,7 @@ div.drupal_content div.block-inner .box-text-center {
 
 
 /*** Module Specific Style: dev-query ***/
+div#block-devel_node_access-dna_node,
 div.dev-query {
   position: relative;
   background-color: white;
