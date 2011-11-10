@@ -1,3 +1,57 @@
+/**
+ * Workaround calendar structural display to show all of the text.
+ */
+.calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+.calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+  display: block;
+  position: relative;
+
+  width: auto;
+  left: 0;
+  padding: 0 2px;
+}
+
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  height: auto;
+  line-height: 1.9em;
+  margin: 1px 0;
+
+  text-align: center;
+}
+
+.calendar-calendar .month-view .full td.single-day div.monthview,
+.calendar-calendar .week-view .full td.single-day div.weekview,
+.calendar-calendar .day-view .full td.single-day div.dayview {
+  height: auto;
+  line-height: 1.9em;
+  margin: 1px 0;
+
+  text-align: center;
+}
+
+/**
+ * Workaround calendar coloring issue
+ * The default color #f4f4f4 is perceived to be too bright on some screens.
+ * Also fix the line-height.
+ */
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: none repeat scroll 0 0 #6384b8;
+  color: #ffffff;
+}
+
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: none repeat scroll 0 0 #6384b8;
+  color: #ffffff;
+}
+
+
 /* Workaround calendar bug:
  * It seems that when the date is set to "exclude from display" it still includes it in the display
  */
