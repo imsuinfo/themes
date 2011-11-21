@@ -29,6 +29,16 @@ div#unsupported {
   font-size: 13px;
 }
 
+body.is-in_ie_compatibility_mode div#unsupported {
+  background-color: #fffee0;
+
+  border: 2px dotted #f1f181;
+  margin: 5px;
+  padding: 5px;
+
+  font-size: 13px;
+}
+
 
 
 /*** Login Form ***/
@@ -833,7 +843,7 @@ div.col-image img {
 
 div.cell-wrap {
   float: left;
-  width: 205px;
+  width: 248px;
 }
 
 

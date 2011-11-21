@@ -170,12 +170,18 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
 
       if ($cf['agent']['major_version'] < 8){
         $custom_css = array();
-        $custom_css['data'] = $cf['theme']['path'] . '/css/ie_old.css';
         $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 3);
+        $custom_css['data'] = $cf['theme']['path'] . '/css/ie_old.css';
         $cf['is']['unsupported'] = TRUE;
 
         //$cf['css'][] = $custom_css;
         drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
+
+        if ($cf['agent']['major_version'] == 7){
+          if (preg_match("@; Trident/@", $cf['agent']['raw']) > 0){
+            $cf['is']['in_ie_compatibility_mode'] = TRUE;
+          }
+        }
       }
 
       break;
@@ -215,7 +221,12 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   }
 
   if ($cf['is']['unsupported']){
-    $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
+    if ($cf['is']['in_ie_compatibility_mode']){
+      $cf['is_data']['unsupported']['message'] = t("You are running Internet Explorer in compatibility mode. To improve your experience using this website, please <a href='@alternate_browser_url'>turn off compatibility mode</a>.", array('@alternate_browser_url' => "http://www.sevenforums.com/tutorials/1196-internet-explorer-compatibility-view-turn-off.html#post_message_10408"));
+    }
+    else {
+      $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['machine_name'], '@alternate_browser_url' => "/supported_browsers"));
+    }
   }
 }
 
