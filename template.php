@@ -114,6 +114,11 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   $msu['meta']['name']['description'] = 'McNeese State University Website';
   $msu['meta']['name']['distribution'] = 'web';
 
+  foreach (array('in_ie_compatibility_mode') as $key){
+    $cf['is'][$key] = FALSE;
+    $cf['is_data'][$key] = array();
+  }
+
   if (!$cf['is']['logged_in']){
     if ($cf['is']['front']){
       $date_value = strtotime('+1 hour', $cf['request']);
