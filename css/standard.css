@@ -12,14 +12,10 @@
   left: 0px;
 }
 
-body {
+body.mcneese_drupal-body,
+body.maintenance_mode-body {
   font-family: Arial, Helvetica, sans-serif;
 
-  background-color: #ffffff;
-}
-
-body#mcneese_drupal-body,
-body#maintenance_mode-body {
   background-color: #dadada;
 }
 
@@ -73,7 +69,7 @@ div#mcneese_drupal-title div.add-or-remove-shortcuts > a > span.icon {
   margin-left: 0;
 }
 
-body#mcneese_drupal-body.maintenance-page div#mcneese_drupal-page div#mcneese_drupal-sidebar_first {
+body.mcneese_drupal-body.maintenance-page div#mcneese_drupal-page div#mcneese_drupal-sidebar_first {
   float: left;
 
   background-color: #efefef;
@@ -83,21 +79,21 @@ body#mcneese_drupal-body.maintenance-page div#mcneese_drupal-page div#mcneese_dr
   border: 1px outset;
 }
 
-body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_left,
-body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_right {
+body.mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_left,
+body.mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_right {
   background-color: #efefef;
 
   padding: 15px;
   border: 1px outset;
 }
 
-body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_left {
+body.mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_left {
   float: left;
 
   margin: 0 25px 25px 0;
 }
 
-body#mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_right {
+body.mcneese_drupal-body div#mcneese_drupal-page div#mcneese_drupal-sidebar_right {
   float: right;
 
   margin: 0 0 25px 25px;
@@ -1305,4 +1301,3 @@ ul.tabs.secondary li.active a {
 ul.tabs.secondary.views-ui-render-add-view-button-processed-processed li.active a {
   color: #000000;
 }
-

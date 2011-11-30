@@ -518,27 +518,18 @@ div#mcneese_drupal-content_bottom {
 
 
 /*** Overlay Settings ***/
-body#mcneese_drupal-body.mcneese_drupal-in_overlay div#overlay-content {
+body.mcneese_drupal-body.mcneese_drupal-in_overlay div#overlay-content {
   background-color: #336699;
 }
 
-body#mcneese_drupal-body.mcneese_drupal-in_overlay div#mcneese_drupal-undercontent {
+body.mcneese_drupal-body.mcneese_drupal-in_overlay div#mcneese_drupal-undercontent {
   color: #ffffff;
   text-shadow: 1px 1px 1px #000000;
 }
 
 
 
-/*** OLD ***/
-body#mcneese_drupal-body,
-div#mcneese_drupal-page div#overlay-content {
-  background-color: #dadada;
-}
-
-div#mcneese_drupal-page {
-  height: 100%;
-}
-
+/*** Content ***/
 div#mcneese_drupal-content_region {
   display: block;
   min-height: 400px;

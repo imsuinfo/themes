@@ -10,7 +10,7 @@
   <?php print(cf_theme_generate_headers($cf)); ?>
   <!--(end_head)-->
 </head>
-<body id="mcneese_drupal-body" class="<?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
+<body id="mcneese_drupal-body" class="mcneese_drupal-body <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
 <?php  if ($cf['is']['overlay']){ ?><div id="mcneese_drupal-skip_nav" class="clearfix">
     <!--(begin_skipnav)-->
     <div id="mcneese_drupal-skip_nav-list">
