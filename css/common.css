@@ -967,3 +967,11 @@ div.dev-query {
   -webkit-border-bottom-right-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
 }
+
+
+
+/*** Sidenote Specific Styles ***/
+div.sidenote .sidenote-node_id-label,
+div.sidenote .sidenote-node_id-number {
+  font-weight: bold;
+}

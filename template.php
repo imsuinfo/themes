@@ -30,7 +30,7 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
   cf_theme_render_variables($vars, $keys_to_render);
 
-  $keys_to_render = array('header', 'sub_header', 'help', 'subtitle', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  $keys_to_render = array('header', 'sub_header', 'help', 'sidenote', 'sidebar_left', 'sidebar_right', 'content', 'footer');
   cf_theme_render_variables($vars, $keys_to_render);
 
   // always show the following fields
@@ -89,7 +89,7 @@ function mcneese_drupal_preprocess_page(&$vars) {
   $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
   cf_theme_render_variables($vars, $keys_to_render);
 
-  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'subtitle', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'sidenote', 'sidebar_left', 'sidebar_right', 'content', 'footer');
   cf_theme_render_variables($vars, $keys_to_render, 'page');
 
   // always show the following fields
@@ -223,6 +223,15 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
       }
 
       break;
+  }
+
+  // FIXME: this should be moved to cf_www
+  // If the page is part of a group content type, then display the group_image view.
+  if ($cf['is']['node']) {
+    if ($cf['is']['logged_in'] && is_object($cf['is_data']['node']['object'])){
+      $cf['show']['sidenote'] = TRUE;
+      $cf['data']['sidenote']['content'] = '<span class="sidenote-node_id-label">' . t("Node") . '</span> <span class="sidenote-node_id-number">' . check_plain($cf['is_data']['node']['object']->nid) . '</span>';
+    }
   }
 
   if ($cf['is']['unsupported']){

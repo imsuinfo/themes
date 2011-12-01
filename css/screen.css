@@ -448,7 +448,7 @@ div#mcneese_drupal-breadcrumb {
 }
 
 div#mcneese_drupal-breadcrumb div.breadcrumb,
-div#mcneese_drupal-breadcrumb div.subtitle {
+div#mcneese_drupal-breadcrumb div.sidenote {
   display: inline-block;
 
   padding-bottom: 0;
@@ -458,7 +458,7 @@ div#mcneese_drupal-breadcrumb div.breadcrumb {
   padding-left: 3px;
 }
 
-div#mcneese_drupal-breadcrumb div.subtitle {
+div#mcneese_drupal-breadcrumb div.sidenote {
   float: right;
 
   padding-right: 3px;

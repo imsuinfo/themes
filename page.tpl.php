@@ -88,11 +88,18 @@
         </div>
       <?php } ?>
 
-      <?php if ($cf['show']['breadcrumb'] || $cf['show']['page']['subtitle']){ ?>
+      <?php if ($cf['show']['breadcrumb'] || $cf['show']['sidenote']){ ?>
         <div id="mcneese_drupal-breadcrumb">
-          <?php if ($cf['show']['breadcrumb']){ print($breadcrumb); } ?>
-          <?php if ($cf['show']['page']['subtitle']){ ?>
-            <div class="subtitle"><?php print($page['subtitle']);?></div>
+          <?php if ($cf['show']['breadcrumb']){ ?>
+            <!--(begin_breadcrumb)-->
+            <?php print($breadcrumb); ?>
+            <!--(end_breadcrumb)-->
+          <?php } ?>
+
+          <?php if ($cf['show']['sidenote']){ ?>
+            <!--(begin_sidenote)-->
+            <div class="sidenote"><?php print($cf['data']['sidenote']['content']); ?></div>
+            <!--(end_sidenote)-->
           <?php } ?>
         </div>
       <?php } ?>
