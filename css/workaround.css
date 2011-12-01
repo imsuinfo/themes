@@ -31,6 +31,8 @@
   text-align: center;
 }
 
+
+
 /**
  * Workaround calendar coloring issue
  * The default color #f4f4f4 is perceived to be too bright on some screens.
@@ -49,6 +51,16 @@
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
   background: none repeat scroll 0 0 #6384b8;
   color: #ffffff;
+}
+
+
+
+/**
+ * Workaround calendar dayview display issue
+ * There is a 'cutoff' field that provides no apparent functionality and makes the look and feel ugly, so remove it.
+ */
+.calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
+  display: none;
 }
 
 
@@ -75,6 +87,8 @@ div.view div.date-nav-wrapper div.date-nav ul.pager {
 
   margin: 0;
 }
+
+
 
 /**
  * Fix padding issues on calendar buttons
