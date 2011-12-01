@@ -86,10 +86,10 @@ function mcneese_drupal_preprocess_page(&$vars) {
   $vars['primary_local_tasks']   = menu_primary_local_tasks();
   $vars['secondary_local_tasks'] = menu_secondary_local_tasks();
 
-  $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
+  $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links', 'sidenote');
   cf_theme_render_variables($vars, $keys_to_render);
 
-  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'sidenote', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'sidebar_left', 'sidebar_right', 'content', 'footer');
   cf_theme_render_variables($vars, $keys_to_render, 'page');
 
   // always show the following fields
