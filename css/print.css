@@ -10,7 +10,8 @@ div#mcneese_drupal-undercontent,
 div#mcneese_drupal-breadcrumb,
 form div.vertical-tabs,
 form div#edit-actions,
-div#block-workbench-block {
+div#block-workbench-block,
+div#block-content_easement_unpublished_message-block {
   display: none;
 }
 
