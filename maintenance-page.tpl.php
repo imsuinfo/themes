@@ -125,11 +125,14 @@
         </div>
       <?php } ?>
 
-      <?php if ($cf['show']['breadcrumb'] || $cf['show']['subtitle']){ ?>
+      <?php if ($cf['show']['breadcrumb'] || $cf['show']['sidenote']){ ?>
         <div id="mcneese_drupal-breadcrumb">
           <?php if ($cf['show']['breadcrumb']){ print($breadcrumb); } ?>
-          <?php if ($cf['show']['subtitle']){ ?>
-            <div class="subtitle"><?php print($subtitle);?></div>
+
+          <?php if ($cf['show']['sidenote']){ ?>
+            <!--(begin_sidenote)-->
+            <div class="sidenote"><?php print($cf['data']['sidenote']['content']); ?></div>
+            <!--(end_sidenote)-->
           <?php } ?>
         </div>
       <?php } ?>
