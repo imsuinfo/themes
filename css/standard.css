@@ -756,6 +756,10 @@ ul.tips li {
   margin: 2px 0 2px 1px;
 }
 
+.error > div.description {
+  color: #662222;
+}
+
 
 
 /*** ELEMENTS ***/
