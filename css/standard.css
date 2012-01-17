@@ -802,6 +802,7 @@ ul.tabs.secondary li a {
 input#edit-submit.form-preview,
 input.form-preview,
 input#preview-submit,
+input#edit-reset-cache,
 input#edit-submit.form-undelete,
 input.form-undelete,
 input#edit-preview,
