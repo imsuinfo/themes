@@ -984,3 +984,20 @@ div.sidenote .sidenote-node_id-number {
 .calendar-calendar .day-view .full td.single-day div.dayview {
   background-color: #f6f8b8;
 }
+
+
+
+/*** Development Specific Styles ***/
+div#block-menu-devel {
+  font-size: 12px;
+
+  background-color: #fff4ca;
+}
+
+div#block-menu-devel h2 {
+  display: none;
+}
+
+div#block-menu-devel ul li {
+  display: inline-block;
+}
