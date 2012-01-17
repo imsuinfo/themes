@@ -784,6 +784,7 @@ a#edit-cancel {
   background: url(../images/button-grey.png) no-repeat scroll center top transparent;
 }
 
+input#edit-linkit-insert,
 input.form-submit,
 input#edit-submit {
   background: url(../images/button-yellow.png) no-repeat scroll center top transparent;
@@ -820,7 +821,10 @@ ul.tabs.secondary li a:visited,
 input.form-submit,
 a.button,
 a.button:visited,
+input#edit-linkit-insert,
+input#edit-linkit-insert:visited,
 a#linkit-cancel,
+a#linkit-cancel:visited,
 a#edit-cancel,
 a#edit-cancel:visited,
 input#preview-submit,
@@ -863,6 +867,7 @@ ul.tabs.secondary li a.active:visited {
 a.button:active,
 input.form-submit:active,
 input.form-delete:active,
+input#edit-linkit-insert:active,
 input#edit-submit:active,
 input#edit-preview:active,
 input#edit-delete:active,
@@ -879,6 +884,7 @@ ul.tabs.secondary li a.active:active,
 a.button:focus,
 input.form-submit:focus,
 input.form-delete:focus,
+input#edit-linkit-insert:focus,
 input#edit-submit:focus,
 input#edit-preview:focus,
 input#edit-delete:focus,
@@ -895,6 +901,7 @@ ul.tabs.secondary li a.active:focus,
 a.button:hover,
 input.form-submit:hover,
 input.form-delete:hover,
+input#edit-linkit-insert:hover,
 input#edit-submit:hover,
 input#edit-preview:hover,
 input#edit-delete:hover,
@@ -922,6 +929,7 @@ ul.tabs.secondary li a:hover {
 a.button:active,
 input.form-submit:active,
 input.form-delete:active,
+input#edit-linkit-insert:active,
 input#edit-submit:active,
 input#edit-preview:active,
 input#edit-delete:active,
@@ -1309,4 +1317,8 @@ ul.tabs.secondary li.active a {
 
 ul.tabs.secondary.views-ui-render-add-view-button-processed-processed li.active a {
   color: #000000;
+}
+
+input#edit-linkit-insert {
+  margin-top: 8px;
 }
