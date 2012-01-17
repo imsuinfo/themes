@@ -976,6 +976,11 @@ div.sidenote .sidenote-node_id-number {
   font-weight: bold;
 }
 
+div.sidenote .sidenote-item_wrapper {
+  display: inline-block;
+  padding: 0 2px;
+}
+
 
 
 /*** Calendar Specific Styles ***/
