@@ -29,6 +29,7 @@ regions[sidebar_right] = Sidebar Right
 regions[content]     = Content
 regions[footer]      = Footer
 regions[page_bottom] = Page Bottom
+regions[hidden]      = Hidden
 
 regions[sidebar_first] = First Sidebar
 regions_hidden[] = sidebar_first
