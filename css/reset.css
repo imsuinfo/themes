@@ -78,3 +78,8 @@ BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
   h4, h5, h6    { page-break-after: avoid }
   ul, ol, dl    { page-break-before: avoid }
 }
+
+/* html5 block tags */
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
