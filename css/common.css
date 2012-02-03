@@ -1006,3 +1006,11 @@ div#block-menu-devel h2 {
 div#block-menu-devel ul li {
   display: inline-block;
 }
+
+
+
+/*** Provide a re-usable text centering style for utilization of dynamic code such as a view ***/
+.center-align-text,
+.center_align-text {
+  text-align: center;
+}
