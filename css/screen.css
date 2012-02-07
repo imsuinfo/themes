@@ -262,9 +262,8 @@ div#block-search-form form#search-block-form div.form-actions {
   max-height: 24px;
   overflow: hidden;
 
-  -moz-border-radius: 0;
+  border-radius: 0;
   -moz-outline-radius: 0;
-  -webkit-border-radius: 0;
 }
 
 
@@ -335,11 +334,8 @@ div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.cont
 
   padding: 10px 9px 0px 9px;
 
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 div#mcneese_drupal-header-blocks div#block-menu-menu-primary-navigation div.content ul.menu li a:focus,
@@ -368,11 +364,8 @@ div#mcneese_drupal-sub_header-blocks div#block-menu-menu-secondary-navigation {
   min-height: 25px;
   max-height: 25px;
 
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   margin-bottom: 5px;
 }
@@ -493,8 +486,7 @@ div#mcneese_drupal-breadcrumb .views-field-field-event-datetime .field-content {
   padding-right: 3px;
   margin: 0px 2px;
 
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
 }
 
 
@@ -508,11 +500,8 @@ div#mcneese_drupal-content_bottom {
   padding-left: 5px;
   padding-right: 5px;
 
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
-
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
