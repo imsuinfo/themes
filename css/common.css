@@ -343,7 +343,7 @@ div.calendar-standard div.calendar-calendar td.single-day div.dayview a,
 div.calendar-standard div.calendar-calendar td.single-day div.dayview a:visited,
 div.calendar-standard div.calendar-calendar td.single-day div.weekview a,
 div.calendar-standard div.calendar-calendar td.single-day div.weekview a:visited {
-  color: #002080;
+  color: #ffffff;
 }
 
 div.calendar-standard div.calendar-calendar td.single-day div.monthview a:focus,
@@ -355,7 +355,7 @@ div.calendar-standard div.calendar-calendar td.single-day div.dayview a:active,
 div.calendar-standard div.calendar-calendar td.single-day div.weekview a:focus,
 div.calendar-standard div.calendar-calendar td.single-day div.weekview a:hover,
 div.calendar-standard div.calendar-calendar td.single-day div.weekview a:active {
-  color: #7f0000;
+  color: #ffee00;
 }
 
 div.calendar-standard > div.view-header > div.date-nav-wrapper > div.date-nav {
@@ -973,10 +973,115 @@ div.sidenote .sidenote-item_wrapper {
 
 
 /*** Calendar Specific Styles ***/
-.calendar-calendar .month-view .full td.single-day div.monthview,
-.calendar-calendar .week-view .full td.single-day div.weekview,
-.calendar-calendar .day-view .full td.single-day div.dayview {
-  background-color: #f6f8b8;
+div#content .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+div#content .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+  display: block;
+  position: relative;
+
+  width: auto;
+  left: 0;
+  padding: 0 2px;
+}
+
+div#content .calendar-calendar .month-view .full td.multi-day div.monthview,
+div#content .calendar-calendar .week-view .full td.multi-day div.weekview,
+div#content .calendar-calendar .day-view .full td.multi-day div.dayview,
+div#content .calendar-calendar .month-view .full td.single-day div.monthview,
+div#content .calendar-calendar .week-view .full td.single-day div.weekview,
+div#content .calendar-calendar .day-view .full td.single-day div.dayview {
+  height: auto;
+  line-height: 1.7em;
+  margin: 1px 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+div#content .calendar-calendar .day-view .full td .inner div.calendar div,
+div#content .calendar-calendar .day-view .full td .inner div.calendar div a {
+  margin: 0;
+}
+
+div#content .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
+  display: none;
+}
+
+div#content .calendar-calendar td .calendar div.calendar {
+  padding: 0;
+}
+
+div#content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+div#content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+div#content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+div#content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  padding: 0;
+}
+
+div#content .calendar-calendar td {
+  color: #000000;
+}
+
+div#content .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+div#content .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+  padding: 0;
+}
+
+div#content .calendar > .contents > a {
+  display: block;
+
+  padding: 3px;
+}
+
+div#content .calendar > .contents > a,
+div#content .calendar > .contents > a:visited {
+  background-color: #6384b8;
+}
+
+div#content .calendar > .contents > .event-255,
+div#content .calendar > .contents > .event-249,
+div#content .calendar > .contents > .event-252,
+div#content .calendar > .contents > .event-255:visited,
+div#content .calendar > .contents > .event-249:visited,
+div#content .calendar > .contents > .event-252:visited {
+  background-color: #e6e993;
+}
+
+div#content .calendar > .contents > .event-255,
+div#content .calendar > .contents > .event-249,
+div#content .calendar > .contents > .event-252,
+div#content .calendar > .contents > .event-255:visited,
+div#content .calendar > .contents > .event-249:visited,
+div#content .calendar > .contents > .event-252:visited {
+  color: #002080;
+}
+
+div#content .calendar > .contents > .event-255:focus,
+div#content .calendar > .contents > .event-249:focus,
+div#content .calendar > .contents > .event-252:focus,
+div#content .calendar > .contents > .event-255:active,
+div#content .calendar > .contents > .event-249:active,
+div#content .calendar > .contents > .event-252:active,
+div#content .calendar > .contents > .event-255:hover,
+div#content .calendar > .contents > .event-249:hover,
+div#content .calendar > .contents > .event-252:hover {
+  color: #5f0000;
+}
+
+div#content .calendar > .contents > .event-256,
+div#content .calendar > .contents > .event-250,
+div#content .calendar > .contents > .event-256:visited,
+div#content .calendar > .contents > .event-250:visited {
+  background-color: #9c4f4b;
+}
+
+div#content .calendar > .contents > .event-292,
+div#content .calendar > .contents > .event-292:visited {
+  background-color: #418e38;
+}
+
+div#content .calendar > .contents > .event-399,
+div#content .calendar > .contents > .event-399:visited {
+  background-color: #975700;
 }
 
 
