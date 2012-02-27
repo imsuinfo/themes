@@ -1108,3 +1108,10 @@ div#block-menu-devel ul li {
 .center_align-text {
   text-align: center;
 }
+
+
+
+/*** Provide date of event styling on event content types ***/
+div#content div.node-content > .field-group-format.group_event_date {
+  margin-bottom: 12px;
+}
