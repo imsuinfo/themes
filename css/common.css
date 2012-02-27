@@ -1112,6 +1112,10 @@ div#block-menu-devel ul li {
 
 
 /*** Provide date of event styling on event content types ***/
-div#content div.node-content > .field-group-format.group_event_date {
+div#content div.node-content > .field-group-format.group-event-date > h3 {
+  font-size: 12px;
+}
+
+div#content div.node-content > .field-group-format.group-event-date {
   margin-bottom: 12px;
 }
