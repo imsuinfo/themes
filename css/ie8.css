@@ -1,12 +1,12 @@
 /** IE8 does not properly use width: auto and fails to make the width of the list work properly **/
 li.menu-link-name-menu-primary-navigation {
-  min-width: 115px;
+  min-width: 110px;
   margin-left: 1px;
   margin-right: 1px;
 }
 
 li.menu-link-name-menu-primary-navigation a {
-  min-width: 115px;
+  min-width: 110px;
   text-align: center;
 }
 
