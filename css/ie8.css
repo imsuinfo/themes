@@ -10,6 +10,13 @@ li.menu-link-name-menu-primary-navigation a {
   text-align: center;
 }
 
+/** Alumni, Donors, & Friends is longer than 100px, so increase the min-width **/
+li.id-menu-link-menu-primary-navigation-1273,
+li.id-menu-link-menu-primary-navigation-1273 a {
+  min-width: 160px;
+}
+
+
 /** IE8 does not properly handle width/height properties of images, this causes the images to fall outside of the parent block as if it were set to float **/
 div#content img {
   display: inline-block;
