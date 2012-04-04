@@ -152,7 +152,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
           if ($matches[1] <= 1 && $matches[2] <= 7){
             $custom_css = array();
             $custom_css['data'] = $cf['theme']['path'] . '/css/moz_old.css';
-            $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
+            $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
             $cf['is']['unsupported'] = TRUE;
 
             //$cf['css'][] = $custom_css;
@@ -167,18 +167,20 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">';
 
       // enforce ie8 compatibility mode
-      $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=8';
+      $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=9; IE=8';
 
-      $custom_css = array();
-      $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
-      $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
+      if ($cf['agent']['major_version'] <= 8){
+        $custom_css = array();
+        $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
+        $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
 
-      //$cf['css'][] = $custom_css;
-      drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
+        //$cf['css'][] = $custom_css;
+        drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
+      }
 
       if ($cf['agent']['major_version'] < 8){
         $custom_css = array();
-        $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 3);
+        $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 3, 'media' => 'all');
         $custom_css['data'] = $cf['theme']['path'] . '/css/ie_old.css';
         $cf['is']['unsupported'] = TRUE;
 
@@ -198,7 +200,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     case 'midori':
       $custom_css = array();
       $custom_css['data'] = $cf['theme']['path'] . '/css/webkit.css';
-      $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
+      $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
 
       //$cf['css'][] = $custom_css;
       drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
@@ -210,7 +212,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
 
           $custom_css = array();
           $custom_css['data'] = $cf['theme']['path'] . '/css/webkit.css';
-          $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2);
+          $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
 
           //$cf['css'][] = $custom_css;
           drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
@@ -218,7 +220,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
         case 'trident':
           $custom_css = array();
           $custom_css['data'] = $cf['theme']['path'] . '/css/ie8.css';
-          $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 2);
+          $custom_css['options'] = array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
 
           //$cf['css'][] = $custom_css;
           drupal_add_css($custom_css['data'], (!empty($custom_css['options']) ? $custom_css['options'] : NULL));
