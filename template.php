@@ -268,5 +268,5 @@ function mcneese_drupal_breadcrumb($variables) {
   $output .= '<!--REPLACE_CUSTOM_DATA-->';
   $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
 
-    return $output;
+  return $output;
 }
