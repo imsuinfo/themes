@@ -24,7 +24,7 @@
         </div>
 
         <div id="mcneese_drupal-header-horizontal_ruler"></div>
-  
+
         <div id='mcneese_drupal-sub_header'>
           <!--(begin_sub_header)-->
           <?php if ($cf['show']['page']['sub_header']){ ?>
@@ -90,13 +90,19 @@
 
       <?php if ($cf['show']['breadcrumb'] || $cf['show']['sidenote']){ ?>
         <div id="mcneese_drupal-breadcrumb">
-          <?php if ($cf['show']['breadcrumb']){ ?>
+          <?php if ($cf['show']['breadcrumb']) { ?>
             <!--(begin_breadcrumb)-->
-            <?php print($breadcrumb); ?>
+            <?php if ($cf['show']['sidenote']) { ?>
+              <?php
+                print(preg_replace('|<!--REPLACE_CUSTOM_DATA-->|i', '<!--(begin_sidenote)--><div class="sidenote">' . $cf['data']['sidenote']['content'] . '</div><!--(end_sidenote)-->', $breadcrumb));
+              ?>
+            <?php } else { ?>
+              <?php
+                print(preg_replace('|<!--REPLACE_CUSTOM_DATA-->|i', '', $breadcrumb));
+              ?>
+            <?php } ?>
             <!--(end_breadcrumb)-->
-          <?php } ?>
-
-          <?php if ($cf['show']['sidenote']){ ?>
+          <?php } else { ?>
             <!--(begin_sidenote)-->
             <div class="sidenote"><?php print($cf['data']['sidenote']['content']); ?></div>
             <!--(end_sidenote)-->

@@ -417,7 +417,7 @@ div#mcneese_drupal-breadcrumb {
 
 div#mcneese_drupal-breadcrumb div.breadcrumb,
 div#mcneese_drupal-breadcrumb div.sidenote {
-  display: inline-block;
+  display: block;
 
   padding-bottom: 0;
 }
