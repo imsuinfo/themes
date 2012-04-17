@@ -1119,3 +1119,30 @@ div#content div.node-content > .field-group-format.group-event-date > h3 {
 div#content div.node-content > .field-group-format.group-event-date {
   margin-bottom: 12px;
 }
+
+
+
+/*** Policy-specific theme tweaks ***/
+div#content .node-ie-policy .field-name-field-authority,
+div#content .node-ie-policy .field-name-field-date-enacted,
+div#content .node-ie-policy .field-name-field-fs-handbook,
+div#content .node-ie-policy .field-name-field-authority {
+  margin: 6px 0;
+}
+
+div#content .node-ie-policy .field-name-field-authority > .field-label,
+div#content .node-ie-policy .field-name-field-date-enacted > .field-label,
+div#content .node-ie-policy .field-name-field-fs-handbook > .field-label,
+div#content .node-ie-policy .field-name-field-authority > .field-label {
+  display: inline-block;
+  float: none;
+  vertical-align: baseline;
+}
+
+div#content .node-ie-policy .field-name-field-authority > .field-item,
+div#content .node-ie-policy .field-name-field-date-enacted > .field-item,
+div#content .node-ie-policy .field-name-field-fs-handbook > .field-item,
+div#content .node-ie-policy .field-name-field-authority > .field-item {
+  display: inline-block;
+  vertical-align: baseline;
+}
