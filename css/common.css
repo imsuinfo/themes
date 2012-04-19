@@ -769,158 +769,49 @@ div.drupal_content div.block-inner .calendar-hide-calendar-links ul.calendar-lin
 
 
 /*** Content Specific Style: csf ***/
-div.drupal_content.alias-csf ul {
+html#ckeditor-wysiwygarea body .csf_wrap ul,
+div.drupal_content .csf_wrap ul {
   list-style: none outside none;
 }
 
-
-
-div.drupal_content.alias-csf-wrap {
+html#ckeditor-wysiwygarea body .csf_wrap,
+div.drupal_content .csf_wrap {
   background-color: #ffffff;
   height: 453px;
   margin: 0 auto;
   width: 745px;
 }
 
-
-
-div.drupal_content.alias-csf a:hover,
-div.drupal_content.alias-csf a:hover {
+html#ckeditor-wysiwygarea body .csf_wrap a:hover,
+div.drupal_content .csf_wrap a:hover {
   color: #0066FF;
 }
 
-
-
-div.drupal_content.alias-csf li {
+html#ckeditor-wysiwygarea body .csf_wrap li,
+div.drupal_content .csf_wrap li {
   display: inline-block;
   margin-top: 8px;
   text-align: center;
   width: 149px;
 }
 
-
-
-div.drupal_content.alias-csf li a {
+html#ckeditor-wysiwygarea body .csf_wrap li a,
+div.drupal_content .csf_wrap li a {
   color: #333333;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 12px;
   text-decoration: none;
 }
 
-
-
-div.drupal_content.alias-csf li a img {
+html#ckeditor-wysiwygarea body .csf_wrap li a img,
+div.drupal_content .csf_wrap li a img {
   border-style: none;
   vertical-align: bottom;
 }
 
-
-
-div.drupal_content.alias-csf li a:hover img {
+html#ckeditor-wysiwygarea body .csf_wrap li a:hover img,
+div.drupal_content .csf_wrap li a:hover img {
   background-color: #f3f3f3;
-}
-
-
-
-div.col-image {
-  float: left;
-  height: 200px;
-  vertical-align: top;
-  width: 130px;
-}
-
-
-
-div.col-image img {
-  height: 130px;
-  width: 130px;
-}
-
-
-
-div.cell-wrap {
-  float: left;
-  width: 248px;
-}
-
-
-
-/*** Content Specific Style: csf_desktops ***/
-/*** Content Specific Style: csf_notebooks ***/
-/*** Content Specific Style: csf_tablets ***/
-/*** Content Specific Style: csf_printers ***/
-/*** Content Specific Style: csf_macpro ***/
-/*** Content Specific Style: csf_imac ***/
-/*** Content Specific Style: csf_macmini ***/
-/*** Content Specific Style: csf_macbookpro ***/
-div.drupal_content.alias-csf_desktops table th,
-div.drupal_content.alias-csf_notebooks table th,
-div.drupal_content.alias-csf_tablets table th,
-div.drupal_content.alias-csf_printers table th,
-div.drupal_content.alias-csf_macpro table th,
-div.drupal_content.alias-csf_imac table th,
-div.drupal_content.alias-csf_macmini table th,
-div.drupal_content.alias-csf_macbookpro table th  {
-  background: none repeat scroll 0 0 #ffffff;
-  color: #333333;
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: uppercase;s
-}
-
-
-
-div.drupal_content.alias-csf_desktops table td,
-div.drupal_content.alias-csf_notebooks table td,
-div.drupal_content.alias-csf_tablets table td,
-div.drupal_content.alias-csf_printers table td,
-div.drupal_content.alias-csf_macpro table td,
-div.drupal_content.alias-csf_imac table td,
-div.drupal_content.alias-csf_macmini table td,
-div.drupal_content.alias-csf_macbookpro table td {
-  padding: 8px;
-}
-
-
-
-div.drupal_content.alias-csf_desktops table tr,
-div.drupal_content.alias-csf_notebooks table tr,
-div.drupal_content.alias-csf_tablets table tr,
-div.drupal_content.alias-csf_printers table tr,
-div.drupal_content.alias-csf_macpro table tr,
-div.drupal_content.alias-csf_imac table tr,
-div.drupal_content.alias-csf_macmini table tr,
-div.drupal_content.alias-csf_macbookpro table tr {
-  font-family: Arial,Helvetica,sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-}
-
-
-
-div.drupal_content.alias-csf_desktops tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_notebooks tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_tablets tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_printers tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_macpro tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_imac tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_macmini tbody tr:nth-of-type(2n),
-div.drupal_content.alias-csf_macbookpro tbody tr:nth-of-type(2n) {
-  background: none repeat scroll 0 0 #eeeeee;
-}
-
-
-
-div.drupal_content.alias-csf_desktops tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_notebooks tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_tablets tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_printers tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_macpro tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_imac tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_macmini tbody tr:nth-of-type(2n+1),
-div.drupal_content.alias-csf_macbookpro tbody tr:nth-of-type(2n+1) {
-  background: none repeat scroll 0 0 #d1d1d1;
 }
 
 
