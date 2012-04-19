@@ -836,6 +836,177 @@ div.drupal_content div.block-inner .box-text-center {
 
 
 
+/*** Content Specific Style: color_box ***/
+html#ckeditor-wysiwygarea body .color_box,
+div.drupal_content .color_box {
+  border: 1px solid;
+  padding: 2px 4px;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-grey,
+div.drupal_content .color_box.color-grey {
+  border-color: #a9a9a9;
+  background-color: #eaeaea;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-grey.emphasis-subtle,
+div.drupal_content .color_box.color-grey.emphasis-subtle {
+  border-color: #bfbfbf;
+  background-color: #f7f7f7;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-grey.emphasis-obvious,
+div.drupal_content .color_box.color-grey.emphasis-obvious {
+  border-color: #8a8a8a;
+  background-color: #dbdbdb;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-yellow,
+div.drupal_content .color_box.color-yellow {
+  border-color: #edeebc;
+  background-color: #feffc9;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-yellow.emphasis-subtle,
+div.drupal_content .color_box.color-yellow.emphasis-subtle {
+  border-color: #ededd3;
+  background-color: #feffe3;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-yellow.emphasis-obvious,
+div.drupal_content .color_box.color-yellow.emphasis-obvious {
+  border-color: #edeea4;
+  background-color: #feffb0;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-blue,
+div.drupal_content .color_box.color-blue {
+  border-color: #bcc3ee;
+  background-color: #c9d1ff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-blue.emphasis-subtle,
+div.drupal_content .color_box.color-blue.emphasis-subtle {
+  border-color: #d3d7ed;
+  background-color: #e3e7ff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-blue.emphasis-obvious,
+div.drupal_content .color_box.color-blue.emphasis-obvious {
+  border-color: #a4afee;
+  background-color: #b0bcff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-red,
+div.drupal_content .color_box.color-red {
+  border-color: #eebfb7;
+  background-color: #ffccc4;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-red.emphasis-subtle,
+div.drupal_content .color_box.color-red.emphasis-subtle {
+  border-color: #eed8d4;
+  background-color: #ffe7e3;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-red.emphasis-obvious,
+div.drupal_content .color_box.color-red.emphasis-obvious {
+  border-color: #eeafa4;
+  background-color: #ffbab0;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-green,
+div.drupal_content .color_box.color-green {
+  border-color: #b7eeb7;
+  background-color: #c4ffc4;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-green.emphasis-subtle,
+div.drupal_content .color_box.color-green.emphasis-subtle {
+  border-color: #d4eed4;
+  background-color: #e3ffe3;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-green.emphasis-obvious,
+div.drupal_content .color_box.color-green.emphasis-obvious {
+  border-color: #a4eea4;
+  background-color: #b0ffb0;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-orange,
+div.drupal_content .color_box.color-orange {
+  border-color: #eee2bc;
+  background-color: #fff0c4;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-orange.emphasis-subtle,
+div.drupal_content .color_box.color-orange.emphasis-subtle {
+  border-color: #eee7d4;
+  background-color: #fff8e3;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-orange.emphasis-obvious,
+div.drupal_content .color_box.color-orange.emphasis-obvious {
+  border-color: #eedba4;
+  background-color: #ffebb0;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-purple,
+div.drupal_content .color_box.color-purple {
+  border-color: #dbb7ee;
+  background-color: #eac4ff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-purple.emphasis-subtle,
+div.drupal_content .color_box.color-purple.emphasis-subtle {
+  border-color: #e5d4ee;
+  background-color: #f5e3ff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-purple.emphasis-obvious,
+div.drupal_content .color_box.color-purple.emphasis-obvious {
+  border-color: #d5a4ee;
+  background-color: #e3b0ff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-teal,
+div.drupal_content .color_box.color-teal {
+  border-color: #b7eeed;
+  background-color: #c4fffe;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-teal.emphasis-subtle,
+div.drupal_content .color_box.color-teal.emphasis-subtle {
+  border-color: #d4eeee;
+  background-color: #e3ffff;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-teal.emphasis-obvious,
+div.drupal_content .color_box.color-teal.emphasis-obvious {
+  border-color: #a4eeed;
+  background-color: #b0fffe;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-pink,
+div.drupal_content .color_box.color-pink {
+  border-color: #eebcea;
+  background-color: #ffc4fa;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-pink.emphasis-subtle,
+div.drupal_content .color_box.color-pink.emphasis-subtle {
+  border-color: #eed4ec;
+  background-color: #ffe3fd;
+}
+
+html#ckeditor-wysiwygarea body .color_box.color-pink.emphasis-obvious,
+div.drupal_content .color_box.color-pink.emphasis-obvious {
+  border-color: #eea4e8;
+  background-color: #ffb0f8;
+}
+
+
+
 /*** Module Specific Style: dev-query ***/
 div#block-devel_node_access-dna_node,
 div.dev-query {
