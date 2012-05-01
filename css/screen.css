@@ -496,17 +496,42 @@ div#mcneese_drupal-content_bottom {
   padding: 3px;
   border: 1px solid #065c9f;
   border-top: 0;
+
+  max-height: 58px;
 }
 
 #block-masquerade-masquerade > h2 {
-  font-size: 10px;
+  font-size: 11px;
   color: #ffffff;
-  padding: 4px;
+  padding: 2px;
   margin: 0;
 }
 
-#block-masquerade-masquerade > .content > form > div > .form-item {
-  display: none;
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item,
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item > .description {
+  color: #ffffff;
+
+  margin: 2px;
+  padding: 0;
+}
+
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item a,
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item a:visited {
+  color: #fad703;
+  margin: 0;
+}
+
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item a:focus,
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item a:hover,
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item a:active {
+  color: #ff0000;;
+  text-decoration: underline;
+}
+
+#block-masquerade-masquerade #masquerade-block-1 > div > .form-item #quick_switch_links {
+  display: inline-block;
+
+  margin: 0 8px;
 }
 
 
