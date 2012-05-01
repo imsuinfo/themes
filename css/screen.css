@@ -507,6 +507,10 @@ div#mcneese_drupal-content_bottom {
   margin: 0;
 }
 
+#block-masquerade-masquerade #masquerade-block-1 > div > .container-inline {
+  padding-top: 0;
+}
+
 #block-masquerade-masquerade #masquerade-block-1 > div > .form-item,
 #block-masquerade-masquerade #masquerade-block-1 > div > .form-item > .description {
   color: #ffffff;
