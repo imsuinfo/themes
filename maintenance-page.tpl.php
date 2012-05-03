@@ -45,7 +45,7 @@
             <div id='mcneese_drupal-website_logo'>
               <!--(begin_website_logo)-->
               <a id="mcneese_drupal-website_logo-link" rel="home" title="<?php print(t("Home Page")); ?>" href="/">
-                <img id="mcneese_drupal-website_logo-image" alt="<?php print($cf['at']['human_name']); ?>" title="<?php print($cf['at']['human_name']); ?>" src="<?php print($base_path . path_to_theme());?>/images/web_logo.png">
+                <img id="mcneese_drupal-website_logo-image" alt="<?php print($cf['data']['logo']['alt']); ?>" title="<?php print($cf['data']['logo']['title']); ?>" src="<?php print($cf['data']['logo']['src']);?>">
               </a>
               <!--(end_website_logo)-->
             </div>

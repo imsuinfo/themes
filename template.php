@@ -75,6 +75,8 @@ function mcneese_drupal_preprocess_html(&$vars) {
  * Override or insert variables into the page template.
  */
 function mcneese_drupal_preprocess_page(&$vars) {
+  global $base_path;
+
   if (!is_array($vars)){
     $vars = array();
   }
@@ -98,6 +100,17 @@ function mcneese_drupal_preprocess_page(&$vars) {
   $vars['cf']['show']['messages'] = TRUE;
   $vars['cf']['show']['page']['content'] = TRUE;
   $vars['cf']['show']['page']['footer'] = TRUE;
+
+  // process logo
+  $vars['cf']['data']['logo']['title'] = $vars['cf']['at']['human_name'];
+  $vars['cf']['data']['logo']['alt'] = $vars['cf']['at']['human_name'];
+  $vars['cf']['data']['logo']['src'] = $base_path . path_to_theme() . '/images/web_logo.png';
+
+  if ($vars['cf']['at']['machine_name'] == 'sandbox.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'sandbox') {
+    $vars['cf']['data']['logo']['title'] = 'Sandbox of ' . $vars['cf']['at']['human_name'];
+    $vars['cf']['data']['logo']['alt'] = 'Sandbox of ' . $vars['cf']['at']['human_name'];
+    $vars['cf']['data']['logo']['src'] = $base_path . path_to_theme() . '/images/sandbox.png';
+  }
 }
 
 /**
@@ -136,6 +149,9 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
   else {
     $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
   }
+
+  $cf['show']['logo'] = TRUE;
+  $cf['data']['logo'] = array();
 
   // html 5 doctype
   $cf['agent']['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">';
