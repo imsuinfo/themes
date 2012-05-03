@@ -773,13 +773,13 @@ input#edit-submit.form-cancel,
 input.form-cancel,
 input#edit-cancel,
 a#edit-cancel {
-  background: url(../images/button-grey.png) no-repeat scroll center top transparent;
+  background-color: #cecece;
 }
 
 input#edit-linkit-insert,
 input.form-submit,
 input#edit-submit {
-  background: url(../images/button-yellow.png) no-repeat scroll center top transparent;
+  background-color: #fad703;
 }
 
 ul.tabs.secondary {
@@ -788,7 +788,7 @@ ul.tabs.secondary {
 }
 
 ul.tabs.secondary li a {
-  background: url(../images/button-green.png) no-repeat scroll center top transparent;
+  background-color: #36f256;
 }
 
 input#edit-submit.form-preview,
@@ -799,14 +799,14 @@ input#edit-submit.form-undelete,
 input.form-undelete,
 input#edit-preview,
 input#edit-undelete {
-  background: url(../images/button-blue.png) no-repeat scroll center top transparent;
+  background-color: #6893f8;
 }
 
 input#edit-submit.form-delete,
 input.form-delete,
 input#edit-remove,
 input#edit-delete {
-  background: url(../images/button-red.png) no-repeat scroll center top transparent;
+  background-color: #e86f69;
 }
 
 ul.tabs.secondary li a,
@@ -1142,7 +1142,7 @@ input#edit-cancel--4,
 input#edit-cancel--3,
 input#edit-cancel--2,
 input#edit-cancel--1 {
-  background: url(../images/button-grey.png) no-repeat scroll center top transparent;
+  background-color: #cecece;
 }
 
 input#edit-remove--15,
@@ -1160,20 +1160,20 @@ input#edit-remove--4,
 input#edit-remove--3,
 input#edit-remove--2,
 input#edit-remove--1 {
-  background: url(../images/button-red.png) no-repeat scroll center top transparent;
+  background-color: #e86f69;
 }
 
 div.remove-display form.views-ajax-form div.remove-display input.form-submit {
-  background: url(../images/button-red.png) no-repeat scroll center top transparent;
+  background-color: #e86f69;
 }
 
 div.remove-display form.views-ajax-form div.restore-display input.form-submit {
-  background: url(../images/button-blue.png) no-repeat scroll center top transparent;
+  background-color: #6893f8;
 }
 
 input#edit-publish,
 input#edit-unpublish {
-  background: url(../images/button-blue.png) no-repeat scroll center top transparent;
+  background-color: #6893f8;
 }
 
 form#views-ui-analyze-view-button div input#edit-submit.form-submit,
@@ -1193,11 +1193,11 @@ div.views-override input#edit-button--3,
 div.views-override input#edit-button--2,
 div.views-override input#edit-button--1,
 div.views-override input#edit-button.form-submit {
-  background: url(../images/button-blue.png) no-repeat scroll center top transparent;
+  background-color: #6893f8;
 }
 
 form#user-profile-form div#edit-actions input#edit-cancel {
-  background: url(../images/button-red.png) no-repeat scroll center top transparent;
+  background-color: #e86f69;
 }
 
 div#mcneese_drupal-content div#ds-tabs {
@@ -1221,11 +1221,11 @@ div#mcneese_drupal-content div#ds-tabs a {
   border: 1px outset #333333;
   border-radius: 3px;
 
-  background: url(../images/button-green.png) no-repeat scroll center top transparent;
+  background-color: #36f256;
 }
 
 div.field-formatter-settings-edit-wrapper input.field-formatter-settings-edit {
-  background: url(../images/button-blue.png) no-repeat scroll center top transparent;
+  background-color: #6893f8;
   padding: 2px;
 }
 
