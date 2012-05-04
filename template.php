@@ -69,6 +69,17 @@ function mcneese_drupal_preprocess_html(&$vars) {
 
   // refresh is considered not accessible
   $vars['cf']['meta']['name']['refresh'] = '';
+
+
+  if ($vars['cf']['at']['machine_name'] == 'sandbox.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'sandbox') {
+    $vars['head_title'] = "Sandbox of (" . $vars['head_title'] . ")";
+  } else if ($vars['cf']['at']['machine_name'] == 'wwwdev.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'wwwdev') {
+    $vars['head_title'] = $vars['head_title'] . " | Development";
+  } else if ($vars['cf']['at']['machine_name'] == 'wwwdev2.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'wwwdev2') {
+    $vars['head_title'] = $vars['head_title'] . " | Development";
+  } else if ($vars['cf']['at']['machine_name'] == 'wwwdev3.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'wwwdev3') {
+    $vars['head_title'] = $vars['head_title'] . " | Development";
+  }
 }
 
 /**
