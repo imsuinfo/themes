@@ -799,7 +799,7 @@ input#edit-submit.form-undelete,
 input.form-undelete,
 input#edit-preview,
 input#edit-undelete {
-  background-color: #6893f8;
+  background-color: #99e2ee;
 }
 
 input#edit-submit.form-delete,
@@ -1168,12 +1168,12 @@ div.remove-display form.views-ajax-form div.remove-display input.form-submit {
 }
 
 div.remove-display form.views-ajax-form div.restore-display input.form-submit {
-  background-color: #6893f8;
+  background-color: ##99e2ee;
 }
 
 input#edit-publish,
 input#edit-unpublish {
-  background-color: #6893f8;
+  background-color: ##99e2ee;
 }
 
 form#views-ui-analyze-view-button div input#edit-submit.form-submit,
@@ -1193,7 +1193,7 @@ div.views-override input#edit-button--3,
 div.views-override input#edit-button--2,
 div.views-override input#edit-button--1,
 div.views-override input#edit-button.form-submit {
-  background-color: #6893f8;
+  background-color: ##99e2ee;
 }
 
 form#user-profile-form div#edit-actions input#edit-cancel {
@@ -1225,7 +1225,7 @@ div#mcneese_drupal-content div#ds-tabs a {
 }
 
 div.field-formatter-settings-edit-wrapper input.field-formatter-settings-edit {
-  background-color: #6893f8;
+  background-color: ##99e2ee;
   padding: 2px;
 }
 
