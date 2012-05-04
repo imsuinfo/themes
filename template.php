@@ -4,6 +4,8 @@
  * Override or insert variables into the maintenance page template.
  */
 function mcneese_drupal_preprocess_maintenance_page(&$vars) {
+  global $base_path;
+
   if (!is_array($vars)){
     $vars = array();
   }
@@ -53,6 +55,17 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
 
   // register that this is a maintenance page
   $vars['cf']['is']['maintenance'] = TRUE;
+
+  // process logo
+  $vars['cf']['data']['logo']['title'] = $vars['cf']['at']['human_name'];
+  $vars['cf']['data']['logo']['alt'] = $vars['cf']['at']['human_name'];
+  $vars['cf']['data']['logo']['src'] = $base_path . path_to_theme() . '/images/web_logo.png';
+
+  if ($vars['cf']['at']['machine_name'] == 'sandbox.mcneese.edu' || $vars['cf']['at']['machine_name'] == 'sandbox') {
+    $vars['cf']['data']['logo']['title'] = 'Sandbox of ' . $vars['cf']['at']['human_name'];
+    $vars['cf']['data']['logo']['alt'] = 'Sandbox of ' . $vars['cf']['at']['human_name'];
+    $vars['cf']['data']['logo']['src'] = $base_path . path_to_theme() . '/images/sandbox.png';
+  }
 }
 
 /**
