@@ -788,7 +788,7 @@ ul.tabs.secondary {
 }
 
 ul.tabs.secondary li a {
-  background-color: #36f256;
+  background-color: #64eb5e;
 }
 
 input#edit-submit.form-preview,
@@ -1221,7 +1221,7 @@ div#mcneese_drupal-content div#ds-tabs a {
   border: 1px outset #333333;
   border-radius: 3px;
 
-  background-color: #36f256;
+  background-color: #64eb5e;
 }
 
 div.field-formatter-settings-edit-wrapper input.field-formatter-settings-edit {
