@@ -1,6 +1,70 @@
 <?php
 
 /**
+ * Custom initialization function designed to set defaults.
+ *
+ * This is provided to handle the case where the cf functions are not available, for whatever reason.
+ * This provides a manual setup of the default array keys used in the appropriate *.tpl.php theme templates.
+ * The initialized variables is the bare minimumi and defaults most conditionals to FALSE.
+ */
+function mcneese_drupal_initialize_cf_array(&$vars) {
+  $vars['cf'] = array();
+  $cf = &$vars['cf'];
+  $page = &$vars['page'];
+
+
+  $cf['agent'] = array();
+  $cf['agent']['doctype'] = '';
+
+  $cf['at'] = array();
+  $cf['is'] = array();
+  $cf['show'] = array();
+  $cf['show']['page'] = array();
+
+  foreach (array('front', 'path', 'alias') as $item) {
+    $cf['at'][$item] = '';
+  }
+
+  foreach (array('overlay', 'unsupported', 'emergency') as $item) {
+    $cf['is'][$item] = FALSE;
+  }
+
+  foreach (array('help', 'sidebar_left', 'sidebar_right', ) as $item) {
+    $cf['show']['page'][$item] = FALSE;
+  }
+
+  foreach (array('header', 'sub_header', 'messages', 'content', 'footer') as $item) {
+    $page[$item] = drupal_render($page[$item]);
+    $cf['show']['page'][$item] = TRUE;
+  }
+
+  foreach (array('logo', 'title_prefix', 'title_suffix', 'sidenote', 'side_links', 'breadcrumb') as $item) {
+    $cf['show'][$item] = FALSE;
+  }
+
+  foreach (array('primary_local_tasks', 'secondary_local_tasks', 'action_links') as $item) {
+    $cf['show'][$item] = FALSE;
+  }
+
+  foreach (array('messages', 'title', 'messages') as $item) {
+    $cf['show'][$item] = TRUE;
+  }
+
+  // some defaults we can guess
+  $cf['is']['front'] = drupal_is_front_page();
+
+  $cf['markup_css'] = array();
+  $cf['markup_css']['body'] = array();
+  $cf['markup_css']['body']['class'] = '';
+  $cf['markup_css']['container'] = array();
+  $cf['markup_css']['container']['class'] = '';
+  $cf['markup_css']['content'] = array();
+  $cf['markup_css']['content']['class'] = '';
+
+  return $cf;
+}
+
+/**
  * Override or insert variables into the maintenance page template.
  */
 function mcneese_drupal_preprocess_maintenance_page(&$vars) {
@@ -22,6 +86,7 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   }
 
   if (!function_exists('cf_theme_get_variables')){
+    mcneese_drupal_initialize_cf_array($vars);
     return;
   }
 
@@ -77,6 +142,7 @@ function mcneese_drupal_preprocess_html(&$vars) {
   }
 
   if (!function_exists('cf_theme_get_variables')){
+    mcneese_drupal_initialize_cf_array($vars);
     return;
   }
 
@@ -110,6 +176,7 @@ function mcneese_drupal_preprocess_page(&$vars) {
   }
 
   if (!function_exists('cf_theme_get_variables')){
+    mcneese_drupal_initialize_cf_array($vars);
     return;
   }
 
