@@ -51,7 +51,7 @@
             </div>
           <?php } ?>
 
-          <?php if ($cf['show']['header']){ ?>
+          <?php if ($cf['show']['page']['header']){ ?>
             <div id='mcneese_drupal-header-blocks'>
               <!--(begin_header_blocks)-->
               <?php print($header); ?>
@@ -65,7 +65,7 @@
 
         <div id='mcneese_drupal-sub_header'>
           <!--(begin_sub_header)-->
-          <?php if ($cf['show']['sub_header']){ ?>
+          <?php if ($cf['show']['page']['sub_header']){ ?>
             <div id='mcneese_drupal-sub_header-blocks'>
               <!--(begin_sub_header_blocks)-->
               <?php print($sub_header); ?>
@@ -77,7 +77,7 @@
       </div>
   <?php } ?>
     <div id='mcneese_drupal-message_region' class='clearfix'>
-      <?php if ($cf['show']['messages']){ ?>
+      <?php if ($cf['show']['page']['messages']){ ?>
         <!--(begin_messages)-->
         <div id='mcneese_drupal-messages' class='clearfix'>
           <h2 class='element-invisible'><?php print(t("Messages")); ?></h2>
@@ -86,7 +86,7 @@
         <!--(end_messages)-->
       <?php } ?>
 
-      <?php if ($cf['show']['help']){ ?>
+      <?php if ($cf['show']['page']['help']){ ?>
         <!--(begin_help)-->
         <div id='mcneese_drupal-help' class='clearfix'>
           <h2 class='element-invisible'><?php print(t("Help")); ?></h2>
@@ -157,7 +157,7 @@
         </div>
       <?php } ?>
 
-      <?php if ($cf['show']['sidebar_left']){ ?>
+      <?php if ($cf['show']['page']['sidebar_left']){ ?>
         <div id="mcneese_drupal-sidebar_left" class="page-sidebar_left clearfix">
           <!--(begin_sidebar_left)-->
           <h2 class='element-invisible'><?php print(t("Sidebar Left")); ?></h2>
@@ -166,7 +166,7 @@
         </div>
       <?php } ?>
 
-      <?php if ($cf['show']['sidebar_right']){ ?>
+      <?php if ($cf['show']['page']['sidebar_right']){ ?>
         <div id="mcneese_drupal-sidebar_right" class="page-sidebar_right clearfix">
           <!--(begin_sidebar_right)-->
           <h2 class='element-invisible'><?php print(t("Sidebar Right")); ?></h2>
@@ -175,7 +175,7 @@
         </div>
       <?php } ?>
 
-      <?php if ($cf['show']['content']){ ?>
+      <?php if ($cf['show']['page']['content']){ ?>
         <div id='mcneese_drupal-content' class='drupal_content clearfix <?php print($cf['markup_css']['content']['class']); ?>'>
           <!--(begin_content)-->
           <h2 class='element-invisible'><?php print(t("Primary Content")); ?></h2>
@@ -195,7 +195,7 @@
         <!--(end_undercontent)-->
       </div>
     <?php } else { ?>
-      <?php if ($cf['show']['footer']) { ?>
+      <?php if ($cf['show']['page']['footer']) { ?>
         <div id="mcneese_drupal-footer" class="drupal_footer">
           <!--(begin_footer)-->
           <?php print($footer); ?>

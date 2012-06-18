@@ -97,15 +97,16 @@ function mcneese_drupal_preprocess_maintenance_page(&$vars) {
   $keys_to_render = array('logo', 'title_prefix', 'title_suffix', 'side_links', 'primary_local_tasks', 'secondary_local_tasks', 'action_links');
   cf_theme_render_variables($vars, $keys_to_render);
 
-  $keys_to_render = array('header', 'sub_header', 'help', 'sidebar_left', 'sidebar_right', 'content', 'footer');
-  cf_theme_render_variables($vars, $keys_to_render);
+  $keys_to_render = array('header', 'messages', 'sub_header', 'help', 'sidebar_left', 'sidebar_right', 'content', 'footer');
+  cf_theme_render_variables($vars, $keys_to_render, 'page');
 
   // always show the following fields
   $vars['cf']['show']['title'] = TRUE;
   $vars['cf']['show']['breadcrumb'] = TRUE;
-  $vars['cf']['show']['messages'] = TRUE;
-  $vars['cf']['show']['content'] = TRUE;
-  $vars['cf']['show']['footer'] = TRUE;
+  $vars['cf']['show']['page']['messages'] = TRUE;
+  $vars['cf']['show']['page']['content'] = TRUE;
+  $vars['cf']['show']['page']['footer'] = TRUE;
+  $vars['cf']['show']['page']['sidebar_left'] = TRUE;
 
   // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
   // this is because the maintenance page means the site is not available
