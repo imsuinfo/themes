@@ -786,8 +786,14 @@ ul.tabs.secondary {
   margin: 0;
 }
 
-ul.tabs.secondary li a {
+ul.tabs.secondary li > a {
   background-color: #64eb5e;
+}
+
+ul.tabs.secondary li > a.views-display-deleted-link {
+  color: #50505;
+  background-color: #f17555;
+  text-decoration: line-through;
 }
 
 input#edit-submit.form-preview,
