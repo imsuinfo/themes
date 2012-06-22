@@ -1094,6 +1094,7 @@ div.drupal_content .color_box.color-pink.emphasis-obvious {
 
 /*** Module Specific Style: dev-query ***/
 div#block-devel_node_access-dna_node,
+div#block-devel_node_access-dna_user,
 div.dev-query {
   position: relative;
   background-color: white;
