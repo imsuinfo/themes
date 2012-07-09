@@ -34,7 +34,7 @@ function mcneese_drupal_initialize_cf_array(&$vars) {
   }
 
   foreach (array('header', 'sub_header', 'messages', 'content', 'footer') as $item) {
-    $page[$item] = drupal_render($page[$item]);
+    $cf['data']['page'][$item] = drupal_render($page[$item]);
     $cf['show']['page'][$item] = TRUE;
   }
 
