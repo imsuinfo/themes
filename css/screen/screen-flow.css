@@ -1,0 +1,429 @@
+.mcneese {
+  color: #000000;
+  background-color: #dadada;
+}
+
+#mcneese-top {
+  color: #000000;
+  background-color: #ffffff;
+
+  margin: 0 64px;
+}
+
+#mcneese-page {
+  color: #000000;
+  background-color: #ffffff;
+
+  min-height: 500px;
+
+  margin: 0 64px;
+  padding: 0 5px 5px 5px;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#mcneese-bottom {
+  margin: 0 64px 15px 64px;
+  padding: 0 5px 10px 5px;
+}
+
+.mcneese > .dev-query {
+  margin: 0 64px;
+  padding: 0 5px;
+}
+
+
+
+/*** Page Header ***/
+#mcneese-header {
+  position: relative;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#mcneese-header > .header-top {
+  position: relative;
+
+  background-color: #00477f;
+
+  min-height: 140px;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  overflow-x: hidden;
+}
+
+#mcneese-header > .header-separator {
+  border-bottom: 12px solid #fad703;
+}
+
+#mcneese-header > .header-bottom {
+  position: relative;
+
+  background-color: #00335b;
+
+  min-height: 25px;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  margin-bottom: 5px;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#mcneese-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#mcneese-header a:hover,
+#mcneese-header a:focus {
+  color: #fad703;
+  text-decoration: underline;
+}
+
+#mcneese-header a:active {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+#mcneese-header > .header-top > .header-menu-1 {
+  position: absolute;
+  bottom: 0;
+
+  font-size: 12px;
+
+  height: 38px;
+  min-height: 38px;
+  max-height: 38px;
+
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+
+  overflow: hidden;
+  z-index: 3;
+}
+
+#mcneese-header > .header-bottom > .header-menu-2 {
+  font-size: 10px;
+}
+
+#mcneese-header > .header-section > .site-logo {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+
+  background-image: url(../../images/logo.png);
+  background-repeat: no-repeat;
+
+  font-size: 0;
+
+  height: 85px;
+  min-height: 85px;
+  max-height: 85px;
+
+  width: 230px;
+  min-width: 230px;
+  max-width: 230px;
+
+  cursor: pointer;
+  z-index: 0;
+}
+
+#mcneese-header > .header-section > .header-menu > .html_tag-nav {
+  display: inline-block;
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > li {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+}
+
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:hover > a,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:active > a,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:focus > a {
+  color: #00477f;
+  background-color: #fad703;
+  text-decoration: none;
+}
+
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+
+  max-height: 38px;
+
+  overflow: hidden;
+}
+
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li,
+#mcneese-header > .header-top > .header-menu-2 > .html_tag-nav > li {
+  margin: 0;
+  padding: 0;
+}
+
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li > a {
+  display: inline-block;
+
+  color: #f2f2f2;
+  background-color: #1e1e1e;
+
+  text-decoration: none;
+  line-height: 18px;
+
+  padding: 10px;
+  margin: 0;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > li > a {
+  display: inline-block;
+
+  line-height: 17px;
+  text-transform: uppercase;
+
+  padding: 4px 8px;
+}
+
+#mcneese-header > .header-section > .header-menu-2 > .html_tag-nav > li:first-child > a {
+  border-bottom-left-radius: 5px;
+}
+
+
+
+/*** Page Footer ***/
+#mcneese-footer {
+  clear: both;
+}
+
+
+
+/*** Search Box Form ***/
+#search-block-form {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+
+  line-height: 18px;
+
+  width: 218px;
+  min-width: 218px;
+  max-width: 218px;
+
+  color: #ffffff;
+  background-color: #023761;
+
+  margin: 0;
+  padding: 3px;
+
+  border: 1px solid #065c9f;
+  border-top: 0;
+
+  overflow: hidden;
+  z-index: 1;
+}
+
+#search-block-form > div {
+  color: #000000;
+  background-color: #ffffff;
+
+  padding: 3px 0;
+  border: 1px solid #0f5eff;
+
+  overflow: hidden;
+}
+
+#search-block-form > div > .form-item,
+#search-block-form > div > .form-actions {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+}
+
+#search-block-form > div > .form-item,
+#search-block-form > div > .form-item > input {
+  width: 190px;
+  min-width: 190px;
+  max-width: 190px;
+
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+#search-block-form > div > .form-item > input {
+  font-family: arial,helvetica,sans-serif;
+  font-size: 12px;
+
+  line-height: 14px;
+
+  padding: 0;
+  margin: 0 3px;
+
+  border: 0 none;
+}
+
+#search-block-form > div > .form-actions,
+#search-block-form > div > .form-actions > input {
+  color: #ffffff;
+
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+}
+
+#search-block-form > div > .form-actions > input {
+  background-image: url(../../images/search_button.png);
+  background-repeat: no-repeat;
+  background-color: #00477f;
+
+  font-size: 0;
+
+  margin: 0;
+  border: 0 none;
+
+  vertical-align: top;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+/*** Page Side and Content ***/
+#mcneese-page-side {
+  display: inline-block;
+  float: left;
+
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+
+  margin: 0 15px 15px 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  word-wrap: break-word;
+}
+
+#mcneese-page-content {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#mcneese-page-content.split > .column-2 {
+  margin-left: 215px;
+}
+
+
+
+/*** Floating Information ***/
+.mcneese.is-toolbar-relative .html_tag-aside.float_info-0,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-0 {
+  top: 10px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-0 {
+  top: 35px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-0 {
+  top: 60px
+}
+
+.mcneese.is-toolbar-relative .html_tag-aside.float_info-1,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-1 {
+  top: 52px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-1 {
+  top: 77px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-1 {
+  top: 102px
+}
+
+.mcneese.is-toolbar-relative .html_tag-aside.float_info-2,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-2 {
+  top: 104px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-2 {
+  top: 129px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-2 {
+  top: 154px
+}
+
+.mcneese.is-toolbar-relative .html_tag-aside.float_info-3,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-3 {
+  top: 156px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-3 {
+  top: 181px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-3 {
+  top: 206px
+}
+
+.mcneese.is-toolbar-relative .html_tag-aside.float_info-3,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-3 {
+  top: 208px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-3 {
+  top: 233px
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-3 {
+  top: 258px
+}
+
+
+
+/*** User Profile ***/
+.html_tag-figure.user-picture {
+  float: right;
+}
+
+
+
+/*** Admin Permissions Form ***/
+#user-admin-permissions {
+  overflow: auto;
+}
+

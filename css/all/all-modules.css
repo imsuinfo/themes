@@ -1,0 +1,48 @@
+/*** Calendar ***/
+.mcneese .calendar-calendar table > thead > tr > th.days,
+.mcneese .calendar-calendar table > tbody > tr > td {
+  color: #404040;
+}
+.mcneese .calendar-calendar table > thead > tr > th.days {
+  background-color: #f0f0f0;
+}
+
+.mcneese .calendar-calendar table > tbody > tr > td > .inner > div.day > a {
+  color: #34688a;
+}
+
+.mcneese .view > .view-header > .date-nav-wrapper > .date-nav {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * It seems that when the date is set to "exclude from display" it still includes it in the display.
+ *
+.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-single,
+.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-start,
+.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-separator,
+.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-end {
+  display: none;
+} */
+
+
+
+/*** Workbench Menu ***/
+.mcneese .workbench_menu.menu_settings-table-wrapper > .menu_settings-table-header {
+  float: left;
+  clear: left;
+}
+
+.mcneese .workbench_menu.menu_settings-table-wrapper > .tabledrag-toggle-weight-wrapper {
+  float: right;
+  clear: right;
+}
+
+.mcneese .workbench_menu.menu_settings-table-wrapper > .menu_settings-table {
+  clear: both;
+}
+
+.mcneese .workbench_menu.menu_settings-table-wrapper > .menu_settings-add_item_link {
+  margin: 8px 0;
+}

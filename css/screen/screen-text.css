@@ -1,0 +1,108 @@
+.mcneese {
+  font-family: Arial,Helvetica,Sans-serif,Serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.mcneese .tabledrag-toggle-weight {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.mcneese h1 {
+  font-size: 26px;
+  line-height: 30px;
+
+  margin: 4px 0;
+}
+
+.mcneese.is-node.is-unpublished > #mcneese-page {
+  background-color: #ffeeee;
+}
+
+
+/*** Form Items ***/
+.mcneese .form-item > .description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+
+/*** Sections of depth 0 ***/
+.mcneese h2,
+.mcneese .html_tag-section > .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-header > h6 {
+  font-size: 24px;
+  line-height: 28px;
+
+  margin: 4px 0;
+}
+
+
+
+/*** Sections of depth 1 ***/
+.mcneese h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+  font-size: 22px;
+  line-height: 26px;
+
+  margin: 3px 0;
+}
+
+
+
+/*** Sections of depth 2 ***/
+.mcneese h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+  font-size: 20px;
+  line-height: 24px;
+
+  margin: 3px 0;
+}
+
+
+
+/*** Sections of depth 3 ***/
+.mcneese h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+  font-size: 18px;
+  line-height: 22px;
+
+  margin: 3px 0;
+}
+
+
+
+/*** Sections of depth 4+ ***/
+.mcneese h6,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h6 {
+  font-size: 16px;
+  line-height: 20px;
+
+  margin: 2px 0;
+}

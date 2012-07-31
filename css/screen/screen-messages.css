@@ -1,0 +1,225 @@
+/*** Messages Region ***/
+#mcneese-messages {
+}
+
+#mcneese-messages > h2,
+#mcneese-messages > header > h2 {
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
+}
+
+#mcneese-messages > .messages-wrapper {
+  margin: 2px;
+  resize: none;
+}
+
+#mcneese-messages > .messages-wrapper > .messages {
+  max-height: 120px;
+  overflow-y: auto;
+  resize: none;
+}
+
+
+
+/*** Messages Region - Fixed ***/
+#mcneese-messages.fixed {
+  position: fixed;
+  right: 5px;
+
+  min-width: 32px;
+  min-height: 32px;
+  max-height: 50%;
+  max-width: 75%;
+
+  background-image: url(../../images/messages.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  word-wrap: break-word;
+
+  z-index: 90;
+}
+
+#mcneese-messages > h2,
+#mcneese-messages > header > h2 {
+  line-height: 32px;
+
+  min-height: 32px;
+
+  margin: 0 32px 0 0;
+}
+
+#mcneese-messages.fixed.expanded,
+#mcneese-messages.fixed.collapsed:hover,
+#mcneese-messages.fixed.collapsed:active,
+#mcneese-messages.fixed.collapsed:focus {
+  background-color: #fffff0;
+
+  border: 1px ridge #5395cc;
+  padding: 0 4px 4px 4px;
+
+  min-height: 140px;
+  min-width: 400px;
+
+  z-index: 200;
+
+  overflow: auto;
+  resize: both;
+}
+
+#mcneese-messages.fixed.collapsed {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+#mcneese-messages.fixed.expanded,
+#mcneese-messages.fixed.collapsed:hover,
+#mcneese-messages.fixed.collapsed:active,
+#mcneese-messages.fixed.collapsed:focus {
+  max-height: 50%;
+  max-width: 75%;
+}
+
+#mcneese-messages.fixed.collapsed > h2,
+#mcneese-messages.fixed.collapsed > header,
+#mcneese-messages.fixed.collapsed > header > h2,
+#mcneese-messages.fixed.collapsed > .messages-wrapper {
+  visibility: hidden;
+}
+
+#mcneese-messages.fixed.expanded > h2,
+#mcneese-messages.fixed.collapsed:hover > h2,
+#mcneese-messages.fixed.collapsed:active > h2,
+#mcneese-messages.fixed.collapsed:focus > h2,
+#mcneese-messages.fixed.expanded > header,
+#mcneese-messages.fixed.collapsed:hover > header,
+#mcneese-messages.fixed.collapsed:active > header,
+#mcneese-messages.fixed.collapsed:focus > header,
+#mcneese-messages.fixed.expanded > header > h2,
+#mcneese-messages.fixed.collapsed:hover > header > h2,
+#mcneese-messages.fixed.collapsed:active > header > h2,
+#mcneese-messages.fixed.collapsed:focus > header > h2,
+#mcneese-messages.fixed.expanded > .messages-wrapper,
+#mcneese-messages.fixed.collapsed:hover > .messages-wrapper,
+#mcneese-messages.fixed.collapsed:active > .messages-wrapper,
+#mcneese-messages.fixed.collapsed:focus > .messages-wrapper {
+  visibility: visible;
+}
+
+
+
+/*** Messages Region - Relative ***/
+#mcneese-messages.relative {
+  position: relative;
+
+  background-color: #fffff0;
+
+  border: 1px ridge #5395cc;
+  margin: 6px 2px;
+  padding: 0 4px 4px 4px;
+
+  overflow: auto;
+}
+
+
+
+/*** Help Region ***/
+#mcneese-help {
+}
+
+
+
+/*** Help Region - Fixed ***/
+#mcneese-help.fixed {
+  position: fixed;
+  right: 5px;
+
+  min-width: 32px;
+  min-height: 32px;
+  max-height: 50%;
+  max-width: 75%;
+
+  background-image: url(../../images/help.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  word-wrap: break-word;
+
+  z-index: 90;
+}
+
+#mcneese-help.fixed.expanded,
+#mcneese-help.fixed.collapsed:hover,
+#mcneese-help.fixed.collapsed:active,
+#mcneese-help.fixed.collapsed:focus {
+  background-color: #fff0fb;
+
+  border: 1px ridge #cc5384;
+  padding: 0 4px 4px 4px;
+
+  min-height: 140px;
+  min-width: 400px;
+
+  z-index: 200;
+
+  overflow: auto;
+  resize: both;
+}
+
+#mcneese-help.fixed.collapsed {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+#mcneese-help.fixed.expanded,
+#mcneese-help.fixed.collapsed:hover,
+#mcneese-help.fixed.collapsed:active,
+#mcneese-help.fixed.collapsed:focus {
+  max-height: 50%;
+  max-width: 75%;
+}
+
+#mcneese-help.fixed.collapsed > h2,
+#mcneese-help.fixed.collapsed > header,
+#mcneese-help.fixed.collapsed > header > h2,
+#mcneese-help.fixed.collapsed > .help-wrapper {
+  visibility: hidden;
+}
+
+#mcneese-help.fixed.expanded > h2,
+#mcneese-help.fixed.collapsed:hover > h2,
+#mcneese-help.fixed.collapsed:active > h2,
+#mcneese-help.fixed.collapsed:focus > h2,
+#mcneese-help.fixed.expanded > header,
+#mcneese-help.fixed.collapsed:hover > header,
+#mcneese-help.fixed.collapsed:active > header,
+#mcneese-help.fixed.collapsed:focus > header,
+#mcneese-help.fixed.expanded > header > h2,
+#mcneese-help.fixed.collapsed:hover > header > h2,
+#mcneese-help.fixed.collapsed:active > header > h2,
+#mcneese-help.fixed.collapsed:focus > header > h2,
+#mcneese-help.fixed.expanded > .help-wrapper,
+#mcneese-help.fixed.collapsed:hover > .help-wrapper,
+#mcneese-help.fixed.collapsed:active > .help-wrapper,
+#mcneese-help.fixed.collapsed:focus > .help-wrapper {
+  visibility: visible;
+}
+
+
+
+/*** Help Region - Relative ***/
+#mcneese-help.relative {
+  position: relative;
+
+  background-color: #fff0fb;
+
+  border: 1px ridge #cc5384;
+  margin: 6px 2px;
+  padding: 0 4px 4px 4px;
+
+  overflow: auto;
+}

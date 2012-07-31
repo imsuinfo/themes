@@ -1,0 +1,82 @@
+/*** Masquerade Block Form ***/
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade {
+  position: absolute;
+  right: 270px;
+  top: 10px;
+
+  color: #ffffff;
+  background-color: #023761;
+
+  margin: 0;
+  padding: 3px;
+
+  border: 1px solid #065c9f;
+
+  z-index: 1;
+}
+
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade > header > h2 {
+  font-size: 11px;
+  line-height: 15px;
+
+  margin: 0;
+  padding: 2px;
+}
+
+#masquerade-block-1 {
+  margin: 0;
+}
+
+#masquerade-block-1 > div > .form-item {
+  margin: 0;
+}
+
+#masquerade-block-1 > div > .form-item  > .description {
+  background-color: inherit;
+
+  margin: 0;
+  padding: 1px;
+  border: none;
+}
+
+#masquerade-block-1 > div > .container-inline > input {
+  display: inline-block;
+
+  color: #00477f;
+  background-color: #fad703;
+
+  font-family: "Lucida Grande",Verdana,sans-serif;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: bold;
+
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 2px #FEFEFE;
+
+  margin: 1px;
+  padding: 3px 4px;
+
+  border: 1px outset #333333;
+  border-radius: 3px 3px 3px 3px;
+
+  cursor: pointer;
+}
+
+#masquerade-block-1 > div > .container-inline > input:hover,
+#masquerade-block-1 > div > .container-inline > input:active,
+#masquerade-block-1 > div > .container-inline > input:focus {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+#masquerade-block-1 > div > .container-inline > input:active {
+  border: 1px inset #333333;
+}

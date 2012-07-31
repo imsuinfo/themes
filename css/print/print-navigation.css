@@ -1,0 +1,32 @@
+/*** Never show navigation markup during printing ***/
+.html_tag-nav {
+  display: none;
+}
+
+
+
+/*** Administrative Toolbar ***/
+#mcneese-toolbar {
+  display: none;
+}
+
+
+
+/*** Breadcrumb Menu ***/
+#mcneese-breadcrumb {
+  display: none;
+}
+
+
+
+/*** Tabs ***/
+#mcneese-tabs {
+  display: none;
+}
+
+
+
+/*** Action Links ***/
+#mcneese-action_links {
+  display: none;
+}

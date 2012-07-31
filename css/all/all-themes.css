@@ -1,0 +1,16 @@
+/*** User Profile ***/
+.mcneese .html_tag-figure.user-picture > .html_tag-figcaption {
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+}
