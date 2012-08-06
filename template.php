@@ -57,7 +57,7 @@ function mcneese_preprocess_toolbar(&$vars) {
     $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
   }
 
-  $toolbar_autohide = '';
+  $toolbar_autohide = 'autoshow';
   $toolbar_expanded = 'expanded';
   $toolbar_sticky = 'fixed';
   $cf['is']['toolbar-expanded'] = TRUE;
@@ -379,12 +379,11 @@ function mcneese_preprocess_page(&$vars) {
 
     if ($messages_sticky == 'fixed') {
       $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
     }
     else {
       $attributes['class'][] = 'expanded';
     }
-
-    $attributes['tabindex'] = '2';
   }
   else {
     $attributes['class'][] = 'relative';
@@ -431,12 +430,11 @@ function mcneese_preprocess_page(&$vars) {
 
     if ($help_sticky == 'fixed') {
       $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
     }
     else {
       $attributes['class'][] = 'expanded';
     }
-
-    $attributes['tabindex'] = '2';
   }
   else {
     $attributes['class'][] = 'relative';
@@ -451,6 +449,112 @@ function mcneese_preprocess_page(&$vars) {
 
   $cf['page']['tags']['mcneese_page_help_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_help_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // load all information so that they can be stored in the 'information' region.
+  $information_sticky = 'relative';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['information']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['information']['sticky']) {
+      $information_sticky = 'relative';
+    }
+    else {
+      $information_sticky = 'fixed';
+    }
+  }
+
+  if (empty($vars['page']['information'])) {
+    $cf['page']['information'] = array();
+  }
+  else {
+    $cf['page']['information'] = $vars['page']['information'];
+    unset($vars['page']['information']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-information';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
+  $attributes['title'] = t("Information");
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $information_sticky;
+
+    if ($information_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
+
+  $cf['page']['tags']['mcneese_page_information_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_information_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'element-invisible';
+
+  $cf['page']['tags']['mcneese_page_information_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_information_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // load all editing so that they can be stored in the 'editing' region.
+  $editing_sticky = 'relative';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['editing']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['editing']['sticky']) {
+      $editing_sticky = 'relative';
+    }
+    else {
+      $editing_sticky = 'fixed';
+    }
+  }
+
+  if (empty($vars['page']['editing'])) {
+    $cf['page']['editing'] = array();
+  }
+  else {
+    $cf['page']['editing'] = $vars['page']['editing'];
+    unset($vars['page']['editing']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-editing';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
+  $attributes['title'] = t("Editing");
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $editing_sticky;
+
+    if ($editing_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
+
+  $cf['page']['tags']['mcneese_page_editing_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_editing_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'element-invisible';
+
+  $cf['page']['tags']['mcneese_page_editing_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_editing_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // load all tasks
@@ -540,15 +644,32 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['tags']['mcneese_page_action_links_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
-  // load header
+  // load title
   $cf['page']['title'] = drupal_get_title();
+
+  if (empty($vars['title_prefix'])) {
+    $cf['page']['title_prefix'] = array();
+  }
+  else {
+    $cf['page']['title_prefix'] = $vars['title_prefix'];
+    unset($vars['title_prefix']);
+  }
+
+  if (empty($vars['title_suffix'])) {
+    $cf['page']['title_suffix'] = array();
+  }
+  else {
+    $cf['page']['title_suffix'] = $vars['title_suffix'];
+    unset($vars['title_suffix']);
+  }
 
   $attributes = array();
   $attributes['class'] = array();
-  $attributes['class'][] = 'page-header';
+  $attributes['class'][] = 'page-title';
 
   $cf['page']['tags']['mcneese_page_title_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_title_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
 
   // load all breadcrumb and sidecrumb data
   if (empty($vars['breadcrumb'])) {
@@ -1004,7 +1125,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
     $cf['is']['toolbar-sticky'] = FALSE;
     $cf['is']['toolbar-fixed'] = TRUE;
     $cf['is']['toolbar-relative'] = FALSE;
-    $cf['is']['toolbar-autoshow'] = FALSE;
+    $cf['is']['toolbar-autoshow'] = TRUE;
     $cf['is']['toolbar-autohide'] = FALSE;
 
     if (isset($cf['user']['object']->data['mcneese_settings']['toolbar'])) {
@@ -1102,8 +1223,17 @@ function mcneese_render_page() {
 
   // standard render
   if (function_exists('cf_theme_render_cf')) {
-    $keys = array('header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'help', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'hidden');
+    $keys = array('header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'title_prefix', 'title_suffix', 'help', 'information', 'editing', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'hidden');
     cf_theme_render_cf($cf, $keys, 'page');
+  }
+
+
+  // always show header content if any of its child regions are visible
+  if ($cf['show']['page']['header_menu_1']) {
+    $cf['show']['page']['header'] = TRUE;
+  }
+  elseif ($cf['show']['page']['header_menu_2']) {
+    $cf['show']['page']['header'] = TRUE;
   }
 
 
@@ -1126,7 +1256,7 @@ function mcneese_render_page() {
 
 
   // determine positions of all floating menus
-  $float_info_keys = array('messages', 'help');
+  $float_info_keys = array('messages', 'help', 'information', 'editing');
   $float_info_position = 0;
 
   foreach ($float_info_keys as $key) {

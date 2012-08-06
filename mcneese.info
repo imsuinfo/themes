@@ -25,6 +25,7 @@ stylesheets[aural][] = css/aural/aural-modules.css
 stylesheets[aural][] = css/aural/aural-navigation.css
 stylesheets[aural][] = css/aural/aural-messages.css
 stylesheets[aural][] = css/aural/aural-editing.css
+stylesheets[aural][] = css/aural/aural-information.css
 
 stylesheets[braille][] = css/braille/braille-flow.css
 stylesheets[braille][] = css/braille/braille-text.css
@@ -32,6 +33,7 @@ stylesheets[braille][] = css/braille/braille-modules.css
 stylesheets[braille][] = css/braille/braille-navigation.css
 stylesheets[braille][] = css/braille/braille-messages.css
 stylesheets[braille][] = css/braille/braille-editing.css
+stylesheets[braille][] = css/braille/braille-information.css
 
 stylesheets[embossed][] = css/embossed/embossed-flow.css
 stylesheets[embossed][] = css/embossed/embossed-text.css
@@ -39,6 +41,7 @@ stylesheets[embossed][] = css/embossed/embossed-modules.css
 stylesheets[embossed][] = css/embossed/embossed-navigation.css
 stylesheets[embossed][] = css/embossed/embossed-messages.css
 stylesheets[embossed][] = css/embossed/embossed-editing.css
+stylesheets[embossed][] = css/embossed/embossed-information.css
 
 stylesheets[handheld][] = css/handheld/handheld-flow.css
 stylesheets[handheld][] = css/handheld/handheld-text.css
@@ -46,6 +49,7 @@ stylesheets[handheld][] = css/handheld/handheld-modules.css
 stylesheets[handheld][] = css/handheld/handheld-navigation.css
 stylesheets[handheld][] = css/handheld/handheld-messages.css
 stylesheets[handheld][] = css/handheld/handheld-editing.css
+stylesheets[handheld][] = css/handheld/handheld-information.css
 
 stylesheets[print][] = css/print/print-flow.css
 stylesheets[print][] = css/print/print-text.css
@@ -53,6 +57,7 @@ stylesheets[print][] = css/print/print-modules.css
 stylesheets[print][] = css/print/print-navigation.css
 stylesheets[print][] = css/print/print-messages.css
 stylesheets[print][] = css/print/print-editing.css
+stylesheets[print][] = css/print/print-information.css
 
 stylesheets[projection][] = css/projection/projection-flow.css
 stylesheets[projection][] = css/projection/projection-text.css
@@ -60,6 +65,7 @@ stylesheets[projection][] = css/projection/projection-modules.css
 stylesheets[projection][] = css/projection/projection-navigation.css
 stylesheets[projection][] = css/projection/projection-messages.css
 stylesheets[projection][] = css/projection/projection-editing.css
+stylesheets[projection][] = css/projection/projection-information.css
 
 stylesheets[screen][] = css/screen/screen-flow.css
 stylesheets[screen][] = css/screen/screen-text.css
@@ -67,6 +73,7 @@ stylesheets[screen][] = css/screen/screen-modules.css
 stylesheets[screen][] = css/screen/screen-navigation.css
 stylesheets[screen][] = css/screen/screen-messages.css
 stylesheets[screen][] = css/screen/screen-editing.css
+stylesheets[screen][] = css/screen/screen-information.css
 
 stylesheets[tty][] = css/tty/tty-flow.css
 stylesheets[tty][] = css/tty/tty-text.css
@@ -74,6 +81,7 @@ stylesheets[tty][] = css/tty/tty-modules.css
 stylesheets[tty][] = css/tty/tty-navigation.css
 stylesheets[tty][] = css/tty/tty-messages.css
 stylesheets[tty][] = css/tty/tty-editing.css
+stylesheets[tty][] = css/tty/tty-information.css
 
 stylesheets[tv][] = css/tv/tv-flow.css
 stylesheets[tv][] = css/tv/tv-text.css
@@ -81,22 +89,28 @@ stylesheets[tv][] = css/tv/tv-modules.css
 stylesheets[tv][] = css/tv/tv-navigation.css
 stylesheets[tv][] = css/tv/tv-messages.css
 stylesheets[tv][] = css/tv/tv-editing.css
+stylesheets[tv][] = css/tv/tv-information.css
+
 
 scripts[] = js/toolbar.js
 scripts[] = js/messages.js
 scripts[] = js/navigation.js
 
+
 regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
 regions[header_menu_2] = Header Menu 2
 
-regions[messages] = Messages
-regions[help]     = Help
-regions[menus]    = Menus
-regions[asides]   = Asides
-regions[content]  = Content
-regions[footer]   = Footer
-regions[hidden]   = Hidden
+regions[messages]    = Messages
+regions[help]        = Help
+regions[information] = Information
+regions[editing]     = Editing
+
+regions[menus]   = Menus
+regions[asides]  = Asides
+regions[content] = Content
+regions[footer]  = Footer
+regions[hidden]  = Hidden
 
 
 features[] = name

@@ -6,7 +6,7 @@
         var menus = $(toolbar).children('.mcneese-toolbar-menu.noscript').removeClass('noscript');
         var shortcuts = $(toolbar).children('.mcneese-toolbar-shortcuts.noscript').removeClass('noscript');
 
-        $(toolbar).bind('focusin', function () {
+        $(toolbar).focus(function () {
           if ($(toolbar).hasClass('autohide') && $(toolbar).hasClass('collapsed')) {
             $(toolbar).removeClass('collapsed');
             $(toolbar).addClass('expanded');
@@ -15,7 +15,7 @@
           }
         });
 
-        $(toolbar).bind('focusout', function () {
+        $(toolbar).blur(function () {
           if ($(toolbar).hasClass('autohide') && $(toolbar).hasClass('expanded')) {
             $(toolbar).removeClass('expanded');
             $(toolbar).addClass('collapsed');
@@ -45,12 +45,12 @@
           var menu = $(this);
 
           $(menu).children('.item').each(function() {
-            item = $(this);
+            var item = $(this);
 
             $(item).children('.link.noscript').removeClass('noscript').each(function() {
-              a = $(this);
+              var a = $(this);
 
-              $(a).bind('focus', function () {
+              $(a).focus(function () {
                 $(toolbar).focus();
               });
 
@@ -86,7 +86,7 @@
             $(sticky).children('.link.noscript').removeClass('noscript').each(function() {
               var a = $(this);
 
-              $(a).bind('focus', function () {
+              $(a).focus(function () {
                 $(toolbar).focus();
               });
 

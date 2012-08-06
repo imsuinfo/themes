@@ -1,3 +1,10 @@
+/*** Date ***/
+#ui-datepicker-div {
+  width: auto;
+}
+
+
+
 /*** Calendar ***/
 .mcneese .calendar-calendar table > thead > tr > th.days,
 .mcneese .calendar-calendar table > tbody > tr > td {

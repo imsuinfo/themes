@@ -1,4 +1,12 @@
 /*** Administrative Toolbar ***/
+.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-collapsed > #mcneese-page {
+  margin-top: 25px;
+}
+
+.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-expanded > #mcneese-page {
+  margin-top: 50px;
+}
+
 #mcneese-toolbar {
   top: 0;
   left: 0;
@@ -239,7 +247,7 @@
 #mcneese-toolbar > .mcneese-toolbar-shortcuts > .item > .link.active:hover,
 #mcneese-toolbar > .mcneese-toolbar-shortcuts > .item > .link.active:active,
 #mcneese-toolbar > .mcneese-toolbar-shortcuts > .item > .link.active:focus {
-  background-color: #0065b6; /* 004780 */
+  background-color: #0065b6;
 }
 
 #mcneese-toolbar > .mcneese-toolbar-shortcuts > .item.mcneese-toolbar-sticky {
@@ -364,6 +372,7 @@
 
 /*** Tabs - Relative ***/
 #mcneese-tabs.relative {
+  display: inline-block;
   position: relative;
 
   margin: 0;
@@ -572,7 +581,7 @@
   padding: 4px 8px;
 
   border-width: 0px 1px;
-  border-style: inset;
+  border-style: outset;
   border-color: #00335b;
 
   box-sizing: border-box;
@@ -610,7 +619,6 @@
   text-align: center;
 
   border-width: 1px 1px 0 1px;
-  border-style: outset;
   border-color: #202020;
   border-radius: 5px 5px 0 0;
 }
