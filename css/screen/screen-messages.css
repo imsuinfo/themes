@@ -1,7 +1,4 @@
 /*** Messages Region ***/
-#mcneese-messages {
-}
-
 #mcneese-messages > h2,
 #mcneese-messages > header > h2 {
   font-size: 18px;
@@ -53,6 +50,13 @@
   margin: 0 32px 0 0;
 }
 
+#mcneese-messages.fixed.collapsed {
+  background-color: #dadada;
+
+  max-width: 32px;
+  max-height: 32px;
+}
+
 #mcneese-messages.fixed.expanded,
 #mcneese-messages.fixed.collapsed:hover,
 #mcneese-messages.fixed.collapsed:active,
@@ -64,24 +68,13 @@
 
   min-height: 140px;
   min-width: 400px;
+  max-height: 50%;
+  max-width: 75%;
 
   z-index: 200;
 
   overflow: auto;
   resize: both;
-}
-
-#mcneese-messages.fixed.collapsed {
-  max-width: 32px;
-  max-height: 32px;
-}
-
-#mcneese-messages.fixed.expanded,
-#mcneese-messages.fixed.collapsed:hover,
-#mcneese-messages.fixed.collapsed:active,
-#mcneese-messages.fixed.collapsed:focus {
-  max-height: 50%;
-  max-width: 75%;
 }
 
 #mcneese-messages.fixed.collapsed > h2,
@@ -127,12 +120,6 @@
 
 
 
-/*** Help Region ***/
-#mcneese-help {
-}
-
-
-
 /*** Help Region - Fixed ***/
 #mcneese-help.fixed {
   position: fixed;
@@ -152,6 +139,13 @@
   z-index: 90;
 }
 
+#mcneese-help.fixed.collapsed {
+  background-color: #dadada;
+
+  max-width: 32px;
+  max-height: 32px;
+}
+
 #mcneese-help.fixed.expanded,
 #mcneese-help.fixed.collapsed:hover,
 #mcneese-help.fixed.collapsed:active,
@@ -163,24 +157,13 @@
 
   min-height: 140px;
   min-width: 400px;
+  max-height: 50%;
+  max-width: 75%;
 
   z-index: 200;
 
   overflow: auto;
   resize: both;
-}
-
-#mcneese-help.fixed.collapsed {
-  max-width: 32px;
-  max-height: 32px;
-}
-
-#mcneese-help.fixed.expanded,
-#mcneese-help.fixed.collapsed:hover,
-#mcneese-help.fixed.collapsed:active,
-#mcneese-help.fixed.collapsed:focus {
-  max-height: 50%;
-  max-width: 75%;
 }
 
 #mcneese-help.fixed.collapsed > h2,

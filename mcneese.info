@@ -118,3 +118,4 @@ features[] = search
 features[] = favicon
 
 
+settings[shortcut_module_link] = 1

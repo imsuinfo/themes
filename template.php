@@ -336,62 +336,7 @@ function mcneese_preprocess_page(&$vars) {
 
 
   // load all messages so that they can be stored in the 'messages' region.
-  $messages_sticky = 'relative';
-
-  if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
-      $messages_sticky = 'relative';
-    }
-    else {
-      $messages_sticky = 'fixed';
-    }
-  }
-
-  if (!empty($vars['messages'])) {
-    if (!empty($vars['cf']['page']['data']['messages']['raw'])) {
-      $cf['data']['page']['messages']['raw'] = array_merge($vars['cf']['page']['data']['messages']['raw'], $vars['messages']);
-    }
-    else {
-      $cf['data']['page']['messages']['raw'] = $vars['messages'];
-    }
-
-    $cf['show']['page']['messages'] = TRUE;
-    unset($vars['messages']);
-  }
-
-  if (empty($vars['page']['messages'])) {
-    $cf['data']['page']['messages'] = array();
-  }
-  else {
-    $cf['data']['page']['messages']['blocks'] = $vars['page']['messages'];
-    $cf['show']['page']['messages'] = TRUE;
-    unset($vars['page']['messages']);
-  }
-
-  $attributes = array();
-  $attributes['id'] = 'mcneese-messages';
-  $attributes['class'] = array();
-  $attributes['class'][] = 'noscript';
-  $attributes['title'] = t("Messages");
-
-  if ($cf['is']['html5']) {
-    $attributes['class'][] = $messages_sticky;
-
-    if ($messages_sticky == 'fixed') {
-      $attributes['class'][] = 'collapsed';
-      $attributes['tabindex'] = '2';
-    }
-    else {
-      $attributes['class'][] = 'expanded';
-    }
-  }
-  else {
-    $attributes['class'][] = 'relative';
-    $attributes['class'][] = 'expanded';
-  }
-
-  $cf['page']['tags']['mcneese_page_messages_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
-  $cf['page']['tags']['mcneese_page_messages_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+  mcneese_preprocess_page_prepare_messages($cf, $vars);
 
 
   // load all help so that they can be stored in the 'help' region.
@@ -744,6 +689,35 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['tags']['mcneese_page_footer_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
+  // add any watermarks
+  $cf['page']['watermarks-pre'] = '';
+  $cf['page']['watermarks-post'] = '';
+
+
+  if ($cf['is']['node'] && $cf['user']['object']->uid > 0) {
+    if (isset($cf['is']['workbench-moderated']) && $cf['is']['workbench-moderated']) {
+      if (empty($cf['is']['workbench-moderated-published'])) {
+        $cf['page']['watermarks-pre'] .= '<div class="watermark-unpublished">Unpublished</div>';
+      }
+
+      if (!empty($cf['is']['workbench-moderated-draft'])) {
+        if (!empty($cf['is']['workbench-moderated-state-needs_work'])) {
+          $cf['page']['watermarks-post'] .= '<div class="watermark-draft">Needs Work</div>';
+        }
+        elseif (!empty($cf['is']['workbench-moderated-state-needs_review'])) {
+          $cf['page']['watermarks-post'] .= '<div class="watermark-draft">Needs Review</div>';
+        }
+        else {
+          $cf['page']['watermarks-post'] .= '<div class="watermark-draft">Draft</div>';
+        }
+      }
+    }
+    else if (empty($vars['node']->status)) {
+      $cf['page']['watermarks-pre'] .= '<div class="watermark-unpublished">Unpublished</div>';
+    }
+  }
+
+
   // load any messages that might have appeared during the template preprocess operation
   $messages = drupal_get_messages();
 
@@ -1057,6 +1031,58 @@ function mcneese_preprocess_search_block_form(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_advanced_help_popup().
+ */
+function mcneese_preprocess_advanced_help_popup(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  $cf['advanced_help_popup'] = array();
+  $cf['advanced_help_popup']['tags'] = array();
+
+
+  // header
+  $attributes = array();
+  $attributes['id'] = 'mcneese-advanced_help_popup-header';
+  $attributes['class'] = array();
+
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // messages
+  mcneese_preprocess_page_prepare_messages($cf, $vars);
+
+
+  // breadcrumbs
+  $attributes = array();
+  $attributes['id'] = 'mcneese-advanced_help_popup-breadcrumb';
+  $attributes['class'] = array();
+  $attributes['role'] = 'navigation';
+
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // load any messages that might have appeared during the template preprocess operation
+  $messages = drupal_get_messages();
+
+  if (!empty($messages)) {
+    if (isset($cf['data']['page']['messages']['raw'])) {
+      $cf['data']['page']['messages']['raw'] = array_merge($cf['data']['page']['messages']['raw'], $messages);
+    }
+    else {
+      $cf['data']['page']['messages']['raw'] = $messages;
+    }
+
+    $cf['show']['page']['messages'] = TRUE;
+  }
+}
+
+/**
  * Implements hook_cf_theme_get_variables_alter().
  */
 function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
@@ -1111,7 +1137,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
   }
 
 
-  // initialize toolbar settings
+  // toolbar support (only show for logged in accounts)
   foreach (array('toolbar', 'toolbar-autoshow', 'toolbar-autohide', 'toolbar-fixed', 'toolbar-relative', 'toolbar-expanded', 'toolbar-collapsed', 'toolbar-shortcuts-expanded', 'toolbar-shortcuts-collapsed') as $key) {
     $cf['is'][$key] = FALSE;
     $cf['is_data'][$key] = array();
@@ -1119,7 +1145,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
 
   $cf['is']['toolbar'] = user_access('access toolbar');
 
-  if ($cf['is']['toolbar']) {
+  if ($cf['is']['toolbar'] && $cf['user']['object']->uid > 0) {
     $cf['is']['toolbar-expanded'] = TRUE;
     $cf['is']['toolbar-collapsed'] = FALSE;
     $cf['is']['toolbar-sticky'] = FALSE;
@@ -1153,6 +1179,49 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
     }
   }
+
+
+  // workbench moderation support (only show for logged in accounts)
+  if ($cf['is']['node'] && $cf['user']['object']->uid > 0) {
+    if (property_exists($cf['is_data']['node']['object'], 'workbench_moderation')) {
+      $cf['is']['workbench-moderated'] = TRUE;
+      $cf['is']['workbench-moderated-published'] = FALSE;
+      $cf['is']['workbench-moderated-live'] = FALSE;
+      $cf['is']['workbench-moderated-draft'] = FALSE;
+
+      if (empty($cf['is_data']['node']['object']->workbench_moderation['published'])) {
+        $cf['is']['workbench-moderated-live'] = TRUE;
+        $cf['is']['workbench-moderated-draft'] = TRUE;
+      }
+      else {
+        $vid_current = & $cf['is_data']['node']['object']->workbench_moderation['current']->vid;
+        $vid_published = & $cf['is_data']['node']['object']->workbench_moderation['published']->vid;
+        $cf['is']['workbench-moderated-published'] = TRUE;
+
+        if ($cf['at']['path'] == 'node/' . $cf['is_data']['node']['object']->nid . '/draft') {
+          if ($vid_current == $vid_published) {
+            $cf['is']['workbench-moderated-live'] = TRUE;
+            $cf['is']['workbench-moderated-draft'] = TRUE;
+            $cf['is']['workbench-moderated-state-published'] = TRUE;
+          }
+          else {
+            $cf['is']['workbench-moderated-draft'] = TRUE;
+
+            $wm_state = cf_theme_safe_css_string_part($cf['is_data']['node']['object']->workbench_moderation['current']->state);
+            $cf['is']['workbench-moderated-state-' . $wm_state] = TRUE;
+            unset($wm_state);
+          }
+        }
+
+        unset($vid_current);
+        unset($vid_published);
+      }
+    }
+    else {
+      $cf['is']['workbench-unmoderated'] = TRUE;
+    }
+  }
+
 }
 
 /**
@@ -1223,7 +1292,7 @@ function mcneese_render_page() {
 
   // standard render
   if (function_exists('cf_theme_render_cf')) {
-    $keys = array('header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'title_prefix', 'title_suffix', 'help', 'information', 'editing', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'hidden');
+    $keys = array('header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'title_prefix', 'title_suffix', 'help', 'information', 'editing', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'hidden', 'watermarks-pre', 'watermarks-post');
     cf_theme_render_cf($cf, $keys, 'page');
   }
 
@@ -1245,13 +1314,15 @@ function mcneese_render_page() {
 
 
   // render content
-  $cf['data']['page']['content'] = drupal_render_children($cf['page']['content']);
-
-  if (empty($cf['data']['page']['content'])) {
-    $cf['show']['page']['content'] = FALSE;
+  if (empty($cf['page']['content'])) {
+    $cf['show']['page']['content'] = TRUE;
   }
   else {
-    $cf['show']['page']['content'] = TRUE;
+    $cf['data']['page']['content'] = drupal_render_children($cf['page']['content']);
+
+    if (empty($cf['data']['page']['content'])) {
+      $cf['show']['page']['content'] = FALSE;
+    }
   }
 
 
@@ -1260,11 +1331,13 @@ function mcneese_render_page() {
   $float_info_position = 0;
 
   foreach ($float_info_keys as $key) {
-    if ($cf['show']['page'][$key] && in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-      $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info';
-      $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info-' . $float_info_position;
+    if (isset($cf['show']['page'][$key]) && isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+      if (in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info';
+        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info-' . $float_info_position;
 
-      $float_info_position++;
+        $float_info_position++;
+      }
     }
   }
 
@@ -1350,6 +1423,10 @@ function mcneese_status_messages($vars) {
 
   $output = '';
 
+  if (empty($all_messages)) {
+    return $output;
+  }
+
   $status_heading = array(
     'status' => t("Status message"),
     'error' => t("Error message"),
@@ -1414,10 +1491,23 @@ function mcneese_status_messages($vars) {
  */
 function mcneese_breadcrumb($vars) {
   $breadcrumb = (array) $vars['breadcrumb'];
+  $output = '';
 
   $breadcrumb[0] = '<a href="' . base_path() . '" class="link-home" title="Home">' . t("Home") . '</a>';
 
-  return implode(' <div class="crumb-trail">»</div> ', $breadcrumb);
+  $count = 0;
+  $total = count($breadcrumb);
+
+  foreach ($breadcrumb as $key => &$crumb) {
+    $output .= '<li class="crumb">' . $crumb . '</li>';
+
+    $count++;
+    if ($count < $total) {
+      $output .= '<div class="crumb-trail">»</div>';
+    }
+  }
+
+  return $output;
 }
 
 /**
@@ -1436,7 +1526,6 @@ function mcneese_menu_tree($vars) {
 
   return theme('mcneese_tag', $menu_open) . $vars['tree'] . theme('mcneese_tag', $menu_close);
 }
-
 
 /**
  * An internal function for rendering primary & secondary tabs.
@@ -1571,6 +1660,69 @@ function mcneese_render_page_tabs() {
       }
     }
   }
+}
+
+/**
+ * This updates the messages array for page content preprocessing.
+ */
+function mcneese_preprocess_page_prepare_messages(&$cf, &$vars) {
+  $messages_sticky = 'relative';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
+      $messages_sticky = 'relative';
+    }
+    else {
+      $messages_sticky = 'fixed';
+    }
+  }
+
+  if (empty($vars['page']['messages'])) {
+    $cf['data']['page']['messages'] = array();
+  }
+  else {
+    $cf['data']['page']['messages']['blocks'] = $vars['page']['messages'];
+    $cf['show']['page']['messages'] = TRUE;
+    unset($vars['page']['messages']);
+  }
+
+  if (!empty($vars['messages'])) {
+    print("MESSAGE: '" . check_plain(print_r($vars['messages'], TRUE)) . '<br>');
+    if (empty($vars['cf']['page']['data']['messages']['raw'])) {
+      $cf['data']['page']['messages']['raw'] = $vars['messages'];
+    }
+    else {
+      $cf['data']['page']['messages']['raw'] = array_merge($vars['cf']['page']['data']['messages']['raw'], $vars['messages']);
+    }
+
+    $cf['show']['page']['messages'] = TRUE;
+    unset($vars['messages']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-messages';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
+  $attributes['title'] = t("Messages");
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $messages_sticky;
+
+    if ($messages_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
+
+  $cf['page']['tags']['mcneese_page_messages_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_messages_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 }
 
 /**

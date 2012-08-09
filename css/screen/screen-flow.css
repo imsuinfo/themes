@@ -3,6 +3,11 @@
   background-color: #dadada;
 }
 
+.mcneese-advanced_help_popup {
+  color: #424242;
+  background-color: #edf5fa;
+}
+
 #mcneese-top {
   color: #000000;
   background-color: #ffffff;
@@ -14,7 +19,7 @@
   color: #000000;
   background-color: #ffffff;
 
-  min-height: 500px;
+  min-height: 600px;
   min-width: 450px;
 
   margin: 0 64px;
@@ -111,7 +116,6 @@
   max-width: 100%;
 
   overflow: hidden;
-  z-index: 3;
 }
 
 #mcneese-header > .header-bottom > .header-menu-2 {
@@ -337,7 +341,7 @@
   word-wrap: break-word;
 }
 
-#mcneese-page-content-wrapper {
+#mcneese-page-content {
   min-width: 450px;
 
   box-sizing: border-box;
@@ -345,7 +349,7 @@
   -webkit-box-sizing: border-box;
 }
 
-#mcneese-page-content-wrapper > .column-2 {
+#mcneese-page-content > .column-2 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -353,18 +357,18 @@
   overflow: auto;
 }
 
-#mcneese-page-content-wrapper.full > .column-2 {
+#mcneese-page-content.full > .column-2 {
   min-width: 450px;
 }
 
-#mcneese-page-content-wrapper.split > .column-2 {
+#mcneese-page-content.split > .column-2 {
   min-width: 260px;
 
   /*margin-left: 205px;*/
 }
 
-#mcneese-page-content-wrapper,
-#mcneese-page-content {
+#mcneese-page-content,
+#mcneese-page-main {
   display: block;
 
   margin: 0;

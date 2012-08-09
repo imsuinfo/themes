@@ -313,8 +313,12 @@
   padding: 0 3px;
 }
 
+#mcneese-breadcrumb > .crumb {
+  display: inline-block;
+}
+
 #mcneese-breadcrumb > .crumb-trail,
-#mcneese-breadcrumb > a {
+#mcneese-breadcrumb > .crumb > a {
   display: inline-block;
 
   vertical-align: top;
@@ -325,14 +329,14 @@
   padding: 3px;
 }
 
-#mcneese-breadcrumb > a:active,
-#mcneese-breadcrumb > a:hover,
-#mcneese-breadcrumb > a:focus {
+#mcneese-breadcrumb > .crumb > a:active,
+#mcneese-breadcrumb > .crumb > a:hover,
+#mcneese-breadcrumb > .crumb > a:focus {
   color: #00335b;
   background-color: #fad703;
 }
 
-#mcneese-breadcrumb > .link-home {
+#mcneese-breadcrumb > .crumb > .link-home {
   background-image: url(../../images/home.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -348,11 +352,10 @@
   overflow: hidden;
 }
 
-#mcneese-breadcrumb > .link-home:active,
-#mcneese-breadcrumb > .link-home:hover,
-#mcneese-breadcrumb > .link-home:focus {
+#mcneese-breadcrumb > .crumb > .link-home:active,
+#mcneese-breadcrumb > .crumb > .link-home:hover,
+#mcneese-breadcrumb > .crumb > .link-home:focus {
   background-image: url(../../images/home-black.png);
-
 }
 
 #mcneese-breadcrumb > .crumb-node_id,
@@ -518,6 +521,7 @@
   background-image: url(../../images/menu_tabs.png);
   background-repeat: no-repeat;
   background-position: top right;
+  background-color: #dadada;
 
   min-width: 32px;
   min-height: 32px;
@@ -526,21 +530,23 @@
 #mcneese-tabs.fixed.collapsed:active,
 #mcneese-tabs.fixed.collapsed:hover,
 #mcneese-tabs.fixed.collapsed:focus {
+  background-color: transparent;
+
   min-height: auto;
   max-height: auto;
 }
 
 .mcneese.is-toolbar-relative #mcneese-tabs.fixed,
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-tabs.fixed {
-  top: 10px
+  top: 10px;
 }
 
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-tabs.fixed {
-  top: 35px
+  top: 35px;
 }
 
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-tabs.fixed {
-  top: 60px
+  top: 60px;
 }
 
 #mcneese-tabs.fixed > .tab,

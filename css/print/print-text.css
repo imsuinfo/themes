@@ -24,6 +24,21 @@
 
 
 
+/*** Watermarks ***/
+#mcneese-page-watermarks-pre,
+#mcneese-page-watermarks-post {
+  display: none;
+}
+
+
+
+/*** Shortcuts ***/
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts {
+  display: none;
+}
+
+
+
 /*** Sections of depth 0 ***/
 .mcneese h2,
 .mcneese .html_tag-section > .html_tag-header > h2,

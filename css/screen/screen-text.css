@@ -9,9 +9,12 @@
   line-height: 18px;
 }
 
-.mcneese h1 {
+#mcneese-page-content > .html_tag-header > h1 {
+  display: inline-block;
+  vertical-align: top;
+
   color: #00335b;
-  text-shadow: -1px 1px 3px #b5d4ff; /*#a4caff;*/
+  text-shadow: -1px 1px 3px #b4c2d6;
 
   font-family: Arial,Helvetica,sans-serif;
   font-weight: normal;
@@ -21,8 +24,83 @@
   margin: 4px 0;
 }
 
+.mcneese.is-workbench-moderated-draft > #mcneese-page {
+  background-color: #edf5fa;
+}
+
 .mcneese.is-node.is-unpublished > #mcneese-page {
   background-color: #ffeeee;
+}
+
+
+
+/*** Watermarks ***/
+#mcneese-page-watermarks-pre,
+#mcneese-page-watermarks-post {
+  position: absolute;
+  top: 90px;
+
+  color: #000000;
+  background-color: transparent;
+
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 4px;
+  text-align: center;
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  width: 1em;
+  min-width: 1em;
+  max-width: 1em;
+
+  word-wrap: break-word;
+
+  z-index: -1;
+}
+
+#mcneese-page-watermarks-pre {
+  left: 10px;
+}
+
+#mcneese-page-watermarks-post {
+  right: 10px;
+}
+
+
+
+/*** Shortcuts ***/
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 0;
+}
+
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a {
+  display: inline-block;
+  vertical-align: top;
+
+  line-height: 30px;
+}
+
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .text,
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+  float: none;
+  vertical-align: middle;
+}
+
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+  display: inline-block;
+
+  margin-left: 0;
+}
+
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:active > .text,
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:focus > .text,
+#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:hover > .text {
+  display: inline-block;
 }
 
 

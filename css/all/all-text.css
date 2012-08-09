@@ -334,7 +334,15 @@
 .mcneese a#edit-cancel:hover,
 .mcneese input#preview-submit:hover,
 .mcneese ul#views-display-menu-tabs a:hover,
-.mcneese ul#views-display-menu-tabs a.active:hover {
+.mcneese ul#views-display-menu-tabs a.active:hover,
+.mcneese input#edit-submit.form-preview,
+.mcneese input.form-preview,
+.mcneese input#preview-submit,
+.mcneese input#edit-reset-cache,
+.mcneese input#edit-submit.form-undelete,
+.mcneese input.form-undelete,
+.mcneese input#edit-preview,
+.mcneese input#edit-undelete {
   text-decoration: underline;
 
   color: #ffffff;
@@ -579,55 +587,55 @@
 
 
 /*** Status Page ***/
-#mcneese-page-content > table.update > tbody > tr {
+#mcneese-page-main > table.update > tbody > tr {
   border-bottom: 1px solid #999999;
 }
 
-#mcneese-page-content > table.update > tbody > tr.ok {
+#mcneese-page-main > table.update > tbody > tr.ok {
   background-color: #d1f7cb;
 }
 
-#mcneese-page-content > table.update > tbody > tr.info {
+#mcneese-page-main > table.update > tbody > tr.info {
   background-color: #e0e0ff;
 }
 
-#mcneese-page-content > table.update > tbody > tr.warning {
+#mcneese-page-main > table.update > tbody > tr.warning {
   background-color: #ffffdd;
 }
 
-#mcneese-page-content > table.update > tbody > tr.error {
+#mcneese-page-main > table.update > tbody > tr.error {
   background-color: #ffdddd;
 }
 
-#mcneese-page-content > table.update > tbody > tr.unknown {
+#mcneese-page-main > table.update > tbody > tr.unknown {
   background-color: #eeeeee;
 }
 
-#mcneese-page-content > table.update > tbody > tr table.version-also-available {
+#mcneese-page-main > table.update > tbody > tr table.version-also-available {
   color: #000000;
   background-color: #f3e6ff;
 }
 
-#mcneese-page-content > table.update > tbody > tr table.version-recommended {
+#mcneese-page-main > table.update > tbody > tr table.version-recommended {
   color: #000000;
   background-color: #e6eaff;
 }
 
-#mcneese-page-content > table.update > tbody > tr table.version-recommended-strong {
+#mcneese-page-main > table.update > tbody > tr table.version-recommended-strong {
   font-weight: bold;
 }
 
-#mcneese-page-content > table.update > tbody > tr table.version-latest {
+#mcneese-page-main > table.update > tbody > tr table.version-latest {
   color: #000000;
   background-color: #ffebeb;
 }
 
-#mcneese-page-content > table.update > tbody > tr a,
-#mcneese-page-content > table.update > tbody > tr a:visited {
+#mcneese-page-main > table.update > tbody > tr a,
+#mcneese-page-main > table.update > tbody > tr a:visited {
   color: #0d3971;
 }
 
-#mcneese-page-content > table.update > tbody > tr > td ul.links > li {
+#mcneese-page-main > table.update > tbody > tr > td ul.links > li {
   list-style-type: none;
 
   padding: 3px 0;
