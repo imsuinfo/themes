@@ -71,35 +71,35 @@
 
 
 /*** Shortcuts ***/
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts {
+.mcneese .html_tag-header > .add-or-remove-shortcuts {
   display: inline-block;
   vertical-align: top;
 
   padding: 0;
 }
 
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a {
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a {
   display: inline-block;
   vertical-align: top;
 
   line-height: 30px;
 }
 
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .text,
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .text,
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .icon {
   float: none;
   vertical-align: middle;
 }
 
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .icon {
   display: inline-block;
 
   margin-left: 0;
 }
 
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:active > .text,
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:focus > .text,
-#mcneese-page-content > .html_tag-header > .add-or-remove-shortcuts > a:hover > .text {
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a:active > .text,
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a:focus > .text,
+.mcneese .html_tag-header > .add-or-remove-shortcuts > a:hover > .text {
   display: inline-block;
 }
 
