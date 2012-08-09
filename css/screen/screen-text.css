@@ -9,7 +9,7 @@
   line-height: 18px;
 }
 
-#mcneese-page-content > .html_tag-header > h1 {
+.mcneese .html_tag-header > h1 {
   display: inline-block;
   vertical-align: top;
 
