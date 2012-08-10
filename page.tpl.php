@@ -149,7 +149,7 @@
       <?php } ?>
 
       <?php if ($cf['show']['page']['content']){ ?>
-        <div id='mcneese_drupal-content' class='drupal_content clearfix <?php print($cf['markup_css']['content']['class']); ?>'>
+        <div id='mcneese_drupal-content' class='drupal_content clearfix <?php print($cf['markup_css']['body']['class']); ?>'>
           <!--(begin_content)-->
           <h2 class='element-invisible'><?php print(t("Primary Content")); ?></h2>
           <?php print($page['content']); ?>
