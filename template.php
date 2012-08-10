@@ -1086,14 +1086,21 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
  * Implements hook_cf_theme_get_variables_alter().
  */
 function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
+  $cf['theme']['path'] = path_to_theme();
+  $cf['theme']['machine_name'] = 'mcneese';
+  $cf['theme']['human_name'] = t("McNeese");
+
   $cf['headers'] = cf_theme_generate_headers($cf);
   $cf['tags'] = array();
-  $cf['is']['html5'] = TRUE;
-  $cf['is']['legacy'] = FALSE;
-  $cf['is_data']['html5'] = array();
-  $cf['is_data']['legacy'] = array();
   $cf['agent']['doctype'] = '<!DOCTYPE html>';
   $cf['date']['enabled'] = TRUE;
+
+  foreach (array('html5', 'legacy', 'unsupported', 'in_ie_compatibility_mode') as $key => $value) {
+    $cf['is'][$key] = FALSE;
+    $cf['is_data'][$key] = array();
+  }
+
+  $cf['is']['html5'] = TRUE;
 
   if (!isset($cf['show']['messages'])) {
     $cf['data']['page']['messages'] = array('raw' => array(), 'renderable' => array(), 'blocks' => array());
@@ -1107,25 +1114,50 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
 
 
   // tweak features based on user-agent
-  switch($cf['agent']['machine_name']){
+  switch($cf['agent']['machine_name']) {
+    case 'mozilla':
+      $matches = array();
+
+      $result = preg_match('/rv:(\d*)\.(\d*)/i', $cf['agent']['raw'], $matches);
+      if ($result > 0) {
+        if (isset($matches[1]) && isset($matches[2])) {
+          if ($matches[1] <= 1 && $matches[2] <= 7) {
+            $cf['is']['html5'] = FALSE;
+            $cf['is']['legacy'] = TRUE;
+            $cf['is']['unsupported'] = TRUE;
+          }
+        }
+      }
+
+      break;
+
     case 'ie':
       $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9';
 
-      if ($cf['agent']['major_version'] <= 8){
+      if ($cf['agent']['major_version'] <= 8) {
         $cf['is']['unsupported'] = TRUE;
         $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9; IE=8';
 
         drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
 
-        if ($cf['agent']['major_version'] == 7){
-          if (preg_match('@; Trident/@', $cf['agent']['raw']) > 0){
-            $cf['is']['in_ie_compatibility_mode'] = TRUE;
-          }
-        }
+        if ($cf['agent']['major_version'] <= 8) {
+          $cf['is']['unsupported'] = TRUE;
 
-        if ($cf['agent']['major_version'] <= 7){
-          $cf['is']['html5'] = FALSE;
-          $cf['is']['legacy'] = TRUE;
+          $custom_css = array();
+          $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all');
+          $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie.css';
+          drupal_add_css($custom_css['data'], $custom_css['options']);
+
+          if ($cf['agent']['major_version'] == 7) {
+            if (preg_match("@; Trident/@", $cf['agent']['raw']) > 0) {
+              $cf['is']['in_ie_compatibility_mode'] = TRUE;
+            }
+          }
+
+          if ($cf['agent']['major_version'] <= 7) {
+            $cf['is']['html5'] = FALSE;
+            $cf['is']['legacy'] = TRUE;
+          }
         }
       }
 
@@ -1310,6 +1342,10 @@ function mcneese_render_page() {
   if (!empty($cf['page']['breadcrumb'])) {
     $cf['data']['page']['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => $cf['page']['breadcrumb']));
     $cf['show']['page']['breadcrumb'] = TRUE;
+  }
+  else {
+    $cf['data']['page']['breadcrumb'] = array();
+    $cf['show']['page']['breadcrumb'] = FALSE;
   }
 
 

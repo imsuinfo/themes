@@ -1,0 +1,19 @@
+/*** Primary & Seconday Menus - IE8 and earlier ***/
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-section > .header-menu > .html_tag-nav > li {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+
+
+/*** Primary & Seconday Menus - IE7 and earlier ***/
+.mcneese.agent-name-ie.is-legacy.is-unsupported #mcneese-header > .header-section > .header-menu > .html_tag-nav > li {
+  display: inline;
+}
+
+.mcneese.agent-name-ie.is-legacy.is-unsupported #mcneese-header > .header-section > .header-menu > .html_tag-nav > li > a {
+  text-align: center;
+
+  margin-left: 2px;
+  margin-right: 2px;
+}
