@@ -29,7 +29,7 @@ function mcneese_drupal_initialize_cf_array(&$vars) {
     $cf['is'][$item] = FALSE;
   }
 
-  foreach (array('help', 'sidebar_left', 'sidebar_right', ) as $item) {
+  foreach (array('help', 'sidebar_left', 'sidebar_right') as $item) {
     $cf['show']['page'][$item] = FALSE;
   }
 
@@ -223,9 +223,9 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
 
   $cf['date']['enabled'] = TRUE;
 
-  $msu['meta']['name']['copyright'] = '2011© McNeese State University';
-  $msu['meta']['name']['description'] = 'McNeese State University Website';
-  $msu['meta']['name']['distribution'] = 'web';
+  $cf['meta']['name']['copyright'] = '2012© McNeese State University';
+  $cf['meta']['name']['description'] = 'McNeese State University Website';
+  $cf['meta']['name']['distribution'] = 'web';
 
   foreach (array('in_ie_compatibility_mode') as $key){
     $cf['is'][$key] = FALSE;
