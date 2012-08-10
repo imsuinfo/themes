@@ -1,0 +1,192 @@
+#mcneese-top,
+#mcneese-page,
+#mcneese-bottom,
+.mcneese > .dev-query {
+  width: 960px;
+  min-width: 960px;
+  max-width: 960px;
+
+  margin: 0 auto;
+}
+
+#mcneese-page-content.split {
+  min-width: 755px;
+}
+
+#mcneese-page-content.full {
+  min-width: 960px;
+}
+
+.mcneese.is-admin_path #mcneese-top,
+.mcneese.is-admin_path #mcneese-page,
+.mcneese.is-admin_path #mcneese-bottom,
+.mcneese.is-admin_path > .dev-query {
+  width: auto;
+  min-width: 960px;
+  max-width: 100%;
+
+  margin: 0 64px;
+}
+
+.mcneese > .dev-query,
+.mcneese.is-admin_path > .dev-query {
+  margin-bottom: 10px;
+}
+
+
+
+/*** wwwdev.mcneese.edu-specific ***/
+.mcneese.at-wwwdev_mcneese_edu,
+.mcneese.at-wwwdev2_mcneese_edu,
+.mcneese.at-wwwdev,
+.mcneese.at-wwwdev2 {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-messages.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-messages.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-messages.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-messages.fixed.collapsed {
+  background-image: url(../../images/messages-alt.png);
+
+  background-color: #000000;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-help.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-help.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-help.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed {
+  background-image: url(../../images/help-alt.png);
+
+  background-color: #000000;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed {
+  background-image: url(../../images/menu_tabs-alt.png);
+
+  background-color: #000000;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-messages.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-messages.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-messages.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-messages.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-messages.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-messages.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-messages.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-messages.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-messages.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-messages.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-messages.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-messages.fixed.collapsed:focus {
+  background-image: url(../../images/messages.png);
+  background-color: #fffff0;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-help.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-help.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-help.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-help.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-help.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-help.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-help.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-help.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-help.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:focus {
+  background-image: url(../../images/help.png);
+  background-color: #fff0fb;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:focus {
+  background-image: url(../../images/menu_tabs.png);
+  background-color: transparent;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-watermarks-pre,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-watermarks-pre,
+.mcneese.at-wwwdev #mcneese-page-watermarks-pre,
+.mcneese.at-wwwdev2 #mcneese-page-watermarks-pre,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-watermarks-post,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-watermarks-post,
+.mcneese.at-wwwdev #mcneese-page-watermarks-post,
+.mcneese.at-wwwdev2 #mcneese-page-watermarks-post {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+
+
+/*** Search Box Links ***/
+#mcneese-header > .header-top > .block-name-block-block-13 {
+  position: absolute;
+  display: block;
+
+  top: 8px;
+  right: 20px;
+
+  width: 226px;
+  min-width: 226px;
+  max-width: 226px;
+  overflow: hidden;
+
+  height: 14px;
+  min-height: 14px;
+  max-height: 14px;
+
+  color: #ffffff;
+  background-color: #023761;
+
+  font-size: 10px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 13px;
+
+  padding: 3px 3px 0 3px;
+  border: 1px solid #065c9f;
+  border-bottom: 0;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#mcneese-header > .header-top > .block-name-block-block-13 > li,
+#mcneese-header > .header-top > .block-name-block-block-13 > div {
+  display: inline-block;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+#mcneese-header > .header-top > .block-name-block-block-13 > .search_form-top_box_links-ada {
+  width: 30px;
+}
+
+#mcneese-header > .header-top > .block-name-block-block-13 > .search_form-top_box_links-staff {
+  width: 115px;
+}
+
+#mcneese-header > .header-top > .block-name-block-block-13 > .search_form-top_box_links-index {
+  width: 50px;
+}
+
+#mcneese-header > .header-top > .block-name-block-block-13 > .search_form-top_box_links-bar {
+  width: 4px;
+}

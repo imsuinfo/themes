@@ -1,0 +1,61 @@
+name = McNeese - www
+description = "This is a sub-theme of the mcneese theme, adjusted for www.mcneese.edu."
+version = "7.x-1.0"
+core = 7.x
+engine = phptemplate
+base theme = mcneese
+screenshot = images/screenshot.png
+
+
+stylesheets[all][] = css/all/all-www-common.css
+stylesheets[all][] = css/all/all-www-front.css
+
+stylesheets[aural][] = css/aural/aural-www-common.css
+stylesheets[aural][] = css/aural/aural-www-front.css
+
+stylesheets[braille][] = css/braille/braille-www-common.css
+stylesheets[braille][] = css/braille/braille-www-front.css
+
+stylesheets[embossed][] = css/embossed/embossed-www-common.css
+stylesheets[embossed][] = css/embossed/embossed-www-front.css
+
+stylesheets[handheld][] = css/handheld/handheld-www-common.css
+stylesheets[handheld][] = css/handheld/handheld-www-front.css
+
+stylesheets[print][] = css/print/print-www-common.css
+stylesheets[print][] = css/print/print-www-front.css
+
+stylesheets[projection][] = css/projection/projection-www-common.css
+stylesheets[projection][] = css/projection/projection-www-front.css
+
+stylesheets[screen][] = css/screen/screen-www-common.css
+stylesheets[screen][] = css/screen/screen-www-front.css
+
+stylesheets[tty][] = css/tty/tty-www-common.css
+stylesheets[tty][] = css/tty/tty-www-front.css
+
+stylesheets[tv][] = css/tv/tv-www-common.css
+stylesheets[tv][] = css/tv/tv-www-front.css
+
+
+regions[header]        = Header
+regions[header_menu_1] = Header Menu 1
+regions[header_menu_2] = Header Menu 2
+
+regions[messages]    = Messages
+regions[help]        = Help
+regions[information] = Information
+regions[editing]     = Editing
+
+regions[menus]   = Menus
+regions[asides]  = Asides
+regions[content] = Content
+regions[footer]  = Footer
+regions[hidden]  = Hidden
+
+
+features[] = name
+features[] = search
+features[] = favicon
+
+
