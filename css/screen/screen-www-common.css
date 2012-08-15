@@ -33,6 +33,12 @@
   margin-bottom: 10px;
 }
 
+#mcneese-page-content > .group_image,
+#mcneese-page-content > .column-2 > .group_image {
+  display: block;
+  margin: 0 auto;
+}
+
 
 
 /*** wwwdev.mcneese.edu-specific ***/
