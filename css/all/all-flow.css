@@ -51,6 +51,13 @@
   float: none;
 }
 
+.mcneese div.image-style-preview > div.preview-image-wrapper {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+
 
 /*** Table ***/
 .mcneese table {
