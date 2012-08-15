@@ -134,6 +134,14 @@
 
 
 
+/*** sandbox.mcneese.edu-specific ***/
+.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-section > .site-logo,
+.mcneese.at-sandbox #mcneese-header > .header-section > .site-logo {
+  background-image: url(../../images/sandbox.png);
+}
+
+
+
 /*** Search Box Links ***/
 #mcneese-header > .header-top > .block-name-block-block-13 {
   position: absolute;
