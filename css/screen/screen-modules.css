@@ -156,6 +156,10 @@
   -webkit-box-sizing: border-box;
 }
 
+.mcneese .vertical-tabs > .vertical-tabs-list > .vertical-tab-button {
+  word-break: break-word;
+}
+
 .mcneese .vertical-tabs > .vertical-tabs-panes {
   display: inline-block;
   vertical-align: top;
