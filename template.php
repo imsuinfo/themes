@@ -1229,8 +1229,9 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
         $vid_current = & $cf['is_data']['node']['object']->workbench_moderation['current']->vid;
         $vid_published = & $cf['is_data']['node']['object']->workbench_moderation['published']->vid;
         $cf['is']['workbench-moderated-published'] = TRUE;
+        $matched = preg_match('~node/' . $cf['is_data']['node']['object']->nid . '/(draft|edit|revisions/\d+/view)($|/)~i', $cf['at']['path']);
 
-        if ($cf['at']['path'] == 'node/' . $cf['is_data']['node']['object']->nid . '/draft') {
+        if ($matched > 0) {
           if ($vid_current == $vid_published) {
             $cf['is']['workbench-moderated-live'] = TRUE;
             $cf['is']['workbench-moderated-draft'] = TRUE;

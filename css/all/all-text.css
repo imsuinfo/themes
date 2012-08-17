@@ -23,6 +23,10 @@
   color: #8c2e0b;
 }
 
+#mcneese-page-main > .node-unpublished {
+  background-color: inherit;
+}
+
 
 
 /*** Skip Navigation ***/
