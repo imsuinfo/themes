@@ -1,3 +1,7 @@
+.mcneese.is-logged_in {
+  min-width: inherit;
+}
+
 #mcneese-top,
 #mcneese-page,
 #mcneese-bottom,
@@ -9,21 +13,17 @@
   margin: 0 auto;
 }
 
-#mcneese-page-content.split {
-  min-width: 755px;
+#mcneese-page {
+  overflow: auto;
 }
 
-#mcneese-page-content.full {
-  min-width: 960px;
-}
-
-.mcneese.is-admin_path #mcneese-top,
-.mcneese.is-admin_path #mcneese-page,
-.mcneese.is-admin_path #mcneese-bottom,
-.mcneese.is-admin_path > .dev-query {
-  width: auto;
-  min-width: 960px;
-  max-width: 100%;
+.mcneese.is-logged_in #mcneese-top,
+.mcneese.is-logged_in #mcneese-page,
+.mcneese.is-logged_in #mcneese-bottom,
+.mcneese.is-logged_in > .dev-query {
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
 
   margin: 0 64px;
 }
@@ -37,6 +37,15 @@
 #mcneese-page-content > .column-2 > .group_image {
   display: block;
   margin: 0 auto;
+}
+
+#mcneese-page-content > img.group_image,
+#mcneese-page-content > .column-2 > img.group_image {
+  width: 100%;
+
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 
@@ -203,4 +212,12 @@
 
 #mcneese-header > .header-top > .block-name-block-block-13 > .search_form-top_box_links-bar {
   width: 4px;
+}
+
+
+
+/*** Fix/Reduce form problems ***/
+#mcneese-page-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item-workbench-access-id > select,
+#mcneese-page-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item > .image-widget > .image-preview > img {
+  max-width: 100%;
 }
