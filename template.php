@@ -1135,14 +1135,11 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9';
 
       if ($cf['agent']['major_version'] <= 8) {
-        $cf['is']['unsupported'] = TRUE;
         $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9; IE=8';
 
         drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
 
         if ($cf['agent']['major_version'] <= 8) {
-          $cf['is']['unsupported'] = TRUE;
-
           $custom_css = array();
           $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all');
           $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie.css';
@@ -1155,6 +1152,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
           }
 
           if ($cf['agent']['major_version'] <= 7) {
+            $cf['is']['unsupported'] = TRUE;
             $cf['is']['html5'] = FALSE;
             $cf['is']['legacy'] = TRUE;
           }
