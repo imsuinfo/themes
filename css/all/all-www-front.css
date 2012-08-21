@@ -1,3 +1,28 @@
+.mcneese.node-id-492.is-logged_in,
+.mcneese.node-id-819.is-logged_in,
+.mcneese.is-front.is-logged_in {
+  min-width: 1098px;
+}
+
+.mcneese.node-id-492.is-logged_in #mcneese-top,
+.mcneese.node-id-492.is-logged_in #mcneese-page,
+.mcneese.node-id-492.is-logged_in #mcneese-bottom,
+.mcneese.node-id-492.is-logged_in > .dev-query,
+.mcneese.node-id-819.is-logged_in #mcneese-top,
+.mcneese.node-id-819.is-logged_in #mcneese-page,
+.mcneese.node-id-819.is-logged_in #mcneese-bottom,
+.mcneese.node-id-819.is-logged_in > .dev-query,
+.mcneese.is-front.is-logged_in #mcneese-top,
+.mcneese.is-front.is-logged_in #mcneese-page,
+.mcneese.is-front.is-logged_in #mcneese-bottom,
+.mcneese.is-front.is-logged_in > .dev-query {
+  width: 960px;
+  min-width: 960px;
+  max-width: 960px;
+
+  margin: 0 auto;
+}
+
 #views-jqfx-nivoslider-images-1 > .nivo-controlNav > .nivo-control {
   vertical-align: top;
 }
