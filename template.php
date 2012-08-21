@@ -51,6 +51,15 @@ function mcneese_www_preprocess_page(&$vars) {
     $cf['data']['page']['logo']['href'] = base_path();
     $cf['show']['page']['logo'] = TRUE;
   }
+
+  if ($cf['is']['unsupported']) {
+    if ($cf['is']['in_ie_compatibility_mode']){
+      $cf['is_data']['unsupported']['message'] = t("You are running Internet Explorer in compatibility mode. To improve your experience using this website, please <a href='@alternate_browser_url'>turn off compatibility mode</a>.", array('@alternate_browser_url' => "http://www.sevenforums.com/tutorials/1196-internet-explorer-compatibility-view-turn-off.html#post_message_10408"));
+    }
+    else {
+      $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['human_name'], '@alternate_browser_url' => "/supported_browsers"));
+    }
+  }
 }
 
 /**

@@ -1,0 +1,23 @@
+/*** Unsupported Notice ***/
+#mcneese-unsupported-message {
+  background-color: #ffe0eb;
+
+  border: 2px dotted #ff5555;
+  margin: 10px 5px;
+  padding: 5px;
+
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.mcneese.is-in_ie_compatibility_mode #mcneese-unsupported-message {
+  background-color: #fffee0;
+
+  border: 2px dotted #d5d30e;
+  margin: 10px 5px;
+  padding: 5px;
+
+  font-size: 13px;
+  line-height: 17px;
+}
+

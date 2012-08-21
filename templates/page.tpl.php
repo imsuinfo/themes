@@ -11,6 +11,11 @@
   $float_tabs = in_array('fixed', $cf['page']['tags']['mcneese_page_tabs_open']['attributes']['class']);
   $float_action_links = in_array('fixed', $cf['page']['tags']['mcneese_page_action_links_open']['attributes']['class']);
 ?>
+<?php if ($cf['is']['unsupported']) { ?>
+  <div id="mcneese-unsupported-message">
+    <?php print($cf['is_data']['unsupported']['message']); ?>
+  </div>
+<?php } ?>
 
 <?php if ($cf['show']['page']['header']) { ?>
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_open']) . "\n"); ?>
