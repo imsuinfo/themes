@@ -461,3 +461,13 @@
   overflow: auto;
 }
 
+
+
+/*** legacy support ***/
+.mcneese.is-legacy #mcneese-header {
+  height: 157px;
+}
+
+.mcneese.is-legacy #mcneese-page-side {
+  float: left;
+}

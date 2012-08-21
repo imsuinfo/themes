@@ -190,3 +190,19 @@
 
   margin: 2px 0;
 }
+
+
+
+/*** legacy support ***/
+.mcneese.is-legacy #mcneese-header,
+.mcneese.is-legacy #mcneese-header .header-top {
+  background-color: #00477f;
+}
+
+.mcneese.is-legacy #mcneese-header .header-bottom {
+  background-color: #00335b;
+}
+
+.mcneese.is-legacy #mcneese-page .node-unpublished {
+  background-color: #ffffff;
+}

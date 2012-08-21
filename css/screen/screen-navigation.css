@@ -803,3 +803,15 @@
   color: #ffaa00;
   background-color: #00335b;
 }
+
+
+
+/*** legacy support ***/
+.mcneese.is-legacy #mcneese-breadcrumb {
+  color: #ffffff;
+}
+
+.mcneese.is-legacy #mcneese-breadcrumb .crumb-trail,
+.mcneese.is-legacy #mcneese-breadcrumb .crumb {
+  display: inline;
+}
