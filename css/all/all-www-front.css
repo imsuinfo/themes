@@ -515,3 +515,205 @@
 #front_page_columns-spotlight .front_page-events-more_link:visited {
   text-decoration: none;
 }
+
+
+
+/*** IE 6, 7, 8, and some legacy Fixes ***/
+.mcneese.is-legacy #mcneese-top,
+.mcneese.is-legacy #mcneese-page,
+.mcneese.is-legacy #mcneese-bottom,
+.mcneese.is-legacy .dev-query {
+  width: 960px;
+
+  margin: 0 auto;
+}
+
+.mcneese.is-legacy #mcneese-header .header-section .block-id-1 {
+  position: absolute;
+  right: 20px;
+
+  font-size: 10px;
+}
+
+.mcneese.is-legacy #front_page_columns-news .views-field-field-hightlight-image {
+  position: absolute;
+  top: 615px;
+  right: 25px;
+}
+
+.mcneese.is-legacy #mcneese-header .header-top .header-menu-1 .html_tag-nav li a,
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li > a {
+  width: 96px;
+  min-width: 96px;
+  max-width: 96px;
+
+  text-align: center;
+}
+
+.mcneese.is-legacy #mcneese-header .header-top .header-menu-1 .html_tag-nav li.id-menu-link-menu-primary-navigation-1273 a, 
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li.id-menu-link-menu-primary-navigation-1273 > a {
+  width: 145px;
+  min-width: 145px;
+  max-width: 145px;
+
+  text-align: center;
+}
+
+.mcneese.is-legacy #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
+  width: 100%;
+}
+
+.mcneese.is-legacy #mcneese-header .header-top .header-menu-1 .html_tag-nav .menu-link-name-menu-primary-navigation {
+  float: right;
+
+  margin: 0 2px;
+}
+
+.mcneese.is-legacy #mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav {
+  position: absolute;
+
+  bottom: 0px;
+}
+
+.mcneese.is-legacy #mcneese-header .header-bottom .header-menu-2 .html_tag-nav .menu-link-name-menu-secondary-navigation {
+  float: left;
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-spotlight {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mcneese.is-legacy #front_page_columns-spotlight {
+  position: absolute;
+  top: 0px;
+  right: -4px;
+
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #front_page_columns-spotlight {
+  position: absolute;
+  top: 520px;
+  right: 25px;
+
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-column_title-spotlight {
+  position: absolute;
+  top: -55px;
+  left: -4px;
+
+  height: 15px;
+  min-height: 15px;
+  max-height: 15px;
+
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mcneese.is-legacy #front_page_columns-column_title-spotlight {
+  position: absolute;
+  top: -55px;
+  left: 0px;
+
+  height: 15px;
+  min-height: 15px;
+  max-height: 15px;
+
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.mcneese.is-legacy #front_page_columns-column_title-news,
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-column_title-news,
+.mcneese.is-legacy #front_page_columns-column_title-lagniappe,
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-column_title-lagniappe {
+  height: 15px;
+  min-height: 15px;
+  max-height: 15px;
+}
+
+.mcneese.is-legacy #mcneese-page .html_tag-aside .header-section .block-id-2 #search-block-form {
+  position: absolute;
+  right: 20px;
+
+  width: 226px;
+  min-width: 226px;
+  max-width: 226px;
+}
+
+.mcneese.is-legacy #mcneese-page .html_tag-aside .header-section .block-id-1 li,
+.mcneese.is-legacy #mcneese-page .html_tag-aside .header-section .block-id-1 .search_form-top_box_links-bar {
+  display: inline;
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-page > .html_tag-aside > .header-section > .block-id-2 > #search-block-form {
+  position: absolute;
+  right: 12px;
+
+  width: 226px;
+  min-width: 226px;
+  max-width: 226px;
+}
+
+.mcneese.is-legacy #mcneese-page .html_tag-aside .header-section .block-id-2 #search-block-form div .form-item {
+  display: inline;
+}
+
+.mcneese.is-legacy #mcneese-page .html_tag-aside .header-section .block-id-2 #search-block-form div .form-actions {
+  display: inline;
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-page > .html_tag-aside > .header-section > .block-id-2 > #search-block-form > div > .form-actions {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+
+  height: 16px;
+  min-height: 16px;
+  max-height: 16px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-page > .html_tag-aside > .header-section > .block-id-2 > #search-block-form > div > .form-actions > #edit-submit {
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+
+  height: 16px;
+  min-height: 16px;
+  max-height: 16px;
+}
+
+.mcneese.is-legacy #front_page_columns-news .view-display-id-front_page_events .view-content .views-row .views-field {
+  display: inline;
+}
+
+.mcneese.is-legacy #front_page_columns-news .view-display-id-front_page_events .view-content .views-row .views-field-field-event-image {
+  float: left;
+  width: 210px;
+  min-width: 210px;
+  max-width: 210px;
+}
+
+.mcneese.is-legacy #front_page_columns-news .view-display-id-front_page_events .view-content .views-row .views-field-nothing {
+  width: 290px;
+  min-width: 290px;
+  max-width: 290px;
+}
