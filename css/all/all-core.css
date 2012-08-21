@@ -22,3 +22,7 @@
   padding: 0;
   border: none;
 }
+
+.mcneese .node-unpublished {
+  background-color: inherit;
+}
