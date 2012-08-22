@@ -1122,7 +1122,7 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
  * Implements hook_cf_theme_get_variables_alter().
  */
 function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
-  $cf['theme']['path'] = path_to_theme();
+  $cf['theme']['path'] = drupal_get_path('theme', 'mcneese');
   $cf['theme']['machine_name'] = 'mcneese';
   $cf['theme']['human_name'] = t("McNeese");
 
