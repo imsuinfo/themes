@@ -4,16 +4,21 @@
  * Html theme implementation.
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (function_exists('cf_theme_generate_headers')) {
+    $cf['headers'] = cf_theme_generate_headers($cf);
+  }
+
   print($cf['agent']['doctype'] . "\n");
 ?>
 <html lang="<?php print($language->language); ?>"dir="<?php print $language->dir; ?>"<?php if ($cf['show']['html']['rdf_namespaces']) print($cf['data']['html']['rdf_namespaces']); ?>>
 <head profile="<?php print $grddl_profile; ?>">
   <!--(begin-head)-->
   <?php print($head . "\n"); ?>
+  <?php print($cf['headers'] . "\n"); ?>
   <title><?php print($head_title); ?></title>
   <?php print($styles . "\n"); ?>
   <?php print($scripts . "\n");?>
-  <?php print($cf['headers'] . "\n"); ?>
   <!--(end-head)-->
 </head>
 

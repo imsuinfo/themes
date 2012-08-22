@@ -28,6 +28,42 @@ function mcneese_preprocess(&$vars, $hook) {
 }
 
 /**
+ * Implements hook_preprocess_maintenance_page().
+ */
+function mcneese_preprocess_maintenance_page(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
+  // this is because the maintenance page means the site is not available
+  // with this enabled on the maintenance page, it should help the user gain access to the website as soon as it is up.
+  // TODO: add support for specifying an approximate refresh time when the site is put into maintenance mode.
+  // default to a 30-minute page expiration/refresh.
+  $cf['meta']['name']['refresh'] = '1800';
+
+  $date_value = strtotime('+1800 seconds', $cf['request']);
+  $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+
+  // register that this is a maintenance page
+  $cf['is']['maintenance'] = TRUE;
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function mcneese_preprocess_html(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+}
+
+/**
  * Implements hook_preprocess_toolbar().
  */
 function mcneese_preprocess_toolbar(&$vars) {
@@ -1090,10 +1126,33 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
   $cf['theme']['machine_name'] = 'mcneese';
   $cf['theme']['human_name'] = t("McNeese");
 
-  $cf['headers'] = cf_theme_generate_headers($cf);
+  $cf['meta']['name']['copyright'] = "2012© McNeese State University";
+  $cf['meta']['name']['description'] = "McNeese State University Website";
+  $cf['meta']['name']['distribution'] = "web";
+
+  $cf['headers'] = '';
   $cf['tags'] = array();
   $cf['agent']['doctype'] = '<!DOCTYPE html>';
   $cf['date']['enabled'] = TRUE;
+
+  $cf['link']['shortcut_icon'] = array();
+  $cf['link']['shortcut_icon']['href'] = $cf['theme']['path'] . '/images/icon.gif';
+  $cf['link']['shortcut_icon']['rel'] = 'shortcut icon';
+
+  if (!$cf['is']['logged_in']) {
+    if ($cf['is']['front']) {
+      $date_value = strtotime('+1 hour', $cf['request']);
+    }
+    else {
+      $date_value = strtotime('+3 hours', $cf['request']);
+    }
+
+    $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+    $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  }
+  else {
+    $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
+  }
 
   foreach (array('html5', 'legacy', 'unsupported', 'in_ie_compatibility_mode') as $key => $value) {
     $cf['is'][$key] = FALSE;
@@ -1252,7 +1311,6 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['is']['workbench-unmoderated'] = TRUE;
     }
   }
-
 }
 
 /**
@@ -1271,6 +1329,7 @@ function mcneese_initialize_variables(&$vars) {
   }
   else {
     $cf['agent'] = array();
+    $cf['link'] = array();
 
     $cf['at'] = array();
     $cf['is'] = array();
@@ -1300,12 +1359,13 @@ function mcneese_initialize_variables(&$vars) {
     $cf['is']['html5'] = TRUE;
 
     $cf['agent']['doctype'] = '<!DOCTYPE html>';
+
+    $cf['meta'] = array();
+    $cf['meta']['name'] = array();
   }
 
 
   // refresh is considered not accessible
-  $cf['meta'] = array();
-  $cf['meta']['name'] = array();
   $cf['meta']['name']['refresh'] = '';
 
 
