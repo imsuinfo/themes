@@ -30,7 +30,7 @@ function mcneese_www_preprocess_html(&$vars) {
 
   // show google verification on front page and then only on www.mcneese.edu.
   if ($cf['is']['front']) {
-    if ($cf['at']['machine_name'] == 'www.mcneese.edu' || $cf['at']['machine_name'] == 'www') {
+    if ($cf['at']['machine_name'] == 'www.mcneese.edu' || $cf['at']['machine_name'] == 'www' || $cf['at']['machine_name'] == 'mcneese.edu') {
       $cf['meta']['name']['google-site-verification'] = 'zvxqEbtWmsaA-WXhhueU_iVFT0I9HJRH-QO0ecOL1XI';
     }
   }
