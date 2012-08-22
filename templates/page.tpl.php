@@ -185,7 +185,9 @@
 
   <div id="mcneese-page-main" role="main">
     <!--(begin-page-main)-->
+    <?php if ($cf['show']['page']['content']) { ?>
       <?php print($cf['data']['page']['content']); ?>
+    <?php } ?>
     <!--(end-page-main)-->
   </div>
 
