@@ -1410,13 +1410,16 @@ function mcneese_render_page() {
 
   // render content
   if (empty($cf['page']['content'])) {
-    $cf['show']['page']['content'] = TRUE;
+    $cf['show']['page']['content'] = FALSE;
   }
   else {
     $cf['data']['page']['content'] = drupal_render_children($cf['page']['content']);
 
     if (empty($cf['data']['page']['content'])) {
       $cf['show']['page']['content'] = FALSE;
+    }
+    else {
+      $cf['show']['page']['content'] = TRUE;
     }
   }
 
