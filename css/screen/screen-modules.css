@@ -4,6 +4,8 @@
   right: 270px;
   top: 10px;
 
+  min-width: 225px;
+
   color: #ffffff;
   background-color: #023761;
 
@@ -13,6 +15,15 @@
   border: 1px solid #065c9f;
 
   z-index: 1;
+}
+
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links,
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul,
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul > li {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 0 5px;
 }
 
 #mcneese-header > .header-section > .block-name-block-masquerade-masquerade > header > h2 {
