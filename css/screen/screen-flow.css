@@ -216,6 +216,11 @@
   border-bottom-left-radius: 5px;
 }
 
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > li.active-trail > a.active {
+  background-color: #fad703;
+  color: #00477f;
+}
+
 
 
 /*** Page Footer ***/
