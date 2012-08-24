@@ -106,6 +106,14 @@
   background-color: #505050;
 }
 
+.views-display-setting .label, .views-display-setting .views-ajax-link
+.mcneese #edit-display-settings-details .views-display-setting .label,
+.mcneese #edit-display-settings-details .views-display-setting .views-ajax-link {
+  float: none;
+
+  margin: 0 1px;
+}
+
 
 
 /*** Workbench Moderation ***/
