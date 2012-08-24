@@ -92,6 +92,14 @@
   border: 1px inset #333333;
 }
 
+#masquerade-block-1 .form-item > .description > a,
+#masquerade-block-1 .form-item > .description > a:visited,
+#masquerade-block-1 #quick_switch_links .item-list li > a,
+#masquerade-block-1 #quick_switch_links .item-list li > a:visited {
+  color: #fad703;
+  text-decoration: underline;
+}
+
 
 
 /*** Views - Admin Form ***/
