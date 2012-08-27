@@ -231,7 +231,7 @@
 
 
 /*** Search Box Form ***/
-#search-block-form {
+.search_block_form {
   position: absolute;
   top: 25px;
   right: 20px;
@@ -259,7 +259,7 @@
   z-index: 1;
 }
 
-#search-block-form > div {
+.search_block_form > div {
   color: #000000;
   background-color: #ffffff;
 
@@ -269,16 +269,16 @@
   overflow: hidden;
 }
 
-#search-block-form > div > .form-item,
-#search-block-form > div > .form-actions {
+.search_block_form > div > .form-item,
+.search_block_form > div > .form-actions {
   display: inline-block;
 
   margin: 0;
   padding: 0;
 }
 
-#search-block-form > div > .form-item,
-#search-block-form > div > .form-item > input {
+.search_block_form > div > .form-item,
+.search_block_form > div > .form-item > input {
   width: 190px;
   min-width: 190px;
   max-width: 190px;
@@ -288,7 +288,7 @@
   max-height: 20px;
 }
 
-#search-block-form > div > .form-item > input {
+.search_block_form > div > .form-item > input {
   font-family: arial,helvetica,sans-serif;
   font-size: 12px;
 
@@ -300,8 +300,8 @@
   border: 0 none;
 }
 
-#search-block-form > div > .form-actions,
-#search-block-form > div > .form-actions > input {
+.search_block_form > div > .form-actions,
+.search_block_form > div > .form-actions > input {
   color: #ffffff;
 
   width: 20px;
@@ -313,7 +313,7 @@
   max-height: 20px;
 }
 
-#search-block-form > div > .form-actions > input {
+.search_block_form > div > .form-actions > input {
   background-image: url(../../images/search_button.png);
   background-repeat: no-repeat;
   background-color: #00477f;

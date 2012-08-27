@@ -34,15 +34,15 @@
   padding: 2px;
 }
 
-#masquerade-block-1 {
+.masquerade_block_1 {
   margin: 0;
 }
 
-#masquerade-block-1 > div > .form-item {
+.masquerade_block_1 > div > .form-item {
   margin: 0;
 }
 
-#masquerade-block-1 > div > .form-item  > .description {
+.masquerade_block_1 > div > .form-item  > .description {
   background-color: inherit;
 
   margin: 0;
@@ -50,7 +50,7 @@
   border: none;
 }
 
-#masquerade-block-1 > div > .container-inline > input {
+.masquerade_block_1 > div > .container-inline > input {
   display: inline-block;
 
   color: #00477f;
@@ -74,9 +74,9 @@
   cursor: pointer;
 }
 
-#masquerade-block-1 > div > .container-inline > input:hover,
-#masquerade-block-1 > div > .container-inline > input:active,
-#masquerade-block-1 > div > .container-inline > input:focus {
+.masquerade_block_1 > div > .container-inline > input:hover,
+.masquerade_block_1 > div > .container-inline > input:active,
+.masquerade_block_1 > div > .container-inline > input:focus {
   text-decoration: underline;
 
   color: #ffffff;
@@ -88,14 +88,14 @@
   border: 1px outset #333333;
 }
 
-#masquerade-block-1 > div > .container-inline > input:active {
+.masquerade_block_1 > div > .container-inline > input:active {
   border: 1px inset #333333;
 }
 
-#masquerade-block-1 .form-item > .description > a,
-#masquerade-block-1 .form-item > .description > a:visited,
-#masquerade-block-1 #quick_switch_links .item-list li > a,
-#masquerade-block-1 #quick_switch_links .item-list li > a:visited {
+.masquerade_block_1 .form-item > .description > a,
+.masquerade_block_1 .form-item > .description > a:visited,
+.masquerade_block_1 #quick_switch_links .item-list li > a,
+.masquerade_block_1 #quick_switch_links .item-list li > a:visited {
   color: #fad703;
   text-decoration: underline;
 }
