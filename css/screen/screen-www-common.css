@@ -48,14 +48,18 @@
 }
 
 #mcneese-www-footer > .columns {
-  display: inline-block;
+  display: block;
   vertical-align: top;
 
   margin: 20px 10px 10px 10px;
 }
 
+
+#mcneese-www-footer > .columns-right {
+  margin: 20px 10px 0 10px;
+}
+
 #mcneese-www-footer > .columns-left {
-  float: left;
 }
 
 #mcneese-www-footer > .columns-right {
@@ -117,17 +121,16 @@
 }
 
 #mcneese-www-footer > .copyright > .copyright-logo {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  float: left;
 
-  margin: 0 0 0 12px;
+  margin: 0 10px;
 }
 
 #mcneese-www-footer > .copyright > .copyright-menus {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 
-  margin-top: 10px;
+  margin: 10px 0 0 0;
 }
 
 #mcneese-www-footer > .copyright > .copyright-menus > .copyright-menu {

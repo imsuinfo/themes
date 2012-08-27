@@ -52,6 +52,37 @@
     <h2>Website Footer</h2>
   <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_heading_close']) . "\n"); ?>
 
+  <div class="columns columns-right">
+    <div class="column column-1">
+      <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3px" height="169px">
+    </div>
+
+    <div class="column column-2">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Contact Information</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li>Campus: 4205 Ryan Street</li>
+        <li>Lake Charles, LA</li>
+        <li>Tel: 337-475-5000,</li>
+        <li>or 800.622.3352</li>
+      </ul>
+    </div>
+
+    <div class="column column-3">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Map &amp; Directions</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li>
+          <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
+            <img alt="Snippet of Google Map for Campus" src="/files/footer/footer_map.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="columns columns-left">
     <div class="column column-1">
       <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
@@ -95,37 +126,6 @@
         <li class="social"><a href="http://twitter.com/#!/McNeese"><img alt="Twitter Icon" src="/files/footer/twitter_icon.png" title="Twitter"></a></li>
         <li class="social"><a href="http://www.linkedin.com/"><img alt="LinkedIn Icon" src="/files/footer/linkedin_icon.png" title="LinkedIn"></a></li>
         <li class="social"><a href="https://plus.google.com/101409453884998941600?prsrc=3" style="text-decoration: none;"><img alt="" src="https://ssl.gstatic.com/images/icons/gplus-16.png" style="border: 0pt none; width: 21px; height: 21px;"></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="columns columns-right">
-    <div class="column column-1">
-      <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3px" height="169px">
-    </div>
-
-    <div class="column column-2">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Contact Information</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li>Campus: 4205 Ryan Street</li>
-        <li>Lake Charles, LA</li>
-        <li>Tel: 337-475-5000,</li>
-        <li>or 800.622.3352</li>
-      </ul>
-    </div>
-
-    <div class="column column-3">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Map &amp; Directions</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li>
-          <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
-            <img alt="Snippet of Google Map for Campus" src="/files/footer/footer_map.png">
-          </a>
-        </li>
       </ul>
     </div>
   </div>
