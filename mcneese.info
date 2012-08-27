@@ -19,13 +19,13 @@ stylesheets[all][] = css/all/all-core.css
 stylesheets[all][] = css/all/all-modules.css
 stylesheets[all][] = css/all/all-themes.css
 
-stylesheets[aural][] = css/aural/aural-flow.css
-stylesheets[aural][] = css/aural/aural-text.css
-stylesheets[aural][] = css/aural/aural-modules.css
-stylesheets[aural][] = css/aural/aural-navigation.css
-stylesheets[aural][] = css/aural/aural-messages.css
-stylesheets[aural][] = css/aural/aural-editing.css
-stylesheets[aural][] = css/aural/aural-information.css
+stylesheets[speech][] = css/speech/speech-flow.css
+stylesheets[speech][] = css/speech/speech-text.css
+stylesheets[speech][] = css/speech/speech-modules.css
+stylesheets[speech][] = css/speech/speech-navigation.css
+stylesheets[speech][] = css/speech/speech-messages.css
+stylesheets[speech][] = css/speech/speech-editing.css
+stylesheets[speech][] = css/speech/speech-information.css
 
 stylesheets[braille][] = css/braille/braille-flow.css
 stylesheets[braille][] = css/braille/braille-text.css
