@@ -10,8 +10,8 @@ screenshot = images/screenshot.png
 stylesheets[all][] = css/all/all-www-common.css
 stylesheets[all][] = css/all/all-www-front.css
 
-stylesheets[aural][] = css/aural/aural-www-common.css
-stylesheets[aural][] = css/aural/aural-www-front.css
+stylesheets[speech][] = css/speech/speech-www-common.css
+stylesheets[speech][] = css/speech/speech-www-front.css
 
 stylesheets[braille][] = css/braille/braille-www-common.css
 stylesheets[braille][] = css/braille/braille-www-front.css
