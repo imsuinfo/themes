@@ -65,10 +65,6 @@
 #mcneese-www-footer > .columns-right {
   float: right;
 
-  background-image: url(../../images/footer-background-columns_right.png);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
   margin-right: 30px;
 }
 
