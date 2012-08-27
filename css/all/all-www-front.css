@@ -51,17 +51,9 @@
   display: box;
 }
 
+/** Get rid of this **/
 #front_page_columns-transparent-image {
-  display: inline-block;
-  float: right;
-
-  width: 170px;
-  min-width: 170px;
-  max-width: 170px;
-
-  height: 200px;
-  min-height: 200px;
-  max-height: 200px;
+  display: none;
 }
 
 .mcneese.path-preview_front #mcneese-breadcrumb {
@@ -135,11 +127,13 @@
 }
 
 #front_page_columns-news > .view > .view-content > .views-row .views-field {
-  padding: 15px 15px 0 15px;
+  padding: 20px 15px 0 15px;
 }
 
 #front_page_columns-news > .view > .view-content > .views-row > .views-field-nothing {
   min-height: 170px;
+
+  padding-right: 190px;
 }
 
 #front_page_columns-news > .view > .view-content > .views-row .views-field-field-event-image {
@@ -346,7 +340,7 @@
 
 #front_page_columns-lagniappe .front_page-events-more_link,
 #front_page_columns-lagniappe .front_page-events-more_link:visited {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #front_page_columns-column_title-lagniappe {
@@ -447,12 +441,15 @@
 }
 
 #front_page_columns-spotlight > .view > .view-content > .views-row > .views-field > .field-content > .spotlight-title > a {
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+  font-family: arial, helvetica, sans-serif;
 }
 
 #front_page_columns-spotlight > .view > .view-content > .views-row > .views-field > .field-content > .spotlight-body {
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 #front_page_columns-spotlight > .view {
@@ -461,10 +458,18 @@
 
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row {
   clear: both;
+
+  padding: 0 0 15px 0;
+}
+
+#front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row-last {
+  padding: 0;
 }
 
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row > .views-field-field-spotlight-image {
   float: right;
+
+  padding-left: 10px;
 }
 
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row > .views-field-field-spotlight-image > .field-content > a > .spotlight-image {
@@ -516,7 +521,7 @@
 
 #front_page_columns-spotlight .front_page-events-more_link,
 #front_page_columns-spotlight .front_page-events-more_link:visited {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 
