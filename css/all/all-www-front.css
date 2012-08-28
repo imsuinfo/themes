@@ -26,10 +26,6 @@
   margin: 0 auto;
 }
 
-#views-jqfx-nivoslider-images-1 > .nivo-controlNav > .nivo-control {
-  vertical-align: top;
-}
-
 #mcneese-page-main,
 #mcneese-page-main > .node-id-819,
 #mcneese-page-main > .node-id-492,
@@ -53,6 +49,36 @@
 
 .mcneese.path-preview_front #mcneese-breadcrumb {
   display: none;
+}
+
+
+
+/*** Nivo Slider ***/
+#views-jqfx-nivoslider-images-1 > .nivo-controlNav > .nivo-control {
+  vertical-align: top;
+}
+
+#views-jqfx-nivoslider-images-1 > .nivo-directionNav > a {
+  display:block;
+
+  background: url(../../images/nivo-arrows.png);
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 30px;
+  height: 30px;
+
+  border: 0;
+}
+
+#views-jqfx-nivoslider-images-1 > .nivo-directionNav > a.nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+
+#views-jqfx-nivoslider-images-1 > .nivo-directionNav > a.nivo-prevNav {
+  left: 15px;
 }
 
 
