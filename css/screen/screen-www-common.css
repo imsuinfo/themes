@@ -219,6 +219,15 @@
   background-color: #000000;
 }
 
+.mcneese.at-wwwdev_mcneese_edu #mcneese-information.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-information.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-information.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-information.fixed.collapsed {
+  background-image: url(../../images/information-alt.png);
+
+  background-color: #000000;
+}
+
 .mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed,
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed,
 .mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed,
@@ -258,6 +267,22 @@
 .mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:focus {
   background-image: url(../../images/help.png);
   background-color: #fff0fb;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-information.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-information.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-information.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-information.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-information.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-information.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-information.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-information.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-information.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-information.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-information.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-information.fixed.collapsed:focus {
+  background-image: url(../../images/information.png);
+  background-color: #eff0d6;
 }
 
 .mcneese.at-wwwdev_mcneese_edu #mcneese-tabs.fixed.collapsed:hover,

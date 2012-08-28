@@ -70,9 +70,14 @@
 
 <?php if ($cf['show']['page']['information']) { ?>
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_open']) . "\n"); ?>
-    <!--(begin-page-information)-->
-    <?php print($cf['data']['page']['information'] . "\n"); ?>
-    <!--(end-page-information)-->
+    <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_header_open']) . "\n"); ?>
+      <h2>Information</h2>
+    <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_header_close']) . "\n"); ?>
+    <div class="information-wrapper">
+      <!--(begin-page_information)-->
+      <?php print($cf['data']['page']['information'] . "\n"); ?>
+      <!--(end-page_information)-->
+    </div>
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_close']) . "\n"); ?>
 <?php } ?>
 
