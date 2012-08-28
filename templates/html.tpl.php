@@ -34,19 +34,19 @@
 <!--(begin-body)-->
 <div id="mcneese-top">
   <!--(begin-page_top)-->
-  <?php print($page_top . "\n"); ?>
+  <?php if (isset($page_top)) print($page_top . "\n"); ?>
   <!--(end-page_top)-->
 </div>
 
 <div id="mcneese-page" >
   <!--(begin-page)-->
-  <?php print($page . "\n"); ?>
+  <?php if (isset($page)) print($page . "\n"); ?>
   <!--(end-page)-->
 </div>
 
 <div id="mcneese-bottom">
   <!--(begin-page_bottom)-->
-  <?php print($page_bottom . "\n"); ?>
+  <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
   <!--(end-page_bottom)-->
 </div>
 <!--(end-body)-->

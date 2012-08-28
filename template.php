@@ -48,8 +48,20 @@ function mcneese_preprocess_maintenance_page(&$vars) {
   $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
 
+
   // register that this is a maintenance page
-  $cf['is']['maintenance'] = TRUE;
+  $cf['is_data']['maintenance']['vars'] = &$vars;
+  $cf['is_data']['maintenance']['title'] = t("Site under maintenance message.");
+  $cf['is_data']['maintenance']['message'] = variable_get('maintenance_mode_message', "This website is under maintenance.");
+
+
+  // avoid bugs with core assuming the existence of things
+  $vars['page'] = array();
+  $vars['page']['#show_messages'] = array();
+
+  if (isset($vars['content'])) {
+    $vars['page']['content'] = $vars['content'];
+  }
 }
 
 /**
@@ -705,7 +717,12 @@ function mcneese_preprocess_page(&$vars) {
 
   // load all content
   if (empty($vars['page']['content'])) {
-    $cf['page']['content'] = array();
+    if (empty($vars['content'])) {
+      $cf['page']['content'] = array();
+    }
+    else {
+      $cf['page']['content'] = $vars['content'];
+    }
   }
   else {
     $cf['page']['content'] = $vars['page']['content'];
@@ -761,7 +778,7 @@ function mcneese_preprocess_page(&$vars) {
   $messages = drupal_get_messages();
 
   if (!empty($messages)) {
-    if (isset($cf['data']['page']['messages']['raw'])) {
+    if (isset($cf['data']['page']['messages']['raw']) && is_array($cf['data']['page']['messages']['raw'])) {
       $cf['data']['page']['messages']['raw'] = array_merge($cf['data']['page']['messages']['raw'], $messages);
     }
     else {
@@ -1110,7 +1127,7 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
   $messages = drupal_get_messages();
 
   if (!empty($messages)) {
-    if (isset($cf['data']['page']['messages']['raw'])) {
+    if (isset($cf['data']['page']['messages']['raw']) && is_array($cf['data']['page']['messages']['raw'])) {
       $cf['data']['page']['messages']['raw'] = array_merge($cf['data']['page']['messages']['raw'], $messages);
     }
     else {
@@ -1235,40 +1252,55 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
     $cf['is_data'][$key] = array();
   }
 
-  $cf['is']['toolbar'] = user_access('access toolbar');
+  $process_toolbar = TRUE;
 
-  if ($cf['is']['toolbar'] && $cf['user']['object']->uid > 0) {
-    $cf['is']['toolbar-expanded'] = TRUE;
-    $cf['is']['toolbar-collapsed'] = FALSE;
-    $cf['is']['toolbar-sticky'] = FALSE;
-    $cf['is']['toolbar-fixed'] = TRUE;
-    $cf['is']['toolbar-relative'] = FALSE;
-    $cf['is']['toolbar-autoshow'] = TRUE;
-    $cf['is']['toolbar-autohide'] = FALSE;
-
-    if (isset($cf['user']['object']->data['mcneese_settings']['toolbar'])) {
-      $toolbar_settings = $cf['user']['object']->data['mcneese_settings']['toolbar'];
-
-      if (isset($toolbar_settings['autohide']) && $toolbar_settings['autohide']) {
-        $cf['is']['toolbar-expanded'] = FALSE;
-        $cf['is']['toolbar-collapsed'] = TRUE;
-        $cf['is']['toolbar-autoshow'] = FALSE;
-        $cf['is']['toolbar-autohide'] = TRUE;
+  if ($cf['is']['maintenance']) {
+    if ($cf['is_data']['maintenance']['type'] == 'normal') {
+      if (!user_access('access site in maintenance mode')) {
+        $process_toolbar = FALSE;
       }
-
-      if (isset($toolbar_settings['sticky']) && $toolbar_settings['sticky']) {
-        $cf['is']['toolbar-fixed'] = FALSE;
-        $cf['is']['toolbar-relative'] = TRUE;
-      }
-    }
-
-    if (_toolbar_is_collapsed()) {
-      $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
-      $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
     }
     else {
-      $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
-      $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+      $process_toolbar = FALSE;
+    }
+  }
+
+  if ($process_toolbar) {
+    $cf['is']['toolbar'] = user_access('access toolbar');
+
+    if ($cf['is']['toolbar'] && $cf['user']['object']->uid > 0) {
+      $cf['is']['toolbar-expanded'] = TRUE;
+      $cf['is']['toolbar-collapsed'] = FALSE;
+      $cf['is']['toolbar-sticky'] = FALSE;
+      $cf['is']['toolbar-fixed'] = TRUE;
+      $cf['is']['toolbar-relative'] = FALSE;
+      $cf['is']['toolbar-autoshow'] = TRUE;
+      $cf['is']['toolbar-autohide'] = FALSE;
+
+      if (isset($cf['user']['object']->data['mcneese_settings']['toolbar'])) {
+        $toolbar_settings = $cf['user']['object']->data['mcneese_settings']['toolbar'];
+
+        if (isset($toolbar_settings['autohide']) && $toolbar_settings['autohide']) {
+          $cf['is']['toolbar-expanded'] = FALSE;
+          $cf['is']['toolbar-collapsed'] = TRUE;
+          $cf['is']['toolbar-autoshow'] = FALSE;
+          $cf['is']['toolbar-autohide'] = TRUE;
+        }
+
+        if (isset($toolbar_settings['sticky']) && $toolbar_settings['sticky']) {
+          $cf['is']['toolbar-fixed'] = FALSE;
+          $cf['is']['toolbar-relative'] = TRUE;
+        }
+      }
+
+      if (_toolbar_is_collapsed()) {
+        $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
+        $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+      }
+      else {
+        $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
+        $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+      }
     }
   }
 
@@ -1358,6 +1390,7 @@ function mcneese_initialize_variables(&$vars) {
 
 
     // some defaults we can guess
+// FIXME
     $cf['is']['front'] = drupal_is_front_page();
     $cf['is']['html5'] = TRUE;
 
@@ -1416,7 +1449,12 @@ function mcneese_render_page() {
     $cf['show']['page']['content'] = FALSE;
   }
   else {
-    $cf['data']['page']['content'] = drupal_render_children($cf['page']['content']);
+    if (is_array($cf['page']['content'])) {
+      $cf['data']['page']['content'] = drupal_render_children($cf['page']['content']);
+    }
+    else {
+      $cf['data']['page']['content'] = render($cf['page']['content']);
+    }
 
     if (empty($cf['data']['page']['content'])) {
       $cf['show']['page']['content'] = FALSE;
@@ -1455,6 +1493,27 @@ function mcneese_render_page() {
   }
   else {
     $cf['show']['page']['tabs'] = FALSE;
+  }
+
+
+  // handle maintenance mode as a special case
+  if ($cf['is']['maintenance']) {
+    if (empty($cf['is_data']['maintenance']['type'])|| $cf['is_data']['maintenance']['type'] == 'normal') {
+      if (!user_access('access site in maintenance mode')) {
+        $cf['show']['page']['header'] = TRUE;
+        $cf['show']['page']['title'] = FALSE;
+        $cf['show']['page']['breadcrumb'] = FALSE;
+        $cf['show']['page']['precrumb'] = FALSE;
+        $cf['show']['page']['postcrumb'] = FALSE;
+      }
+    }
+    else {
+      $cf['show']['page']['header'] = TRUE;
+      $cf['show']['page']['title'] = FALSE;
+      $cf['show']['page']['breadcrumb'] = FALSE;
+      $cf['show']['page']['precrumb'] = FALSE;
+      $cf['show']['page']['postcrumb'] = FALSE;
+    }
   }
 }
 
@@ -1788,12 +1847,11 @@ function mcneese_preprocess_page_prepare_messages(&$cf, &$vars) {
   }
 
   if (!empty($vars['messages'])) {
-    print("MESSAGE: '" . check_plain(print_r($vars['messages'], TRUE)) . '<br>');
-    if (empty($vars['cf']['page']['data']['messages']['raw'])) {
+    if (empty($cf['page']['data']['messages']['raw'])) {
       $cf['data']['page']['messages']['raw'] = $vars['messages'];
     }
     else {
-      $cf['data']['page']['messages']['raw'] = array_merge($vars['cf']['page']['data']['messages']['raw'], $vars['messages']);
+      $cf['data']['page']['messages']['raw'] = array_merge($cf['page']['data']['messages']['raw'], $vars['messages']);
     }
 
     $cf['show']['page']['messages'] = TRUE;
