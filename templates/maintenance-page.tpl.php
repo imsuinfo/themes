@@ -42,7 +42,7 @@
 
 <div id="mcneese-page" >
   <!--(begin-page)-->
-  <?php if (isset($page)) print($page . "\n"); ?>
+  <?php print(theme('page', $cf['is_data']['maintenance']['vars']) . "\n"); ?>
   <!--(end-page)-->
 </div>
 

@@ -13,6 +13,13 @@
  */
 
 /**
+ * Implements hook_preprocess_maintenance_page().
+ */
+function mcneese_www_preprocess_maintenance_page(&$vars) {
+  mcneese_www_preprocess_html($vars);
+}
+
+/**
  * Implements hook_preprocess_html().
  */
 function mcneese_www_preprocess_html(&$vars) {
