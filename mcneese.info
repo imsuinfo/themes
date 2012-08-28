@@ -95,6 +95,7 @@ stylesheets[tv][] = css/tv/tv-information.css
 scripts[] = js/toolbar.js
 scripts[] = js/messages.js
 scripts[] = js/navigation.js
+scripts[] = js/information.js
 
 
 regions[header]        = Header

@@ -55,7 +55,7 @@
   min-width: 1em;
   max-width: 1em;
 
-  word-wrap: break-word;
+  word-break: break-word;
 
   z-index: -1;
 }

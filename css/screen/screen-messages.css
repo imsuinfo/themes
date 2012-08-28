@@ -1,6 +1,6 @@
 /*** Messages Region ***/
 #mcneese-messages > h2,
-#mcneese-messages > header > h2 {
+#mcneese-messages >.html_tag-header > h2 {
   font-size: 18px;
   line-height: 22px;
 
@@ -36,13 +36,13 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  word-wrap: break-word;
+  word-break: break-word;
 
   z-index: 90;
 }
 
 #mcneese-messages > h2,
-#mcneese-messages > header > h2 {
+#mcneese-messages >.html_tag-header > h2 {
   line-height: 32px;
 
   min-height: 32px;
@@ -78,8 +78,8 @@
 }
 
 #mcneese-messages.fixed.collapsed > h2,
-#mcneese-messages.fixed.collapsed > header,
-#mcneese-messages.fixed.collapsed > header > h2,
+#mcneese-messages.fixed.collapsed >.html_tag-header,
+#mcneese-messages.fixed.collapsed >.html_tag-header > h2,
 #mcneese-messages.fixed.collapsed > .messages-wrapper {
   visibility: hidden;
 }
@@ -88,14 +88,14 @@
 #mcneese-messages.fixed.collapsed:hover > h2,
 #mcneese-messages.fixed.collapsed:active > h2,
 #mcneese-messages.fixed.collapsed:focus > h2,
-#mcneese-messages.fixed.expanded > header,
-#mcneese-messages.fixed.collapsed:hover > header,
-#mcneese-messages.fixed.collapsed:active > header,
-#mcneese-messages.fixed.collapsed:focus > header,
-#mcneese-messages.fixed.expanded > header > h2,
-#mcneese-messages.fixed.collapsed:hover > header > h2,
-#mcneese-messages.fixed.collapsed:active > header > h2,
-#mcneese-messages.fixed.collapsed:focus > header > h2,
+#mcneese-messages.fixed.expanded >.html_tag-header,
+#mcneese-messages.fixed.collapsed:hover >.html_tag-header,
+#mcneese-messages.fixed.collapsed:active >.html_tag-header,
+#mcneese-messages.fixed.collapsed:focus >.html_tag-header,
+#mcneese-messages.fixed.expanded >.html_tag-header > h2,
+#mcneese-messages.fixed.collapsed:hover >.html_tag-header > h2,
+#mcneese-messages.fixed.collapsed:active >.html_tag-header > h2,
+#mcneese-messages.fixed.collapsed:focus >.html_tag-header > h2,
 #mcneese-messages.fixed.expanded > .messages-wrapper,
 #mcneese-messages.fixed.collapsed:hover > .messages-wrapper,
 #mcneese-messages.fixed.collapsed:active > .messages-wrapper,
@@ -134,7 +134,7 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  word-wrap: break-word;
+  word-break: break-word;
 
   z-index: 90;
 }
@@ -167,8 +167,8 @@
 }
 
 #mcneese-help.fixed.collapsed > h2,
-#mcneese-help.fixed.collapsed > header,
-#mcneese-help.fixed.collapsed > header > h2,
+#mcneese-help.fixed.collapsed >.html_tag-header,
+#mcneese-help.fixed.collapsed >.html_tag-header > h2,
 #mcneese-help.fixed.collapsed > .help-wrapper {
   visibility: hidden;
 }
@@ -177,14 +177,14 @@
 #mcneese-help.fixed.collapsed:hover > h2,
 #mcneese-help.fixed.collapsed:active > h2,
 #mcneese-help.fixed.collapsed:focus > h2,
-#mcneese-help.fixed.expanded > header,
-#mcneese-help.fixed.collapsed:hover > header,
-#mcneese-help.fixed.collapsed:active > header,
-#mcneese-help.fixed.collapsed:focus > header,
-#mcneese-help.fixed.expanded > header > h2,
-#mcneese-help.fixed.collapsed:hover > header > h2,
-#mcneese-help.fixed.collapsed:active > header > h2,
-#mcneese-help.fixed.collapsed:focus > header > h2,
+#mcneese-help.fixed.expanded >.html_tag-header,
+#mcneese-help.fixed.collapsed:hover >.html_tag-header,
+#mcneese-help.fixed.collapsed:active >.html_tag-header,
+#mcneese-help.fixed.collapsed:focus >.html_tag-header,
+#mcneese-help.fixed.expanded >.html_tag-header > h2,
+#mcneese-help.fixed.collapsed:hover >.html_tag-header > h2,
+#mcneese-help.fixed.collapsed:active >.html_tag-header > h2,
+#mcneese-help.fixed.collapsed:focus >.html_tag-header > h2,
 #mcneese-help.fixed.expanded > .help-wrapper,
 #mcneese-help.fixed.collapsed:hover > .help-wrapper,
 #mcneese-help.fixed.collapsed:active > .help-wrapper,

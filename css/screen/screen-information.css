@@ -1,7 +1,24 @@
 /*** Information Region ***/
-#mcneese-information {
+#mcneese-information > h2,
+#mcneese-information >.html_tag-header > h2 {
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
 }
 
+#mcneese-messages > .information-wrapper {
+  margin: 2px;
+  resize: none;
+}
+
+#mcneese-messages > .information-wrapper > .messages {
+  max-height: 120px;
+  overflow-y: auto;
+  resize: none;
+}
 
 
 /*** Information Region - Fixed ***/
@@ -18,10 +35,19 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  word-wrap: break-word;
+  word-break: break-word;
 
   z-index: 90;
 }
+
+#mcneese-information > h2,
+#mcneese-information >.html_tag-header > h2 {
+  line-height: 32px;
+  
+  min-height: 32px;
+  
+  margin: 0 32px 0 0;
+} 
 
 #mcneese-information.fixed.expanded,
 #mcneese-information.fixed.collapsed:hover,
@@ -54,16 +80,30 @@
   max-width: 75%;
 }
 
-#mcneese-information.fixed.collapsed > *,
-#mcneese-information.fixed.collapsed > *,
-#mcneese-information.fixed.collapsed > * {
+
+#mcneese-information.fixed.collapsed > h2,
+#mcneese-information.fixed.collapsed >.html_tag-header,
+#mcneese-information.fixed.collapsed >.html_tag-header > h2,
+#mcneese-information.fixed.collapsed > .information-wrapper {
   visibility: hidden;
 }
 
-#mcneese-information.fixed.expanded > *,
-#mcneese-information.fixed.collapsed:hover > *,
-#mcneese-information.fixed.collapsed:active > *,
-#mcneese-information.fixed.collapsed:focus > * {
+#mcneese-information.fixed.expanded > h2,
+#mcneese-information.fixed.collapsed:hover > h2,
+#mcneese-information.fixed.collapsed:active > h2,
+#mcneese-information.fixed.collapsed:focus > h2,
+#mcneese-information.fixed.expanded >.html_tag-header,
+#mcneese-information.fixed.collapsed:hover >.html_tag-header,
+#mcneese-information.fixed.collapsed:active >.html_tag-header,
+#mcneese-information.fixed.collapsed:focus >.html_tag-header,
+#mcneese-information.fixed.expanded >.html_tag-header > h2,
+#mcneese-information.fixed.collapsed:hover >.html_tag-header > h2,
+#mcneese-information.fixed.collapsed:active >.html_tag-header > h2,
+#mcneese-information.fixed.collapsed:focus >.html_tag-header > h2,
+#mcneese-information.fixed.expanded > .information-wrapper,
+#mcneese-information.fixed.collapsed:hover > .information-wrapper,
+#mcneese-information.fixed.collapsed:active > .information-wrapper,
+#mcneese-information.fixed.collapsed:focus > .information-wrapper {
   visibility: visible;
 }
 

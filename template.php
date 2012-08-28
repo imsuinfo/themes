@@ -479,7 +479,10 @@ function mcneese_preprocess_page(&$vars) {
 
   $attributes = array();
   $attributes['class'] = array();
-  $attributes['class'][] = 'element-invisible';
+
+  if ($information_sticky == 'relative') {
+    $attributes['class'][] = 'element-invisible';
+  }
 
   $cf['page']['tags']['mcneese_page_information_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_information_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);

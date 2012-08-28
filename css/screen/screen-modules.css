@@ -26,7 +26,7 @@
   padding: 0 5px;
 }
 
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade > header > h2 {
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade >.html_tag-header > h2 {
   font-size: 11px;
   line-height: 15px;
 
@@ -469,4 +469,11 @@
 #mcneese-page .calendar > .contents > .views-field > .field-content > .event-399,
 #mcneese-page .calendar > .contents > .views-field > .field-content > .event-399:visited {
   background-color: #975700;
+}
+
+
+
+/*** Workbench Messages ***/
+#mcneese-information > .block > .workbench-info-block {
+  color: #302c00;
 }
