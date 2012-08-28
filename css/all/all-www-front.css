@@ -51,11 +51,6 @@
   display: box;
 }
 
-/** Get rid of this **/
-#front_page_columns-transparent-image {
-  display: none;
-}
-
 .mcneese.path-preview_front #mcneese-breadcrumb {
   display: none;
 }
