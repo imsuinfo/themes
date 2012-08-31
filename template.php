@@ -787,6 +787,18 @@ function mcneese_preprocess_page(&$vars) {
 
     $cf['show']['page']['messages'] = TRUE;
   }
+
+
+  // assign custom body css tags
+  $alias_paths = explode('/', $cf['at']['alias']);
+
+  foreach ($alias_paths as $c => &$ap) {
+    $p = cf_theme_safe_css_string_part($ap);
+
+    if (!empty($p)) {
+      $cf['markup_css']['body']['class'] .= ' alias-part-' . $c . '-' . $p;
+    }
+  }
 }
 
 /**
