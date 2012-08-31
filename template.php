@@ -13,6 +13,38 @@
  */
 
 /**
+ * Implements hook_mcneese_get_variables_alter().
+ */
+function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
+  $cf['subtheme']['path'] = base_path() . drupal_get_path('theme', 'mcneese_www');
+  $cf['subtheme']['machine_name'] = 'mcneese_www';
+  $cf['subtheme']['human_name'] = t("McNeese WWW");
+
+  if (function_exists('node_load') && $cf['is']['maintenance']) {
+    $loaded_node = node_load(914);
+
+    if (is_object($loaded_node)) {
+      if (property_exists($loaded_node, 'status') && $loaded_node->status == NODE_PUBLISHED) {
+        $date_value = strtotime('+900 seconds', $cf['request']);
+        $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+        $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+        $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
+
+
+        $cf['is']['emergency'] = TRUE;
+        $cf['is_data']['emergency'] = array();
+        $cf['is_data']['emergency']['title'] = $loaded_node->title;
+        $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
+
+        $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
+        $cf['is_data']['emergency']['message'] .= 'To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must unpublish the <a href="/emergency_page">Emergency Page</a>.' . "\n";
+      }
+    }
+  }
+}
+
+
+/**
  * Implements hook_preprocess_maintenance_page().
  */
 function mcneese_www_preprocess_maintenance_page(&$vars) {
