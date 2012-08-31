@@ -44,20 +44,15 @@ function mcneese_preprocess_maintenance_page(&$vars) {
   // default to a 30-minute page expiration/refresh.
   $cf['meta']['name']['refresh'] = '1800';
 
-  $date_value = strtotime('+1800 seconds', $cf['request']);
-  $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-  $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-
-
-  // register that this is a maintenance page
-  $cf['is_data']['maintenance']['vars'] = &$vars;
-  $cf['is_data']['maintenance']['title'] = t("Site under maintenance message.");
-  $cf['is_data']['maintenance']['message'] = variable_get('maintenance_mode_message', "This website is under maintenance.");
+  if ($cf['is']['emergency']) {
+    // during an emergency, default to 15 minute refreshes.
+    $cf['meta']['name']['refresh'] = '900';
+  }
 
 
   // avoid bugs with core assuming the existence of things
   $vars['page'] = array();
-  $vars['page']['#show_messages'] = array();
+  $vars['page']['#show_messages'] = TRUE;
 
   if (isset($vars['content'])) {
     $vars['page']['content'] = $vars['content'];
@@ -774,6 +769,19 @@ function mcneese_preprocess_page(&$vars) {
   }
 
 
+  // present the emergency/maintenance message if applicable
+  if ($cf['is']['emergency']) {
+    if ($cf['is_data']['maintenance']['access']) {
+      drupal_set_message($cf['is_data']['emergency']['message'], 'warning', FALSE);
+    }
+  }
+  else if ($cf['is']['maintenance']) {
+    if ($cf['is_data']['maintenance']['access']) {
+      drupal_set_message($cf['is_data']['maintenance']['message'], 'status', FALSE);
+    }
+  }
+
+
   // load any messages that might have appeared during the template preprocess operation
   $messages = drupal_get_messages();
 
@@ -1025,15 +1033,15 @@ function mcneese_preprocess_user_picture(&$vars) {
 
   $cf['user_picture']['tags'] = array();
 
-  $variables['user_picture'] = '';
+  $vars['user_picture'] = '';
 
   if (variable_get('user_pictures', 0)) {
-    if (!empty($variables['account']->picture)) {
-      if (is_numeric($variables['account']->picture)) {
-        $variables['account']->picture = file_load($variables['account']->picture);
+    if (!empty($vars['account']->picture)) {
+      if (is_numeric($vars['account']->picture)) {
+        $vars['account']->picture = file_load($vars['account']->picture);
       }
-      if (!empty($variables['account']->picture->uri)) {
-        $filepath = $variables['account']->picture->uri;
+      if (!empty($vars['account']->picture->uri)) {
+        $filepath = $vars['account']->picture->uri;
       }
     }
     elseif (variable_get('user_picture_default', '')) {
@@ -1043,28 +1051,28 @@ function mcneese_preprocess_user_picture(&$vars) {
     if (isset($filepath)) {
       if ($cf['is']['html5']) {
         $alt = "";
-        $title = t("@user's Picture", array('@user' => format_username($variables['account'])));
+        $title = t("@user's Picture", array('@user' => format_username($vars['account'])));
       }
       else {
-        $alt = t("@user's Picture", array('@user' => format_username($variables['account'])));
+        $alt = t("@user's Picture", array('@user' => format_username($vars['account'])));
         $title = $alt;
       }
 
       // If the image does not have a valid Drupal scheme (for eg. HTTP), don't load image styles.
       if (module_exists('image') && file_valid_uri($filepath) && $style = variable_get('user_picture_style', '')) {
-        $variables['user_picture'] = theme('image_style', array('style_name' => $style, 'path' => $filepath, 'alt' => $alt, 'title' => $title));
+        $vars['user_picture'] = theme('image_style', array('style_name' => $style, 'path' => $filepath, 'alt' => $alt, 'title' => $title));
       }
       else {
-        $variables['user_picture'] = theme('image', array('path' => $filepath, 'alt' => $alt, 'title' => $title));
+        $vars['user_picture'] = theme('image', array('path' => $filepath, 'alt' => $alt, 'title' => $title));
       }
 
-      if (!empty($variables['account']->uid) && user_access('access user profiles')) {
+      if (!empty($vars['account']->uid) && user_access('access user profiles')) {
         $attributes = array(
           'attributes' => array('title' => t("View user profile.")),
           'html' => TRUE,
         );
 
-        $variables['user_picture'] = l($variables['user_picture'], 'user/' . $variables['account']->uid, $attributes);
+        $vars['user_picture'] = l($vars['user_picture'], 'user/' . $vars['account']->uid, $attributes);
       }
     }
   }
@@ -1153,10 +1161,12 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
 /**
  * Implements hook_cf_theme_get_variables_alter().
  */
-function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
+function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
   $cf['theme']['path'] = base_path() . drupal_get_path('theme', 'mcneese');
   $cf['theme']['machine_name'] = 'mcneese';
   $cf['theme']['human_name'] = t("McNeese");
+
+  $cf['subtheme'] = array();
 
   $cf['meta']['name']['copyright'] = "2012© McNeese State University";
   $cf['meta']['name']['description'] = "McNeese State University Website";
@@ -1173,10 +1183,10 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
 
   if (!$cf['is']['logged_in']) {
     if ($cf['is']['front']) {
-      $date_value = strtotime('+1 hour', $cf['request']);
+      $date_value = strtotime('+1 day', $cf['request']);
     }
     else {
-      $date_value = strtotime('+3 hours', $cf['request']);
+      $date_value = strtotime('+1 week', $cf['request']);
     }
 
     $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
@@ -1277,6 +1287,23 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
     else {
       $process_toolbar = FALSE;
     }
+
+    $date_value = strtotime('+1800 seconds', $cf['request']);
+    $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+    $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+    $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
+
+
+    // register that this is a maintenance page
+    $cf['is_data']['maintenance']['vars'] = &$vars;
+
+    $cf['is_data']['maintenance']['title'] = t("Site Under Maintenance.");
+    $cf['is_data']['maintenance']['body'] = variable_get('maintenance_mode_message', "This website is under maintenance.");
+    $cf['is_data']['maintenance']['message'] = 'This website is operating in <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>.<br>' . "\n";
+
+    if (user_access('administer site configuration')) {
+      $cf['is_data']['maintenance']['message'] .= 'To exit <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>, <a href="' . url('admin/config/development/maintenance') . '">go online</a>.' . "\n";
+    }
   }
 
   if ($process_toolbar) {
@@ -1360,6 +1387,10 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
       $cf['is']['workbench-unmoderated'] = TRUE;
     }
   }
+
+
+  // allow subthemes alter functions to be processed.
+  drupal_alter('mcneese_get_variables', $cf, $vars);
 }
 
 /**
@@ -1404,7 +1435,6 @@ function mcneese_initialize_variables(&$vars) {
 
 
     // some defaults we can guess
-// FIXME
     $cf['is']['front'] = drupal_is_front_page();
     $cf['is']['html5'] = TRUE;
 
@@ -1509,6 +1539,15 @@ function mcneese_render_page() {
     $cf['show']['page']['tabs'] = FALSE;
   }
 
+
+  // show user login path title as Login
+  if ($cf['at']['path'] == 'user/login') {
+    $cf['show']['page']['title'] = TRUE;
+
+    $cf['data']['page']['title'] = t("Login");
+  }
+
+
   // handle maintenance mode as a special case
   if ($cf['is']['maintenance']) {
     if (!$cf['is_data']['maintenance']['access'] || $cf['is_data']['maintenance']['type'] != 'normal') {
@@ -1523,6 +1562,24 @@ function mcneese_render_page() {
 
         if (!$cf['show']['page']['breadcrumb']) {
           $cf['data']['page']['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => array()));
+          $cf['show']['page']['breadcrumb'] = TRUE;
+        }
+      }
+    }
+
+    if ($cf['is']['emergency']) {
+      if (!$cf['is_data']['maintenance']['access']) {
+        $cf['show']['page']['title'] = TRUE;
+
+        if ($cf['at']['path'] != 'user/login') {
+          $cf['data']['page']['title'] = render($cf['is_data']['emergency']['title']);
+
+          $cf['show']['page']['content'] = TRUE;
+          $cf['data']['page']['content'] = render($cf['is_data']['emergency']['body']);
+        }
+
+        if (!$cf['show']['page']['breadcrumb']) {
+          $cf['data']['page']['breadcrumb'] = '';
           $cf['show']['page']['breadcrumb'] = TRUE;
         }
       }
