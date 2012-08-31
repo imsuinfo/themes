@@ -1255,8 +1255,10 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $variables){
   $process_toolbar = TRUE;
 
   if ($cf['is']['maintenance']) {
+    $cf['is_data']['maintenance']['access'] = user_access('access site in maintenance mode');
+
     if ($cf['is_data']['maintenance']['type'] == 'normal') {
-      if (!user_access('access site in maintenance mode')) {
+      if (!$cf['is_data']['maintenance']['access']) {
         $process_toolbar = FALSE;
       }
     }
@@ -1439,7 +1441,7 @@ function mcneese_render_page() {
     $cf['show']['page']['breadcrumb'] = TRUE;
   }
   else {
-    $cf['data']['page']['breadcrumb'] = array();
+    $cf['data']['page']['breadcrumb'] = '';
     $cf['show']['page']['breadcrumb'] = FALSE;
   }
 
@@ -1495,24 +1497,23 @@ function mcneese_render_page() {
     $cf['show']['page']['tabs'] = FALSE;
   }
 
-
   // handle maintenance mode as a special case
   if ($cf['is']['maintenance']) {
-    if (empty($cf['is_data']['maintenance']['type'])|| $cf['is_data']['maintenance']['type'] == 'normal') {
-      if (!user_access('access site in maintenance mode')) {
-        $cf['show']['page']['header'] = TRUE;
-        $cf['show']['page']['title'] = FALSE;
-        $cf['show']['page']['breadcrumb'] = FALSE;
-        $cf['show']['page']['precrumb'] = FALSE;
-        $cf['show']['page']['postcrumb'] = FALSE;
-      }
-    }
-    else {
+    if (!$cf['is_data']['maintenance']['access'] || $cf['is_data']['maintenance']['type'] != 'normal') {
       $cf['show']['page']['header'] = TRUE;
       $cf['show']['page']['title'] = FALSE;
       $cf['show']['page']['breadcrumb'] = FALSE;
       $cf['show']['page']['precrumb'] = FALSE;
       $cf['show']['page']['postcrumb'] = FALSE;
+
+      if ($cf['is_data']['maintenance']['type'] == 'update') {
+        $cf['show']['page']['title'] = TRUE;
+
+        if (!$cf['show']['page']['breadcrumb']) {
+          $cf['data']['page']['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => array()));
+          $cf['show']['page']['breadcrumb'] = TRUE;
+        }
+      }
     }
   }
 }
