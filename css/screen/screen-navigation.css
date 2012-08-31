@@ -72,10 +72,11 @@
   text-shadow: 0 1px 0 #333333;
   text-decoration: none;
 
+  border: 2px solid transparent;
   border-radius: 5px 11px 5px 11px;
 
   margin: 2px 0;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 #mcneese-toolbar > .mcneese-toolbar-menu {
@@ -268,8 +269,8 @@
   width: 15px;
   height: 15px;
 
-  margin: 3px 0 0 3px;
-  padding: 2px 5px;
+  margin: 3px 0 0 2px;
+  padding: 2px;
 }
 
 #mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .item.mcneese-toolbar-sticky > .link {
