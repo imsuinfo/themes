@@ -84,65 +84,11 @@
   </div>
 
   <div class="columns columns-left">
-    <div class="column column-1">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Apply Now</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li><a href="https://apply.mcneese.edu/node/add/apply-00001" title="Undergraduate Application">Undergraduate</a></li>
-        <li><a href="https://apply.mcneese.edu/node/add/apply-00002" title="Graduate Application">Graduate</a></li>
-      </ul>
-    </div>
-
-    <div class="column column-2">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Courses</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li><a href="/node/1117">Catalog</a></li>
-        <li><a href="/node/412">Schedule</a></li>
-      </ul>
-    </div>
-
-    <div class="column column-3">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Explore</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li><a href="/node/250">History</a></li>
-        <li><a href="/node/3287">Quick Facts</a></li>
-        <li><a href="/node/355">Campus Maps</a></li>
-        <li><a href="/node/251">Mission</a></li>
-        <li><a href="/index">A-Z Index</a></li>
-      </ul>
-    </div>
-
-    <div class="column column-4">
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Social Connection</h3>
-      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li class="social"><a href="http://www.facebook.com/McNeeseStateU"><img alt="Facebook Icon" src="/files/footer/facebook_icon.png" title="Facebook"></a></li>
-        <li class="social"><a href="http://twitter.com/#!/McNeese"><img alt="Twitter Icon" src="/files/footer/twitter_icon.png" title="Twitter"></a></li>
-        <li class="social"><a href="http://www.linkedin.com/"><img alt="LinkedIn Icon" src="/files/footer/linkedin_icon.png" title="LinkedIn"></a></li>
-        <li class="social"><a href="https://plus.google.com/101409453884998941600?prsrc=3" style="text-decoration: none;"><img alt="" src="https://ssl.gstatic.com/images/icons/gplus-16.png" style="border: 0pt none; width: 21px; height: 21px;"></a></li>
-      </ul>
-    </div>
   </div>
 
   <div class="copyright">
     <img class="copyright-logo" alt="McNeese Footer Logo" src="<?php print($stp); ?>/images/footer-logo.png" title="McNeese State University">
     <div class="copyright-menus">
-      <ul class="copyright-menu copyright-menu-1">
-        <li><a href="/node/269">EOE/AA/ADA</a> |</li>
-        <li><a href="http://www.ulsystem.net/" title="University of Louisiana System">a member of the University of Louisiana System</a> |</li>
-        <li><a href="/node/524">Web Disclaimer</a></li>
-      </ul>
-
-      <ul class="copyright-menu copyright-menu-2">
-        <li><a href="/policy" title="Policy Statements">Policy Statements</a> |</li>
-        <li><a href="/node/1064">University Status &amp; Emergency Preparedness</a></li>
-      </ul>
     </div>
   </div>
   <!--(end-www-footer)-->

@@ -60,6 +60,7 @@
 }
 
 #mcneese-www-footer > .columns-left {
+  min-height: 109px;
 }
 
 #mcneese-www-footer > .columns-right {
