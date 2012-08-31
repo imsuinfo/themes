@@ -1663,12 +1663,20 @@ function mcneese_status_messages($vars) {
     'warning' => t("Warning message"),
   );
 
+  $header_class = '';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
+      $header_class = ' class="element-invisible"';
+    }
+  }
+
   if (isset($cf['is']['html5'])) {
     if ($cf['is']['html5']) {
-      $output .= '<header>' . '<h2>' . t("Messages") . '</h2>' . '</header>';
+      $output .= '<header' . $header_class . '><h2>' . t("Messages") . '</h2>' . '</header>';
     }
     else {
-      $output .= '<h2>' . t("Messages") . '</h2>';
+      $output .= '<h2' . $header_class . '>' . t("Messages") . '</h2>';
     }
   }
   else {
