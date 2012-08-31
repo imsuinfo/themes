@@ -100,7 +100,7 @@ function mcneese_www_render_page() {
 
 
   // node-specific content
-  if ($cf['is']['node']) {
+  if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     // group image
     if (property_exists($cf['is_data']['node']['object'], 'field_group_image_show') && !empty($cf['is_data']['node']['object']->field_group_image_show)) {
       if (property_exists($cf['is_data']['node']['object'], 'field_group_image_custom') && !empty($cf['is_data']['node']['object']->field_group_image_custom)) {
