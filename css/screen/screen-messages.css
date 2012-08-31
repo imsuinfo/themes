@@ -20,27 +20,6 @@
   resize: none;
 }
 
-
-
-/*** Messages Region - Fixed ***/
-#mcneese-messages.fixed {
-  position: fixed;
-  right: 5px;
-
-  min-width: 32px;
-  min-height: 32px;
-  max-height: 50%;
-  max-width: 75%;
-
-  background-image: url(../../images/messages.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-  word-break: break-word;
-
-  z-index: 90;
-}
-
 #mcneese-messages > h2,
 #mcneese-messages >.html_tag-header > h2 {
   line-height: 32px;
@@ -50,11 +29,15 @@
   margin: 0 32px 0 0;
 }
 
+
+
+/*** Messages Region - Fixed ***/
+#mcneese-messages.fixed {
+  background-image: url(../../images/messages.png);
+}
+
 #mcneese-messages.fixed.collapsed {
   background-color: #dadada;
-
-  max-width: 32px;
-  max-height: 32px;
 }
 
 #mcneese-messages.fixed.expanded,
@@ -64,43 +47,6 @@
   background-color: #fffff0;
 
   border: 1px ridge #5395cc;
-  padding: 0 4px 4px 4px;
-
-  min-height: 140px;
-  min-width: 400px;
-  max-height: 50%;
-  max-width: 75%;
-
-  z-index: 200;
-
-  overflow: auto;
-  resize: both;
-}
-
-#mcneese-messages.fixed.collapsed > h2,
-#mcneese-messages.fixed.collapsed >.html_tag-header,
-#mcneese-messages.fixed.collapsed >.html_tag-header > h2,
-#mcneese-messages.fixed.collapsed > .messages-wrapper {
-  visibility: hidden;
-}
-
-#mcneese-messages.fixed.expanded > h2,
-#mcneese-messages.fixed.collapsed:hover > h2,
-#mcneese-messages.fixed.collapsed:active > h2,
-#mcneese-messages.fixed.collapsed:focus > h2,
-#mcneese-messages.fixed.expanded >.html_tag-header,
-#mcneese-messages.fixed.collapsed:hover >.html_tag-header,
-#mcneese-messages.fixed.collapsed:active >.html_tag-header,
-#mcneese-messages.fixed.collapsed:focus >.html_tag-header,
-#mcneese-messages.fixed.expanded >.html_tag-header > h2,
-#mcneese-messages.fixed.collapsed:hover >.html_tag-header > h2,
-#mcneese-messages.fixed.collapsed:active >.html_tag-header > h2,
-#mcneese-messages.fixed.collapsed:focus >.html_tag-header > h2,
-#mcneese-messages.fixed.expanded > .messages-wrapper,
-#mcneese-messages.fixed.collapsed:hover > .messages-wrapper,
-#mcneese-messages.fixed.collapsed:active > .messages-wrapper,
-#mcneese-messages.fixed.collapsed:focus > .messages-wrapper {
-  visibility: visible;
 }
 
 
@@ -108,42 +54,50 @@
 /*** Messages Region - Relative ***/
 #mcneese-messages.relative {
   position: relative;
+}
 
-  background-color: #fffff0;
 
-  border: 1px ridge #5395cc;
-  margin: 6px 2px;
-  padding: 0 4px 4px 4px;
 
-  overflow: auto;
+/*** Help Region ***/
+#mcneese-help > h2,
+#mcneese-help >.html_tag-header > h2 {
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
+}
+
+#mcneese-help > .messages-wrapper {
+  margin: 2px;
+  resize: none;
+}
+
+#mcneese-help > .messages-wrapper > .messages {
+  max-height: 120px;
+  overflow-y: auto;
+  resize: none;
+}
+
+#mcneese-help > h2,
+#mcneese-help >.html_tag-header > h2 {
+  line-height: 32px;
+
+  min-height: 32px;
+
+  margin: 0 32px 0 0;
 }
 
 
 
 /*** Help Region - Fixed ***/
 #mcneese-help.fixed {
-  position: fixed;
-  right: 5px;
-
-  min-width: 32px;
-  min-height: 32px;
-  max-height: 50%;
-  max-width: 75%;
-
   background-image: url(../../images/help.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-  word-break: break-word;
-
-  z-index: 90;
 }
 
 #mcneese-help.fixed.collapsed {
   background-color: #dadada;
-
-  max-width: 32px;
-  max-height: 32px;
 }
 
 #mcneese-help.fixed.expanded,
@@ -153,43 +107,6 @@
   background-color: #fff0fb;
 
   border: 1px ridge #cc5384;
-  padding: 0 4px 4px 4px;
-
-  min-height: 140px;
-  min-width: 400px;
-  max-height: 50%;
-  max-width: 75%;
-
-  z-index: 200;
-
-  overflow: auto;
-  resize: both;
-}
-
-#mcneese-help.fixed.collapsed > h2,
-#mcneese-help.fixed.collapsed >.html_tag-header,
-#mcneese-help.fixed.collapsed >.html_tag-header > h2,
-#mcneese-help.fixed.collapsed > .help-wrapper {
-  visibility: hidden;
-}
-
-#mcneese-help.fixed.expanded > h2,
-#mcneese-help.fixed.collapsed:hover > h2,
-#mcneese-help.fixed.collapsed:active > h2,
-#mcneese-help.fixed.collapsed:focus > h2,
-#mcneese-help.fixed.expanded >.html_tag-header,
-#mcneese-help.fixed.collapsed:hover >.html_tag-header,
-#mcneese-help.fixed.collapsed:active >.html_tag-header,
-#mcneese-help.fixed.collapsed:focus >.html_tag-header,
-#mcneese-help.fixed.expanded >.html_tag-header > h2,
-#mcneese-help.fixed.collapsed:hover >.html_tag-header > h2,
-#mcneese-help.fixed.collapsed:active >.html_tag-header > h2,
-#mcneese-help.fixed.collapsed:focus >.html_tag-header > h2,
-#mcneese-help.fixed.expanded > .help-wrapper,
-#mcneese-help.fixed.collapsed:hover > .help-wrapper,
-#mcneese-help.fixed.collapsed:active > .help-wrapper,
-#mcneese-help.fixed.collapsed:focus > .help-wrapper {
-  visibility: visible;
 }
 
 

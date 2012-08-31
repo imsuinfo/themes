@@ -20,34 +20,23 @@
   resize: none;
 }
 
-
-/*** Information Region - Fixed ***/
-#mcneese-information.fixed {
-  position: fixed;
-  right: 5px;
-
-  min-width: 32px;
-  min-height: 32px;
-  max-height: 50%;
-  max-width: 75%;
-
-  background-image: url(../../images/information.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-
-  word-break: break-word;
-
-  z-index: 90;
-}
-
 #mcneese-information > h2,
 #mcneese-information >.html_tag-header > h2 {
   line-height: 32px;
-  
   min-height: 32px;
-  
+
   margin: 0 32px 0 0;
 } 
+
+
+/*** Information Region - Fixed ***/
+#mcneese-information.fixed {
+  background-image: url(../../images/information.png);
+}
+
+#mcneese-information.fixed.collapsed {
+  background-color: #dadada;
+}
 
 #mcneese-information.fixed.expanded,
 #mcneese-information.fixed.collapsed:hover,
@@ -56,55 +45,6 @@
   background-color: #eff0d6;
 
   border: 1px ridge #504b2f;
-  padding: 0 4px 4px 4px;
-
-  min-height: 140px;
-  min-width: 400px;
-
-  z-index: 200;
-
-  overflow: auto;
-  resize: both;
-}
-
-#mcneese-information.fixed.collapsed {
-  max-width: 32px;
-  max-height: 32px;
-}
-
-#mcneese-information.fixed.expanded,
-#mcneese-information.fixed.collapsed:hover,
-#mcneese-information.fixed.collapsed:active,
-#mcneese-information.fixed.collapsed:focus {
-  max-height: 50%;
-  max-width: 75%;
-}
-
-
-#mcneese-information.fixed.collapsed > h2,
-#mcneese-information.fixed.collapsed >.html_tag-header,
-#mcneese-information.fixed.collapsed >.html_tag-header > h2,
-#mcneese-information.fixed.collapsed > .information-wrapper {
-  visibility: hidden;
-}
-
-#mcneese-information.fixed.expanded > h2,
-#mcneese-information.fixed.collapsed:hover > h2,
-#mcneese-information.fixed.collapsed:active > h2,
-#mcneese-information.fixed.collapsed:focus > h2,
-#mcneese-information.fixed.expanded >.html_tag-header,
-#mcneese-information.fixed.collapsed:hover >.html_tag-header,
-#mcneese-information.fixed.collapsed:active >.html_tag-header,
-#mcneese-information.fixed.collapsed:focus >.html_tag-header,
-#mcneese-information.fixed.expanded >.html_tag-header > h2,
-#mcneese-information.fixed.collapsed:hover >.html_tag-header > h2,
-#mcneese-information.fixed.collapsed:active >.html_tag-header > h2,
-#mcneese-information.fixed.collapsed:focus >.html_tag-header > h2,
-#mcneese-information.fixed.expanded > .information-wrapper,
-#mcneese-information.fixed.collapsed:hover > .information-wrapper,
-#mcneese-information.fixed.collapsed:active > .information-wrapper,
-#mcneese-information.fixed.collapsed:focus > .information-wrapper {
-  visibility: visible;
 }
 
 

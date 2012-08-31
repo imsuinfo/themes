@@ -438,6 +438,17 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['tags']['mcneese_page_help_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_help_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'help-wrapper';
+
+  if ($help_sticky == 'fixed') {
+    $attributes['class'][] = 'float_info-wrapper';
+  }
+
+  $cf['page']['tags']['mcneese_page_help_wrapper_open'] = array('name' => 'div', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_help_wrapper_close'] = array('name' => 'div', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
 
   // load all information so that they can be stored in the 'information' region.
   $information_sticky = 'relative';
@@ -493,6 +504,17 @@ function mcneese_preprocess_page(&$vars) {
 
   $cf['page']['tags']['mcneese_page_information_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_information_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'information-wrapper';
+
+  if ($information_sticky == 'fixed') {
+    $attributes['class'][] = 'float_info-wrapper';
+  }
+
+  $cf['page']['tags']['mcneese_page_information_wrapper_open'] = array('name' => 'div', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_information_wrapper_close'] = array('name' => 'div', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // load all editing so that they can be stored in the 'editing' region.
@@ -1663,27 +1685,22 @@ function mcneese_status_messages($vars) {
     'warning' => t("Warning message"),
   );
 
-  $header_class = '';
+  $header_class = 'html_tag-header';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
     if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
-      $header_class = ' class="element-invisible"';
+      $header_class = ' element-invisible';
     }
   }
 
-  if (isset($cf['is']['html5'])) {
-    if ($cf['is']['html5']) {
-      $output .= '<header' . $header_class . '><h2>' . t("Messages") . '</h2>' . '</header>';
-    }
-    else {
-      $output .= '<h2' . $header_class . '>' . t("Messages") . '</h2>';
-    }
+  if ($cf['is']['html5']) {
+    $output .= '<header class="' . $header_class . '"><h2>' . t("Messages") . '</h2>' . '</header>';
   }
   else {
-   $output .= '<h2 class="element-invisible">' . t("Messages") . '</h2>';
+    $output .= '<div class=' . $header_class . '"><h2>' . t("Messages") . '</h2>' . '</div>';
   }
 
-  $output .= '<div class="messages-wrapper">';
+  $output .= '<div class="float_info-wrapper messages-wrapper">';
 
   foreach ($all_messages as $type => $messages) {
     $output .= '<div class="messages ' . $type . '" role="alert">';
