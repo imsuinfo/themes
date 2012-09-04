@@ -324,6 +324,13 @@
   background-color: transparent;
 }
 
+.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-section > .site-logo,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-section > .site-logo,
+.mcneese.at-wwwdev #mcneese-header > .header-section > .site-logo,
+.mcneese.at-wwwdev2 #mcneese-header > .header-section > .site-logo {
+  background-image: url(../../images/development.png);
+}
+
 
 
 /*** sandbox.mcneese.edu-specific ***/

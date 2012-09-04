@@ -117,6 +117,13 @@ function mcneese_www_preprocess_page(&$vars) {
     $cf['show']['page']['logo'] = TRUE;
   }
 
+  if ($cf['at']['machine_name'] == 'wwwdev.mcneese.edu' || $cf['at']['machine_name'] == 'wwwdev' || $cf['at']['machine_name'] == 'wwwdev2.mcneese.edu' || $cf['at']['machine_name'] == 'wwwdev2') {
+    $cf['data']['page']['logo']['title'] =  $cf['data']['page']['logo']['title'] . ' Development';
+    $cf['data']['page']['logo']['alt'] = $cf['data']['page']['logo']['alt'] . ' Development';
+    $cf['data']['page']['logo']['href'] = base_path();
+    $cf['show']['page']['logo'] = TRUE;
+  }
+
   if ($cf['is']['unsupported']) {
     if ($cf['is']['in_ie_compatibility_mode']){
       $cf['is_data']['unsupported']['message'] = t("You are running Internet Explorer in compatibility mode. To improve your experience using this website, please <a href='@alternate_browser_url'>turn off compatibility mode</a>.", array('@alternate_browser_url' => "http://www.sevenforums.com/tutorials/1196-internet-explorer-compatibility-view-turn-off.html#post_message_10408"));
