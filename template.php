@@ -95,6 +95,10 @@ function mcneese_www_preprocess_html(&$vars) {
 
   $cf['html']['tags']['mcneese_www_html_footer_column_heading_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['html']['tags']['mcneese_www_html_footer_column_heading_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  if ($cf['is']['emergency'] && !$cf['is']['logged_in']) {
+    $vars['head_title'] = $cf['is_data']['emergency']['title'] . ' | McNeese State University';
+  }
 }
 
 /**
