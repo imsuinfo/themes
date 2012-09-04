@@ -1181,6 +1181,30 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_workbench_menu_list().
+ */
+
+function mcneese_preprocess_workbench_menu_list(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  $cf['workbench_menu_list'] = array();
+  $cf['workbench_menu_list']['tags'] = array();
+
+  $attributes = $vars['list']['attributes'];
+
+  if (!isset($attributes['class']) || !is_array($attributes['class'])) {
+    $attributes['class'] = array();
+  }
+
+  $cf['workbench_menu_list']['tags']['menu_list_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $vars['list']['attributes'], 'html5' => $cf['is']['html5']);
+  $cf['workbench_menu_list']['tags']['menu_list_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+}
+
+/**
  * Implements hook_cf_theme_get_variables_alter().
  */
 function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
