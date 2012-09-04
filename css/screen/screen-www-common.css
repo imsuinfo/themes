@@ -14,6 +14,11 @@
   margin: 0 auto;
 }
 
+#mcneese-bottom,
+.mcneese > .dev-query {
+  margin: 0 auto 15px auto;
+}
+
 #mcneese-page {
   overflow: auto;
 
@@ -168,6 +173,11 @@
   max-width: inherit;
 
   margin: 0 64px;
+}
+
+.mcneese.is-logged_in #mcneese-bottom,
+.mcneese.is-logged_in > .dev-query {
+  margin: 0 64px 15px 64px;
 }
 
 .mcneese > .dev-query,
