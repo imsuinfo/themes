@@ -1200,7 +1200,9 @@ function mcneese_preprocess_workbench_menu_list(&$vars) {
     $attributes['class'] = array();
   }
 
-  $cf['workbench_menu_list']['tags']['menu_list_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $vars['list']['attributes'], 'html5' => $cf['is']['html5']);
+  $attributes['role'] = 'navigation';
+
+  $cf['workbench_menu_list']['tags']['menu_list_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['workbench_menu_list']['tags']['menu_list_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 }
 
