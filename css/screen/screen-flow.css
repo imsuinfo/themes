@@ -67,7 +67,11 @@
 }
 
 #mcneese-header > .header-separator {
-  border-bottom: 12px solid #fad703;
+  background-color: #fad703;
+
+  height: 12px;
+  min-height: 12px;
+  max-height: 12px;
 }
 
 #mcneese-header > .header-bottom {
