@@ -175,11 +175,11 @@
   padding: 0 3px 3px 3px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .item.mcneese-toolbar-toggle.collapsed > .link {
+.mcneese.is-toolbar-shortcuts-collapsed #mcneese-toolbar > .mcneese-toolbar-menu > .item.mcneese-toolbar-toggle > .link {
   background-image: url(../../images/toggle-up.png);
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .item.mcneese-toolbar-toggle.expanded > .link {
+.mcneese.is-toolbar-shortcuts-expanded #mcneese-toolbar > .mcneese-toolbar-menu > .item.mcneese-toolbar-toggle > .link {
   background-image: url(../../images/toggle-down.png);
 }
 
