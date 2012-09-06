@@ -184,7 +184,8 @@
 }
 
 .mcneese .vertical-tabs > .vertical-tabs-list > .vertical-tab-button {
-  word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .mcneese .vertical-tabs > .vertical-tabs-panes {

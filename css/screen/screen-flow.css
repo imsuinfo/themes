@@ -354,7 +354,8 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 #mcneese-page-content {
@@ -499,7 +500,8 @@
   background-repeat: no-repeat;
   background-position: top right;
 
-  word-break: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
 
   z-index: 90;
 }
