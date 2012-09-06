@@ -1290,7 +1290,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
 
         if ($cf['agent']['major_version'] <= 8) {
           $custom_css = array();
-          $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all');
+          $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
           $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie.css';
           drupal_add_css($custom_css['data'], $custom_css['options']);
 
