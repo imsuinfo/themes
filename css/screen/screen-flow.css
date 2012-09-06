@@ -263,9 +263,13 @@
   z-index: 1;
 }
 
-.search_block_form > div {
+.search_block_form > .form-wrapper-inner {
   color: #000000;
   background-color: #ffffff;
+
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
 
   padding: 3px 0;
   border: 1px solid #0f5eff;
@@ -273,16 +277,16 @@
   overflow: hidden;
 }
 
-.search_block_form > div > .form-item,
-.search_block_form > div > .form-actions {
+.search_block_form > .form-wrapper-inner > .form-item,
+.search_block_form > .form-wrapper-inner > .form-actions {
   display: inline-block;
 
   margin: 0;
   padding: 0;
 }
 
-.search_block_form > div > .form-item,
-.search_block_form > div > .form-item > input {
+.search_block_form > .form-wrapper-inner > .form-item,
+.search_block_form > .form-wrapper-inner > .form-item > input {
   width: 190px;
   min-width: 190px;
   max-width: 190px;
@@ -292,7 +296,7 @@
   max-height: 20px;
 }
 
-.search_block_form > div > .form-item > input {
+.search_block_form > .form-wrapper-inner > .form-item > input {
   font-family: arial,helvetica,sans-serif;
   font-size: 12px;
 
@@ -304,8 +308,8 @@
   border: 0 none;
 }
 
-.search_block_form > div > .form-actions,
-.search_block_form > div > .form-actions > input {
+.search_block_form > .form-wrapper-inner > .form-actions,
+.search_block_form > .form-wrapper-inner > .form-actions > input {
   color: #ffffff;
 
   width: 20px;
@@ -317,7 +321,7 @@
   max-height: 20px;
 }
 
-.search_block_form > div > .form-actions > input {
+.search_block_form > .form-wrapper-inner > .form-actions > input {
   background-image: url(../../images/search_button.png);
   background-repeat: no-repeat;
   background-color: #00477f;
