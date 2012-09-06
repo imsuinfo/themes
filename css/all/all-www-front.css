@@ -111,7 +111,7 @@
   vertical-align: top;
 
   color: #ffffff;
-  background-color: #25567d; /*#225278*/
+  background-color: #25567d;
 
   width: 534px;
   min-width: 534px;
@@ -218,7 +218,7 @@
 #front_page_columns-news a:hover,
 #front_page_columns-news a:active,
 #front_page_columns-news a:focus {
-  color: #fad703; /*#abc1eb;*/
+  color: #fad703;
 
   text-decoration: underline;
 }
@@ -227,7 +227,7 @@
 #front_page_columns-news .front_page-events-more_link:visited,
 #front_page_columns-news .front_page-highlight-more_link,
 #front_page_columns-news .front_page-highlight-more_link:visited {
-  color: #a0d9fa; /*#7fbcec*/
+  color: #a0d9fa;
 
   text-decoration: underline;
 }
@@ -745,4 +745,107 @@
   width: 290px;
   min-width: 290px;
   max-width: 290px;
+}
+
+
+
+/*** wwwdev.mcneese.edu-specific ***/
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-events,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-events,
+.mcneese.at-wwwdev #front_page_columns-events,
+.mcneese.at-wwwdev2 #front_page_columns-events {
+  background-image: url(../../images/background-marble-white.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-news,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-news,
+.mcneese.at-wwwdev #front_page_columns-news,
+.mcneese.at-wwwdev2 #front_page_columns-news {
+  background-image: url(../../images/background-marble-pale_blue.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image,
+.mcneese.at-wwwdev #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image,
+.mcneese.at-wwwdev2 #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image {
+  background-image: url(../../images/background-marble-white.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-column_title-news,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-column_title-news,
+.mcneese.at-wwwdev #front_page_columns-column_title-news,
+.mcneese.at-wwwdev2 #front_page_columns-column_title-news {
+  background-image: url(../../images/background-marble-yellow.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-lagniappe,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-lagniappe,
+.mcneese.at-wwwdev #front_page_columns-lagniappe,
+.mcneese.at-wwwdev2 #front_page_columns-lagniappe {
+  background-image: url(../../images/background-marble-pale_grey.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-column_title-lagniappe,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-column_title-lagniappe,
+.mcneese.at-wwwdev #front_page_columns-column_title-lagniappe,
+.mcneese.at-wwwdev2 #front_page_columns-column_title-lagniappe {
+  background-image: url(../../images/background-marble-grey.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-spotlight,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-spotlight,
+.mcneese.at-wwwdev #front_page_columns-spotlight,
+.mcneese.at-wwwdev2 #front_page_columns-spotlight {
+  background-image: url(../../images/background-marble-slight_white.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #front_page_columns-column_title-spotlight,
+.mcneese.at-wwwdev2_mcneese_edu #front_page_columns-column_title-spotlight,
+.mcneese.at-wwwdev #front_page_columns-column_title-spotlight,
+.mcneese.at-wwwdev2 #front_page_columns-column_title-spotlight {
+  background-image: url(../../images/background-marble-slight_white.png);
+}
+
+
+
+
+/*** sandbox.mcneese.edu-specific ***/
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-events,
+.mcneese.at-sandbox #front_page_columns-events {
+  background-image: url(../../images/background-marble-white.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-news,
+.mcneese.at-sandbox #front_page_columns-news {
+  background-image: url(../../images/background-marble-pale_blue.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image,
+.mcneese.at-sandbox #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image {
+  background-image: url(../../images/background-marble-white.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-column_title-news,
+.mcneese.at-sandbox #front_page_columns-column_title-news {
+  background-image: url(../../images/background-marble-yellow.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-lagniappe,
+.mcneese.at-sandbox #front_page_columns-lagniappe {
+  background-image: url(../../images/background-marble-pale_grey.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-column_title-lagniappe,
+.mcneese.at-sandbox #front_page_columns-column_title-lagniappe {
+  background-image: url(../../images/background-marble-grey.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-spotlight,
+.mcneese.at-sandbox #front_page_columns-spotlight {
+  background-image: url(../../images/background-marble-slight_white.png);
+}
+
+.mcneese.at-sandbox_mcneese_edu #front_page_columns-column_title-spotlight,
+.mcneese.at-sandbox #front_page_columns-column_title-spotlight {
+  background-image: url(../../images/background-marble-slight_white.png);
 }
