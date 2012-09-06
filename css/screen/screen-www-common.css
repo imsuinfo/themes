@@ -108,6 +108,16 @@
   margin: 2px 3px;
 }
 
+#mcneese-www-footer > .columns-left > .column-4 > ul > li > a > img {
+  width: 21px;
+  min-width: 21px;
+  max-width: 21px;
+
+  height: 21px;
+  min-height: 21px;
+  max-height: 21px;
+}
+
 #mcneese-www-footer > .columns-right > .column-1 {
   margin: 0 2px;
 }

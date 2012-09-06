@@ -122,10 +122,10 @@
         <h3 class="column-header">Social Connection</h3>
       <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
       <ul>
-        <li class="social"><a href="http://www.facebook.com/McNeeseStateU"><img alt="Facebook Icon" src="/files/footer/facebook_icon.png" title="Facebook"></a></li>
-        <li class="social"><a href="http://twitter.com/#!/McNeese"><img alt="Twitter Icon" src="/files/footer/twitter_icon.png" title="Twitter"></a></li>
-        <li class="social"><a href="http://www.linkedin.com/"><img alt="LinkedIn Icon" src="/files/footer/linkedin_icon.png" title="LinkedIn"></a></li>
-        <li class="social"><a href="https://plus.google.com/101409453884998941600?prsrc=3" style="text-decoration: none;"><img alt="" src="https://ssl.gstatic.com/images/icons/gplus-16.png" style="border: 0pt none; width: 21px; height: 21px;"></a></li>
+        <li class="social facebook"><a href="http://www.facebook.com/McNeeseStateU"><img alt="Facebook Icon" src="/files/footer/facebook_icon.png" title="Facebook"></a></li>
+        <li class="social twitter"><a href="http://twitter.com/#!/McNeese"><img alt="Twitter Icon" src="/files/footer/twitter_icon.png" title="Twitter"></a></li>
+        <li class="social linked_ln"><a href="http://www.linkedin.com/"><img alt="LinkedIn Icon" src="/files/footer/linkedin_icon.png" title="LinkedIn"></a></li>
+        <li class="social google_plus"><a href="https://plus.google.com/101409453884998941600?prsrc=3"><img alt="Google+ Icon" src="<?php print($stp); ?>/images/google_plus.png" title="Google+"></a></li>
       </ul>
     </div>
   </div>
