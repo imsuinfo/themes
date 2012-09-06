@@ -475,6 +475,6 @@
 
 
 /*** Workbench Messages ***/
-#mcneese-information > .block > .workbench-info-block {
+#mcneese-information > .information-wrapper > .block > .workbench-info-block {
   color: #302c00;
 }
