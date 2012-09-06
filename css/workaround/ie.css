@@ -12,6 +12,21 @@
 
 
 
+/*** Search box issues ***/
+.mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > #edit-actions > .form-submit {
+  color: #ffffff;
+
+  width: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+
+  height: 20px !important;
+  min-height: 20px !important;
+  max-height: 20px !important;
+}
+
+
+
 /*** Fix breadcrumb alignment issues ***/
 .mcneese.agent-name-ie #mcneese-breadcrumb > .crumb,
 .mcneese.agent-name-ie #mcneese-breadcrumb > .crumb-trail,
