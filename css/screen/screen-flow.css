@@ -320,23 +320,23 @@
   max-height: 20px;
 }
 
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit {
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit {
   background-image: url(../../images/search_button.png);
 }
 
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:focus,
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:hover {
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:focus,
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:hover {
   background-image: url(../../images/search_button-alt.png);
 }
 
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:active {
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:active {
   background-image: url(../../images/search_button-down.png);
 }
 
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit,
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:focus,
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:active,
-.search_block_form > .form-wrapper-inner > #edit-actions > .form-submit:hover {
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit,
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:focus,
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:active,
+.search_block_form > .form-wrapper-inner > .form-actions > .form-submit:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #00477f;

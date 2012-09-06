@@ -229,7 +229,7 @@
   background-color: #99b2ee;
 }
 
-.mcneese form#views-ui-analyze-view-button div input#edit-submit.form-submit,
+.mcneese form#views-ui-analyze-view-button div input.form-submit.form-submit,
 .mcneese div.views-override input#edit-button--15,
 .mcneese div.views-override input#edit-button--14,
 .mcneese div.views-override input#edit-button--13,
@@ -253,7 +253,7 @@
 .mcneese input#edit-displays-settings-settings-content-tab-content-details-top-actions-disable,
 .mcneese a.button,
 .mcneese a.button:visited,
-.mcneese input#edit-submit.form-cancel,
+.mcneese .form-submit.form-cancel,
 .mcneese input.form-cancel,
 .mcneese input#edit-cancel,
 .mcneese a#edit-cancel,
@@ -264,16 +264,16 @@
 
 .mcneese input#edit-linkit-insert,
 .mcneese input.form-submit,
-.mcneese input#edit-submit {
+.mcneese .form-submit {
   color: #00477f;
   background-color: #fad703;
 }
 
-.mcneese input#edit-submit.form-preview,
+.mcneese input.form-submit.form-preview,
 .mcneese input.form-preview,
 .mcneese input#preview-submit,
 .mcneese input#edit-reset-cache,
-.mcneese input#edit-submit.form-undelete,
+.mcneese input.form-submit.form-undelete,
 .mcneese input.form-undelete,
 .mcneese input#edit-preview,
 .mcneese input#edit-undelete {
@@ -282,10 +282,10 @@
 }
 
 .mcneese input#edit-displays-settings-settings-content-tab-content-details-top-actions-delete,
-.mcneese input#edit-submit.form-delete,
+.mcneese input.form-submit.form-delete,
 .mcneese input.form-delete,
 .mcneese input#edit-remove,
-.mcneese input#edit-delete {
+.mcneese input.submit-delete {
   color: #000000;
   background-color: #e86f69;
 }
@@ -294,9 +294,9 @@
 .mcneese input.form-submit:active,
 .mcneese input.form-delete:active,
 .mcneese input#edit-linkit-insert:active,
-.mcneese input#edit-submit:active,
+.mcneese input.form-submit:active,
 .mcneese input#edit-preview:active,
-.mcneese input#edit-delete:active,
+.mcneese input.submit-delete:active,
 .mcneese input#edit-unpublish:active,
 .mcneese input#edit-cancel:active,
 .mcneese input#edit-remove:active,
@@ -309,9 +309,9 @@
 .mcneese input.form-submit:focus,
 .mcneese input.form-delete:focus,
 .mcneese input#edit-linkit-insert:focus,
-.mcneese input#edit-submit:focus,
+.mcneese input.form-submit:focus,
 .mcneese input#edit-preview:focus,
-.mcneese input#edit-delete:focus,
+.mcneese input.submit-delete:focus,
 .mcneese input#edit-unpublish:focus,
 .mcneese input#edit-cancel:focus,
 .mcneese input#edit-remove:focus,
@@ -324,9 +324,9 @@
 .mcneese input.form-submit:hover,
 .mcneese input.form-delete:hover,
 .mcneese input#edit-linkit-insert:hover,
-.mcneese input#edit-submit:hover,
+.mcneese input.form-submit:hover,
 .mcneese input#edit-preview:hover,
-.mcneese input#edit-delete:hover,
+.mcneese input.submit-delete:hover,
 .mcneese input#edit-unpublish:hover,
 .mcneese input#edit-cancel:hover,
 .mcneese input#edit-remove:hover,
@@ -335,11 +335,11 @@
 .mcneese input#preview-submit:hover,
 .mcneese ul#views-display-menu-tabs a:hover,
 .mcneese ul#views-display-menu-tabs a.active:hover,
-.mcneese input#edit-submit.form-preview,
+.mcneese input.form-submit.form-preview,
 .mcneese input.form-preview,
 .mcneese input#preview-submit,
 .mcneese input#edit-reset-cache,
-.mcneese input#edit-submit.form-undelete,
+.mcneese input.form-submit.form-undelete,
 .mcneese input.form-undelete,
 .mcneese input#edit-preview,
 .mcneese input#edit-undelete {
@@ -358,9 +358,9 @@
 .mcneese input.form-submit:active,
 .mcneese input.form-delete:active,
 .mcneese input#edit-linkit-insert:active,
-.mcneese input#edit-submit:active,
+.mcneese input.form-submit:active,
 .mcneese input#edit-preview:active,
-.mcneese input#edit-delete:active,
+.mcneese input.submit-delete:active,
 .mcneese input#edit-unpublish:active,
 .mcneese a#linkit-cancel:active,
 .mcneese a#edit-cancel:active,
@@ -371,9 +371,9 @@
 }
 
 .mcneese input.form-submit:active,
-.mcneese input#edit-submit:active,
+.mcneese input.form-submit:active,
 .mcneese input#edit-preview:active,
-.mcneese input#edit-delete:active,
+.mcneese input.submit-delete:active,
 .mcneese a.button:active {
   background: #666666;
   color: #ffffff;

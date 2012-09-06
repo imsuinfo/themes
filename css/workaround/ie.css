@@ -13,7 +13,7 @@
 
 
 /*** Search box issues ***/
-.mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > #edit-actions > .form-submit {
+.mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > .form-actions > .form-submit {
   color: #ffffff;
 
   width: 20px !important;
