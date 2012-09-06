@@ -9,14 +9,6 @@
 
   print($cf['agent']['doctype'] . "\n");
 ?>
-<?php
-/**
- * @file
- * Html theme implementation.
- */
-  $cf = & drupal_static('cf_theme_get_variables', array());
-  print($cf['agent']['doctype'] . "\n");
-?>
 
 <html lang="<?php print($language->language); ?>"dir="<?php print $language->dir; ?>"<?php if ($cf['show']['html']['rdf_namespaces']) print($cf['data']['html']['rdf_namespaces']); ?>>
 <head>
