@@ -400,3 +400,18 @@
 
   width: 19%;
 }
+
+
+
+/*** Login Page ***/
+#mcneese-page-main > .user_login,
+#mcneese-page-main > .html_tag-section.block-id-2 {
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+#mcneese-page-main > .user_login > .form-wrapper-inner > .form-item > .description,
+#mcneese-page-main > .html_tag-section.block-id-2 > .user_login_block > .form-wrapper-inner > .item-list {
+  display: none;
+}
