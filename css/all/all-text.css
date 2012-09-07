@@ -641,3 +641,18 @@
   padding: 3px 0;
 }
 
+
+
+/*** Search Results ***/
+#mcneese-page-main > .search_results-section > .search_results {
+  list-style-type: none;
+}
+
+#mcneese-page-main > .search_results-section > .search_results > .search_result {
+  margin: 10px 0 20px 0;
+}
+
+#mcneese-page-main > .search_results-section > .search_results > .search_result > .search_result-section > .search_result-header > .title {
+  font-size: 18px;
+  line-height: 22px;
+}

@@ -1121,11 +1121,71 @@ function mcneese_preprocess_search_block_form(&$vars) {
   $cf['search_block_form']['tags'] = array();
 
   $attributes = array();
-  $attributes['class'] = array('search_block_form-header');
+  $attributes['class'] = array('search_block_form-section');
   $attributes['role'] = 'search';
+
+  $cf['search_block_form']['tags']['mcneese_search_block_form_section_open'] = array('name' => 'section', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['search_block_form']['tags']['mcneese_search_block_form_section_close'] = array('name' => 'section', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array('search_block_form-header');
 
   $cf['search_block_form']['tags']['mcneese_search_block_form_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['search_block_form']['tags']['mcneese_search_block_form_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+}
+
+/**
+ * Implements hook_preprocess_search_results().
+ */
+function mcneese_preprocess_search_results(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  $cf['search_results'] = array();
+  $cf['search_results']['tags'] = array();
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'search_results-section';
+
+  $cf['search_results']['tags']['mcneese_search_results_section_open'] = array('name' => 'section', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['search_results']['tags']['mcneese_search_results_section_close'] = array('name' => 'section', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array('search_results-header');
+
+  $cf['search_results']['tags']['mcneese_search_results_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['search_results']['tags']['mcneese_search_results_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+}
+
+/**
+ * Implements hook_preprocess_search_result().
+ */
+function mcneese_preprocess_search_result(&$vars) {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  $cf['search_result'] = array();
+  $cf['search_result']['tags'] = array();
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'search_result-section';
+
+  $cf['search_result']['tags']['mcneese_search_result_section_open'] = array('name' => 'section', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['search_result']['tags']['mcneese_search_result_section_close'] = array('name' => 'section', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array('search_result-header');
+
+  $cf['search_result']['tags']['mcneese_search_result_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['search_result']['tags']['mcneese_search_result_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 }
 
 /**
