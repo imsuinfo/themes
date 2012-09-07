@@ -1,5 +1,6 @@
 .mcneese.node-id-492.is-logged_in,
 .mcneese.node-id-819.is-logged_in,
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in,
 .mcneese.is-front.is-logged_in {
   min-width: 1098px;
 }
@@ -14,6 +15,12 @@
 .mcneese.node-id-819.is-logged_in #mcneese-bottom,
 .mcneese.node-id-819.is-logged_in #mcneese-www-footer,
 .mcneese.node-id-819.is-logged_in > .dev-query,
+
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-top,
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-page,
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-bottom,
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-www-footer,
+.mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in > .dev-query,
 .mcneese.is-front.is-logged_in #mcneese-top,
 .mcneese.is-front.is-logged_in #mcneese-page,
 .mcneese.is-front.is-logged_in #mcneese-bottom,
@@ -27,8 +34,8 @@
 }
 
 #mcneese-page-main,
-#mcneese-page-main > .node-id-819,
 #mcneese-page-main > .node-id-492,
+#mcneese-page-main > .node-id-819,
 #mcneese-page-main > .view-display-id-front_page {
   position: relative;
 }
