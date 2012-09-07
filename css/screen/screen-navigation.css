@@ -253,6 +253,7 @@
 }
 
 #mcneese-toolbar > .mcneese-toolbar-shortcuts > .item.mcneese-toolbar-sticky {
+  clear: right;
   float: right;
 
   width: 25px;
