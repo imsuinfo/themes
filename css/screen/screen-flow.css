@@ -592,3 +592,60 @@
 #mcneese-page > .float_info.collapsed:focus > .float_info-wrapper {
   visibility: visible;
 }
+
+
+
+/*** Overlay ***/
+.mcneese #overlay-container {
+  position: fixed;
+}
+
+#mcneese-page > .overlay > .overlay-titlebar > .overlay-title-wrapper > #overlay-title {
+  color: #000000;
+}
+
+#mcneese-page > .overlay,
+#mcneese-page > .overlay > .overlay-content {
+  min-height: 600px;
+}
+
+#mcneese-page #overlay-tabs {
+  display: none;
+}
+
+#mcneese-page #overlay-tabs > li > a {
+  display: inline-block;
+  text-shadow: 0 1px 0 #333333;
+
+  border-radius: 5px 5px 0 0;
+
+  vertical-align: bottom;
+
+  font-size: 10px;
+
+  min-height: 14px;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+
+  padding: 1px 8px 0 8px;
+}
+
+#mcneese-page #overlay-tabs > li > a,
+#mcneese-page #overlay-tabs > li > a:visited {
+  color: #ffffff;
+  background-color: #005a92;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+#mcneese-page #overlay-tabs > li > a.active {
+  background-color: #00335b;
+}
+
+#mcneese-page #overlay-tabs > li > a:hover,
+#mcneese-page #overlay-tabs > li > a:active,
+#mcneese-page #overlay-tabs > li > a:focus {
+  color: #f7ff00;
+  background-color: #2970a0;
+}
