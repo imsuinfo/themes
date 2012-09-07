@@ -1,0 +1,21 @@
+
+
+
+/*** ckeditor ***/
+html.wysiwyg-ckeditor {
+  color: #000000;
+  background-color: #dadada;
+}
+
+html.wysiwyg-ckeditor > .mcneese.mcneese-wysiwyg-ckeditor {
+  position: relative;
+
+  color: #000000;
+  background-color: #ffffff;
+
+  min-height: 600px;
+  min-width: 450px;
+
+  margin: 32px 64px;
+  padding: 5px;
+}
