@@ -5,6 +5,13 @@
 
 
 
+/*** Search Form ***/
+#mcneese-page-main > .block-name-block-block-12 {
+  display: none;
+}
+
+
+
 /*** hrjobs ***/
 .path-node_3173 #page-title,
 .path-node_3174 #page-title,
