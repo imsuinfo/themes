@@ -648,3 +648,11 @@
   color: #f7ff00;
   background-color: #2970a0;
 }
+
+
+
+/*** Group Image ***/
+#mcneese-page-content > .group_image {
+  max-width: 100%;
+  overflow: hidden;
+}
