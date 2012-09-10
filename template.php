@@ -797,7 +797,7 @@ function mcneese_preprocess_page(&$vars) {
       drupal_set_message($cf['is_data']['emergency']['message'], 'warning', FALSE);
     }
   }
-  else if ($cf['is']['maintenance']) {
+  else if ($cf['is']['maintenance'] && $cf['is_data']['maintenance']['mode']) {
     if ($cf['is_data']['maintenance']['access']) {
       drupal_set_message($cf['is_data']['maintenance']['message'], 'status', FALSE);
     }
