@@ -21,3 +21,16 @@
   line-height: 17px;
 }
 
+
+
+/*** Institution Effectiveness Policies ***/
+#mcneese-page-main > .node-type-ie_policy > .field-label-inline {
+  margin: 6px 0;
+}
+
+#mcneese-page-main > .node-type-ie_policy > .field-label-inline  > .field-label,
+#mcneese-page-main > .node-type-ie_policy > .field-label-inline  > .field-items {
+  display: inline-block;
+
+  float: none;
+}
