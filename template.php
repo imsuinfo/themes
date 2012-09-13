@@ -1865,7 +1865,7 @@ function mcneese_menu_tree($vars) {
   $menu_open = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $menu_close = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
-  return theme('mcneese_tag', $menu_open) . '<div class="navigation_list">' . $vars['tree'] . '</div>' . theme('mcneese_tag', $menu_close);
+  return theme('mcneese_tag', $menu_open) . '<ul class="navigation_list">' . $vars['tree'] . '</ul>' . theme('mcneese_tag', $menu_close);
 }
 
 /**
@@ -1942,7 +1942,7 @@ function mcneese_render_page_tabs() {
             $sub_tabs_attributes = array('class' => array());
             $sub_tabs_attributes['class'][] = 'sub_tabs';
             $sub_tabs_markup = theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic', 'attributes' => $sub_tabs_attributes, 'html5' => $cf['is']['html5']));
-            $sub_tabs_markup .= '<div class="navigation_list">';
+            $sub_tabs_markup .= '<ul class="navigation_list">';
 
             if (isset($sub_tabs['count']) && $sub_tabs['count'] > 0) {
               $sub_count = 0;
@@ -1989,7 +1989,7 @@ function mcneese_render_page_tabs() {
               }
             }
 
-            $sub_tabs_markup .= '</div>';
+            $sub_tabs_markup .= '</ul>';
             $sub_tabs_markup .= theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic' , 'open' => FALSE, 'html5' => $cf['is']['html5']));
           }
 
