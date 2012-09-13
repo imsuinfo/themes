@@ -726,6 +726,10 @@
   -webkit-box-sizing: border-box;
 }
 
+#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list {
+  padding: 0;
+}
+
 #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > li,
 #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > div {
   display: inline-block;
