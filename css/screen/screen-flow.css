@@ -172,7 +172,10 @@
 
 #mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:hover > a,
 #mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:active > a,
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:focus > a {
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:focus > a,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:hover,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:active,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:focus {
   color: #00477f;
   background-color: #fad703;
   text-decoration: none;
