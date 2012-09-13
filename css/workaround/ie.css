@@ -32,9 +32,9 @@
 
 
 /*** Fix breadcrumb alignment issues ***/
-.mcneese.agent-name-ie #mcneese-breadcrumb > .crumb,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .crumb-trail,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .crumb-node_id,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .crumb-user_id {
+.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb,
+.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-trail,
+.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-node_id,
+.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-user_id {
   vertical-align: top;
 }

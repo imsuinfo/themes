@@ -44,7 +44,7 @@
         $(menus).each(function() {
           var menu = $(this);
 
-          $(menu).children('.item').each(function() {
+          $(menu).children('.navigation_list').children('.item').each(function() {
             var item = $(this);
 
             $(item).children('.link.noscript').removeClass('noscript').each(function() {
@@ -80,7 +80,7 @@
         $(shortcuts).each(function() {
           var shortcut = $(this);
 
-          $(shortcut).children('.mcneese-toolbar-sticky').each(function() {
+          $(shortcut).children('.navigation_list').children('.mcneese-toolbar-sticky').each(function() {
             var sticky = $(this);
 
             $(sticky).children('.link.noscript').removeClass('noscript').each(function() {

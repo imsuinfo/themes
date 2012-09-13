@@ -159,16 +159,20 @@
   padding: 0;
 }
 
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > li {
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list {
+  display: inline;
+}
+
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li {
   display: inline-block;
 
   margin: 0;
   padding: 0;
 }
 
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:hover > a,
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:active > a,
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > li:focus > a {
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:hover > a,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:active > a,
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li:focus > a {
   color: #00477f;
   background-color: #fad703;
   text-decoration: none;
@@ -184,13 +188,13 @@
   overflow: hidden;
 }
 
-#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li,
-#mcneese-header > .header-top > .header-menu-2 > .html_tag-nav > li {
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li,
+#mcneese-header > .header-top > .header-menu-2 > .html_tag-nav > .navigation_list > li {
   margin: 0;
   padding: 0;
 }
 
-#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > li > a {
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a {
   display: inline-block;
 
   color: #f2f2f2;
@@ -206,7 +210,7 @@
   border-top-right-radius: 5px;
 }
 
-#mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > li > a {
+#mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > .navigation_list > li > a {
   display: inline-block;
 
   line-height: 17px;
@@ -216,11 +220,11 @@
   padding: 4px 8px;
 }
 
-#mcneese-header > .header-section > .header-menu-2 > .html_tag-nav > li:first-child > a {
+#mcneese-header > .header-section > .header-menu-2 > .html_tag-nav > .navigation_list > li:first-child > a {
   border-bottom-left-radius: 5px;
 }
 
-#mcneese-header > .header-section > .header-menu > .html_tag-nav > li.active-trail > a.active {
+#mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li.active-trail > a.active {
   background-color: #fad703;
   color: #00477f;
 }

@@ -16,7 +16,7 @@
         else {
           var tabs = $(this);
 
-          $(tabs).children('.tab').each(function() {
+          $(tabs).children('.navigation_list').children('.tab').each(function() {
             if ($(this).hasClass('tab-command-1')) {
               $(this).children('a').each(function() {
                 $(this).click(function() {

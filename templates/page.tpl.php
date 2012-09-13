@@ -115,7 +115,9 @@
         <?php if ($cf['show']['page']['tabs'] && $float_tabs) { ?>
           <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_open']) . "\n"); ?>
           <!--(begin-page_tabs)-->
-          <?php print($cf['data']['page']['tabs'] . "\n"); ?>
+          <ul class="navigation_list">
+            <?php print($cf['data']['page']['tabs'] . "\n"); ?>
+          </ul>
           <!--(end-page_tabs)-->
           <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_close']) . "\n"); ?>
         <?php } ?>
@@ -123,7 +125,9 @@
         <?php if ($cf['show']['page']['action_links'] && $float_action_links) { ?>
           <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
           <!--(begin-page_action_links)-->
-          <?php print($cf['data']['page']['action_links'] . "\n"); ?>
+          <ul class="navigation_list">
+            <?php print($cf['data']['page']['action_links'] . "\n"); ?>
+          </ul>
           <!--(end-page_action_links)-->
           <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_close']) . "\n"); ?>
         <?php } ?>
@@ -133,30 +137,34 @@
     <?php if ($cf['show']['page']['tabs'] && !$float_tabs) { ?>
       <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_open']) . "\n"); ?>
       <!--(begin-page_tabs)-->
-      <?php print($cf['data']['page']['tabs'] . "\n"); ?>
+      <ul class="navigation_list">
+        <?php print($cf['data']['page']['tabs'] . "\n"); ?>
+      </ul>
       <!--(end-page_tabs)-->
       <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_close']) . "\n"); ?>
     <?php } ?>
 
     <?php if (!$cf['is']['front'] && ($cf['show']['page']['breadcrumb'] || $cf['show']['page']['precrumb'] || $cf['show']['page']['postcrumb'])) { ?>
       <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_open']) . "\n"); ?>
-        <?php if ($cf['show']['page']['precrumb']) { ?>
-          <!--(begin-page_precrumb)-->
-          <?php print($cf['data']['page']['precrumb'] . "\n"); ?>
-          <!--(end-page_precrumb)-->
-        <?php } ?>
+        <ul class="navigation_list">
+          <?php if ($cf['show']['page']['precrumb']) { ?>
+            <!--(begin-page_precrumb)-->
+            <?php print($cf['data']['page']['precrumb'] . "\n"); ?>
+            <!--(end-page_precrumb)-->
+          <?php } ?>
 
-        <?php if ($cf['show']['page']['breadcrumb']) { ?>
-          <!--(begin-page_breadcrumb)-->
-          <?php print($cf['data']['page']['breadcrumb'] . "\n"); ?>
-          <!--(end-page_breadcrumb)-->
-        <?php } ?>
+          <?php if ($cf['show']['page']['breadcrumb']) { ?>
+            <!--(begin-page_breadcrumb)-->
+            <?php print($cf['data']['page']['breadcrumb'] . "\n"); ?>
+            <!--(end-page_breadcrumb)-->
+          <?php } ?>
 
-        <?php if ($cf['show']['page']['postcrumb']) { ?>
-          <!--(begin-page_postcrumb)-->
-          <?php print($cf['data']['page']['postcrumb'] . "\n"); ?>
-          <!--(end-page_postcrumb)-->
-        <?php } ?>
+          <?php if ($cf['show']['page']['postcrumb']) { ?>
+            <!--(begin-page_postcrumb)-->
+            <?php print($cf['data']['page']['postcrumb'] . "\n"); ?>
+            <!--(end-page_postcrumb)-->
+          <?php } ?>
+        </ul>
       <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_close']) . "\n"); ?>
     <?php } ?>
 
