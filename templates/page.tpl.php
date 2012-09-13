@@ -24,7 +24,7 @@
       <?php print($cf['data']['page']['header'] . "\n"); ?>
 
       <?php if ($cf['show']['page']['logo']) { ?>
-        <a href="<?php print($cf['data']['page']['logo']['href']); ?>" class="site-logo" title="<?php print($cf['data']['page']['logo']['alt']); ?>" alt="<?php print($cf['data']['page']['logo']['alt']); ?>" role="image"><?php print($cf['data']['page']['logo']['alt']); ?></a>
+        <a href="<?php print($cf['data']['page']['logo']['href']); ?>" class="site-logo" title="<?php print($cf['data']['page']['logo']['alt']); ?>" role="image"><?php print($cf['data']['page']['logo']['alt']); ?></a>
       <?php } ?>
 
       <?php if ($cf['show']['page']['header_menu_1']) { ?>
