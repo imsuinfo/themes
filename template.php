@@ -1622,7 +1622,7 @@ function mcneese_render_page() {
   $float_info_position = 0;
 
   foreach ($float_info_keys as $key) {
-    if (isset($cf['show']['page'][$key]) && isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+    if (isset($cf['show']['page'][$key]) && $cf['show']['page'][$key] && isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
       if (in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
         $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info';
         $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'float_info-' . $float_info_position;
