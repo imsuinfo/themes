@@ -63,6 +63,10 @@
   vertical-align: top;
 }
 
+.mcneese.agent-name-ie #mcneese-toolbar > .html_tag-nav > .navigation_list > .item {
+  vertical-align: middle;
+}
+
 #mcneese-toolbar > .html_tag-nav > .navigation_list > .item > .link {
   display: inline-block;
 
