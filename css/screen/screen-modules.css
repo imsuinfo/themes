@@ -38,6 +38,11 @@
   margin: 0;
 }
 
+.masquerade_block_1 > div {
+  /* workaround for old&buggy firefoxes */
+  max-height: 44px;
+}
+
 .masquerade_block_1 > div > .form-item {
   margin: 0;
 }
