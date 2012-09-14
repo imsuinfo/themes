@@ -195,6 +195,10 @@
   margin: 0 64px;
 }
 
+.mcneese.is-emergency #mcneese-www-footer {
+  display: none;
+}
+
 .mcneese.is-logged_in #mcneese-skip_nav:active,
 .mcneese.is-logged_in #mcneese-skip_nav:focus,
 .mcneese.is-logged_in #mcneese-skip_nav:hover {
