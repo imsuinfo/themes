@@ -524,6 +524,7 @@
   padding: 0;
 }
 
+#mcneese-tabs.fixed.expanded,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:hover,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:active,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:focus,
