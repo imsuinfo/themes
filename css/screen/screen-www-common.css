@@ -299,6 +299,17 @@
   background-image: url(../../images/background-marble-black.png);
 }
 
+.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active,
+.mcneese.at-wwwdev #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active,
+.mcneese.at-wwwdev2 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active:visited,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active:visited,
+.mcneese.at-wwwdev #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active:visited,
+.mcneese.at-wwwdev2 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active:visited {
+  background-image: url(../../images/background-marble-yellow.png);
+}
+
 .mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:hover,
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:hover,
 .mcneese.at-wwwdev #mcneese-header > .header-section > .header-menu > .html_tag-nav > .navigation_list > li > a:hover,
