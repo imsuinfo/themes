@@ -26,58 +26,65 @@
 
 
 /*** Skip Navigation ***/
-#mcneese-skip_nav > a {
+#mcneese-skip_nav {
   display: block;
 
-  visibility: hidden;
-  overflow: hidden;
-
   background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
 
   font-size: 0;
   line-height: 0;
 
-  width: 0;
-  min-width: 0;
-  max-width: 0;
-
   height: 0;
   min-height: 0;
-  max-height: 0;
 
-  margin: 0;
+  width: 0;
+  min-width: 0;
+
   padding: 0;
+  margin: 0;
   border: 0;
+
+  overflow: hidden;
 }
 
-#mcneese-skip_nav:focus > a,
-#mcneese-skip_nav:active > a,
-#mcneese-skip_nav:hover > a {
-  position: absolute;
-  top: 50px;
-  left: 50px;
+#mcneese-skip_nav:visited {
+  background-color: #ffffff;
+  color: #000000;
+}
 
-  visibility: visible;
+#mcneese-skip_nav:active,
+#mcneese-skip_nav:focus,
+#mcneese-skip_nav:hover {
+  display: block;
+
+  text-decoration: underline;
 
   font-size: 24px;
   line-height: 28px;
 
-  width: auto;
-  min-width: auto;
-  max-width: auto;
-
   height: auto;
   min-height: auto;
-  max-height: auto;
 
-  margin: 2px;
-  padding: 2px;
-  border: 1px solid #000000;
+  width: auto;
+  min-width: 450px;
 
-  transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  -o-transition: all 0.25s;
+  margin: 0 64px;
+  padding: 4px;
+  border: 1px dotted;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-skip_nav:active,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-skip_nav:focus,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-skip_nav:hover {
+    margin-top: 25px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-skip_nav:active,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-skip_nav:focus,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-skip_nav:hover {
+    margin-top: 50px;
 }
 
 
