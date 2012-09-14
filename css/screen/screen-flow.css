@@ -213,6 +213,12 @@
   border-top-right-radius: 5px;
 }
 
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active,
+#mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a.active:visited {
+  color: #00477f;
+  background-color: #fad703;
+}
+
 #mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > .navigation_list > li > a {
   display: inline-block;
 
