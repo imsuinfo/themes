@@ -14,6 +14,16 @@
   margin: 0 auto;
 }
 
+#mcneese-skip_nav:active,
+#mcneese-skip_nav:focus,
+#mcneese-skip_nav:hover {
+  width: 960px;
+  min-width: 960px;
+  max-width: 960px;
+
+  margin: 0 auto;
+}
+
 #mcneese-bottom,
 .mcneese > .dev-query {
   margin: 0 auto 15px auto;
@@ -178,6 +188,16 @@
 .mcneese.is-logged_in #mcneese-bottom,
 .mcneese.is-logged_in #mcneese-www-footer,
 .mcneese.is-logged_in > .dev-query {
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+
+  margin: 0 64px;
+}
+
+.mcneese.is-logged_in #mcneese-skip_nav:active,
+.mcneese.is-logged_in #mcneese-skip_nav:focus,
+.mcneese.is-logged_in #mcneese-skip_nav:hover {
   width: inherit;
   min-width: inherit;
   max-width: inherit;

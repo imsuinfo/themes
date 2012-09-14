@@ -26,11 +26,9 @@
 
 <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
 <?php if (!$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
-  <div id="mcneese-skip_nav">
-    <!--(begin-skipnav)-->
-    <a href="#mcneese-page-main"><?php print t("Skip to main content"); ?></a>
-    <!--(end-skipnav)-->
-  </div>
+  <!--(begin-skipnav)-->
+  <a id="mcneese-skip_nav" href="#mcneese-page-main"><?php print t("Skip to main content"); ?></a>
+  <!--(end-skipnav)-->
 <?php } ?>
 
 <!--(begin-body)-->
