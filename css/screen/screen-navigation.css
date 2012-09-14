@@ -383,7 +383,8 @@
 
 
 /*** Tabs ***/
-#mcneese-tabs > .navigation_list {
+#mcneese-tabs > .navigation_list,
+#mcneese-tabs > .navigation_list > .tab > .sub_tabs > .navigation_list {
   display: inline;
 }
 
@@ -399,7 +400,7 @@
 
 #mcneese-tabs.relative > .navigation_list > .tab,
 #mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs,
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab {
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab {
   display: inline-block;
   position: relative;
 }
@@ -430,7 +431,7 @@
 }
 
 #mcneese-tabs.relative > .navigation_list > .tab > a,
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab > a {
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   display: inline-block;
 
   color: #ffffff;
@@ -459,7 +460,7 @@
   background-color: #00335b;
 }
 
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab > a {
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   font-size: 10px;
 
   min-height: 14px;
@@ -472,9 +473,9 @@
 #mcneese-tabs.relative > .navigation_list > .tab > a:hover,
 #mcneese-tabs.relative > .navigation_list > .tab > a:active,
 #mcneese-tabs.relative > .navigation_list > .tab > a:focus,
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab > a:hover,
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab > a:active,
-#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .tab > a:focus {
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:hover,
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:active,
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:focus {
   color: #f7ff00;
   background-color: #2970a0;
 }
@@ -512,7 +513,7 @@
 
 #mcneese-tabs.fixed > .navigation_list > .tab,
 #mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab {
   display: block;
 }
 
@@ -526,9 +527,9 @@
 #mcneese-tabs.fixed > .navigation_list > .tab > a:hover,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:active,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:focus,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:hover,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:active,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:focus {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:hover,
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:active,
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:focus {
   z-index: 200;
 }
 
@@ -566,7 +567,7 @@
 
 #mcneese-tabs.fixed > .navigation_list > .tab,
 #mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab {
   width: 100%;
 
   box-sizing: border-box;
@@ -586,7 +587,7 @@
 }
 
 #mcneese-tabs.fixed > .navigation_list > .tab > a,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   display: block;
 
   color: #ffffff;
@@ -617,15 +618,15 @@
 #mcneese-tabs.fixed > .navigation_list > .tab > a:hover,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:active,
 #mcneese-tabs.fixed > .navigation_list > .tab > a:focus,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:hover,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:active,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:focus {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:hover,
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:active,
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:focus {
   color: #f7ff00;
   background-color: #2970a0;
 }
 
 #mcneese-tabs.fixed > .navigation_list > .tab > a:active,
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a:active {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:active {
   color: #ff0000;
 
   border-style: inset;
@@ -659,13 +660,13 @@
 
 #mcneese-tabs.fixed > .navigation_list > .tab-last > a,
 #mcneese-tabs.fixed > .navigation_list > .tab-last > a,
-#mcneese-tabs.fixed > .navigation_list > .tab-last > .sub_tabs > .tab-last > a {
+#mcneese-tabs.fixed > .navigation_list > .tab-last > .sub_tabs > .navigation_list > .tab-last > a {
   border-width: 0px 1px 1px 1px;
   border-radius: 0 0 5px 5px;
 }
 
 
-#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .tab > a {
+#mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   padding-left: 24px;
   min-width: 96px;
 }
