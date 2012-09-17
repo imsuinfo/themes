@@ -24,13 +24,202 @@
 
 
 /*** Institution Effectiveness Policies ***/
-#mcneese-page-main > .node-type-ie_policy > .field-label-inline {
+#mcneese-page-content > .node-type-ie_policy > .field-label-inline {
   margin: 6px 0;
 }
 
-#mcneese-page-main > .node-type-ie_policy > .field-label-inline  > .field-label,
-#mcneese-page-main > .node-type-ie_policy > .field-label-inline  > .field-items {
+#mcneese-page-content > .node-type-ie_policy > .field-label-inline  > .field-label,
+#mcneese-page-content > .node-type-ie_policy > .field-label-inline  > .field-items {
   display: inline-block;
 
   float: none;
+}
+
+
+
+/*** Content Specific Style: csf ***/
+#mcneese-page-content .csf_wrap ul {
+  list-style: none outside none;
+}
+
+#mcneese-page-content .csf_wrap {
+  background-color: #ffffff;
+  height: 453px;
+  margin: 0 auto;
+  width: 745px;
+}
+
+#mcneese-page-content .csf_wrap a:hover {
+  color: #0066FF;
+}
+
+#mcneese-page-content .csf_wrap li {
+  display: inline-block;
+  margin-top: 8px;
+  text-align: center;
+  width: 149px;
+}
+
+#mcneese-page-content .csf_wrap li a {
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#mcneese-page-content .csf_wrap li a img {
+  border-style: none;
+  vertical-align: bottom;
+}
+
+#mcneese-page-content .csf_wrap li a:hover img {
+  background-color: #f3f3f3;
+}
+
+#mcneese-page-content .csf-col-image {
+    float: left;
+    height: 200px;
+    vertical-align: top;
+    width: 130px;
+}
+
+#mcneese-page-content .csf-col-image img {
+    height: 130px;
+    width: 130px;
+}
+
+#mcneese-page-content .csf-cell-wrap {
+    float: left;
+    width: 248px;
+}
+
+.mcneese.alias-csf_desktops #mcneese-page-content table th,
+.mcneese.alias-csf_notebooks #mcneese-page-content table th,
+.mcneese.alias-csf_tablets #mcneese-page-content table th,
+.mcneese.alias-csf_printers #mcneese-page-content table th,
+.mcneese.alias-csf_macpro #mcneese-page-content table th,
+.mcneese.alias-csf_imac #mcneese-page-content table th,
+.mcneese.alias-csf_macmini #mcneese-page-content table th,
+.mcneese.alias-csf_macbookpro #mcneese-page-content table th,
+.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_printers_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table th,
+.mcneese.mcneese.alias-csf_imac_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table th,
+.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table th {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mcneese.alias-csf_desktops #mcneese-page-content table td,
+.mcneese.alias-csf_notebooks #mcneese-page-content table td,
+.mcneese.alias-csf_tablets #mcneese-page-content table td,
+.mcneese.alias-csf_printers #mcneese-page-content table td,
+.mcneese.alias-csf_macpro #mcneese-page-content table td,
+.mcneese.alias-csf_imac #mcneese-page-content table td,
+.mcneese.alias-csf_macmini #mcneese-page-content table td,
+.mcneese.alias-csf_macbookpro #mcneese-page-content table td,
+.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_printers_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_imac_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table td,
+.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table td {
+    padding: 8px;
+}
+
+.mcneese.alias-csf_desktops #mcneese-page-content table tr,
+.mcneese.alias-csf_notebooks #mcneese-page-content table tr,
+.mcneese.alias-csf_tablets #mcneese-page-content table tr,
+.mcneese.alias-csf_printers #mcneese-page-content table tr,
+.mcneese.alias-csf_macpro #mcneese-page-content table tr,
+.mcneese.alias-csf_imac #mcneese-page-content table tr,
+.mcneese.alias-csf_macmini #mcneese-page-content table tr,
+.mcneese.alias-csf_macbookpro #mcneese-page-content table tr,
+.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_printers_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_imac_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table tr,
+.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table tr {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.mcneese.alias-csf_desktops #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_notebooks #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_tablets #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_printers #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macpro #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_imac #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macmini #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macbookpro #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_desktops_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_tablets_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_printers_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_imac_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macmini_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n) {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+
+.mcneese.alias-csf_desktops #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_notebooks #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_tablets #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_printers #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macpro #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_imac #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macmini #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macbookpro #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_desktops_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_tablets_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_printers_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_imac_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macmini_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1) {
+    background: none repeat scroll 0 0 #D1D1D1;
+}
+
+
+
+/*** Policy-specific theme tweaks ***/
+#mcneese-page-content .node-ie-policy .field-name-field-authority,
+#mcneese-page-content .node-ie-policy .field-name-field-date-enacted,
+#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook,
+#mcneese-page-content .node-ie-policy .field-name-field-authority {
+  margin: 6px 0;
+}
+
+#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-label,
+#mcneese-page-content .node-ie-policy .field-name-field-date-enacted > .field-label,
+#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook > .field-label,
+#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-label {
+  display: inline-block;
+  float: none;
+  vertical-align: baseline;
+
+  font-size: 14px;
+}
+
+#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-item,
+#mcneese-page-content .node-ie-policy .field-name-field-date-enacted > .field-item,
+#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook > .field-item,
+#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-item {
+  display: inline-block;
+  vertical-align: baseline;
 }
