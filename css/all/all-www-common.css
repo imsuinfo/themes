@@ -24,12 +24,12 @@
 
 
 /*** Institution Effectiveness Policies ***/
-#mcneese-page-content > .node-type-ie_policy > .field-label-inline {
+#mcneese-page-content .node-type-ie_policy > .field-label-inline {
   margin: 6px 0;
 }
 
-#mcneese-page-content > .node-type-ie_policy > .field-label-inline  > .field-label,
-#mcneese-page-content > .node-type-ie_policy > .field-label-inline  > .field-items {
+#mcneese-page-content .node-type-ie_policy > .field-label-inline  > .field-label,
+#mcneese-page-content .node-type-ie_policy > .field-label-inline  > .field-items {
   display: inline-block;
 
   float: none;
