@@ -43,14 +43,12 @@
 }
 
 #mcneese-page-content .csf_wrap {
-  background-color: #ffffff;
-  height: 453px;
+  display: inline-block;
   margin: 0 auto;
-  width: 745px;
 }
 
 #mcneese-page-content .csf_wrap a:hover {
-  color: #0066FF;
+  color: #0066ff;
 }
 
 #mcneese-page-content .csf_wrap li {
