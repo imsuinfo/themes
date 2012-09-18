@@ -331,6 +331,7 @@
 }
 
 #mcneese-breadcrumb > .navigation_list > .crumb-trail,
+#mcneese-breadcrumb > .navigation_list > .crumb > span,
 #mcneese-breadcrumb > .navigation_list > .crumb > a {
   display: inline-block;
 
