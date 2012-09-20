@@ -106,8 +106,8 @@ function mcneese_preprocess_toolbar(&$vars) {
   $cf['is']['toolbar-expanded'] = TRUE;
   $cf['is']['toolbar-collapsed'] = FALSE;
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['toolbar']['autohide'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['toolbar']['autohide']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['toolbar']['autohide'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['toolbar']['autohide']) {
       $toolbar_autohide = 'autohide';
       $toolbar_expanded = 'collapsed';
       $cf['is']['toolbar-expanded'] = FALSE;
@@ -120,8 +120,8 @@ function mcneese_preprocess_toolbar(&$vars) {
     }
   }
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['toolbar']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['toolbar']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['toolbar']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['toolbar']['sticky']) {
       $toolbar_sticky = 'relative';
     }
     else {
@@ -385,8 +385,8 @@ function mcneese_preprocess_page(&$vars) {
   // load all help so that they can be stored in the 'help' region.
   $help_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['help']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['help']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['region']['help']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['region']['help']['sticky']) {
       $help_sticky = 'relative';
     }
     else {
@@ -453,8 +453,8 @@ function mcneese_preprocess_page(&$vars) {
   // load all information so that they can be stored in the 'information' region.
   $information_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['information']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['information']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['information']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['information']['sticky']) {
       $information_sticky = 'relative';
     }
     else {
@@ -520,8 +520,8 @@ function mcneese_preprocess_page(&$vars) {
   // load all editing so that they can be stored in the 'editing' region.
   $editing_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['editing']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['editing']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['editing']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['editing']['sticky']) {
       $editing_sticky = 'relative';
     }
     else {
@@ -576,8 +576,8 @@ function mcneese_preprocess_page(&$vars) {
 
   $tabs_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['menu_tabs']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['menu_tabs']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['menu_tabs']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['menu_tabs']['sticky']) {
       $tabs_sticky = 'relative';
     }
     else {
@@ -614,8 +614,8 @@ function mcneese_preprocess_page(&$vars) {
   // load all action_links
   $action_links_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['action_links']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['action_links']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['action_links']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['action_links']['sticky']) {
       $action_links_sticky = 'relative';
     }
     else {
@@ -1426,8 +1426,8 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
       $cf['is']['toolbar-autoshow'] = TRUE;
       $cf['is']['toolbar-autohide'] = FALSE;
 
-      if (isset($cf['user']['object']->data['mcneese_settings']['toolbar'])) {
-        $toolbar_settings = $cf['user']['object']->data['mcneese_settings']['toolbar'];
+      if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['toolbar'])) {
+        $toolbar_settings = $cf['user']['object']->data['mcneese_settings']['navigation']['toolbar'];
 
         if (isset($toolbar_settings['autohide']) && $toolbar_settings['autohide']) {
           $cf['is']['toolbar-expanded'] = FALSE;
@@ -1443,8 +1443,8 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
       }
 
       if (_toolbar_is_collapsed()) {
-        $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
-        $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+        $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
+        $cf['is']['toolbar-shortcuts-collapsed'] = TRUE;
       }
       else {
         $cf['is']['toolbar-shortcuts-expanded'] = TRUE;
@@ -1773,8 +1773,8 @@ function mcneese_status_messages($vars) {
 
   $header_class = 'html_tag-header';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky']) {
       $header_class = ' element-invisible';
     }
   }
@@ -2011,8 +2011,8 @@ function mcneese_render_page_tabs() {
 function mcneese_preprocess_page_prepare_messages(&$cf, &$vars) {
   $messages_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['messages']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['messages']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky']) {
       $messages_sticky = 'relative';
     }
     else {
