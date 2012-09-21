@@ -38,3 +38,9 @@
 .mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-user_id {
   vertical-align: top;
 }
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-breadcrumb .navigation_list,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-breadcrumb > .navigation_list,
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-breadcrumb > .navigation_list {
+  display: block;
+}
