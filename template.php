@@ -767,7 +767,7 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['watermarks-post'] = '';
 
 
-  if ($cf['is']['node'] && $cf['user']['object']->uid > 0) {
+  if ($cf['is']['user_settings-watermarks'] && $cf['is']['node'] && $cf['user']['object']->uid > 0) {
     if (isset($cf['is']['workbench-moderated']) && $cf['is']['workbench-moderated']) {
       if (empty($cf['is']['workbench-moderated-published'])) {
         $cf['page']['watermarks-pre'] .= '<div class="watermark-unpublished">Unpublished</div>';
@@ -1493,6 +1493,37 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
     }
     else {
       $cf['is']['workbench-unmoderated'] = TRUE;
+    }
+  }
+
+
+  if ($cf['is']['logged_in']) {
+    // default to enabled for logged in users
+    $cf['is_data']['user_settings-background_colors'] = array();
+    $cf['is_data']['user_settings-watermarks'] = array();
+
+    if (isset($cf['user']['object']->data['mcneese_settings']['style']['subtle_information']['background_colors'])) {
+      if ($cf['user']['object']->data['mcneese_settings']['style']['subtle_information']['background_colors']) {
+        $cf['is']['user_settings-background_colors'] = TRUE;
+      }
+      else {
+        $cf['is']['user_settings-background_colors'] = FALSE;
+      }
+    }
+    else {
+      $cf['is']['user_settings-background_colors'] = TRUE;
+    }
+
+    if (isset($cf['user']['object']->data['mcneese_settings']['style']['subtle_information']['watermarks'])) {
+      if ($cf['user']['object']->data['mcneese_settings']['style']['subtle_information']['watermarks']) {
+        $cf['is']['user_settings-watermarks'] = TRUE;
+      }
+      else {
+        $cf['is']['user_settings-watermarks'] = FALSE;
+      }
+    }
+    else {
+      $cf['is']['user_settings-watermarks'] = TRUE;
     }
   }
 

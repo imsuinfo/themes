@@ -24,11 +24,11 @@
   margin: 4px 0;
 }
 
-.mcneese.is-workbench-moderated-draft > #mcneese-page {
+.mcneese.is-user_settings-background_colors.is-workbench-moderated-draft > #mcneese-page {
   background-color: #edf5fa;
 }
 
-.mcneese.is-node.is-unpublished > #mcneese-page {
+.mcneese.is-user_settings-background_colors.is-node.is-unpublished > #mcneese-page {
   background-color: #ffeeee;
 }
 
