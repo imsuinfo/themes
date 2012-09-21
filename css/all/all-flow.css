@@ -126,6 +126,8 @@
   border-color: #bebfb9;
   border-style: solid;
   border-width: 0 1px;
+
+  padding: 1px 8px;
 }
 
 .mcneese table > tbody > tr.even {

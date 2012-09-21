@@ -1,3 +1,8 @@
+/*** Token ***/
+.mcneese .token-tree {
+  font-size: 12px;
+}
+
 /*** Date ***/
 #ui-datepicker-div {
   width: auto;
