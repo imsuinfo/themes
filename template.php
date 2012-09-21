@@ -767,7 +767,7 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['watermarks-post'] = '';
 
 
-  if ($cf['is']['user_settings-watermarks'] && $cf['is']['node'] && $cf['user']['object']->uid > 0) {
+  if (isset($cf['is']['user_settings-watermarks']) && $cf['is']['user_settings-watermarks'] && $cf['is']['node'] && $cf['user']['object']->uid > 0) {
     if (isset($cf['is']['workbench-moderated']) && $cf['is']['workbench-moderated']) {
       if (empty($cf['is']['workbench-moderated-published'])) {
         $cf['page']['watermarks-pre'] .= '<div class="watermark-unpublished">Unpublished</div>';
