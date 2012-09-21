@@ -342,14 +342,14 @@
 .mcneese input#preview-submit:hover,
 .mcneese ul#views-display-menu-tabs a:hover,
 .mcneese ul#views-display-menu-tabs a.active:hover,
-.mcneese input.form-submit.form-preview,
-.mcneese input.form-preview,
-.mcneese input#preview-submit,
-.mcneese input#edit-reset-cache,
-.mcneese input.form-submit.form-undelete,
-.mcneese input.form-undelete,
-.mcneese input#edit-preview,
-.mcneese input#edit-undelete {
+.mcneese input.form-submit.form-preview:hover,
+.mcneese input.form-preview:hover,
+.mcneese input#preview-submit:hover,
+.mcneese input#edit-reset-cache:hover,
+.mcneese input.form-submit.form-undelete:hover,
+.mcneese input.form-undelete:hover,
+.mcneese input#edit-preview:hover,
+.mcneese input#edit-undelete:hover {
   text-decoration: underline;
 
   color: #ffffff;
