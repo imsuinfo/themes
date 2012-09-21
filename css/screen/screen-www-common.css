@@ -195,8 +195,17 @@
   margin: 0 64px;
 }
 
+.mcneese.is-overlay #mcneese-www-footer,
 .mcneese.is-emergency #mcneese-www-footer {
   display: none;
+
+  width: 0;
+  height: 0;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
 }
 
 .mcneese.is-logged_in #mcneese-skip_nav:active,
