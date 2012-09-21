@@ -253,17 +253,17 @@
   background-image: url(../../images/background-marble-slight_white.png);
 }
 
-.mcneese.at-wwwdev_mcneese_edu.is-workbench-moderated-draft #mcneese-page,
-.mcneese.at-wwwdev2_mcneese_edu.is-workbench-moderated-draft #mcneese-page,
-.mcneese.at-wwwdev.is-workbench-moderated-draft #mcneese-page,
-.mcneese.at-wwwdev2.is-workbench-moderated-draft #mcneese-page {
+.mcneese.at-wwwdev_mcneese_edu.is-user_settings-background_colors.is-workbench-moderated-draft #mcneese-page,
+.mcneese.at-wwwdev2_mcneese_edu.is-user_settings-background_colors.is-workbench-moderated-draft #mcneese-page,
+.mcneese.at-wwwdev.is-user_settings-background_colors.is-workbench-moderated-draft #mcneese-page,
+.mcneese.at-wwwdev2.is-user_settings-background_colors.is-workbench-moderated-draft #mcneese-page {
   background-image: url(../../images/background-marble-slight_blue.png);
 }
 
-.mcneese.at-wwwdev_mcneese_edu.is-node.is-unpublished #mcneese-page,
-.mcneese.at-wwwdev2_mcneese_edu.is-node.is-unpublished #mcneese-page,
-.mcneese.at-wwwdev.is-node.is-unpublished #mcneese-page,
-.mcneese.at-wwwdev2.is-node.is-unpublished #mcneese-page {
+.mcneese.at-wwwdev_mcneese_edu.is-user_settings-background_colors.is-node.is-unpublished #mcneese-page,
+.mcneese.at-wwwdev2_mcneese_edu.is-user_settings-background_colors.is-node.is-unpublished #mcneese-page,
+.mcneese.at-wwwdev.is-user_settings-background_colors.is-node.is-unpublished #mcneese-page,
+.mcneese.at-wwwdev2.is-user_settings-background_colors.is-node.is-unpublished #mcneese-page {
   background-image: url(../../images/background-marble-slight_pink.png);
 }
 
