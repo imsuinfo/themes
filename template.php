@@ -89,7 +89,7 @@ function mcneese_preprocess_toolbar(&$vars) {
   $tab_index = 1;
 
   // identify the collapse/expand state of the shortcuts bar.
-  if (_toolbar_is_collapsed()) {
+  if (function_exists('_toolbar_is_collapsed') && _toolbar_is_collapsed()) {
     $toggle_state = 'collapsed';
     $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
     $cf['is']['toolbar-shortcuts-collapsed'] = TRUE;
@@ -1442,7 +1442,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars){
         }
       }
 
-      if (_toolbar_is_collapsed()) {
+      if (function_exists('_toolbar_is_collapsed') && _toolbar_is_collapsed()) {
         $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
         $cf['is']['toolbar-shortcuts-collapsed'] = TRUE;
       }
