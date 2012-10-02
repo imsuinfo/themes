@@ -1056,6 +1056,12 @@ function mcneese_preprocess_user_picture(&$vars) {
   $cf['user_picture']['tags'] = array();
 
   $vars['user_picture'] = '';
+  $vars['user_name'] = '';
+
+  // username is not always defined, such as when adding new users.
+  if (is_object($vars['account']) && property_exists($vars['account'], 'name')) {
+    $vars['user_name'] = $vars['account']->name;
+  }
 
   if (variable_get('user_pictures', 0)) {
     if (!empty($vars['account']->picture)) {
