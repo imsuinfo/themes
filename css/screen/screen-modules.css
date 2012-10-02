@@ -483,3 +483,26 @@
 #mcneese-information > .information-wrapper > .block > .workbench-info-block {
   color: #302c00;
 }
+
+
+
+/*** Rules UI ***/
+.mcneese #rules-form-wrapper .rules-elements-table .tabledrag-toggle-weight-wrapper {
+  position: relative;
+  display: inline-block;
+  float: right;
+  clear: right;
+}
+
+.mcneese #rules-form-wrapper .rules-elements-table ul.rules-operations a {
+  padding: 0 2px;
+}
+
+.mcneese #rules-form-wrapper .rules-elements-table ul.rules-operations-add a {
+  line-height: 18px;
+}
+
+.mcneese #rules-form-wrapper ul.rules-operations-add li {
+  display: inline-block;
+  float: none;
+}
