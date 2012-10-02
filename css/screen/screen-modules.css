@@ -34,20 +34,20 @@
   padding: 2px;
 }
 
-.masquerade_block_1 {
+.mcneese .masquerade_block_1 {
   margin: 0;
 }
 
-.masquerade_block_1 > div {
+.mcneese .masquerade_block_1 > div {
   /* workaround for old&buggy firefoxes */
   max-height: 44px;
 }
 
-.masquerade_block_1 > div > .form-item {
+.mcneese .masquerade_block_1 > div > .form-item {
   margin: 0;
 }
 
-.masquerade_block_1 > div > .form-item  > .description {
+.mcneese .masquerade_block_1 > div > .form-item  > .description {
   background-color: inherit;
 
   margin: 0;
@@ -55,7 +55,7 @@
   border: none;
 }
 
-.masquerade_block_1 > div > .container-inline > input {
+.mcneese .masquerade_block_1 > div > .container-inline > input {
   display: inline-block;
 
   color: #00477f;
@@ -79,9 +79,9 @@
   cursor: pointer;
 }
 
-.masquerade_block_1 > div > .container-inline > input:hover,
-.masquerade_block_1 > div > .container-inline > input:active,
-.masquerade_block_1 > div > .container-inline > input:focus {
+.mcneese .masquerade_block_1 > div > .container-inline > input:hover,
+.mcneese .masquerade_block_1 > div > .container-inline > input:active,
+.mcneese .masquerade_block_1 > div > .container-inline > input:focus {
   text-decoration: underline;
 
   color: #ffffff;
@@ -93,14 +93,14 @@
   border: 1px outset #333333;
 }
 
-.masquerade_block_1 > div > .container-inline > input:active {
+.mcneese .masquerade_block_1 > div > .container-inline > input:active {
   border: 1px inset #333333;
 }
 
-.masquerade_block_1 .form-item > .description > a,
-.masquerade_block_1 .form-item > .description > a:visited,
-.masquerade_block_1 #quick_switch_links .item-list li > a,
-.masquerade_block_1 #quick_switch_links .item-list li > a:visited {
+.mcneese .masquerade_block_1 .form-item > .description > a,
+.mcneese .masquerade_block_1 .form-item > .description > a:visited,
+.mcneese .masquerade_block_1 #quick_switch_links .item-list li > a,
+.mcneese .masquerade_block_1 #quick_switch_links .item-list li > a:visited {
   color: #fad703;
   text-decoration: underline;
 }
