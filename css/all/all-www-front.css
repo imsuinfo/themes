@@ -1,3 +1,24 @@
+.mcneese.is-front #mcneese-page-content > .page-title {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .mcneese.node-id-492.is-logged_in,
 .mcneese.node-id-819.is-logged_in,
 .mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in,

@@ -142,6 +142,13 @@ function mcneese_www_render_page() {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
 
+  // setup default front page title
+  if ($cf['is']['front']) {
+    $cf['show']['page']['title'] = TRUE;
+    $cf['data']['page']['title'] = t("McNeese State University");
+  }
+
+
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     // group image
