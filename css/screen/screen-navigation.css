@@ -647,11 +647,6 @@
 #mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   font-size: 10px;
 
-#mcneese-tabs.fixed.collapsed {
-  background-image: url(../../images/menu_tabs.png);
-  background-color: #dadada;
-}
-
   min-height: 14px;
   line-height: 14px;
   letter-spacing: 0.4px;
