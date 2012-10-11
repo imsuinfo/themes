@@ -57,7 +57,6 @@ function mcneese_www_preprocess_maintenance_page(&$vars) {
 function mcneese_www_preprocess_html(&$vars) {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
-
   if ($cf['at']['machine_name'] == 'sandbox.mcneese.edu' || $cf['at']['machine_name'] == 'sandbox') {
     $vars['head_title'] = "Sandbox of (" . $vars['head_title'] . ")";
   } else if ($cf['at']['machine_name'] == 'wwwdev.mcneese.edu' || $cf['at']['machine_name'] == 'wwwdev') {
@@ -107,8 +106,11 @@ function mcneese_www_preprocess_html(&$vars) {
 function mcneese_www_preprocess_page(&$vars) {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
-  $cf['show']['page']['group_image'] = FALSE;
-  $cf['data']['page']['group_image'] = array();
+
+  foreach (array('group_image', 'document_header', 'document_outline', 'document_footer') as $key) {
+    $cf['show']['page'][$key] = FALSE;
+    $cf['data']['page'][$key] = array();
+  }
 
   if ($cf['at']['machine_name'] == 'sandbox.mcneese.edu' || $cf['at']['machine_name'] == 'sandbox') {
     $cf['data']['page']['logo']['title'] = 'Sandbox of ' . $cf['data']['page']['logo']['title'];
@@ -130,6 +132,101 @@ function mcneese_www_preprocess_page(&$vars) {
     }
     else {
       $cf['is_data']['unsupported']['message'] = t("You are using an unsupported version of :name. Please upgrade your webbrowser or <a href='@alternate_browser_url'>download an alternative browser</a>.", array(':name' => $cf['agent']['human_name'], '@alternate_browser_url' => "/supported_browsers"));
+    }
+  }
+
+
+  // node-specific content
+  if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+    // web documents
+    if ($cf['is_data']['node']['object']->type == 'document') {
+      $float_info_keys = array('messages', 'help', 'information', 'editing', 'tabs', 'action_links', 'side', 'breadcrumb');
+
+      foreach ($float_info_keys as $key) {
+        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
+
+        if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
+        }
+
+        if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
+        }
+
+        if (!in_array('float_info-wrapper', $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
+          $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'][] = 'float_info-wrapper';
+        }
+
+        $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+
+        if ($found_key !== FALSE) {
+          unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
+        }
+
+        $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+
+        if ($found_key !== FALSE) {
+          unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
+        }
+      }
+
+      $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+
+      if ($found_key !== FALSE) {
+        unset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'][$found_key]);
+      }
+
+
+      // document header field
+      $attributes = array();
+      $attributes['id'] = 'mcneese-page-document-header';
+      $attributes['class'] = array();
+      $attributes['class'][] = 'relative';
+      $attributes['class'][] = 'expanded';
+
+      $cf['page']['tags']['mcneese_www_document_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+      $cf['page']['tags']['mcneese_www_document_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+      // document navigation field
+      $attributes = array();
+      $attributes['id'] = 'mcneese-page-document-outline';
+      $attributes['class'] = array();
+      $attributes['class'][] = 'noscript';
+      $attributes['class'][] = 'fixed';
+      $attributes['class'][] = 'collapsed';
+      $attributes['role'] = 'navigation';
+      $attributes['tabindex'] = 1;
+
+      $cf['page']['tags']['mcneese_www_document_outline_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+      $cf['page']['tags']['mcneese_www_document_outline_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+      // document header field
+      $attributes = array();
+      $attributes['id'] = 'mcneese-page-document-footer';
+      $attributes['class'] = array();
+      $attributes['class'][] = 'relative';
+      $attributes['class'][] = 'expanded';
+
+      $cf['page']['tags']['mcneese_www_document_footer_open'] = array('name' => 'footer', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+      $cf['page']['tags']['mcneese_www_document_footer_close'] = array('name' => 'footer', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+      if (isset($cf['is_data']['node']['object']->field_header['und'][0]['safe_value'])) {
+        $cf['show']['page']['document_header'] = TRUE;
+        $cf['data']['page']['document_header']['markup'] = $cf['is_data']['node']['object']->field_header['und'][0]['safe_value'];
+      }
+
+      if (isset($cf['is_data']['node']['object']->field_outline['und'][0]['safe_value'])) {
+        $cf['show']['page']['document_outline'] = TRUE;
+        $cf['data']['page']['document_outline']['markup'] = $cf['is_data']['node']['object']->field_outline['und'][0]['safe_value'];
+      }
+
+      if (isset($cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'])) {
+        $cf['show']['page']['document_footer'] = TRUE;
+        $cf['data']['page']['document_footer']['markup'] = $cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'];
+      }
     }
   }
 }
@@ -155,20 +252,20 @@ function mcneese_www_render_page() {
     if (property_exists($cf['is_data']['node']['object'], 'field_group_image_show') && !empty($cf['is_data']['node']['object']->field_group_image_show)) {
       if (property_exists($cf['is_data']['node']['object'], 'field_group_image_custom') && !empty($cf['is_data']['node']['object']->field_group_image_custom)) {
         $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
-        $cf['data']['page']['group_image']['height'] = '200px';
+        $cf['data']['page']['group_image']['height'] = '200';
 
         $url = file_create_url($cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
 
         if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
           $cf['data']['page']['group_image']['class'] .= 'group_image-small';
-          $cf['data']['page']['group_image']['width'] = '755px';
+          $cf['data']['page']['group_image']['width'] = '755';
 
           $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
           $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
         }
         else {
           $cf['data']['page']['group_image']['class'] .= 'group_image-large';
-          $cf['data']['page']['group_image']['width'] = '960px';
+          $cf['data']['page']['group_image']['width'] = '960';
 
           $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
           $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
@@ -179,6 +276,12 @@ function mcneese_www_render_page() {
         $cf['data']['page']['group_image']['alt'] = $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['alt'];
         $cf['show']['page']['group_image'] = TRUE;
       }
+    }
+
+
+    // web documents
+    if ($cf['is_data']['node']['object']->type == 'document') {
+      $cf['show']['page']['title'] = FALSE;
     }
   }
 }

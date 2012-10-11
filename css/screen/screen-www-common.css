@@ -341,40 +341,40 @@
   background-image: url(../../images/background-marble-deep_blue.png);
 }
 
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb,
-.mcneese.at-wwwdev #mcneese-breadcrumb,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb {
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative {
   background-image: url(../../images/background-marble-dark_blue.png);
 }
 
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:focus,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:focus,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > a:focus,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > a:focus {
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus {
   background-image: url(../../images/background-marble-yellow.png);
 }
 
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus,
-.mcneese.at-wwwdev #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus,
-.mcneese.at-wwwdev2 #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus {
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus,
+.mcneese.at-wwwdev #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus {
   background-image: url(../../images/home-black.png);
 }
 
@@ -391,8 +391,6 @@
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-help.fixed.collapsed,
 .mcneese.at-wwwdev #mcneese-help.fixed.collapsed,
 .mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed {
-  background-image: url(../../images/help-alt.png);
-
   background-color: #000000;
 }
 
@@ -409,8 +407,29 @@
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-tabs.fixed.collapsed,
 .mcneese.at-wwwdev #mcneese-tabs.fixed.collapsed,
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed {
-  background-image: url(../../images/menu_tabs-alt.png);
+  background-color: #000000;
+}
 
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-breadcrumb.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.fixed.collapsed {
+  background-color: #000000;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-side.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-side.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-page-side.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed {
+  background-image: url(../../images/side-alt.png);
+
+  background-color: #000000;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-document-outline.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-document-outline.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-page-document-outline.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-page-document-outline.fixed.collapsed {
   background-color: #000000;
 }
 
@@ -442,7 +461,6 @@
 .mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:hover,
 .mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:active,
 .mcneese.at-wwwdev2 #mcneese-help.fixed.collapsed:focus {
-  background-image: url(../../images/help.png);
   background-color: #fff0fb;
 }
 
@@ -474,8 +492,38 @@
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:hover,
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:active,
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:focus {
-  background-image: url(../../images/menu_tabs.png);
   background-color: transparent;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-breadcrumb.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-breadcrumb.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-breadcrumb.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-breadcrumb.fixed.collapsed:focus {
+  background-color: transparent;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-side.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-side.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-side.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-side.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-side.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-side.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-page-side.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-page-side.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-page-side.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed:focus {
+  background-color: #ffffff;
+  background-image: none;
 }
 
 .mcneese.at-wwwdev_mcneese_edu #mcneese-page-watermarks-pre,
@@ -495,6 +543,21 @@
 .mcneese.at-wwwdev #mcneese-header > .header-section > .site-logo,
 .mcneese.at-wwwdev2 #mcneese-header > .header-section > .site-logo {
   background-image: url(../../images/development.png);
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-page-document-outline.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-page-document-outline.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-page-document-outline.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-page-document-outline.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-page-document-outline.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-page-document-outline.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-page-document-outline.fixed.collapsed:focus {
+  background-color: #e4f2ff;
 }
 
 
@@ -563,26 +626,26 @@
   background-image: url(../../images/background-marble-deep_blue.png);
 }
 
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb,
-.mcneese.at-sandbox #mcneese-breadcrumb {
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative {
   background-image: url(../../images/background-marble-dark_blue.png);
 }
 
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > a:hover,
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > a:active,
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > a:focus,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > a:focus {
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:hover,
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:active,
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > a:focus {
   background-image: url(../../images/background-marble-yellow.png);
 }
 
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:hover,
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:active,
-.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus,
-.mcneese.at-sandbox #mcneese-breadcrumb > .navigation_list > .crumb > .link-home:focus {
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
+.mcneese.at-sandbox_mcneese_edu #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus,
+.mcneese.at-sandbox #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus {
   background-image: url(../../images/home-black.png);
 }
 

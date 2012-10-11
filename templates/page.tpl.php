@@ -10,6 +10,9 @@
 
   $float_tabs = in_array('fixed', $cf['page']['tags']['mcneese_page_tabs_open']['attributes']['class']);
   $float_action_links = in_array('fixed', $cf['page']['tags']['mcneese_page_action_links_open']['attributes']['class']);
+  $float_side = in_array('fixed', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+  $float_breadcrumb = in_array('fixed', $cf['page']['tags']['mcneese_page_breadcrumb_open']['attributes']['class']);
+  $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);
 ?>
 <?php if ($cf['is']['unsupported']) { ?>
   <div id="mcneese-unsupported-message">
@@ -58,8 +61,11 @@
 <?php if ($cf['show']['page']['help']) { ?>
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_help_open']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_help_header_open']) . "\n"); ?>
-      <h2>Help</h2>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <h2 class="html_tag-heading">Help</h2>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_help_header_close']) . "\n"); ?>
+
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_help_wrapper_open']) . "\n"); ?>
       <!--(begin-page-help)-->
       <?php print($cf['data']['page']['help'] . "\n"); ?>
@@ -71,8 +77,11 @@
 <?php if ($cf['show']['page']['information']) { ?>
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_open']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_header_open']) . "\n"); ?>
-      <h2>Information</h2>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <h2 class="html_tag-heading">Information</h2>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_header_close']) . "\n"); ?>
+
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_information_wrapper_open']) . "\n"); ?>
       <!--(begin-page_information)-->
       <?php print($cf['data']['page']['information'] . "\n"); ?>
@@ -89,9 +98,10 @@
   <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_editing_close']) . "\n"); ?>
 <?php } ?>
 
-<?php if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) { ?>
+<?php if ($split_page) { ?>
   <div id="mcneese-page-content" class="split" role="main">
-    <div id="mcneese-page-side" class="column-1">
+    <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_side_open']) . "\n"); ?>
+      <!--(begin-page_side)-->
       <?php if ($cf['show']['page']['menus']) { ?>
         <?php print($cf['data']['page']['menus']); ?>
       <?php } ?>
@@ -99,7 +109,8 @@
       <?php if ($cf['show']['page']['asides']) { ?>
         <?php print($cf['data']['page']['asides']); ?>
       <?php } ?>
-    </div>
+      <!--(end-page_side)-->
+    <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_side_close']) . "\n"); ?>
 
     <div class="column-2">
 <?php } else { ?>
@@ -114,37 +125,97 @@
 
   <?php if ($cf['show']['page']['title']) { ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_open']) . "\n"); ?>
-      <!--(begin-page-title)-->
-      <?php if ($cf['show']['page']['title_prefix']) print($cf['data']['page']['title_prefix'] . "\n"); ?>
-      <h1 class="page-title"><?php print($cf['data']['page']['title']); ?></h1>
-      <?php if ($cf['show']['page']['title_suffix']) print($cf['data']['page']['title_suffix'] . "\n"); ?>
-      <!--(end-page-title)-->
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <!--(begin-page-title)-->
+        <?php if ($cf['show']['page']['title_prefix']) print($cf['data']['page']['title_prefix'] . "\n"); ?>
+          <h1 class="page-title html_tag-heading"><?php print($cf['data']['page']['title']); ?></h1>
+        <?php if ($cf['show']['page']['title_suffix']) print($cf['data']['page']['title_suffix'] . "\n"); ?>
+        <!--(end-page-title)-->
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_close']) . "\n"); ?>
   <?php } ?>
 
-  <?php if ($cf['show']['page']['tabs'] || $cf['show']['page']['action_links']) { ?>
-    <div id="mcneese-float-left" role="navigation">
-      <?php if ($cf['show']['page']['tabs'] && $float_tabs) { ?>
-        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_open']) . "\n"); ?>
-        <!--(begin-page-tabs)-->
-        <ul class="navigation_list">
-          <?php print($cf['data']['page']['tabs'] . "\n"); ?>
-        </ul>
-        <!--(end-page-tabs)-->
-        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_close']) . "\n"); ?>
-      <?php } ?>
+  <div id="mcneese-float-left" role="navigation">
+    <?php if ($cf['show']['page']['tabs'] && $float_tabs) { ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_open']) . "\n"); ?>
+      <!--(begin-page-tabs)-->
+      <ul class="navigation_list">
+        <?php print($cf['data']['page']['tabs'] . "\n"); ?>
+      </ul>
+      <!--(end-page-tabs)-->
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_close']) . "\n"); ?>
+    <?php } ?>
 
-      <?php if ($cf['show']['page']['action_links'] && $float_action_links) { ?>
-        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
+    <?php if ($cf['show']['page']['action_links'] && $float_action_links) { ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
         <!--(begin-page-action_links)-->
         <ul class="navigation_list">
           <?php print($cf['data']['page']['action_links'] . "\n"); ?>
         </ul>
         <!--(end-page-action_links)-->
-        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_close']) . "\n"); ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_close']) . "\n"); ?>
+    <?php } ?>
+
+    <?php if ($cf['show']['page']['breadcrumb'] && $float_breadcrumb) { ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_open']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_header_open']) . "\n"); ?>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+            <h2 class="html_tag-heading">Breadcrumb</h2>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_header_close']) . "\n"); ?>
+
+        <ul class="navigation_list">
+          <?php if ($cf['show']['page']['precrumb']) { ?>
+            <!--(begin-page-precrumb)-->
+            <?php print($cf['data']['page']['precrumb'] . "\n"); ?>
+            <!--(end-page-precrumb)-->
+          <?php } ?>
+
+          <?php if ($cf['show']['page']['breadcrumb']) { ?>
+            <!--(begin-page-breadcrumb)-->
+            <?php print($cf['data']['page']['breadcrumb'] . "\n"); ?>
+            <!--(end-page-breadcrumb)-->
+          <?php } ?>
+
+          <?php if ($cf['show']['page']['postcrumb']) { ?>
+            <!--(begin-page-postcrumb)-->
+            <?php print($cf['data']['page']['postcrumb'] . "\n"); ?>
+            <!--(end-page-postcrumb)-->
+          <?php } ?>
+        </ul>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_close']) . "\n"); ?>
+    <?php } ?>
+
+    <?php if ($float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides'])) { ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_side_open']) . "\n"); ?>
+      <!--(begin-page-side)-->
+      <?php if ($cf['show']['page']['menus']) { ?>
+        <?php print($cf['data']['page']['menus']); ?>
       <?php } ?>
-    </div>
-  <?php } ?>
+
+      <?php if ($cf['show']['page']['asides']) { ?>
+        <?php print($cf['data']['page']['asides']); ?>
+      <?php } ?>
+      <!--(end-page-side)-->
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_side_close']) . "\n"); ?>
+    <?php } ?>
+
+    <?php if ($cf['show']['page']['document_outline']) { ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_outline_open']) . "\n"); ?>
+        <!--(begin-page-document-outline)-->
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n"); ?>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+            <h2 class="html_tag-heading">Outline</h2>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n"); ?>
+
+        <ul class="navigation_list">
+          <?php print($cf['data']['page']['document_outline']['markup']); ?>
+        </ul>
+        <!--(end-page-document-outline)-->
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_outline_close']) . "\n"); ?>
+    <?php } ?>
+  </div>
 
   <?php if ($cf['show']['page']['tabs'] && !$float_tabs) { ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_open']) . "\n"); ?>
@@ -156,25 +227,31 @@
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_tabs_close']) . "\n"); ?>
   <?php } ?>
 
-  <?php if (!$cf['is']['front'] && ($cf['show']['page']['breadcrumb'] || $cf['show']['page']['precrumb'] || $cf['show']['page']['postcrumb'])) { ?>
+  <?php if (!$cf['is']['front'] && ($cf['show']['page']['breadcrumb'] || $cf['show']['page']['precrumb'] || $cf['show']['page']['postcrumb']) && !$float_breadcrumb) { ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_open']) . "\n"); ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_header_open']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+          <h2 class="html_tag-heading">Breadcrumb</h2>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+      <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_header_close']) . "\n"); ?>
+
       <ul class="navigation_list">
         <?php if ($cf['show']['page']['precrumb']) { ?>
-          <!--(begin-page_precrumb)-->
+          <!--(begin-page-precrumb)-->
           <?php print($cf['data']['page']['precrumb'] . "\n"); ?>
-          <!--(end-page_precrumb)-->
+          <!--(end-page-precrumb)-->
         <?php } ?>
 
         <?php if ($cf['show']['page']['breadcrumb']) { ?>
-          <!--(begin-page_breadcrumb)-->
+          <!--(begin-page-breadcrumb)-->
           <?php print($cf['data']['page']['breadcrumb'] . "\n"); ?>
-          <!--(end-page_breadcrumb)-->
+          <!--(end-page-breadcrumb)-->
         <?php } ?>
 
         <?php if ($cf['show']['page']['postcrumb']) { ?>
-          <!--(begin-page_postcrumb)-->
+          <!--(begin-page-postcrumb)-->
           <?php print($cf['data']['page']['postcrumb'] . "\n"); ?>
-          <!--(end-page_postcrumb)-->
+          <!--(end-page-postcrumb)-->
         <?php } ?>
       </ul>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_breadcrumb_close']) . "\n"); ?>
@@ -182,9 +259,9 @@
 
   <?php if ($cf['show']['page']['action_links'] && !$float_action_links) { ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
-    <!--(begin-page-action_links)-->
-    <?php print($cf['data']['page']['action_links'] . "\n"); ?>
-    <!--(end-page-action_links)-->
+      <!--(begin-page-action_links)-->
+      <?php print($cf['data']['page']['action_links'] . "\n"); ?>
+      <!--(end-page-action_links)-->
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_close']) . "\n"); ?>
   <?php } ?>
 
@@ -197,7 +274,25 @@
   <div id="mcneese-page-main" role="main">
     <!--(begin-page-main)-->
     <?php if ($cf['show']['page']['content']) { ?>
+      <?php if ($cf['show']['page']['document_header']) { ?>
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_header_open']) . "\n"); ?>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+            <!--(begin-page-document-header)-->
+              <?php print($cf['data']['page']['document_header']['markup']); ?>
+            <!--(end-page-document-header)-->
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_header_close']) . "\n"); ?>
+      <?php } ?>
+
       <?php print($cf['data']['page']['content']); ?>
+
+      <?php if ($cf['show']['page']['document_footer']) { ?>
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_footer_open']) . "\n"); ?>
+          <!--(begin-page-document-footer)-->
+            <?php print($cf['data']['page']['document_footer']['markup']); ?>
+          <!--(end-page-document-footer)-->
+        <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_www_document_footer_close']) . "\n"); ?>
+      <?php } ?>
     <?php } ?>
     <!--(end-page-main)-->
   </div>
@@ -208,13 +303,12 @@
     </div>
   <?php } ?>
 
-<?php if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) { ?>
+<?php if ($split_page) { ?>
     </div>
   </div>
 <?php } else { ?>
   </div>
 <?php } ?>
-
 
 <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_open']) . "\n"); ?>
   <!--(begin-page-footer)-->

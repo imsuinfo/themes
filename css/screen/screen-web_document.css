@@ -1,0 +1,109 @@
+.mcneese.node-type-document #mcneese-top,
+.mcneese.node-type-document #mcneese-page,
+.mcneese.node-type-document #mcneese-bottom,
+.mcneese.node-type-document #mcneese-www-footer,
+.mcneese.node-type-document > .dev-query {
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+
+  margin: 0 64px;
+}
+
+.mcneese.node-type-document #mcneese-skip_nav:active,
+.mcneese.node-type-document #mcneese-skip_nav:focus,
+.mcneese.node-type-document #mcneese-skip_nav:hover {
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+
+  margin: 0 64px;
+}
+
+.mcneese.node-type-document #mcneese-bottom,
+.mcneese.node-type-document > .dev-query {
+  margin: 0 64px 15px 64px;
+}
+
+.mcneese.node-type-document #mcneese-page {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+/*** Page Document Outline Region ***/
+#mcneese-page-document-outline > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
+}
+
+#mcneese-page-document-outline > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+  line-height: 32px;
+  min-height: 32px;
+
+  margin: 0px 0px 0px 32px;
+}
+
+
+
+/*** Page Document Outline Region - Fixed ***/
+#mcneese-page-document-outline.fixed {
+  background-image: url(../../images/outline.png);
+  background-repeat: no-repeat;
+}
+
+#mcneese-page-document-outline.fixed.collapsed {
+  background-color: #dadada;
+}
+
+#mcneese-page-document-outline.fixed.expanded,
+#mcneese-page-document-outline.fixed.collapsed:hover,
+#mcneese-page-document-outline.fixed.collapsed:active,
+#mcneese-page-document-outline.fixed.collapsed:focus {
+  background-color: #e4f2ff;
+
+  padding: 5px 10px;
+  border: 1px ridge #504b2f;
+
+  height: auto;
+  min-height: 100px;
+  max-height: 50%;
+
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+
+  overflow: auto;
+}
+
+
+/*** Document Outline - Relative ***/
+#mcneese-page-document-outline.relative {
+  position: relative;
+}
+
+#mcneese-page-document-outline.relative > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
