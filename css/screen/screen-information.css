@@ -1,6 +1,5 @@
 /*** Information Region ***/
-#mcneese-information > h2,
-#mcneese-information >.html_tag-header > h2 {
+#mcneese-information > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
   line-height: 22px;
 
@@ -9,24 +8,24 @@
   text-transform: none;
 }
 
-#mcneese-messages > .information-wrapper {
+#mcneese-information > .information-wrapper {
   margin: 2px;
   resize: none;
 }
 
-#mcneese-messages > .information-wrapper > .messages {
+#mcneese-information > .information-wrapper > .messages {
   max-height: 120px;
   overflow-y: auto;
   resize: none;
 }
 
-#mcneese-information > h2,
-#mcneese-information >.html_tag-header > h2 {
+#mcneese-information > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   line-height: 32px;
   min-height: 32px;
 
-  margin: 0 32px 0 0;
-} 
+  margin: 0px 32px 0px 0px;
+}
+
 
 
 /*** Information Region - Fixed ***/
@@ -52,4 +51,25 @@
 /*** Information Region - Relative ***/
 #mcneese-information.relative {
   position: relative;
+}
+
+#mcneese-information.relative > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+
+  margin: 0;
+  padding: 0;
+  border: none;
 }

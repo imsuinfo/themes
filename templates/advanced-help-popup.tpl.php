@@ -25,9 +25,11 @@
   <!--(begin-body)-->
   <?php if (!empty($title)) { ?>
     <?php print(theme('mcneese_tag', $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_open']) . "\n"); ?>
-      <!--(begin-advanced_help_popup-header)-->
-      <h1 class="page-title"><?php print($title); ?></h1>
-      <!--(end-advanced_help_popup-header)-->
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <!--(begin-advanced_help_popup-header)-->
+        <h1 class="page-title"><?php print($title); ?></h1>
+        <!--(end-advanced_help_popup-header)-->
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_close']) . "\n"); ?>
   <?php } ?>
 

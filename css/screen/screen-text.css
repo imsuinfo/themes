@@ -9,7 +9,7 @@
   line-height: 18px;
 }
 
-.mcneese .html_tag-header > h1 {
+.mcneese .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
   display: inline-block;
   vertical-align: top;
 
@@ -69,38 +69,55 @@
   right: 10px;
 }
 
+.mcneese.is-toolbar-relative #mcneese-page-watermarks-pre,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-page-watermarks-pre,
+.mcneese.is-toolbar-relative #mcneese-page-watermarks-post,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-page-watermarks-post {
+  top: 90px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-page-watermarks-pre,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-page-watermarks-post {
+  top: 125px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-page-watermarks-pre,
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-page-watermarks-post {
+  top: 150px;
+}
+
 
 
 /*** Shortcuts ***/
-.mcneese .html_tag-header > .add-or-remove-shortcuts {
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts {
   display: inline-block;
   vertical-align: top;
 
   padding: 0;
 }
 
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a {
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a {
   display: inline-block;
   vertical-align: top;
 
   line-height: 30px;
 }
 
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .text,
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .text,
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon {
   float: none;
   vertical-align: middle;
 }
 
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a > .icon {
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon {
   display: inline-block;
 
   margin-left: 0;
 }
 
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a:active > .text,
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a:focus > .text,
-.mcneese .html_tag-header > .add-or-remove-shortcuts > a:hover > .text {
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:active > .text,
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:focus > .text,
+.mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:hover > .text {
   display: inline-block;
 }
 
@@ -116,11 +133,11 @@
 
 /*** Sections of depth 0 ***/
 .mcneese h2,
-.mcneese .html_tag-section > .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-header > h6 {
+.mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 24px;
   line-height: 28px;
 
@@ -131,11 +148,11 @@
 
 /*** Sections of depth 1 ***/
 .mcneese h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 22px;
   line-height: 26px;
 
@@ -146,11 +163,11 @@
 
 /*** Sections of depth 2 ***/
 .mcneese h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 20px;
   line-height: 24px;
 
@@ -161,11 +178,11 @@
 
 /*** Sections of depth 3 ***/
 .mcneese h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6 {
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 18px;
   line-height: 22px;
 
@@ -176,16 +193,16 @@
 
 /*** Sections of depth 4+ ***/
 .mcneese h6,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > h6,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h2,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h3,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h4,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h5,
-.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > h6 {
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h2,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h3,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h4,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h5,
+.mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 16px;
   line-height: 20px;
 

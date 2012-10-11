@@ -28,16 +28,6 @@
   padding: 0;
 }
 
-/**
- * It seems that when the date is set to "exclude from display" it still includes it in the display.
- *
-.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-single,
-.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-start,
-.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-separator,
-.mcneese div.view-display-id-calendar_page div.calendar-calendar div.view-field span.date-display-end {
-  display: none;
-} */
-
 
 
 /*** Workbench Menu ***/

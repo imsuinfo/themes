@@ -8,13 +8,17 @@
 <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_section_open']) . "\n"); ?>
   <?php if (empty($search_results)) { ?>
     <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']) . "\n"); ?>
-      <h3><?php print t("Your search yielded no results"); ?></h3>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <h3 class="html_tag-heading"><?php print t("Your search yielded no results"); ?></h3>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']) . "\n"); ?>
 
     <?php print search_help('search#noresults', drupal_help_arg()); ?>
   <?php } else { ?>
     <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']) . "\n"); ?>
-      <h3><?php print t("Search Results"); ?></h3>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+        <h3 class="html_tag-heading"><?php print t("Search Results"); ?></h3>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']) . "\n"); ?>
 
     <ol class="search_results <?php print($module); ?>-results">

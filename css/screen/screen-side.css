@@ -1,0 +1,85 @@
+/*** Page Side Region ***/
+#mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
+}
+
+#mcneese-page-side > .information-wrapper {
+  margin: 2px;
+  resize: none;
+}
+
+#mcneese-page-side > .information-wrapper > .messages {
+  max-height: 120px;
+  overflow-y: auto;
+  resize: none;
+}
+
+#mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+  line-height: 32px;
+  min-height: 32px;
+
+  margin: 0 32px 0 0;
+}
+
+
+
+/*** Page Side Region - Fixed ***/
+#mcneese-page-side.fixed.collapsed {
+  background-image: url(../../images/side.png);
+  background-color: #dadada;
+}
+
+#mcneese-page-side.fixed.expanded,
+#mcneese-page-side.fixed.collapsed:hover,
+#mcneese-page-side.fixed.collapsed:active,
+#mcneese-page-side.fixed.collapsed:focus {
+  background-color: #ffffff;
+  background-image: none;
+
+  padding: 5px 10px;
+  border: 1px ridge #504b2f;
+
+  height: auto;
+  min-height: 100px;
+  max-height: 65%;
+
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+
+  overflow: auto;
+}
+
+
+
+/*** Page Side Region - Relative ***/
+#mcneese-page-side.relative {
+  position: relative;
+}
+
+#mcneese-page-side.relative > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+

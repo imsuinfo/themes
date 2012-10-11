@@ -1,6 +1,5 @@
 /*** Messages Region ***/
-#mcneese-messages > h2,
-#mcneese-messages >.html_tag-header > h2 {
+#mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
   line-height: 22px;
 
@@ -20,8 +19,7 @@
   resize: none;
 }
 
-#mcneese-messages > h2,
-#mcneese-messages >.html_tag-header > h2 {
+#mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   line-height: 32px;
 
   min-height: 32px;
@@ -56,11 +54,31 @@
   position: relative;
 }
 
+#mcneese-messages.relative > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 
 
 /*** Help Region ***/
-#mcneese-help > h2,
-#mcneese-help >.html_tag-header > h2 {
+#mcneese-help > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
   line-height: 22px;
 
@@ -80,8 +98,7 @@
   resize: none;
 }
 
-#mcneese-help > h2,
-#mcneese-help >.html_tag-header > h2 {
+#mcneese-help > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   line-height: 32px;
 
   min-height: 32px;
@@ -122,4 +139,25 @@
   padding: 0 4px 4px 4px;
 
   overflow: auto;
+}
+
+#mcneese-help.relative > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+
+  height: 0;
+  min-height: 0;
+  max-height: 0;
+
+  margin: 0;
+  padding: 0;
+  border: none;
 }

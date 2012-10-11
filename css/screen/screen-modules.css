@@ -9,7 +9,7 @@
   color: #ffffff;
   background-color: #023761;
 
-  margin: 0;
+  margin: 0px;
   padding: 3px;
 
   border: 1px solid #065c9f;
@@ -26,16 +26,16 @@
   padding: 0 5px;
 }
 
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade >.html_tag-header > h2 {
+#mcneese-header > .header-section > .block-name-block-masquerade-masquerade > .html_tag-header > .html_tag-hgroup > h2 {
   font-size: 11px;
   line-height: 15px;
 
-  margin: 0;
+  margin: 0px;
   padding: 2px;
 }
 
 .mcneese .masquerade_block_1 {
-  margin: 0;
+  margin: 0px;
 }
 
 .mcneese .masquerade_block_1 > div {
@@ -44,13 +44,13 @@
 }
 
 .mcneese .masquerade_block_1 > div > .form-item {
-  margin: 0;
+  margin: 0px;
 }
 
 .mcneese .masquerade_block_1 > div > .form-item  > .description {
   background-color: inherit;
 
-  margin: 0;
+  margin: 0px;
   padding: 1px;
   border: none;
 }
@@ -181,7 +181,7 @@
   min-width: 20%;
   max-width: 20%;
 
-  margin: 0;
+  margin: 0px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -220,8 +220,8 @@
 
 /*** Horizontal Tabs ***/
 .mcneese .horizontal-tabs fieldset.horizontal-tabs-pane {
-  border: 0;
-  margin: 0;
+  border: 0px;
+  margin: 0px;
   padding: 0 6px;
 }
 
@@ -234,19 +234,19 @@
   visibility: hidden;
   overflow: hidden;
 
-  font-size: 0;
-  line-height: 0;
+  font-size: 0px;
+  line-height: 0px;
 
-  width: 0;
-  min-width: 0;
-  max-width: 0;
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
 
-  height: 0;
-  min-height: 0;
-  max-height: 0;
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: none;
 }
 
@@ -353,14 +353,14 @@
   height: auto;
   line-height: 1.7em;
   margin: 1px 0;
-  padding: 0;
+  padding: 0px;
 
   text-align: center;
 }
 
 #mcneese-page .calendar-calendar .day-view .full td .inner div.calendar div,
 #mcneese-page .calendar-calendar .day-view .full td .inner div.calendar div a {
-  margin: 0;
+  margin: 0px;
 }
 
 #mcneese-page .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
@@ -368,14 +368,14 @@
 }
 
 #mcneese-page .calendar-calendar td .calendar div.calendar {
-  padding: 0;
+  padding: 0px;
 }
 
 #mcneese-page .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 #mcneese-page .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 #mcneese-page .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
 #mcneese-page .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
-  padding: 0;
+  padding: 0px;
 }
 
 #mcneese-page .calendar-calendar td {
@@ -384,7 +384,7 @@
 
 #mcneese-page .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
 #mcneese-page .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
-  padding: 0;
+  padding: 0px;
 }
 
 #mcneese-page .calendar > .contents > a,
@@ -487,6 +487,10 @@
 
 
 /*** Rules UI ***/
+.mcneese #rules-form-wrapper:first-child {
+  margin-top: 0px;
+}
+
 .mcneese #rules-form-wrapper .rules-elements-table .tabledrag-toggle-weight-wrapper {
   position: relative;
   display: inline-block;
@@ -495,7 +499,7 @@
 }
 
 .mcneese #rules-form-wrapper .rules-elements-table ul.rules-operations a {
-  padding: 0 2px;
+  padding: 0px 2px;
 }
 
 .mcneese #rules-form-wrapper .rules-elements-table ul.rules-operations-add a {
@@ -505,4 +509,22 @@
 .mcneese #rules-form-wrapper ul.rules-operations-add li {
   display: inline-block;
   float: none;
+}
+
+
+
+/*** Dev Query Region ***/
+.mcneese > .dev-query {
+  position: relative;
+
+  color: #000000;
+  background-color: #edeab3;
+
+  margin: 10px 20px;
+  padding: 10px;
+
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
 }

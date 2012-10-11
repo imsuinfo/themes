@@ -305,13 +305,13 @@ function mcneese_preprocess_toolbar(&$vars) {
 
   if ($cf['is']['html5']) {
     $vars['header'] = '<header class="element-invisible">';
-    $vars['header'] .= '<h2>';
+    $vars['header'] .= '<h2 class="html_tag-heading">';
     $vars['header'] .= t("Toolbar");
     $vars['header'] .= '</h2>';
     $vars['header'] .= '</header>';
   }
   else {
-    $vars['header'] = '<h2 class="element-invisible">';
+    $vars['header'] = '<h2 class="element-invisible html_tag-heading">';
     $vars['header'] .= t("Toolbar");
     $vars['header'] .= '</h2>';
   }
@@ -385,8 +385,8 @@ function mcneese_preprocess_page(&$vars) {
   // load all help so that they can be stored in the 'help' region.
   $help_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['region']['help']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['navigation']['region']['help']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['help']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['help']['sticky']) {
       $help_sticky = 'relative';
     }
     else {
@@ -498,10 +498,6 @@ function mcneese_preprocess_page(&$vars) {
   $attributes = array();
   $attributes['class'] = array();
 
-  if ($information_sticky == 'relative') {
-    $attributes['class'][] = 'element-invisible';
-  }
-
   $cf['page']['tags']['mcneese_page_information_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_information_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
@@ -576,8 +572,8 @@ function mcneese_preprocess_page(&$vars) {
 
   $tabs_sticky = 'relative';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['region']['menu_tabs']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['menu_tabs']['sticky']) {
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['menu_tabs']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['menu_tabs']['sticky']) {
       $tabs_sticky = 'relative';
     }
     else {
@@ -657,6 +653,43 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['tags']['mcneese_page_action_links_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
+  // load page side
+  $side_sticky = 'relative';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['region']['side']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['region']['side']['sticky']) {
+      $side_sticky = 'relative';
+    }
+    else {
+      $side_sticky = 'fixed';
+    }
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-page-side';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
+  $attributes['class'][] = 'column-1';
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $side_sticky;
+
+    if ($side_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
+
+  $cf['page']['tags']['mcneese_page_side_open'] = array('name' => 'div', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_side_close'] = array('name' => 'div', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
   // load title
   $cf['page']['title'] = drupal_get_title();
 
@@ -705,13 +738,46 @@ function mcneese_preprocess_page(&$vars) {
     }
   }
 
+  $breadcrumb_sticky = 'relative';
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['breadcrumb']['sticky'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['navigation']['breadcrumb']['sticky']) {
+      $breadcrumb_sticky = 'relative';
+    }
+    else {
+      $breadcrumb_sticky = 'fixed';
+    }
+  }
+
   $attributes = array();
   $attributes['id'] = 'mcneese-breadcrumb';
   $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
   $attributes['role'] = 'navigation';
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $breadcrumb_sticky;
+
+    if ($breadcrumb_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
 
   $cf['page']['tags']['mcneese_page_breadcrumb_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['page']['tags']['mcneese_page_breadcrumb_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+
+  $cf['page']['tags']['mcneese_page_breadcrumb_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_breadcrumb_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // Load side content
@@ -1225,10 +1291,19 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
   $attributes = array();
   $attributes['id'] = 'mcneese-advanced_help_popup-breadcrumb';
   $attributes['class'] = array();
+  $attributes['class'][] = 'relative';
+  $attributes['class'][] = 'expanded';
+  $attributes['class'][] = 'noscript';
   $attributes['role'] = 'navigation';
 
   $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // load any messages that might have appeared during the template preprocess operation
@@ -1249,7 +1324,6 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
 /**
  * Implements hook_preprocess_workbench_menu_list().
  */
-
 function mcneese_preprocess_workbench_menu_list(&$vars) {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
@@ -1266,7 +1340,9 @@ function mcneese_preprocess_workbench_menu_list(&$vars) {
     $attributes['class'] = array();
   }
 
-  $attributes['role'] = 'navigation';
+  if ($vars['data']['depth'] == 0) {
+    $attributes['role'] = 'navigation';
+  }
 
   $cf['workbench_menu_list']['tags']['menu_list_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['workbench_menu_list']['tags']['menu_list_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
@@ -1597,6 +1673,28 @@ function mcneese_initialize_variables(&$vars) {
   // initialize rdf namespaces
   $cf['show']['html']['rdf_namespaces'] = FALSE;
   $cf['data']['html']['rdf_namespaces'] = drupal_get_rdf_namespaces();
+
+
+  $cf['generic'] = array();
+  $cf['generic']['tags'] = array();
+
+
+  // provide a generic header
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['role'] = '';
+
+  $cf['generic']['tags']['mcneese_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['generic']['tags']['mcneese_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // provide a generic hgroup
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['role'] = '';
+
+  $cf['generic']['tags']['mcneese_hgroup_open'] = array('name' => 'hgroup', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['generic']['tags']['mcneese_hgroup_close'] = array('name' => 'hgroup', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 }
 
 /**
@@ -1810,17 +1908,11 @@ function mcneese_status_messages($vars) {
 
   $header_class = 'html_tag-header';
 
-  if (isset($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky']) {
-      $header_class = ' element-invisible';
-    }
-  }
-
   if ($cf['is']['html5']) {
-    $output .= '<header class="' . $header_class . '"><h2>' . t("Messages") . '</h2>' . '</header>';
+    $output .= '<header class="' . $header_class . '"><h2 class="html_tag-heading">' . t("Messages") . '</h2>' . '</header>';
   }
   else {
-    $output .= '<div class=' . $header_class . '"><h2>' . t("Messages") . '</h2>' . '</div>';
+    $output .= '<div class=' . $header_class . '"><h2 class="html_tag-heading">' . t("Messages") . '</h2>' . '</div>';
   }
 
   $output .= '<div class="float_info-wrapper messages-wrapper">';
@@ -1829,7 +1921,7 @@ function mcneese_status_messages($vars) {
     $output .= '<div class="messages ' . $type . '" role="alert">';
 
     if (!empty($status_heading[$type])) {
-      $output .= '<h3 class="element-invisible">' . $status_heading[$type] . '</h3>';
+      $output .= '<h3 class="element-invisible html_tag-heading">' . $status_heading[$type] . '</h3>';
     }
 
     if (count($messages) > 1) {
