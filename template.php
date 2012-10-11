@@ -153,8 +153,10 @@ function mcneese_www_preprocess_page(&$vars) {
           $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
         }
 
-        if (!in_array('float_info-wrapper', $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
-          $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'][] = 'float_info-wrapper';
+        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
+          if (!in_array('float_info-wrapper', $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
+            $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'][] = 'float_info-wrapper';
+          }
         }
 
         $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
