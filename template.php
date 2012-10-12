@@ -1333,6 +1333,8 @@ function mcneese_preprocess_workbench_menu_list(&$vars) {
 
   $cf['workbench_menu_list'] = array();
   $cf['workbench_menu_list']['tags'] = array();
+  $cf['workbench_menu_list']['settings'] = array();
+  $cf['workbench_menu_list']['settings']['print_header'] = FALSE;
 
   $attributes = $vars['list']['attributes'];
 
@@ -1340,9 +1342,7 @@ function mcneese_preprocess_workbench_menu_list(&$vars) {
     $attributes['class'] = array();
   }
 
-  if ($vars['data']['depth'] == 0) {
-    $attributes['role'] = 'navigation';
-  }
+  $attributes['role'] = 'navigation';
 
   $cf['workbench_menu_list']['tags']['menu_list_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['workbench_menu_list']['tags']['menu_list_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);

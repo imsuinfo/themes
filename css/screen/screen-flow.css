@@ -750,8 +750,13 @@
 #mcneese-float-left > .fixed.collapsed:focus {
   background-color: transparent;
 
+  height: auto;
   min-height: auto;
   max-height: auto;
+
+  width: auto;
+  min-width: auto;
+  max-width: auto;
 
   overflow: visible;
   z-index: 200;
