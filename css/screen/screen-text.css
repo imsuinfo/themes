@@ -32,6 +32,10 @@
   background-color: #ffeeee;
 }
 
+.mcneese table > caption {
+  font-weight: bold;
+}
+
 
 
 /*** Watermarks ***/
