@@ -410,6 +410,13 @@
   background-color: #000000;
 }
 
+.mcneese.at-wwwdev_mcneese_edu #mcneese-action_links.fixed.collapsed,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-action_links.fixed.collapsed,
+.mcneese.at-wwwdev #mcneese-action_links.fixed.collapsed,
+.mcneese.at-wwwdev2 #mcneese-action_links.fixed.collapsed {
+  background-color: #000000;
+}
+
 .mcneese.at-wwwdev_mcneese_edu #mcneese-breadcrumb.fixed.collapsed,
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-breadcrumb.fixed.collapsed,
 .mcneese.at-wwwdev #mcneese-breadcrumb.fixed.collapsed,
@@ -492,6 +499,21 @@
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:hover,
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:active,
 .mcneese.at-wwwdev2 #mcneese-tabs.fixed.collapsed:focus {
+  background-color: transparent;
+}
+
+.mcneese.at-wwwdev_mcneese_edu #mcneese-action_links.fixed.collapsed:hover,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-action_links.fixed.collapsed:active,
+.mcneese.at-wwwdev_mcneese_edu #mcneese-action_links.fixed.collapsed:focus,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-action_links.fixed.collapsed:hover,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-action_links.fixed.collapsed:active,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-action_links.fixed.collapsed:focus,
+.mcneese.at-wwwdev #mcneese-action_links.fixed.collapsed:hover,
+.mcneese.at-wwwdev #mcneese-action_links.fixed.collapsed:active,
+.mcneese.at-wwwdev #mcneese-action_links.fixed.collapsed:focus,
+.mcneese.at-wwwdev2 #mcneese-action_links.fixed.collapsed:hover,
+.mcneese.at-wwwdev2 #mcneese-action_links.fixed.collapsed:active,
+.mcneese.at-wwwdev2 #mcneese-action_links.fixed.collapsed:focus {
   background-color: transparent;
 }
 

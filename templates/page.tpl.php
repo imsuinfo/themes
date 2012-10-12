@@ -148,6 +148,12 @@
 
     <?php if ($cf['show']['page']['action_links'] && $float_action_links) { ?>
       <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n"); ?>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+            <h2 class="html_tag-heading">Action Links</h2>
+          <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n"); ?>
+
         <!--(begin-page-action_links)-->
         <ul class="navigation_list">
           <?php print($cf['data']['page']['action_links'] . "\n"); ?>
@@ -259,6 +265,12 @@
 
   <?php if ($cf['show']['page']['action_links'] && !$float_action_links) { ?>
     <?php print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_action_links_open']) . "\n"); ?>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n"); ?>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
+          <h2 class="html_tag-heading">Action Links</h2>
+        <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
+      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n"); ?>
+
       <!--(begin-page-action_links)-->
       <?php print($cf['data']['page']['action_links'] . "\n"); ?>
       <!--(end-page-action_links)-->
