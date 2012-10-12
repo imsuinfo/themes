@@ -24,7 +24,7 @@
 
   min-height: 32px;
 
-  margin: 0 32px 0 0;
+  margin: 0px 32px 0px 0px;
 }
 
 
@@ -59,19 +59,19 @@
   visibility: hidden;
   overflow: hidden;
 
-  font-size: 0;
-  line-height: 0;
+  font-size: 0px;
+  line-height: 0px;
 
-  width: 0;
-  min-width: 0;
-  max-width: 0;
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
 
-  height: 0;
-  min-height: 0;
-  max-height: 0;
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: none;
 }
 
@@ -103,7 +103,7 @@
 
   min-height: 32px;
 
-  margin: 0 32px 0 0;
+  margin: 0px 32px 0px 0px;
 }
 
 
@@ -136,7 +136,7 @@
 
   border: 1px ridge #cc5384;
   margin: 6px 2px;
-  padding: 0 4px 4px 4px;
+  padding: 0px 4px 4px 4px;
 
   overflow: auto;
 }
@@ -146,18 +146,18 @@
   visibility: hidden;
   overflow: hidden;
 
-  font-size: 0;
-  line-height: 0;
+  font-size: 0px;
+  line-height: 0px;
 
-  width: 0;
-  min-width: 0;
-  max-width: 0;
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
 
-  height: 0;
-  min-height: 0;
-  max-height: 0;
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: none;
 }

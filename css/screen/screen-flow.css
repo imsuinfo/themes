@@ -18,7 +18,7 @@
   color: #000000;
   background-color: #ffffff;
 
-  margin: 0 64px;
+  margin: 0px 64px;
 }
 
 #mcneese-page {
@@ -28,21 +28,21 @@
   min-height: 600px;
   min-width: 450px;
 
-  margin: 0 64px;
-  padding: 0 5px 5px 5px;
+  margin: 0px 64px;
+  padding: 0px 5px 5px 5px;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 #mcneese-bottom {
-  margin: 0 64px 15px 64px;
-  padding: 0 5px;
+  margin: 0px 64px 15px 64px;
+  padding: 0px 5px;
 }
 
 .mcneese > .dev-query {
-  margin: 0 64px 10px 64px;
-  padding: 0 5px;
+  margin: 0px 64px 10px 64px;
+  padding: 0px 5px;
 }
 
 
@@ -113,7 +113,7 @@
 
 #mcneese-header > .header-top > .header-menu-1 {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
 
   font-size: 12px;
 
@@ -187,7 +187,7 @@
 
 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
   position: absolute;
-  right: 0;
+  right: 0px;
   bottom: -1px;
 
   max-height: 38px;
@@ -269,7 +269,7 @@
   padding: 3px;
 
   border: 1px solid #065c9f;
-  border-top: 0;
+  border-top: 0px;
 
   overflow: hidden;
   z-index: 1;
@@ -283,7 +283,7 @@
   min-height: 20px;
   max-height: 20px;
 
-  padding: 3px 0;
+  padding: 3px 0px;
   border: 1px solid #0f5eff;
 
   overflow: hidden;
@@ -324,9 +324,9 @@
   line-height: 14px;
 
   padding: 0px;
-  margin: 0 3px;
+  margin: 0px 3px;
 
-  border: 0 none;
+  border: 0px none;
 }
 
 .search_block_form > .form-wrapper-inner > .search_block_form-section > .form-actions {
@@ -377,7 +377,7 @@
 
   margin: 0px;
   padding: 0px;
-  border: 0 none;
+  border: 0px none;
 
   vertical-align: top;
   cursor: pointer;
@@ -395,7 +395,7 @@
   min-width: 190px;
   max-width: 190px;
 
-  margin: 0 15px 15px 0;
+  margin: 0px 15px 15px 0px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -564,7 +564,7 @@
 #mcneese-page > .float_info.collapsed:hover,
 #mcneese-page > .float_info.collapsed:active,
 #mcneese-page > .float_info.collapsed:focus {
-  padding: 0 4px 4px 4px;
+  padding: 0px 4px 4px 4px;
 
   min-height: 140px;
   min-width: 400px;
@@ -626,9 +626,9 @@
 
 #mcneese-page #overlay-tabs > li > a {
   display: inline-block;
-  text-shadow: 0 1px 0 #333333;
+  text-shadow: 0px 1px 0px #333333;
 
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0px 0px;
 
   vertical-align: bottom;
 
@@ -638,7 +638,7 @@
   line-height: 14px;
   letter-spacing: 0.4px;
 
-  padding: 1px 8px 0 8px;
+  padding: 1px 8px 0px 8px;
 }
 
 #mcneese-page #overlay-tabs > li > a,

@@ -15,7 +15,7 @@
 
 .mcneese .form-item,
 .mcneese .form-actions {
-  margin: 8px 0;
+  margin: 8px 0px;
 }
 
 .mcneese div.error,
@@ -126,7 +126,7 @@
 
   text-align: center;
   text-decoration: none;
-  text-shadow: 0 0 2px #FEFEFE;
+  text-shadow: 0px 0px 2px #FEFEFE;
 
   margin: 1px 3px;
   padding: 3px 4px;
@@ -428,11 +428,11 @@
 }
 
 .mcneese .list-inline_block > li.first {
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 .mcneese .list-inline_block > li.last {
-  padding-right: 0;
+  padding-right: 0px;
 }
 
 
@@ -645,7 +645,7 @@
 #mcneese-page-main > table.update > tbody > tr > td ul.links > li {
   list-style-type: none;
 
-  padding: 3px 0;
+  padding: 3px 0px;
 }
 
 
@@ -656,7 +656,7 @@
 }
 
 #mcneese-page-main > .search_results-section > .search_results > .search_result {
-  margin: 10px 0 20px 0;
+  margin: 10px 0px 20px 0px;
 }
 
 #mcneese-page-main > .search_results-section > .search_results > .search_result > .search_result-section > .search_result-header > .title {
