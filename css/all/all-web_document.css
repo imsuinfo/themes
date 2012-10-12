@@ -119,11 +119,11 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main .separated {
-  margin: 15px 0;
+  margin: 15px 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main .separated-alt {
-  padding: 15px 0;
+  padding: 15px 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main p {
@@ -132,33 +132,33 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main .item-list ul > li {
-  margin: 0;
-  padding: 1px 0;
+  margin: 0px;
+  padding: 1px 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main ul,
 .mcneese.node-type-document #mcneese-page-main ol,
 .mcneese.node-type-document #mcneese-page-main dl {
-  margin: 0;
-  padding: 0 0 0 25px;
+  margin: 0px;
+  padding: 0px 0px 0px 25px;
 }
 
 .mcneese.node-type-document #mcneese-page-main ul > li,
 .mcneese.node-type-document #mcneese-page-main ol > li {
-  margin: 0;
-  padding: 1px 0;
+  margin: 0px;
+  padding: 1px 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main ul.inline
 .mcneese.node-type-document #mcneese-page-main ol.inline {
-  padding: 0;
+  padding: 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main ul.inline > li,
 .mcneese.node-type-document #mcneese-page-main ol.inline > li {
   display: inline;
 
-  padding: 0;
+  padding: 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main figure {
@@ -167,13 +167,13 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main figure.float-left {
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: 30px;
 }
 
 .mcneese.node-type-document #mcneese-page-main figure.float-right {
   margin-left: 30px;
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main pre {
@@ -361,7 +361,7 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main figure > * {
-  text-indent: 0;
+  text-indent: 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main figure > img {

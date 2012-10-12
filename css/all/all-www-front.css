@@ -3,19 +3,19 @@
   visibility: hidden;
   overflow: hidden;
 
-  font-size: 0;
-  line-height: 0;
+  font-size: 0px;
+  line-height: 0px;
 
-  width: 0;
-  min-width: 0;
-  max-width: 0;
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
 
-  height: 0;
-  min-height: 0;
-  max-height: 0;
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
 
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   border: none;
 }
 
@@ -51,7 +51,7 @@
   min-width: 960px;
   max-width: 960px;
 
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 #mcneese-page-main,
@@ -91,17 +91,17 @@
 
   background: url(../../images/nivo-arrows.png);
 
-  font-size: 0;
-  line-height: 0;
+  font-size: 0px;
+  line-height: 0px;
 
   width: 30px;
   height: 30px;
 
-  border: 0;
+  border: 0px;
 }
 
 #views-jqfx-nivoslider-images-1 > .nivo-directionNav > a.nivo-nextNav {
-  background-position: -30px 0;
+  background-position: -30px 0px;
   right: 15px;
 }
 
@@ -146,7 +146,7 @@
   max-width: 534px;
 
   margin-bottom: 15px;
-  padding: 0;
+  padding: 0px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -172,11 +172,11 @@
 #front_page_columns-news > .view > .view-content > .views-row .view-display-id-front_page_events > .view-content > .views-row > .views-field-nothing > .field-content {
   display: block;
 
-  margin: 0 15px;
+  margin: 0px 15px;
 }
 
 #front_page_columns-news > .view > .view-content > .views-row .views-field {
-  padding: 20px 15px 0 15px;
+  padding: 20px 15px 0px 15px;
 }
 
 #front_page_columns-news > .view > .view-content > .views-row > .views-field-nothing {
@@ -187,7 +187,7 @@
 
 #front_page_columns-news > .view > .view-content > .views-row .views-field-field-event-image {
   display: inline-block;
-  padding: 10px 0 0 0;
+  padding: 10px 0px 0px 0px;
 }
 
 #front_page_columns-news > .view > .view-content > .views-row .views-field-field-event-image > .front_page-events-more_link > .event-image {
@@ -207,8 +207,8 @@
 
 #front_page_columns-news > .view-display-id-front_page_highlight > .view-content > .views-row-1 > .views-field-field-hightlight-image {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
 
   color: #000000;
   background-color: #ffffff;
@@ -221,7 +221,7 @@
   min-height: 200px;
   max-height: 200px;
 
-  padding: 0 0 15px 15px;
+  padding: 0px 0px 15px 15px;
 
   overflow: hidden;
 }
@@ -285,7 +285,7 @@
   min-height: 24px;
   max-height: 24px;
 
-  margin: 0;
+  margin: 0px;
   padding: 6px 8px;
 
   box-sizing: border-box;
@@ -330,7 +330,7 @@
   min-height: 350px;
 
   margin-bottom: 15px;
-  padding: 0;
+  padding: 0px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -347,7 +347,7 @@
   max-width: 179px;
   max-height: 170px;
 
-  margin: 20px 0 0 15px;
+  margin: 20px 0px 0px 15px;
 
   border-top: 15px solid #ffffff;
   border-right: none;
@@ -406,7 +406,7 @@
   min-height: 24px;
   max-height: 24px;
 
-  margin: 0;
+  margin: 0px;
   padding: 6px 8px;
 
   box-sizing: border-box;
@@ -416,7 +416,7 @@
 
 #front_page_columns-lagniappe > .view > .view-content > .views-row > .views-field-nothing {
   line-height: 25px;
-  padding: 15px 15px 0 15px;
+  padding: 15px 15px 0px 15px;
 }
 
 #front_page_columns-lagniappe > .view > .view-content > .views-row > .views-field > .field-content > .highlight-title > a,
@@ -454,7 +454,7 @@
 #front_page_columns-column_title-spotlight {
   position: absolute;
   top: 170px;
-  right: 0;
+  right: 0px;
 
   width: 426px;
   min-width: 426px;
@@ -473,7 +473,7 @@
   min-height: 45px;
   max-height: 45px;
 
-  margin: 0;
+  margin: 0px;
   padding: 15px 15px 20px 15px;
 
   box-sizing: border-box;
@@ -508,11 +508,11 @@
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row {
   clear: both;
 
-  padding: 0 0 15px 0;
+  padding: 0px 0px 15px 0px;
 }
 
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row-last {
-  padding: 0;
+  padding: 0px;
 }
 
 #front_page_columns-spotlight > .view-display-id-front_page_spotlight > .view-content > .views-row > .views-field-field-spotlight-image {
@@ -582,7 +582,7 @@
 .mcneese.is-legacy .dev-query {
   width: 960px;
 
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .mcneese.is-legacy #mcneese-header .header-section .block-id-1 {
@@ -623,7 +623,7 @@
 .mcneese.is-legacy #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list .menu-link-name-menu-primary-navigation {
   float: right;
 
-  margin: 0 2px;
+  margin: 0px 2px;
 }
 
 .mcneese.is-legacy #mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav {
