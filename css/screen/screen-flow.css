@@ -493,6 +493,7 @@
 
 #mcneese-float-right {
   display: inline-block;
+  position: fixed;
 
   background: transparent;
   background-color: transparent;
