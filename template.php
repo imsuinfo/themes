@@ -803,6 +803,7 @@ function mcneese_preprocess_page(&$vars) {
   $cf['show']['page']['work_area_menu'] = $cf['is']['logged_in'];
   $cf['data']['page']['work_area_menu'] = array();
   $cf['data']['page']['work_area_menu']['page_width'] = 'work_area-state-on';
+  $cf['data']['page']['work_area_menu']['page_width-toggle'] = TRUE;
 
   if (isset($cf['user']['object']->data['mcneese_settings']['style']['work_area']['page_width'])) {
     if ($cf['user']['object']->data['mcneese_settings']['style']['work_area']['page_width']) {
@@ -810,6 +811,15 @@ function mcneese_preprocess_page(&$vars) {
     }
     else {
       $cf['data']['page']['work_area_menu']['page_width'] = 'work_area-state-off';
+    }
+  }
+
+  if (isset($cf['user']['object']->data['mcneese_settings']['style']['work_area']['page_width-toggle'])) {
+    if ($cf['user']['object']->data['mcneese_settings']['style']['work_area']['page_width-toggle']) {
+      $cf['data']['page']['work_area_menu']['page_width-toggle'] = TRUE;
+    }
+    else {
+      $cf['data']['page']['work_area_menu']['page_width-toggle'] = FALSE;
     }
   }
 
@@ -2217,7 +2227,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
 
       print('<ul class="navigation_list html_tag-list">' . "\n");
       print('  <!--(begin-page-work_area_menu)-->' . "\n");
-      print('  <li class="html_tag-list_item"><a id="mcneese-work_area_menu-page_width" class="' . $cf['data']['page']['work_area_menu']['page_width'] . '" title="Toggle Page Width">Toggle Page Width</a></li>' . "\n");
+
+      if ($cf['data']['page']['work_area_menu']['page_width-toggle']) {
+        print('  <li class="html_tag-list_item"><a id="mcneese-work_area_menu-page_width" class="' . $cf['data']['page']['work_area_menu']['page_width'] . '" title="Toggle Page Width">Toggle Page Width</a></li>' . "\n");
+      }
+
       print('  <!--(end-page-work_area_menu)-->' . "\n");
       print('</ul>' . "\n");
 
