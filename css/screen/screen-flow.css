@@ -607,6 +607,7 @@
   visibility: visible;
 }
 
+.mcneese #mcneese-float-left,
 .mcneese.is-toolbar-relative #mcneese-float-left,
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-left {
   top: 10px;
@@ -644,6 +645,7 @@
   resize: both;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(1),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(1),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(1) {
   top: 10px;
@@ -657,6 +659,7 @@
   top: 60px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(2),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(2),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(2) {
   top: 52px;
@@ -670,6 +673,7 @@
   top: 102px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(3),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(3),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(3) {
   top: 94px;
@@ -683,6 +687,7 @@
   top: 144px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(4),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(4),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(4) {
   top: 136px;
@@ -696,6 +701,7 @@
   top: 186px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(5),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(5),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(5) {
   top: 178px;
@@ -709,6 +715,7 @@
   top: 228px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(6),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(6),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(6) {
   top: 220px;
@@ -722,6 +729,7 @@
   top: 270px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(7),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(7),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(7) {
   top: 262px;
@@ -735,6 +743,7 @@
   top: 312px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(8),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(8),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(8) {
   top: 304px;
@@ -748,6 +757,7 @@
   top: 354px;
 }
 
+.mcneese #mcneese-float-right > .fixed:nth-child(9),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(9),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(9) {
   top: 346px;
