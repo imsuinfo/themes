@@ -1845,6 +1845,10 @@ function mcneese_render_block() {
 function mcneese_status_messages($vars) {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
   if (!empty($vars['messages']) && is_array($vars['messages'])) {
     $all_messages = $vars['messages'];
   }
