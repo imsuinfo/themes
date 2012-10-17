@@ -1,12 +1,12 @@
-.mcneese.is-logged_in {
+.mcneese.is-flex_width {
   min-width: inherit;
 }
 
-#mcneese-top,
-#mcneese-page,
-#mcneese-bottom,
-#mcneese-www-footer,
-.mcneese > .dev-query {
+.mcneese.is-fixed_width #mcneese-top,
+.mcneese.is-fixed_width #mcneese-page,
+.mcneese.is-fixed_width #mcneese-bottom,
+.mcneese.is-fixed_width #mcneese-www-footer,
+.mcneese.is-fixed_width > .dev-query {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -14,9 +14,9 @@
   margin: 0px auto;
 }
 
-#mcneese-skip_nav:active,
-#mcneese-skip_nav:focus,
-#mcneese-skip_nav:hover {
+.mcneese.is-fixed_width #mcneese-skip_nav:active,
+.mcneese.is-fixed_width #mcneese-skip_nav:focus,
+.mcneese.is-fixed_width #mcneese-skip_nav:hover {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -24,8 +24,8 @@
   margin: 0px auto;
 }
 
-#mcneese-bottom,
-.mcneese > .dev-query {
+.mcneese.is-fixed_width #mcneese-bottom,
+.mcneese.is-fixed_width > .dev-query {
   margin: 0px auto 15px auto;
 }
 
@@ -183,11 +183,11 @@
   text-decoration: underline;
 }
 
-.mcneese.is-logged_in #mcneese-top,
-.mcneese.is-logged_in #mcneese-page,
-.mcneese.is-logged_in #mcneese-bottom,
-.mcneese.is-logged_in #mcneese-www-footer,
-.mcneese.is-logged_in > .dev-query {
+.mcneese.is-flex_width  #mcneese-top,
+.mcneese.is-flex_width #mcneese-page,
+.mcneese.is-flex_width #mcneese-bottom,
+.mcneese.is-flex_width #mcneese-www-footer,
+.mcneese.is-flex_width > .dev-query {
   width: inherit;
   min-width: inherit;
   max-width: inherit;
@@ -208,9 +208,9 @@
   overflow: hidden;
 }
 
-.mcneese.is-logged_in #mcneese-skip_nav:active,
-.mcneese.is-logged_in #mcneese-skip_nav:focus,
-.mcneese.is-logged_in #mcneese-skip_nav:hover {
+.mcneese.is-flex_width #mcneese-skip_nav:active,
+.mcneese.is-flex_width #mcneese-skip_nav:focus,
+.mcneese.is-flex_width #mcneese-skip_nav:hover {
   width: inherit;
   min-width: inherit;
   max-width: inherit;
@@ -218,8 +218,8 @@
   margin: 0px 64px;
 }
 
-.mcneese.is-logged_in #mcneese-bottom,
-.mcneese.is-logged_in > .dev-query {
+.mcneese.is-flex_width #mcneese-bottom,
+.mcneese.is-flex_width > .dev-query {
   margin: 0px 64px 15px 64px;
 }
 

@@ -41,6 +41,12 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
       }
     }
   }
+
+  // default to fixed width for anonymous users.
+  if (!$cf['is']['logged_in']) {
+    $cf['is']['fixed_width'] = TRUE;
+    $cf['is']['flex_width'] = FALSE;
+  }
 }
 
 
@@ -145,34 +151,47 @@ function mcneese_www_preprocess_page(&$vars) {
       foreach ($float_info_keys as $key) {
         $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
 
-        if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
-        }
-
-        if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
-        }
-
-        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
-          if (!in_array('float_info-wrapper', $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'])) {
-            $cf['page']['tags']['mcneese_page_' . $key . '_wrapper_open']['attributes']['class'][] = 'float_info-wrapper';
+        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+            $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
           }
         }
 
-        $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+            $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
+          }
+        }
+
+        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+        }
+        else {
+          $found_key = FALSE;
+        }
 
         if ($found_key !== FALSE) {
           unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
         }
 
-        $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+          $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+        }
+        else {
+          $found_key = FALSE;
+        }
 
         if ($found_key !== FALSE) {
           unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
         }
       }
 
-      $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+      if (isset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'])) {
+        $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+      }
+      else {
+        $found_key = FALSE;
+      }
 
       if ($found_key !== FALSE) {
         unset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'][$found_key]);

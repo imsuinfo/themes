@@ -11,41 +11,17 @@ stylesheets[all][] = css/all/all-www-common.css
 stylesheets[all][] = css/all/all-www-front.css
 stylesheets[all][] = css/all/all-web_document.css
 
-stylesheets[speech][] = css/speech/speech-www-common.css
-stylesheets[speech][] = css/speech/speech-www-front.css
-stylesheets[speech][] = css/speech/speech-web_document.css
+stylesheets[braille,speech,tty][] = css/braille/braille-www-common.css
+stylesheets[braille,speech,tty][] = css/braille/braille-www-front.css
+stylesheets[braille,speech,tty][] = css/braille/braille-web_document.css
 
-stylesheets[braille][] = css/braille/braille-www-common.css
-stylesheets[braille][] = css/braille/braille-www-front.css
-stylesheets[braille][] = css/braille/braille-web_document.css
+stylesheets[print,embossed,tv][] = css/print/print-www-common.css
+stylesheets[print,embossed,tv][] = css/print/print-www-front.css
+stylesheets[print,embossed,tv][] = css/print/print-web_document.css
 
-stylesheets[embossed][] = css/embossed/embossed-www-common.css
-stylesheets[embossed][] = css/embossed/embossed-www-front.css
-stylesheets[embossed][] = css/embossed/embossed-web_document.css
-
-stylesheets[handheld][] = css/handheld/handheld-www-common.css
-stylesheets[handheld][] = css/handheld/handheld-www-front.css
-stylesheets[handheld][] = css/handheld/handheld-web_document.css
-
-stylesheets[print][] = css/print/print-www-common.css
-stylesheets[print][] = css/print/print-www-front.css
-stylesheets[print][] = css/print/print-web_document.css
-
-stylesheets[projection][] = css/projection/projection-www-common.css
-stylesheets[projection][] = css/projection/projection-www-front.css
-stylesheets[projection][] = css/projection/projection-web_document.css
-
-stylesheets[screen][] = css/screen/screen-www-common.css
-stylesheets[screen][] = css/screen/screen-www-front.css
-stylesheets[screen][] = css/screen/screen-web_document.css
-
-stylesheets[tty][] = css/tty/tty-www-common.css
-stylesheets[tty][] = css/tty/tty-www-front.css
-stylesheets[tty][] = css/tty/tty-web_document.css
-
-stylesheets[tv][] = css/tv/tv-www-common.css
-stylesheets[tv][] = css/tv/tv-www-front.css
-stylesheets[tv][] = css/tv/tv-web_document.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-www-common.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-www-front.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-web_document.css
 
 scripts[] = js/document-outline.js
 
