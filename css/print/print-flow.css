@@ -1,6 +1,15 @@
+
+
+
+/*** Common ***/
 .mcneese .no-print {
   display: none;
 }
+
+.html_tag-nav {
+  display: none;
+}
+
 
 
 /*** Headers ***/

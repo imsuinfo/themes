@@ -10,13 +10,13 @@
   <?php if (isset($heading)) print($heading); ?>
 
   <?php print(theme('mcneese_tag', $cf['toolbar']['tags']['mcneese_toolbar_menu'])); ?>
-    <ul class="navigation_list">
+    <ul class="navigation_list html_tag-list">
       <?php print(theme('items_list', $mcneese_toolbar['menu'])); ?>
     </ul>
   <?php print(theme('mcneese_tag', $cf['toolbar']['tags']['mcneese_toolbar_nav_close'])); ?>
 
   <?php print(theme('mcneese_tag', $cf['toolbar']['tags']['mcneese_toolbar_shortcuts'])); ?>
-    <ul class="navigation_list">
+    <ul class="navigation_list html_tag-list">
       <?php print(theme('items_list', $mcneese_toolbar['shortcuts'])); ?>
     </ul>
   <?php print(theme('mcneese_tag', $cf['toolbar']['tags']['mcneese_toolbar_nav_close'])); ?>

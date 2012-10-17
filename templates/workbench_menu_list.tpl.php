@@ -13,12 +13,12 @@
       <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
     <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n"); ?>
 
-    <ul class="navigation_list">
+    <ul class="navigation_list html_tag-list">
       <?php foreach ((array) $list['items'] as $item) { print($item . "\n"); } ?>
     </ul>
   <?php print(theme('mcneese_tag', $cf['workbench_menu_list']['tags']['menu_list_close'])); ?>
 <?php } else { ?>
-  <ul class="navigation_list menu_item-children">
+  <ul class="navigation_list html_tag-list menu_item-children">
     <?php foreach ((array) $list['items'] as $item) { print($item . "\n"); } ?>
   </ul>
 <?php } ?>

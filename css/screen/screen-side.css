@@ -1,3 +1,6 @@
+
+
+
 /*** Page Side Region ***/
 #mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
@@ -83,3 +86,131 @@
   border: none;
 }
 
+
+
+
+/*** Workbench Menu ***/
+#mcneese-page-side .workbench_menu {
+  position: relative;
+
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+
+  margin: 0px;
+  padding: 10px 0px;
+
+  border-bottom: 1px solid #888888;
+}
+
+#mcneese-page-side .workbench_menu > .html_tag-header {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+#mcneese-page-side .workbench_menu-count-1 {
+  border-top: 1px solid #888888;
+}
+
+#mcneese-page-side .workbench_menu .menu_item {
+  display: block;
+  position: relative;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  margin: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 12px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item.depth-0 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-children {
+  display: block;
+  position: relative;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-text {
+  display: inline-block;
+  position: relative;
+
+  width: 100%;
+
+  margin: 1px 0px;
+  padding: 2px 4px;
+
+  text-decoration: none;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
+  display: inline-block;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed {
+  background-image: url(../../images/arrow-single-right.png);
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded {
+  background-image: url(../../images/arrow-single-down.png);
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf {
+  background-image: url(../../images/arrow-single-right.png);
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+#mcneese-page-side .workbench_menu .menu_item.active > .menu_item-text {
+  color: #fad703;
+  background-color: #00335b;
+}
+
+#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text {
+  font-weight: bold;
+}
+
+#mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
+  color: #00477f;
+  background-color: inherit;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:hover,
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus,
+#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:hover,
+#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:focus {
+  color: #ffffff;
+  background-color: #00335b;
+}
+
+#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
+#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:active {
+  color: #ffaa00;
+  background-color: #00335b;
+}

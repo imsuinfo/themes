@@ -83,6 +83,6 @@ BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override; }
 }
 
 /* html5 block tags */
-article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+article, section, aside, hgroup, nav, header, footer, figure, figcaption, menu {
   display: block;
 }

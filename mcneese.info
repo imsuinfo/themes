@@ -11,7 +11,6 @@ dependencies[] = cf_theme
 dependencies[] = mcneese_html5
 dependencies[] = mcneese_templates
 
-
 stylesheets[all][] = css/all/all-reset.css
 stylesheets[all][] = css/all/all-flow.css
 stylesheets[all][] = css/all/all-text.css
@@ -19,94 +18,59 @@ stylesheets[all][] = css/all/all-core.css
 stylesheets[all][] = css/all/all-modules.css
 stylesheets[all][] = css/all/all-themes.css
 
-stylesheets[speech][] = css/speech/speech-flow.css
-stylesheets[speech][] = css/speech/speech-text.css
-stylesheets[speech][] = css/speech/speech-modules.css
-stylesheets[speech][] = css/speech/speech-navigation.css
-stylesheets[speech][] = css/speech/speech-messages.css
-stylesheets[speech][] = css/speech/speech-editing.css
-stylesheets[speech][] = css/speech/speech-information.css
-stylesheets[speech][] = css/speech/speech-side.css
+stylesheets[braille,speech,tty][] = css/braille/braille-flow.css
+stylesheets[braille,speech,tty][] = css/braille/braille-text.css
+stylesheets[braille,speech,tty][] = css/braille/braille-modules.css
+stylesheets[braille,speech,tty][] = css/braille/braille-messages.css
+stylesheets[braille,speech,tty][] = css/braille/braille-editing.css
+stylesheets[braille,speech,tty][] = css/braille/braille-information.css
+stylesheets[braille,speech,tty][] = css/braille/braille-side.css
+stylesheets[braille,speech,tty][] = css/braille/braille-tabs.css
+stylesheets[braille,speech,tty][] = css/braille/braille-breadcrumb.css
+stylesheets[braille,speech,tty][] = css/braille/braille-action_links.css
+stylesheets[braille,speech,tty][] = css/braille/braille-toolbar.css
+stylesheets[braille,speech,tty][] = css/braille/braille-help.css
+stylesheets[braille,speech,tty][] = css/braille/braille-side.css
+stylesheets[braille,speech,tty][] = css/braille/braille-work_area_menu.css
 
-stylesheets[braille][] = css/braille/braille-flow.css
-stylesheets[braille][] = css/braille/braille-text.css
-stylesheets[braille][] = css/braille/braille-modules.css
-stylesheets[braille][] = css/braille/braille-navigation.css
-stylesheets[braille][] = css/braille/braille-messages.css
-stylesheets[braille][] = css/braille/braille-editing.css
-stylesheets[braille][] = css/braille/braille-information.css
-stylesheets[braille][] = css/braille/braille-side.css
+stylesheets[print,embossed,tv][] = css/print/print-flow.css
+stylesheets[print,embossed,tv][] = css/print/print-text.css
+stylesheets[print,embossed,tv][] = css/print/print-modules.css
+stylesheets[print,embossed,tv][] = css/print/print-messages.css
+stylesheets[print,embossed,tv][] = css/print/print-editing.css
+stylesheets[print,embossed,tv][] = css/print/print-information.css
+stylesheets[print,embossed,tv][] = css/print/print-side.css
+stylesheets[print,embossed,tv][] = css/print/print-tabs.css
+stylesheets[print,embossed,tv][] = css/print/print-breadcrumb.css
+stylesheets[print,embossed,tv][] = css/print/print-action_links.css
+stylesheets[print,embossed,tv][] = css/print/print-toolbar.css
+stylesheets[print,embossed,tv][] = css/print/print-help.css
+stylesheets[print,embossed,tv][] = css/print/print-side.css
+stylesheets[print,embossed,tv][] = css/print/print-work_area_menu.css
 
-stylesheets[embossed][] = css/embossed/embossed-flow.css
-stylesheets[embossed][] = css/embossed/embossed-text.css
-stylesheets[embossed][] = css/embossed/embossed-modules.css
-stylesheets[embossed][] = css/embossed/embossed-navigation.css
-stylesheets[embossed][] = css/embossed/embossed-messages.css
-stylesheets[embossed][] = css/embossed/embossed-editing.css
-stylesheets[embossed][] = css/embossed/embossed-information.css
-stylesheets[embossed][] = css/embossed/embossed-side.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-flow.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-text.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-modules.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-messages.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-editing.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-information.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-side.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-tabs.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-breadcrumb.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-action_links.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-toolbar.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-help.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-side.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-work_area_menu.css
 
-stylesheets[handheld][] = css/handheld/handheld-flow.css
-stylesheets[handheld][] = css/handheld/handheld-text.css
-stylesheets[handheld][] = css/handheld/handheld-modules.css
-stylesheets[handheld][] = css/handheld/handheld-navigation.css
-stylesheets[handheld][] = css/handheld/handheld-messages.css
-stylesheets[handheld][] = css/handheld/handheld-editing.css
-stylesheets[handheld][] = css/handheld/handheld-information.css
-stylesheets[handheld][] = css/handheld/handheld-side.css
-
-stylesheets[print][] = css/print/print-flow.css
-stylesheets[print][] = css/print/print-text.css
-stylesheets[print][] = css/print/print-modules.css
-stylesheets[print][] = css/print/print-navigation.css
-stylesheets[print][] = css/print/print-messages.css
-stylesheets[print][] = css/print/print-editing.css
-stylesheets[print][] = css/print/print-information.css
-stylesheets[print][] = css/print/print-side.css
-
-stylesheets[projection][] = css/projection/projection-flow.css
-stylesheets[projection][] = css/projection/projection-text.css
-stylesheets[projection][] = css/projection/projection-modules.css
-stylesheets[projection][] = css/projection/projection-navigation.css
-stylesheets[projection][] = css/projection/projection-messages.css
-stylesheets[projection][] = css/projection/projection-editing.css
-stylesheets[projection][] = css/projection/projection-information.css
-stylesheets[projection][] = css/projection/projection-side.css
-
-stylesheets[screen][] = css/screen/screen-flow.css
-stylesheets[screen][] = css/screen/screen-text.css
-stylesheets[screen][] = css/screen/screen-modules.css
-stylesheets[screen][] = css/screen/screen-navigation.css
-stylesheets[screen][] = css/screen/screen-messages.css
-stylesheets[screen][] = css/screen/screen-editing.css
-stylesheets[screen][] = css/screen/screen-information.css
-stylesheets[screen][] = css/screen/screen-side.css
-
-stylesheets[tty][] = css/tty/tty-flow.css
-stylesheets[tty][] = css/tty/tty-text.css
-stylesheets[tty][] = css/tty/tty-modules.css
-stylesheets[tty][] = css/tty/tty-navigation.css
-stylesheets[tty][] = css/tty/tty-messages.css
-stylesheets[tty][] = css/tty/tty-editing.css
-stylesheets[tty][] = css/tty/tty-information.css
-stylesheets[tty][] = css/tty/tty-side.css
-
-stylesheets[tv][] = css/tv/tv-flow.css
-stylesheets[tv][] = css/tv/tv-text.css
-stylesheets[tv][] = css/tv/tv-modules.css
-stylesheets[tv][] = css/tv/tv-navigation.css
-stylesheets[tv][] = css/tv/tv-messages.css
-stylesheets[tv][] = css/tv/tv-editing.css
-stylesheets[tv][] = css/tv/tv-information.css
-stylesheets[tv][] = css/tv/tv-side.css
-
-
-scripts[] = js/toolbar.js
 scripts[] = js/messages.js
-scripts[] = js/navigation.js
 scripts[] = js/information.js
+scripts[] = js/tabs.js
 scripts[] = js/breadcrumb.js
+scripts[] = js/action_links.js
+scripts[] = js/toolbar.js
 scripts[] = js/side.js
+scripts[] = js/work_area_menu.js
 
 
 regions[header]        = Header
@@ -116,7 +80,6 @@ regions[header_menu_2] = Header Menu 2
 regions[messages]    = Messages
 regions[help]        = Help
 regions[information] = Information
-regions[editing]     = Editing
 
 regions[menus]   = Menus
 regions[asides]  = Asides

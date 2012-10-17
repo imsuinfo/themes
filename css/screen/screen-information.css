@@ -1,3 +1,6 @@
+
+
+
 /*** Information Region ***/
 #mcneese-information > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
@@ -31,6 +34,7 @@
 /*** Information Region - Fixed ***/
 #mcneese-information.fixed {
   background-image: url(../../images/information.png);
+  background-repeat: no-repeat;
 }
 
 #mcneese-information.fixed.collapsed {

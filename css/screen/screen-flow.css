@@ -1,3 +1,7 @@
+
+
+
+/*** Common ***/
 .mcneese {
   position: relative;
 
@@ -442,74 +446,6 @@
 
 
 
-/*** Floating Information ***/
-.mcneese.is-toolbar-relative .html_tag-aside.float_info-0,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-0 {
-  top: 10px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-0 {
-  top: 35px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-0 {
-  top: 60px;
-}
-
-.mcneese.is-toolbar-relative .html_tag-aside.float_info-1,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-1 {
-  top: 52px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-1 {
-  top: 77px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-1 {
-  top: 102px;
-}
-
-.mcneese.is-toolbar-relative .html_tag-aside.float_info-2,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-2 {
-  top: 104px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-2 {
-  top: 129px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-2 {
-  top: 154px;
-}
-
-.mcneese.is-toolbar-relative .html_tag-aside.float_info-3,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-3 {
-  top: 156px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-3 {
-  top: 181px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-3 {
-  top: 206px;
-}
-
-.mcneese.is-toolbar-relative .html_tag-aside.float_info-3,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed .html_tag-aside.float_info-3 {
-  top: 208px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed .html_tag-aside.float_info-3 {
-  top: 233px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded .html_tag-aside.float_info-3 {
-  top: 258px;
-}
-
-
-
 /*** User Profile ***/
 .html_tag-figure.user-picture {
   float: right;
@@ -535,39 +471,170 @@
 
 
 
-/*** Float Information ***/
-#mcneese-page > .float_info {
+/*** Float Left & Right Region ***/
+#mcneese-float-left {
+  display: inline-block;
   position: fixed;
-  right: 5px;
 
-  min-width: 32px;
-  min-height: 32px;
+  background: transparent;
+  background-color: transparent;
 
-  background-repeat: no-repeat;
-  background-position: top right;
+  left: 5px;
 
-  word-wrap: break-word;
-  word-break: break-all;
+  width: 0px;
+  height: 100%;
 
-  z-index: 90;
+  margin: 0px;
+  padding: 0px;
+
+  z-index: 50;
+  overflow: visible;
 }
 
-#mcneese-page > .float_info.collapsed {
+#mcneese-float-right {
+  display: inline-block;
+
+  background: transparent;
+  background-color: transparent;
+
+  margin: 0px;
+  padding: 0px;
+
+  z-index: 50;
+  overflow: visible;
+}
+
+#mcneese-float-left > .fixed,
+#mcneese-float-right > .fixed {
+  display: inline-block;
+  position: relative;
+
+  background: transparent;
+  background-color: transparent;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#mcneese-float-left > .fixed.expanded,
+#mcneese-float-right > .fixed.expanded {
+  z-index: 200;
+}
+
+#mcneese-float-left > .fixed {
+  background-position: top left;
+}
+
+#mcneese-float-right > .fixed {
+  background-position: top right;
+}
+
+#mcneese-float-left > .fixed,
+#mcneese-float-right > .fixed {
+  background-repeat: no-repeat;
+}
+
+#mcneese-float-left > .fixed.collapsed,
+#mcneese-float-right > .fixed.collapsed {
   width: 32px;
+  min-width: 32px;
   max-width: 32px;
 
   height: 32px;
+  min-height: 32px;
   max-height: 32px;
+
+  overflow: hidden;
 }
 
-#mcneese-page > .float_info.expanded,
-#mcneese-page > .float_info.collapsed:hover,
-#mcneese-page > .float_info.collapsed:active,
-#mcneese-page > .float_info.collapsed:focus {
+#mcneese-float-left > .fixed.collapsed > .html_tag-header,
+#mcneese-float-left > .fixed.collapsed > .navigation_list,
+#mcneese-float-left > .fixed.collapsed > .block,
+#mcneese-float-right > .fixed.collapsed > .html_tag-header,
+#mcneese-float-right > .fixed.collapsed > .navigation_list,
+#mcneese-float-right > .fixed.collapsed > .block,
+#mcneese-float-right > .fixed.collapsed > .float_info-wrapper {
+  visibility: hidden;
+}
+
+#mcneese-float-left > .fixed.collapsed:active,
+#mcneese-float-left > .fixed.collapsed:hover,
+#mcneese-float-left > .fixed.collapsed:focus,
+#mcneese-float-right > .fixed.collapsed:active,
+#mcneese-float-right > .fixed.collapsed:hover,
+#mcneese-float-right > .fixed.collapsed:focus {
+  background-color: transparent;
+
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+
+  overflow: visible;
+  z-index: 200;
+}
+
+#mcneese-float-left > .fixed.collapsed:active > .html_tag-header,
+#mcneese-float-left > .fixed.collapsed:hover > .html_tag-header,
+#mcneese-float-left > .fixed.collapsed:focus > .html_tag-header,
+#mcneese-float-left > .fixed.collapsed:active > .navigation_list,
+#mcneese-float-left > .fixed.collapsed:hover > .navigation_list,
+#mcneese-float-left > .fixed.collapsed:focus > .navigation_list,
+#mcneese-float-left > .fixed.collapsed:active > .block,
+#mcneese-float-left > .fixed.collapsed:hover > .block,
+#mcneese-float-left > .fixed.collapsed:focus > .block,
+#mcneese-float-right > .fixed.collapsed:active > .html_tag-header,
+#mcneese-float-right > .fixed.collapsed:hover > .html_tag-header,
+#mcneese-float-right > .fixed.collapsed:focus > .html_tag-header,
+#mcneese-float-right > .fixed.collapsed:active > .navigation_list,
+#mcneese-float-right > .fixed.collapsed:hover > .navigation_list,
+#mcneese-float-right > .fixed.collapsed:focus > .navigation_list,
+#mcneese-float-right > .fixed.collapsed:active > .block,
+#mcneese-float-right > .fixed.collapsed:hover > .block,
+#mcneese-float-right > .fixed.collapsed:focus > .block,
+#mcneese-float-right > .fixed.collapsed:active > .float_info-wrapper,
+#mcneese-float-right > .fixed.collapsed:hover > .float_info-wrapper,
+#mcneese-float-right > .fixed.collapsed:focus > .float_info-wrapper {
+  visibility: visible;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-left,
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-left {
+  top: 10px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-left {
+  top: 35px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-left {
+  top: 60px;
+}
+
+#mcneese-float-right > .fixed {
+  position: fixed;
+
+  right: 5px;
+}
+
+#mcneese-float-right > .fixed.expanded,
+#mcneese-float-right > .fixed.collapsed:hover,
+#mcneese-float-right > .fixed.collapsed:active,
+#mcneese-float-right > .fixed.collapsed:focus {
   padding: 0px 4px 4px 4px;
 
   min-height: 140px;
+  max-height: 50%;
   min-width: 400px;
+  max-width: 75%;
   width: auto;
 
   z-index: 200;
@@ -576,32 +643,121 @@
   resize: both;
 }
 
-#mcneese-page > .float_info.collapsed:hover,
-#mcneese-page > .float_info.collapsed:active,
-#mcneese-page > .float_info.collapsed:focus {
-  max-height: 50%;
-  max-width: 75%;
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(1),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(1) {
+  top: 10px;
 }
 
-#mcneese-page > .float_info.collapsed > .html_tag-header,
-#mcneese-page > .float_info.collapsed > .html_tag-header > .html_tag-heading,
-#mcneese-page > .float_info.collapsed > .float_info-wrapper {
-  visibility: hidden;
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(1) {
+  top: 35px;
 }
 
-#mcneese-page > .float_info.expanded > .html_tag-header,
-#mcneese-page > .float_info.collapsed:hover > .html_tag-header,
-#mcneese-page > .float_info.collapsed:active > .html_tag-header,
-#mcneese-page > .float_info.collapsed:focus > .html_tag-header,
-#mcneese-page > .float_info.expanded > .html_tag-header > .html_tag-heading,
-#mcneese-page > .float_info.collapsed:hover > .html_tag-header > .html_tag-heading,
-#mcneese-page > .float_info.collapsed:active > .html_tag-header > .html_tag-heading,
-#mcneese-page > .float_info.collapsed:focus > .html_tag-header > .html_tag-heading,
-#mcneese-page > .float_info.expanded > .float_info-wrapper,
-#mcneese-page > .float_info.collapsed:hover > .float_info-wrapper,
-#mcneese-page > .float_info.collapsed:active > .float_info-wrapper,
-#mcneese-page > .float_info.collapsed:focus > .float_info-wrapper {
-  visibility: visible;
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(1) {
+  top: 60px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(2),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(2) {
+  top: 52px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(2) {
+  top: 77px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(2) {
+  top: 102px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(3),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(3) {
+  top: 94px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(3) {
+  top: 119px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(3) {
+  top: 144px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(4),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(4) {
+  top: 136px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(4) {
+  top: 161px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(4) {
+  top: 186px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(5),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(5) {
+  top: 178px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(5) {
+  top: 203px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(5) {
+  top: 228px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(6),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(6) {
+  top: 220px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(6) {
+  top: 245px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(6) {
+  top: 270px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(7),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(7) {
+  top: 262px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(7) {
+  top: 287px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(7) {
+  top: 312px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(8),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(8) {
+  top: 304px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(8) {
+  top: 329px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(8) {
+  top: 354px;
+}
+
+.mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(9),
+.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(9) {
+  top: 346px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed:nth-child(9) {
+  top: 371px;
+}
+
+.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed:nth-child(9) {
+  top: 396px;
 }
 
 
@@ -667,109 +823,4 @@
 #mcneese-page-content > .group_image {
   max-width: 100%;
   overflow: hidden;
-}
-
-
-
-/*** Float Left Region ***/
-#mcneese-float-left {
-  display: inline-block;
-  position: fixed;
-
-  background: transparent;
-  background-color: transparent;
-
-  left: 5px;
-
-  width: 0px;
-  height: 100%;
-
-  margin: 0px;
-  padding: 0px;
-
-  z-index: 50;
-  overflow: visible;
-}
-
-.mcneese.is-toolbar-relative #mcneese-float-left,
-.mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-left {
-  top: 10px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-left {
-  top: 35px;
-}
-
-.mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-left {
-  top: 60px;
-}
-
-#mcneese-float-left > .fixed {
-  display: inline-block;
-  position: relative;
-
-  background: transparent;
-  background-color: transparent;
-
-  font-size: 14px;
-
-  margin-bottom: 10px;
-
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-#mcneese-float-left > .fixed.expanded {
-  z-index: 200;
-}
-
-#mcneese-float-left > .fixed.collapsed {
-  background-repeat: no-repeat;
-  background-position: top left;
-
-  width: 32px;
-  min-width: 32px;
-  max-width: 32px;
-
-  height: 32px;
-  min-height: 32px;
-  max-height: 32px;
-
-  overflow: hidden;
-}
-
-#mcneese-float-left > .fixed.collapsed > .html_tag-header,
-#mcneese-float-left > .fixed.collapsed > .navigation_list,
-#mcneese-float-left > .fixed.collapsed > .block {
-  visibility: hidden;
-}
-
-#mcneese-float-left > .fixed.collapsed:active,
-#mcneese-float-left > .fixed.collapsed:hover,
-#mcneese-float-left > .fixed.collapsed:focus {
-  background-color: transparent;
-
-  height: auto;
-  min-height: auto;
-  max-height: auto;
-
-  width: auto;
-  min-width: auto;
-  max-width: auto;
-
-  overflow: visible;
-  z-index: 200;
-}
-
-#mcneese-float-left > .fixed.collapsed:active > .html_tag-header,
-#mcneese-float-left > .fixed.collapsed:hover > .html_tag-header,
-#mcneese-float-left > .fixed.collapsed:focus > .html_tag-header,
-#mcneese-float-left > .fixed.collapsed:active > .navigation_list,
-#mcneese-float-left > .fixed.collapsed:hover > .navigation_list,
-#mcneese-float-left > .fixed.collapsed:focus > .navigation_list,
-#mcneese-float-left > .fixed.collapsed:active > .block,
-#mcneese-float-left > .fixed.collapsed:hover > .block,
-#mcneese-float-left > .fixed.collapsed:focus > .block {
-  visibility: visible;
 }
