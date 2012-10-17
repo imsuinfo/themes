@@ -1845,10 +1845,6 @@ function mcneese_render_block() {
 function mcneese_status_messages($vars) {
   $cf = & drupal_static('cf_theme_get_variables', array());
 
-  if (empty($cf)) {
-    mcneese_initialize_variables($vars);
-  }
-
   if (!empty($vars['messages']) && is_array($vars['messages'])) {
     $all_messages = $vars['messages'];
   }
@@ -1871,7 +1867,7 @@ function mcneese_status_messages($vars) {
 
   $header_class = 'html_tag-header';
 
-  if ($cf['is']['html5']) {
+  if (!isset($cf['is']['html5']) || $cf['is']['html5']) {
     $output .= '<header class="' . $header_class . '"><h2 class="html_tag-heading">' . t("Messages") . '</h2>' . '</header>';
   }
   else {
