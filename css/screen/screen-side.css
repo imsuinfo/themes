@@ -124,7 +124,7 @@
   border: none;
 }
 
-#mcneese-page-side .workbench_menu-count-1 {
+#mcneese-page-side .workbench_menu:nth-child(1) {
   border-top: 1px solid #888888;
 }
 
