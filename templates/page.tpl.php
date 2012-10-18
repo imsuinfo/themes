@@ -18,10 +18,10 @@
 <?php mcneese_do_print($cf, 'information', FALSE); ?>
 
 <div id="mcneese-float-right" class="expanded fixed">
-  <?php mcneese_do_print($cf, 'messages'); ?>
-  <?php mcneese_do_print($cf, 'help'); ?>
-  <?php mcneese_do_print($cf, 'information'); ?>
-  <?php mcneese_do_print($cf, 'work_area_menu'); ?>
+  <?php mcneese_do_print($cf, 'messages', TRUE, TRUE); ?>
+  <?php mcneese_do_print($cf, 'help', TRUE, TRUE); ?>
+  <?php mcneese_do_print($cf, 'information', TRUE, TRUE); ?>
+  <?php mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE); ?>
 </div>
 
 <?php if ($split_page) { ?>

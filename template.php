@@ -2173,10 +2173,37 @@ function mcneese_preprocess_page_prepare_messages(&$cf, &$vars) {
  * only once.
  *
  * This only prints known targets.
+ *
+ * @param array $cf
+ *   The global common functionality data array.
+ *   Is expected/assumed to be initialized and populated already.
+ * @param array $target
+ *   The machine-name of the html to print.
+ * @param bool $fixed
+ *   Designate whether or not the object is fixed.
+ * @param bool $float_right
+ *   Provided as a workaround for ie<8 lack of standards compliance.
+ *   This tells the function that this is to increment and apply the float_right counter for ie8.
  */
-function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
+function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
+  // workaround ie < 8 inability to follow css standards that are in use on the float-right block
+  if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+    if (!isset($cf['ie8'])) {
+      $cf['ie8'] = array();
+    }
+
+    if (!isset($cf['ie8']['float_right-counter'])) {
+      $cf['ie8']['float_right-counter'] = 0;
+    }
+  }
+
   if ($target == 'messages') {
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_messages_open']['attributes']['class']) && $cf['show']['page']['messages']) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_messages_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_open']) . "\n");
       print('<!--(begin-page-messages)-->' . "\n");
       if (isset($cf['data']['page'][$target]['renderred'])) {
@@ -2198,6 +2225,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
     }
 
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class']) && $cf['show']['page'][$target]) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
 
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']) . "\n");
@@ -2217,6 +2249,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
   }
   else if ($target == 'work_area_menu') {
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_work_area_menu_open']['attributes']['class']) && $cf['show']['page']['work_area_menu']) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_work_area_menu_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_open']) . "\n");
 
       print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
@@ -2247,6 +2284,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
     }
 
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class']) && $cf['show']['page'][$target]) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
 
       print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
@@ -2267,6 +2309,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
   else if ($target == 'breadcrumb') {
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'])) {
       if ($cf['show']['page']['breadcrumb'] || $cf['show']['page']['precrumb'] || $cf['show']['page']['postcrumb']) {
+        if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+          $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+          $cf['ie8']['float_right-counter']++;
+        }
+
         print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
 
         print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
@@ -2305,6 +2352,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE) {
   }
   else if ($target == 'side') {
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'])) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
         print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
         print('<!--(begin-page-' . $target . ')-->' . "\n");
