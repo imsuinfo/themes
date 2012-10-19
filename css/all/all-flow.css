@@ -142,10 +142,6 @@
   float: right;
 }
 
-.mcneese table > tbody > tr {
-
-}
-
 .mcneese table > tbody > tr.even,
 .mcneese table > tbody > tr.odd {
   border-color: #bebfb9;
