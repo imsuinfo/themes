@@ -1568,7 +1568,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
     if ($matched == 0) {
       $matches = array();
-      $matched = preg_match('@^node/(\d+)/([^(\?|#|/)]+)(/$|$|\?.*|#.*)@', $current_path, $matches);
+      $matched = preg_match('@^node/(\d+)/(edit|webform|accessibility)(/$|$|\?.*|#.*)@', $current_path, $matches);
 
       if ($matched > 0) {
         if (empty($matches[2])) {
