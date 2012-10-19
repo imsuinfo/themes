@@ -1,0 +1,135 @@
+
+
+
+/*** Common ***/
+.mcneese.is-webform_type-592 #mcneese-header {
+  display: none;
+}
+
+.mcneese.is-webform_type-592 {
+  font-family: Arial,Helvetica,sans-serif;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mcneese.is-webform_type-592 .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
+  color: #000000;
+
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  text-shadow: none;
+}
+
+.mcneese.is-webform_type-592 .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a {
+  line-height: 22px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page {
+  min-height: 0px;
+
+  border-radius: 0px 0px 10px 10px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-bottom {
+  margin: 0px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form {
+  margin: 12px 0px 0px 0px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset {
+  margin-top: -10px;
+
+  border-style: solid none none;
+}
+
+.mcneese.is-webform_type-592.agent-name-ie.agent-major_version-8 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset {
+  margin-top: -9px;
+}
+
+.mcneese.is-webform_type-592.agent-name-ie.agent-major_version-8 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset {
+  background-color: #f2efe9;
+
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset:nth-of-type(odd) {
+  background-color: #f2efe9;
+
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset:nth-of-type(even) {
+  background-color: #e6e3dd;
+
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > legend {
+  border: none;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > legend > .fieldset-legend {
+  display: block;
+
+  position: relative;
+  top: 10px;
+
+  font-weight: bold;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mcneese.is-webform_type-592.agent-name-ie.agent-major_version-8 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > legend > .fieldset-legend {
+  top: 9px;
+}
+
+.mcneese.is-webform_type-592.agent-name-ie.agent-major_version-8 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > legend > .fieldset-legend {
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset:nth-of-type(odd) > legend > .fieldset-legend {
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset:nth-of-type(even) > legend > .fieldset-legend {
+  border-top: 1px solid #bfbab0;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component > .fieldset-wrapper {
+  margin-top: 10px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .form-item  {
+  display: block;
+
+  padding-bottom: 5px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .form-item > div,
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .form-item > label,
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .form-item > input {
+  display: inline-block;
+}
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .form-item > label {
+  text-align: right;
+  vertical-align: top;
+
+  font-weight: normal;
+
+  width: 250px;
+
+  padding: 2px 5px 0px 0px;
+}
+
+.mcneese.is-webform_type-592 #mcneese-www-footer {
+  display: none;
+}

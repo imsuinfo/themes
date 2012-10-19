@@ -42,10 +42,32 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
     }
   }
 
+
   // default to fixed width for anonymous users.
   if (!$cf['is']['logged_in']) {
     $cf['is']['fixed_width'] = TRUE;
     $cf['is']['flex_width'] = FALSE;
+  }
+
+  // node-specific content
+  if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+
+    // web form
+    if ($cf['is_data']['node']['object']->type == 'webform') {
+      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+        $cf['is']['webform_type-default'] = TRUE;
+
+        if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
+          $cf['is']['webform_type-default'] = FALSE;
+          $cf['is']['webform_type-'. $cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid']] = TRUE;
+        }
+
+        if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592 && !$cf['is']['logged_in']) {
+          $cf['is']['fixed_width'] = FALSE;
+          $cf['is']['flex_width'] = TRUE;
+        }
+      }
+    }
   }
 }
 
@@ -144,57 +166,12 @@ function mcneese_www_preprocess_page(&$vars) {
 
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+
     // web documents
     if ($cf['is_data']['node']['object']->type == 'document') {
-      $float_info_keys = array('messages', 'help', 'information', 'editing', 'tabs', 'action_links', 'side', 'breadcrumb');
-
-      foreach ($float_info_keys as $key) {
-        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
-
-        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-            $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
-          }
-        }
-
-        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-            $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
-          }
-        }
-
-        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
-        }
-        else {
-          $found_key = FALSE;
-        }
-
-        if ($found_key !== FALSE) {
-          unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
-        }
-
-        if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-          $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
-        }
-        else {
-          $found_key = FALSE;
-        }
-
-        if ($found_key !== FALSE) {
-          unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
-        }
-      }
-
-      if (isset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'])) {
-        $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
-      }
-      else {
-        $found_key = FALSE;
-      }
-
-      if ($found_key !== FALSE) {
-        unset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'][$found_key]);
+      // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
+      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+        mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
       }
 
 
@@ -247,6 +224,18 @@ function mcneese_www_preprocess_page(&$vars) {
       if (isset($cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'])) {
         $cf['show']['page']['document_footer'] = TRUE;
         $cf['data']['page']['document_footer']['markup'] = $cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'];
+      }
+    }
+
+    // web form
+    if ($cf['is_data']['node']['object']->type == 'webform') {
+      // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
+      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+        if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
+          if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
+            mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+          }
+        }
       }
     }
   }
@@ -302,7 +291,71 @@ function mcneese_www_render_page() {
 
     // web documents
     if ($cf['is_data']['node']['object']->type == 'document') {
-      $cf['show']['page']['title'] = FALSE;
+      // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
+      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+        $cf['show']['page']['title'] = FALSE;
+      }
+    }
+  }
+}
+
+/**
+ * Force an array of regions to be floating, overriding user settings.
+ *
+ * @param array $cf
+ *   The common functionality array.
+ * @param array $array
+ *   An array of regions to force as floating.
+ */
+function mcneese_www_force_floating_regions(&$cf, $regions) {
+  foreach ((array) $regions as $key) {
+    $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
+
+    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+      if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
+      }
+    }
+
+    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+      if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
+      }
+    }
+
+    $found_key = FALSE;
+
+    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+      $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+    }
+
+    if ($found_key !== FALSE) {
+      unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
+    }
+
+    $found_key = FALSE;
+
+    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
+      $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
+    }
+
+    if ($found_key !== FALSE) {
+      unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
+    }
+
+    // 'side' is a special case, handle appropriately.
+    if ($key == 'side') {
+      $found_key = FALSE;
+
+      if (isset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'])) {
+        $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+      }
+
+      if ($found_key !== FALSE) {
+        unset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'][$found_key]);
+      }
+
+      continue;
     }
   }
 }
