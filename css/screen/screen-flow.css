@@ -37,10 +37,16 @@
 
 #mcneese-bottom {
   padding: 0px 5px;
+
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .mcneese > .dev-query {
   padding: 0px 5px;
+
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .mcneese.is-flex_width {
@@ -49,14 +55,21 @@
 
 .mcneese.is-flex_width #mcneese-top,
 .mcneese.is-flex_width #mcneese-page,
+.mcneese.is-flex_width #mcneese-bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mcneese.is-flex_width #mcneese-top,
+.mcneese.is-flex_width #mcneese-page,
 .mcneese.is-flex_width #mcneese-bottom,
-.mcneese.is-flex_width #mcneese-www-footer,
 .mcneese.is-flex_width > .dev-query {
   width: inherit;
   min-width: 450px;
   max-width: inherit;
 
-  margin: 0px 64px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .mcneese.is-flex_width #mcneese-skip_nav:active,
@@ -66,12 +79,8 @@
   min-width: 450px;
   max-width: inherit;
 
-  margin: 0px 64px;
-}
-
-.mcneese.is-flex_width #mcneese-bottom,
-.mcneese.is-flex_width > .dev-query {
-  margin: 0px 64px 15px 64px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .mcneese.is-fixed_width #mcneese-top,
@@ -82,7 +91,8 @@
   min-width: 960px;
   max-width: 960px;
 
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mcneese.is-fixed_width #mcneese-skip_nav:active,
@@ -92,12 +102,8 @@
   min-width: 960px;
   max-width: 960px;
 
-  margin: 0px auto;
-}
-
-.mcneese.is-fixed_width #mcneese-bottom,
-.mcneese.is-fixed_width > .dev-query {
-  margin: 0px auto 15px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
