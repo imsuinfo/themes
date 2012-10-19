@@ -1549,6 +1549,43 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
   }
 
 
+  // use current path to define known things about a node path
+  if ($cf['is']['node']) {
+    $current_path = current_path();
+    $matched = preg_match('@^node/(\d+)(/$|$|\?.*|#.*)@', $current_path);
+
+    if ($matched > 0) {
+      $cf['is']['node-view'] = TRUE;
+    }
+
+    if ($matched == 0) {
+      $matched = preg_match('@^node/(\d+)/revisions/(\d+)/view(/$|$|\?.*|#.*)@', $current_path);
+
+      if ($matched > 0) {
+        $cf['is']['node-view-revision'] = TRUE;
+      }
+    }
+
+    if ($matched == 0) {
+      $matches = array();
+      $matched = preg_match('@^node/(\d+)/([^(\?|#|/)]+)(/$|$|\?.*|#.*)@', $current_path, $matches);
+
+      if ($matched > 0) {
+        if (empty($matches[2])) {
+          $matched = 0;
+        }
+        else {
+          $cf['is']['node-' . check_plain($matches[2])] = TRUE;
+        }
+      }
+    }
+
+    if ($matched == 0) {
+      $cf['is']['node-unknown'] = TRUE;
+    }
+  }
+
+
   if ($cf['is']['logged_in']) {
     // default to enabled for logged in users
     $cf['is_data']['user_settings-background_colors'] = array();
