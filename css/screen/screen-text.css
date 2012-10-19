@@ -42,7 +42,7 @@
 #mcneese-page-watermarks-pre,
 #mcneese-page-watermarks-post {
   position: absolute;
-  top: 90px;
+  top: 140px;
 
   color: #000000;
   background-color: transparent;
@@ -77,17 +77,17 @@
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-page-watermarks-pre,
 .mcneese.is-toolbar-relative #mcneese-page-watermarks-post,
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-page-watermarks-post {
-  top: 90px;
+  top: 140px;
 }
 
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-page-watermarks-pre,
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-page-watermarks-post {
-  top: 125px;
+  top: 175px;
 }
 
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-page-watermarks-pre,
 .mcneese.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-page-watermarks-post {
-  top: 150px;
+  top: 200px;
 }
 
 
