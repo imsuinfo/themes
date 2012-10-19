@@ -36,7 +36,6 @@
 .mcneese.node-id-819.is-logged_in #mcneese-bottom,
 .mcneese.node-id-819.is-logged_in #mcneese-www-footer,
 .mcneese.node-id-819.is-logged_in > .dev-query,
-
 .mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-top,
 .mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-page,
 .mcneese.alias-part-0-preview.alias-part-1-front.is-logged_in #mcneese-bottom,
@@ -51,7 +50,8 @@
   min-width: 960px;
   max-width: 960px;
 
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #mcneese-page-main,
