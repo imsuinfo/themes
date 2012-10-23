@@ -90,6 +90,7 @@
 
 
 /*** Form Items ***/
+.mcneese .form-wrapper > .fieldset-wrapper > .fieldset-description,
 .mcneese .form-item > .description {
   background-color: #f0f0f0;
 
