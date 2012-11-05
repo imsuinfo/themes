@@ -36,6 +36,11 @@
   font-weight: bold;
 }
 
+.mcneese table > tbody > tr.ok,
+.mcneese div.status {
+  background-color: #d1f7cb;
+}
+
 
 
 /*** Watermarks ***/
