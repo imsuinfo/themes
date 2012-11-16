@@ -46,7 +46,7 @@
     <?php mcneese_do_print($cf, 'side'); ?>
   </div>
 
-  <?php mcneese_do_print($cf, 'tabs'); ?>
+  <?php mcneese_do_print($cf, 'tabs', FALSE); ?>
 
   <?php if (!$cf['is']['front']) { ?>
     <?php mcneese_do_print($cf, 'breadcrumb', FALSE); ?>
