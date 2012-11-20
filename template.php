@@ -37,6 +37,33 @@ function mcneese_preprocess_maintenance_page(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
+
+  // there are certain cases where maintenance mode is not detectable but in use.
+  // the end result is that some of the variables are not defined, but should be.
+  // this will attempt to fix the situation.
+  if (!$cf['is']['maintenance']) {
+    $cf['is']['maintenance'] = TRUE;
+    $cf['is_data']['maintenance']['mode'] = FALSE;
+    $cf['is_data']['maintenance']['type'] = 'unknown';
+
+    mcneese_prepare_maintenance_mode_variables($cf, $vars);
+
+    // manually generate data that is normally auto-generated.
+    $cf['markup_css']['body']['class'] .= ' is-maintenance';
+    $cf['markup_css']['body']['class'] = preg_replace('/ is-toolbar-(\w|-|_)+/i', '', $cf['markup_css']['body']['class']);
+    $cf['markup_css']['body']['class'] = preg_replace('/ is-toolbar\b/i', '', $cf['markup_css']['body']['class']);
+
+    $cf['is']['toolbar-expanded'] = FALSE;
+    $cf['is']['toolbar-collapsed'] = FALSE;
+    $cf['is']['toolbar-sticky'] = FALSE;
+    $cf['is']['toolbar-fixed'] = FALSE;
+    $cf['is']['toolbar-relative'] = FALSE;
+    $cf['is']['toolbar-autoshow'] = FALSE;
+    $cf['is']['toolbar-autohide'] = FALSE;
+    $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
+    $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+  }
+
   // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
   // this is because the maintenance page means the site is not available
   // with this enabled on the maintenance page, it should help the user gain access to the website as soon as it is up.
@@ -1437,7 +1464,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
   $process_toolbar = TRUE;
 
   if ($cf['is']['maintenance']) {
-    $cf['is_data']['maintenance']['access'] = user_access('access site in maintenance mode');
+    mcneese_prepare_maintenance_mode_variables($cf, $vars);
 
     if ($cf['is_data']['maintenance']['type'] == 'normal') {
       if (!$cf['is_data']['maintenance']['access']) {
@@ -1447,15 +1474,6 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
     else {
       $process_toolbar = FALSE;
     }
-
-    $date_value = strtotime('+1800 seconds', $cf['request']);
-    $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-    $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-    $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
-
-
-    // register that this is a maintenance page
-    $cf['is_data']['maintenance']['vars'] = &$vars;
 
     $cf['is_data']['maintenance']['title'] = t("Site Under Maintenance.");
     $cf['is_data']['maintenance']['body'] = variable_get('maintenance_mode_message', "This website is under maintenance.");
@@ -1741,6 +1759,10 @@ function mcneese_render_page() {
     $cf['show']['page']['header'] = TRUE;
   }
 
+  if ($cf['is']['maintenance']) {
+    $cf['show']['page']['header'] = TRUE;
+  }
+
 
   // render breadcrumb
   if (!empty($cf['page']['breadcrumb'])) {
@@ -1802,9 +1824,6 @@ function mcneese_render_page() {
     if (!$cf['is_data']['maintenance']['access'] || $cf['is_data']['maintenance']['type'] != 'normal') {
       $cf['show']['page']['header'] = TRUE;
       $cf['show']['page']['title'] = FALSE;
-      $cf['show']['page']['breadcrumb'] = FALSE;
-      $cf['show']['page']['precrumb'] = FALSE;
-      $cf['show']['page']['postcrumb'] = FALSE;
 
       if ($cf['is_data']['maintenance']['type'] == 'update') {
         $cf['show']['page']['title'] = TRUE;
@@ -1813,6 +1832,14 @@ function mcneese_render_page() {
           $cf['data']['page']['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => array()));
           $cf['show']['page']['breadcrumb'] = TRUE;
         }
+      }
+      else if ($cf['is_data']['maintenance']['type'] == 'unknown') {
+        $cf['show']['page']['title'] = TRUE;
+      }
+      else {
+        $cf['show']['page']['breadcrumb'] = FALSE;
+        $cf['show']['page']['precrumb'] = FALSE;
+        $cf['show']['page']['postcrumb'] = FALSE;
       }
     }
 
@@ -2484,6 +2511,30 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_close']) . "\n");
     }
   }
+}
+
+/**
+ * Build the maintenance mode array data.
+ *
+ * This is intended to be called from within a preprocess functions scope.
+ *
+ * @param array $cf
+ *   The global common functionality data array.
+ *   Is expected/assumed to be initialized and populated already.
+ * @param array $vars
+ *   The variables array from the preprocess functions.
+ */
+function mcneese_prepare_maintenance_mode_variables(&$cf, &$vars) {
+  $cf['is_data']['maintenance']['access'] = user_access('access site in maintenance mode');
+
+  $date_value = strtotime('+1800 seconds', $cf['request']);
+  $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+  $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
+
+
+  // register that this is a maintenance page
+  $cf['is_data']['maintenance']['vars'] = &$vars;
 }
 
 
