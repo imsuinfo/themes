@@ -1569,6 +1569,11 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
   // use current path to define known things about a node path
   if ($cf['is']['node']) {
+    $cf['is']['node-view'] = FALSE;
+    $cf['is']['node-view-revision'] = FALSE;
+    $cf['is']['node-draft'] = FALSE;
+    $cf['is']['node-unknown'] = FALSE;
+
     $current_path = current_path();
     $matched = preg_match('@^node/(\d+)(/$|$|\?.*|#.*)@', $current_path);
 
