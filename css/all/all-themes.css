@@ -14,3 +14,39 @@
   min-height: 0px;
   max-height: 0px;
 }
+
+
+
+/*** Custom HR-Jobs 2.0 legacy css, remove once HR-Jobs 2.0 is replaced. ***/
+#mcneese-page-main .view-content .centerblock_ieworkaround {
+  display: inline;
+}
+
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock {
+  display: table;
+
+  text-align: left;
+
+  background-color: inherit;
+
+  width: auto;
+
+  border: 0px none;
+  margin: 0px auto;
+  padding: 0px;
+
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock thead,
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tbody,
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr,
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr > td,
+#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr > th {
+  display: inline;
+
+  border: 0px none;
+  margin: 0px;
+  padding: 0px;
+}
