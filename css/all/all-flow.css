@@ -206,6 +206,10 @@
   font-weight: bold;
 }
 
+.mcneese table.update > tbody > tr.even, .mcneese table > tbody > tr.warning {
+   background-color: #fffce5;
+}
+
 
 
 /*** Content Specific Style: list-box ***/
