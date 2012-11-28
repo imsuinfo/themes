@@ -206,7 +206,7 @@
   font-weight: bold;
 }
 
-.mcneese table.update > tbody > tr.even, .mcneese table > tbody > tr.warning {
+.mcneese table.update > tbody > tr.warning {
    background-color: #fffce5;
 }
 
