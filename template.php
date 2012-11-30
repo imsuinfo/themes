@@ -54,7 +54,7 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
 
     // web form
     if ($cf['is_data']['node']['object']->type == 'webform') {
-      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+      if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         $cf['is']['webform_type-default'] = TRUE;
 
         if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
@@ -236,7 +236,7 @@ function mcneese_www_preprocess_page(&$vars) {
     // web form
     if ($cf['is_data']['node']['object']->type == 'webform') {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
-      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+      if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
           if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
             mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
