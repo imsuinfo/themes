@@ -20,29 +20,6 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
   $cf['subtheme']['machine_name'] = 'mcneese_www';
   $cf['subtheme']['human_name'] = t("McNeese WWW");
 
-  if (function_exists('node_load') && $cf['is']['maintenance']) {
-    $loaded_node = node_load(914);
-
-    if (is_object($loaded_node)) {
-      if (property_exists($loaded_node, 'status') && $loaded_node->status == NODE_PUBLISHED) {
-        $date_value = strtotime('+900 seconds', $cf['request']);
-        $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-        $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-        $cf['meta']['http-equiv']['cache-control'] = 'no-cache';
-
-
-        $cf['is']['emergency'] = TRUE;
-        $cf['is_data']['emergency'] = array();
-        $cf['is_data']['emergency']['title'] = $loaded_node->title;
-        $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
-
-        $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
-        $cf['is_data']['emergency']['message'] .= 'To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must unpublish the <a href="/emergency_page">Emergency Page</a>.' . "\n";
-      }
-    }
-  }
-
-
   // default to fixed width for anonymous users.
   if (!$cf['is']['logged_in']) {
     $cf['is']['fixed_width'] = TRUE;
@@ -128,6 +105,7 @@ function mcneese_www_preprocess_html(&$vars) {
 
   $cf['html']['tags']['mcneese_www_html_footer_column_heading_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['html']['tags']['mcneese_www_html_footer_column_heading_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
 
   if ($cf['is']['emergency'] && !$cf['is']['logged_in']) {
     $vars['head_title'] = $cf['is_data']['emergency']['title'] . ' | McNeese State University';
@@ -232,6 +210,7 @@ function mcneese_www_preprocess_page(&$vars) {
         $cf['data']['page']['document_footer']['markup'] = $cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'];
       }
     }
+
 
     // web form
     if ($cf['is_data']['node']['object']->type == 'webform') {
