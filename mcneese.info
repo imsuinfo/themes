@@ -10,6 +10,7 @@ dependencies[] = cf
 dependencies[] = cf_theme
 dependencies[] = mcneese_html5
 dependencies[] = mcneese_templates
+dependencies[] = mcneese_management
 
 stylesheets[all][] = css/all/all-reset.css
 stylesheets[all][] = css/all/all-flow.css
