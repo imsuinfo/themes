@@ -84,12 +84,8 @@
   <div class="columns columns-left">
     <div class="column column-1">
       <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-        <h3 class="column-header">Apply Now</h3>
+        <h3 class="column-header"><a href="https://lucy.mcneese.edu:8099/dbServer_PROD8/bwskalog.P_DispLoginNon" title="Application">Apply Now</a></h3>
       <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-      <ul>
-        <li><a href="https://apply.mcneese.edu/node/add/apply-00001" title="Undergraduate Application">Undergraduate</a></li>
-        <li><a href="https://apply.mcneese.edu/node/add/apply-00002" title="Graduate Application">Graduate</a></li>
-      </ul>
     </div>
 
     <div class="column column-2">
