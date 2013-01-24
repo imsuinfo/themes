@@ -148,24 +148,6 @@
 
 
 
-/*** Workbench Moderation ***/
-.mcneese .published-revision > td {
-  background-color: #d4eecc;
-}
-
-.mcneese .published-revision > td a,
-.mcneese .published-revision > td a:visited {
-  color: #002a5d;
-}
-
-.mcneese .published-revision > td a:hover,
-.mcneese .published-revision > td a:active,
-.mcneese .published-revision > td a:focus {
-  color: #7f0000;
-}
-
-
-
 /*** Vertical Tabs ***/
 .mcneese .vertical-tabs {
   display: inline-block;
