@@ -140,6 +140,14 @@
 
 
 
+/*** Views - Misc ***/
+.mcneese .views-table .views-field-field-group > .item-list > ul,
+.mcneese .views-table .views-field-field-group > .item-list > ol {
+  margin: 0;
+}
+
+
+
 /*** Workbench Moderation ***/
 .mcneese .published-revision > td {
   background-color: #d4eecc;
