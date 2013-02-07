@@ -503,6 +503,18 @@
 
 
 
+/*** Ckeditor ***/
+.mcneese .cke_dialog > tbody > tr > td {
+  border: 0;
+  padding: 0;
+}
+
+.mcneese .cke_dialog > tbody > tr > td > .cke_dialog_body > .cke_dialog_tabs {
+  position: relative;
+}
+
+
+
 /*** Dev Query Region ***/
 .mcneese > .dev-query {
   position: relative;
