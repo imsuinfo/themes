@@ -59,7 +59,7 @@ ol              { list-style-type: decimal; }
 ol ul, ul ol,
 ul ul, ol ol    { margin-top: 0px; margin-bottom: 0px; }
 u, ins          { text-decoration: underline; }
-br:before       { content: "\A"; white-space: pre-line; }
+br:before       { content: ""; white-space: pre-line; }
 center          { text-align: center; }
 :link, :visited { text-decoration: underline; }
 :focus          { outline: thin dotted invert; }
