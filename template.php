@@ -886,11 +886,13 @@ function mcneese_preprocess_page(&$vars) {
   // assign custom body css tags
   $alias_paths = explode('/', $cf['at']['alias']);
 
-  foreach ($alias_paths as $c => &$ap) {
-    $p = cf_theme_safe_css_string_part($ap);
+  if (function_exists('cf_theme_safe_css_string_part')) {
+    foreach ($alias_paths as $c => &$ap) {
+      $p = cf_theme_safe_css_string_part($ap);
 
-    if (!empty($p)) {
-      $cf['markup_css']['body']['class'] .= ' alias-part-' . $c . '-' . $p;
+      if (!empty($p)) {
+        $cf['markup_css']['body']['class'] .= ' alias-part-' . $c . '-' . $p;
+      }
     }
   }
 }
@@ -2559,7 +2561,12 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
  *   The variables array from the preprocess functions.
  */
 function mcneese_prepare_maintenance_mode_variables(&$cf, &$vars) {
-  $cf['is_data']['maintenance']['access'] = user_access('access site in maintenance mode');
+  if (function_exists('user_access')) {
+    $cf['is_data']['maintenance']['access'] = user_access('access site in maintenance mode');
+  }
+  else {
+    $cf['is_data']['maintenance']['access'] = FALSE;
+  }
 
   $date_value = strtotime('+1800 seconds', $cf['request']);
   $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
