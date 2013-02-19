@@ -529,3 +529,43 @@
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
 }
+
+
+
+/*** Media Browser ***/
+.mcneese.path-media_browser > #mcneese-top,
+.mcneese.path-media_browser > #mcneese-header,
+.mcneese.path-media_browser > #mcneese-page,
+.mcneese.path-media_browser > #mcneese-bottom {
+  width: auto;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+}
+
+.mcneese.path-media_browser > #mcneese-float-left,
+.mcneese.path-media_browser > #mcneese-float-right {
+  display: none;
+}
+
+.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .view-filters,
+.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .view-content,
+.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .item-list {
+  display: block;
+  clear: both;
+}
+
+.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+
+  word-wrap: break-word;
+}
+
+.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:focus,
+.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:active,
+.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:hover {
+  border: none;
+}
