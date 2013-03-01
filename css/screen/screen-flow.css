@@ -173,18 +173,15 @@
 }
 
 #mcneese-header > .header-top > .header-menu-1 {
-  position: absolute;
-  bottom: 0px;
-
   font-size: 12px;
 
-  height: 38px;
-  min-height: 38px;
-  max-height: 38px;
+  height: auto;
+  min-height: 0px;
+  max-height: inherit;
 
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
+  width: auto;
+  min-width: 0px;
+  max-width: inherit;
 
   overflow: hidden;
 }
@@ -249,9 +246,7 @@
 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
   position: absolute;
   right: 0px;
-  bottom: -1px;
-
-  max-height: 38px;
+  bottom: 0px;
 
   overflow: hidden;
 }
@@ -260,6 +255,8 @@
 #mcneese-header > .header-top > .header-menu-2 > .html_tag-nav > .navigation_list > li {
   margin: 0px;
   padding: 0px;
+
+  vertical-align: bottom;
 }
 
 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li > a {
@@ -287,7 +284,6 @@
 #mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > .navigation_list > li > a {
   display: inline-block;
 
-  line-height: 17px;
   text-transform: uppercase;
   letter-spacing: 1px;
 
