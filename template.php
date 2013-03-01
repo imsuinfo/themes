@@ -54,7 +54,6 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
   }
 }
 
-
 /**
  * Implements hook_preprocess_maintenance_page().
  */
@@ -346,6 +345,17 @@ function mcneese_www_force_floating_regions(&$cf, $regions) {
       continue;
     }
   }
+}
+
+/**
+ * Implements hook_preprocess_menu_link().
+ */
+function mcneese_www_preprocess_menu_link(&$vars) {
+  if (!isset($vars['element']['#attributes']['class'])) {
+    $vars['element']['#attributes']['class'] = array();
+  }
+
+  $vars['element']['#attributes']['class'][] = 'menu_link-' . strtolower(drupal_clean_css_identifier($vars['element']['#title'], array(' ' => '-', '_' => '_', '/' => '-', '[' => '-', ']' => '')));
 }
 
 /**
