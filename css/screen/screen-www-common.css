@@ -778,13 +778,10 @@
 
 
 /*** Apply Now Adjustments ***/
-.mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-
-  color: #00477f;
-  background-color: #fad703;
 
   width: 87px;
   min-width: 87px;
@@ -797,30 +794,35 @@
   max-height: 29px;
 }
 
+.mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
+  color: #00477f;
+  background-color: #fad703;
+}
+
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
-  color: #f2f2f2;
   background-color: #00234b;
 }
 
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited {
+.mcneese.is-front.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
+.mcneese.is-front.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited,
+.mcneese.is-front.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
+.mcneese.is-front.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
+.mcneese.is-front.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited,
+.mcneese.is-front.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:visited {
   background-image: url(../../images/background-marble-yellow.png);
 }
 
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus,
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
+.mcneese.is-front.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
+.mcneese.is-front.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
+.mcneese.is-front.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
+.mcneese.is-front.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
+.mcneese.is-front.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
+.mcneese.is-front.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
+.mcneese.is-front.at-sandbox_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus,
+.mcneese.is-front.at-wwwdev_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus,
+.mcneese.is-front.at-wwwdev2_mcneese_edu #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
+  color: #ffffff;
   background-image: none;
 }
