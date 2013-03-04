@@ -37,6 +37,7 @@ function mcneese_preprocess_maintenance_page(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
+  mcneese_preprocess_html($vars);
 
   // there are certain cases where maintenance mode is not detectable but in use.
   // the end result is that some of the variables are not defined, but should be.
@@ -84,6 +85,10 @@ function mcneese_preprocess_maintenance_page(&$vars) {
   if (isset($vars['content'])) {
     $vars['page']['content'] = $vars['content'];
   }
+
+
+  // always show header for maintenance mode pages.
+  $cf['show']['page']['header'] = TRUE;
 }
 
 /**
@@ -1716,6 +1721,7 @@ function mcneese_initialize_variables(&$vars) {
     $cf['data'] = array();
     $cf['data']['page'] = array();
     $cf['data']['html'] = array();
+    $cf['theme'] = array();
 
     $cf['show']['page']['breadcrumb'] = FALSE;
     $cf['data']['page']['breadcrumb'] = array();
@@ -1732,13 +1738,35 @@ function mcneese_initialize_variables(&$vars) {
 
 
     // some defaults we can guess
+    $cf['at']['machine_name'] = '';
+    $cf['at']['human_name'] = '';
+
     $cf['is']['front'] = drupal_is_front_page();
     $cf['is']['html5'] = TRUE;
+    $cf['is']['maintenance'] = FALSE;
+    $cf['is']['emergency'] = FALSE;
+    $cf['is']['logged_in'] = function_exists('user_is_logged_in') ? user_is_logged_in() : FALSE;
+
+    $cf['request'] = time();
 
     $cf['agent']['doctype'] = '<!DOCTYPE html>';
 
     $cf['meta'] = array();
     $cf['meta']['name'] = array();
+
+    if (function_exists('current_path')) {
+      $cf['at']['path'] = current_path();
+    }
+    elseif (isset($_GET['q'])) {
+      $cf['at']['path'] = $_GET['q'];
+    }
+
+    if (function_exists('request_path')) {
+      $cf['at']['alias'] = request_path();
+    }
+    elseif (isset($_GET['q'])) {
+      $cf['at']['alias'] = $_GET['q'];
+    }
   }
 
 
@@ -1788,10 +1816,10 @@ function mcneese_render_page() {
 
 
   // always show header content if any of its child regions are visible
-  if ($cf['show']['page']['header_menu_1']) {
+  if (isset($cf['show']['page']['header_menu_1']) && $cf['show']['page']['header_menu_1']) {
     $cf['show']['page']['header'] = TRUE;
   }
-  elseif ($cf['show']['page']['header_menu_2']) {
+  elseif (isset($cf['show']['page']['header_menu_2']) && $cf['show']['page']['header_menu_2']) {
     $cf['show']['page']['header'] = TRUE;
   }
 

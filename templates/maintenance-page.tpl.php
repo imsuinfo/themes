@@ -22,31 +22,109 @@
   <!--(end-head)-->
 </head>
 
-<body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
-<?php if (!$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
-  <!--(begin-skipnav)-->
-  <a id="mcneese-skip_nav" href="#mcneese-page-main"><?php print t("Skip to main content"); ?></a>
-  <!--(end-skipnav)-->
+<?php if (function_exists('menu_local_actions')) { ?>
+  <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
+  <?php if (isset($cf['is']['overlay']) && !$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
+    <!--(begin-skipnav)-->
+    <a id="mcneese-skip_nav" href="#mcneese-page-main"><?php print t("Skip to main content"); ?></a>
+    <!--(end-skipnav)-->
+  <?php } ?>
+
+  <!--(begin-body)-->
+  <div id="mcneese-top">
+    <!--(begin-page_top)-->
+    <?php if (isset($page_top)) print($page_top . "\n"); ?>
+    <!--(end-page_top)-->
+  </div>
+
+  <div id="mcneese-page" >
+    <!--(begin-page)-->
+    <?php
+      if (isset($cf['is_data']['maintenance']['vars'])) {
+        print(theme('page', $cf['is_data']['maintenance']['vars']) . "\n");
+      }
+    ?>
+    <!--(end-page)-->
+  </div>
+
+  <div id="mcneese-bottom">
+    <!--(begin-page_bottom)-->
+    <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
+    <!--(end-page_bottom)-->
+  </div>
+  <!--(end-body)-->
+  </body>
+<?php } else { ?>
+  <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?> is-html5 is-flex_width" <?php print($attributes);?>>
+    <div id="mcneese-skip_nav">
+      <!--(begin-skipnav)-->
+      <a href="#mcneese-page-main">Skip to main content</a>
+      <!--(end-skipnav)-->
+    </div>
+
+    <!--(begin-body)-->
+    <div id="mcneese-top">
+      <!--(begin-page_top)-->
+      <!--(end-page_top)-->
+    </div>
+
+    <div id="mcneese-page">
+      <!--(begin-page)-->
+
+      <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
+        <!--(begin-page-header)-->
+        <div class="header-section header-top">
+          <a href="/" class="site-logo" title="Sandbox of McNeese State University" role="image"><?php print($head_title); ?></a>
+        </div>
+        <div class="header-separator"></div>
+        <div class="header-section header-bottom"></div>
+        <!--(end-page-header)-->
+      </aside>
+
+      <?php if (!empty($messages)) { ?>
+        <aside title="Messages" class="relative html_tag-aside expanded" id="mcneese-messages">
+          <!--(begin-page-messages)-->
+          <?php print($messages); ?>
+          <!--(end-page-messages)-->
+        </aside>
+      <?php } ?>
+
+      <div id="mcneese-float-right" class="expanded fixed"></div>
+      <div id="mcneese-page-content" class="full" role="main">
+        <header class="page-title html_tag-header ">
+          <hgroup class="html_tag-hgroup ">
+            <!--(begin-page-title)-->
+            <h1 class="page-title html_tag-heading">Failed to Connect to the Database</h1>
+            <!--(end-page-title)-->
+          </hgroup>
+        </header>
+
+        <div id="mcneese-float-left" class="expanded fixed"></div>
+
+        <div id="mcneese-page-main" role="main">
+          <!--(begin-page-main)-->
+          The website is unable to connect to the database.<br>
+          Please contact the site administrator.
+          <!--(end-page-main)-->
+        </div>
+      </div>
+
+      <aside id="mcneese-footer" class="expanded noscript html_tag-aside ">
+        <!--(begin-page-footer)-->
+        <!--(end-page-footer)-->
+      </aside>
+      <!--(end-page)-->
+    </div>
+    <aside id="mcneese-footer" class="expanded noscript html_tag-aside ">
+    <!--(begin-page-footer)-->
+    <!--(end-page-footer)-->
+    </aside>
+
+    <div id="mcneese-bottom">
+      <!--(begin-page_bottom)-->
+      <!--(end-page_bottom)-->
+    </div>
+    <!--(end-body)-->
+  </body>
 <?php } ?>
-
-<!--(begin-body)-->
-<div id="mcneese-top">
-  <!--(begin-page_top)-->
-  <?php if (isset($page_top)) print($page_top . "\n"); ?>
-  <!--(end-page_top)-->
-</div>
-
-<div id="mcneese-page" >
-  <!--(begin-page)-->
-  <?php print(theme('page', $cf['is_data']['maintenance']['vars']) . "\n"); ?>
-  <!--(end-page)-->
-</div>
-
-<div id="mcneese-bottom">
-  <!--(begin-page_bottom)-->
-  <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
-  <!--(end-page_bottom)-->
-</div>
-<!--(end-body)-->
-</body>
 </html>
