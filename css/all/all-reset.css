@@ -61,8 +61,8 @@ ul ul, ol ol    { margin-top: 0px; margin-bottom: 0px; }
 u, ins          { text-decoration: underline; }
 br:before       { content: ""; white-space: pre-line; }
 center          { text-align: center; }
-:link, :visited { text-decoration: underline; }
-:focus          { outline: thin dotted invert; }
+a:link, a:visited { text-decoration: underline; }
+a:focus          { outline: thin dotted invert; }
 
 /* Begin bidirectionality settings (do not change) */
 BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override; }
