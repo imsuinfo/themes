@@ -2551,7 +2551,7 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       }
 
       print('<!--(end-page-title)-->' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_close']) . "\n");
     }
   }
