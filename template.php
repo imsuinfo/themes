@@ -149,6 +149,16 @@ function mcneese_www_preprocess_page(&$vars) {
     }
   }
 
+  // tweak features based on user-agent
+  if ($cf['agent']['machine_name'] == 'ie') {
+    if ($cf['agent']['major_version'] < 8) {
+      $custom_css = array();
+      $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
+      $custom_css['data'] = $cf['subtheme']['path'] . '/css/workaround/ie.css';
+      drupal_add_css($custom_css['data'], $custom_css['options']);
+    }
+  }
+
 
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
