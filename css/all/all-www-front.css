@@ -617,12 +617,10 @@
 }
 
 .mcneese.is-legacy #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
-  width: 100%;
+  float: right;
 }
 
-.mcneese.is-legacy #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list .menu-link-name-menu-primary-navigation {
-  float: right;
-
+.mcneese.is-legacy #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu-link-name-menu-primary-navigation {
   margin: 0px 2px;
 }
 
@@ -632,7 +630,7 @@
   bottom: 0px;
 }
 
-.mcneese.is-legacy #mcneese-header .header-bottom .header-menu-2 .html_tag-nav .navigation_list .menu-link-name-menu-secondary-navigation {
+.mcneese.is-legacy #mcneese-header > .header-bottom > .header-menu-2 > .html_tag-nav > .navigation_list .menu-link-name-menu-secondary-navigation {
   float: left;
 }
 
