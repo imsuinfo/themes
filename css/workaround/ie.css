@@ -12,14 +12,6 @@
 
 
 
-/*** Primary & Seconday Menus - Compatibility Mode and other IE 7 fixes ***/
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-section > .header-menu-1 > .html_tag-nav {
-  top: 72px;
-  position: absolute;
-}
-
-
-
 /*** Search box issues ***/
 .mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit {
   color: #ffffff;
@@ -185,14 +177,20 @@
 
 
 /*** Fix primary navigation issues ***/
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top {
+  overflow: hidden;
+}
+
 .mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1,
 .mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 {
   left: 0px;
 }
 
 .mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
-  position: relative;
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-section > .header-menu-1 > .html_tag-nav {
+  top: 72px;
+  position: absolute;
 }
 
 .mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list,
