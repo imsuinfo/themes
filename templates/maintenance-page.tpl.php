@@ -55,7 +55,7 @@
 
     <div class="columns columns-right">
       <div class="column column-1">
-        <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3px" height="169px">
+        <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
       </div>
 
       <div class="column column-2">
@@ -171,7 +171,7 @@
 
       <div class="columns columns-right">
         <div class="column column-1">
-          <img src="/sites/all/themes/mcneese_www/images/footer-columns-right.png" alt="" width="3px" height="169px">
+          <img src="/sites/all/themes/mcneese_www/images/footer-columns-right.png" alt="" width="3" height="169">
         </div>
 
         <div class="column column-2">

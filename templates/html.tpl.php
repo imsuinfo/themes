@@ -52,7 +52,7 @@
 
   <div class="columns columns-right">
     <div class="column column-1">
-      <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3px" height="169px">
+      <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
     </div>
 
     <div class="column column-2">
