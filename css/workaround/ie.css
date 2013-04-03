@@ -1,217 +1,80 @@
-/*** Primary & Seconday Menus - IE7 and earlier ***/
-.mcneese.agent-name-ie.is-legacy.is-unsupported #mcneese-header > .header-section > .header-menu > .html_tag-nav > li {
-  display: inline;
-}
-
-.mcneese.agent-name-ie.is-legacy.is-unsupported #mcneese-header > .header-section > .header-menu > .html_tag-nav > li > a {
-  text-align: center;
-
-  margin-left: 2px;
-  margin-right: 2px;
-}
 
 
 
 /*** Search box issues ***/
-.mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit {
+.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit,
+.mcneese.agent-name-ie.agent-major_version-8 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit {
   color: #ffffff;
 
-  width: 20px !important;
-  min-width: 20px !important;
-  max-width: 20px !important;
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
 
-  height: 20px !important;
-  min-height: 20px !important;
-  max-height: 20px !important;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
 }
 
-.mcneese.agent-name-ie .search_block_form > .form-wrapper-inner > .search_block_form-section> .form-actions {
-  margin-left: 6px;
+.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item-search-block-form,
+.mcneese.agent-name-ie.agent-major_version-8 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item-search-block-form {
+  width: 195px;
+  min-width: 195px;
+  max-width: 195px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-7 #search-block-form,
+.mcneese.agent-name-ie.agent-major_version-8 #search-block-form {
+  width: 225px;
+  max-width: 225px;
+  right: 12px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item,
+.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions {
+  float: left;
 }
 
 
 
-/*** Fix breadcrumb alignment issues ***/
-.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-trail,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-node_id,
-.mcneese.agent-name-ie #mcneese-breadcrumb > .navigation_list > .crumb-user_id {
-  vertical-align: top;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-breadcrumb .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-breadcrumb > .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-8 #mcneese-breadcrumb > .navigation_list {
+/*** Primary Link issues ***/
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list,
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list {
   display: block;
 }
 
-
-
-/*** Fix float-right issues with ie<=8 ***/
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-0,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-0,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-0 {
-  top: 10px;
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list > li,
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list > li {
+  padding-left: 1px;
+  padding-right: 1px;
 }
 
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-0 {
-  top: 35px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-0 {
-  top: 60px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-1,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-1,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-1 {
-  top: 52px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-1 {
-  top: 77px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-1 {
-  top: 102px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-2,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-2,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-2 {
-  top: 94px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-2 {
-  top: 119px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-2 {
-  top: 144px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-3,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-3,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-3 {
-  top: 136px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-3 {
-  top: 161px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-3 {
-  top: 186px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-4,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-4,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-4 {
-  top: 178px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-4 {
-  top: 203px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-4 {
-  top: 228px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-5,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-5,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-5 {
-  top: 220px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-5 {
-  top: 245px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-5 {
-  top: 270px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-6,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-6,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-6 {
-  top: 262px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-6 {
-  top: 287px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-6 {
-  top: 312px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-7,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-7,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-7 {
-  top: 304px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-7 {
-  top: 329px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-7 {
-  top: 354px;
-}
-
-.mcneese.agent-name-ie #mcneese-float-right > .fixed.float_right-8,
-.mcneese.agent-name-ie.is-toolbar-relative #mcneese-float-right > .fixed.float_right-8,
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed.float_right-8 {
-  top: 346px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-collapsed #mcneese-float-right > .fixed.float_right-8 {
-  top: 371px;
-}
-
-.mcneese.agent-name-ie.is-toolbar-fixed.is-toolbar-expanded.is-toolbar-shortcuts-expanded #mcneese-float-right > .fixed.float_right-8 {
-  top: 396px;
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-section > .header-menu > .html_tag-nav > .html_tag-list > li {
+  float: left;
 }
 
 
 
-/*** Fix primary navigation issues ***/
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top {
-  overflow: hidden;
+/*** Breadcrumb issues ***/
+.mcneese.agent-name-ie #mcneese-breadcrumb > .html_tag-list > .crumb {
+  display: inline;
 }
 
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 {
-  left: 0px;
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb-trail,
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb,
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb > a {
+  float: left;
 }
 
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-section > .header-menu-1 > .html_tag-nav {
-  top: 72px;
-  position: absolute;
+
+
+/*** Page Side and Workbench Menu issues ***/
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side.fixed {
+  overflow-x: hidden;
 }
 
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list {
-  position: relative;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list li,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li {
-  position: relative;
-  bottom: -11px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav,
-.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
-  bottom: -2px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-top .header-menu-1 .html_tag-nav .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list {
-  vertical-align: top;
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu .navigation_list,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu .navigation_list > li {
+  list-style-type: none;
+  list-style-image: none;
 }

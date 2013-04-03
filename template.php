@@ -1394,7 +1394,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
     $cf['is']['flex_width'] = TRUE;
   }
 
-  foreach (array('html5', 'legacy', 'unsupported', 'in_ie_compatibility_mode') as $key => $value) {
+  foreach (array('html5', 'legacy', 'unsupported', 'in_ie_compatibility_mode', 'in_ie_normal_mode') as $key) {
     $cf['is'][$key] = FALSE;
     $cf['is_data'][$key] = array();
   }
@@ -1432,6 +1432,12 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
     case 'ie':
       $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9';
+      $cf['is']['in_ie_normal_mode'] = TRUE;
+
+      $custom_css = array();
+      $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
+      $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie.css';
+      drupal_add_css($custom_css['data'], $custom_css['options']);
 
       if ($cf['agent']['major_version'] <= 8) {
         $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9; IE=8';
@@ -1439,18 +1445,14 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
         drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
 
         if ($cf['agent']['major_version'] <= 8) {
-          $custom_css = array();
-          $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
-          $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie.css';
-          drupal_add_css($custom_css['data'], $custom_css['options']);
-
           if ($cf['agent']['major_version'] == 7) {
             if (preg_match("@; Trident/@", $cf['agent']['raw']) > 0) {
               $cf['is']['in_ie_compatibility_mode'] = TRUE;
+              $cf['is']['in_ie_normal_mode'] = FALSE;
             }
           }
 
-          if ($cf['agent']['major_version'] <= 7) {
+          if ($cf['agent']['major_version'] <= 7 && !$cf['is']['in_ie_compatibility_mode']) {
             $cf['is']['unsupported'] = TRUE;
             $cf['is']['html5'] = FALSE;
             $cf['is']['legacy'] = TRUE;
