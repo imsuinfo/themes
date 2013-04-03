@@ -1,0 +1,8 @@
+
+
+
+/*** Search Box fixes ***/
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > .search_form-top_box_links-bar,
+.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > li {
+  float: left;
+}
