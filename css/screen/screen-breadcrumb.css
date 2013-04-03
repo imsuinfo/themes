@@ -242,6 +242,10 @@
   padding: 4px 8px;
 }
 
+#mcneese-breadcrumb.fixed > .navigation_list .crumb-trail {
+  display: none;
+}
+
 #mcneese-breadcrumb.fixed > .html_tag-header:hover,
 #mcneese-breadcrumb.fixed > .html_tag-header:active,
 #mcneese-breadcrumb.fixed > .html_tag-header:focus {
@@ -261,7 +265,7 @@
   color: #ffffff;
 }
 
-.mcneese.is-legacy #mcneese-breadcrumb .navigation_list .crumb-trail,
-.mcneese.is-legacy #mcneese-breadcrumb .navigation_list .crumb {
+.mcneese.is-legacy #mcneese-breadcrumb.relative .navigation_list .crumb-trail,
+.mcneese.is-legacy #mcneese-breadcrumb.relative .navigation_list .crumb {
   display: inline;
 }
