@@ -17,8 +17,6 @@
 
   margin: 0px;
   padding: 0px;
-
-  border-bottom: 1px solid #00335b;
 }
 
 #mcneese-tabs.relative > .html_tag-header {
@@ -121,6 +119,8 @@
 #mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a:focus {
   color: #f7ff00;
   background-color: #2970a0;
+
+  border-bottom: 0px;
 }
 
 #mcneese-tabs.relative > .navigation_list > .tab-command-1 > a {
