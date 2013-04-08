@@ -6,3 +6,39 @@
 .mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > li {
   float: left;
 }
+
+
+
+/*** Front Page fixes ***/
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-spotlight {
+  position: absolute;
+
+  box-sizing: content-box;
+
+  width: 396px;
+  min-width: 396px;
+  max-width: 396px;
+
+  size: 10px;
+
+  top: 0px;
+  right: 0px;
+
+}
+
+.mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-spotlight > #front_page_columns-column_title-spotlight {
+  top: -45px;
+  left: 0px;
+
+  box-sizing: content-box;
+
+  width: 396px;
+  min-width: 396px;
+  max-width: 396px;
+
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+
+  padding-bottom: 0px;
+}
