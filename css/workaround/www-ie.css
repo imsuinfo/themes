@@ -2,6 +2,8 @@
 
 
 /*** Search Box fixes ***/
+.mcneese.agent-name-ie.agent-major_version-6.is-in_ie_normal_mode #mcneese-header .header-top .block-id-1 .navigation_list .search_form-top_box_links-bar,
+.mcneese.agent-name-ie.agent-major_version-6.is-in_ie_normal_mode #mcneese-header .header-top .block-id-1 .navigation_list li,
 .mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > .search_form-top_box_links-bar,
 .mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > li {
   float: left;
@@ -10,6 +12,8 @@
 
 
 /*** Front Page fixes ***/
+.mcneese.agent-name-ie.agent-major_version-6 #front_page_columns-spotlight,
+.mcneese.agent-name-ie.agent-major_version-7 #front_page_columns-spotlight,
 .mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-spotlight {
   position: absolute;
 
@@ -26,6 +30,8 @@
 
 }
 
+.mcneese.agent-name-ie.agent-major_version-6 #front_page_columns-spotlight #front_page_columns-column_title-spotlight,
+.mcneese.agent-name-ie.agent-major_version-7 #front_page_columns-spotlight > #front_page_columns-column_title-spotlight,
 .mcneese.agent-name-ie.agent-major_version-8 #front_page_columns-spotlight > #front_page_columns-column_title-spotlight {
   top: -45px;
   left: 0px;
