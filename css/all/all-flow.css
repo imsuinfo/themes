@@ -112,15 +112,20 @@
   border: 1px solid #bebfb9;
 }
 
-.mcneese table > thead > tr > th > a,
-.mcneese table > thead > tr > th > a:visited {
+.mcneese table > thead > tr > th > a {
   display: block;
   position: relative;
 
-  color: #fff703;
-  text-decoration: none;
+  word-wrap: break-word;
+  word-break: break-all;
 
   padding: 0px;
+}
+
+.mcneese table > thead > tr > th > a,
+.mcneese table > thead > tr > th > a:visited {
+  color: #fff703;
+  text-decoration: none;
 }
 
 .mcneese table > thead > tr > th > a:hover,
@@ -187,6 +192,16 @@
   background-color: #ffffcc;
 
   border-color: #eeeebb;
+}
+
+.mcneese table > tbody > tr > td {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.mcneese table > tbody > tr > td > a {
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .mcneese table > tbody > tr > td > .indentation,
