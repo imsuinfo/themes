@@ -73,6 +73,13 @@
 
 
 
+/*** Workbench Media ***/
+.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > td,
+.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > td > a {
+  word-break: break-all;
+}
+
+
 /*** Ckeditor Library ***/
 .mcneese .cke_dialog {
   background: none repeat scroll 0px 0px transparent;
