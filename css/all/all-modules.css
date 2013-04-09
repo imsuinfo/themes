@@ -74,8 +74,9 @@
 
 
 /*** Workbench Media ***/
-.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > td,
-.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > td > a {
+.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > .views-field-uri,
+.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > .views-field-uri-1,
+.mcneese .view-workbench-files > .view-content > .views-table > tbody > tr > .views-field-filename > a {
   word-break: break-all;
 }
 
