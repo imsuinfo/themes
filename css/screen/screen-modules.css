@@ -278,54 +278,12 @@
   text-decoration: underline;
 }
 
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.monthview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:visited,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.dayview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:visited,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.weekview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:visited {
-  color: #ffffff;
-}
-
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.monthview a:active,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.dayview a:active,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.multi-day div.weekview a:active {
-  color: #ffee00;
-}
-
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.monthview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.monthview a:visited,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.dayview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.dayview a:visited,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.weekview a,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.weekview a:visited {
-  color: #ffffff;
-}
-
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.monthview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.monthview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.monthview a:active,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.dayview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.dayview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.dayview a:active,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.weekview a:focus,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.weekview a:hover,
-#mcneese-page div.calendar-standard div.calendar-calendar td.single-day div.weekview a:active {
-  color: #ffee00;
-}
-
-#mcneese-page div.calendar-standard > div.view-header > div.date-nav-wrapper > div.date-nav {
+#mcneese-page .view div.calendar-standard > div.view-header > div.date-nav-wrapper > div.date-nav {
   padding-bottom: 4px;
 }
 
-#mcneese-page .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
-#mcneese-page .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
   display: block;
   position: relative;
 
@@ -334,12 +292,12 @@
   padding: 0px 2px;
 }
 
-#mcneese-page .calendar-calendar .month-view .full td.multi-day div.monthview,
-#mcneese-page .calendar-calendar .week-view .full td.multi-day div.weekview,
-#mcneese-page .calendar-calendar .day-view .full td.multi-day div.dayview,
-#mcneese-page .calendar-calendar .month-view .full td.single-day div.monthview,
-#mcneese-page .calendar-calendar .week-view .full td.single-day div.weekview,
-#mcneese-page .calendar-calendar .day-view .full td.single-day div.dayview {
+#mcneese-page .view .calendar-calendar .month-view .full td.multi-day div.monthview,
+#mcneese-page .view .calendar-calendar .week-view .full td.multi-day div.weekview,
+#mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview,
+#mcneese-page .view .calendar-calendar .month-view .full td.single-day div.monthview,
+#mcneese-page .view .calendar-calendar .week-view .full td.single-day div.weekview,
+#mcneese-page .view .calendar-calendar .day-view .full td.single-day div.dayview {
   height: auto;
   line-height: 1.7em;
   margin: 1px 0px;
@@ -348,123 +306,71 @@
   text-align: center;
 }
 
-#mcneese-page .calendar-calendar .day-view .full td .inner div.calendar div,
-#mcneese-page .calendar-calendar .day-view .full td .inner div.calendar div a {
+#mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div,
+#mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div a {
   margin: 0px;
 }
 
-#mcneese-page .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
+#mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
   display: none;
 }
 
-#mcneese-page .calendar-calendar td .calendar div.calendar {
+#mcneese-page .view .calendar-calendar td .calendar div.calendar {
   padding: 0px;
 }
 
-#mcneese-page .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
-#mcneese-page .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
-#mcneese-page .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
-#mcneese-page .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
   padding: 0px;
 }
 
-#mcneese-page .calendar-calendar td {
+#mcneese-page .view .calendar-calendar td {
   color: #000000;
 }
 
-#mcneese-page .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
-#mcneese-page .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
   padding: 0px;
 }
 
-#mcneese-page .calendar > .contents > a,
-#mcneese-page .calendar > .contents > .views-field > .field-content > a {
+#mcneese-page .view .single-day > .inner > .item,
+#mcneese-page .view .multi-day > .inner > .item,
+#mcneese-page .view .calendar > .inner > .item {
+  margin: 6px 2px;
+}
+
+#mcneese-page .view .calendar > .contents > a,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a {
   display: block;
 
-  padding: 3px;
-}
+  font-size: 12px;
+  font-weight: normal;
 
-#mcneese-page .calendar > .contents > a,
-#mcneese-page .calendar > .contents > a:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > a,
-#mcneese-page .calendar > .contents > .views-field > .field-content > a:visited {
+  text-decoration: none;
+
   background-color: #6384b8;
+
+  padding: 3px 4px;
 }
 
-#mcneese-page .calendar > .contents > .event-255,
-#mcneese-page .calendar > .contents > .event-249,
-#mcneese-page .calendar > .contents > .event-252,
-#mcneese-page .calendar > .contents > .event-255:visited,
-#mcneese-page .calendar > .contents > .event-249:visited,
-#mcneese-page .calendar > .contents > .event-252:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252:visited {
-  background-color: #e6e993;
+#mcneese-page .view .calendar > .contents > a,
+#mcneese-page .view .calendar > .contents > a:visited,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:visited {
+  color: #ffffff;
 }
 
-#mcneese-page .calendar > .contents > .event-255,
-#mcneese-page .calendar > .contents > .event-249,
-#mcneese-page .calendar > .contents > .event-252,
-#mcneese-page .calendar > .contents > .event-255:visited,
-#mcneese-page .calendar > .contents > .event-249:visited,
-#mcneese-page .calendar > .contents > .event-252:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252:visited {
-  color: #002080;
-}
+#mcneese-page .view .calendar > .contents > a:focus,
+#mcneese-page .view .calendar > .contents > a:active,
+#mcneese-page .view .calendar > .contents > a:hover,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:focus,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:active,
+#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:hover {
+  color: #ffee00;
 
-#mcneese-page .calendar > .contents > .event-255:focus,
-#mcneese-page .calendar > .contents > .event-249:focus,
-#mcneese-page .calendar > .contents > .event-252:focus,
-#mcneese-page .calendar > .contents > .event-255:active,
-#mcneese-page .calendar > .contents > .event-249:active,
-#mcneese-page .calendar > .contents > .event-252:active,
-#mcneese-page .calendar > .contents > .event-255:hover,
-#mcneese-page .calendar > .contents > .event-249:hover,
-#mcneese-page .calendar > .contents > .event-252:hover,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255:focus,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249:focus,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252:focus,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255:active,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249:active,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252:active,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-255:hover,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-249:hover,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-252:hover {
-  color: #5f0000;
-}
-
-#mcneese-page .calendar > .contents > .event-256,
-#mcneese-page .calendar > .contents > .event-250,
-#mcneese-page .calendar > .contents > .event-256:visited,
-#mcneese-page .calendar > .contents > .event-250:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-256,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-250,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-256:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-250:visited {
-  background-color: #9c4f4b;
-}
-
-#mcneese-page .calendar > .contents > .event-292,
-#mcneese-page .calendar > .contents > .event-292:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-292,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-292:visited {
-  background-color: #418e38;
-}
-
-#mcneese-page .calendar > .contents > .event-399,
-#mcneese-page .calendar > .contents > .event-399:visited,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-399,
-#mcneese-page .calendar > .contents > .views-field > .field-content > .event-399:visited {
-  background-color: #975700;
+  text-decoration: underline;
 }
 
 
