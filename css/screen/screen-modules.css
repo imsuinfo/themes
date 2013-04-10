@@ -462,16 +462,20 @@
   clear: both;
 }
 
-.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li {
+.mcneese #media-browser-library-list > li {
   display: inline-block;
   float: none;
-  vertical-align: middle;
+  vertical-align: bottom;
 
   word-wrap: break-word;
 }
 
-.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:focus,
-.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:active,
-.mcneese.path-media_browser #media-browser-tabset #media-browser-library-list > li a:hover {
+.mcneese #media-browser-library-list > li > .media-item + .form-item {
+  position: inherit;
+}
+
+.mcneese #media-browser-library-list > li a:focus,
+.mcneese #media-browser-library-list > li a:active,
+.mcneese #media-browser-library-list > li a:hover {
   border: none;
 }
