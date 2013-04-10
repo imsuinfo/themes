@@ -211,6 +211,112 @@
 }
 
 
+
+/*** Calendar Specific ***/
+#mcneese-page .view .calendar > .contents > .event-255,
+#mcneese-page .view .calendar > .contents > .event-249,
+#mcneese-page .view .calendar > .contents > .event-252,
+#mcneese-page .view .calendar > .contents > .event-255:visited,
+#mcneese-page .view .calendar > .contents > .event-249:visited,
+#mcneese-page .view .calendar > .contents > .event-252:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252:visited {
+  background-color: #e6e993 !important;
+}
+
+#mcneese-page .view .calendar > .contents > .event-255,
+#mcneese-page .view .calendar > .contents > .event-249,
+#mcneese-page .view .calendar > .contents > .event-252,
+#mcneese-page .view .calendar > .contents > .event-255:visited,
+#mcneese-page .view .calendar > .contents > .event-249:visited,
+#mcneese-page .view .calendar > .contents > .event-252:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252:visited {
+  color: #002080;
+}
+
+#mcneese-page .view .calendar > .contents > .event-255:focus,
+#mcneese-page .view .calendar > .contents > .event-249:focus,
+#mcneese-page .view .calendar > .contents > .event-252:focus,
+#mcneese-page .view .calendar > .contents > .event-255:active,
+#mcneese-page .view .calendar > .contents > .event-249:active,
+#mcneese-page .view .calendar > .contents > .event-252:active,
+#mcneese-page .view .calendar > .contents > .event-255:hover,
+#mcneese-page .view .calendar > .contents > .event-249:hover,
+#mcneese-page .view .calendar > .contents > .event-252:hover,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255:focus,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249:focus,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252:focus,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255:active,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249:active,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252:active,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-255:hover,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-249:hover,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-252:hover {
+  color: #5f0000;
+}
+
+#mcneese-page .view .calendar > .contents > .event-256,
+#mcneese-page .view .calendar > .contents > .event-250,
+#mcneese-page .view .calendar > .contents > .event-256:visited,
+#mcneese-page .view .calendar > .contents > .event-250:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-256,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-250,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-256:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-250:visited {
+  background-color: #9c4f4b !important;
+}
+
+#mcneese-page .view .calendar > .contents > .event-292,
+#mcneese-page .view .calendar > .contents > .event-292:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-292,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-292:visited {
+  background-color: #3d864d !important;
+}
+
+#mcneese-page .view .calendar > .contents > .event-399,
+#mcneese-page .view .calendar > .contents > .event-399:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-399,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-399:visited {
+  background-color: #975700 !important;
+}
+
+#mcneese-page .view .calendar > .contents > .event-251,
+#mcneese-page .view .calendar > .contents > .event-251:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-251,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-251:visited,
+#mcneese-page .view .calendar > .contents > .event-257,
+#mcneese-page .view .calendar > .contents > .event-257:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-257,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-257:visited,
+#mcneese-page .view .calendar > .contents > .event-258,
+#mcneese-page .view .calendar > .contents > .event-258:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-258,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-258:visited {
+  background-color: #7b4880 !important;
+}
+
+#mcneese-page .view .calendar > .contents > .event-253,
+#mcneese-page .view .calendar > .contents > .event-253:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-253,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-253:visited,
+#mcneese-page .view .calendar > .contents > .event-259,
+#mcneese-page .view .calendar > .contents > .event-259:visited,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-259,
+#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-259:visited {
+  background-color: #7b4880 !important;
+}
+
+
+
 /*** wwwdev.mcneese.edu-specific ***/
 .mcneese.at-wwwdev_mcneese_edu,
 .mcneese.at-wwwdev2_mcneese_edu,
