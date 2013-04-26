@@ -70,6 +70,10 @@
   background-color: #dadada;
 }
 
+#mcneese-action_links.fixed.expanded {
+  left: 40px;
+}
+
 #mcneese-action_links.fixed > .navigation_list,
 #mcneese-action_links.fixed > .navigation_list > li > .navigation_list {
   display: inline;

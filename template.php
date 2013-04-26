@@ -2489,6 +2489,8 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
 
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
         print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+        print('<div class="side_panel-simulated_heading">Side Panel</div>' . "\n");
+
         print('<!--(begin-page-' . $target . ')-->' . "\n");
 
         if ($cf['show']['page']['menus']) {

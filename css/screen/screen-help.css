@@ -50,6 +50,10 @@
   border: 1px ridge #cc5384;
 }
 
+#mcneese-help.fixed.expanded {
+  right: 40px;
+}
+
 
 
 /*** Help Region - Relative ***/

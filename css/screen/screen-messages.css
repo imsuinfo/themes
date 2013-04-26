@@ -47,6 +47,10 @@
   border: 1px ridge #5395cc;
 }
 
+#mcneese-messages.fixed.expanded {
+  right: 40px;
+}
+
 
 
 /*** Messages Region - Relative ***/

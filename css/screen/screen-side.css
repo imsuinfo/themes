@@ -32,7 +32,7 @@
 
 
 /*** Page Side Region - Fixed ***/
-#mcneese-page-side.fixed.collapsed {
+#mcneese-page-side.fixed {
   background-image: url(../../images/side.png);
   background-color: #dadada;
 }
@@ -42,7 +42,6 @@
 #mcneese-page-side.fixed.collapsed:active,
 #mcneese-page-side.fixed.collapsed:focus {
   background-color: #ffffff;
-  background-image: none;
 
   padding: 5px 10px;
   border: 1px ridge #504b2f;
@@ -56,6 +55,34 @@
   max-width: 200px;
 
   overflow: auto;
+}
+
+#mcneese-page-side.fixed.expanded {
+  left: 40px;
+}
+
+#mcneese-page-side.fixed.collapsed > .side_panel-simulated_heading {
+  display: none;
+}
+
+#mcneese-page-side.fixed.expanded > .side_panel-simulated_heading,
+#mcneese-page-side.fixed.collapsed:hover > .side_panel-simulated_heading,
+#mcneese-page-side.fixed.collapsed:active > .side_panel-simulated_heading,
+#mcneese-page-side.fixed.collapsed:focus > .side_panel-simulated_heading {
+  display: block;
+
+  font-size: 18px;
+  line-height: 32px;
+
+  min-height: 32px;
+
+  text-align: left;
+  text-justify: left;
+  text-transform: none;
+
+  font-weight: bold;
+
+  margin: 0px 0px 0px 32px;
 }
 
 

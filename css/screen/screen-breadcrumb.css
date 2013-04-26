@@ -154,6 +154,10 @@
   display: block;
 }
 
+#mcneese-breadcrumb.fixed.expanded {
+  left: 40px;
+}
+
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb-user_id,
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb-node_id,
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a {

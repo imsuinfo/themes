@@ -698,6 +698,10 @@
   resize: both;
 }
 
+#mcneese-float-right > .fixed.expanded {
+  right: 40px;
+}
+
 .mcneese #mcneese-float-right > .fixed:nth-child(1),
 .mcneese.is-toolbar-relative #mcneese-float-right > .fixed:nth-child(1),
 .mcneese.is-toolbar-fixed.is-toolbar-collapsed #mcneese-float-right > .fixed:nth-child(1) {

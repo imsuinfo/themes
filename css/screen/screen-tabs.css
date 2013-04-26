@@ -229,6 +229,10 @@
   display: block;
 }
 
+#mcneese-tabs.fixed.expanded {
+  left: 40px;
+}
+
 #mcneese-tabs.fixed > .navigation_list > .tab > a,
 #mcneese-tabs.fixed > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   display: block;

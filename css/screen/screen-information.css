@@ -50,6 +50,10 @@
   border: 1px ridge #504b2f;
 }
 
+#mcneese-information.fixed.expanded {
+  right: 40px;
+}
+
 
 
 /*** Information Region - Relative ***/
