@@ -35,16 +35,13 @@
 /*** Page Document Outline Region ***/
 #mcneese-page-document-outline > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 32px;
+
+  min-height: 32px;
 
   text-align: left;
   text-justify: left;
   text-transform: none;
-}
-
-#mcneese-page-document-outline > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
-  line-height: 32px;
-  min-height: 32px;
 
   margin: 0px 0px 0px 32px;
 }
@@ -79,6 +76,10 @@
   max-width: 200px;
 
   overflow: auto;
+}
+
+#mcneese-page-document-outline.fixed.expanded {
+  left: 40px;
 }
 
 

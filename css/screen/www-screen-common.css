@@ -617,7 +617,7 @@
 .mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed:active,
 .mcneese.at-wwwdev2 #mcneese-page-side.fixed.collapsed:focus {
   background-color: #ffffff;
-  background-image: none;
+  background-image: url(../../images/side.png);
 }
 
 .mcneese.at-wwwdev_mcneese_edu #mcneese-page-watermarks-pre,
