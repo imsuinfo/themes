@@ -61,6 +61,7 @@
   left: 40px;
 }
 
+#mcneese-page-side.relative > .side_panel-simulated_heading,
 #mcneese-page-side.fixed.collapsed > .side_panel-simulated_heading {
   display: none;
 }
