@@ -37,16 +37,16 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
         if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
           $cf['is']['webform_type-default'] = FALSE;
           $cf['is']['webform_type-'. $cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid']] = TRUE;
-        }
 
-        if (!$cf['is']['logged_in']) {
-          if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
-            $cf['is']['fixed_width'] = FALSE;
-            $cf['is']['flex_width'] = TRUE;
-          }
-          else if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 594) {
-            $cf['is']['fixed_width'] = FALSE;
-            $cf['is']['flex_width'] = TRUE;
+          if (!$cf['is']['logged_in']) {
+            if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
+              $cf['is']['fixed_width'] = FALSE;
+              $cf['is']['flex_width'] = TRUE;
+            }
+            else if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 594) {
+              $cf['is']['fixed_width'] = FALSE;
+              $cf['is']['flex_width'] = TRUE;
+            }
           }
         }
       }
