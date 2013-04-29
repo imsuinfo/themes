@@ -479,3 +479,27 @@
 .mcneese #media-browser-library-list > li a:hover {
   border: none;
 }
+
+
+
+/*** Webform ***/
+.mcneese form.webform-client-form > .form-wrapper-inner .webform-component-webform_grid > .webform-grid > caption {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
