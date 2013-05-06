@@ -133,3 +133,8 @@
 .mcneese.is-webform_type-592 #mcneese-www-footer {
   display: none;
 }
+
+.mcneese.is-webform_type-592 #mcneese-page-main > .html_tag-section > .webform-client-form > .form-wrapper-inner > .webform-component-fieldset > .fieldset-wrapper > .fieldset-description {
+  background-color: inherit;
+  border: none;
+}
