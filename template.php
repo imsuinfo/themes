@@ -28,22 +28,24 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
 
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+    $node = &$cf['is_data']['node']['object'];
 
     // web form
-    if ($cf['is_data']['node']['object']->type == 'webform') {
+    if ($node->type == 'webform') {
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         $cf['is']['webform_type-default'] = TRUE;
 
-        if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
+        if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
+          $type = &$node->field_webform_theme['und'][0]['tid']; 
           $cf['is']['webform_type-default'] = FALSE;
-          $cf['is']['webform_type-'. $cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid']] = TRUE;
+          $cf['is']['webform_type-'. $type] = TRUE;
 
           if (!$cf['is']['logged_in']) {
-            if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
+            if ($type == 592) {
               $cf['is']['fixed_width'] = FALSE;
               $cf['is']['flex_width'] = TRUE;
             }
-            else if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 594) {
+            else if ($type == 594) {
               $cf['is']['fixed_width'] = FALSE;
               $cf['is']['flex_width'] = TRUE;
             }
@@ -160,9 +162,10 @@ function mcneese_www_preprocess_page(&$vars) {
 
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+    $node = &$cf['is_data']['node']['object'];
 
     // web documents
-    if ($cf['is_data']['node']['object']->type == 'document') {
+    if ($node->type == 'document') {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
@@ -205,32 +208,32 @@ function mcneese_www_preprocess_page(&$vars) {
       $cf['page']['tags']['mcneese_www_document_footer_close'] = array('name' => 'footer', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
-      if (isset($cf['is_data']['node']['object']->field_header['und'][0]['safe_value'])) {
+      if (isset($node->field_header['und'][0]['safe_value'])) {
         $cf['show']['page']['document_header'] = TRUE;
-        $cf['data']['page']['document_header']['markup'] = $cf['is_data']['node']['object']->field_header['und'][0]['safe_value'];
+        $cf['data']['page']['document_header']['markup'] = $node->field_header['und'][0]['safe_value'];
       }
 
-      if (isset($cf['is_data']['node']['object']->field_outline['und'][0]['safe_value'])) {
+      if (isset($node->field_outline['und'][0]['safe_value'])) {
         $cf['show']['page']['document_outline'] = TRUE;
-        $cf['data']['page']['document_outline']['markup'] = $cf['is_data']['node']['object']->field_outline['und'][0]['safe_value'];
+        $cf['data']['page']['document_outline']['markup'] = $node->field_outline['und'][0]['safe_value'];
       }
 
-      if (isset($cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'])) {
+      if (isset($node->field_footer['und'][0]['safe_value'])) {
         $cf['show']['page']['document_footer'] = TRUE;
-        $cf['data']['page']['document_footer']['markup'] = $cf['is_data']['node']['object']->field_footer['und'][0]['safe_value'];
+        $cf['data']['page']['document_footer']['markup'] = $node->field_footer['und'][0]['safe_value'];
       }
     }
 
 
     // web form
-    if ($cf['is_data']['node']['object']->type == 'webform') {
+    if ($node->type == 'webform') {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
-        if (property_exists($cf['is_data']['node']['object'], 'field_webform_theme') && !empty($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'])) {
-          if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 592) {
+        if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
+          if ($node->field_webform_theme['und'][0]['tid'] == 592) {
             mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
           }
-          else if ($cf['is_data']['node']['object']->field_webform_theme['und'][0]['tid'] == 594) {
+          else if ($node->field_webform_theme['und'][0]['tid'] == 594) {
             mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
           }
         }
@@ -256,39 +259,41 @@ function mcneese_www_render_page() {
 
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+    $node = &$cf['is_data']['node']['object'];
+
     // group image
-    if (property_exists($cf['is_data']['node']['object'], 'field_group_image_show') && !empty($cf['is_data']['node']['object']->field_group_image_show)) {
-      if (property_exists($cf['is_data']['node']['object'], 'field_group_image_custom') && !empty($cf['is_data']['node']['object']->field_group_image_custom)) {
+    if (property_exists($node, 'field_group_image_show') && !empty($node->field_group_image_show)) {
+      if (property_exists($node, 'field_group_image_custom') && !empty($node->field_group_image_custom)) {
         $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
         $cf['data']['page']['group_image']['height'] = '200';
 
-        $url = file_create_url($cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
+        $url = file_create_url($node->field_group_image_custom['und'][0]['uri']);
 
         if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
           $cf['data']['page']['group_image']['class'] .= 'group_image-small';
           $cf['data']['page']['group_image']['width'] = '755';
 
-          $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
-          $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
+          $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $node->field_group_image_custom['und'][0]['uri']);
+          $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $node->field_group_image_custom['und'][0]['uri']);
         }
         else {
           $cf['data']['page']['group_image']['class'] .= 'group_image-large';
           $cf['data']['page']['group_image']['width'] = '960';
 
-          $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
-          $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['uri']);
+          $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $node->field_group_image_custom['und'][0]['uri']);
+          $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $node->field_group_image_custom['und'][0]['uri']);
         }
 
         $cf['data']['page']['group_image']['original'] = preg_replace('`^' . $base_url . '`i', '', $url);
-        $cf['data']['page']['group_image']['title'] = $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['title'];
-        $cf['data']['page']['group_image']['alt'] = $cf['is_data']['node']['object']->field_group_image_custom['und'][0]['alt'];
+        $cf['data']['page']['group_image']['title'] = $node->field_group_image_custom['und'][0]['title'];
+        $cf['data']['page']['group_image']['alt'] = $node->field_group_image_custom['und'][0]['alt'];
         $cf['show']['page']['group_image'] = TRUE;
       }
     }
 
 
     // web documents
-    if ($cf['is_data']['node']['object']->type == 'document') {
+    if ($node->type == 'document') {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         $cf['show']['page']['title'] = FALSE;
