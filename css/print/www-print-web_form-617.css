@@ -1,0 +1,23 @@
+
+
+
+/*** Common ***/
+.mcneese.is-webform_type-617 #edit-actions,
+.mcneese.is-webform_type-617 .webform-component-ajax-page > .webform-ajax-page-nav {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 fieldset + fieldset {
+  margin-top: 4px;
+}
+
+.mcneese.is-webform_type-617 .webform-component > .form-select > option[value=""] {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 .webform-component > .webform-datepicker > .webform-calendar {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 .webform-component > .webform-datepicker > .form-type-select > .form-select.day {
+}

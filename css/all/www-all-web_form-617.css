@@ -1,0 +1,78 @@
+
+
+
+/*** Common ***/
+.mcneese.is-webform_type-617 #mcneese-header {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 #mcneese-www-footer {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 #mcneese-page {
+  min-height: 0px;
+
+  border-radius: 0px 0px 10px 10px;
+}
+
+.mcneese.is-webform_type-617 #mcneese-bottom {
+  margin: 0px;
+}
+
+.mcneese.is-webform_type-617 .html_tag-header.page-title {
+  display: none;
+}
+
+.mcneese.is-webform_type-617 {
+  font-family: Serif, Sans-Serif, 'Times New Roman';
+
+  font-size: 12px;
+}
+
+.mcneese.is-webform_type-617 h1 {
+  font-size: 1.6em;
+}
+
+.mcneese.is-webform_type-617 h2 {
+  font-size: 1.5em;
+}
+
+.mcneese.is-webform_type-617 h3 {
+  font-size: 1.4em;
+}
+
+.mcneese.is-webform_type-617 h4 {
+  font-size: 1.3em;
+}
+
+.mcneese.is-webform_type-617 h5 {
+  font-size: 1.2em;
+}
+
+.mcneese.is-webform_type-617 h6 {
+  font-size: 1.1em;
+}
+
+.mcneese.is-webform_type-617 .webform-component > input {
+  font-size: 1em;
+  
+  border: none;
+  border-bottom: 1px solid #000000;
+
+  appearance: normal;
+  -webkit-appearance: normal;
+  -moz-appearance: normal;
+}
+
+.mcneese.is-webform_type-617 .webform-component > .webform-datepicker >.form-type-select > .form-select,
+.mcneese.is-webform_type-617 .webform-component > .form-select {
+  border: none;
+  border-bottom: 1px solid #000000;
+
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

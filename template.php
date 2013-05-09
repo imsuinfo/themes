@@ -49,6 +49,10 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
               $cf['is']['fixed_width'] = FALSE;
               $cf['is']['flex_width'] = TRUE;
             }
+            else if ($type == 617) {
+              $cf['is']['fixed_width'] = TRUE;
+              $cf['is']['flex_width'] = FALSE;
+            }
           }
         }
       }
@@ -231,10 +235,13 @@ function mcneese_www_preprocess_page(&$vars) {
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
           if ($node->field_webform_theme['und'][0]['tid'] == 592) {
-            mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+            mcneese_www_force_floating_regions($cf, array('help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 594) {
             mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+          }
+          else if ($node->field_webform_theme['und'][0]['tid'] == 617) {
+            mcneese_www_force_floating_regions($cf, array('help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
           }
         }
       }
@@ -297,6 +304,27 @@ function mcneese_www_render_page() {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         $cf['show']['page']['title'] = FALSE;
+      }
+    }
+  }
+}
+
+/**
+ * Render all data for: node.
+ */
+function mcneese_www_render_node() {
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+
+  // node-specific content
+  if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+    $node = &$cf['is_data']['node']['object'];
+
+
+    // web form custom themes
+    if (property_exists($node, 'field_webform_theme') && $node->field_webform_theme['und'][0]['tid'] == 617) {
+      if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
+        $cf['show']['node']['header'] = FALSE;
       }
     }
   }
