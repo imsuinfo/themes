@@ -54,7 +54,8 @@
   font-size: 1.1em;
 }
 
-.mcneese.is-webform_type-617 .webform-component > input {
+.mcneese.is-webform_type-617 .webform-component > input,
+.mcneese.is-webform_type-617 .webform-component > .select-or-other > .form-type-textfield > input {
   font-size: 1em;
   
   border: none;
