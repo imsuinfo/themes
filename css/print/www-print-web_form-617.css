@@ -2,8 +2,14 @@
 
 
 /*** Common ***/
+.mcneese.is-webform_type-617 {
+  font-family: Serif, Sans-Serif, 'Times New Roman';
+
+  font-size: 10px;
+}
+
 .mcneese.is-webform_type-617 #edit-actions,
-.mcneese.is-webform_type-617 .webform-component-ajax-page > .webform-ajax-page-nav {
+.mcneese.is-webform_type-617 .webform-client-form .webform-component-ajax-page > .webform-ajax-page-nav {
   display: none;
 }
 
@@ -11,13 +17,19 @@
   margin-top: 4px;
 }
 
-.mcneese.is-webform_type-617 .webform-component > .form-select > option[value=""] {
+.mcneese.is-webform_type-617 .webform-client-form .webform-component > .form-select > option[value=""] {
   display: none;
 }
 
-.mcneese.is-webform_type-617 .webform-component > .webform-datepicker > .webform-calendar {
+.mcneese.is-webform_type-617 .webform-client-form .webform-component-date > .webform-datepicker > .webform-calendar {
   display: none;
 }
 
-.mcneese.is-webform_type-617 .webform-component > .webform-datepicker > .form-type-select > .form-select.day {
+.mcneese.is-webform_type-617 .webform-client-form .webform-component-date > .webform-datepicker > .form-type-select > .form-select.day {
+}
+
+.mcneese.is-webform_type-617.agent-engine-presto .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
+.mcneese.is-webform_type-617.agent-engine-trident .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
+.mcneese.is-webform_type-617.agent-engine-gecko .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select {
+  display: table-cell;
 }
