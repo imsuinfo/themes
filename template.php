@@ -1443,6 +1443,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
         $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge; IE=10; IE=9; IE=8';
 
         drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
+        drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5-print.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
 
         if ($cf['agent']['major_version'] <= 8) {
           if ($cf['agent']['major_version'] == 7) {
