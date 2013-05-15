@@ -4,6 +4,12 @@
  * Toolbar theme implementation.
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if ($cf['is']['toolbar'] === FALSE) {
+    // prevent drupal from not using this theme because it prints nothing.
+    print('<!-->');
+    return;
+  }
 ?>
 <?php print(theme('mcneese_tag', $cf['toolbar']['tags']['mcneese_toolbar_open'])); ?>
   <!--(begin-toolbar)-->
