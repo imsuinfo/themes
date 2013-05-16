@@ -448,10 +448,15 @@
 .mcneese.is-media_browser_page > #mcneese-page,
 .mcneese.is-media_browser_page > #mcneese-bottom {
   width: auto;
-  height: auto;
+  min-width: 0px;
+  max-width: auto;
 
-  margin: 0;
-  padding: 0;
+  height: auto;
+  min-height: 0px;
+  max-height: auto;
+
+  margin: 0px;
+  padding: 0px;
 }
 
 .mcneese.is-media_browser_page > #mcneese-float-left,
