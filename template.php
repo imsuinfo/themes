@@ -51,18 +51,7 @@ function mcneese_preprocess_maintenance_page(&$vars) {
 
     // manually generate data that is normally auto-generated.
     $cf['markup_css']['body']['class'] .= ' is-maintenance';
-    $cf['markup_css']['body']['class'] = preg_replace('/ is-toolbar-(\w|-|_)+/i', '', $cf['markup_css']['body']['class']);
-    $cf['markup_css']['body']['class'] = preg_replace('/ is-toolbar\b/i', '', $cf['markup_css']['body']['class']);
-
-    $cf['is']['toolbar-expanded'] = FALSE;
-    $cf['is']['toolbar-collapsed'] = FALSE;
-    $cf['is']['toolbar-sticky'] = FALSE;
-    $cf['is']['toolbar-fixed'] = FALSE;
-    $cf['is']['toolbar-relative'] = FALSE;
-    $cf['is']['toolbar-autoshow'] = FALSE;
-    $cf['is']['toolbar-autohide'] = FALSE;
-    $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
-    $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
+    mcneese_remove_toolbar_css($cf);
   }
 
   // while is considered not accessible, it should be done on the maintainance page to help ensure accessibility
@@ -910,17 +899,16 @@ function mcneese_preprocess_media_dialog_page(&$vars) {
 
   $cf = & drupal_static('cf_theme_get_variables', array());
 
-  $cf['is']['toolbar'] = FALSE;
+  $cf['markup_css']['body']['class'] .= ' is-media_browser_page';
+
+  mcneese_remove_toolbar_css($cf);
+
   $cf['is']['fixed_width'] = FALSE;
   $cf['is']['flex_width'] = TRUE;
   $cf['is']['media_dialog_page'] = TRUE;
 
   $cf['page']['breadcrumb'] = NULL;
   $cf['show']['page']['work_area_menu'] = FALSE;
-
-  $cf['markup_css']['body']['class'] .= ' is-media_browser_page';
-
-  $cf['markup_css']['body']['class'] = preg_replace('/ is-fixed_width/', ' is-flex_width', $cf['markup_css']['body']['class']);
 }
 
 /**
@@ -2630,6 +2618,28 @@ function mcneese_prepare_maintenance_mode_variables(&$cf, &$vars) {
 
   // register that this is a maintenance page
   $cf['is_data']['maintenance']['vars'] = &$vars;
+}
+
+/**
+ * Removes the generated toolbar css styles.
+ *
+ * @param array $cf
+ *   The global common functionality data array.
+ *   Is expected/assumed to be initialized and populated already.
+ */
+function mcneese_remove_toolbar_css(&$cf) {
+  $cf['markup_css']['body']['class'] = preg_replace('/ is-toolbar(-(\w|-|_)+|\b)/i', '', $cf['markup_css']['body']['class']);
+
+  $cf['is']['toolbar'] = FALSE;
+  $cf['is']['toolbar-expanded'] = FALSE;
+  $cf['is']['toolbar-collapsed'] = FALSE;
+  $cf['is']['toolbar-sticky'] = FALSE;
+  $cf['is']['toolbar-fixed'] = FALSE;
+  $cf['is']['toolbar-relative'] = FALSE;
+  $cf['is']['toolbar-autoshow'] = FALSE;
+  $cf['is']['toolbar-autohide'] = FALSE;
+  $cf['is']['toolbar-shortcuts-expanded'] = FALSE;
+  $cf['is']['toolbar-shortcuts-collapsed'] = FALSE;
 }
 
 
