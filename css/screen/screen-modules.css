@@ -143,7 +143,11 @@
 /*** Views - Misc ***/
 .mcneese .views-table .views-field-field-group > .item-list > ul,
 .mcneese .views-table .views-field-field-group > .item-list > ol {
-  margin: 0;
+  margin: 0px;
+}
+
+.mcneese .views-exposed-form .views-exposed-widget {
+  margin: 0px;
 }
 
 
@@ -439,10 +443,10 @@
 
 
 /*** Media Browser ***/
-.mcneese.path-media_browser > #mcneese-top,
-.mcneese.path-media_browser > #mcneese-header,
-.mcneese.path-media_browser > #mcneese-page,
-.mcneese.path-media_browser > #mcneese-bottom {
+.mcneese.is-media_browser_page > #mcneese-top,
+.mcneese.is-media_browser_page > #mcneese-header,
+.mcneese.is-media_browser_page > #mcneese-page,
+.mcneese.is-media_browser_page > #mcneese-bottom {
   width: auto;
   height: auto;
 
@@ -450,19 +454,19 @@
   padding: 0;
 }
 
-.mcneese.path-media_browser > #mcneese-float-left,
-.mcneese.path-media_browser > #mcneese-float-right {
+.mcneese.is-media_browser_page > #mcneese-float-left,
+.mcneese.is-media_browser_page > #mcneese-float-right {
   display: none;
 }
 
-.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .view-filters,
-.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .view-content,
-.mcneese.path-media_browser #media-browser-tabset > .media-browser-tab > .view-media-default > .item-list {
+.mcneese.is-media_browser_page #media-browser-tabset > .media-browser-tab > .view-media-default > .view-filters,
+.mcneese.is-media_browser_page #media-browser-tabset > .media-browser-tab > .view-media-default > .view-content,
+.mcneese.is-media_browser_page #media-browser-tabset > .media-browser-tab > .view-media-default > .item-list {
   display: block;
   clear: both;
 }
 
-.mcneese #media-browser-library-list > li {
+.mcneese.is-media_browser_page #media-browser-library-list > li {
   display: inline-block;
   float: none;
   vertical-align: bottom;
@@ -470,14 +474,51 @@
   word-wrap: break-word;
 }
 
-.mcneese #media-browser-library-list > li > .media-item + .form-item {
+.mcneese.is-media_browser_page #media-browser-library-list > li > .media-item + .form-item {
   position: inherit;
 }
 
-.mcneese #media-browser-library-list > li a:focus,
-.mcneese #media-browser-library-list > li a:active,
-.mcneese #media-browser-library-list > li a:hover {
+.mcneese.is-media_browser_page #media-browser-library-list > li a:focus,
+.mcneese.is-media_browser_page #media-browser-library-list > li a:active,
+.mcneese.is-media_browser_page #media-browser-library-list > li a:hover {
   border: none;
+}
+
+.mcneese.is-media_browser_page #media-browser-tabset #branding > div >  h1 {
+  float: none;
+  height: auto;
+  margin: 0px;
+}
+
+.mcneese.is-media_browser_page #mcneese-breadcrumb {
+  display: none;
+}
+
+.mcneese.is-media_browser_page #media-format-form {
+  margin: 0px;
+}
+
+.mcneese.is-media_browser_page,
+.mcneese.is-media_browser_page #mcneese-page {
+  background-color: #ffffff;
+
+  min-height: auto;
+  min-width: auto;
+
+  margin: 0px;
+}
+
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab {
+  padding: 10px;
+}
+
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab > .view > .item-list > .pager > .pager-current,
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab > .view > .item-list > .pager > .pager-ellipsis,
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab > .view > .item-list > .pager > .pager-next,
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab > .view > .item-list > .pager > .pager-last,
+.mcneese.is-media_browser_page #media-browser-page #media-browser-tabset > .media-browser-tab > .view > .item-list > .pager > .pager-item {
+  padding: 0px 6px;
+  margin: 0px 6px;
 }
 
 

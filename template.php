@@ -903,6 +903,27 @@ function mcneese_preprocess_page(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_media_dialog_page().
+ */
+function mcneese_preprocess_media_dialog_page(&$vars) {
+  mcneese_preprocess_page($vars);
+
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  $cf['is']['toolbar'] = FALSE;
+  $cf['is']['fixed_width'] = FALSE;
+  $cf['is']['flex_width'] = TRUE;
+  $cf['is']['media_dialog_page'] = TRUE;
+
+  $cf['page']['breadcrumb'] = NULL;
+  $cf['show']['page']['work_area_menu'] = FALSE;
+
+  $cf['markup_css']['body']['class'] .= ' is-media_browser_page';
+
+  $cf['markup_css']['body']['class'] = preg_replace('/ is-fixed_width/', ' is-flex_width', $cf['markup_css']['body']['class']);
+}
+
+/**
  * Implements hook_preprocess_node().
  */
 function mcneese_preprocess_node(&$vars) {
