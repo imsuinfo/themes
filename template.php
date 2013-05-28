@@ -226,6 +226,9 @@ function mcneese_www_preprocess_page(&$vars) {
         $cf['show']['page']['document_footer'] = TRUE;
         $cf['data']['page']['document_footer']['markup'] = $node->field_footer['und'][0]['safe_value'];
       }
+
+      // work area menu is not supported by the web document format.
+      $cf['show']['page']['work_area_menu'] = FALSE;
     }
 
 
