@@ -561,3 +561,10 @@
   padding: 0px;
   border: none;
 }
+
+
+
+/*** Node Accessibility ***/
+.mcneese #mcneese-page-main .node_accessibility_statistics-plot-wrapper {
+  margin: 3px;
+}
