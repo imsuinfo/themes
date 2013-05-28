@@ -131,11 +131,6 @@
   text-indent: 0.5in;
 }
 
-.mcneese.node-type-document #mcneese-page-main .item-list ul > li {
-  margin: 0px;
-  padding: 1px 0px;
-}
-
 .mcneese.node-type-document #mcneese-page-main ul,
 .mcneese.node-type-document #mcneese-page-main ol,
 .mcneese.node-type-document #mcneese-page-main dl {
@@ -144,18 +139,21 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main ul > li,
-.mcneese.node-type-document #mcneese-page-main ol > li {
+.mcneese.node-type-document #mcneese-page-main ol > li,
+.mcneese.node-type-document #mcneese-page-main .item-list ul > li {
   margin: 0px;
   padding: 1px 0px;
 }
 
-.mcneese.node-type-document #mcneese-page-main ul.inline
-.mcneese.node-type-document #mcneese-page-main ol.inline {
+.mcneese.node-type-document #mcneese-page-main ul.inline,
+.mcneese.node-type-document #mcneese-page-main ol.inline,
+.mcneese.node-type-document #mcneese-page-main dl.inline {
   padding: 0px;
 }
 
 .mcneese.node-type-document #mcneese-page-main ul.inline > li,
-.mcneese.node-type-document #mcneese-page-main ol.inline > li {
+.mcneese.node-type-document #mcneese-page-main ol.inline > li,
+.mcneese.node-type-document #mcneese-page-main dl.inline > li {
   display: inline;
 
   padding: 0px;
