@@ -172,7 +172,7 @@ function mcneese_www_preprocess_page(&$vars) {
     if ($node->type == 'document') {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
-        mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+        mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
       }
 
 
@@ -238,13 +238,13 @@ function mcneese_www_preprocess_page(&$vars) {
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
           if ($node->field_webform_theme['und'][0]['tid'] == 592) {
-            mcneese_www_force_floating_regions($cf, array('help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 594) {
-            mcneese_www_force_floating_regions($cf, array('messages', 'help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 617) {
-            mcneese_www_force_floating_regions($cf, array('help', 'information', 'tabs', 'action_links', 'side', 'breadcrumb'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
         }
       }
@@ -342,54 +342,55 @@ function mcneese_www_render_node() {
  *   An array of regions to force as floating.
  */
 function mcneese_www_force_floating_regions(&$cf, $regions) {
-  foreach ((array) $regions as $key) {
-    $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
+  foreach ((array) $regions as $key => $location) {
+    if (isset($cf['user']['object']->data['mcneese_settings'][$location][$key]['sticky'])) {
+      $sticky = & $cf['user']['object']->data['mcneese_settings'][$location][$key]['sticky'];
 
-    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-      if (!in_array('fixed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'fixed';
+      if ($sticky == 'always') {
+        continue;
       }
     }
 
+    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes'])) {
+      $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['tabindex'] = '2';
+    }
+
     if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-      if (!in_array('collapsed', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-        $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][] = 'collapsed';
+      $class = & $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'];
+
+      if (!in_array('fixed', $class)) {
+        $class[] = 'fixed';
       }
-    }
 
-    $found_key = FALSE;
+      if (!in_array('collapsed', $class)) {
+        $class[] = 'collapsed';
+      }
 
-    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-      $found_key = array_search('relative', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
-    }
-
-    if ($found_key !== FALSE) {
-      unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
-    }
-
-    $found_key = FALSE;
-
-    if (isset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'])) {
-      $found_key = array_search('expanded', $cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class']);
-    }
-
-    if ($found_key !== FALSE) {
-      unset($cf['page']['tags']['mcneese_page_' . $key . '_open']['attributes']['class'][$found_key]);
-    }
-
-    // 'side' is a special case, handle appropriately.
-    if ($key == 'side') {
       $found_key = FALSE;
-
-      if (isset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'])) {
-        $found_key = array_search('column-1', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
-      }
+      $found_key = array_search('relative', $class);
 
       if ($found_key !== FALSE) {
-        unset($cf['page']['tags']['mcneese_page_side_open']['attributes']['class'][$found_key]);
+        unset($class[$found_key]);
       }
 
-      continue;
+      $found_key = FALSE;
+      $found_key = array_search('expanded', $class);
+
+      if ($found_key !== FALSE) {
+        unset($class[$found_key]);
+      }
+
+      // 'side' is a special case, handle appropriately.
+      if ($key == 'side') {
+        $found_key = FALSE;
+        $found_key = array_search('column-1', $class);
+
+        if ($found_key !== FALSE) {
+          unset($class[$found_key]);
+        }
+
+        continue;
+      }
     }
   }
 }

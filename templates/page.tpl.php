@@ -48,7 +48,7 @@
   <?php mcneese_do_print($cf, 'page_title'); ?>
 
   <div id="mcneese-float-left" class="expanded fixed">
-    <?php mcneese_do_print($cf, 'tabs'); ?>
+    <?php mcneese_do_print($cf, 'menu_tabs'); ?>
     <?php mcneese_do_print($cf, 'action_links'); ?>
 
     <?php if (!$cf['is']['front']) { ?>
@@ -74,7 +74,7 @@
     <?php } ?>
   </div>
 
-  <?php mcneese_do_print($cf, 'tabs', FALSE); ?>
+  <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
 
   <?php if (!$cf['is']['front']) { ?>
     <?php mcneese_do_print($cf, 'breadcrumb', FALSE); ?>
