@@ -2229,7 +2229,7 @@ function mcneese_render_page_tabs() {
             $sub_tabs = & $cf['page']['sub_tabs']['tabs'];
 
             if (isset($sub_tabs['count']) && $sub_tabs['count'] == 1) {
-              if ($cf['is']['node-moderation']) {
+              if (isset($cf['is']['node-moderation']) && $cf['is']['node-moderation']) {
                 $sub_tabs['count'] = 0;
               }
             }
