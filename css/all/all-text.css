@@ -264,6 +264,8 @@
 .mcneese .form-submit.form-cancel,
 .mcneese input.form-cancel,
 .mcneese input#edit-cancel,
+.mcneese a#linkit-cancel,
+.mcneese a#linkit-cancel:visited,
 .mcneese a#edit-cancel,
 .mcneese a#edit-cancel:visited {
   color: #000000;
