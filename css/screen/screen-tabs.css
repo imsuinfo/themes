@@ -75,9 +75,6 @@
 #mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
   display: inline-block;
 
-  color: #ffffff;
-  background-color: #005a92;
-
   text-align: center;
   text-decoration: none;
   text-shadow: 0px 1px 0px #333333;
@@ -85,6 +82,16 @@
   border-radius: 5px 5px 0px 0px;
 
   vertical-align: bottom;
+}
+
+#mcneese-tabs.relative > .navigation_list > .tab > a {
+  color: #ffffff;
+  background-color: #005a92;
+}
+
+#mcneese-tabs.relative > .navigation_list > .tab > .sub_tabs > .navigation_list > .tab > a {
+  color: #ffffff;
+  background-color: #008292;
 }
 
 #mcneese-tabs.relative > .navigation_list > .tab > a {
@@ -109,6 +116,10 @@
   letter-spacing: 0.4px;
 
   padding: 1px 4px 0px 4px;
+}
+
+#mcneese-tabs.relative > .navigation_list > .tab.active > .sub_tabs > .navigation_list > .tab.active > a {
+  background-color: #005d68;
 }
 
 #mcneese-tabs.relative > .navigation_list > .tab > a:hover,
