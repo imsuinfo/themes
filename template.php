@@ -2228,60 +2228,68 @@ function mcneese_render_page_tabs() {
           else {
             $sub_tabs = & $cf['page']['sub_tabs']['tabs'];
 
-            $attributes['class'][] = 'expanded';
-
-            $sub_tabs_attributes = array('class' => array());
-            $sub_tabs_attributes['class'][] = 'sub_tabs';
-            $sub_tabs_markup = theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic', 'attributes' => $sub_tabs_attributes, 'html5' => $cf['is']['html5']));
-            $sub_tabs_markup .= '<ul class="navigation_list html_tag-list">';
-
-            if (isset($sub_tabs['count']) && $sub_tabs['count'] > 0) {
-              $sub_count = 0;
-              $sub_even_odd = 'even';
-
-              while ($sub_count < $sub_tabs['count']) {
-                if (empty($sub_tabs['output'][$sub_count]['#link'])) {
-                  $sub_count++;
-                  continue;
-                }
-
-                $sub_link = & $sub_tabs['output'][$sub_count]['#link'];
-                $sub_attributes = array();
-                $sub_attributes['title'] = $sub_link['title'];
-                $sub_attributes['class'] = array('tab', 'tab-' . $sub_count, $sub_even_odd);
-                $sub_markup = $sub_link['title'];
-                $sub_even_odd = ($sub_even_odd == 'even' ? 'odd' : 'even');
-
-                if ($sub_count == 0) {
-                  $sub_attributes['class'][] = 'tab-first';
-                }
-                elseif ($sub_count + 1 == $sub_tabs['count']) {
-                  $sub_attributes['class'][] = 'tab-last';
-                }
-
-                if (!empty($sub_tabs['output'][$sub_count]['#active'])) {
-                  // Add text to indicate active tab for non-visual users.
-                  $active = ' <span class="element-invisible">' . t("(active tab)") . '</span>';
-                  $sub_attributes['class'][] = 'active';
-
-                  // If the link does not contain HTML already, check_plain() it now.
-                  // After we set 'html'=TRUE the link will not be sanitized by l().
-                  if (empty($sub_link['localized_options']['html'])) {
-                    $sub_link['title'] = check_plain($sub_link['title']);
-                  }
-
-                  $sub_link['localized_options']['html'] = TRUE;
-                  $sub_markup = t("!local-tab-title!active", array('!local-tab-title' => $sub_link['title'], '!active' => $active));
-                }
-
-                $sub_tabs_markup .= theme('list_item', array('markup' => l($sub_markup, $sub_link['href'], $sub_link['localized_options']), 'attributes' => $sub_attributes));
-
-                $sub_count++;
+            if (isset($sub_tabs['count']) && $sub_tabs['count'] == 1) {
+              if ($cf['is']['node-moderation']) {
+                $sub_tabs['count'] = 0;
               }
             }
 
-            $sub_tabs_markup .= '</ul>';
-            $sub_tabs_markup .= theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic' , 'open' => FALSE, 'html5' => $cf['is']['html5']));
+            if (isset($sub_tabs['count']) && $sub_tabs['count'] > 0) {
+              $attributes['class'][] = 'expanded';
+
+              $sub_tabs_attributes = array('class' => array());
+              $sub_tabs_attributes['class'][] = 'sub_tabs';
+              $sub_tabs_markup = theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic', 'attributes' => $sub_tabs_attributes, 'html5' => $cf['is']['html5']));
+              $sub_tabs_markup .= '<ul class="navigation_list html_tag-list">';
+
+              if (isset($sub_tabs['count']) && $sub_tabs['count'] > 0) {
+                $sub_count = 0;
+                $sub_even_odd = 'even';
+
+                while ($sub_count < $sub_tabs['count']) {
+                  if (empty($sub_tabs['output'][$sub_count]['#link'])) {
+                      $sub_count++;
+                    continue;
+                  }
+
+                  $sub_link = & $sub_tabs['output'][$sub_count]['#link'];
+                  $sub_attributes = array();
+                  $sub_attributes['title'] = $sub_link['title'];
+                  $sub_attributes['class'] = array('tab', 'tab-' . $sub_count, $sub_even_odd);
+                  $sub_markup = $sub_link['title'];
+                  $sub_even_odd = ($sub_even_odd == 'even' ? 'odd' : 'even');
+
+                  if ($sub_count == 0) {
+                    $sub_attributes['class'][] = 'tab-first';
+                  }
+                  elseif ($sub_count + 1 == $sub_tabs['count']) {
+                    $sub_attributes['class'][] = 'tab-last';
+                  }
+
+                  if (!empty($sub_tabs['output'][$sub_count]['#active'])) {
+                    // Add text to indicate active tab for non-visual users.
+                    $active = ' <span class="element-invisible">' . t("(active tab)") . '</span>';
+                    $sub_attributes['class'][] = 'active';
+
+                    // If the link does not contain HTML already, check_plain() it now.
+                    // After we set 'html'=TRUE the link will not be sanitized by l().
+                    if (empty($sub_link['localized_options']['html'])) {
+                      $sub_link['title'] = check_plain($sub_link['title']);
+                    }
+
+                    $sub_link['localized_options']['html'] = TRUE;
+                    $sub_markup = t("!local-tab-title!active", array('!local-tab-title' => $sub_link['title'], '!active' => $active));
+                  }
+
+                  $sub_tabs_markup .= theme('list_item', array('markup' => l($sub_markup, $sub_link['href'], $sub_link['localized_options']), 'attributes' => $sub_attributes));
+
+                  $sub_count++;
+                }
+              }
+
+              $sub_tabs_markup .= '</ul>';
+              $sub_tabs_markup .= theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic' , 'open' => FALSE, 'html5' => $cf['is']['html5']));
+            }
           }
 
           $cf['data']['page']['menu_tabs'] .= theme('list_item', array('markup' => l($markup, $link['href'], $link['localized_options']) . $sub_tabs_markup, 'attributes' => $attributes));
