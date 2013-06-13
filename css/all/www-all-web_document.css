@@ -60,6 +60,10 @@
   text-shadow: none;
 }
 
+.mcneese.node-type-document.is-node_management #mcneese-page-document-header {
+  display: none;
+}
+
 .mcneese.node-type-document #mcneese-header {
   display: none;
 }
@@ -318,12 +322,47 @@
   color: #0000ff;
 }
 
+.mcneese.node-type-document #mcneese-page-main a:focus,
 .mcneese.node-type-document #mcneese-page-main a:hover {
   color: #616e07;
 }
 
 .mcneese.node-type-document #mcneese-page-main a:active {
   color: #aa0000;
+}
+
+.mcneese.node-type-document.is-node_management #mcneese-page-main a,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:visited {
+  color: #00477f;
+}
+
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:active {
+  color: #7f0000;
+}
+
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:visited,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:visited,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:visited {
+  color: #000000;
+  background-color: #cecece;
+}
+
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:active,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:active,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:active {
+  color: #ffffff;
+  background-color: #666666;
 }
 
 .mcneese.node-type-document #mcneese-page-main .reference,
