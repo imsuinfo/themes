@@ -411,8 +411,16 @@ function mcneese_preprocess_page(&$vars) {
   $help_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['region']['help']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['help']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['region']['help']['sticky'];
+    if ($sticky) {
       $help_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $help_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $help_sticky = 'fixed';
+      }
     }
     else {
       $help_sticky = 'fixed';
@@ -475,8 +483,16 @@ function mcneese_preprocess_page(&$vars) {
   $information_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['region']['information']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['information']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['region']['information']['sticky'];
+    if ($sticky) {
       $information_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $information_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $information_sticky = 'fixed';
+      }
     }
     else {
       $information_sticky = 'fixed';
@@ -531,14 +547,22 @@ function mcneese_preprocess_page(&$vars) {
 
 
   // load all tasks
-  $cf['page']['tabs'] = menu_local_tasks(0);
+  $cf['page']['menu_tabs'] = menu_local_tasks(0);
   $cf['page']['sub_tabs'] = menu_local_tasks(1);
 
   $tabs_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['menu_tabs']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['navigation']['menu_tabs']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['navigation']['menu_tabs']['sticky'];
+    if ($sticky) {
       $tabs_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $tabs_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $tabs_sticky = 'fixed';
+      }
     }
     else {
       $tabs_sticky = 'fixed';
@@ -567,16 +591,24 @@ function mcneese_preprocess_page(&$vars) {
     $attributes['class'][] = 'expanded';
   }
 
-  $cf['page']['tags']['mcneese_page_tabs_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
-  $cf['page']['tags']['mcneese_page_tabs_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_menu_tabs_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_menu_tabs_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // load all action_links
   $action_links_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['action_links']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['navigation']['action_links']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['navigation']['action_links']['sticky'];
+    if ($sticky) {
       $action_links_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $action_links_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $action_links_sticky = 'fixed';
+      }
     }
     else {
       $action_links_sticky = 'fixed';
@@ -621,8 +653,16 @@ function mcneese_preprocess_page(&$vars) {
   $side_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['region']['side']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['side']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['region']['side']['sticky'];
+    if ($sticky) {
       $side_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $side_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $side_sticky = 'fixed';
+      }
     }
     else {
       $side_sticky = 'fixed';
@@ -705,8 +745,16 @@ function mcneese_preprocess_page(&$vars) {
   $breadcrumb_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['navigation']['breadcrumb']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['navigation']['breadcrumb']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['navigation']['breadcrumb']['sticky'];
+    if ($sticky) {
       $breadcrumb_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $breadcrumb_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $breadcrumb_sticky = 'fixed';
+      }
     }
     else {
       $breadcrumb_sticky = 'fixed';
@@ -1883,7 +1931,7 @@ function mcneese_render_page() {
     mcneese_render_page_tabs();
   }
   else {
-    $cf['show']['page']['tabs'] = FALSE;
+    $cf['show']['page']['menu_tabs'] = FALSE;
   }
 
 
@@ -2111,22 +2159,22 @@ function mcneese_menu_tree($vars) {
  */
 function mcneese_render_page_tabs() {
   $cf = & drupal_static('cf_theme_get_variables', array());
-  $cf['show']['page']['tabs'] = FALSE;
+  $cf['show']['page']['menu_tabs'] = FALSE;
 
-  if (!empty($cf['page']['tabs']['tabs']['output'])) {
-    $tabs = & $cf['page']['tabs']['tabs'];
+  if (!empty($cf['page']['menu_tabs']['tabs']['output'])) {
+    $tabs = & $cf['page']['menu_tabs']['tabs'];
 
     if (isset($tabs['count']) && $tabs['count'] > 0) {
-      $cf['show']['page']['tabs'] = TRUE;
-      $cf['data']['page']['tabs'] = '';
+      $cf['show']['page']['menu_tabs'] = TRUE;
+      $cf['data']['page']['menu_tabs'] = '';
       $count = 0;
       $even_odd = 'even';
 
       // prepend the menu_tabs-command-1 link
-      $menu_tabs_text = (in_array('fixed', $cf['page']['tags']['mcneese_page_tabs_open']['attributes']['class']) ? t("Menu Tabs") : "");
+      $menu_tabs_text = (in_array('fixed', $cf['page']['tags']['mcneese_page_menu_tabs_open']['attributes']['class']) ? t("Menu Tabs") : "");
       $attributes = array();
       $attributes['class'] = array('tab', 'tab-command', 'tab-command-1');
-      $cf['data']['page']['tabs'] .= theme('list_item', array('markup' => '<a title="Collapse Menu Tabs" class="">' . $menu_tabs_text . '</a>', 'attributes' => $attributes));
+      $cf['data']['page']['menu_tabs'] .= theme('list_item', array('markup' => '<a title="Collapse Menu Tabs" class="">' . $menu_tabs_text . '</a>', 'attributes' => $attributes));
 
       while ($count < $tabs['count']) {
         if (empty($tabs['output'][$count]['#link'])) {
@@ -2231,10 +2279,10 @@ function mcneese_render_page_tabs() {
             $sub_tabs_markup .= theme('mcneese_tag', array('name' => 'nav', 'type' => 'semantic' , 'open' => FALSE, 'html5' => $cf['is']['html5']));
           }
 
-          $cf['data']['page']['tabs'] .= theme('list_item', array('markup' => l($markup, $link['href'], $link['localized_options']) . $sub_tabs_markup, 'attributes' => $attributes));
+          $cf['data']['page']['menu_tabs'] .= theme('list_item', array('markup' => l($markup, $link['href'], $link['localized_options']) . $sub_tabs_markup, 'attributes' => $attributes));
         }
         else {
-          $cf['data']['page']['tabs'] .= theme('list_item', array('markup' => l($markup, $link['href'], $link['localized_options']), 'attributes' => $attributes));
+          $cf['data']['page']['menu_tabs'] .= theme('list_item', array('markup' => l($markup, $link['href'], $link['localized_options']), 'attributes' => $attributes));
         }
 
         $count++;
@@ -2250,8 +2298,16 @@ function mcneese_preprocess_page_prepare_messages(&$cf, &$vars) {
   $messages_sticky = 'relative';
 
   if (isset($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky'])) {
-    if ($cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky']) {
+    $sticky = & $cf['user']['object']->data['mcneese_settings']['region']['messages']['sticky'];
+    if ($sticky) {
       $messages_sticky = 'relative';
+
+      if ($sticky == 'on' || $sticky == 'always') {
+        $messages_sticky = 'relative';
+      }
+      else if ($sticky == 'off' || $sticky == 'never') {
+        $messages_sticky = 'fixed';
+      }
     }
     else {
       $messages_sticky = 'fixed';
@@ -2415,8 +2471,8 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_close']) . "\n");
     }
   }
-  else if ($target == 'tabs' || $target == 'action_links') {
-    if ($target == 'tabs') {
+  else if ($target == 'menu_tabs' || $target == 'action_links') {
+    if ($target == 'menu_tabs') {
       $friendly = 'Menu Tabs';
     }
     else if ($target == 'action_links') {

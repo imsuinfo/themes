@@ -36,13 +36,13 @@
   <?php mcneese_do_print($cf, 'page_title'); ?>
 
   <div id="mcneese-float-left" class="expanded fixed">
-    <?php mcneese_do_print($cf, 'tabs'); ?>
+    <?php mcneese_do_print($cf, 'menu_tabs'); ?>
     <?php mcneese_do_print($cf, 'action_links'); ?>
     <?php mcneese_do_print($cf, 'breadcrumb'); ?>
     <?php mcneese_do_print($cf, 'side'); ?>
   </div>
 
-  <?php mcneese_do_print($cf, 'tabs', FALSE); ?>
+  <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
   <?php mcneese_do_print($cf, 'breadcrumb', FALSE); ?>
   <?php mcneese_do_print($cf, 'action_links', FALSE); ?>
   <?php mcneese_do_print($cf, 'watermarks-pre'); ?>
