@@ -568,3 +568,11 @@
 .mcneese #mcneese-page-main .node_accessibility_statistics-plot-wrapper {
   margin: 3px;
 }
+
+
+
+/*** Formatters ***/
+.mcneese.path-admin_structure_formatters #mcneese-page-main #ctools-export-ui-list-form,
+.mcneese.path-admin_structure_formatters #mcneese-page-main #ctools-export-ui-list-form > .form-wrapper-inner > .ctools-export-ui-row {
+  display: inline-block;
+}
