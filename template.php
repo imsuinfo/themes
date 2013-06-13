@@ -1687,15 +1687,13 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
     if ($matched == 0) {
       $matches = array();
-      $matched = preg_match('@^node/(\d+)/(edit|draft|webform|webform-\w+\b|webform-\w+\b/\w+\b|accessibility|moderation|revisions|delete|undelete)(/$|$|\?.*|#.*)@', $current_path, $matches);
+      $matched = preg_match('@^node/(\d+)/(edit|draft|webform|webform-\w+\b|accessibility|moderation|revisions|delete|undelete)(/.*$|$|\?.*|#.*)@', $current_path, $matches);
 
       if ($matched > 0) {
         if (empty($matches[2])) {
           $matched = 0;
         }
         else {
-          $matches[2] = preg_replace('@/@i', '-', $matches[2]);
-
           $cf['is']['node-' . check_plain($matches[2])] = TRUE;
 
           // tag all special displays that are not some form of 'view' as node_management.
