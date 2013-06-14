@@ -60,7 +60,8 @@
   text-shadow: none;
 }
 
-.mcneese.node-type-document.is-node_management #mcneese-page-document-header {
+.mcneese.node-type-document.is-node_management #mcneese-page-document-header,
+.mcneese.node-type-document.is-node_management #mcneese-page-document-footer {
   display: none;
 }
 
