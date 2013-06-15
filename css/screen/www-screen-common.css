@@ -905,9 +905,9 @@
   background-color: #fad703;
 }
 
-.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
-.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
-.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
+.mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
+.mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
+.mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
   color: #ffffff;
   background-color: #00234b;
 }
