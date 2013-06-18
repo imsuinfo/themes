@@ -210,6 +210,7 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main .for_example {
+  display: inline-block;
   position: relative;
 
   border: 1px solid #00477f;
