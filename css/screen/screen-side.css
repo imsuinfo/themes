@@ -173,7 +173,7 @@
   padding: 0px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-children {
+#mcneese-page-side .workbench_menu .menu_item.expanded > .menu_item-children {
   display: block;
   position: relative;
 
