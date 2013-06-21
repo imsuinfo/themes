@@ -576,3 +576,18 @@
 .mcneese.path-admin_structure_formatters #mcneese-page-main #ctools-export-ui-list-form > .form-wrapper-inner > .ctools-export-ui-row {
   display: inline-block;
 }
+
+
+
+/*** Link ***/
+.mcneese #mcneese-page-main > .node-form .vertical-tabs > .vertical-tabs-panes > .field-group-tab > .fieldset-wrapper > .field-type-link-field .form-item .field-multiple-table > tbody > tr > td > .form-type-link-field,
+.mcneese #mcneese-page-main > .node-form .vertical-tabs > .vertical-tabs-panes > .field-group-tab > .fieldset-wrapper > .field-type-link-field .form-item .field-multiple-table > tbody > tr > td > .form-type-link-field > .link-field-subrow > div > .form-item {
+  white-space: inherit;
+}
+
+.mcneese #mcneese-page-main > .node-form .vertical-tabs > .vertical-tabs-panes > .field-group-tab > .fieldset-wrapper > .field-type-link-field .form-item .field-multiple-table > tbody > tr > td > .form-type-link-field > .link-field-subrow > div {
+  display: inline-block;
+  vertical-align: top;
+
+  float: none;
+}
