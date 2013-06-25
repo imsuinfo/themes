@@ -143,7 +143,7 @@
 .mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
 .mcneese .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.2em;
 
   margin: 4px 0px;
 }
@@ -158,7 +158,7 @@
 .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
 .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.2em;
 
   margin: 3px 0px;
 }
@@ -173,7 +173,7 @@
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2em;
 
   margin: 3px 0px;
 }
@@ -188,7 +188,7 @@
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2em;
 
   margin: 3px 0px;
 }
@@ -208,7 +208,7 @@
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h5,
 .mcneese .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section > .html_tag-section .html_tag-header > .html_tag-hgroup > h6 {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.2em;
 
   margin: 2px 0px;
 }
