@@ -22,12 +22,12 @@ caption         { display: table-caption; }
 th              { font-weight: bolder; text-align: center; }
 caption         { text-align: center; }
 body            { margin: 0px; }
-h1              { font-size: 2.0em; margin: 2px 0px; }
-h2              { font-size: 1.8em; margin: 2px 0px; }
-h3              { font-size: 1.6em; margin: 2px 0px; }
-h4              { font-size: 1.4em; margin: 1px 0px; }
-h5              { font-size: 1.2em; margin: 1px 0px; }
-h6              { font-size: 1.0em; margin: 1px 0px; }
+h1              { font-size: 2.0em; line-height: 1.1em; margin: 2px 0px; }
+h2              { font-size: 1.8em; line-height: 1.1em; margin: 2px 0px; }
+h3              { font-size: 1.6em; line-height: 1.1em; margin: 2px 0px; }
+h4              { font-size: 1.4em; line-height: 1.1em; margin: 1px 0px; }
+h5              { font-size: 1.2em; line-height: 1.1em; margin: 1px 0px; }
+h6              { font-size: 1.0em; line-height: 1.1em; margin: 1px 0px; }
 p, form,
 fieldset        { margin: 0px; }
 blockquote, ul,

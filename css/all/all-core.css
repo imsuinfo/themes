@@ -1,5 +1,9 @@
 .mcneese {
   margin: 0px;
+
+  font-family: Arial,Helvetica,Sans-serif,Serif;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .mcneese .element-invisible {
