@@ -160,7 +160,8 @@
 
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb-user_id,
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb-node_id,
-#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a {
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a,
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > span {
   display: block;
 
   color: #ffffff;
@@ -195,12 +196,16 @@
 
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:hover,
 #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:active,
-#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:focus {
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:focus,
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > span:hover,
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > span:active,
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > span:focus {
   color: #f7ff00;
   background-color: #2970a0;
 }
 
-#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:active {
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:active,
+#mcneese-breadcrumb.fixed > .navigation_list > .crumb > span:active {
   color: #ff0000;
 
   border-style: inset;
