@@ -57,6 +57,19 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
         }
       }
     }
+
+    // web document
+    if ($node->type == 'document') {
+      if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
+        $cf['is']['document_type-default'] = TRUE;
+
+        if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
+          $type = &$node->field_document_theme['und'][0]['tid'];
+          $cf['is']['document_type-default'] = FALSE;
+          $cf['is']['document_type-'. $type] = TRUE;
+        }
+      }
+    }
   }
 }
 

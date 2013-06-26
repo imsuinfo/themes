@@ -36,10 +36,6 @@
   page-break-before: avoid;
 }
 
-.mcneese.node-type-document #mcneese-page-main .for_example {
-  page-break-inside: avoid;
-}
-
 .mcneese.node-type-document #mcneese-page-main .break_before-always {
   page-break-before: always;
 }

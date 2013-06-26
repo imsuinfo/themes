@@ -1,63 +1,9 @@
 .mcneese.node-type-document #mcneese-page-main {
   font-family: Serif, Sans-Serif, 'Times New Roman';
-
-  font-size: 1em;
 }
 
 .mcneese.node-type-document #mcneese-www-footer {
   display: none;
-}
-
-.mcneese.node-type-document #mcneese-page-main h1 {
-  font-size: 2.0em;
-  line-height: 1.0em;
-
-  margin: 4px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main h2 {
-  font-size: 1.8em;
-  line-height: 1.0em;
-
-  margin: 4px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main h3 {
-  font-size: 1.6em;
-  line-height: 1.0em;
-
-  margin: 3px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main h4 {
-  font-size: 1.4em;
-  line-height: 1.0em;
-
-  margin: 3px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main h5 {
-  font-size: 1.2em;
-  line-height: 1.0em;
-
-  margin: 2px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main h6 {
-  font-size: 1.0em;
-  line-height: 1.0em;
-
-  margin: 2px 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-document-header > .html_tag-hgroup > h1,
-.mcneese.node-type-document #mcneese-page-document-header > .html_tag-hgroup > h2 {
-  color: inherit;
-
-  font-family: Serif, Sans-Serif, 'Times New Roman';
-  font-weight: bold;
-
-  text-shadow: none;
 }
 
 .mcneese.node-type-document.is-node_management #mcneese-page-document-header,
@@ -73,12 +19,6 @@
   display: none;
 }
 
-.mcneese.node-type-document #mcneese-page-document-header {
-  text-align: center;
-
-  padding: 4px 0px;
-}
-
 .mcneese.node-type-document #mcneese-page-main .html_tag-section {
   clear: both;
 }
@@ -88,7 +28,7 @@
 }
 
 .mcneese.node-type-document #mcneese-page-main .inline-block {
-  display: block;
+  display: inline-block;
 }
 
 .mcneese.node-type-document #mcneese-page-main .inline {
@@ -129,6 +69,42 @@
 
 .mcneese.node-type-document #mcneese-page-main .separated-alt {
   padding: 15px 0px;
+}
+
+.mcneese.node-type-document #mcneese-page-main .uppercase {
+  text-transform: uppercase;
+}
+
+.mcneese.node-type-document #mcneese-page-main .lowercase {
+  text-transform: lowercase;
+}
+
+.mcneese.node-type-document #mcneese-page-main .capitalize {
+  text-transform: capitalize;
+}
+
+.mcneese.node-type-document #mcneese-page-main .underline {
+  text-decoration: underline;
+}
+
+.mcneese.node-type-document #mcneese-page-main .overline {
+  text-decoration: overline;
+}
+
+.mcneese.node-type-document #mcneese-page-main .strike {
+  text-decoration: line-through;
+}
+
+.mcneese.node-type-document #mcneese-page-main .no_padding {
+  padding: 0px;
+}
+
+.mcneese.node-type-document #mcneese-page-main .no_margin {
+  margin: 0px;
+}
+
+.mcneese.node-type-document #mcneese-page-main .no_border {
+  border: 0px none;
 }
 
 .mcneese.node-type-document #mcneese-page-main p {
@@ -192,52 +168,136 @@
   margin-left: 15px;
 }
 
-.mcneese.node-type-document #mcneese-page-main .image {
-  border: 1px outset;
-  padding: 3px;
+.mcneese.node-type-document #mcneese-page-main a,
+.mcneese.node-type-document #mcneese-page-main a:visited {
+  color: #0000ff;
 }
 
-.mcneese.node-type-document #mcneese-page-main .for_example:before {
-  line-height: 1em;
-  letter-spacing: 2px;
-
-  position: absolute;
-  left: -10px;
-  top: -10px;
-
-  border: 1px solid #000000;
-  padding: 3px;
+.mcneese.node-type-document #mcneese-page-main a:focus,
+.mcneese.node-type-document #mcneese-page-main a:hover {
+  color: #616e07;
 }
 
-.mcneese.node-type-document #mcneese-page-main .for_example {
-  display: inline-block;
-  position: relative;
-
-  border: 1px solid #00477f;
-  margin: 10px 15px;
-  padding: 10px;
+.mcneese.node-type-document #mcneese-page-main a:active {
+  color: #aa0000;
 }
 
-.mcneese.node-type-document #mcneese-page-main {
-  counter-reset: example_count 0 section 0;
+.mcneese.node-type-document.is-node_management #mcneese-page-main a,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:visited {
+  color: #00477f;
 }
 
-.mcneese.node-type-document #mcneese-page-main > section {
-  counter-increment: section;
-  counter-reset: sub_section;
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a:active {
+  color: #7f0000;
 }
 
-.mcneese.node-type-document #mcneese-page-main > section > section {
-  counter-increment: sub_section;
-  counter-reset: sub_sub_section;
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:visited,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:visited,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:visited {
+  color: #000000;
+  background-color: #cecece;
 }
 
-.mcneese.node-type-document #mcneese-page-main > section > section > section {
-  counter-increment: sub_sub_section;
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:active,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:active,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:focus,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:hover,
+.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:active {
+  color: #ffffff;
+  background-color: #666666;
 }
 
-.mcneese.node-type-document #mcneese-page-main.hlist {
-  list-style: none;
+.mcneese.node-type-document #mcneese-page-main .reference,
+.mcneese.node-type-document #mcneese-page-main figcaption {
+  text-transform: small;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.mcneese.node-type-document #mcneese-page-main.triple_space,
+.mcneese.node-type-document #mcneese-page-main .triple_space {
+  line-height: 3em;
+}
+
+.mcneese.node-type-document #mcneese-page-main.double_space,
+.mcneese.node-type-document #mcneese-page-main .double_space {
+  line-height: 2em;
+}
+
+.mcneese.node-type-document #mcneese-page-main.one_and_half_space,
+.mcneese.node-type-document #mcneese-page-main .one_and_half_space {
+  line-height: 1.5em;
+}
+
+.mcneese.node-type-document #mcneese-page-main.single_space,
+.mcneese.node-type-document #mcneese-page-main .single_space {
+  line-height: 1.0em;
+}
+
+.mcneese.node-type-document #mcneese-page-main.half_space,
+.mcneese.node-type-document #mcneese-page-main .half_space {
+  line-height: 0.5em;
+}
+
+.mcneese.node-type-document #mcneese-page-main figure > * {
+  text-indent: 0px;
+}
+
+.mcneese.node-type-document #mcneese-page-main figure > img {
+  display: block;
+}
+
+.mcneese.node-type-document #mcneese-page-main dfn {
+  color: #004274;
+}
+
+.mcneese.node-type-document #mcneese-page-main dt {
+  font-weight: bolder;
+}
+
+.mcneese.node-type-document #mcneese-page-main .strong {
+  font-weight: bolder;
+}
+
+.mcneese.node-type-document #mcneese-page-main .weak {
+  font-weight: lighter;
+}
+
+.mcneese.node-type-document #mcneese-page-main .normal {
+  font-weight: normal;
+}
+
+.mcneese.node-type-document #mcneese-page-main .italic {
+  font-style: italic;
+}
+
+.mcneese.node-type-document #mcneese-page-main .unitalic {
+  font-style: normal;
+}
+
+.mcneese.node-type-document #mcneese-page-main .oblique {
+  font-style: oblique;
+}
+
+.mcneese.node-type-document #mcneese-page-main .align_left {
+  text-align: left;
+}
+
+.mcneese.node-type-document #mcneese-page-main .align_center {
+  text-align: center;
+}
+
+.mcneese.node-type-document #mcneese-page-main .align_right {
+  text-align: right;
 }
 
 .mcneese.node-type-document #mcneese-page-mainh1.hlist.start,
@@ -317,118 +377,6 @@
 
 .mcneese.node-type-document #mcneese-page-mainol.hlist.start > li ol.hlist:not(.start) > li ol.hlist:not(.start) > li ol.hlist:not(.start) > li ol.hlist:not(.start) > li:not(.silent):before {
   content: counter(hlist_counter_1) "." counter(hlist_counter_2) "." counter(hlist_counter_3) "." counter(hlist_counter_4) "." counter(hlist_counter_5) "." counter(hlist_counter_6) " ";
-}
-
-.mcneese.node-type-document #mcneese-page-main a,
-.mcneese.node-type-document #mcneese-page-main a:visited {
-  color: #0000ff;
-}
-
-.mcneese.node-type-document #mcneese-page-main a:focus,
-.mcneese.node-type-document #mcneese-page-main a:hover {
-  color: #616e07;
-}
-
-.mcneese.node-type-document #mcneese-page-main a:active {
-  color: #aa0000;
-}
-
-.mcneese.node-type-document.is-node_management #mcneese-page-main a,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a:visited {
-  color: #00477f;
-}
-
-.mcneese.node-type-document.is-node_management #mcneese-page-main a:focus,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a:hover,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a:active {
-  color: #7f0000;
-}
-
-.mcneese.node-type-document.is-node_management #mcneese-page-main a.button,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:visited,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:visited,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:visited {
-  color: #000000;
-  background-color: #cecece;
-}
-
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:focus,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:hover,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#edit-cancel:active,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:focus,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:hover,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a#linkit-cancel:active,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:focus,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:hover,
-.mcneese.node-type-document.is-node_management #mcneese-page-main a.button:active {
-  color: #ffffff;
-  background-color: #666666;
-}
-
-.mcneese.node-type-document #mcneese-page-main .reference,
-.mcneese.node-type-document #mcneese-page-main figcaption {
-  text-transform: small;
-  font-family: monospace;
-  font-weight: bolder;
-}
-
-.mcneese.node-type-document #mcneese-page-main.triple_space,
-.mcneese.node-type-document #mcneese-page-main .triple_space {
-  line-height: 3em;
-}
-
-.mcneese.node-type-document #mcneese-page-main.double_space,
-.mcneese.node-type-document #mcneese-page-main .double_space {
-  line-height: 2em;
-}
-
-.mcneese.node-type-document #mcneese-page-main.one_and_half_space,
-.mcneese.node-type-document #mcneese-page-main .one_and_half_space {
-  line-height: 1.5em;
-}
-
-.mcneese.node-type-document #mcneese-page-main.single_space,
-.mcneese.node-type-document #mcneese-page-main .single_space {
-  line-height: 1.5em;
-}
-
-.mcneese.node-type-document #mcneese-page-main.half_space,
-.mcneese.node-type-document #mcneese-page-main .half_space {
-  line-height: 1.5em;
-}
-
-.mcneese.node-type-document #mcneese-page-main figure > * {
-  text-indent: 0px;
-}
-
-.mcneese.node-type-document #mcneese-page-main figure > img {
-  display: block;
-}
-
-.mcneese.node-type-document #mcneese-page-main dfn {
-  color: #004274;
-}
-
-.mcneese.node-type-document #mcneese-page-main dt {
-  font-weight: bolder;
-}
-
-.mcneese.node-type-document #mcneese-page-main .strong {
-  font-weight: bolder;
-}
-
-.mcneese.node-type-document #mcneese-page-main .align_left {
-  text-align: left;
-}
-
-.mcneese.node-type-document #mcneese-page-main .align_center {
-  text-align: center;
-}
-
-.mcneese.node-type-document #mcneese-page-main .align_right {
-  text-align: right;
 }
 
 .mcneese.node-type-document #mcneese-page-main ol.inline {
@@ -512,28 +460,4 @@
 .mcneese.node-type-document #mcneese-page-main ul.inline.sentence-semicolon > li:last-of-type:after,
 .mcneese.node-type-document #mcneese-page-main ol.inline.sentence-semicolon > li:last-of-type:after {
   content: ';';
-}
-
-.mcneese.node-type-document #mcneese-page-main .image {
-  background-color: #f0f0f0;
-}
-
-.mcneese.node-type-document #mcneese-page-main .for_example:before {
-  background-color: #00477f;
-  color: #ffffff;
-
-  counter-increment: example_count;
-  content: 'Example ' counter(example_count);
-
-  font-weight: bold;
-  font-family: monospace;
-
-  line-height: 1em;
-  letter-spacing: 2px;
-}
-
-.mcneese.node-type-document #mcneese-page-main .for_example {
-  position: relative;
-
-  background-color: #e3ea9a;
 }
