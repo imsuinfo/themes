@@ -184,8 +184,10 @@
 .mcneese table > tbody > tr > th {
   padding: 2px 5px;
 
-  border-right: 1px solid #a9a9a9;
   border-top: 1px solid #a9a9a9;
+  border-right: 1px solid #a9a9a9;
+  border-bottom: 0px none;
+  border-left: 0px none;
 }
 
 .mcneese table > tbody > tr.even > td.active {
