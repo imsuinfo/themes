@@ -285,7 +285,7 @@ function mcneese_www_render_page() {
     $node = &$cf['is_data']['node']['object'];
 
     // group image
-    if (property_exists($node, 'field_group_image_show') && !empty($node->field_group_image_show)) {
+    if (property_exists($node, 'field_group_image_show') && is_array($node->field_group_image_show) && isset($node->field_group_image_show['und'][0]['value']) && $node->field_group_image_show['und'][0]['value']) {
       if (property_exists($node, 'field_group_image_custom') && !empty($node->field_group_image_custom)) {
         $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
         $cf['data']['page']['group_image']['height'] = '200';
