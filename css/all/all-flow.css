@@ -180,7 +180,8 @@
   background-color: #ffbffb;
 }
 
-.mcneese table > tbody > tr > td {
+.mcneese table > tbody > tr > td,
+.mcneese table > tbody > tr > th {
   padding: 2px 5px;
 
   border-right: 1px solid #a9a9a9;
