@@ -13,6 +13,14 @@
   color: #7f0000;
 }
 
+.mcneese a[name],
+.mcneese a[name]:focus,
+.mcneese a[name]:active,
+.mcneese a[name]:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .mcneese .form-item,
 .mcneese .form-actions {
   margin: 8px 0px;
