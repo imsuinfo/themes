@@ -257,3 +257,29 @@
   margin: 0px;
   padding: 0px;
 }
+
+
+
+/*** National Terrorism Advisory System Theme ***/
+.mcneese #mcneese-page-content #national_terrorism_advisory_system {
+  font-family: arial, helvetica, sans-serif;
+  background: #0c0c32 url(https://www.dhs.gov/profiles/dhs_gov/modules/features/dhs_ntas_alert/img/cambio-back.jpg) repeat-x scroll center top;
+
+  text-align: center;
+  font-size: 0.8em;
+  color: #ffffff;
+}
+
+.mcneese #mcneese-page-content #national_terrorism_advisory_system h2 {
+  margin: 5px 0 10px 5px;
+  padding: 2px 4px;
+
+  font-family: calibri, arial, helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.mcneese #mcneese-page-content #national_terrorism_advisory_system a {
+  font-size: x-small;
+  font-style: oblique;
+  color: #ffffff;
+}
