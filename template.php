@@ -1843,6 +1843,19 @@ function mcneese_initialize_variables(&$vars) {
   $cf['show']['html']['rdf_namespaces'] = FALSE;
   $cf['data']['html']['rdf_namespaces'] = drupal_get_rdf_namespaces();
 
+  mcneese_initialize_generic_tags($cf);
+}
+
+/**
+ * Perform initialization of generic tags.
+ *
+ * @param array $cf
+ *   The cf variables array.
+ */
+function mcneese_initialize_generic_tags(&$cf) {
+  if (isset($cf['generic']['tags'])) {
+    return;
+  }
 
   $cf['generic'] = array();
   $cf['generic']['tags'] = array();
@@ -1926,13 +1939,13 @@ function mcneese_render_page() {
 
 
   // render the message array pieces
-  if ($cf['show']['page']['messages']) {
+  if (isset($cf['show']['page']['message']) && $cf['show']['page']['messages']) {
     $cf['data']['page']['messages']['renderred'] = theme('status_messages', array('messages' => $cf['data']['page']['messages']['raw'], 'other' => render($cf['data']['page']['messages']['blocks'])));
   }
 
 
   // build the primary and secondary tabs
-  if ($cf['is']['logged_in']) {
+  if (isset($cf['is']['logged_in']) && $cf['is']['logged_in']) {
     mcneese_render_page_tabs();
   }
   else {
