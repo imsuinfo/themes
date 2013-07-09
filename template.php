@@ -1939,13 +1939,13 @@ function mcneese_render_page() {
 
 
   // render the message array pieces
-  if (isset($cf['show']['page']['message']) && $cf['show']['page']['messages']) {
+  if (isset($cf['show']['page']) && array_key_exists('messages', $cf['show']['page']) && $cf['show']['page']['messages']) {
     $cf['data']['page']['messages']['renderred'] = theme('status_messages', array('messages' => $cf['data']['page']['messages']['raw'], 'other' => render($cf['data']['page']['messages']['blocks'])));
   }
 
 
   // build the primary and secondary tabs
-  if (isset($cf['is']['logged_in']) && $cf['is']['logged_in']) {
+  if ($cf['is']['logged_in']) {
     mcneese_render_page_tabs();
   }
   else {
