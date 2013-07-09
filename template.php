@@ -110,6 +110,10 @@ function mcneese_www_preprocess_html(&$vars) {
   $attributes['class'] = array();
   $attributes['role'] = 'navigation';
 
+  if (!isset($cf['is']['html5'])) {
+    $cf['is']['html5'] = TRUE;
+  }
+
   $cf['html']['tags']['mcneese_www_html_footer_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['html']['tags']['mcneese_www_html_footer_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
