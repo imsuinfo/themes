@@ -307,3 +307,12 @@
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-off-loc {
   background-color: #fcfcfc;
 }
+
+.mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > caption {
+  text-align: left;
+
+  font-size: 22px;
+  line-height: 1.2em;
+
+  margin: 3px 0px;
+}
