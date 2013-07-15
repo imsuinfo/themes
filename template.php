@@ -1011,6 +1011,22 @@ function mcneese_preprocess_node(&$vars) {
     $attributes['class'][] = 'node-owner_id-' . check_plain($vars['node']->uid);
   }
 
+
+  // add custom subthemes if they exist.
+  $node_type = check_plain($vars['node']->type);
+
+  $custom_tag = $node_type . '_type-default';
+  $custom_property = 'field_' . $node_type . '_theme';
+
+  if (property_exists($vars['node'], $custom_property)) {
+    $custom_prop = & $vars['node']->$custom_property;
+    if (!empty($custom_prop['und'][0]['tid'])) {
+      $custom_tag = 'is-' . $node_type . '_type-' . $custom_prop['und'][0]['tid'];
+    }
+  }
+
+  $attributes['class'][] = check_plain($custom_tag);
+
   $cf['node']['tags']['mcneese_node_open'] = array('name' => 'section', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['node']['tags']['mcneese_node_close'] = array('name' => 'section', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 }
