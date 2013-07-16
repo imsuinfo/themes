@@ -1,10 +1,10 @@
 /*** ckeditor ***/
-html.wysiwyg-ckeditor {
+html.mcneese-ckeditor {
   color: #000000;
   background-color: #dadada;
 }
 
-html.wysiwyg-ckeditor > .mcneese.mcneese-wysiwyg-ckeditor {
+html.mcneese-ckeditor > .mcneese-wysiwyg-ckeditor {
   position: relative;
 
   color: #000000;
