@@ -4,7 +4,7 @@ html.mcneese-ckeditor {
   background-color: #dadada;
 }
 
-html.mcneese-ckeditor > .mcneese-wysiwyg-ckeditor {
+html.mcneese-ckeditor > body {
   position: relative;
 
   color: #000000;
