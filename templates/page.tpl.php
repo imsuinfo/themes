@@ -25,12 +25,12 @@
 </div>
 
 <?php if ($split_page) { ?>
-  <div id="mcneese-page-content" class="split" role="main">
+  <div id="mcneese-page-content" class="mcneese-content split" role="main">
     <?php mcneese_do_print($cf, 'side', FALSE); ?>
 
     <div class="column-2">
 <?php } else { ?>
-  <div id="mcneese-page-content" class="full" role="main">
+  <div id="mcneese-page-content" class="mcneese-content full" role="main">
 <?php } ?>
 
   <?php mcneese_do_print($cf, 'page_title'); ?>
@@ -47,7 +47,7 @@
   <?php mcneese_do_print($cf, 'action_links', FALSE); ?>
   <?php mcneese_do_print($cf, 'watermarks-pre'); ?>
 
-  <div id="mcneese-page-main" role="main">
+  <div id="mcneese-page-main" class="mcneese-content-main" role="main">
     <!--(begin-page-main)-->
     <?php if ($cf['show']['page']['content']) { ?>
       <?php print($cf['data']['page']['content']); ?>
