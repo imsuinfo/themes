@@ -195,14 +195,14 @@
   margin-bottom: 10px;
 }
 
-#mcneese-page-content > .group_image,
-#mcneese-page-content > .column-2 > .group_image {
+.mcneese .mcneese-content > .group_image,
+.mcneese .mcneese-content > .column-2 > .group_image {
   display: block;
   margin: 0px auto;
 }
 
-#mcneese-page-content > img.group_image,
-#mcneese-page-content > .column-2 > img.group_image {
+.mcneese .mcneese-content > img.group_image,
+.mcneese .mcneese-content > .column-2 > img.group_image {
   width: 100%;
 
   height: 200px;
@@ -869,8 +869,8 @@
 
 
 /*** Fix/Reduce form problems ***/
-#mcneese-page-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item-workbench-access-id > select,
-#mcneese-page-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item > .image-widget > .image-preview > img {
+.mcneese .mcneese-content-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item-workbench-access-id > select,
+.mcneese .mcneese-content-main > form.node-form .vertical-tabs > .vertical-tabs-panes .form-item > .image-widget > .image-preview > img {
   max-width: 100%;
 }
 
@@ -884,7 +884,7 @@
 
 
 /*** Apply Now Adjustments ***/
-.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
+.mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
   font-size: 14px;
   font-weight: bold;
   text-align: center;

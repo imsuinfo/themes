@@ -32,41 +32,22 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
 
     // web form
     if ($node->type == 'webform') {
-      if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
-        $cf['is']['webform_type-default'] = TRUE;
+      if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
+        $type = &$node->field_webform_theme['und'][0]['tid'];
 
-        if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
-          $type = &$node->field_webform_theme['und'][0]['tid']; 
-          $cf['is']['webform_type-default'] = FALSE;
-          $cf['is']['webform_type-'. $type] = TRUE;
-
-          if (!$cf['is']['logged_in']) {
-            if ($type == 592) {
-              $cf['is']['fixed_width'] = FALSE;
-              $cf['is']['flex_width'] = TRUE;
-            }
-            else if ($type == 594) {
-              $cf['is']['fixed_width'] = FALSE;
-              $cf['is']['flex_width'] = TRUE;
-            }
-            else if ($type == 617) {
-              $cf['is']['fixed_width'] = TRUE;
-              $cf['is']['flex_width'] = FALSE;
-            }
+        if (!$cf['is']['logged_in']) {
+          if ($type == 592) {
+            $cf['is']['fixed_width'] = FALSE;
+            $cf['is']['flex_width'] = TRUE;
           }
-        }
-      }
-    }
-
-    // web document
-    if ($node->type == 'document') {
-      if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
-        $cf['is']['document_type-default'] = TRUE;
-
-        if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
-          $type = &$node->field_document_theme['und'][0]['tid'];
-          $cf['is']['document_type-default'] = FALSE;
-          $cf['is']['document_type-'. $type] = TRUE;
+          else if ($type == 594) {
+            $cf['is']['fixed_width'] = FALSE;
+            $cf['is']['flex_width'] = TRUE;
+          }
+          else if ($type == 617) {
+            $cf['is']['fixed_width'] = TRUE;
+            $cf['is']['flex_width'] = FALSE;
+          }
         }
       }
     }

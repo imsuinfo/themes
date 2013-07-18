@@ -1,79 +1,79 @@
-.mcneese.is-document_type-639 #mcneese-page-main {
+.mcneese.node-type-document.node-theme-document-639 .mcneese-content-main {
   font-family: Serif, Sans-Serif, 'Times New Roman';
 
   font-size: 16px;
   line-height: 1.1em;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h1 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h1 {
   font-size: 32px;
   line-height: 1.1em;
 
   margin: 0.6em 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h2 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h2 {
   font-size: 24px;
   line-height: 1.1em;
 
   margin: 4px 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h3 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h3 {
   font-size: 24px;
   line-height: 1.1em;
 
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h4 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h4 {
   font-size: 24px;
   line-height: 1.1em;
 
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h5 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h5 {
   font-size: 24px;
   line-height: 1.1em;
 
   margin: 2px 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-document-header h6 {
+.mcneese.node-type-document.node-theme-document-639 #mcneese-page-document-header h6 {
   font-size: 24px;
   line-height: 1.1em;
 
   margin: 2px 0px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details {
   padding: 16px;
   margin: 1px;
 
   border: 1px solid #000000;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > h2 {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > h2 {
   background-color: #eeeeee;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > .document_details {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > .document_details {
   list-style: none;
 
   margin: 0px;
   padding: 0px 0px 0px 28px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > .document_details > li > .label,
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > .document_details > li > .value {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > .document_details > li > .label,
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > .document_details > li > .value {
   display: inline-block;
   vertical-align: top;
 
   line-height: 1.5em;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > .document_details > li > .label {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > .document_details > li > .label {
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -81,114 +81,114 @@
   min-width: 180px;
 }
 
-.mcneese.is-document_type-639 #mcneese-page-main > .node-type-document > section.document_details > .comment {
+.mcneese.node-type-document.node-theme-document-639 .node.node-type-document > section.document_details > .comment {
   font-weight: bold;
   font-style: italic;
 
   margin: 8px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main,
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main .content-list-child {
   list-style-type: none;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main {
   counter-reset: safety_content_list_main 0;
 
   padding: 0px;
   margin: 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child {
   counter-reset: safety_content_list_child_1 0;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li  > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li  > .content-list-child > li > .content-list-child {
   counter-reset: safety_content_list_child_2 0;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child  > li > .content-list-child  {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child  > li > .content-list-child  {
   counter-reset: safety_content_list_child_3 0;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li {
   counter-increment: safety_content_list_main;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li {
   counter-increment: safety_content_list_child_1;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li {
   counter-increment: safety_content_list_child_2;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
   counter-increment: safety_content_list_child_3;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .list-count:before,
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1);
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-count:before,
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1);
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2);
 }
 
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.is-document_type-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3);
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list-main > li > .content-list-child,
-.mcneese.is-document_type-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child {
   padding-left: 60px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child,
-.mcneese.is-document_type-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
   padding-left: 50px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li {
   margin: 1.0em 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li:last-of-type {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li:last-of-type {
   margin-bottom: 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-text,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-text {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-text,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-text {
   display: table-cell;
 
   padding: 4px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
   word-break: keep-all;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
   padding: 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label {
   font-size: 16px;
   line-height: 1.0em;
   font-weight: normal;
@@ -197,20 +197,20 @@
   padding-right: 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper {
   background-color: #eeeeee;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
   width: 60px;
   min-width: 60px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
   font-size: 18px;
   line-height: 1.1em;
   font-weight: bold;
@@ -218,42 +218,42 @@
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-text,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-text {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-text,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-text {
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
   width: 60px;
   min-width: 60px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
   font-size: 16px;
   line-height: 1.1em;
 
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label {
   font-weight: bold;
 
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-text,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-text {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-text,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-text {
   padding-left: 60px;
 }
 
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-3 > .list-count,
-.mcneese.is-document_type-639 #safety_manual-content .content-list > li.list-item-3 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-3 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-3 > .list-item-wrapper > .list-count {
   width: 50px;
   min-width: 50px;
 }

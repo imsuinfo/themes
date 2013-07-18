@@ -1,53 +1,53 @@
-.mcneese.is-document_type-637 #mcneese-page-main {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main {
   font-family: Serif, Sans-Serif, 'Times New Roman';
 
   font-size: 14px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h1 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h1 {
   font-size: 2.0em;
   line-height: 1.0em;
 
   margin: 4px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h2 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h2 {
   font-size: 1.8em;
   line-height: 1.0em;
 
   margin: 4px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h3 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h3 {
   font-size: 1.6em;
   line-height: 1.0em;
 
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h4 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h4 {
   font-size: 1.4em;
   line-height: 1.0em;
 
   margin: 3px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h5 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h5 {
   font-size: 1.2em;
   line-height: 1.0em;
 
   margin: 2px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main h6 {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main h6 {
   font-size: 1.0em;
   line-height: 1.0em;
 
   margin: 2px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-document-header > .html_tag-hgroup > h1,
-.mcneese.is-document_type-637 #mcneese-page-document-header > .html_tag-hgroup > h2 {
+.mcneese.node-type-document.node-theme-document-637 #mcneese-page-document-header > .html_tag-hgroup > h1,
+.mcneese.node-type-document.node-theme-document-637 #mcneese-page-document-header > .html_tag-hgroup > h2 {
   color: inherit;
 
   font-family: Serif, Sans-Serif, 'Times New Roman';
@@ -56,17 +56,17 @@
   text-shadow: none;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-document-header {
+.mcneese.node-type-document.node-theme-document-637 #mcneese-page-document-header {
   text-align: center;
 
   padding: 4px 0px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main .image {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main .image {
   border: 1px outset;
   padding: 3px;
 }
 
-.mcneese.is-document_type-637 #mcneese-page-main .image {
+.mcneese.node-type-document.node-theme-document-637 .mcneese-content-main .image {
   background-color: #f0f0f0;
 }

@@ -1,4 +1,4 @@
-.mcneese.is-front #mcneese-page-content > .page-title {
+.mcneese.is-front .mcneese-content > .page-title {
   display: block;
   visibility: hidden;
   overflow: hidden;
@@ -54,10 +54,10 @@
   margin-right: auto;
 }
 
-#mcneese-page-main,
-#mcneese-page-main > .node-id-492,
-#mcneese-page-main > .node-id-819,
-#mcneese-page-main > .view-display-id-front_page {
+.mcneese .mcneese-content-main,
+.mcneese .mcneese-content-main > .node-id-492,
+.mcneese .mcneese-content-main > .node-id-819,
+.mcneese .mcneese-content-main > .view-display-id-front_page {
   position: relative;
 }
 
@@ -66,10 +66,10 @@
   margin-bottom: 5px;
 }
 
-#mcneese-page-main > .node-id-819,
-#mcneese-page-main > .node-id-492,
-#mcneese-page-main > .view-display-id-front_page > .view-content > .views-row-1 > .node-id-819,
-#mcneese-page-main > .view-display-id-front_page > .view-content > .views-row-1 > .node-id-492 {
+.mcneese .mcneese-content-main > .node-id-819,
+.mcneese .mcneese-content-main > .node-id-492,
+.mcneese .mcneese-content-main > .view-display-id-front_page > .view-content > .views-row-1 > .node-id-819,
+.mcneese .mcneese-content-main > .view-display-id-front_page > .view-content > .views-row-1 > .node-id-492 {
   display: -moz-box;
   display: -webkit-box;
   display: box;

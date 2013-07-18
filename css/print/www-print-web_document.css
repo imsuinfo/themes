@@ -31,39 +31,39 @@
   margin-right: auto;
 }
 
-.mcneese.node-type-document #mcneese-page-main header,
-.mcneese.node-type-document #mcneese-page-main header > hgroup {
+.mcneese.node-type-document .mcneese-content-main header,
+.mcneese.node-type-document .mcneese-content-main header > hgroup {
   page-break-before: avoid;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_before-always {
+.mcneese.node-type-document .mcneese-content-main .break_before-always {
   page-break-before: always;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_before-left {
+.mcneese.node-type-document .mcneese-content-main .break_before-left {
   page-break-before: left;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_before-right {
+.mcneese.node-type-document .mcneese-content-main .break_before-right {
   page-break-before: right;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_before-avoid {
+.mcneese.node-type-document .mcneese-content-main .break_before-avoid {
   page-break-before: avoid;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_after-always {
+.mcneese.node-type-document .mcneese-content-main .break_after-always {
   page-break-after: always;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_after-left {
+.mcneese.node-type-document .mcneese-content-main .break_after-left {
   page-break-after: left;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_after-right {
+.mcneese.node-type-document .mcneese-content-main .break_after-right {
   page-break-after: right;
 }
 
-.mcneese.node-type-document #mcneese-page-main .break_after-avoid {
+.mcneese.node-type-document .mcneese-content-main .break_after-avoid {
   page-break-after: avoid;
 }

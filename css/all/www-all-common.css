@@ -24,12 +24,12 @@
 
 
 /*** Institution Effectiveness Policies ***/
-#mcneese-page-content .node-type-ie_policy > .field-label-inline {
+.mcneese .mcneese-content .node-type-ie_policy > .field-label-inline {
   margin: 6px 0px;
 }
 
-#mcneese-page-content .node-type-ie_policy > .field-label-inline  > .field-label,
-#mcneese-page-content .node-type-ie_policy > .field-label-inline  > .field-items {
+.mcneese .mcneese-content .node-type-ie_policy > .field-label-inline  > .field-label,
+.mcneese .mcneese-content .node-type-ie_policy > .field-label-inline  > .field-items {
   display: inline-block;
 
   float: none;
@@ -38,75 +38,75 @@
 
 
 /*** Content Specific Style: csf ***/
-#mcneese-page-content .csf_wrap ul {
+.mcneese .mcneese-content .csf_wrap ul {
   list-style: none outside none;
 }
 
-#mcneese-page-content .csf_wrap {
+.mcneese .mcneese-content .csf_wrap {
   display: inline-block;
   margin: 0px auto;
 }
 
-#mcneese-page-content .csf_wrap a:hover {
+.mcneese .mcneese-content .csf_wrap a:hover {
   color: #0066ff;
 }
 
-#mcneese-page-content .csf_wrap li {
+.mcneese .mcneese-content .csf_wrap li {
   display: inline-block;
   margin-top: 8px;
   text-align: center;
   width: 149px;
 }
 
-#mcneese-page-content .csf_wrap li a {
+.mcneese .mcneese-content .csf_wrap li a {
   color: #333333;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 12px;
   text-decoration: none;
 }
 
-#mcneese-page-content .csf_wrap li a img {
+.mcneese .mcneese-content .csf_wrap li a img {
   border-style: none;
   vertical-align: bottom;
 }
 
-#mcneese-page-content .csf_wrap li a:hover img {
+.mcneese .mcneese-content .csf_wrap li a:hover img {
   background-color: #f3f3f3;
 }
 
-#mcneese-page-content .csf-col-image {
+.mcneese .mcneese-content .csf-col-image {
     float: left;
     height: 200px;
     vertical-align: top;
     width: 130px;
 }
 
-#mcneese-page-content .csf-col-image img {
+.mcneese .mcneese-content .csf-col-image img {
     height: 130px;
     width: 130px;
 }
 
-#mcneese-page-content .csf-cell-wrap {
+.mcneese .mcneese-content .csf-cell-wrap {
     float: left;
     width: 248px;
 }
 
-.mcneese.alias-csf_desktops #mcneese-page-content table th,
-.mcneese.alias-csf_notebooks #mcneese-page-content table th,
-.mcneese.alias-csf_tablets #mcneese-page-content table th,
-.mcneese.alias-csf_printers #mcneese-page-content table th,
-.mcneese.alias-csf_macpro #mcneese-page-content table th,
-.mcneese.alias-csf_imac #mcneese-page-content table th,
-.mcneese.alias-csf_macmini #mcneese-page-content table th,
-.mcneese.alias-csf_macbookpro #mcneese-page-content table th,
-.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_printers_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table th,
-.mcneese.mcneese.alias-csf_imac_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table th,
-.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table th {
+.mcneese.alias-csf_desktops .mcneese-content table th,
+.mcneese.alias-csf_notebooks .mcneese-content table th,
+.mcneese.alias-csf_tablets .mcneese-content table th,
+.mcneese.alias-csf_printers .mcneese-content table th,
+.mcneese.alias-csf_macpro .mcneese-content table th,
+.mcneese.alias-csf_imac .mcneese-content table th,
+.mcneese.alias-csf_macmini .mcneese-content table th,
+.mcneese.alias-csf_macbookpro .mcneese-content table th,
+.mcneese.alias-csf_desktops_node_draft .mcneese-content table th,
+.mcneese.alias-csf_notebooks_node_draft .mcneese-content table th,
+.mcneese.alias-csf_tablets_node_draft .mcneese-content table th,
+.mcneese.alias-csf_printers_node_draft .mcneese-content table th,
+.mcneese.alias-csf_macpro_node_draft .mcneese-content table th,
+.mcneese.mcneese.alias-csf_imac_node_draft .mcneese-content table th,
+.mcneese.alias-csf_macmini_node_draft .mcneese-content table th,
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content table th {
     background: none repeat scroll 0px 0px #FFFFFF;
     color: #333333;
     font-family: Arial,Helvetica,sans-serif;
@@ -115,98 +115,98 @@
     text-transform: uppercase;
 }
 
-.mcneese.alias-csf_desktops #mcneese-page-content table td,
-.mcneese.alias-csf_notebooks #mcneese-page-content table td,
-.mcneese.alias-csf_tablets #mcneese-page-content table td,
-.mcneese.alias-csf_printers #mcneese-page-content table td,
-.mcneese.alias-csf_macpro #mcneese-page-content table td,
-.mcneese.alias-csf_imac #mcneese-page-content table td,
-.mcneese.alias-csf_macmini #mcneese-page-content table td,
-.mcneese.alias-csf_macbookpro #mcneese-page-content table td,
-.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_printers_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_imac_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table td,
-.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table td {
+.mcneese.alias-csf_desktops .mcneese-content table td,
+.mcneese.alias-csf_notebooks .mcneese-content table td,
+.mcneese.alias-csf_tablets .mcneese-content table td,
+.mcneese.alias-csf_printers .mcneese-content table td,
+.mcneese.alias-csf_macpro .mcneese-content table td,
+.mcneese.alias-csf_imac .mcneese-content table td,
+.mcneese.alias-csf_macmini .mcneese-content table td,
+.mcneese.alias-csf_macbookpro .mcneese-content table td,
+.mcneese.alias-csf_desktops_node_draft .mcneese-content table td,
+.mcneese.alias-csf_notebooks_node_draft .mcneese-content table td,
+.mcneese.alias-csf_tablets_node_draft .mcneese-content table td,
+.mcneese.alias-csf_printers_node_draft .mcneese-content table td,
+.mcneese.alias-csf_macpro_node_draft .mcneese-content table td,
+.mcneese.alias-csf_imac_node_draft .mcneese-content table td,
+.mcneese.alias-csf_macmini_node_draft .mcneese-content table td,
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content table td {
     padding: 8px;
 }
 
-.mcneese.alias-csf_desktops #mcneese-page-content table tr,
-.mcneese.alias-csf_notebooks #mcneese-page-content table tr,
-.mcneese.alias-csf_tablets #mcneese-page-content table tr,
-.mcneese.alias-csf_printers #mcneese-page-content table tr,
-.mcneese.alias-csf_macpro #mcneese-page-content table tr,
-.mcneese.alias-csf_imac #mcneese-page-content table tr,
-.mcneese.alias-csf_macmini #mcneese-page-content table tr,
-.mcneese.alias-csf_macbookpro #mcneese-page-content table tr,
-.mcneese.alias-csf_desktops_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_tablets_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_printers_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_macpro_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_imac_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_macmini_node_draft #mcneese-page-content table tr,
-.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content table tr {
+.mcneese.alias-csf_desktops .mcneese-content table tr,
+.mcneese.alias-csf_notebooks .mcneese-content table tr,
+.mcneese.alias-csf_tablets .mcneese-content table tr,
+.mcneese.alias-csf_printers .mcneese-content table tr,
+.mcneese.alias-csf_macpro .mcneese-content table tr,
+.mcneese.alias-csf_imac .mcneese-content table tr,
+.mcneese.alias-csf_macmini .mcneese-content table tr,
+.mcneese.alias-csf_macbookpro .mcneese-content table tr,
+.mcneese.alias-csf_desktops_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_notebooks_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_tablets_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_printers_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_macpro_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_imac_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_macmini_node_draft .mcneese-content table tr,
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content table tr {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
     font-weight: normal;
 }
 
-.mcneese.alias-csf_desktops #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_notebooks #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_tablets #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_printers #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macpro #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_imac #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macmini #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macbookpro #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_desktops_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_tablets_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_printers_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_imac_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macmini_node_draft #mcneese-page-content tbody tr:nth-of-type(2n),
-.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n) {
+.mcneese.alias-csf_desktops .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_notebooks .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_tablets .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_printers .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macpro .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_imac .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macmini .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macbookpro .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_desktops_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_notebooks_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_tablets_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_printers_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macpro_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_imac_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macmini_node_draft .mcneese-content tbody tr:nth-of-type(2n),
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content tbody tr:nth-of-type(2n) {
     background: none repeat scroll 0px 0px #EEEEEE;
 }
 
-.mcneese.alias-csf_desktops #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_notebooks #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_tablets #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_printers #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macpro #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_imac #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macmini #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macbookpro #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_desktops_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_notebooks_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_tablets_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_printers_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_imac_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macmini_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macbookpro_node_draft #mcneese-page-content tbody tr:nth-of-type(2n+1) {
+.mcneese.alias-csf_desktops .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_notebooks .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_tablets .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_printers .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macpro .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_imac .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macmini .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macbookpro .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_desktops_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_notebooks_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_tablets_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_printers_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macpro_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_imac_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macmini_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content tbody tr:nth-of-type(2n+1) {
     background: none repeat scroll 0px 0px #D1D1D1;
 }
 
 
 
 /*** Policy-specific theme tweaks ***/
-#mcneese-page-content .node-ie-policy .field-name-field-authority,
-#mcneese-page-content .node-ie-policy .field-name-field-date-enacted,
-#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook,
-#mcneese-page-content .node-ie-policy .field-name-field-authority {
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-date-enacted,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-fs-handbook,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority {
   margin: 6px 0px;
 }
 
-#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-label,
-#mcneese-page-content .node-ie-policy .field-name-field-date-enacted > .field-label,
-#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook > .field-label,
-#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-label {
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority > .field-label,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-date-enacted > .field-label,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-fs-handbook > .field-label,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority > .field-label {
   display: inline-block;
   float: none;
   vertical-align: baseline;
@@ -214,10 +214,10 @@
   font-size: 14px;
 }
 
-#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-item,
-#mcneese-page-content .node-ie-policy .field-name-field-date-enacted > .field-item,
-#mcneese-page-content .node-ie-policy .field-name-field-fs-handbook > .field-item,
-#mcneese-page-content .node-ie-policy .field-name-field-authority > .field-item {
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority > .field-item,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-date-enacted > .field-item,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-fs-handbook > .field-item,
+.mcneese .mcneese-content .node-ie-policy .field-name-field-authority > .field-item {
   display: inline-block;
   vertical-align: baseline;
 }
@@ -225,11 +225,11 @@
 
 
 /*** Custom HR-Jobs 2.0 legacy css, remove once HR-Jobs 2.0 is replaced. ***/
-#mcneese-page-main .view-content .centerblock_ieworkaround {
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround {
   display: inline;
 }
 
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock {
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock {
   display: table;
 
   text-align: left;
@@ -246,11 +246,11 @@
   border-spacing: 0px;
 }
 
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock thead,
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tbody,
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr,
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr > td,
-#mcneese-page-main .view-content .centerblock_ieworkaround > .centerblock tr > th {
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock thead,
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock tbody,
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock tr,
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock tr > td,
+.mcneese .mcneese-content-main .view-content .centerblock_ieworkaround > .centerblock tr > th {
   display: inline;
 
   border: 0px none;
@@ -261,7 +261,7 @@
 
 
 /*** National Terrorism Advisory System Theme ***/
-.mcneese #mcneese-page-content #national_terrorism_advisory_system {
+.mcneese .mcneese-content #national_terrorism_advisory_system {
   font-family: arial, helvetica, sans-serif;
   background: #0c0c32 url(https://www.dhs.gov/profiles/dhs_gov/modules/features/dhs_ntas_alert/img/cambio-back.jpg) repeat-x scroll center top;
 
@@ -270,7 +270,7 @@
   color: #ffffff;
 }
 
-.mcneese #mcneese-page-content #national_terrorism_advisory_system h2 {
+.mcneese .mcneese-content #national_terrorism_advisory_system h2 {
   margin: 5px 0 10px 5px;
   padding: 2px 4px;
 
@@ -278,7 +278,7 @@
   font-size: 12px;
 }
 
-.mcneese #mcneese-page-content #national_terrorism_advisory_system a {
+.mcneese .mcneese-content #national_terrorism_advisory_system a {
   font-size: x-small;
   font-style: oblique;
   color: #ffffff;

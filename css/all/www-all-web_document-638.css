@@ -1,5 +1,5 @@
-.mcneese.is-document_type-638 #mcneese-page-document-header > .html_tag-hgroup > h1,
-.mcneese.is-document_type-638 #mcneese-page-document-header > .html_tag-hgroup > h2 {
+.mcneese.node-type-document.node-theme-document-638 #mcneese-page-document-header > .html_tag-hgroup > h1,
+.mcneese.node-type-document.node-theme-document-638 #mcneese-page-document-header > .html_tag-hgroup > h2 {
   color: inherit;
 
   font-family: Serif, Sans-Serif, 'Times New Roman';
@@ -8,23 +8,23 @@
   text-shadow: none;
 }
 
-.mcneese.is-document_type-638.is-node_management #mcneese-page-document-header,
-.mcneese.is-document_type-638.is-node_management #mcneese-page-document-footer {
+.mcneese.node-type-document.node-theme-document-638.is-node_management #mcneese-page-document-header,
+.mcneese.node-type-document.node-theme-document-638.is-node_management #mcneese-page-document-footer {
   display: none;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-document-header {
+.mcneese.node-type-document.node-theme-document-638 #mcneese-page-document-header {
   text-align: center;
 
   padding: 4px 0px;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .image {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .image {
   border: 1px outset;
   padding: 3px;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .for_example:before {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .for_example:before {
   line-height: 1em;
   letter-spacing: 2px;
 
@@ -36,7 +36,7 @@
   padding: 3px;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .for_example {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .for_example {
   display: inline-block;
   position: relative;
 
@@ -45,33 +45,33 @@
   padding: 10px;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main {
   counter-reset: example_count 0 section 0;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main > section {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main > section {
   counter-increment: section;
   counter-reset: sub_section;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main > section > section {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main > section > section {
   counter-increment: sub_section;
   counter-reset: sub_sub_section;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main > section > section > section {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main > section > section > section {
   counter-increment: sub_sub_section;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main.hlist {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main.hlist {
   list-style: none;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .image {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .image {
   background-color: #f0f0f0;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .for_example:before {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .for_example:before {
   background-color: #00477f;
   color: #ffffff;
 
@@ -85,7 +85,7 @@
   letter-spacing: 2px;
 }
 
-.mcneese.is-document_type-638 #mcneese-page-main .for_example {
+.mcneese.node-type-document.node-theme-document-638 .mcneese-content-main .for_example {
   position: relative;
 
   background-color: #e3ea9a;
