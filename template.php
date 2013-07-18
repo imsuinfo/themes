@@ -937,6 +937,23 @@ function mcneese_preprocess_page(&$vars) {
       }
     }
   }
+
+  if (isset($vars['node']) && is_object($vars['node'])) {
+    $node_type = check_plain($vars['node']->type);
+
+    $custom_tag = $node_type . '_type-default';
+    $custom_property = 'field_' . $node_type . '_theme';
+
+    if (property_exists($vars['node'], $custom_property)) {
+      $custom_prop = & $vars['node']->$custom_property;
+      if (!empty($custom_prop['und'][0]['tid'])) {
+        $custom_tag = 'node-theme-' . $node_type . '-' . $custom_prop['und'][0]['tid'];
+      }
+    }
+
+    $custom_tag = check_plain($custom_tag);
+    $cf['markup_css']['body']['class'] .= ' ' . $custom_tag;
+  }
 }
 
 /**
@@ -992,18 +1009,22 @@ function mcneese_preprocess_node(&$vars) {
   $cf['node']['content'] = &$vars['content'];
   unset($vars['content']);
 
+  $node_type = check_plain($vars['node']->type);
+
   $attributes = array();
   $attributes['class'] = array();
   $attributes['class'][] = 'node';
   $attributes['class'][] = 'node-id-' . check_plain($vars['node']->nid);
   $attributes['class'][] = 'node-revision-' . check_plain($vars['node']->vid);
-  $attributes['class'][] = 'node-type-' . check_plain($vars['node']->type);
+  $attributes['class'][] = 'node-type-' . $node_type;
 
   if ($vars['node']->status) {
-    $attributes['class'][] = 'node-published';
+    $custom_tag = 'node-published';
+    $attributes['class'][] = $custom_tag;
   }
   else {
-    $attributes['class'][] = 'node-unpublished';
+    $custom_tag = 'node-unpublished';
+    $attributes['class'][] = $custom_tag;
   }
 
   // only display uid if the user is logged in
@@ -1013,19 +1034,18 @@ function mcneese_preprocess_node(&$vars) {
 
 
   // add custom subthemes if they exist.
-  $node_type = check_plain($vars['node']->type);
-
   $custom_tag = $node_type . '_type-default';
   $custom_property = 'field_' . $node_type . '_theme';
 
   if (property_exists($vars['node'], $custom_property)) {
     $custom_prop = & $vars['node']->$custom_property;
     if (!empty($custom_prop['und'][0]['tid'])) {
-      $custom_tag = 'is-' . $node_type . '_type-' . $custom_prop['und'][0]['tid'];
+      $custom_tag = 'node-theme-' . $node_type . '-' . $custom_prop['und'][0]['tid'];
     }
   }
 
-  $attributes['class'][] = check_plain($custom_tag);
+  $custom_tag = check_plain($custom_tag);
+  $attributes['class'][] = $custom_tag;
 
   $cf['node']['tags']['mcneese_node_open'] = array('name' => 'section', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
   $cf['node']['tags']['mcneese_node_close'] = array('name' => 'section', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
