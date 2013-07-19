@@ -884,7 +884,7 @@
 
 
 /*** Apply Now Adjustments ***/
-.mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
