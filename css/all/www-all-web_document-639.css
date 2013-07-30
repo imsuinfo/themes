@@ -108,8 +108,12 @@
   counter-reset: safety_content_list_child_2 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child  > li > .content-list-child  {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child {
   counter-reset: safety_content_list_child_3 0;
+}
+
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+  counter-reset: safety_content_list_child_4 0;
 }
 
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li {
@@ -126,6 +130,10 @@
 
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
   counter-increment: safety_content_list_child_3;
+}
+
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+  counter-increment: safety_content_list_child_4;
 }
 
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .list-count:before,
@@ -146,6 +154,11 @@
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3);
+}
+
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+  content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3) "." counter(safety_content_list_child_4);
 }
 
 .mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child,
