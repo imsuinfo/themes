@@ -473,6 +473,10 @@
   counter-reset: mcneese_content_list_numbered_child_4 0;
 }
 
+.mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child  > li > .content-list-numbered-child > li .content-list-numbered-child > li .content-list-numbered-child {
+  counter-reset: mcneese_content_list_numbered_child_5 0;
+}
+
 .mcneese .content-list-numbered-main > li {
   counter-increment: mcneese_content_list_numbered_main;
 }
@@ -491,6 +495,10 @@
 
 .mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child {
   counter-increment: mcneese_content_list_numbered_child_4;
+}
+
+.mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child {
+  counter-increment: mcneese_content_list_numbered_child_5;
 }
 
 .mcneese .content-list-numbered-main > li > .list-count:before,
@@ -516,6 +524,11 @@
 .mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .list-count:before,
 .mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .list-item-wrapper > .list-count:before {
   content: counter(mcneese_content_list_numbered_main) "." counter(mcneese_content_list_numbered_child_1) "." counter(mcneese_content_list_numbered_child_2) "." counter(mcneese_content_list_numbered_child_3) "." counter(mcneese_content_list_numbered_child_4);
+}
+
+.mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .list-count:before,
+.mcneese .content-list-numbered-main > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .content-list-numbered-child > li > .list-item-wrapper > .list-count:before {
+  content: counter(mcneese_content_list_numbered_main) "." counter(mcneese_content_list_numbered_child_1) "." counter(mcneese_content_list_numbered_child_2) "." counter(mcneese_content_list_numbered_child_3) "." counter(mcneese_content_list_numbered_child_4) "." counter(mcneese_content_list_numbered_child_5);
 }
 
 .mcneese .content-list-main > li > .list-count,
@@ -592,6 +605,10 @@
   padding-left: 80px;
 }
 
+.mcneese .content-list-main > li.list-item-1 > .content-list-child > li.list-item-1 > .content-list-child > li.list-item-1 > .content-list-child > li.list-item-1 > .content-list-child > li.list-item-1 > .content-list-child > li.list-item-1 > .content-list-child {
+  padding-left: 90px;
+}
+
 .mcneese .content-list-main > li.list-item-1 > .list-count,
 .mcneese .content-list-main > li.list-item-1 > .list-item-wrapper > .list-count,
 .mcneese .content-list-main > li > .content-list-child > li.list-item-1 > .list-count,
@@ -616,6 +633,12 @@
 .mcneese .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li.list-item-1 > .list-item-wrapper > .list-count {
   width: 80px;
   min-width: 80px;
+}
+
+.mcneese .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li.list-item-1 > .list-count,
+.mcneese .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li.list-item-1 > .list-item-wrapper > .list-count {
+  width: 90px;
+  min-width: 90px;
 }
 
 .mcneese .content-list-main > li.list-item-1 > .list-text,
