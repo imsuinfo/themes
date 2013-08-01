@@ -2642,7 +2642,7 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       print($cf['data']['page']['header'] . "\n");
 
       if ($cf['show']['page']['logo']) {
-        print('<a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="image">' . $cf['data']['page']['logo']['alt'] . '</a>' . "\n");
+        print('<a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a>' . "\n");
       }
 
       if ($cf['show']['page']['header_menu_1']) {

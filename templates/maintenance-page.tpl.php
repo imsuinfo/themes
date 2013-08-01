@@ -76,7 +76,7 @@
       <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
         <!--(begin-page-header)-->
         <div class="header-section header-top">
-          <a href="/" class="site-logo" title="Sandbox of McNeese State University" role="image"><?php print($head_title); ?></a>
+          <a href="/" class="site-logo" title="Sandbox of McNeese State University" role="img"><?php print($head_title); ?></a>
         </div>
         <div class="header-separator"></div>
         <div class="header-section header-bottom"></div>
