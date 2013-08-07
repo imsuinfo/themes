@@ -28,7 +28,7 @@
   <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
   <?php if (isset($cf['is']['overlay']) && !$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
     <!--(begin-skipnav)-->
-    <a id="mcneese-skip_nav" href="#mcneese-page-main"><?php print t("Skip to main content"); ?></a>
+    <a id="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
     <!--(end-skipnav)-->
   <?php } ?>
 
@@ -60,7 +60,7 @@
   <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?> is-html5 is-flex_width" <?php print($attributes);?>>
     <div id="mcneese-skip_nav">
       <!--(begin-skipnav)-->
-      <a href="#mcneese-page-main">Skip to main content</a>
+      <a href="#mcneese-content-main">Skip to main content</a>
       <!--(end-skipnav)-->
     </div>
 
@@ -103,7 +103,7 @@
 
         <div id="mcneese-float-left" class="expanded fixed"></div>
 
-        <div id="mcneese-page-main" role="main">
+        <div id="mcneese-content-main" role="main">
           <!--(begin-page-main)-->
           The website is unable to connect to the database.<br>
           Please contact the site administrator.
