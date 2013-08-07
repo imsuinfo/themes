@@ -2,34 +2,38 @@
 
 
 /*** Common ***/
-.mcneese.node-theme-webforn-617 #mcneese-content-main {
+.mcneese.node-theme-webform-617 #mcneese-content-main {
   font-family: Serif, Sans-Serif, 'Times New Roman';
 
   font-size: 10px;
 }
 
-.mcneese.node-theme-webforn-617 #edit-actions,
-.mcneese.node-theme-webforn-617 #mcneese-content-main .webform-client-form .webform-component-ajax-page > .webform-ajax-page-nav {
+.mcneese.node-theme-webform-617 #edit-actions,
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-ajax-page > .webform-ajax-page-nav {
   display: none;
 }
 
-.mcneese.node-theme-webforn-617 #mcneese-content-main fieldset + fieldset {
+.mcneese.node-theme-webform-617 #mcneese-content-main fieldset + fieldset {
   margin-top: 4px;
 }
 
-.mcneese.node-theme-webforn-617 #mcneese-content-main .webform-client-form .webform-component > .form-select > option[value=""] {
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component > .form-select > option[value=""] {
   display: none;
 }
 
-.mcneese.node-theme-webforn-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .webform-calendar {
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .webform-calendar {
   display: none;
 }
 
-.mcneese.node-theme-webforn-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-type-select > .form-select.day {
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-type-select > .form-select.day {
 }
 
-.mcneese.node-theme-webforn-617.agent-engine-presto #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
-.mcneese.node-theme-webforn-617.agent-engine-trident #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
-.mcneese.node-theme-webforn-617.agent-engine-gecko #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select {
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .form-actions {
+  display: none;
+}
+
+.mcneese.node-theme-webform-617.agent-engine-presto #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
+.mcneese.node-theme-webform-617.agent-engine-trident #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select,
+.mcneese.node-theme-webform-617.agent-engine-gecko #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select {
   display: table-cell;
 }
