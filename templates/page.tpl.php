@@ -83,7 +83,7 @@
   <?php mcneese_do_print($cf, 'action_links', FALSE); ?>
   <?php mcneese_do_print($cf, 'watermarks-pre'); ?>
 
-  <div id="mcneese-page-main" class="mcneese-content-main" role="main">
+  <div id="mcneese-content-main" class="mcneese-content-main" role="main">
     <!--(begin-page-main)-->
     <?php if ($cf['show']['page']['content']) { ?>
       <?php if ($cf['show']['page']['document_header']) { ?>
