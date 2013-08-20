@@ -1,0 +1,92 @@
+.mcneese.node-type-document.node-theme-document-669 #mcneese-page-document-header > .html_tag-hgroup > h1,
+.mcneese.node-type-document.node-theme-document-669 #mcneese-page-document-header > .html_tag-hgroup > h2 {
+  color: inherit;
+
+  font-family: Serif, Sans-Serif, 'Times New Roman';
+  font-weight: bold;
+
+  text-shadow: none;
+}
+
+.mcneese.node-type-document.node-theme-document-669.is-node_management #mcneese-page-document-header,
+.mcneese.node-type-document.node-theme-document-669.is-node_management #mcneese-page-document-footer {
+  display: none;
+}
+
+.mcneese.node-type-document.node-theme-document-669 #mcneese-page-document-header {
+  text-align: center;
+
+  padding: 4px 0px;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .image {
+  border: 1px outset;
+  padding: 3px;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .for_example:before {
+  line-height: 1em;
+  letter-spacing: 2px;
+
+  position: absolute;
+  left: -10px;
+  top: -10px;
+
+  border: 1px solid #000000;
+  padding: 3px;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .for_example {
+  display: inline-block;
+  position: relative;
+
+  border: 1px solid #00477f;
+  margin: 10px 15px;
+  padding: 10px;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main {
+  counter-reset: example_count 0 section 0;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main > section {
+  counter-increment: section;
+  counter-reset: sub_section;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main > section > section {
+  counter-increment: sub_section;
+  counter-reset: sub_sub_section;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main > section > section > section {
+  counter-increment: sub_sub_section;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main.hlist {
+  list-style: none;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .image {
+  background-color: #f0f0f0;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .for_example:before {
+  background-color: #00477f;
+  color: #ffffff;
+
+  counter-increment: example_count;
+  content: 'Example ' counter(example_count);
+
+  font-weight: bold;
+  font-family: monospace;
+
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+.mcneese.node-type-document.node-theme-document-669 .mcneese-content-main .for_example {
+  position: relative;
+
+  background-color: #e3ea9a;
+}
