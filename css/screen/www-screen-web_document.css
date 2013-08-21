@@ -1,30 +1,3 @@
-.mcneese.node-type-document #mcneese-top,
-.mcneese.node-type-document #mcneese-page,
-.mcneese.node-type-document #mcneese-bottom,
-.mcneese.node-type-document #mcneese-www-footer,
-.mcneese.node-type-document > .dev-query {
-  width: inherit;
-  min-width: inherit;
-  max-width: inherit;
-
-  margin: 0px 64px;
-}
-
-.mcneese.node-type-document #mcneese-skip_nav:active,
-.mcneese.node-type-document #mcneese-skip_nav:focus,
-.mcneese.node-type-document #mcneese-skip_nav:hover {
-  width: inherit;
-  min-width: inherit;
-  max-width: inherit;
-
-  margin: 0px 64px;
-}
-
-.mcneese.node-type-document #mcneese-bottom,
-.mcneese.node-type-document > .dev-query {
-  margin: 0px 64px 15px 64px;
-}
-
 .mcneese.node-type-document #mcneese-page {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

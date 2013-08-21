@@ -51,6 +51,24 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
         }
       }
     }
+
+    // document
+    if ($node->type == 'document') {
+      if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
+        $type = &$node->field_document_theme['und'][0]['tid'];
+
+        if (!$cf['is']['logged_in']) {
+          if ($type == 669 || $type = 671) {
+            $cf['is']['fixed_width'] = TRUE;
+            $cf['is']['flex_width'] = FALSE;
+          }
+          else {
+            $cf['is']['fixed_width'] = FALSE;
+            $cf['is']['flex_width'] = TRUE;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -224,9 +242,6 @@ function mcneese_www_preprocess_page(&$vars) {
         $cf['show']['page']['document_footer'] = TRUE;
         $cf['data']['page']['document_footer']['markup'] = $node->field_footer['und'][0]['safe_value'];
       }
-
-      // work area menu is not supported by the web document format.
-      $cf['show']['page']['work_area_menu'] = FALSE;
     }
 
 
