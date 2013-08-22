@@ -5,3 +5,7 @@
 .mcneese .workbench_menu {
   display: none;
 }
+
+.mcneese.node-type-webform .webform-client-form > .form-wrapper-inner > #edit-actions {
+  display: none;
+}
