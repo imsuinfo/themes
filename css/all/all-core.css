@@ -979,3 +979,75 @@
 .mcneese .align_right {
   text-align: right;
 }
+
+.mcneese .page-break-after-auto {
+  page-break-after: auto;
+}
+
+.mcneese .page-break-after-always {
+  page-break-after: always;
+}
+
+.mcneese .page-break-after-avoid {
+  page-break-after: avoid;
+}
+
+.mcneese .page-break-after-left {
+  page-break-after: left;
+}
+
+.mcneese .page-break-after-right {
+  page-break-after: right;
+}
+
+.mcneese .page-break-after-inherit {
+  page-break-after: inherit;
+}
+
+.mcneese .page-break-before-auto {
+  page-break-before: auto;
+}
+
+.mcneese .page-break-before-always {
+  page-break-before: always;
+}
+
+.mcneese .page-break-before-avoid {
+  page-break-before: avoid;
+}
+
+.mcneese .page-break-before-left {
+  page-break-before: left;
+}
+
+.mcneese .page-break-before-right {
+  page-break-before: right;
+}
+
+.mcneese .page-break-before-inherit {
+  page-break-before: inherit;
+}
+
+.mcneese .page-break-inside-auto {
+  page-break-inside: auto;
+}
+
+.mcneese .page-break-inside-always {
+  page-break-inside: always;
+}
+
+.mcneese .page-break-inside-avoid {
+  page-break-inside: avoid;
+}
+
+.mcneese .page-break-inside-left {
+  page-break-inside: left;
+}
+
+.mcneese .page-break-inside-right {
+  page-break-inside: right;
+}
+
+.mcneese .page-break-inside-inherit {
+  page-break-inside: inherit;
+}
