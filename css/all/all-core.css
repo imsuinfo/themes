@@ -30,3 +30,152 @@
 .mcneese .node-unpublished {
   background-color: inherit;
 }
+
+
+
+/*** Basic Style Notation Overrides ***/
+.mcneese .block {
+  display: block;
+}
+
+.mcneese .inline-block {
+  display: inline-block;
+}
+
+.mcneese .inline {
+  display: inline;
+}
+
+.mcneese .clear {
+  clear: both;
+}
+
+.mcneese .clear-none {
+  clear: none;
+}
+
+.mcneese .clear-left {
+  clear: left;
+}
+
+.mcneese .clear-right {
+  clear: right;
+}
+
+.mcneese .float-none {
+  float: none;
+}
+
+.mcneese .float-left {
+  float: left;
+}
+
+.mcneese .float-right {
+  float: right;
+}
+
+.mcneese .separated {
+  margin: 15px 0px;
+}
+
+.mcneese .separated-alt {
+  padding: 15px 0px;
+}
+
+.mcneese .uppercase {
+  text-transform: uppercase;
+}
+
+.mcneese .lowercase {
+  text-transform: lowercase;
+}
+
+.mcneese .capitalize {
+  text-transform: capitalize;
+}
+
+.mcneese .underline {
+  text-decoration: underline;
+}
+
+.mcneese .overline {
+  text-decoration: overline;
+}
+
+.mcneese .strike {
+  text-decoration: line-through;
+}
+
+.mcneese .no_padding {
+  padding: 0px;
+}
+
+.mcneese .no_margin {
+  margin: 0px;
+}
+
+.mcneese .no_border {
+  border: 0px none;
+}
+
+.mcneese .reference {
+  text-transform: small;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.mcneese .triple_space {
+  line-height: 3em;
+}
+
+.mcneese .double_space {
+  line-height: 2em;
+}
+
+.mcneese .one_and_half_space {
+  line-height: 1.5em;
+}
+
+.mcneese .single_space {
+  line-height: 1.0em;
+}
+
+.mcneese .half_space {
+  line-height: 0.5em;
+}
+
+.mcneese .strong {
+  font-weight: bolder;
+}
+
+.mcneese .weak {
+  font-weight: lighter;
+}
+
+.mcneese .normal {
+  font-weight: normal;
+}
+
+.mcneese .italic {
+  font-style: italic;
+}
+
+.mcneese .unitalic {
+  font-style: normal;
+}
+
+.mcneese .oblique {
+  font-style: oblique;
+}
+
+.mcneese .align_left {
+  text-align: left;
+}
+
+.mcneese .align_center {
+  text-align: center;
+}
+
+.mcneese .align_right {
+  text-align: right;
+}
