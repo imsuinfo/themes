@@ -97,6 +97,8 @@
 }
 
 .mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker {
+  display: inline-block;
+
   border: none;
   border-bottom: 1px solid #000000;
   border-radius: 0px;
