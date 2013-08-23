@@ -37,3 +37,14 @@
 .mcneese.node-theme-webform-617.agent-engine-gecko #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker > .form-item.form-type-select {
   display: table-cell;
 }
+
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker {
+  padding-bottom: 3px;
+}
+
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker >.form-type-textfield > .form-text,
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker >.form-type-select > .form-select,
+.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component > .form-select {
+  position: relative;
+  top: -3px;
+}
