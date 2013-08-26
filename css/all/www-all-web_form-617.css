@@ -102,15 +102,12 @@
   border: none;
   border-bottom: 1px solid #000000;
   border-radius: 0px;
-
-  padding-bottom: 1px;
 }
 
 .mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker >.form-type-textfield > .form-text,
 .mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-date > .webform-datepicker >.form-type-select > .form-select,
 .mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component > .form-select {
   position: relative;
-  top: -2px;
 
   border: none;
   outline: none;
