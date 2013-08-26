@@ -591,3 +591,11 @@
 
   float: none;
 }
+
+
+
+/*** JQ Maphilight ***/
+.mcneese div.jq_maphilight.jq_maphilight-center {
+  margin-left: auto;
+  margin-right: auto;
+}
