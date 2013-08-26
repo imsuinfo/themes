@@ -311,6 +311,9 @@ function mcneese_www_render_page() {
         $cf['data']['page']['group_image']['title'] = $node->field_group_image_custom['und'][0]['title'];
         $cf['data']['page']['group_image']['alt'] = $node->field_group_image_custom['und'][0]['alt'];
         $cf['show']['page']['group_image'] = TRUE;
+
+        // add JQ Maphilight support
+        $cf['data']['page']['group_image']['class'] .= ' jq_maphilight';
       }
     }
 

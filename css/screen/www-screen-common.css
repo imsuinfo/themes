@@ -1030,3 +1030,24 @@
   color: #ffffff;
   background-image: none;
 }
+
+
+
+/*** JQ Maphilight ***/
+.mcneese #mcneese-page-content div.group_image.jq_maphilight {
+  background-repeat: no-repeat !important;
+  background-position: 0 0 !important;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mcneese #mcneese-page-content div.group_image-large.jq_maphilight {
+  width: 960px !important;
+  height: 200px !important;
+}
+
+.mcneese #mcneese-page-content div.group_image-small.jq_maphilight {
+  width: 755px !important;
+  height: 200px !important;
+}

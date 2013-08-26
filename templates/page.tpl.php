@@ -41,7 +41,7 @@
 
   <?php if ($cf['show']['page']['group_image']) { ?>
     <!--(begin-page-group_image)-->
-    <img usemap="#group_image_map" class="<?php print($cf['data']['page']['group_image']['class']); ?> jq_maphilight" title="<?php print($cf['data']['page']['group_image']['title']); ?>" alt="<?php print($cf['data']['page']['group_image']['alt']); ?>" src="<?php print($cf['data']['page']['group_image']['src']); ?>" other="<?php print($cf['data']['page']['group_image']['other']); ?>">
+    <img usemap="#group_image_map" class="<?php print($cf['data']['page']['group_image']['class']); ?>" title="<?php print($cf['data']['page']['group_image']['title']); ?>" alt="<?php print($cf['data']['page']['group_image']['alt']); ?>" src="<?php print($cf['data']['page']['group_image']['src']); ?>" other="<?php print($cf['data']['page']['group_image']['other']); ?>">
     <!--(end-page-group_image)-->
   <?php } ?>
 
