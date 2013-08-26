@@ -109,7 +109,7 @@
       <ul>
         <li><a href="/node/250">History</a></li>
         <li><a href="/node/3287">Quick Facts</a></li>
-        <li><a href="/node/355">Campus Maps</a></li>
+        <li><a href="/node/5530">Campus Maps</a></li>
         <li><a href="/node/251">Mission</a></li>
         <li><a href="/index">A-Z Index</a></li>
       </ul>
