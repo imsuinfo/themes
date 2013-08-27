@@ -121,6 +121,41 @@
   border: 1px solid #bebfb9;
 }
 
+.mcneese table.table-style-1 > thead > tr > th,
+.mcneese table.table-style-3 > thead > tr > th,
+.mcneese table.table-style-4 > thead > tr > th {
+  color: inherit;
+  background-color: inherit;
+
+  font-weight: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
+.mcneese table.table-style-2 > tbody > tr > th,
+.mcneese table.table-style-3 > tbody > tr > th {
+  color: #ffffff;
+  background-color: #00477f;
+
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 5px;
+  padding: 3px 10px;
+
+  border: 1px solid #bebfb9;
+}
+
+.mcneese table.table-style-4 > tbody > tr > th {
+  color: inherit;
+  background-color: inherit;
+
+  font-weight: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+}
+
 .mcneese table > thead > tr > th > a {
   display: block;
   position: relative;
