@@ -48,6 +48,10 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
             $cf['is']['fixed_width'] = TRUE;
             $cf['is']['flex_width'] = FALSE;
           }
+          else if ($type == 677) {
+            $cf['is']['fixed_width'] = TRUE;
+            $cf['is']['flex_width'] = FALSE;
+          }
         }
       }
     }
@@ -258,6 +262,9 @@ function mcneese_www_preprocess_page(&$vars) {
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 617) {
             mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+          }
+          else if ($node->field_webform_theme['und'][0]['tid'] == 677) {
+            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
         }
       }
