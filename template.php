@@ -62,7 +62,7 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
         $type = &$node->field_document_theme['und'][0]['tid'];
 
         if (!$cf['is']['logged_in']) {
-          if ($type == 669 || $type = 671) {
+          if ($type == 669 || $type == 671) {
             $cf['is']['fixed_width'] = TRUE;
             $cf['is']['flex_width'] = FALSE;
           }
