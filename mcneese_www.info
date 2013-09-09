@@ -16,6 +16,7 @@ stylesheets[all][] = css/all/www-all-web_document-639.css
 stylesheets[all][] = css/all/www-all-web_document-640.css
 stylesheets[all][] = css/all/www-all-web_document-669.css
 stylesheets[all][] = css/all/www-all-web_document-671.css
+stylesheets[all][] = css/all/www-all-web_form-common.css
 stylesheets[all][] = css/all/www-all-web_form-592.css
 stylesheets[all][] = css/all/www-all-web_form-593.css
 stylesheets[all][] = css/all/www-all-web_form-594.css
