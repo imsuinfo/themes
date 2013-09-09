@@ -106,3 +106,16 @@
 .mcneese.node-theme-webform-677 #mcneese-content-main .webform-client-form .webform-component-option-inline > fieldset > .form-item {
   display: inline-block;
 }
+
+
+
+/*** Form descriptions ***/
+.mcneese.node-theme-webform-677 .webform-client-form .form-item > .description {
+  font-size: inherit;
+  line-height: inherit;
+
+  background-color: inherit;
+  margin: 0px;
+  padding: 0px;
+  border: 0px none;
+}
