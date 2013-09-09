@@ -18,6 +18,12 @@
 
 
 
+/*** Form fields ***/
+.mcneese textarea {
+  resize: none;
+}
+
+
 /*** Watermarks ***/
 #mcneese-page-watermarks-pre,
 #mcneese-page-watermarks-post {

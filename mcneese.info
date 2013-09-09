@@ -64,6 +64,7 @@ stylesheets[screen,handheld,projection][] = css/screen/screen-help.css
 stylesheets[screen,handheld,projection][] = css/screen/screen-side.css
 stylesheets[screen,handheld,projection][] = css/screen/screen-work_area_menu.css
 
+scripts[] = js/jquery.autosize.js
 scripts[] = js/messages.js
 scripts[] = js/information.js
 scripts[] = js/tabs.js
@@ -72,6 +73,7 @@ scripts[] = js/action_links.js
 scripts[] = js/toolbar.js
 scripts[] = js/side.js
 scripts[] = js/work_area_menu.js
+scripts[] = js/print.js
 
 
 regions[header]        = Header
