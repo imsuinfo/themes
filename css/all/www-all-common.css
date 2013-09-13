@@ -1,3 +1,15 @@
+
+
+
+/*** A-Z Index ***/
+.mcneese #mcneese-content-main .view-id-a_z_group_index > .view-content > .item-list > ul > .views-row > .views-field >.field-content > .a_to_z-group,
+.mcneese #mcneese-content-main .view-id-a_z_content_index > .view-content > .item-list > ul > .views-row > .views-field >.field-content > .a_to_z-group {
+  color: #303030;
+  font-size: 0.80em;
+}
+
+
+
 /*** Unsupported Notice ***/
 #mcneese-unsupported-message {
   background-color: #ffe0eb;
