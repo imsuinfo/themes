@@ -193,7 +193,7 @@ function mcneese_www_preprocess_page(&$vars) {
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
-          if ($node->field_webform_theme['und'][0]['tid'] == 592) {
+          if ($node->field_document_theme['und'][0]['tid'] == 592) {
             mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else {
