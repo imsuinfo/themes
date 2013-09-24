@@ -11,11 +11,11 @@
   margin-right: auto;
 }
 
-#mcneese-top {
+.mcneese #mcneese-top {
   padding: 0px 5px;
 }
 
-#mcneese-page {
+.mcneese #mcneese-page {
   overflow: auto;
 
   padding: 0px 5px 5px 5px;
@@ -24,7 +24,7 @@
   border-bottom-right-radius: 0px;
 }
 
-#mcneese-www-footer {
+.mcneese #mcneese-www-footer {
   font-size: 11px;
   line-height: 15px;
 
@@ -48,7 +48,7 @@
   border-bottom-right-radius: 10px;
 }
 
-#mcneese-www-footer > .columns {
+.mcneese #mcneese-www-footer > .columns {
   display: block;
   vertical-align: top;
 
@@ -56,55 +56,55 @@
 }
 
 
-#mcneese-www-footer > .columns-right {
+.mcneese #mcneese-www-footer > .columns-right {
   margin: 20px 10px 0px 10px;
 }
 
-#mcneese-www-footer > .columns-left {
+.mcneese #mcneese-www-footer > .columns-left {
   min-height: 109px;
 }
 
-#mcneese-www-footer > .columns-right {
+.mcneese #mcneese-www-footer > .columns-right {
   float: right;
 
   margin-right: 30px;
 }
 
-#mcneese-www-footer > .columns > .column > .column-heading > .column-header {
+.mcneese #mcneese-www-footer > .columns > .column > .column-heading > .column-header {
   font-size: 12px;
   line-height: 16px;
 
   margin-bottom: 5px;
 }
 
-#mcneese-www-footer > .columns > .column {
+.mcneese #mcneese-www-footer > .columns > .column {
   display: inline-block;
   vertical-align: top;
 
   margin: 0px 12px;
 }
 
-#mcneese-www-footer > .columns > .column > ul {
+.mcneese #mcneese-www-footer > .columns > .column > ul {
   display: block;
 
   margin: 0px;
   padding: 0px;
 }
 
-#mcneese-www-footer > .columns > .column > ul > li {
+.mcneese #mcneese-www-footer > .columns > .column > ul > li {
   display: block;
 
   margin: 2px 0px;
   padding: 0px;
 }
 
-#mcneese-www-footer > .columns-left > .column-4 > ul > li {
+.mcneese #mcneese-www-footer > .columns-left > .column-4 > ul > li {
   display: inline-block;
 
   margin: 2px 3px;
 }
 
-#mcneese-www-footer > .columns-left > .column-4 > ul > li > a > img {
+.mcneese #mcneese-www-footer > .columns-left > .column-4 > ul > li > a > img {
   width: 21px;
   min-width: 21px;
   max-width: 21px;
@@ -114,11 +114,11 @@
   max-height: 21px;
 }
 
-#mcneese-www-footer > .columns-right > .column-1 {
+.mcneese #mcneese-www-footer > .columns-right > .column-1 {
   margin: 0px 2px;
 }
 
-#mcneese-www-footer > .copyright {
+.mcneese #mcneese-www-footer > .copyright {
   clear: left;
 
   height: 53px;
@@ -128,42 +128,42 @@
   overflow: hidden;
 }
 
-#mcneese-www-footer > .copyright > .copyright-logo {
+.mcneese #mcneese-www-footer > .copyright > .copyright-logo {
   display: block;
   float: left;
 
   margin: 0px 10px;
 }
 
-#mcneese-www-footer > .copyright > .copyright-menus {
+.mcneese #mcneese-www-footer > .copyright > .copyright-menus {
   display: block;
 
   margin: 10px 0px 0px 0px;
 }
 
-#mcneese-www-footer > .copyright > .copyright-menus > .copyright-menu {
+.mcneese #mcneese-www-footer > .copyright > .copyright-menus > .copyright-menu {
   display: block;
 
   margin: 0px 0px 0px 10px;
   padding: 0px;
 }
 
-#mcneese-www-footer > .copyright > .copyright-menus > .copyright-menu > li {
+.mcneese #mcneese-www-footer > .copyright > .copyright-menus > .copyright-menu > li {
   display: inline-block;
 
   margin: 0px;
   padding: 0px;
 }
 
-#mcneese-www-footer a,
-#mcneese-www-footer a:visited {
+.mcneese #mcneese-www-footer a,
+.mcneese #mcneese-www-footer a:visited {
   color: #303030;
   text-decoration: none;
 }
 
-#mcneese-www-footer a:focus,
-#mcneese-www-footer a:active,
-#mcneese-www-footer a:hover {
+.mcneese #mcneese-www-footer a:focus,
+.mcneese #mcneese-www-footer a:active,
+.mcneese #mcneese-www-footer a:hover {
   color: #00477f;
 
   text-decoration: underline;
@@ -213,8 +213,8 @@
 
 
 /*** Calendar Specific ***/
-#mcneese-page .view .calendar > .contents > .event-item,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item {
   color: #ffffff;
   background-color: #00588f;
 
@@ -223,180 +223,180 @@
   padding: 3px 4px;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a {
   font-size: 11px;
   font-weight: normal;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item > a,
-#mcneese-page .view .calendar > .contents > .event-item > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item > a:active,
-#mcneese-page .view .calendar > .contents > .event-item > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:hover {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item > a:hover {
   color: #ffff00;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-250,
-#mcneese-page .view .calendar > .contents > .event-item.event-256,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-250,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-256 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-250,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-256,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-250,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-256 {
   color: #ffffff;
   background-color: #713936;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-650 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-650 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-650 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-650 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-650 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-650 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-650 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-650 > a:visited {
   color: #00477f;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-292,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 {
   color: #ffffff;
   background-color: #325c3f;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-292 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-292 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-292 > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item.event-292 > a:active,
-#mcneese-page .view .calendar > .contents > .event-item.event-292 > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:hover {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-292 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-292 > a:hover {
   color: #fff89a;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-399,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-399,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 {
   color: #ffffff;
   background-color: #794700;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-399 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-399 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-399 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-399 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-399 > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-251,
-#mcneese-page .view .calendar > .contents > .event-item.event-253,
-#mcneese-page .view .calendar > .contents > .event-item.event-257,
-#mcneese-page .view .calendar > .contents > .event-item.event-258,
-#mcneese-page .view .calendar > .contents > .event-item.event-259,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-251,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-253,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-257,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-258,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-259,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 {
   color: #ffffff;
   background-color: #673c6b;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-251 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-254 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-257 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-258 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-259 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-251 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-254 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-257 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-258 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-259 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-251 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-254 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-257 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-258 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-259 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-251 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-254 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-257 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-258 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-259 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-251 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-253 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-257 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-258 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-259 > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-654,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 {
   color: #ffffff;
   background-color: #335a5f;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-654 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-654 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-654 > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item.event-654 > a:active,
-#mcneese-page .view .calendar > .contents > .event-item.event-654 > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:hover {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-654 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-654 > a:hover {
   color: #fffab9;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-249,
-#mcneese-page .view .calendar > .contents > .event-item.event-252,
-#mcneese-page .view .calendar > .contents > .event-item.event-255,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 {
   color: #054b80;
   background-color: #e6e993;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-249 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-252 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-255 > a,
-#mcneese-page .view .calendar > .contents > .event-item.event-249 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-252 > a:visited,
-#mcneese-page .view .calendar > .contents > .event-item.event-255 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:visited {
   color: #054b80;
 }
 
-#mcneese-page .view .calendar > .contents > .event-item.event-249 > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item.event-252 > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item.event-255 > a:focus,
-#mcneese-page .view .calendar > .contents > .event-item.event-249 > a:active,
-#mcneese-page .view .calendar > .contents > .event-item.event-252 > a:active,
-#mcneese-page .view .calendar > .contents > .event-item.event-255 > a:active,
-#mcneese-page .view .calendar > .contents > .event-item.event-249 > a:hover,
-#mcneese-page .view .calendar > .contents > .event-item.event-252 > a:hover,
-#mcneese-page .view .calendar > .contents > .event-item.event-255 > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:active,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:hover {
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-249 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-252 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-255 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-249 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-252 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-255 > a:hover {
   color: #950000;
 }
 
@@ -891,7 +891,7 @@
 
 
 /*** Search Box Links ***/
-#mcneese-header > .header-top > .block-name-block-block-13 {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 {
   position: absolute;
   display: block;
 
@@ -923,31 +923,31 @@
   -webkit-box-sizing: border-box;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list {
   padding: 0px;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > li,
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > div {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > li,
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > div {
   display: inline-block;
   text-align: center;
 
   margin: 0px auto;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-ada {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-ada {
   width: 30px;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-staff {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-staff {
   width: 115px;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-index {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-index {
   width: 50px;
 }
 
-#mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-bar {
+.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-bar {
   width: 4px;
 }
 

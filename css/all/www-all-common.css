@@ -11,7 +11,7 @@
 
 
 /*** Unsupported Notice ***/
-#mcneese-unsupported-message {
+.mcneese #mcneese-unsupported-message {
   background-color: #ffe0eb;
 
   border: 2px dotted #ff5555;
