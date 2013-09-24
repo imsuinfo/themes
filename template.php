@@ -162,7 +162,7 @@ function mcneese_preprocess_toolbar(&$vars) {
   $item['attributes']['class'][] = 'mcneese-toolbar-home';
   $item['attributes']['class'][] = 'item';
   $item['attributes']['title'] = t("Home");
-  $item['markup'] = '<a href="' . base_path() . '" class="link noscript" tabindex="' . $tab_index . '"></a>';
+  $item['markup'] = '<a href="' . base_path() . '" class="link noscript" tabindex="' . $tab_index . '">Home Page</a>';
   $vars['mcneese_toolbar']['menu']['items'][] = $item;
 
 
@@ -207,7 +207,7 @@ function mcneese_preprocess_toolbar(&$vars) {
   $item['attributes']['class'][] = 'mcneese-toolbar-toggle';
   $item['attributes']['class'][] = 'item';
   $item['attributes']['title'] = t("Toggle Shortcut Bar");
-  $item['markup'] = '<a href="' . base_path() . 'toolbar/toggle' . $destination . '" class="link noscript" tabindex="' . $tab_index . '"></a>';
+  $item['markup'] = '<a href="' . base_path() . 'toolbar/toggle' . $destination . '" class="link noscript" tabindex="' . $tab_index . '">Toggle Shortcut Bar</a>';
 
   $item['attributes']['class'][] = $toggle_state;
   $vars['mcneese_toolbar']['menu']['items'][] = $item;
