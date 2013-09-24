@@ -1,5 +1,5 @@
 /*** Messages Region ***/
-#mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+.mcneese #mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
   line-height: 22px;
 
@@ -8,18 +8,18 @@
   text-transform: none;
 }
 
-#mcneese-messages > .messages-wrapper {
+.mcneese #mcneese-messages > .messages-wrapper {
   margin: 2px;
   resize: none;
 }
 
-#mcneese-messages > .messages-wrapper > .messages {
+.mcneese #mcneese-messages > .messages-wrapper > .messages {
   max-height: 120px;
   overflow-y: auto;
   resize: none;
 }
 
-#mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+.mcneese #mcneese-messages > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   line-height: 32px;
 
   min-height: 32px;
@@ -30,35 +30,35 @@
 
 
 /*** Messages Region - Fixed ***/
-#mcneese-messages.fixed {
+.mcneese #mcneese-messages.fixed {
   background-image: url(../../images/messages.png);
 }
 
-#mcneese-messages.fixed.collapsed {
+.mcneese #mcneese-messages.fixed.collapsed {
   background-color: #dadada;
 }
 
-#mcneese-messages.fixed.expanded,
-#mcneese-messages.fixed.collapsed:hover,
-#mcneese-messages.fixed.collapsed:active,
-#mcneese-messages.fixed.collapsed:focus {
+.mcneese #mcneese-messages.fixed.expanded,
+.mcneese #mcneese-messages.fixed.collapsed:hover,
+.mcneese #mcneese-messages.fixed.collapsed:active,
+.mcneese #mcneese-messages.fixed.collapsed:focus {
   background-color: #fffff0;
 
   border: 1px ridge #5395cc;
 }
 
-#mcneese-messages.fixed.expanded {
+.mcneese #mcneese-messages.fixed.expanded {
   right: 40px;
 }
 
 
 
 /*** Messages Region - Relative ***/
-#mcneese-messages.relative {
+.mcneese #mcneese-messages.relative {
   position: relative;
 }
 
-#mcneese-messages.relative > .html_tag-header {
+.mcneese #mcneese-messages.relative > .html_tag-header {
   display: block;
   visibility: hidden;
   overflow: hidden;

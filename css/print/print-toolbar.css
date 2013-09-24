@@ -2,6 +2,6 @@
 
 
 /*** Administrative Toolbar ***/
-#mcneese-toolbar {
+.mcneese #mcneese-toolbar {
   display: none;
 }

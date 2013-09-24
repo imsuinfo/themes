@@ -1,5 +1,5 @@
 /*** Masquerade Block Form ***/
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade {
+.mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade {
   position: absolute;
   right: 270px;
   top: 10px;
@@ -17,16 +17,16 @@
   z-index: 1;
 }
 
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links,
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul,
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul > li {
+.mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links,
+.mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul,
+.mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul > li {
   display: inline-block;
   vertical-align: top;
 
   padding: 0px 5px;
 }
 
-#mcneese-header > .header-section > .block-name-block-masquerade-masquerade > .html_tag-header > .html_tag-hgroup > h2 {
+.mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade > .html_tag-header > .html_tag-hgroup > h2 {
   font-size: 11px;
   line-height: 15px;
 
@@ -259,7 +259,7 @@
 
 
 /*** Calendar Styles - For Original Calendar Code (From old theme - this is temporary) ***/
-#mcneese-page div.view-display-id-event_listing {
+.mcneese #mcneese-page div.view-display-id-event_listing {
   position: relative;
 
   font-size: 14px;
@@ -271,35 +271,35 @@
   margin-top: 10px;
 }
 
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-row {
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-row {
   margin-bottom: 15px;
 }
 
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-row-even {
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-row-even {
   background-color: #efefef;
 }
 
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a,
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:visited {
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a,
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:visited {
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
 
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:focus,
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:hover,
-#mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:active {
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:focus,
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:hover,
+.mcneese #mcneese-page div.view-display-id-event_listing div.view-content div.views-field-title a:active {
   color: #7f0000;
 
   text-decoration: underline;
 }
 
-#mcneese-page .view div.calendar-standard > div.view-header > div.date-nav-wrapper > div.date-nav {
+.mcneese #mcneese-page .view div.calendar-standard > div.view-header > div.date-nav-wrapper > div.date-nav {
   padding-bottom: 4px;
 }
 
-#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
-#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
   display: block;
   position: relative;
 
@@ -308,12 +308,12 @@
   padding: 0px 2px;
 }
 
-#mcneese-page .view .calendar-calendar .month-view .full td.multi-day div.monthview,
-#mcneese-page .view .calendar-calendar .week-view .full td.multi-day div.weekview,
-#mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview,
-#mcneese-page .view .calendar-calendar .month-view .full td.single-day div.monthview,
-#mcneese-page .view .calendar-calendar .week-view .full td.single-day div.weekview,
-#mcneese-page .view .calendar-calendar .day-view .full td.single-day div.dayview {
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.multi-day div.monthview,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.multi-day div.weekview,
+.mcneese #mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview,
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.single-day div.monthview,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.single-day div.weekview,
+.mcneese #mcneese-page .view .calendar-calendar .day-view .full td.single-day div.dayview {
   height: auto;
   line-height: 1.7em;
   margin: 1px 0px;
@@ -322,43 +322,43 @@
   text-align: center;
 }
 
-#mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div,
-#mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div a {
+.mcneese #mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div,
+.mcneese #mcneese-page .view .calendar-calendar .day-view .full td .inner div.calendar div a {
   margin: 0px;
 }
 
-#mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
+.mcneese #mcneese-page .view .calendar-calendar .day-view .full td.multi-day div.dayview .cutoff {
   display: none;
 }
 
-#mcneese-page .view .calendar-calendar td .calendar div.calendar {
+.mcneese #mcneese-page .view .calendar-calendar td .calendar div.calendar {
   padding: 0px;
 }
 
-#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
-#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
-#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
-#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
   padding: 0px;
 }
 
-#mcneese-page .view .calendar-calendar td {
+.mcneese #mcneese-page .view .calendar-calendar td {
   color: #000000;
 }
 
-#mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
-#mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
+.mcneese #mcneese-page .view .calendar-calendar .month-view .full td.multi-day .calendar.monthview .contents,
+.mcneese #mcneese-page .view .calendar-calendar .week-view .full td.multi-day .calendar.weekview .contents {
   padding: 0px;
 }
 
-#mcneese-page .view .single-day > .inner > .item,
-#mcneese-page .view .multi-day > .inner > .item,
-#mcneese-page .view .calendar > .inner > .item {
+.mcneese #mcneese-page .view .single-day > .inner > .item,
+.mcneese #mcneese-page .view .multi-day > .inner > .item,
+.mcneese #mcneese-page .view .calendar > .inner > .item {
   margin: 6px 2px;
 }
 
-#mcneese-page .view .calendar > .contents > a,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a {
+.mcneese #mcneese-page .view .calendar > .contents > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a {
   display: block;
 
   font-size: 12px;
@@ -371,19 +371,19 @@
   padding: 3px 4px;
 }
 
-#mcneese-page .view .calendar > .contents > a,
-#mcneese-page .view .calendar > .contents > a:visited,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > a,
+.mcneese #mcneese-page .view .calendar > .contents > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:visited {
   color: #ffffff;
 }
 
-#mcneese-page .view .calendar > .contents > a:focus,
-#mcneese-page .view .calendar > .contents > a:active,
-#mcneese-page .view .calendar > .contents > a:hover,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:focus,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:active,
-#mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:hover {
+.mcneese #mcneese-page .view .calendar > .contents > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field:first-child > .field-content > a:hover {
   color: #ffee00;
 
   text-decoration: underline;
@@ -392,7 +392,7 @@
 
 
 /*** Workbench Messages ***/
-#mcneese-information > .information-wrapper > .block > .workbench-info-block {
+.mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block {
   color: #302c00;
 }
 

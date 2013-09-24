@@ -38,8 +38,8 @@
 
 
 /*** Watermarks ***/
-#mcneese-page-watermarks-pre,
-#mcneese-page-watermarks-post {
+.mcneese #mcneese-page-watermarks-pre,
+.mcneese #mcneese-page-watermarks-post {
   position: absolute;
   top: 140px;
 
@@ -64,11 +64,11 @@
   z-index: -1;
 }
 
-#mcneese-page-watermarks-pre {
+.mcneese #mcneese-page-watermarks-pre {
   left: 10px;
 }
 
-#mcneese-page-watermarks-post {
+.mcneese #mcneese-page-watermarks-post {
   right: 10px;
 }
 

@@ -34,7 +34,7 @@
 
 
 /*** Skip Navigation ***/
-#mcneese-skip_nav {
+.mcneese #mcneese-skip_nav {
   display: block;
 
   background-color: #ffffff;
@@ -57,14 +57,14 @@
   overflow: hidden;
 }
 
-#mcneese-skip_nav:visited {
+.mcneese #mcneese-skip_nav:visited {
   background-color: #ffffff;
   color: #000000;
 }
 
-#mcneese-skip_nav:active,
-#mcneese-skip_nav:focus,
-#mcneese-skip_nav:hover {
+.mcneese #mcneese-skip_nav:active,
+.mcneese #mcneese-skip_nav:focus,
+.mcneese #mcneese-skip_nav:hover {
   display: block;
 
   text-decoration: underline;

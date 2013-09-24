@@ -13,20 +13,20 @@
 
 
 /*** Headers ***/
-#mcneese-header {
+.mcneese #mcneese-header {
   display: none;
 }
 
 
 
 /*** Search Form ***/
-#search-form {
+.mcneese #search-form {
   display: none;
 }
 
 
 
 /*** Side Area ***/
-#mcneese-page-side {
+.mcneese #mcneese-page-side {
   display: none;
 }

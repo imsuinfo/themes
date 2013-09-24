@@ -1,5 +1,5 @@
 /*** Watermarks ***/
-#mcneese-page-watermarks-pre,
-#mcneese-page-watermarks-post {
+.mcneese #mcneese-page-watermarks-pre,
+.mcneese #mcneese-page-watermarks-post {
   display: none;
 }

@@ -2,7 +2,7 @@
 
 
 /*** Page Side Region ***/
-#mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+.mcneese #mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   font-size: 18px;
   line-height: 22px;
 
@@ -11,18 +11,18 @@
   text-transform: none;
 }
 
-#mcneese-page-side > .information-wrapper {
+.mcneese #mcneese-page-side > .information-wrapper {
   margin: 2px;
   resize: none;
 }
 
-#mcneese-page-side > .information-wrapper > .messages {
+.mcneese #mcneese-page-side > .information-wrapper > .messages {
   max-height: 120px;
   overflow-y: auto;
   resize: none;
 }
 
-#mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
+.mcneese #mcneese-page-side > .html_tag-header > .html_tag-hgroup > .html_tag-heading {
   line-height: 32px;
   min-height: 32px;
 
@@ -32,15 +32,15 @@
 
 
 /*** Page Side Region - Fixed ***/
-#mcneese-page-side.fixed {
+.mcneese #mcneese-page-side.fixed {
   background-image: url(../../images/side.png);
   background-color: #dadada;
 }
 
-#mcneese-page-side.fixed.expanded,
-#mcneese-page-side.fixed.collapsed:hover,
-#mcneese-page-side.fixed.collapsed:active,
-#mcneese-page-side.fixed.collapsed:focus {
+.mcneese #mcneese-page-side.fixed.expanded,
+.mcneese #mcneese-page-side.fixed.collapsed:hover,
+.mcneese #mcneese-page-side.fixed.collapsed:active,
+.mcneese #mcneese-page-side.fixed.collapsed:focus {
   background-color: #ffffff;
 
   padding: 5px 10px;
@@ -57,19 +57,19 @@
   overflow: auto;
 }
 
-#mcneese-page-side.fixed.expanded {
+.mcneese #mcneese-page-side.fixed.expanded {
   left: 40px;
 }
 
-#mcneese-page-side.relative > .side_panel-simulated_heading,
-#mcneese-page-side.fixed.collapsed > .side_panel-simulated_heading {
+.mcneese #mcneese-page-side.relative > .side_panel-simulated_heading,
+.mcneese #mcneese-page-side.fixed.collapsed > .side_panel-simulated_heading {
   display: none;
 }
 
-#mcneese-page-side.fixed.expanded > .side_panel-simulated_heading,
-#mcneese-page-side.fixed.collapsed:hover > .side_panel-simulated_heading,
-#mcneese-page-side.fixed.collapsed:active > .side_panel-simulated_heading,
-#mcneese-page-side.fixed.collapsed:focus > .side_panel-simulated_heading {
+.mcneese #mcneese-page-side.fixed.expanded > .side_panel-simulated_heading,
+.mcneese #mcneese-page-side.fixed.collapsed:hover > .side_panel-simulated_heading,
+.mcneese #mcneese-page-side.fixed.collapsed:active > .side_panel-simulated_heading,
+.mcneese #mcneese-page-side.fixed.collapsed:focus > .side_panel-simulated_heading {
   display: block;
 
   font-size: 18px;
@@ -89,11 +89,11 @@
 
 
 /*** Page Side Region - Relative ***/
-#mcneese-page-side.relative {
+.mcneese #mcneese-page-side.relative {
   position: relative;
 }
 
-#mcneese-page-side.relative > .html_tag-header {
+.mcneese #mcneese-page-side.relative > .html_tag-header {
   display: block;
   visibility: hidden;
   overflow: hidden;
@@ -118,7 +118,7 @@
 
 
 /*** Workbench Menu ***/
-#mcneese-page-side .workbench_menu {
+.mcneese #mcneese-page-side .workbench_menu {
   position: relative;
 
   font-size: 12px;
@@ -131,7 +131,7 @@
   border-bottom: 1px solid #888888;
 }
 
-#mcneese-page-side .workbench_menu > .html_tag-header {
+.mcneese #mcneese-page-side .workbench_menu > .html_tag-header {
   display: block;
   visibility: hidden;
   overflow: hidden;
@@ -152,11 +152,11 @@
   border: none;
 }
 
-#mcneese-page-side .workbench_menu:nth-child(1) {
+.mcneese #mcneese-page-side .workbench_menu:nth-child(1) {
   border-top: 1px solid #888888;
 }
 
-#mcneese-page-side .workbench_menu .menu_item {
+.mcneese #mcneese-page-side .workbench_menu .menu_item {
   display: block;
   position: relative;
 
@@ -168,12 +168,12 @@
   padding: 0px 0px 0px 12px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item.depth-0 {
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 {
   margin: 0px;
   padding: 0px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item.expanded > .menu_item-children {
+.mcneese #mcneese-page-side .workbench_menu .menu_item.expanded > .menu_item-children {
   display: block;
   position: relative;
 
@@ -181,7 +181,7 @@
   padding: 0px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-text {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text {
   display: inline-block;
   position: relative;
 
@@ -193,52 +193,52 @@
   text-decoration: none;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
   display: inline-block;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed {
   background-image: url(../../images/arrow-single-right.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded {
   background-image: url(../../images/arrow-single-down.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf {
   background-image: url(../../images/arrow-single-right.png);
   background-repeat: no-repeat;
   background-position: 0px 3px;
 }
 
-#mcneese-page-side .workbench_menu .menu_item.active > .menu_item-text {
+.mcneese #mcneese-page-side .workbench_menu .menu_item.active > .menu_item-text {
   color: #fad703;
   background-color: #00335b;
 }
 
-#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text {
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text {
   font-weight: bold;
 }
 
-#mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
   color: #00477f;
   background-color: inherit;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:hover,
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus,
-#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:hover,
-#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:focus {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:hover,
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:hover,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:focus {
   color: #ffffff;
   background-color: #00335b;
 }
 
-#mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
-#mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:active {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:active {
   color: #ffaa00;
   background-color: #00335b;
 }

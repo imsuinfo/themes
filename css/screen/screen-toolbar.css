@@ -10,7 +10,7 @@
   margin-top: 56px;
 }
 
-#mcneese-toolbar {
+.mcneese #mcneese-toolbar {
   top: 0px;
   left: 0px;
 
@@ -21,26 +21,26 @@
   -webkit-box-sizing: border-box;
 }
 
-#mcneese-toolbar.fixed {
+.mcneese #mcneese-toolbar.fixed {
   position: fixed;
 
   z-index: 100;
 }
 
-#mcneese-toolbar.relative {
+.mcneese #mcneese-toolbar.relative {
   position: relative;
 }
 
-#mcneese-toolbar.relative.expanded {
+.mcneese #mcneese-toolbar.relative.expanded {
   margin-bottom: 0px;
   padding-bottom: 2px;
 }
 
-#mcneese-toolbar.relative.collapsed {
+.mcneese #mcneese-toolbar.relative.collapsed {
   margin-bottom: 2px;
 }
 
-#mcneese-toolbar > .html_tag-nav {
+.mcneese #mcneese-toolbar > .html_tag-nav {
   display: block;
 
   width: 100%;
@@ -53,11 +53,11 @@
   -webkit-box-sizing: border-box;
 }
 
-#mcneese-toolbar > .html_tag-nav > .navigation_list {
+.mcneese #mcneese-toolbar > .html_tag-nav > .navigation_list {
   display: inline;
 }
 
-#mcneese-toolbar > .html_tag-nav > .navigation_list > .item {
+.mcneese #mcneese-toolbar > .html_tag-nav > .navigation_list > .item {
   display: inline-block;
 
   margin: 0px;
@@ -70,7 +70,7 @@
   vertical-align: middle;
 }
 
-#mcneese-toolbar > .html_tag-nav > .navigation_list > .item > .link {
+.mcneese #mcneese-toolbar > .html_tag-nav > .navigation_list > .item > .link {
   display: inline-block;
 
   color: #ffffff;
@@ -90,7 +90,7 @@
   padding: 0px 2px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu {
   color: #ffffff;
   background-color: #1e1e1e;
   background-image: url(../../images/background-marble-black.png);
@@ -101,43 +101,43 @@
   -o-transition: display 0.25s;
 }
 
-#mcneese-toolbar.expanded > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:hover > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:active > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:focus > .mcneese-toolbar-menu {
+.mcneese #mcneese-toolbar.expanded > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:hover > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:active > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:focus > .mcneese-toolbar-menu {
   box-shadow: 0px 1px 8px #505050;
 }
 
-#mcneese-toolbar.collapsed > .mcneese-toolbar-menu {
+.mcneese #mcneese-toolbar.collapsed > .mcneese-toolbar-menu {
   max-height: 3px;
 
   overflow: hidden;
 }
 
-#mcneese-toolbar.expanded > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:hover > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:active > .mcneese-toolbar-menu,
-#mcneese-toolbar.collapsed:focus > .mcneese-toolbar-menu {
+.mcneese #mcneese-toolbar.expanded > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:hover > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:active > .mcneese-toolbar-menu,
+.mcneese #mcneese-toolbar.collapsed:focus > .mcneese-toolbar-menu {
   display: block;
 
   min-height: 25px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active,
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:hover,
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:active,
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:focus {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:hover,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link:focus {
   background-color: #447ead;
   background-image: url(../../images/background-marble-light_blue.png);
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:hover,
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:active,
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:focus {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:hover,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item > .link.active:focus {
   background-color: #5395cc;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-home {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-home {
   width: 25px;
   height: 25px;
 
@@ -145,7 +145,7 @@
   padding: 0px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-home > .link {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-home > .link {
   display: block;
 
   background-image: url(../../images/home.png);
@@ -162,7 +162,7 @@
   padding: 1px 5px 5px 5px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-toggle {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-toggle {
   float: right;
 
   width: 25px;
@@ -172,7 +172,7 @@
   padding: 0px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-toggle > .link {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-toggle > .link {
   display: block;
 
   background-repeat: no-repeat;
@@ -196,11 +196,11 @@
   background-image: url(../../images/toggle-down.png);
 }
 
-#mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-user {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-menu > .navigation_list > .item.mcneese-toolbar-user {
   float: right;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts {
   color: #000000;
   background-color: #003259;
   background-image: url(../../images/background-marble-deep_blue.png);
@@ -216,8 +216,8 @@
   -o-transition: display 0.25s;
 }
 
-#mcneese-toolbar.expanded > .mcneese-toolbar-shortcuts.collapsed,
-#mcneese-toolbar.collapsed > .mcneese-toolbar-shortcuts {
+.mcneese #mcneese-toolbar.expanded > .mcneese-toolbar-shortcuts.collapsed,
+.mcneese #mcneese-toolbar.collapsed > .mcneese-toolbar-shortcuts {
   visibility: hidden;
 
   width: 0px;
@@ -228,9 +228,9 @@
   overflow: hidden;
 }
 
-#mcneese-toolbar.collapsed:hover > .mcneese-toolbar-shortcuts.expanded,
-#mcneese-toolbar.collapsed:active > .mcneese-toolbar-shortcuts.expanded,
-#mcneese-toolbar.collapsed:focus > .mcneese-toolbar-shortcuts.expanded {
+.mcneese #mcneese-toolbar.collapsed:hover > .mcneese-toolbar-shortcuts.expanded,
+.mcneese #mcneese-toolbar.collapsed:active > .mcneese-toolbar-shortcuts.expanded,
+.mcneese #mcneese-toolbar.collapsed:focus > .mcneese-toolbar-shortcuts.expanded {
   visibility: visible;
 
   width: 99.5%;
@@ -242,32 +242,32 @@
   clip: auto;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts {
   padding: 0px 4px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link {
   color: #ffffff;
   text-shadow: 0px 1px 0px #333333;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active,
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:hover,
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:active,
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:focus {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:hover,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link:focus {
   color: #000000;
   background-color: #fad703;
   background-image: url(../../images/background-marble-yellow.png);
   text-shadow: none;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:hover,
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:active,
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:focus {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:hover,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:active,
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item > .link.active:focus {
   background-color: #0065b6;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky {
   clear: right;
   float: right;
 
@@ -278,7 +278,7 @@
   padding: 0px;
 }
 
-#mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
+.mcneese #mcneese-toolbar > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
   background-repeat: no-repeat;
   background-position: center;
 
@@ -289,26 +289,26 @@
   padding: 2px;
 }
 
-#mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
+.mcneese #mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
   background-image: url(../../images/sticky-off.png);
 }
 
-#mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
+.mcneese #mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link {
   background-image: url(../../images/sticky-on.png);
 }
 
-#mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:hover,
-#mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:active,
-#mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:focus {
+.mcneese #mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:hover,
+.mcneese #mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:active,
+.mcneese #mcneese-toolbar.fixed > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:focus {
   background-image: url(../../images/sticky-off-alt.png);
 }
 
-#mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:hover,
-#mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:active,
-#mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:focus {
+.mcneese #mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:hover,
+.mcneese #mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:active,
+.mcneese #mcneese-toolbar.relative > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky > .link:focus {
   background-image: url(../../images/sticky-on-alt.png);
 }
 
-#mcneese-toolbar.noscript > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky {
+.mcneese #mcneese-toolbar.noscript > .mcneese-toolbar-shortcuts > .navigation_list > .item.mcneese-toolbar-sticky {
   display: none;
 }

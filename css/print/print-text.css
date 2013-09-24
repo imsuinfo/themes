@@ -8,11 +8,11 @@
   page-break-before: avoid;
 }
 
-#mcneese-skip_nav {
+.mcneese #mcneese-skip_nav {
   display: none;
 }
 
-#mcneese-footer {
+.mcneese #mcneese-footer {
   display: none;
 }
 
@@ -25,8 +25,8 @@
 
 
 /*** Watermarks ***/
-#mcneese-page-watermarks-pre,
-#mcneese-page-watermarks-post {
+.mcneese #mcneese-page-watermarks-pre,
+.mcneese #mcneese-page-watermarks-post {
   display: none;
 }
 
