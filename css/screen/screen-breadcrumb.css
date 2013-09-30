@@ -70,7 +70,7 @@
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home {
   background-image: url(../../images/home.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 5px 6px;
 
   font-size: 0px;
 
