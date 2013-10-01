@@ -396,6 +396,25 @@
   color: #302c00;
 }
 
+.mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block > .workbench_info_block-side {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 50%;
+}
+
+.mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block > .workbench_info_block-side > .side_item {
+  margin: 4px 0px;
+}
+
+.mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block > .workbench_info_block-side > .side_item > .label {
+  font-weight: bold;
+}
+
+.mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block > .workbench_info_block-side.side-1 {
+  text-align: right;
+}
+
 
 
 /*** Rules UI ***/
