@@ -31,18 +31,18 @@
 <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
 <?php if (!$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
   <!--(begin-skipnav)-->
-  <a id="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
+  <a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
   <!--(end-skipnav)-->
 <?php } ?>
 
 <!--(begin-body)-->
-<div id="mcneese-top">
+<div id="mcneese-top" class="mcneese-top">
   <!--(begin-page_top)-->
   <?php if (isset($page_top)) print($page_top . "\n"); ?>
   <!--(end-page_top)-->
 </div>
 
-<div id="mcneese-page" >
+<div id="mcneese-page" class="mcneese-page">
   <!--(begin-page)-->
   <?php if (isset($page)) print($page . "\n"); ?>
   <!--(end-page)-->
@@ -146,7 +146,7 @@
   <!--(end-www-footer)-->
 <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_close']) . "\n"); ?>
 
-<div id="mcneese-bottom">
+<div id="mcneese-bottom" class="mcneese-bottom">
   <!--(begin-page_bottom)-->
   <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
   <!--(end-page_bottom)-->
