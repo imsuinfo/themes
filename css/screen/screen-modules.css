@@ -179,24 +179,33 @@
   -webkit-box-sizing: border-box;
 }
 
-.mcneese .vertical-tabs > .vertical-tabs-list {
+.mcneese .vertical-tabs > ul.vertical-tabs-list {
   display: inline-block;
   vertical-align: top;
+
+  font-family: Arial,Helvetica,Sans-Serif,Sans;
+  font-size: 12px;
+  letter-spacing: 1px;
 
   width: 20%;
   min-width: 20%;
   max-width: 20%;
 
   margin: 0px;
+  padding: 0px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
-.mcneese .vertical-tabs > .vertical-tabs-list > .vertical-tab-button {
+.mcneese .vertical-tabs > ul.vertical-tabs-list > .vertical-tab-button {
   word-wrap: break-word;
   word-break: break-all;
+}
+
+.mcneese .vertical-tabs > ul.vertical-tabs-list > .vertical-tab-button > a > .summary {
+  font-size: 11px;
 }
 
 .mcneese .vertical-tabs > .vertical-tabs-panes {
@@ -254,6 +263,22 @@
   margin: 0px;
   padding: 0px;
   border: none;
+}
+
+.mcneese .horizontal-tabs > ul.horizontal-tabs-list {
+  display: inline-block;
+  vertical-align: top;
+
+  font-family: Arial,Helvetica,Sans-Serif,Sans;
+  font-size: 12px;
+  letter-spacing: 1px;
+
+  margin: 0px;
+  padding: 0px;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 
