@@ -194,14 +194,14 @@ function mcneese_www_preprocess_page(&$vars) {
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
           if ($node->field_document_theme['und'][0]['tid'] == 592) {
-            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else {
-            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
         }
         else {
-          mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+          mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
         }
       }
 
@@ -265,16 +265,16 @@ function mcneese_www_preprocess_page(&$vars) {
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         if (property_exists($node, 'field_webform_theme') && !empty($node->field_webform_theme['und'][0]['tid'])) {
           if ($node->field_webform_theme['und'][0]['tid'] == 592) {
-            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 594) {
-            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('messages' => 'region', 'help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 617) {
-            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
           else if ($node->field_webform_theme['und'][0]['tid'] == 677) {
-            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'information' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
+            mcneese_www_force_floating_regions($cf, array('help' => 'region', 'menu_tabs' => 'navigation', 'action_links' => 'navigation', 'side' => 'region', 'breadcrumb' => 'navigation'));
           }
         }
       }
