@@ -299,6 +299,7 @@ function mcneese_preprocess_toolbar(&$vars) {
   $attributes['title'] = t("Toolbar");
   $attributes['class'] = array();
   $attributes['class'][] = 'noscript';
+  $attributes['class'][] = 'mcneese-toolbar';
   $attributes['class'][] = $toolbar_sticky;
   $attributes['class'][] = $toolbar_expanded;
   $attributes['role'] = 'navigation';
