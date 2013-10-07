@@ -13,11 +13,6 @@
   display: none;
 }
 
-.mcneese-advanced_help_popup {
-  color: #424242;
-  background-color: #edf5fa;
-}
-
 .mcneese #mcneese-top {
   color: #000000;
   background-color: #ffffff;
@@ -104,6 +99,11 @@
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.mcneese.mcneese-advanced_help_popup #mcneese-page {
+  margin: 0px;
+  min-height: 200px;
 }
 
 

@@ -1369,40 +1369,32 @@ function mcneese_preprocess_advanced_help_popup(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
-  $cf['advanced_help_popup'] = array();
-  $cf['advanced_help_popup']['tags'] = array();
+  $cf['page'] = array();
+  $cf['page']['tags'] = array();
 
 
-  // header
+  // always use flex width for advanced help.
+  $cf['is']['fixed_width'] = FALSE;
+  $cf['is']['flex_width'] = TRUE;
+
+  $cf['markup_css']['body']['class'] = preg_replace('/\bis-fixed_width\b/', 'is-flex_width', $cf['markup_css']['body']['class']);
+
+
+  // page title
+  if (!empty($vars['title'])) {
+    $cf['page']['title'] = $vars['title'];
+  }
+
   $attributes = array();
-  $attributes['id'] = 'mcneese-advanced_help_popup-header';
   $attributes['class'] = array();
+  $attributes['class'][] = 'page-title';
 
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_title_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_title_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // messages
   mcneese_preprocess_page_prepare_messages($cf, $vars);
-
-
-  // breadcrumbs
-  $attributes = array();
-  $attributes['id'] = 'mcneese-advanced_help_popup-breadcrumb';
-  $attributes['class'] = array();
-  $attributes['class'][] = 'relative';
-  $attributes['class'][] = 'expanded';
-  $attributes['class'][] = 'noscript';
-  $attributes['role'] = 'navigation';
-
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_open'] = array('name' => 'nav', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_close'] = array('name' => 'nav', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
-
-  $attributes = array();
-  $attributes['class'] = array();
-
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
-  $cf['advanced_help_popup']['tags']['mcneese_advanced_help_popup_breadcrumb_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
   // load any messages that might have appeared during the template preprocess operation
