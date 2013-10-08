@@ -141,11 +141,6 @@
   -moz-appearance: none;
 }
 
-.mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .webform-component-option-inline > fieldset > .form-item,
-.mcneese.node-theme-webform-677 #mcneese-content-main .webform-client-form .webform-component-option-inline > fieldset > .form-item {
-  display: inline-block;
-}
-
 .mcneese.node-theme-webform-617 #mcneese-content-main .webform-client-form .form-item > .description,
 .mcneese.node-theme-webform-677 #mcneese-content-main .webform-client-form .form-item > .description {
   font-size: inherit;
