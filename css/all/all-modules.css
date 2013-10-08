@@ -138,3 +138,14 @@
   display: none;
   visibility: hidden;
 }
+
+
+
+/*** Webform ***/
+.mcneese #mcneese-content-main .webform-client-form .webform-component-option-block > fieldset > .form-item {
+  display: block;
+}
+
+.mcneese #mcneese-content-main .webform-client-form .webform-component-option-inline > fieldset > .form-item {
+  display: inline-block;
+}
