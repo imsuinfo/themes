@@ -416,6 +416,13 @@
 
 
 
+/*** Workbench Media ***/
+.mcneese #mcneese-page .view-workbench-files > .view-content > .views-table > thead > tr > .views-field-uri {
+  min-width: 100px;
+}
+
+
+
 /*** Workbench Messages ***/
 .mcneese #mcneese-information > .information-wrapper > .block > .workbench-info-block {
   color: #000000;
