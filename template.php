@@ -303,35 +303,45 @@ function mcneese_www_render_page() {
 
     // group image
     if (property_exists($node, 'field_group_image_show') && is_array($node->field_group_image_show) && isset($node->field_group_image_show['und'][0]['value']) && $node->field_group_image_show['und'][0]['value']) {
+      // assign default 'simple background image' from the dbu.
+      $image_url = 'dbu://c/043e94d1';
+      $image_alt = '';
+      $image_tooltip = '';
+
       if (property_exists($node, 'field_group_image_custom') && !empty($node->field_group_image_custom)) {
-        $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
-        $cf['data']['page']['group_image']['height'] = '200';
-
-        $url = file_create_url($node->field_group_image_custom['und'][0]['uri']);
-
-        if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
-          $cf['data']['page']['group_image']['class'] .= 'group_image-small';
-          $cf['data']['page']['group_image']['width'] = '755';
-
-          $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $node->field_group_image_custom['und'][0]['uri']);
-          $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $node->field_group_image_custom['und'][0]['uri']);
-        }
-        else {
-          $cf['data']['page']['group_image']['class'] .= 'group_image-large';
-          $cf['data']['page']['group_image']['width'] = '960';
-
-          $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $node->field_group_image_custom['und'][0]['uri']);
-          $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $node->field_group_image_custom['und'][0]['uri']);
-        }
-
-        $cf['data']['page']['group_image']['original'] = preg_replace('`^' . $base_url . '`i', '', $url);
-        $cf['data']['page']['group_image']['title'] = $node->field_group_image_custom['und'][0]['title'];
-        $cf['data']['page']['group_image']['alt'] = $node->field_group_image_custom['und'][0]['alt'];
-        $cf['show']['page']['group_image'] = TRUE;
-
-        // add JQ Maphilight support
-        $cf['data']['page']['group_image']['class'] .= ' jq_maphilight';
+        $image_url = $node->field_group_image_custom['und'][0]['uri'];
+        $image_alt = $node->field_group_image_custom['und'][0]['alt'];
+        $image_tooltip = $node->field_group_image_custom['und'][0]['title'];
       }
+
+      $url = file_create_url($image_url);
+
+      $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
+      $cf['data']['page']['group_image']['height'] = '200';
+
+
+      if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
+        $cf['data']['page']['group_image']['class'] .= 'group_image-small';
+        $cf['data']['page']['group_image']['width'] = '755';
+
+        $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $image_url);
+        $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $image_url);
+      }
+      else {
+        $cf['data']['page']['group_image']['class'] .= 'group_image-large';
+        $cf['data']['page']['group_image']['width'] = '960';
+
+        $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $image_url);
+        $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $image_url);
+      }
+
+      $cf['data']['page']['group_image']['original'] = preg_replace('`^' . $base_url . '`i', '', $url);
+      $cf['data']['page']['group_image']['alt'] = $image_alt;
+      $cf['data']['page']['group_image']['title'] = $image_tooltip;
+      $cf['show']['page']['group_image'] = TRUE;
+
+      // add JQ Maphilight support
+      $cf['data']['page']['group_image']['class'] .= ' jq_maphilight';
     }
 
 
