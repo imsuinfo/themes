@@ -411,6 +411,13 @@
   background-color: #000000;
 }
 
+.mcneese.at-wwwdev_mcneese_edu #cboxLoadedContent,
+.mcneese.at-wwwdev2_mcneese_edu #cboxLoadedContent,
+.mcneese.at-wwwdev #cboxLoadedContent,
+.mcneese.at-wwwdev2 #cboxLoadedContent {
+  color: #000000;
+}
+
 .mcneese.at-wwwdev_mcneese_edu #mcneese-messages.fixed.collapsed,
 .mcneese.at-wwwdev2_mcneese_edu #mcneese-messages.fixed.collapsed,
 .mcneese.at-wwwdev #mcneese-messages.fixed.collapsed,
