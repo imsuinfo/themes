@@ -415,6 +415,14 @@
 }
 
 
+/*** Workbench Moderation ***/
+.mcneese #mcneese-page #workbench_moderation-workflow_table > thead > tr > th:nth-child(2),
+.mcneese #mcneese-page #workbench_moderation-workflow_table > thead > tr > th:nth-child(4) {
+  min-width: 200px;
+}
+
+
+
 
 /*** Workbench Media ***/
 .mcneese #mcneese-page .view-workbench-files > .view-content > .views-table > thead > tr > .views-field-uri {
