@@ -784,3 +784,13 @@
   width: 755px !important;
   height: 200px !important;
 }
+
+
+
+
+/*** Registrar Semester Calendar Specific ***/
+.mcneese #mcneese-page-content .view-display-id-semester_calendar_block_list > .view-content > .views-table > tbody > tr > .views-field-field-event-datetime-1 {
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
+}
