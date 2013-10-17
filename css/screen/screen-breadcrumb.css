@@ -1,6 +1,16 @@
 
 
 
+/*** Breadcrumb Menu - All ***/
+.mcneese #mcneese-breadcrumb .navigation_list > .crumb > span,
+.mcneese #mcneese-breadcrumb .navigation_list > .crumb > a {
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
 
 /*** Breadcrumb Menu - Relative ***/
 .mcneese #mcneese-breadcrumb.relative {
