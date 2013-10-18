@@ -334,3 +334,44 @@
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-off-loc {
   background-color: #fcfcfc;
 }
+
+
+
+/*** McNeese Functions ***/
+.mcneese #mcneese-content-main .registrar-semester_schedule > thead {
+  display: table-column-group; /* display: block; somehow produces a border */
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0px 0px;
+  empty-cells: hide;
+}
+
+.mcneese #mcneese-content-main .registrar-semester_schedule > tbody > tr > td:nth-of-type(2) {
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
+}
+
+.mcneese #mcneese-content-main .registrar-semester_schedule > tbody > tr.even > td:nth-of-type(2) {
+  background-color: #d0d0d0;
+}
+
+.mcneese #mcneese-content-main .registrar-semester_schedule > tbody > tr.odd > td:nth-of-type(2) {
+  background-color: #f8f8f8;
+}
