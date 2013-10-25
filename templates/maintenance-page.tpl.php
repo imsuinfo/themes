@@ -11,6 +11,10 @@
     $cf['headers'] = cf_theme_generate_headers($cf);
   }
 
+  if (!isset($cf['headers'])) {
+    $cf['headers'] = '';
+  }
+
   $stp = base_path() . drupal_get_path('theme', 'mcneese_www');
 
   print($cf['agent']['doctype'] . "\n");
@@ -79,7 +83,7 @@
         <ul>
           <li>
             <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
-              <img alt="Snippet of Google Map for Campus" src="/files/footer/footer_map.png">
+              <img alt="Snippet of Google Map for Campus" src="<?php print($stp); ?>/images/footer_map.png">
             </a>
           </li>
         </ul>
@@ -124,7 +128,8 @@
       <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
         <!--(begin-page-header)-->
         <div class="header-section header-top">
-          <a href="/" class="site-logo" title="Sandbox of McNeese State University" role="img"><?php print($head_title); ?></a>
+          <div id="mcneese-site-logo"><a href="/" class="site-logo" title="McNeese State University" role="img"><?php print($head_title); ?></a></div>
+        <?php print('<div id="mcneese-site-logo"><a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a></div>' . "\n"); ?>
         </div>
         <div class="header-separator"></div>
         <div class="header-section header-bottom"></div>
@@ -173,7 +178,7 @@
 
       <div class="columns columns-right">
         <div class="column column-1">
-          <img src="/sites/all/themes/mcneese_www/images/footer-columns-right.png" alt="" width="3" height="169">
+          <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
         </div>
 
         <div class="column column-2">
@@ -195,7 +200,7 @@
           <ul>
             <li>
               <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
-                <img alt="Snippet of Google Map for Campus" src="/files/footer/footer_map.png">
+                <img alt="Snippet of Google Map for Campus" src="<?php print($stp); ?>/images/footer_map.png">
               </a>
             </li>
           </ul>
@@ -206,7 +211,7 @@
       </div>
 
       <div class="copyright">
-        <img class="copyright-logo" alt="McNeese Footer Logo" src="/sites/all/themes/mcneese_www/images/footer-logo.png" title="McNeese State University">
+        <img class="copyright-logo" alt="McNeese Footer Logo" src="<?php print($stp); ?>/images/footer-logo.png" title="McNeese State University">
         <div class="copyright-menus">
         </div>
       </div>

@@ -600,10 +600,10 @@
   background-color: transparent;
 }
 
-.mcneese.at-wwwdev_mcneese_edu #mcneese-header > .header-section > .site-logo,
-.mcneese.at-wwwdev2_mcneese_edu #mcneese-header > .header-section > .site-logo,
-.mcneese.at-wwwdev #mcneese-header > .header-section > .site-logo,
-.mcneese.at-wwwdev2 #mcneese-header > .header-section > .site-logo {
+.mcneese.at-wwwdev_mcneese_edu #mcneese-header #mcneese-site-logo > .site-logo,
+.mcneese.at-wwwdev2_mcneese_edu #mcneese-header #mcneese-site-logo > .site-logo,
+.mcneese.at-wwwdev #mcneese-header #mcneese-site-logo > .site-logo,
+.mcneese.at-wwwdev2 #mcneese-header #mcneese-site-logo > .site-logo {
   background-image: url(../../images/development.png);
 }
 
@@ -625,71 +625,27 @@
 
 
 /*** sandbox.mcneese.edu-specific ***/
-.mcneese.at-sandbox_mcneese_edu #mcneese-header > .header-section > .site-logo,
-.mcneese.at-sandbox #mcneese-header > .header-section > .site-logo {
+.mcneese.at-sandbox_mcneese_edu #mcneese-header #mcneese-site-logo > .site-logo,
+.mcneese.at-sandbox #mcneese-header #mcneese-site-logo > .site-logo {
   background-image: url(../../images/sandbox.png);
 }
 
 
 
 /*** Search Box Links ***/
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 {
-  position: absolute;
-  display: block;
-
-  top: 8px;
-  right: 20px;
-
-  width: 225.1px;
-  min-width: 225.1px;
-  max-width: 225.1px;
-  overflow: hidden;
-
-  height: 18px;
-  min-height: 18px;
-  max-height: 18px;
-
-  color: #ffffff;
-  background-color: #023761;
-
-  font-size: 10px;
-  font-family: arial, helvetica, sans-serif;
-  line-height: 14px;
-
-  padding: 3px 3px 0px 3px;
-  border: 1px solid #065c9f;
-  border-bottom: 0px;
-
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list {
-  padding: 0px;
-}
-
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > li,
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > div {
-  display: inline-block;
-  text-align: center;
-
-  margin: 0px auto;
-}
-
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-ada {
+.mcneese #mcneese-search-box > .search_box-links > .navigation_list > .search_form-top_box_links-ada {
   width: 30px;
 }
 
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-staff {
+.mcneese #mcneese-search-box > .search_box-links > .navigation_list > .search_form-top_box_links-staff {
   width: 115px;
 }
 
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-index {
+.mcneese #mcneese-search-box > .search_box-links > .navigation_list > .search_form-top_box_links-index {
   width: 50px;
 }
 
-.mcneese #mcneese-header > .header-top > .block-name-block-block-13 > .navigation_list > .search_form-top_box_links-bar {
+.mcneese #mcneese-search-box > .search_box-links > .navigation_list > .search_form-top_box_links-bar {
   width: 4px;
 }
 

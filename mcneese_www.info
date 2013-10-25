@@ -71,7 +71,9 @@ stylesheets[screen,handheld,projection][] = css/screen/www-screen-web_form-617.c
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-web_form-677.css
 
 scripts[] = js/document-outline.js
+scripts[] = js/75th.js
 
+regions[top]           = Top
 regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
 regions[header_menu_2] = Header Menu 2
@@ -84,6 +86,7 @@ regions[menus]   = Menus
 regions[asides]  = Asides
 regions[content] = Content
 regions[footer]  = Footer
+regions[bottom]  = Bottom
 regions[hidden]  = Hidden
 
 

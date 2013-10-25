@@ -39,7 +39,8 @@
 <div id="mcneese-top" class="mcneese-top">
   <!--(begin-page_top)-->
   <?php if (isset($page_top)) print($page_top . "\n"); ?>
-  <!--(end-page_top)-->
+  <?php mcneese_do_print($cf, 'top'); ?>
+  <!--(end-top)-->
 </div>
 
 <div id="mcneese-page" class="mcneese-page">
@@ -147,10 +148,12 @@
 <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_close']) . "\n"); ?>
 
 <div id="mcneese-bottom" class="mcneese-bottom">
-  <!--(begin-page_bottom)-->
+  <!--(begin-bottom)-->
+  <?php mcneese_do_print($cf, 'bottom'); ?>
   <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
-  <!--(end-page_bottom)-->
+  <!--(end-bottom)-->
 </div>
+
 <!--(end-body)-->
 </body>
 </html>

@@ -1,0 +1,107 @@
+
+
+
+/*** 75th anniversary banner ***/
+.mcneese #the_75th_anniversary_banner {
+  position: relative;
+
+  background-color: #fcfcfc;
+  background-image: url('/f/c/ea733dbf');
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+
+  width: 960px;
+  min-width: 960px;
+  max-width: 960px;
+
+  height: 110px;
+  min-height: 110px;
+  max-height: 110px;
+
+  z-index: 100;
+}
+
+.mcneese #the_75th_anniversary_banner > .top_padding {
+  width: 960px;
+  height: 5px;
+
+  background-color: #dadada;
+}
+
+.mcneese #the_75th_anniversary_banner > a.learn_more,
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window {
+  display: inline-block;
+  position: relative;
+
+  font-family: Serif, Sans-Serif, 'Times New Roman';
+  font-size: 14px;
+  font-weight: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mcneese #the_75th_anniversary_banner > a.learn_more {
+  top: 38px;
+  left: 780px;
+
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+
+  color: #505050;
+  background-color: #efefef;
+
+  padding: 8px;
+  border: 1px solid #c8c8c8;
+}
+
+.mcneese #the_75th_anniversary_banner > a.learn_more:focus,
+.mcneese #the_75th_anniversary_banner > a.learn_more:active,
+.mcneese #the_75th_anniversary_banner > a.learn_more:hover {
+  text-decoration: none;
+
+  color: #454545;
+  background-color: #e5e5e5;
+}
+
+.mcneese #the_75th_anniversary_banner > a.learn_more:active {
+  color: #404040;
+  background-color: #e0e0e0;
+
+  border-style: inset;
+}
+
+
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window {
+  top: 5px;
+  left: 920px;
+
+  color: #4a4a4a;
+  background-color: #dbdbdb;
+
+  font-weight: bold;
+
+  padding: 4px 8px;
+  border: 1px solid #c8c8c8;
+}
+
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window:focus,
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window:active,
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window:hover {
+  text-decoration: none;
+
+  color: #454545;
+  background-color: #e5e5e5;
+}
+
+.mcneese #the_75th_anniversary_banner > .top_padding > a.close_window:active {
+  color: #404040;
+  background-color: #e0e0e0;
+
+  border-style: inset;
+}
+
+.mcneese #the_75th_anniversary_banner.noscript > .top_padding > a.close_window {
+  display: none;
+}
