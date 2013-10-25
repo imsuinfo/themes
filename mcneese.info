@@ -76,6 +76,7 @@ scripts[] = js/work_area_menu.js
 scripts[] = js/print.js
 
 
+regions[top]           = Top
 regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
 regions[header_menu_2] = Header Menu 2
@@ -88,6 +89,7 @@ regions[menus]   = Menus
 regions[asides]  = Asides
 regions[content] = Content
 regions[footer]  = Footer
+regions[bottom]  = Bottom
 regions[hidden]  = Hidden
 
 

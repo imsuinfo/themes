@@ -38,6 +38,7 @@ function mcneese_preprocess_maintenance_page(&$vars) {
   }
 
   mcneese_preprocess_html($vars);
+  mcneese_preprocess_page($vars);
 
   // there are certain cases where maintenance mode is not detectable but in use.
   // the end result is that some of the variables are not defined, but should be.
@@ -360,6 +361,44 @@ function mcneese_preprocess_page(&$vars) {
   }
 
 
+  // load top so that they can be stored in the 'top' region.
+  $cf['page']['top'] = '';
+  $cf['show']['page']['top'] = FALSE;
+  if (!empty($vars['page']['top'])) {
+    $cf['page']['top'] = $vars['page']['top'];
+    $cf['show']['page']['top'] = TRUE;
+    unset($vars['page']['top']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-top';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'expanded';
+  $attributes['class'][] = 'noscript';
+
+  $cf['page']['tags']['mcneese_top_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_top_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
+  // load bottom so that they can be stored in the 'top' region.
+  $cf['page']['bottom'] = '';
+  $cf['show']['page']['bottom'] = FALSE;
+  if (!empty($vars['page']['bottom'])) {
+    $cf['page']['bottom'] = $vars['page']['bottom'];
+    $cf['show']['page']['bottom'] = TRUE;
+    unset($vars['page']['bottom']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-bottom';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'expanded';
+  $attributes['class'][] = 'noscript';
+
+  $cf['page']['tags']['mcneese_bottom_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_bottom_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
   // setup page logo
   $cf['data']['page']['logo']['title'] = $cf['at']['human_name'];
   $cf['data']['page']['logo']['alt'] = $cf['at']['human_name'];
@@ -548,8 +587,14 @@ function mcneese_preprocess_page(&$vars) {
 
 
   // load all tasks
-  $cf['page']['menu_tabs'] = menu_local_tasks(0);
-  $cf['page']['sub_tabs'] = menu_local_tasks(1);
+  if (function_exists('menu_local_tasks')) {
+    $cf['page']['menu_tabs'] = menu_local_tasks(0);
+    $cf['page']['sub_tabs'] = menu_local_tasks(1);
+  }
+  else {
+    $cf['page']['menu_tabs'] = '';
+    $cf['page']['sub_tabs'] = '';
+  }
 
   $tabs_sticky = 'relative';
 
@@ -724,7 +769,12 @@ function mcneese_preprocess_page(&$vars) {
 
   // load all breadcrumb and sidecrumb data
   if (empty($vars['breadcrumb'])) {
-    $cf['page']['breadcrumb'] = drupal_get_breadcrumb();
+    if (function_exists('menu_get_active_breadcrumb')) {
+      $cf['page']['breadcrumb'] = drupal_get_breadcrumb();
+    }
+    else {
+      $cf['page']['breadcrumb'] = '';
+    }
   }
   else {
     $cf['page']['breadcrumb'] = $vars['breadcrumb'];
@@ -820,9 +870,9 @@ function mcneese_preprocess_page(&$vars) {
 
 
   // load footer so that they can be stored in the 'footer' region.
-  if (!empty($vars['footer'])) {
-    $cf['page']['footer'] = $vars['footer'];
-    unset($vars['footer']);
+  if (!empty($vars['page']['footer'])) {
+    $cf['page']['footer'] = $vars['page']['footer'];
+    unset($vars['page']['footer']);
   }
 
   $attributes = array();
@@ -1917,7 +1967,7 @@ function mcneese_render_page() {
 
   // standard render
   if (function_exists('cf_theme_render_cf')) {
-    $keys = array('header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'title_prefix', 'title_suffix', 'help', 'information', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'hidden', 'watermarks-pre', 'watermarks-post');
+    $keys = array('top', 'header', 'header_menu_1', 'header_menu_2', 'action_links', 'title', 'title_prefix', 'title_suffix', 'help', 'information', 'menus', 'asides', 'precrumb', 'postcrumb', 'help', 'footer', 'bottom', 'hidden', 'watermarks-pre', 'watermarks-post');
     cf_theme_render_cf($cf, $keys, 'page');
   }
 
@@ -2632,11 +2682,12 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_open']) . "\n");
       print('<!--(begin-page-header)-->' . "\n");
       print('<div class="header-section header-top">' . "\n");
-      print($cf['data']['page']['header'] . "\n");
 
       if ($cf['show']['page']['logo']) {
-        print('<a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a>' . "\n");
+        print('<div id="mcneese-site-logo"><a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a></div>' . "\n");
       }
+
+      print($cf['data']['page']['header'] . "\n");
 
       if ($cf['show']['page']['header_menu_1']) {
         print('<div class="header-menu header-menu-1" role="navigation">' . "\n");
@@ -2688,16 +2739,24 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
     }
   }
   else if ($target == 'page_footer') {
-    if ($cf['show']['page']['title']) {
+    if ($cf['show']['page']['footer']) {
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_open']) . "\n");
       print('<!--(begin-page-footer)-->' . "\n");
 
-      if ($cf['show']['page']['footer']) {
-        print($cf['data']['page']['footer'] . "\n");
-      }
+      print($cf['data']['page']['footer'] . "\n");
 
       print('<!--(end-page-footer)-->' . "\n");
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_close']) . "\n");
+    }
+  }
+  else if ($target == 'top') {
+    if ($cf['show']['page']['top']) {
+      print($cf['data']['page']['top'] . "\n");
+    }
+  }
+  else if ($target == 'bottom') {
+    if ($cf['show']['page']['bottom']) {
+      print($cf['data']['page']['bottom'] . "\n");
     }
   }
 }
