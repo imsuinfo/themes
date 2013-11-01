@@ -2019,7 +2019,17 @@ function mcneese_render_page() {
 
   // render the message array pieces
   if (isset($cf['show']['page']) && array_key_exists('messages', $cf['show']['page']) && $cf['show']['page']['messages']) {
-    $cf['data']['page']['messages']['renderred'] = theme('status_messages', array('messages' => $cf['data']['page']['messages']['raw'], 'other' => render($cf['data']['page']['messages']['blocks'])));
+    $raw = array();
+    if (isset($cf['data']['page']['messages']['raw'])) {
+      $raw = $cf['data']['page']['messages']['raw'];
+    }
+
+    $blocks = '';
+    if (isset($cf['data']['page']['messages']['blocks'])) {
+      $blocks = $cf['data']['page']['messages']['blocks'];
+    }
+
+    $cf['data']['page']['messages']['renderred'] = theme('status_messages', array('messages' => $raw, 'other' => render($blocks)));
   }
 
 
