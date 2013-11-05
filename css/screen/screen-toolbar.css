@@ -2,11 +2,11 @@
 
 
 /*** Administrative Toolbar ***/
-.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-collapsed > #mcneese-page {
+.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-collapsed > #mcneese-top {
   margin-top: 28px;
 }
 
-.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-expanded > #mcneese-page {
+.mcneese.is-toolbar-fixed.mcneese.is-toolbar-autoshow.is-toolbar-shortcuts-expanded > #mcneese-top {
   margin-top: 56px;
 }
 
