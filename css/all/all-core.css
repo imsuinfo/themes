@@ -46,6 +46,10 @@
   display: inline;
 }
 
+.mcneese .inherit {
+  display: inherit;
+}
+
 .mcneese .vertical-align-baseline {
   vertical-align: baseline;
 }
