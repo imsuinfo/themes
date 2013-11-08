@@ -34,6 +34,12 @@
 
 
 /*** Basic Style Notation Overrides ***/
+.mcneese .paragraph {
+  display: block;
+
+  unicode-bidi: embed;
+}
+
 .mcneese .block {
   display: block;
 }
