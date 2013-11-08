@@ -107,7 +107,7 @@
   border: 0px none;
 }
 
-.mcneese.node-type-document .mcneese-content-main p {
+.mcneese.node-type-document .mcneese-content-main .paragraph {
   margin: 0px;
   text-indent: 0.5in;
 }
