@@ -46,6 +46,38 @@
   display: inline;
 }
 
+.mcneese .vertical-align-baseline {
+  vertical-align: baseline;
+}
+
+.mcneese .vertical-align-sub {
+  vertical-align: sub;
+}
+
+.mcneese .vertical-align-super {
+  vertical-align: super;
+}
+
+.mcneese .vertical-align-top {
+  vertical-align: top;
+}
+
+.mcneese .vertical-align-text_top {
+  vertical-align: text-top;
+}
+
+.mcneese .vertical-align-middle {
+  vertical-align: middle;
+}
+
+.mcneese .vertical-align-text_bottom {
+  vertical-align: text-bottom;
+}
+
+.mcneese .vertical-align-inherit {
+  vertical-align: inherit;
+}
+
 .mcneese .clear {
   clear: both;
 }
