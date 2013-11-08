@@ -34,6 +34,10 @@
 
 
 /*** Basic Style Notation Overrides ***/
+.mcneese p.text {
+  display: inline;
+}
+
 .mcneese .paragraph {
   display: block;
 
