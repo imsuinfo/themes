@@ -307,8 +307,12 @@ function mcneese_www_render_page() {
       $font_size = (int) $node->field_base_font_size['und'][0]['value'];
       $line_height = $font_size + 4;
 
-      $custom_css = '.mcneese.is-node .mcneese-content-main,' . "\n";
-      $custom_css = '.mcneese.is-node #mcneese-content-main {' . "\n";
+      $custom_css = '.mcneese.is-node.is-node-view .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view #mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-draft .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-draft #mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view-revision .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view-revision #mcneese-content-main {' . "\n";
       $custom_css .= '  font-size: ' . $font_size . "px;\n";
       $custom_css .= '  line-height: ' . $line_height . "px;\n";
       $custom_css .= '}' . "\n";
