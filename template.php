@@ -301,6 +301,22 @@ function mcneese_www_render_page() {
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     $node = &$cf['is_data']['node']['object'];
 
+
+    // font-size override
+    if (property_exists($node, 'field_base_font_size') && is_array($node->field_base_font_size) && !empty($node->field_base_font_size['und'][0]['value'])) {
+      $font_size = (int) $node->field_base_font_size['und'][0]['value'];
+      $line_height = $font_size + 4;
+
+      $custom_css = '.mcneese.is-node .mcneese-content-main,' . "\n";
+      $custom_css = '.mcneese.is-node #mcneese-content-main {' . "\n";
+      $custom_css .= '  font-size: ' . $font_size . "px;\n";
+      $custom_css .= '  line-height: ' . $line_height . "px;\n";
+      $custom_css .= '}' . "\n";
+
+      drupal_add_css($custom_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 100, 'preprocess' => FALSE, 'media' => 'all'));
+    }
+
+
     // group image
     if (property_exists($node, 'field_group_image_show') && is_array($node->field_group_image_show) && isset($node->field_group_image_show['und'][0]['value']) && $node->field_group_image_show['und'][0]['value']) {
       // assign default 'simple background image' from the dbu.
