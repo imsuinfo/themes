@@ -22,7 +22,8 @@
   background-color: #edf5fa;
 }
 
-.mcneese.is-user_settings-background_colors.is-node.is-unpublished > #mcneese-page {
+.mcneese.is-user_settings-background_colors.is-node.is-unpublished:not(.is-workbench-moderated) > #mcneese-page,
+.mcneese.is-user_settings-background_colors.is-node.is-unpublished.is-workbench-moderated-live > #mcneese-page {
   background-color: #ffeeee;
 }
 
