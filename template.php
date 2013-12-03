@@ -337,8 +337,13 @@ function mcneese_www_render_page() {
       $url = file_create_url($image_url);
 
       $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
-      $cf['data']['page']['group_image']['height'] = '200';
 
+      if (isset($node->field_group_image_custom['und'][0]['height'])) {
+        $cf['data']['page']['group_image']['height'] = $node->field_group_image_custom['und'][0]['height'];
+      }
+      else {
+        $cf['data']['page']['group_image']['height'] = '200';
+      }
 
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
         $cf['data']['page']['group_image']['class'] .= 'group_image-small';
