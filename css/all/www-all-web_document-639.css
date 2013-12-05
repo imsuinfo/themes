@@ -100,147 +100,147 @@
   margin: 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_1 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li  > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item  > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_2 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_3 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_4 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_5 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_6 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   counter-reset: safety_content_list_child_7 0;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item {
   counter-increment: safety_content_list_main;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_1;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_2;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_3;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_4;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_5;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_6;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item {
   counter-increment: safety_content_list_child_7;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3) "." counter(safety_content_list_child_4);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3) "." counter(safety_content_list_child_4) "." counter(safety_content_list_child_5);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3) "." counter(safety_content_list_child_4) "." counter(safety_content_list_child_5) "." counter(safety_content_list_child_6);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-count:before,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .list-item-wrapper > .list-count:before {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-count:before,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content > .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .list-item-wrapper > .list-count:before {
   content: counter(safety_content_list_main) "." counter(safety_content_list_child_1) "." counter(safety_content_list_child_2) "." counter(safety_content_list_child_3) "." counter(safety_content_list_child_4) "." counter(safety_content_list_child_5) "." counter(safety_content_list_child_6) "." counter(safety_content_list_child_7);
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > .list-item > .content-list-child,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child {
   padding-left: 60px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > li > .content-list-child > li > .content-list-child > li > .content-list-child > li > .content-list-child {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list-main > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child > .list-item > .content-list-child {
   padding-left: 50px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item {
   margin: 1.0em 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li:last-of-type {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item:last-of-type {
   margin-bottom: 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-text,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-text {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-text,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-text {
   display: table-cell;
 
   padding: 4px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-count {
   word-break: keep-all;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-count {
   padding: 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li > .list-item-wrapper > .list-label {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item > .list-item-wrapper > .list-label {
   font-size: 16px;
   line-height: 1.0em;
   font-weight: normal;
@@ -249,20 +249,20 @@
   padding-right: 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-item-wrapper {
   background-color: #eeeeee;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-item-wrapper > .list-count {
   width: 60px;
   min-width: 60px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-item-wrapper > .list-count {
   font-size: 18px;
   line-height: 1.1em;
   font-weight: bold;
@@ -270,37 +270,37 @@
   margin: 3px 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-text,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-1 > .list-item-wrapper > .list-text {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-text,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-1 > .list-item-wrapper > .list-text {
   margin: 3px 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-item-wrapper > .list-count {
   width: 60px;
   min-width: 60px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-item-wrapper > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-item-wrapper > .list-count {
   font-size: 16px;
   line-height: 1.1em;
 
   margin: 3px 0px;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-label,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-2 > .list-item-wrapper > .list-label {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-label,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-2 > .list-item-wrapper > .list-label {
   font-weight: bold;
 
   text-decoration: underline;
   text-transform: uppercase;
 }
 
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-3 > .list-count,
-.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > li.list-item-3 > .list-item-wrapper > .list-count {
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-3 > .list-count,
+.mcneese.node-type-document.node-theme-document-639 #safety_manual-content .content-list > .list-item.list-item-3 > .list-item-wrapper > .list-count {
   width: 50px;
   min-width: 50px;
 }
