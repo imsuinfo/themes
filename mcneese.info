@@ -5,6 +5,8 @@ core = 7.x
 engine = phptemplate
 screenshot = images/screenshot.png
 
+# project is not hosted on drupal.org, so manual versioning is needed.
+version = "7.x-1.0"
 
 dependencies[] = cf
 dependencies[] = cf_theme
