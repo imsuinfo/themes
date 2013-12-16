@@ -86,6 +86,7 @@
   border: none;
 }
 
+.mcneese fieldset.form-item,
 .mcneese .form-item > fieldset.form-checkboxes,
 .mcneese .form-item > fieldset.form-radios {
   display: inline-block;
