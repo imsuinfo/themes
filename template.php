@@ -338,23 +338,14 @@ function mcneese_www_render_page() {
 
       $cf['data']['page']['group_image']['class'] = 'noscript group_image ';
 
-      if (isset($node->field_group_image_custom['und'][0]['height'])) {
-        $cf['data']['page']['group_image']['height'] = $node->field_group_image_custom['und'][0]['height'];
-      }
-      else {
-        $cf['data']['page']['group_image']['height'] = '200';
-      }
-
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
         $cf['data']['page']['group_image']['class'] .= 'group_image-small';
-        $cf['data']['page']['group_image']['width'] = '755';
 
         $cf['data']['page']['group_image']['src'] = image_style_url('group_image', $image_url);
         $cf['data']['page']['group_image']['other'] = image_style_url('group_image_large', $image_url);
       }
       else {
         $cf['data']['page']['group_image']['class'] .= 'group_image-large';
-        $cf['data']['page']['group_image']['width'] = '960';
 
         $cf['data']['page']['group_image']['src'] = image_style_url('group_image_large', $image_url);
         $cf['data']['page']['group_image']['other'] = image_style_url('group_image', $image_url);

@@ -10,6 +10,15 @@
 
   $float_side = in_array('fixed', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
   $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);
+
+  $group_image_width = '';
+  if (!empty($cf['data']['page']['group_image']['width'])) {
+    $group_image_width = ' width="' . $cf['data']['page']['group_image']['width'] . '"';
+  }
+  $group_image_height = '';
+  if (!empty($cf['data']['page']['group_image']['height'])) {
+    $group_image_height = ' height="' . $cf['data']['page']['group_image']['height'] . '"';
+  }
 ?>
 <?php if ($cf['is']['unsupported']) { ?>
   <div id="mcneese-unsupported-message">
@@ -41,7 +50,8 @@
 
   <?php if ($cf['show']['page']['group_image']) { ?>
     <!--(begin-page-group_image)-->
-    <img usemap="#group_image_map" class="<?php print($cf['data']['page']['group_image']['class']); ?>" title="<?php print($cf['data']['page']['group_image']['title']); ?>" alt="<?php print($cf['data']['page']['group_image']['alt']); ?>" src="<?php print($cf['data']['page']['group_image']['src']); ?>" width="<?php print($cf['data']['page']['group_image']['width']); ?>" height="<?php print($cf['data']['page']['group_image']['height']); ?>" other="<?php print($cf['data']['page']['group_image']['other']); ?>">
+    <img usemap="#group_image_map" class="<?php print($cf['data']['page']['group_image']['class']); ?>" title="<?php print($cf['data']['page']['group_image']['title']); ?>" alt="<?php print($cf['data']['page']['group_image']['alt']); ?>" src="<?php print($cf['data']['page']['group_image']['src']); ?>"<?php print($group_image_width . $group_image_height);?> other="<?php print($cf['data']['page']['group_image']['other']); ?>">
+
     <!--(end-page-group_image)-->
   <?php } ?>
 
