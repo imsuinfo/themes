@@ -640,6 +640,10 @@
   margin: 19px;
 }
 
+.mcneese .margin-top-auto {
+  margin-top: auto;
+}
+
 .mcneese .margin-top-0 {
   margin-top: 0px;
 }
@@ -718,6 +722,10 @@
 
 .mcneese .margin-top-19 {
   margin-top: 19px;
+}
+
+.mcneese .margin-left-auto {
+  margin-left: auto;
 }
 
 .mcneese .margin-left-0 {
@@ -800,6 +808,10 @@
   margin-left: 19px;
 }
 
+.mcneese .margin-bottom-auto {
+  margin-bottom: auto;
+}
+
 .mcneese .margin-bottom-0 {
   margin-bottom: 0px;
 }
@@ -878,6 +890,10 @@
 
 .mcneese .margin-bottom-19 {
   margin-bottom: 19px;
+}
+
+.mcneese .margin-right-auto {
+  margin-right: auto;
 }
 
 .mcneese .margin-right-0 {
