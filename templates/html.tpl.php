@@ -112,7 +112,7 @@
         <li><a href="/node/3287">Quick Facts</a></li>
         <li><a href="/node/5530">Campus Maps</a></li>
         <li><a href="/node/251">Mission</a></li>
-        <li><a href="/index">A-Z Index</a></li>
+        <li><a href="/node/5675">A-Z Index</a></li>
       </ul>
     </div>
 
