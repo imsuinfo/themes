@@ -326,6 +326,12 @@ function mcneese_www_render_page() {
       $font_size = (int) $node->field_print_font_size['und'][0]['value'];
       $line_height = $font_size + 2;
 
+      // font-sizes in gecko print differently than in webkit.
+      if ($cf['agent']['engine'] == 'gecko') {
+        if ($font_size > 1) $font_size--;
+        if ($line_height > 1) $line_height--;
+      }
+
       $custom_css = '.mcneese.is-node.is-node-view .mcneese-content-main,' . "\n";
       $custom_css .= '.mcneese.is-node.is-node-view #mcneese-content-main,' . "\n";
       $custom_css .= '.mcneese.is-node.is-node-draft .mcneese-content-main,' . "\n";
