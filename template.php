@@ -302,7 +302,7 @@ function mcneese_www_render_page() {
     $node = &$cf['is_data']['node']['object'];
 
 
-    // font-size override
+    // base font-size override
     if (property_exists($node, 'field_base_font_size') && is_array($node->field_base_font_size) && !empty($node->field_base_font_size['und'][0]['value'])) {
       $font_size = (int) $node->field_base_font_size['und'][0]['value'];
       $line_height = $font_size + 4;
@@ -318,6 +318,25 @@ function mcneese_www_render_page() {
       $custom_css .= '}' . "\n";
 
       drupal_add_css($custom_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 100, 'preprocess' => FALSE, 'media' => 'all'));
+    }
+
+
+    // print font-size override
+    if (property_exists($node, 'field_print_font_size') && is_array($node->field_print_font_size) && !empty($node->field_print_font_size['und'][0]['value'])) {
+      $font_size = (int) $node->field_print_font_size['und'][0]['value'];
+      $line_height = $font_size + 2;
+
+      $custom_css = '.mcneese.is-node.is-node-view .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view #mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-draft .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-draft #mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view-revision .mcneese-content-main,' . "\n";
+      $custom_css .= '.mcneese.is-node.is-node-view-revision #mcneese-content-main {' . "\n";
+      $custom_css .= '  font-size: ' . $font_size . "px;\n";
+      $custom_css .= '  line-height: ' . $line_height . "px;\n";
+      $custom_css .= '}' . "\n";
+
+      drupal_add_css($custom_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 100, 'preprocess' => FALSE, 'media' => 'print'));
     }
 
 
