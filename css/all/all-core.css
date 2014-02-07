@@ -1698,6 +1698,10 @@
   page-break-after: auto;
 }
 
+.mcneese .page-break-after-none {
+  page-break-after: '';
+}
+
 .mcneese .page-break-after-always {
   page-break-after: always;
 }
@@ -1720,6 +1724,10 @@
 
 .mcneese .page-break-before-auto {
   page-break-before: auto;
+}
+
+.mcneese .page-break-before-none {
+  page-break-after: '';
 }
 
 .mcneese .page-break-before-always {
