@@ -31,6 +31,10 @@
   color: #8c2e0b;
 }
 
+.mcneese fieldset.form-item > legend > .fieldset-legend {
+  font-weight: bold;
+}
+
 
 
 /*** Skip Navigation ***/
