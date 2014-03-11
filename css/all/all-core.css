@@ -33,13 +33,6 @@
 
 
 
-/*** Override drupal core ***/
-.mcneese label.option {
-  display: block;
-}
-
-
-
 /*** Basic Style Notation Overrides ***/
 .mcneese p.text {
   display: inline;
