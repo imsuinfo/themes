@@ -1634,7 +1634,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
     if (function_exists('mcneese_management_get_emergency_mode')) {
       $emergency_mode = mcneese_management_get_emergency_mode();
 
-      if ($emergency_mode) {
+      if ($emergency_mode == 3) {
         $emergency_node = mcneese_management_get_emergency_node($emergency_mode);
 
         if ($emergency_node > 0) {
@@ -1652,7 +1652,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
             $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
 
             $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
-            $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must unpublish the <a href="/node/@emergency_node">Emergency Page</a>.', array('@emergency_node' => $emergency_node)) . "\n";
+            $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must <a href="@emergency_manage_path">disable the emergency mode</a>.', array('@emergency_manage_path' => base_path() . 'admin/content/management/emergency')) . "\n";
           }
 
           if (!$cf['is']['logged_in']) {
