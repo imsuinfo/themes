@@ -1631,28 +1631,34 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
       $cf['is_data']['maintenance']['message'] .= 'To exit <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>, <a href="' . url('admin/config/development/maintenance') . '">go online</a>.' . "\n";
     }
 
-    $emergency_node = mcneese_management_get_emergency_node();
+    if (function_exists('mcneese_management_get_emergency_mode')) {
+      $emergency_mode = mcneese_management_get_emergency_mode();
 
-    if (mcneese_management_get_emergency_mode() && $emergency_node > 0) {
-      $loaded_node = node_load($emergency_node);
+      if ($emergency_mode) {
+        $emergency_node = mcneese_management_get_emergency_node($emergency_mode);
 
-      if (is_object($loaded_node)) {
-        $date_value = strtotime('+900 seconds', $cf['request']);
-        $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-        $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-        $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate, post-check=0, pre-check=0';
+        if ($emergency_node > 0) {
+          $loaded_node = node_load($emergency_node);
 
-        $cf['is']['emergency'] = TRUE;
-        $cf['is_data']['emergency'] = array();
-        $cf['is_data']['emergency']['title'] = $loaded_node->title;
-        $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
+          if (is_object($loaded_node)) {
+            $date_value = strtotime('+900 seconds', $cf['request']);
+            $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+            $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
+            $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate, post-check=0, pre-check=0';
 
-       $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
-       $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must unpublish the <a href="/node/@emergency_node">Emergency Page</a>.', array('@emergency_node' => $emergency_node)) . "\n";
-      }
+            $cf['is']['emergency'] = TRUE;
+            $cf['is_data']['emergency'] = array();
+            $cf['is_data']['emergency']['title'] = $loaded_node->title;
+            $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
 
-      if (!$cf['is']['logged_in']) {
-        $vars['head_title'] = $cf['is_data']['emergency']['title'] . ' | McNeese State University';
+            $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
+            $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must unpublish the <a href="/node/@emergency_node">Emergency Page</a>.', array('@emergency_node' => $emergency_node)) . "\n";
+          }
+
+          if (!$cf['is']['logged_in']) {
+            $vars['head_title'] = $cf['is_data']['emergency']['title'] . ' | McNeese State University';
+          }
+        }
       }
     }
   }
