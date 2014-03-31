@@ -987,6 +987,8 @@
   height: 220px;
   min-height: 220px;
   max-height: 220px;
+
+  margin-left: 15px;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event.mcneese-front_page-events-event-no_image {
@@ -1019,6 +1021,14 @@
   background-color: #25567d;
 
   text-decoration: underline;
+}
+
+.mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-0 {
+  min-height: 162px;
+}
+
+.mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1 {
+  min-height: 215px;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1.mcneese-front_page-events-event-has_image {
@@ -1104,6 +1114,8 @@
 .mcneese #mcneese-front_page-lagniappe {
   color: #404040;
   background-color: #ececec;
+
+  min-height: 350px;
 }
 
 .mcneese #mcneese-front_page-lagniappe a,
@@ -1196,7 +1208,7 @@
 
 .mcneese #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event > .mcneese-front_page-lagniappe-event-body_wrapper > .mcneese-front_page-lagniappe-event-title > a,
 .mcneese #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event > .mcneese-front_page-lagniappe-event-body_wrapper > .mcneese-front_page-lagniappe-event-title > a:visited {
-  color: #25567d;
+  color: #404040;
   background-color: #ececec;
 
   text-decoration: none;
@@ -1205,7 +1217,7 @@
 .mcneese #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event > .mcneese-front_page-lagniappe-event-body_wrapper > .mcneese-front_page-lagniappe-event-title > a:focus,
 .mcneese #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event > .mcneese-front_page-lagniappe-event-body_wrapper > .mcneese-front_page-lagniappe-event-title > a:active,
 .mcneese #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event > .mcneese-front_page-lagniappe-event-body_wrapper > .mcneese-front_page-lagniappe-event-title > a:hover {
-  color: #700000;
+  color: #25567d;
   background-color: #ececec;
 
   text-decoration: underline;
@@ -1215,7 +1227,7 @@
 
 /*** McNeese - Spotlight ***/
 .mcneese #mcneese-front_page-spotlight {
-  margin-top: 215px;
+  margin-top: 210px;
 }
 
 .mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-header {
