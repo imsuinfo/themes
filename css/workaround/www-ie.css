@@ -1,12 +1,32 @@
 
 
 
-/*** Search Box fixes ***/
-.mcneese.agent-name-ie.agent-major_version-6.is-in_ie_normal_mode #mcneese-header .header-top .block-id-1 .navigation_list .search_form-top_box_links-bar,
-.mcneese.agent-name-ie.agent-major_version-6.is-in_ie_normal_mode #mcneese-header .header-top .block-id-1 .navigation_list li,
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > .search_form-top_box_links-bar,
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-top > .block-id-1 > .navigation_list > li {
-  float: left;
+/*** Footer fixes ***/
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-www-footer,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-www-footer {
+  position: relative;
+  clear: both;
+
+  background-position-y: top;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-www-footer .columns-left .column,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-www-footer .columns-left .column,
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-www-footer .columns-right .column,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-www-footer .columns-right .column {
+  display: inline;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-www-footer .copyright,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-www-footer .copyright {
+  position: relative;
+
+  top: -10px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-www-footer .copyright .copyright-menus .copyright-menu li,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-www-footer .copyright .copyright-menus .copyright-menu li {
+  display: inline;
 }
 
 
@@ -53,7 +73,79 @@
 
 /*** (New) Front Page fixes ***/
 .mcneese.agent-name-ie.agent-major_version-6 #mcneese-page,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page,
-.mcneese.agent-name-ie.agent-major_version-8 #mcneese-page {
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page {
+  position: relative;
+
+  overflow-y: hidden;
   overflow-x: hidden;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-page-content .page-title {
+  display: none;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6.is-front #mcneese-page-content,
+.mcneese.agent-name-ie.agent-major_version-7.is-front #mcneese-page-content {
+  position: relative;
+
+  top: 0px;
+}
+
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-wrapper,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-wrapper {
+  top: 43px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-featured .mcneese-front_page-featured-image,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-featured .mcneese-front_page-featured-image {
+  float: left;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-featured .mcneese-front_page-featured-thumbnails,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-featured .mcneese-front_page-featured-thumbnails {
+  float: right;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-left,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-left {
+  float: left;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-right,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-right {
+  float: right;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-events > .mcneese-front_page-events-event-header,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-events > .mcneese-front_page-events-event-header,
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event-header,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-lagniappe > .mcneese-front_page-lagniappe-event-header {
+  height: 18px;
+  min-height: 18px;
+  max-height: 18px;
+
+  padding: 4px;
+  margin: 0px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-header,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-header {
+  height: 18px;
+  min-height: 18px;
+  max-height: 18px;
+
+  width: 414px;
+  min-width: 414px;
+  max-width: 414px;
+
+  padding: 6px 6px 8px 6px;
+  margin: 0px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6 #mcneese-front_page-highlight,
+.mcneese.agent-name-ie.agent-major_version-7 #mcneese-front_page-highlight {
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
 }
