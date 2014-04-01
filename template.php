@@ -783,7 +783,7 @@ function mcneese_preprocess_page(&$vars) {
 
   $cf['page']['precrumb'] = '';
 
-  if ($cf['user']['object']->uid > 0) {
+  if (isset($cf['user']['object']) && is_object($cf['user']['object']) && $cf['user']['object']->uid > 0) {
     if ($cf['is']['node']) {
       $cf['page']['precrumb'] .= '<div class="crumb-node_id">' . t("Node " . $cf['is_data']['node']['object']->nid) . '</div>';
     }
