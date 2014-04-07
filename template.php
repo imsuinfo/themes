@@ -1567,8 +1567,11 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
       break;
 
     case 'ie':
+      drupal_add_http_header('X-UA-Compatible', 'IE=Edge');
+
       $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge';
       $cf['is']['in_ie_normal_mode'] = TRUE;
+
 
       $custom_css = array();
       $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
@@ -1592,6 +1595,39 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
             $cf['is']['html5'] = FALSE;
             $cf['is']['legacy'] = TRUE;
           }
+        }
+
+        if ($cf['is']['in_ie_compatibility_mode']) {
+          if (preg_match("@; Trident/8@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 12, because this is at least IE 12.
+            $cf['agent']['major_version'] = 12;
+          }
+          elseif (preg_match("@; Trident/7@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 11, because this is at least IE 11.
+            $cf['agent']['major_version'] = 11;
+          }
+          elseif (preg_match("@; Trident/6@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 10, because this is at least IE 10.
+            $cf['agent']['major_version'] = 10;
+          }
+          elseif (preg_match("@; Trident/5@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 9, because this is at least IE 9.
+            $cf['agent']['major_version'] = 9;
+          }
+          elseif (preg_match("@; Trident/4@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 8, because this is at least IE 8.
+            $cf['agent']['major_version'] = 8;
+          }
+          elseif (preg_match("@; EIE10;@", $cf['agent']['raw']) > 0) {
+            // alter the (faked) agent to be at min, 10, because this is at least IE 10.
+            $cf['agent']['major_version'] = 10;
+          }
+        }
+        else {
+          $custom_css = array();
+          $custom_css['options'] = array('type' => 'file', 'group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 5, 'media' => 'all', 'preprocess' => FALSE);
+          $custom_css['data'] = $cf['theme']['path'] . '/css/workaround/ie-legacy.css';
+          drupal_add_css($custom_css['data'], $custom_css['options']);
         }
       }
 
@@ -2174,7 +2210,7 @@ function mcneese_status_messages($vars) {
     'warning' => t("Warning message"),
   );
 
-  $header_class = 'html_tag-header';
+  $header_class = 'html_tag-header messages-header';
 
   if (!isset($cf['is']['html5']) || $cf['is']['html5']) {
     $output .= '<header class="' . $header_class . '"><h2 class="html_tag-heading">' . t("Messages") . '</h2>' . '</header>';

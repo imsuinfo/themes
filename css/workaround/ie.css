@@ -2,7 +2,6 @@
 
 
 /*** Search box issues ***/
-.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit,
 .mcneese.agent-name-ie.agent-major_version-8 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions > .form-submit {
   color: #ffffff;
 
@@ -15,92 +14,28 @@
   max-height: 20px;
 }
 
-.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item-search-block-form,
 .mcneese.agent-name-ie.agent-major_version-8 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item-search-block-form {
   width: 195px;
   min-width: 195px;
   max-width: 195px;
 }
 
-.mcneese.agent-name-ie.agent-major_version-7 #search-block-form,
 .mcneese.agent-name-ie.agent-major_version-8 #search-block-form {
   width: 225px;
   max-width: 225px;
   right: 12px;
 }
 
-.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-item,
-.mcneese.agent-name-ie.agent-major_version-7 #search-block-form > .form-wrapper-inner > .search_block_form-section > .form-actions {
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box {
-  position: relative;
-
-  float: right !important;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box {
-  position: relative;
-
-  top: -90px;
-  left: 700px;
-
-  float: none !important;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box .search_form-top_box_links-bar,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box .search_form-top_box_links-bar,
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box .search_form-top_box_links-ada,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box .search_form-top_box_links-ada,
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box .search_form-top_box_links-staff,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box .search_form-top_box_links-staff,
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box .search_form-top_box_links-index,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box .search_form-top_box_links-index {
-  display: inline;
-  vertical-align: top;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-search-box #search-block-form .search_block_form-header,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-search-box #search-block-form .search_block_form-header {
-  display: none;
-}
-
 
 
 /*** Primary and Secondary Navigation fixes ***/
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list,
 .mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list {
   display: block;
 }
 
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-header .header-section .header-menu .html_tag-nav .html_tag-list li {
-  display: inline;
-  vertical-align: top;
-
-  clear: both;
-
-  padding: 20px 10px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list > li,
 .mcneese.agent-name-ie.agent-major_version-8 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .html_tag-list > li {
   padding-left: 1px;
   padding-right: 1px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-header > .header-section > .header-menu > .html_tag-nav > .html_tag-list > li {
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header .header-top .header-menu-1 .menu .navigation_list .leaf {
-  position: relative;
-  top: 11px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-header .header-top .header-menu-1 .menu .navigation_list .menu_link-apply-now {
-  position: relative;
-  top: 0px;
 }
 
 
@@ -110,27 +45,9 @@
   display: inline;
 }
 
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb-trail,
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb,
-.mcneese.agent-name-ie.agent-major_version-7.is-in_ie_normal_mode #mcneese-breadcrumb > .html_tag-list > .crumb > a {
-  float: left;
-}
-
 
 
 /*** Page Side and Workbench Menu issues ***/
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side.fixed {
-  overflow-x: hidden;
-}
-
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu .navigation_list,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-side > .block > .workbench_menu .navigation_list > li {
-  list-style-type: none;
-  list-style-image: none;
-}
-
-
 .mcneese.agent-name-ie.agent-major_version-8.is-in_ie_normal_mode #mcneese-breadcrumb.relative > .navigation_list > .crumb-trail,
 .mcneese.agent-name-ie.agent-major_version-8.is-in_ie_normal_mode #mcneese-breadcrumb.relative > .navigation_list > .crumb > span,
 .mcneese.agent-name-ie.agent-major_version-8.is-in_ie_normal_mode #mcneese-breadcrumb.relative > .navigation_list > .crumb > a {
@@ -142,84 +59,4 @@
 /*** Content Body fixes ***/
 .mcneese.agent-name-ie.agent-major_version-8 #mcneese-page {
   overflow-x: hidden;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-page,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page {
-  position: relative;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-page-content,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-content {
-  position: relative;
-
-  top: 43px;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 #mcneese-page-content .mcneese-content-main,
-.mcneese.agent-name-ie.agent-major_version-7 #mcneese-page-content .mcneese-content-main {
-  min-height: 1250px;
-}
-
-
-
-/*** Special Case fixes ***/
-.mcneese.agent-name-ie.agent-major_version-6 .inline-block,
-.mcneese.agent-name-ie.agent-major_version-7 .inline-block {
-  display: block;
-
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .inline-block-broken_ie-right,
-.mcneese.agent-name-ie.agent-major_version-7 .inline-block-broken_ie-right {
-  display: block;
-
-  float: right;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .inline-block-broken_ie-clear,
-.mcneese.agent-name-ie.agent-major_version-7 .inline-block-broken_ie-clear {
-  clear: both;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .inline-block-broken_ie-clear-left,
-.mcneese.agent-name-ie.agent-major_version-7 .inline-block-broken_ie-clear-left {
-  clear: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .inline-block-broken_ie-clear-right,
-.mcneese.agent-name-ie.agent-major_version-7 .inline-block-broken_ie-clear-right {
-  clear: right;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .layout-column_2,
-.mcneese.agent-name-ie.agent-major_version-7 .layout-column_2 {
-  display: block;
-
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .layout-column_3,
-.mcneese.agent-name-ie.agent-major_version-7 .layout-column_3 {
-  display: block;
-
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .layout-column_4,
-.mcneese.agent-name-ie.agent-major_version-7 .layout-column_4 {
-  display: block;
-
-  float: left;
-}
-
-.mcneese.agent-name-ie.agent-major_version-6 .layout-column_5,
-.mcneese.agent-name-ie.agent-major_version-7 .layout-column_5 {
-  display: block;
-
-  float: left;
 }
