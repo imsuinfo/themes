@@ -1089,9 +1089,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  width: 290px;
-  min-width: 290px;
-  max-width: 290px;
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event > .mcneese-front_page-events-event-body_wrapper > .mcneese-front_page-events-event-body {
