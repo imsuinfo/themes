@@ -1228,6 +1228,8 @@
 /*** McNeese - Spotlight ***/
 .mcneese #mcneese-front_page-spotlight {
   margin-top: 210px;
+
+  background-color: #ffffff;
 }
 
 .mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-header {
