@@ -1024,7 +1024,7 @@
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-0 {
-  min-height: 162px;
+  min-height: 180px;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1 {
@@ -1043,23 +1043,13 @@
   width: 534px;
   min-width: 534px;
   max-width: 534px;
-
-  height: 214px;
-  min-height: 214px;
-  max-height: 214px;
-
-  overflow: hidden;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1 > .mcneese-front_page-events-event-image_link {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
+
   position: relative;
-
-  bottom: 0px;
-
-  clear: both;
-  float: left;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1099,17 +1089,10 @@
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1.mcneese-front_page-events-event-has_image > .mcneese-front_page-events-event-body_wrapper > .mcneese-front_page-events-event-body > .mcneese-front_page-events-event-body-text {
-  display: inline-block;
-  vertical-align: middle;
-
-  max-height: 144px;
-
-  overflow: hidden;
 }
 
 .mcneese #mcneese-front_page-events > .mcneese-front_page-events-event-1.mcneese-front_page-events-event-has_image > .mcneese-front_page-events-event-body_wrapper > .mcneese-front_page-events-event-body > .mcneese-front_page-events-event-body-more {
   display: inline-block;
-  vertical-align: middle;
 }
 
 
