@@ -1329,9 +1329,9 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  width: 197px;
-  min-width: 197px;
-  max-width: 197px;
+  width: 192px;
+  min-width: 192px;
+  max-width: 192px;
 
   color: #000000;
   background-color: #ffffff;
@@ -1342,7 +1342,7 @@
   min-height: 160px;
   max-height: 160px;
 
-  padding: 0px 0px 7px 15px;
+  padding: 0px 0px 7px 10px;
 }
 
 .mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-odd > .mcneese-front_page-spotlight-event-image_link {
@@ -1350,7 +1350,7 @@
   min-height: 161px;
   max-height: 161px;
 
-  padding: 0px 0px 8px 15px;
+  padding: 0px 0px 8px 10px;
 }
 
 .mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event > .mcneese-front_page-spotlight-event-body_wrapper > .mcneese-front_page-spotlight-event-body {
