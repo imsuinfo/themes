@@ -28,6 +28,12 @@
 .mcneese .fake_link,
 .mcneese .fake_link:visited {
   color: #00477f;
+  text-decoration: underline;
+}
+
+.mcneese .fake_link.improper_link,
+.mcneese .fake_link.improper_link:visited {
+  text-decoration: none;
 }
 
 .mcneese .fake_link:focus {
