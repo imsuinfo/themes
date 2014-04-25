@@ -21,6 +21,33 @@
   color: inherit;
 }
 
+.mcneese .fake_link:focus {
+  border: 1px dotted #555555;
+}
+
+.mcneese .fake_link,
+.mcneese .fake_link:visited {
+  color: #00477f;
+}
+
+.mcneese .fake_link:focus {
+  outline: thin dotted invert;
+}
+
+.mcneese .fake_link:focus,
+.mcneese .fake_link:active,
+.mcneese .fake_link:hover {
+  color: #7f0000;
+}
+
+.mcneese .fake_link[name],
+.mcneese .fake_link[name]:focus,
+.mcneese .fake_link[name]:active,
+.mcneese .fake_link[name]:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .mcneese .form-item,
 .mcneese .form-actions {
   margin: 8px 0px;
