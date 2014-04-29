@@ -82,12 +82,62 @@
 
 
 /*** Nivo Slider ***/
-.mcneese #views-jqfx-nivoslider-images-1 > .nivo-controlNav > .nivo-control {
+.mcneese.is-front .slider-wrapper {
+  position: relative;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-title,
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-title:visited {
+  color: #fad703;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-title:focus,
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-title:active,
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-title:hover {
+  text-decoration: underline;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-caption > .nivo-caption-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-controlNav {
+  position: absolute;
+
+  right: -283px;
+
+  width: 280px;
+  max-width: 280px;
+
+  overflow: hidden;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-controlNav > .nivo-control {
+  display: inline-block;
+
+  border: 0 none;
+
+  height: 123px;
+  width: 130px;
+
+  margin-bottom: 5px;
+  margin-left: 2px;
+  margin-right: 3px;
+}
+
+.mcneese.is-front .slider-wrapper > .nivoSlider > #views-jqfx-nivoslider-images-1 > .nivo-controlNav > .nivo-control {
   vertical-align: top;
 }
 
-.mcneese #views-jqfx-nivoslider-images-1 > .nivo-directionNav > a {
-  display:block;
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-directionNav > a {
+  display: block;
 
   background: url(../../images/nivo-arrows.png);
 
@@ -100,12 +150,12 @@
   border: 0px;
 }
 
-.mcneese #views-jqfx-nivoslider-images-1 > .nivo-directionNav > a.nivo-nextNav {
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-directionNav > a.nivo-nextNav {
   background-position: -30px 0px;
   right: 15px;
 }
 
-.mcneese #views-jqfx-nivoslider-images-1 > .nivo-directionNav > a.nivo-prevNav {
+.mcneese.is-front .slider-wrapper > .nivoSlider > .nivo-directionNav > a.nivo-prevNav {
   left: 15px;
 }
 
