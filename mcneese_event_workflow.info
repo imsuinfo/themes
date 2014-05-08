@@ -1,0 +1,46 @@
+name = McNeese - event_workflow
+description = "This is a sub-theme of the mcneese theme, adjusted for thebe.mcneese.edu/event_workflow."
+version = "7.x-1.0"
+core = 7.x
+engine = phptemplate
+base theme = mcneese
+screenshot = images/screenshot.png
+
+
+stylesheets[all][] = css/all/all-common.css
+stylesheets[all][] = css/all/all-front.css
+stylesheets[all][] = css/all/all-event_form.css
+
+stylesheets[braille,speech,tty][] = css/braille/braille-common.css
+stylesheets[braille,speech,tty][] = css/braille/braille-front.css
+stylesheets[braille,speech,tty][] = css/braille/braille-event_form.css
+
+stylesheets[print,embossed,tv][] = css/print/print-common.css
+stylesheets[print,embossed,tv][] = css/print/print-front.css
+stylesheets[print,embossed,tv][] = css/print/print-event_form.css
+
+stylesheets[screen,handheld,projection][] = css/screen/screen-common.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-front.css
+stylesheets[screen,handheld,projection][] = css/screen/screen-event_form.css
+
+
+regions[header]        = Header
+regions[header_menu_1] = Header Menu 1
+regions[header_menu_2] = Header Menu 2
+
+regions[messages]    = Messages
+regions[help]        = Help
+regions[information] = Information
+
+regions[menus]   = Menus
+regions[asides]  = Asides
+regions[content] = Content
+regions[footer]  = Footer
+regions[hidden]  = Hidden
+
+
+features[] = name
+features[] = search
+features[] = favicon
+
+
