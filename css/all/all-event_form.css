@@ -1,0 +1,67 @@
+#mcneese-event-workflow-event-view-0-page {
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups {
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group {
+  display: table;
+
+  margin: 10px auto;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event {
+  display: table-cell;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  background-color: #f4f4f4;
+
+  min-width: 480px;
+  min-height: 200px;
+
+  margin: 5px;
+  border: 1px outset;
+
+  overflow: auto;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event-top {
+  min-width: 960px;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .section-event-label {
+  background-color: #d0d0d0;
+
+  padding: 0px 5px;
+  margin: 0px;
+  border-top: 1px outset #a0a0a0;
+  border-left: 1px outset #a0a0a0;
+  border-bottom: 1px outset #a0a0a0;
+  border-right: 1px outset #a0a0a0;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item {
+  clear: both;
+
+  padding: 10px 5px 5px 5px;
+  border-bottom: 1px dotted #707070;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item.odd {
+  background-color: #ffffff;
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label {
+  display: inline-block;
+
+  font-weight: bold;
+}
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label:after {
+  content: ': ';
+}
+
+#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-values {
+  display: inline-block;
+  float: right;
+}
