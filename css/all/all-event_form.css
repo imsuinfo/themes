@@ -1,16 +1,16 @@
 #mcneese-event-workflow-event-view-0-page {
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups {
+#mcneese-event-workflow-event-view-0-page .event-field_groups {
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group {
   display: table;
 
   margin: 10px auto;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event {
   display: table-cell;
   vertical-align: top;
   box-sizing: border-box;
@@ -26,11 +26,11 @@
   overflow: auto;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event-top {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event-top {
   min-width: 960px;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .section-event-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label {
   background-color: #d0d0d0;
 
   padding: 0px 5px;
@@ -41,27 +41,47 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item {
+  position: relative;
+
   clear: both;
+
+  min-height: 18px;
 
   padding: 10px 5px 5px 5px;
   border-bottom: 1px dotted #707070;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item.odd {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.odd {
   background-color: #ffffff;
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label {
-  display: inline-block;
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label {
+  display: block;
+  float: left;
 
   font-weight: bold;
 }
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label:after {
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label:after {
   content: ': ';
 }
 
-#mcneese-event-workflow-event-view-0-page > .form-wrapper-inner > .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-values {
-  display: inline-block;
-  float: right;
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-values {
+  display: block;
+
+  text-align: right;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-top-additional > .field-event-item-label {
+  display: block;
+  float: none;
+
+  font-weight: bold;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-top-additional > .field-event-item-values {
+  display: block;
+
+  text-align: inherit;
 }
