@@ -1,6 +1,14 @@
 #mcneese-event-workflow-event-view-0-page {
 }
 
+#mcneese-event-workflow-event-view-0-page #edit-display {
+  min-width: 960px;
+
+  padding: 5px 0px;
+  border-width: 0px;
+  border-top-width: 1px;
+}
+
 #mcneese-event-workflow-event-view-0-page .event-field_groups {
 }
 
@@ -17,7 +25,7 @@
 
   background-color: #f4f4f4;
 
-  min-width: 480px;
+  min-width: 478px;
   min-height: 200px;
 
   margin: 5px;
@@ -27,7 +35,7 @@
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event-top {
-  min-width: 960px;
+  min-width: 956px;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label {
