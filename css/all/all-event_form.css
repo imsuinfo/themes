@@ -23,8 +23,6 @@
   vertical-align: top;
   box-sizing: border-box;
 
-  background-color: #f4f4f4;
-
   min-width: 478px;
   min-height: 200px;
 
@@ -60,13 +58,23 @@
   border-bottom: 1px dotted #707070;
 }
 
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.even {
+  background-color: #f4f4f4;
+}
+
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.odd {
   background-color: #ffffff;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-small > .field-event-item-label {
   display: block;
   float: left;
+
+  font-weight: bold;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-large > .field-event-item-label {
+  display: block;
 
   font-weight: bold;
 }
@@ -75,21 +83,12 @@
   content: ': ';
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-values {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-small > .field-event-item-values {
   display: block;
 
   text-align: right;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-top-additional > .field-event-item-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-large > .field-event-item-values {
   display: block;
-  float: none;
-
-  font-weight: bold;
-}
-
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-top-additional > .field-event-item-values {
-  display: block;
-
-  text-align: inherit;
 }
