@@ -1,3 +1,95 @@
+/*** Create ***/
+.mcneese.path-events_create_0 #mcneese-breadcrumb {
+  display: none;
+}
+
+#mcneese-event-workflow-event-create-0-form {
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list {
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 460px;
+
+  min-height: 72px;
+
+  border: 1px outset;
+  padding: 4px;
+  margin: 2px;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > .form-radio {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+
+  margin: 2px;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 440px;
+  min-width: 440px;
+  max-width: 440px;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .building_desc {
+  font-weight: bold;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_number {
+  float: right;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_description > .room_description-data {
+  display: block;
+
+  padding-left: 15px;
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-dates {
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 4px 0px;
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-coordinator {
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-coordinator > .fieldset-wrapper > .form-item {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 4px 0px;
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-information {
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-information > .fieldset-wrapper > .form-item {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 4px 0px;
+}
+
+
+
+/*** View ***/
 #mcneese-event-workflow-event-view-0-page {
 }
 
