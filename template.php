@@ -32,8 +32,10 @@ function mcneese_event_workflow_render_page() {
   $cf = &drupal_static('cf_theme_get_variables', array());
 
   // build & render precrumb
-  $cf['data']['page']['precrumb'] = '';
-  $cf['show']['page']['precrumb'] = FALSE;
+  if (!isset($cf['show']['page']['precrumb'])) {
+    $cf['data']['page']['precrumb'] = '';
+    $cf['show']['page']['precrumb'] = FALSE;
+  }
 
   if (isset($cf['user']['object']) && is_object($cf['user']['object']) && $cf['user']['object']->uid > 0) {
     $path_parts = explode('/', $cf['at']['path']);
