@@ -1,1 +1,16 @@
+.mcneese.is-flex_width {
+  min-width: 960px;
+}
 
+.mcneese.is-flex_width #mcneese-top,
+.mcneese.is-flex_width #mcneese-page,
+.mcneese.is-flex_width #mcneese-bottom,
+.mcneese.is-flex_width > .dev-query {
+  min-width: 960px;
+}
+
+.mcneese.is-flex_width #mcneese-skip_nav:active,
+.mcneese.is-flex_width #mcneese-skip_nav:focus,
+.mcneese.is-flex_width #mcneese-skip_nav:hover {
+  min-width: 960px;
+}

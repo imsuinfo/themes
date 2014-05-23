@@ -1,18 +1,21 @@
 
 
 
-/*** Create ***/
+/*** Create/Edit ***/
 .mcneese.path-events_create_0 #mcneese-breadcrumb {
   display: none;
 }
 
-#mcneese-event-workflow-event-create-0-form {
+#mcneese-event-workflow-event-create-0-form,
+#mcneese-event-workflow-event-edit-0-form {
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list {
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list {
   display: inline-block;
   vertical-align: top;
 
@@ -25,7 +28,8 @@
   margin: 2px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > .form-radio {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > .form-radio,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > .form-radio {
   display: inline-block;
   vertical-align: middle;
   float: left;
@@ -37,7 +41,8 @@
   margin: 2px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > label {
   display: inline-block;
   vertical-align: middle;
 
@@ -46,60 +51,73 @@
   max-width: 440px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .building_desc {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .building_desc,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > label > .building_desc {
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_number {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_number,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > label > .room_number {
   clear: both;
   float: right;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_capacity {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_capacity,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > label > .room_capacity {
   clear: both;
   float: right;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_description > .room_description-data {
+#mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item-event-room-list > label > .room_description > .room_description-data,
+#mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item-event-room-list > label > .room_description > .room_description-data {
   display: block;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates {
+#mcneese-event-workflow-event-create-0-form #section-event-dates,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates {
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date {
+#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date {
   display: inline-block;
   vertical-align: top;
 
   margin: 4px 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date > .form-item {
+#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date > .form-item,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates > .fieldset-wrapper > .container-inline-date > .form-item {
   margin: 0px;
 }
 
 #mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .form-item-event-dates-time-start,
-#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .form-item-event-dates-time-stop {
+#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .form-item-event-dates-time-stop,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates > .fieldset-wrapper > .form-item-event-dates-time-start,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates > .fieldset-wrapper > .form-item-event-dates-time-stop {
   display: inline-block;
   vertical-align: top;
 
   margin: 4px 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-coordinator {
+#mcneese-event-workflow-event-create-0-form #section-event-coordinator,
+#mcneese-event-workflow-event-edit-0-form #section-event-coordinator {
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-coordinator > .fieldset-wrapper > .form-item {
+#mcneese-event-workflow-event-create-0-form #section-event-coordinator > .fieldset-wrapper > .form-item,
+#mcneese-event-workflow-event-edit-0-form #section-event-coordinator > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 
   margin: 4px 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-information {
+#mcneese-event-workflow-event-create-0-form #section-event-information,
+#mcneese-event-workflow-event-edit-0-form #section-event-information {
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-information > .fieldset-wrapper > .form-item {
+#mcneese-event-workflow-event-create-0-form #section-event-information > .fieldset-wrapper > .form-item,
+#mcneese-event-workflow-event-edit-0-form #section-event-information > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 
@@ -152,7 +170,7 @@
   max-width: 956px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper {
   background-color: #d0d0d0;
 
   padding: 0px 5px;
@@ -161,6 +179,14 @@
   border-left: 1px outset #a0a0a0;
   border-bottom: 1px outset #a0a0a0;
   border-right: 1px outset #a0a0a0;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-label {
+
+}
+
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-edit {
+  float: right;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item {
