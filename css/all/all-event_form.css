@@ -21,6 +21,21 @@
   margin: 6px 0px;
 }
 
+#mcneese-event-workflow-event-create-0-form #section-event-dates #buttons-event-add_remove_date,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates #buttons-event-add_remove_date {
+  display: block;
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-dates #submit-event-add-date,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates #submit-event-add-date {
+  display: inline-block;
+}
+
+#mcneese-event-workflow-event-create-0-form #section-event-dates #submit-event-remove-date,
+#mcneese-event-workflow-event-edit-0-form #section-event-dates #submit-event-remove-date {
+  display: inline-block;
+}
+
 /** Room List **/
 #mcneese-event-workflow-event-create-0-form #field-event-room_list > .form-item > .form-item-delta > .form-item,
 #mcneese-event-workflow-event-edit-0-form #field-event-room_list > .form-item > .form-item-delta > .form-item {
