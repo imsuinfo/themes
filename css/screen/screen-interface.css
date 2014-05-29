@@ -1,0 +1,10 @@
+#mcneese_event_workflow-manage_reviewers > .mcneese_event_workflow-manage_reviewers-manage {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 460px;
+  min-width: 460px;
+  max-width: 460px;
+
+  padding: 0px 5px 5px 5px;
+}
