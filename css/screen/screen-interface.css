@@ -1,3 +1,7 @@
+
+
+
+/*** Reviewers ***/
 #mcneese_event_workflow-manage_reviewers > .mcneese_event_workflow-manage_reviewers-manage {
   display: inline-block;
   vertical-align: top;
@@ -7,4 +11,123 @@
   max-width: 460px;
 
   padding: 0px 5px 5px 5px;
+}
+
+
+
+/*** Management ***/
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_1,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_2,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_3 {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 460px;
+  min-width: 460px;
+  max-width: 460px;
+
+  padding: 0px 5px 5px 5px;
+}
+
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_1 > .item-list > ul,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_2 > .item-list > ul,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_3 > .item-list > ul {
+  margin: 0px;
+}
+
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_1 > .item-list > ul > li,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_2 > .item-list > ul > li,
+#mcneese_event_workflow-management_page-choices > .mcneese_event_workflow-management_page-choices-list_3 > .item-list > ul > li {
+  min-height: 70px;
+}
+
+
+
+/*** View ***/
+#mcneese-event-workflow-event-view-0-page #event-display-submit-uncancel,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mcneese-event-workflow-event-view-0-page #event-display-submit-uncancel:focus,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-uncancel:active,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-uncancel:hover,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-cancel:focus,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-cancel:active,
+#mcneese-event-workflow-event-view-0-page #event-display-submit-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+
+
+/*** Cancel / Uncancel ***/
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-yes,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-yes,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-yes,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-yes {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-yes:focus,
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-yes:active,
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-yes:hover,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-yes:focus,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-yes:active,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-yes:hover,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-yes:focus,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-yes:active,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-yes:hover,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-yes:focus,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-yes:active,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-yes:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-no,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-no,
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-no,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-no {
+  color: #000000;
+  background-color: #cecece;
+}
+
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-no:focus,
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-no:active,
+#mcneese-event-workflow-event-view-0-page #event-uncancel-submit-no:hover,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-no:focus,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-no:active,
+#mcneese-event-workflow-event-uncancel-0-form #event-uncancel-submit-no:hover,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-no:focus,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-no:active,
+#mcneese-event-workflow-event-view-0-page #event-cancel-submit-no:hover,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-no:focus,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-no:active,
+#mcneese-event-workflow-event-cancel-0-form #event-cancel-submit-no:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
 }
