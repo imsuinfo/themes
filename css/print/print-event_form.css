@@ -6,8 +6,10 @@
   font-size: 20px;
   line-height: 24px;
 
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
+
+  max-width: 960px;
 }
 
 #mcneese-page-content > .page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
@@ -33,4 +35,8 @@
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review {
+  page-break-before: always;
 }

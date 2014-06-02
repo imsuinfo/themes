@@ -129,12 +129,36 @@
 #mcneese-event-workflow-event-view-0-page {
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display {
+#mcneese-event-workflow-event-view-0-page .event-section-display,
+#mcneese-event-workflow-event-view-0-page .event-section-review {
   min-width: 960px;
 
   padding: 5px 0px;
   border-width: 0px;
   border-top-width: 1px;
+}
+
+#mcneese-event-workflow-event-view-0-page #section-review-information-header {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#mcneese-event-workflow-event-view-0-page #section-review-log-header,
+#mcneese-event-workflow-event-view-0-page #section-review-operations-header {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review {
+  margin: 10px 0px;
+}
+
+#mcneese-event-workflow-event-view-0-page .section-review-information-wrapper,
+#mcneese-event-workflow-event-view-0-page .section-review-log-wrapper,
+#mcneese-event-workflow-event-view-0-page .section-review-operations-wrapper {
+  max-width: 960px;
+
+  margin: 0px auto;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups {
