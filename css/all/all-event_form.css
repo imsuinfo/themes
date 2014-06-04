@@ -130,7 +130,8 @@
 }
 
 #mcneese-event-workflow-event-view-0-page .event-section-display,
-#mcneese-event-workflow-event-view-0-page .event-section-review {
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log {
   min-width: 960px;
 
   padding: 5px 0px;
@@ -138,24 +139,18 @@
   border-top-width: 1px;
 }
 
-#mcneese-event-workflow-event-view-0-page #section-review-information-header {
+#mcneese-event-workflow-event-view-0-page #event-review-log,
+#mcneese-event-workflow-event-view-0-page #event-review-operations {
   font-size: 20px;
   line-height: 24px;
-}
-
-#mcneese-event-workflow-event-view-0-page #section-review-log-header,
-#mcneese-event-workflow-event-view-0-page #section-review-operations-header {
-  font-size: 18px;
-  line-height: 22px;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-section-review {
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .section-review-information-wrapper,
-#mcneese-event-workflow-event-view-0-page .section-review-log-wrapper,
-#mcneese-event-workflow-event-view-0-page .section-review-operations-wrapper {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper,
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper {
   max-width: 960px;
 
   margin: 0px auto;
@@ -264,4 +259,64 @@
   max-width: 960px;
 
   margin: 0px auto;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item {
+  margin: 10px 0px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item {
+margin: 10px auto;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label {
+  background-color: #d0d0d0;
+
+  padding: 5px;
+  margin: 0px;
+  border-top: 1px outset #a0a0a0;
+  border-left: 1px outset #a0a0a0;
+  border-bottom: 1px outset #a0a0a0;
+  border-right: 1px outset #a0a0a0;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-delta,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-delta {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+
+  vertical-align: top;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label > .review-item-label-date,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+  display: inline-block;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-label > .review-item-label-date,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+  float: right;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .review-item > .review-item-message,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper > .review-item > .review-item-message {
+  position: relative;
+
+  min-height: 18px;
+
+  padding: 5px;
+  border: 1px dotted #707070;
+
+  background-color: #f4f4f4;
 }

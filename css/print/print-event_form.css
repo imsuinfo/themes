@@ -16,15 +16,23 @@
   display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display {
-  border: 0px none !important;
-  padding: 0px !important;
-  margin: 0px !important;
-  outline: 0px !important;
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations {
+  display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display > legend {
-  display: none !important;
+#mcneese-event-workflow-event-view-0-page .event-section-display,
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log {
+  border: 0px none;
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-display > legend,
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > legend,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log > legend {
+  display: none;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group {
@@ -37,6 +45,13 @@
   font-weight: inherit;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log {
   page-break-before: always;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log,
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations {
+  max-width: 960px;
+
+  margin: 0px auto;
 }
