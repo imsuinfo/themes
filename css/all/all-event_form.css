@@ -212,7 +212,7 @@
   float: right;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event {
   position: relative;
 
   clear: both;
@@ -223,38 +223,38 @@
   border-bottom: 1px dotted #707070;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.even {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.even {
   background-color: #f4f4f4;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.odd {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.odd {
   background-color: #ffffff;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-small > .field-event-item-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-label {
   display: block;
   float: left;
 
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-large > .field-event-item-label {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-label {
   display: block;
 
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item > .field-event-item-label:after {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event > .item-label:after {
   content: ': ';
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-small > .field-event-item-values {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-value {
   display: block;
 
   text-align: right;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item.field-event-item-size-large > .field-event-item-values {
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-value {
   display: block;
 }
 
