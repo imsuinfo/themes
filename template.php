@@ -108,8 +108,20 @@ function mcneese_event_workflow_render_page() {
             $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
-            $rebuild_breadcrumb = TRUE;
+            if ($count_parts == 3) {
+              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
+              $rebuild_breadcrumb = TRUE;
+            }
+            else {
+              if ($path_parts[3] == 2) {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '" title="Review Log">' . "Review Log" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+              elseif ($path_parts[3] == 3) {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '" title="Review Operations">' . "Review Operations" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+            }
           }
           elseif ($path_parts[1] == 'edit-0' && cf_is_integer($path_parts[2])) {
             $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
