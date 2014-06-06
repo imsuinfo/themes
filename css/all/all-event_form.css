@@ -289,10 +289,12 @@ margin: 10px auto;
   line-height: 18px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-delta {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
+
+  letter-spacing: 1px;
 
   vertical-align: top;
 }
