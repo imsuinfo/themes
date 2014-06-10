@@ -154,6 +154,15 @@
   margin: 0px auto;
 }
 
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .use_fees {
+  margin: 10px 0px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .use_fees > .fieldset-wrapper > .form-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
 #mcneese-event-workflow-event-view-0-page .event-field_groups {
   margin: 0px auto;
 
