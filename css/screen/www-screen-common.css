@@ -391,7 +391,48 @@
   color: #950000;
 }
 
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 {
+  color: #ffffff;
+  background-color: #00588f;
+}
 
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 {
+  color: #ffffff;
+  background-color: #7f008f;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 {
+  color: #ffffff;
+  background-color: #8f3700;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 {
+  color: #ffffff;
+  background-color: #108f00;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a:visited
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a:visited
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a:visited
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:visited {
+  color: #ffffff;
+}
 
 /*** wwwdev.mcneese.edu-specific ***/
 .mcneese.at-wwwdev_mcneese_edu,
