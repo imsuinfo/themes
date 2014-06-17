@@ -172,6 +172,14 @@
   vertical-align: top;
 }
 
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-as_reviewer > .event-section-review-operations-as_reviewer-message {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+
+  margin: 10px 0px 5px 0px;
+}
+
 #mcneese-event-workflow-event-view-0-page .event-field_groups {
   margin: 0px auto;
 
