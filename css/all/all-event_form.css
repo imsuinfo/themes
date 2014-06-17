@@ -101,9 +101,18 @@
   margin: 4px;
 }
 
-/** Coordinator **/
-#mcneese-event-workflow-event-create-0-form #section-event-coordinator > .fieldset-wrapper > .form-wrapper,
-#mcneese-event-workflow-event-edit-0-form #section-event-coordinator > .fieldset-wrapper > .form-wrapper {
+/** Venue Coordinator **/
+#mcneese-event-workflow-event-create-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper,
+#mcneese-event-workflow-event-edit-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 4px;
+}
+
+/** Event Coordinator **/
+#mcneese-event-workflow-event-create-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper,
+#mcneese-event-workflow-event-edit-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
 
@@ -314,6 +323,11 @@
 }
 
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+  max-width: 740px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
@@ -335,4 +349,21 @@
   border: 1px dotted #707070;
 
   background-color: #f4f4f4;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees {
+  padding: 3px 0px 0px 0px;
+}
+
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees > .item-label,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees > .item-label {
+  display: inline-block;
+  font-weight: bold;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees > .item-value,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees > .item-value {
+  display: inline-block;
 }
