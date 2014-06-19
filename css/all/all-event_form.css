@@ -32,7 +32,23 @@
   display: inline-block;
 }
 
-/** Room List **/
+/** Location **/
+#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image,
+#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image {
+  float: right;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image-invisible,
+#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image-invisible {
+  display: none;
+}
+
+#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image-visible,
+#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image-visible {
+  display: inline-block;
+}
+
+/** Room **/
 #mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item,
 #mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item {
   display: inline-block;
