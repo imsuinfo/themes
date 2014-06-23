@@ -248,8 +248,11 @@
 
 }
 
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-history,
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-edit {
   float: right;
+
+  padding-left: 6px;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event {
