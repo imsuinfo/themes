@@ -1,0 +1,93 @@
+
+
+
+/*** Global ***/
+.event_request-listing-page-navigator,
+.event_request-history-page-navigator,
+#search-simple-results-navigation {
+  position: relative;
+
+  min-height: 18px;
+}
+
+.event_request-listing-page-navigator > .event_request-listing-page-choice,
+.event_request-history-page-navigator > .event_request-history-page-choice,
+#search-simple-results-navigation > .search-simple-results-navigation-choice {
+  display: imline-block;
+  position: absolute;
+  vertical-align: top;
+}
+
+.event_request-listing-page-navigator > .event_request-listing-page-previous,
+.event_request-history-page-navigator > .event_request-history-page-previous,
+#search-simple-results-navigation > .search-simple-results-navigation-previous {
+  left: 0px;
+}
+
+.event_request-listing-page-navigator > .event_request-listing-page-next,
+.event_request-history-page-navigator > .event_request-history-page-next,
+#search-simple-results-navigation > .search-simple-results-navigation-next {
+  right: 0px;
+}
+
+
+
+/*** Search ***/
+#mcneese-event-workflow-event-search-0-form #edit-simple > .fieldset-wrapper {
+  position: relative;
+}
+
+#mcneese-event-workflow-event-search-0-form #edit-simple > .fieldset-wrapper > .form-item-simple-sensitive {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  margin: 8px;
+}
+
+
+
+/*** History ***/
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items {
+  margin-bottom: 15px;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title {
+  display: inline-block;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title > .history_items-title {
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 1px;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .summary {
+  display: none;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label {
+  margin: 10px 0px 0px 0px;
+}
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label:first-of-type {
+  margin: 0px;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-label {
+  margin: 5px 0px 0px 0px;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .updater_name,
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_group,
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_name {
+  text-transform: capitalize;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value {
+  margin-left: 20px;
+}
+
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value {
+  margin-left: 20px;
+}
