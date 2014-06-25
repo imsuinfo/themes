@@ -78,6 +78,12 @@
   margin: 5px 0px 0px 0px;
 }
 
+#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label .updater_id {
+  font-size: 9px;
+  vertical-align: top;
+  letter-spacing: 1px;
+}
+
 #mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .updater_name,
 #mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_group,
 #mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_name {

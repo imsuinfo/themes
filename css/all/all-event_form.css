@@ -264,6 +264,8 @@
 
   padding: 10px 5px 5px 5px;
   border-bottom: 1px dotted #707070;
+
+  font-family: monospace;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.even {
@@ -333,31 +335,37 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-
-  letter-spacing: 1px;
-
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+  display: inline-block;
   vertical-align: top;
+  margin: 0px;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
   max-width: 740px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+  display: inline-block;
+  vertical-align: top;
+
+  font-family: monospace;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
   display: inline-block;
 }
 
