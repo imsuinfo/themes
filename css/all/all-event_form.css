@@ -355,7 +355,7 @@
 
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
-  display: inline-block;
+  display: inline;
   vertical-align: top;
 
   font-family: monospace;
@@ -366,7 +366,7 @@
 
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
-  display: inline-block;
+  display: inline;
 }
 
 #mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
