@@ -399,8 +399,8 @@
   background: -o-linear-gradient(top, #f0f0f0 30%,#ffffff 70%);
   background: -ms-linear-gradient(top, #f0f0f0 30%,#ffffff 70%);
   background: linear-gradient(to bottom, #f0f0f0 30%,#ffffff 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );    
-  padding: 0px; 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );
+  padding: 0px;
   margin: 0px 10px;
 }
 
@@ -417,8 +417,8 @@
 .mcneese .list-box > .list-box-body > ul > li > a, .mcneese .list-box > .list-box-body > ol > li > a {
   display: block;
   padding: 0 0 0 10px;
-  line-height: 21px; 
-  font-weight: bold; 
-  font-size: 12px; 
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
