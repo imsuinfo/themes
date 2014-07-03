@@ -20,10 +20,7 @@
 .mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links,
 .mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul,
 .mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade #quick_switch_links > ul > li {
-  display: inline-block;
-  vertical-align: top;
-
-  padding: 0px 5px;
+  display: none;
 }
 
 .mcneese #mcneese-header > .header-section > .block-name-block-masquerade-masquerade > .html_tag-header > .html_tag-hgroup > h2 {
