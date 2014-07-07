@@ -1,0 +1,4 @@
+# Ignore Mac Files
+._*
+.apdisk
+.DS_Store
