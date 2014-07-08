@@ -519,6 +519,56 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['tags']['mcneese_page_help_wrapper_close'] = array('name' => 'div', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
 
 
+  // load all bulletin so that they can be stored in the 'bulletin' region.
+  $bulletin_sticky = 'relative';
+
+  $cf['page']['bulletin'] = '';
+  $cf['show']['page']['bulletin'] = FALSE;
+  if (!empty($vars['page']['bulletin'])) {
+    $cf['page']['bulletin'] = $vars['page']['bulletin'];
+    $cf['show']['page']['bulletin'] = TRUE;
+    unset($vars['page']['bulletin']);
+  }
+
+  $attributes = array();
+  $attributes['id'] = 'mcneese-bulletin';
+  $attributes['class'] = array();
+  $attributes['class'][] = 'noscript';
+  $attributes['title'] = t("Bulleting");
+
+  if ($cf['is']['html5']) {
+    $attributes['class'][] = $bulletin_sticky;
+
+    if ($bulletin_sticky == 'fixed') {
+      $attributes['class'][] = 'collapsed';
+      $attributes['tabindex'] = '2';
+    }
+    else {
+      $attributes['class'][] = 'expanded';
+    }
+  }
+  else {
+    $attributes['class'][] = 'relative';
+    $attributes['class'][] = 'expanded';
+  }
+
+  $cf['page']['tags']['mcneese_page_bulletin_open'] = array('name' => 'aside', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_bulletin_close'] = array('name' => 'aside', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+
+  $cf['page']['tags']['mcneese_page_bulletin_header_open'] = array('name' => 'header', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_bulletin_header_close'] = array('name' => 'header', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+  $attributes = array();
+  $attributes['class'] = array();
+  $attributes['class'][] = 'bulletin-wrapper';
+
+  $cf['page']['tags']['mcneese_page_bulletin_wrapper_open'] = array('name' => 'div', 'type' => 'semantic', 'attributes' => $attributes, 'html5' => $cf['is']['html5']);
+  $cf['page']['tags']['mcneese_page_bulletin_wrapper_close'] = array('name' => 'div', 'type' => 'semantic', 'open' => FALSE, 'html5' => $cf['is']['html5']);
+
+
   // load all information so that they can be stored in the 'information' region.
   $information_sticky = 'relative';
 
@@ -2565,6 +2615,30 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       }
       print('<!--(end-page-messages)-->' . "\n");
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_close']) . "\n");
+    }
+  }
+  else if ($target == 'bulletin') {
+    if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class']) && $cf['show']['page'][$target]) {
+      if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
+        $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
+        $cf['ie8']['float_right-counter']++;
+      }
+
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']) . "\n");
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
+      print('<h2 class="html_tag-heading">Bulletin</h2>' . "\n");
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']) . "\n");
+
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_open']) . "\n");
+      print('<!--(begin-page-' . $target . ')-->' . "\n");
+      print($cf['data']['page'][$target] . "\n");
+      print('<!--(end-page-' . $target . ')-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_close']) . "\n");
+
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
     }
   }
   else if ($target == 'help' || $target == 'information') {

@@ -83,6 +83,7 @@ regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
 regions[header_menu_2] = Header Menu 2
 
+regions[bulletin]    = Bulletin
 regions[messages]    = Messages
 regions[help]        = Help
 regions[information] = Information
