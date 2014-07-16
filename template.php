@@ -130,6 +130,13 @@ function mcneese_event_workflow_render_page() {
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Edit Request">' . "Edit Request" . '</a>';
             $rebuild_breadcrumb = TRUE;
           }
+          elseif ($path_parts[1] == 'history-0' && cf_is_integer($path_parts[2])) {$cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
+            $cf['show']['page']['precrumb'] = TRUE;
+
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/view-0/' . $path_parts[2] . '" title="Request Request">' . "View Request" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Request Request">' . "Request History" . '</a>';
+            $rebuild_breadcrumb = TRUE;
+          }
         }
       }
     }
