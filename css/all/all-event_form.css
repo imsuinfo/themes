@@ -48,6 +48,8 @@
   display: inline-block;
 }
 
+
+
 /** Room **/
 #mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item,
 #mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item {
@@ -107,6 +109,8 @@
 #mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data {
   display: block;
 }
+
+
 
 /** Dates **/
 #mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .field-event-item,
@@ -168,6 +172,8 @@
   margin: 4px;
 }
 
+
+
 /** Event Coordinator **/
 #mcneese-event-workflow-event-create-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper,
 #mcneese-event-workflow-event-edit-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper {
@@ -176,6 +182,8 @@
 
   margin: 4px;
 }
+
+
 
 /** Information **/
 #mcneese-event-workflow-event-create-0-form #section-event-information > .fieldset-wrapper > .form-wrapper,
