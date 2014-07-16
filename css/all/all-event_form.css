@@ -109,13 +109,55 @@
 }
 
 /** Dates **/
-#mcneese-event-workflow-event-create-0-form #section-event-dates > .fieldset-wrapper > .form-wrapper,
-#mcneese-event-workflow-event-edit-0-form #section-event-dates > .fieldset-wrapper > .form-wrapper {
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .field-event-item,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .field-event-item {
   display: inline-block;
   vertical-align: top;
 
   margin: 4px;
 }
+
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 22px 12px;
+}
+
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active {
+  background: #666666;
+  color: #ffffff;
+
+  border: 1px inset #555555;
+  text-shadow: #222222 0px -1px 0px;
+}
+
+
 
 /** Venue Coordinator **/
 #mcneese-event-workflow-event-create-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper,
