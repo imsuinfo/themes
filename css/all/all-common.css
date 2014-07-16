@@ -1,1 +1,8 @@
 
+
+
+/*** Fieldset Checkboxes ***/
+.mcneese fieldset.form-item.form-type-checkbox > legend > .fieldset-legend {
+  background: inherit;
+  padding: 0px;
+}
