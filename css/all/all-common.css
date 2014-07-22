@@ -6,3 +6,139 @@
   background: inherit;
   padding: 0px;
 }
+
+
+
+/*** Calendar - Month ***/
+.mcneese .calendar-month-wrapper {
+  display: flex;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  width: 924px;
+  min-width: 924px;
+  max-width: 924px;
+
+  margin: 5px auto;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-title,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-title > h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
+  position: absolute;
+  top: 5px;
+
+  width: 924px;
+  min-width: 924px;
+  max-width: 924px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-previous {
+  position: absolute;
+  left: 0px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-next {
+  position: absolute;
+  right: 0px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header > .calendar-day {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  font-weight: bold;
+  text-align: center;
+
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
+
+  padding: 3px 0px;
+  border: 1px solid;
+  border-left: 0px none;
+
+  background-color: #e6efff;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header > .calendar-day:first-of-type {
+  border-left: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  min-height: 96px;
+  min-width: 924px;
+
+  border-bottom: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+
+  min-height: 96px;
+
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
+
+  border-right: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-label {
+  display: inline-block;
+  vertical-align: top;
+
+  padding: 1px 2px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-previous > .calendar-label,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-next > .calendar-label {
+  color: #505050;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day:first-of-type {
+  border-left: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-previous,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-next {
+  background-color: #f0f0f0;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-current {
+  background-color: #ffffc0;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-item {
+  padding: 3px 6px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-item > a {
+  text-decoration: none;
+}
