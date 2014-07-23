@@ -27,7 +27,7 @@
 <?php } ?>
 
 <?php mcneese_do_print($cf, 'page_header'); ?>
-
+<?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
 <?php mcneese_do_print($cf, 'messages', FALSE); ?>
 <?php mcneese_do_print($cf, 'help', FALSE); ?>
 <?php mcneese_do_print($cf, 'information', FALSE); ?>
