@@ -155,6 +155,39 @@
   margin: 8px;
 }
 
+#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset {
+  color: #000000;
+  background-color: #99b2ee;
+}
+
+#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:focus,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:focus,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:focus,
+#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:hover,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:hover,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333
+}
+
+#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:active,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:active,
+#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:active {
+  background: #666666;
+  color: #ffffff;
+  border-color: #555555;
+  text-shadow: #222222 0px -1px 0px;
+}
+
 
 
 /*** History ***/
