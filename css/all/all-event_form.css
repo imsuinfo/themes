@@ -246,6 +246,13 @@
   margin: 10px 0px 5px 0px;
 }
 
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-usage_fees {
+  color: #004cb6;
+
+  font-weight: bold;
+  font-style: italic;
+}
+
 #mcneese-event-workflow-event-view-0-page .event-field_groups {
   margin: 0px auto;
 
