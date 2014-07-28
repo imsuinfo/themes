@@ -11,13 +11,11 @@
 
 /*** Calendar - Month ***/
 .mcneese .calendar-month-wrapper {
-  display: flex;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month {
+  display: table;
   position: relative;
-  display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
 
   width: 924px;
@@ -34,6 +32,10 @@
   line-height: 20px;
 
   text-align: center;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-title {
+  display: table-caption;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
@@ -55,7 +57,19 @@
   right: 0px;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header > .calendar-day {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper {
+  display: table-header-group;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper {
+  display: table-row;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+  display: table-cell;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -74,11 +88,19 @@
   background-color: #e6efff;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header > .calendar-day:first-of-type {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type > .calendar-day {
   border-left: 1px solid;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper {
+  display: table-row-group;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week-wrapper {
+  display: table-row;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -89,7 +111,11 @@
   border-bottom: 1px solid;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+  display: table-cell;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -103,32 +129,32 @@
   border-right: 1px solid;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-label {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-label {
   display: inline-block;
   vertical-align: top;
 
   padding: 1px 2px;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-previous > .calendar-label,
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-next > .calendar-label {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-previous > .calendar-label,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-next > .calendar-label {
   color: #505050;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day:first-of-type {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type > .calendar-day {
   border-left: 1px solid;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-previous,
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-next {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-previous,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-next {
   background-color: #f0f0f0;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day.month-current {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-current {
   background-color: #ffffc0;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-item {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
   padding: 3px 6px;
 
   white-space: nowrap;
@@ -139,6 +165,6 @@
   line-height: 16px;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body > .calendar-week > .calendar-day > .calendar-item > a {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a {
   text-decoration: none;
 }
