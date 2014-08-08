@@ -1,3 +1,39 @@
+
+
+
+/*** Bulletin ***/
+.mcneese #mcneese-bulletin-wrapper-outer {
+  display: table;
+}
+
+.mcneese #mcneese-bulletin-wrapper-inner {
+  display: table-row;
+}
+
+.mcneese #mcneese-bulletin-page_title {
+  display: table-cell;
+
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+.mcneese #mcneese-bulletin-content {
+  display: table-cell;
+
+  width: 100%;
+  min-width: 700px;
+  max-width: 100%;
+
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+
+
 /* General Tweaks
 ======================================== */
 .mcneese.node-theme-page-731 h2 {

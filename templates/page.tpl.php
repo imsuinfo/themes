@@ -27,7 +27,6 @@
 <?php } ?>
 
 <?php mcneese_do_print($cf, 'page_header'); ?>
-<?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
 <?php mcneese_do_print($cf, 'messages', FALSE); ?>
 <?php mcneese_do_print($cf, 'help', FALSE); ?>
 <?php mcneese_do_print($cf, 'information', FALSE); ?>
@@ -38,6 +37,24 @@
   <?php mcneese_do_print($cf, 'information', TRUE, TRUE); ?>
   <?php mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE); ?>
 </div>
+
+<?php if ($mcneese_bulletin_mode == 1) { ?>
+  <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
+
+  <div id="mcneese-bulletin-wrapper-outer">
+    <div id="mcneese-bulletin-wrapper-inner">
+      <div id="mcneese-bulletin-page_title">
+        <?php mcneese_do_print($cf, 'page_title'); ?>
+      </div>
+
+      <div id="mcneese-bulletin-content">
+        <?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
+      </div>
+    </div>
+  </div>
+<?php } else { ?>
+  <?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
+<?php } ?>
 
 <?php if ($split_page) { ?>
   <div id="mcneese-page-content" class="mcneese-content split" role="main">
@@ -55,7 +72,9 @@
     <!--(end-page-group_image)-->
   <?php } ?>
 
-  <?php mcneese_do_print($cf, 'page_title'); ?>
+  <?php if (is_null($mcneese_bulletin_mode)) { ?>
+    <?php mcneese_do_print($cf, 'page_title'); ?>
+  <?php } ?>
 
   <div id="mcneese-float-left" class="expanded fixed">
     <?php mcneese_do_print($cf, 'menu_tabs'); ?>
@@ -84,7 +103,9 @@
     <?php } ?>
   </div>
 
-  <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
+  <?php if (is_null($mcneese_bulletin_mode)) { ?>
+    <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
+  <?php } ?>
 
   <?php if (!$cf['is']['front']) { ?>
     <?php mcneese_do_print($cf, 'breadcrumb', FALSE); ?>
