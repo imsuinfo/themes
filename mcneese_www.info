@@ -25,6 +25,7 @@ stylesheets[all][] = css/all/www-all-web_form-594.css
 stylesheets[all][] = css/all/www-all-web_form-617.css
 stylesheets[all][] = css/all/www-all-web_form-677.css
 stylesheets[all][] = css/all/www-all-page-718.css
+stylesheets[all][] = css/all/www-all-page-731.css
 
 stylesheets[braille,speech,tty][] = css/braille/www-braille-common.css
 stylesheets[braille,speech,tty][] = css/braille/www-braille-front.css
@@ -42,6 +43,7 @@ stylesheets[braille,speech,tty][] = css/braille/www-braille-web_form-594.css
 stylesheets[braille,speech,tty][] = css/braille/www-braille-web_form-617.css
 stylesheets[braille,speech,tty][] = css/braille/www-braille-web_form-677.css
 stylesheets[braille,speech,tty][] = css/braille/www-braille-page-718.css
+stylesheets[braille,speech,tty][] = css/braille/www-braille-page-731.css
 
 stylesheets[print,embossed,tv][] = css/print/www-print-common.css
 stylesheets[print,embossed,tv][] = css/print/www-print-front.css
@@ -59,6 +61,7 @@ stylesheets[print,embossed,tv][] = css/print/www-print-web_form-594.css
 stylesheets[print,embossed,tv][] = css/print/www-print-web_form-617.css
 stylesheets[print,embossed,tv][] = css/print/www-print-web_form-677.css
 stylesheets[print,embossed,tv][] = css/print/www-print-page-718.css
+stylesheets[print,embossed,tv][] = css/print/www-print-page-731.css
 
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-common.css
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-front.css
@@ -75,6 +78,7 @@ stylesheets[screen,handheld,projection][] = css/screen/www-screen-web_form-594.c
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-web_form-617.css
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-web_form-677.css
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-page-718.css
+stylesheets[screen,handheld,projection][] = css/screen/www-screen-page-731.css
 
 scripts[] = js/document-outline.js
 scripts[] = js/75th.js
@@ -85,6 +89,7 @@ regions[header_menu_1] = Header Menu 1
 regions[header_menu_2] = Header Menu 2
 
 regions[messages]    = Messages
+regions[bulletin]    = Bulletin
 regions[help]        = Help
 regions[information] = Information
 

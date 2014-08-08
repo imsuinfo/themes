@@ -1,0 +1,198 @@
+/* General Tweaks
+======================================== */
+.mcneese.node-theme-page-731 h2 {
+  margin: 0;
+}
+
+.mcneese.node-theme-page-731 .mcneese a:focus, .mcneese a:active, .mcneese a:hover {
+  color: #0591ff;
+  text-decoration: underline; 
+}
+
+/* Page Structure
+======================================== */
+.mcneese.node-theme-page-731 #mcneese-top,
+.mcneese.node-theme-page-731 #mcneese-page,
+.mcneese.node-theme-page-731 #mcneese-www-footer {
+  margin: 0px;
+  padding: 0px; 
+}
+
+/* Bulletin Region 
+======================================== */
+.mcneese.node-theme-page-731 #mcneese-bulletin {
+  background: url(/f/c/2a199ff1);
+  height: 188px; 
+}
+
+/* Page Container Elements
+======================================== */
+.mcneese.node-theme-page-731 #mcneese-breadcrumb.relative > .navigation_list > .crumb-trail, 
+.mcneese.node-theme-page-731 #mcneese-breadcrumb.relative > .navigation_list > .crumb > span, 
+.mcneese.node-theme-page-731 #mcneese-breadcrumb.relative > .navigation_list > .crumb > a {
+  color: #0e73c3;
+}
+
+.mcneese.node-theme-page-731 #mcneese-breadcrumb.relative {
+  position: relative;
+  color: #0e73c3;
+  background-color: #ffffff;
+  font-family: Arial,Helvetica,Sans-Serif,Sans;
+  font-size: 12px;
+  min-height: 24px;
+  margin: 0 10px;
+  padding: 3px 0px;
+}
+
+.mcneese.node-theme-page-731 #mcneese-content-main {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mcneese #mcneese-header > .header-bottom {
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+/* New Grid Based Theme
+======================================== */
+.mcneese.node-theme-page-731 .col-four,
+.mcneese.node-theme-page-731 .col-eight,
+.mcneese.node-theme-page-731 .col-eleven {
+  float: left; 
+  display: inline;   
+  margin-left: 1.041666666666667%; 
+  margin-right: 1.041666666666667%;  
+}
+
+.mcneese.node-theme-page-731 .col-four {
+  width: 22.91666666666667%;
+}
+
+.mcneese.node-theme-page-731 .col-eight {
+  width: 47.91666666666667%;
+}
+
+.mcneese.node-theme-page-731 .col-eleven {
+  width: 66.66666666666667%%;
+}
+
+.mcneese.node-theme-page-731 .row {
+  margin-bottom: 20px; 
+}
+
+.mcneese.node-theme-page-731 .list-box {
+  background: #f0f0f0;
+  background: -moz-linear-gradient(top, #f0f0f0 30%, #ffffff 70%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,#f0f0f0), color-stop(70%,#ffffff));
+  background: -webkit-linear-gradient(top, #f0f0f0 30%,#ffffff 70%);
+  background: -o-linear-gradient(top, #f0f0f0 30%,#ffffff 70%);
+  background: -ms-linear-gradient(top, #f0f0f0 30%,#ffffff 70%);
+  background: linear-gradient(to bottom, #f0f0f0 30%,#ffffff 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#ffffff',GradientType=0 );  
+  display: block;
+  border: none;
+}
+
+.mcneese.node-theme-page-731 .list-box .list-box-title {
+  color: #ffffff;
+  background-color: #00477f;
+  font-size: 14px;
+  padding: 22px 13px;
+  margin: 0px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.mcneese.node-theme-page-731 .list-box .list-box-title_gold {
+  color: #00477f;
+  background-color: #fad703;
+  font-size: 14px;
+  padding: 22px 13px;
+  margin: 0px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.mcneese.node-theme-page-731 .list-box-subtitle {
+  color: #a6a6a6;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: normal;
+  margin: 0;
+  padding: 8px 0 8px 10px;
+  text-transform: uppercase;
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body {
+  padding: 0px;
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul {
+  list-style-type: none;
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul.multi-list { /* Supports IE 10+, Opera, Firefox, Safari, Chrome */
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-gap: 2px;
+  -webkit-column-gap: 2px;
+  -moz-column-gap: 2px;
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul.multi-list-left {
+  float: left; 
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul.multi-list-right {
+  float: right; 
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul, .mcneese .list-box > .list-box-body > ol {
+  padding: 0px;
+  margin: 0px; 
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a, .mcneese .list-box > .list-box-body > li {
+  margin-bottom: 12px;
+  line-height: 18px;
+}
+
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a, .mcneese .list-box > .list-box-body > ol > li > a {
+  display: block;
+  padding: 0 0 0 10px;
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
