@@ -154,7 +154,7 @@ function mcneese_event_workflow_render_page() {
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/view-0/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Estimated Bill of Charges">' . "Request Bill" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Estimated Bill of Charges">' . "View Bill" . '</a>';
             $rebuild_breadcrumb = TRUE;
           }
         }
