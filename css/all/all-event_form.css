@@ -2,57 +2,57 @@
 
 
 /*** Create/Edit ***/
-#mcneese-event-workflow-event-create-0-form .form-item,
-#mcneese-event-workflow-event-edit-0-form .form-item {
+#mfcs-event-create-0-form .form-item,
+#mfcs-event-edit-0-form .form-item {
   margin: 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form .form-item-wrapper,
-#mcneese-event-workflow-event-edit-0-form .form-item-wrapper {
+#mfcs-event-create-0-form .form-item-wrapper,
+#mfcs-event-edit-0-form .form-item-wrapper {
   margin: 8px 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio,
-#mcneese-event-workflow-event-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio {
+#mfcs-event-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio,
+#mfcs-event-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio {
   margin: 6px 0px;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates #buttons-event-add_remove_date,
-#mcneese-event-workflow-event-edit-0-form #section-event-dates #buttons-event-add_remove_date {
+#mfcs-event-create-0-form #section-event-dates #buttons-event-add_remove_date,
+#mfcs-event-edit-0-form #section-event-dates #buttons-event-add_remove_date {
   display: block;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates #submit-event-add-date,
-#mcneese-event-workflow-event-edit-0-form #section-event-dates #submit-event-add-date {
+#mfcs-event-create-0-form #section-event-dates #submit-event-add-date,
+#mfcs-event-edit-0-form #section-event-dates #submit-event-add-date {
   display: inline-block;
 }
 
-#mcneese-event-workflow-event-create-0-form #section-event-dates #submit-event-remove-date,
-#mcneese-event-workflow-event-edit-0-form #section-event-dates #submit-event-remove-date {
+#mfcs-event-create-0-form #section-event-dates #submit-event-remove-date,
+#mfcs-event-edit-0-form #section-event-dates #submit-event-remove-date {
   display: inline-block;
 }
 
 /** Location **/
-#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image,
-#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image {
+#mfcs-event-create-0-form #field-event-location-0 > .location-image,
+#mfcs-event-edit-0-form #field-event-location-0 > .location-image {
   float: right;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image-invisible,
-#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image-invisible {
+#mfcs-event-create-0-form #field-event-location-0 > .location-image-invisible,
+#mfcs-event-edit-0-form #field-event-location-0 > .location-image-invisible {
   display: none;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-location-0 > .location-image-visible,
-#mcneese-event-workflow-event-edit-0-form #field-event-location-0 > .location-image-visible {
+#mfcs-event-create-0-form #field-event-location-0 > .location-image-visible,
+#mfcs-event-edit-0-form #field-event-location-0 > .location-image-visible {
   display: inline-block;
 }
 
 
 
 /** Room **/
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item {
   display: inline-block;
   vertical-align: top;
 
@@ -65,8 +65,8 @@
   margin: 2px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > .form-radio,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > .form-radio {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > .form-radio,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > .form-radio {
   display: inline-block;
   vertical-align: middle;
   float: left;
@@ -78,8 +78,8 @@
   margin: 2px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label {
   display: inline-block;
   vertical-align: middle;
 
@@ -88,59 +88,59 @@
   max-width: 440px;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .building_desc {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .building_desc {
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_number,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_number {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_number,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_number {
   clear: both;
   float: right;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_capacity {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_capacity {
   clear: both;
   float: right;
 }
 
-#mcneese-event-workflow-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data,
-#mcneese-event-workflow-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data {
+#mfcs-event-create-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data,
+#mfcs-event-edit-0-form #field-event-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data {
   display: block;
 }
 
 
 
 /** Dates **/
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .field-event-item,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .field-event-item {
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .field-event-item,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .field-event-item {
   display: inline-block;
   vertical-align: top;
 
   margin: 4px;
 }
 
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date {
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date {
   display: inline-block;
   vertical-align: top;
 
   margin: 22px 12px;
 }
 
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button {
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button {
   color: #000000;
   background-color: #e86f69;
 }
 
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover {
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:focus,
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -152,8 +152,8 @@
   border: 1px outset #333333;
 }
 
-#mcneese-event-workflow-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
-#mcneese-event-workflow-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active {
+#mfcs-event-create-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active,
+#mfcs-event-edit-0-form #group-event-dates-date > .group-field-container > .buttons-event-remove-date > .buttons-event-remove-date-button:active {
   background: #666666;
   color: #ffffff;
 
@@ -164,8 +164,8 @@
 
 
 /** Venue Coordinator **/
-#mcneese-event-workflow-event-create-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper,
-#mcneese-event-workflow-event-edit-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper {
+#mfcs-event-create-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper,
+#mfcs-event-edit-0-form #section-event-venue_coordinator > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
 
@@ -175,8 +175,8 @@
 
 
 /** Event Coordinator **/
-#mcneese-event-workflow-event-create-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper,
-#mcneese-event-workflow-event-edit-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper {
+#mfcs-event-create-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper,
+#mfcs-event-edit-0-form #section-event-event_coordinator > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
 
@@ -186,8 +186,8 @@
 
 
 /** Information **/
-#mcneese-event-workflow-event-create-0-form #section-event-information > .fieldset-wrapper > .form-wrapper,
-#mcneese-event-workflow-event-edit-0-form #section-event-information > .fieldset-wrapper > .form-wrapper {
+#mfcs-event-create-0-form #section-event-information > .fieldset-wrapper > .form-wrapper,
+#mfcs-event-edit-0-form #section-event-information > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
 
@@ -197,12 +197,12 @@
 
 
 /*** View ***/
-#mcneese-event-workflow-event-view-0-page {
+#mfcs-event-view-0-page {
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log {
+#mfcs-event-view-0-page .event-section-display,
+#mfcs-event-view-0-page .event-section-review-operations,
+#mfcs-event-view-0-page .event-section-review-log {
   min-width: 960px;
 
   padding: 5px 0px;
@@ -210,18 +210,18 @@
   border-top-width: 1px;
 }
 
-#mcneese-event-workflow-event-view-0-page #event-review-log,
-#mcneese-event-workflow-event-view-0-page #event-review-operations {
+#mfcs-event-view-0-page #event-review-log,
+#mfcs-event-view-0-page #event-review-operations {
   font-size: 20px;
   line-height: 24px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review {
+#mfcs-event-view-0-page .event-section-review {
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log > .fieldset-wrapper,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper {
+#mfcs-event-view-0-page .event-section-review-log > .fieldset-wrapper,
+#mfcs-event-view-0-page .event-section-review-operations > .fieldset-wrapper {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -229,16 +229,16 @@
   margin: 0px auto;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements {
+#mfcs-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements {
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
+#mfcs-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-as_reviewer > .event-section-review-operations-as_reviewer-message {
+#mfcs-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-as_reviewer > .event-section-review-operations-as_reviewer-message {
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -246,14 +246,14 @@
   margin: 10px 0px 5px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-requirements {
+#mfcs-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-requirements {
   color: #004cb6;
 
   font-weight: bold;
   font-style: italic;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups {
+#mfcs-event-view-0-page .event-field_groups {
   margin: 0px auto;
 
   width: 960px;
@@ -261,13 +261,13 @@
   max-width: 960px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group {
+#mfcs-event-view-0-page .event-field_groups > .group {
   display: table;
 
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event {
   display: table-cell;
   vertical-align: top;
   box-sizing: border-box;
@@ -284,7 +284,7 @@
   overflow: auto;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper {
   background-color: #d0d0d0;
 
   padding: 0px 5px;
@@ -295,20 +295,20 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-label {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-label {
 
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-agreement,
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-history,
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-edit,
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-clone {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-agreement,
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-history,
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-edit,
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-clone {
   float: right;
 
   padding-left: 6px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event {
   position: relative;
 
   clear: both;
@@ -321,42 +321,42 @@
   font-family: monospace;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.even {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.even {
   background-color: #f4f4f4;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.odd {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.odd {
   background-color: #ffffff;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-label {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-label {
   display: block;
   float: left;
 
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-label {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-label {
   display: block;
 
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event > .item-label:after {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event > .item-label:after {
   content: ': ';
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-value {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-small > .item-value {
   display: block;
 
   text-align: right;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-value {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .item-event.item-size-large > .item-value {
   display: block;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-display-submit {
+#mfcs-event-view-0-page .event-display-submit {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -364,20 +364,20 @@
   margin: 5px auto;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-submit,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations-submit {
+#mfcs-event-view-0-page .event-section-review-log-submit,
+#mfcs-event-view-0-page .event-section-review-operations-submit {
   margin: 5px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item {
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item {
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item {
   margin: 10px auto;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label {
   background-color: #d0d0d0;
 
   padding: 5px;
@@ -388,17 +388,17 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
   display: inline-block;
   vertical-align: top;
   margin: 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
   max-width: 740px;
 
   font-weight: normal;
@@ -406,8 +406,8 @@
   line-height: 18px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
   display: inline;
   vertical-align: top;
 
@@ -417,25 +417,25 @@
   line-height: 14px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
   display: inline;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
   font-size: 9px;
   vertical-align: top;
   letter-spacing: 1px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
   float: right;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
   position: relative;
 
   min-height: 18px;
@@ -446,27 +446,27 @@
   background-color: #f4f4f4;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
   padding: 3px 0px 0px 0px;
 }
 
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
   display: inline-block;
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
+#mfcs-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
+#mfcs-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
   display: inline-block;
 }
 
 
 
 /*** Facilities Use Agreement ***/
-#mcneese_event_workflow-event_request-agreement,
+#mfcs-event_request-agreement,
 .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
   display: block;
 
@@ -478,11 +478,11 @@
   margin-right: auto;
 }
 
-#mcneese_event_workflow-event_request-agreement {
+#mfcs-event_request-agreement {
   position: relative;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header {
+#mfcs-event_request-agreement > .agreement-header {
   position: relative;
 
   padding-bottom: 5px;
@@ -490,38 +490,38 @@
   margin-bottom: 5px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address {
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-address {
   padding-top: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information {
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-value,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-value {
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-value,
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-value {
   display: inline-block;
   vertical-align: top;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mfcs-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
   font-weight: bold;
 
   min-width: 90px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table {
+#mfcs-event_request-agreement > .agreement-table {
   display: table;
 
   width: 590px;
@@ -533,15 +533,15 @@
   border: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-header {
   display: table-header-group;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row {
   display: table-row;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
   display: table-cell;
 
   font-weight: bold;
@@ -551,8 +551,8 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
@@ -562,31 +562,31 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body {
   display: table-row-group;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row {
   display: table-row;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
   display: table-cell;
 
   padding: 2px 4px;
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row:last-of-type > .agreement-table-body-row-cell {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row:last-of-type > .agreement-table-body-row-cell {
   border-bottom: 0px none;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
   padding-left: 16px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
-#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
+#mfcs-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
   vertical-align: bottom;
 
   width: 100px;
@@ -598,7 +598,7 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-amount_due {
+#mfcs-event_request-agreement > .agreement-amount_due {
   width: 210px;
   min-width: 210px;
   max-width: 210px;
@@ -607,7 +607,7 @@
   margin-right: 8px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-amount_due > .agreement-amount_due-label {
+#mfcs-event_request-agreement > .agreement-amount_due > .agreement-amount_due-label {
   display: table-cell;
 
   font-weight: bold;
@@ -617,7 +617,7 @@
   max-width: 100px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-amount_due > .agreement-amount_due-value {
+#mfcs-event_request-agreement > .agreement-amount_due > .agreement-amount_due-value {
   display: table-cell;
 
   width: 106px;
@@ -629,25 +629,25 @@
   border: 2px solid #505050;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature {
+#mfcs-event_request-agreement > .agreement-signature {
   margin: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field {
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field {
   margin: 10px 0px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   display: inline-block;
   vertical-align: bottom;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
   min-width: 100px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   width: 400px;
   min-width: 400px;
   max-width: 400px;
@@ -656,10 +656,10 @@
   border-bottom: 1px solid #000000;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
+#mfcs-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
   min-height: 2em;
 }
 
-#mcneese_event_workflow-event_request-agreement #agreement-submit {
+#mfcs-event_request-agreement #agreement-submit {
   margin: 10px;
 }

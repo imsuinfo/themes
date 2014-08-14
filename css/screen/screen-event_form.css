@@ -1,4 +1,4 @@
-.mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-event_id {
+.mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-request_id {
   display: inline-block;
 
   vertical-align: top;
@@ -10,7 +10,7 @@
   float: right;
 }
 
-.mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb-event_id {
+.mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb-request_id {
   display: block;
 
   color: #ffffff;

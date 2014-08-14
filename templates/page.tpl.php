@@ -6,7 +6,7 @@
   $cf = & drupal_static('cf_theme_get_variables', array());
 
   mcneese_render_page();
-  mcneese_event_workflow_render_page();
+  mfcs__render_page();
 
   $float_side = in_array('fixed', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
   $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);

@@ -19,45 +19,45 @@
   display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations {
+#mfcs-event-view-0-page .event-section-review-operations {
   display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-review-log-submit {
+#mfcs-event-view-0-page .event-review-log-submit {
   display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log {
+#mfcs-event-view-0-page .event-section-display,
+#mfcs-event-view-0-page .event-section-review-operations,
+#mfcs-event-view-0-page .event-section-review-log {
   border: 0px none;
   padding: 0px;
   margin: 0px;
   outline: 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-display > legend,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > legend,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log > legend {
+#mfcs-event-view-0-page .event-section-display > legend,
+#mfcs-event-view-0-page .event-section-review-operations > legend,
+#mfcs-event-view-0-page .event-section-review-log > legend {
   display: none;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group {
+#mfcs-event-view-0-page .event-field_groups > .group {
   page-break-inside: avoid;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-information-user_id > .field-event-item-values > .field-event-item-values-value > .field-event-item-values-value-value > a {
+#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-information-user_id > .field-event-item-values > .field-event-item-values-value > .field-event-item-values-value-value > a {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log.mode-0 {
+#mfcs-event-view-0-page .event-section-review-log.mode-0 {
   page-break-before: always;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log,
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations {
+#mfcs-event-view-0-page .event-section-review-log,
+#mfcs-event-view-0-page .event-section-review-operations {
   width: 960px;
   min-width: 960px;
   max-width: 960px;

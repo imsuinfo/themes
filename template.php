@@ -16,7 +16,7 @@
 /**
  * Implements hook_preprocess_page().
  */
-function mcneese_event_workflow_preprocess_page(&$vars) {
+function mfcs__preprocess_page(&$vars) {
   $cf = &drupal_static('cf_theme_get_variables', array());
 
   if (empty($cf)) {
@@ -28,7 +28,7 @@ function mcneese_event_workflow_preprocess_page(&$vars) {
 /**
  * Render all data for: page.
  */
-function mcneese_event_workflow_render_page() {
+function mfcs__render_page() {
   global $base_path;
 
   $cf = &drupal_static('cf_theme_get_variables', array());
@@ -49,7 +49,7 @@ function mcneese_event_workflow_render_page() {
         if ($path_parts[0] == 'events') {
           $title = "Event Requests Dashboard";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -60,7 +60,7 @@ function mcneese_event_workflow_render_page() {
         if ($path_parts[1] == 'create-0') {
           $title = "New Request";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -69,7 +69,7 @@ function mcneese_event_workflow_render_page() {
         elseif ($path_parts[1] == 'list-0') {
           $title = "List Requests";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -78,7 +78,7 @@ function mcneese_event_workflow_render_page() {
         elseif ($path_parts[1] == 'review-0') {
           $title = "Review Requests";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -87,7 +87,7 @@ function mcneese_event_workflow_render_page() {
         elseif ($path_parts[1] == 'reviewers-0') {
           $title = "Manage Reviewers";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -97,7 +97,7 @@ function mcneese_event_workflow_render_page() {
           if ($count_parts > 2) {
             $title = "Request Calendar";
 
-            $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -107,7 +107,7 @@ function mcneese_event_workflow_render_page() {
         elseif ($path_parts[1] == 'search-0') {
           $title = "Search Requests";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -116,7 +116,7 @@ function mcneese_event_workflow_render_page() {
 
         if ($count_parts > 2) {
           if ($path_parts[1] == 'view-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             if ($count_parts == 3) {
@@ -135,14 +135,14 @@ function mcneese_event_workflow_render_page() {
             }
           }
           elseif ($path_parts[1] == 'edit-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Edit Request">' . "Edit Request" . '</a>';
             $rebuild_breadcrumb = TRUE;
           }
           elseif ($path_parts[1] == 'history-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/view-0/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
@@ -150,7 +150,7 @@ function mcneese_event_workflow_render_page() {
             $rebuild_breadcrumb = TRUE;
           }
           elseif ($path_parts[1] == 'agreement-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/view-0/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
@@ -162,7 +162,7 @@ function mcneese_event_workflow_render_page() {
         if (!$rebuild_breadcrumb) {
           $title = "Event Requests Dashboard";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events" title="' . $title . '">' . drupal_get_title() . '</a>';
@@ -180,7 +180,7 @@ function mcneese_event_workflow_render_page() {
 /**
  * Implements hook_preprocess_toolbar().
  */
-function mcneese_event_workflow_preprocess_toolbar(&$vars) {
+function mfcs__preprocess_toolbar(&$vars) {
   $cf = &drupal_static('cf_theme_get_variables', array());
 
   if (empty($cf)) {
@@ -197,7 +197,7 @@ function mcneese_event_workflow_preprocess_toolbar(&$vars) {
     return;
   }
 
-  if (!function_exists('mcneese_event_workflow_menu')) {
+  if (!function_exists('mfcs__menu')) {
     return;
   }
 

@@ -1,5 +1,5 @@
-name = McNeese - event_workflow
-description = "This is a sub-theme of the mcneese theme, adjusted for thebe.mcneese.edu/event_workflow."
+name = McNeese - Facilities Use System
+description = "This is a sub-theme of the mcneese theme, adjusted for fcs.mcneese.edu."
 version = "7.x-1.0"
 core = 7.x
 engine = phptemplate

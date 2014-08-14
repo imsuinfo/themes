@@ -33,11 +33,11 @@
 
 
 /*** Search ***/
-#mcneese-event-workflow-event-search-0-form #search-simple-fieldset > .fieldset-wrapper {
+#mfcs-event-search-0-form #search-simple-fieldset > .fieldset-wrapper {
   position: relative;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-simple-fieldset > .fieldset-wrapper > .search-simple-field-sensitive {
+#mfcs-event-search-0-form #search-simple-fieldset > .fieldset-wrapper > .search-simple-field-sensitive {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -45,11 +45,11 @@
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper {
   position: relative;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper > .search-advanced-field-sensitive {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper > .search-advanced-field-sensitive {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -57,66 +57,66 @@
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
   margin: 0px 0px 0px 0px;
   padding: 3px 6px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search,
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search,
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
   margin: 0px 0px 12px 0px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > fieldset,
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > fieldset {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > fieldset,
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > fieldset {
 
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > fieldset:not(.collapsed),
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > fieldset:not(.collapsed) {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > fieldset:not(.collapsed),
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > fieldset:not(.collapsed) {
   border: 2px groove;
 
   background-color: #e6efff;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > .form-item > .fieldset-wrapper > .form-item,
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > .form-item > .fieldset-wrapper > .form-item {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search > .form-item > .fieldset-wrapper > .form-item,
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets > .form-item > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage {
+#mfcs-event-search-0-form #search-advanced-search-controls-manage {
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage.collapsed {
+#mfcs-event-search-0-form #search-advanced-search-controls-manage.collapsed {
   border: 0px none;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage:not(.collapsed) {
+#mfcs-event-search-0-form #search-advanced-search-controls-manage:not(.collapsed) {
   background-color: #f0f0f0;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls > legend > .fieldset-legend,
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage > legend > .fieldset-legend {
+#mfcs-event-search-0-form #search-advanced-search-controls > legend > .fieldset-legend,
+#mfcs-event-search-0-form #search-advanced-search-controls-manage > legend > .fieldset-legend {
   font-weight: normal;
   font-size: 15px;
   line-height: 19px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search {
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target {
   display: inline-block;
   vertical-align: top;
 
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target > .search-advanced-target-wrapper {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target > .search-advanced-target-wrapper {
   display: inline-block;
   vertical-align: top;
 
@@ -127,47 +127,47 @@
   border: 2px ridge;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target > .search-advanced-target-wrapper > legend > .fieldset-legend {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-target > .search-advanced-target-wrapper > legend > .fieldset-legend {
   font-weight: bold;
 
   background: inherit;
   padding: 0px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-targets {
   border: 2px ridge;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper > .search-advanced-targets .search-advanced-targets {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper > .search-advanced-targets .search-advanced-targets {
   display: inline-block;
   vertical-align: top;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search-controls-grouping-explanation {
+#mfcs-event-search-0-form #search-advanced-fieldset > .fieldset-wrapper .search-advanced-search-controls-grouping-explanation {
   min-height: 64px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage > .fieldset-wrapper > .search-advanced-search-controls-manage-existing,
-#mcneese-event-workflow-event-search-0-form #search-advanced-search-controls-manage > .fieldset-wrapper > .search-advanced-search-controls-manage-new {
+#mfcs-event-search-0-form #search-advanced-search-controls-manage > .fieldset-wrapper > .search-advanced-search-controls-manage-existing,
+#mfcs-event-search-0-form #search-advanced-search-controls-manage > .fieldset-wrapper > .search-advanced-search-controls-manage-new {
   display: inline-block;
   vertical-align: top;
 
   margin: 8px;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset {
+#mfcs-event-search-0-form #search-simple-submit-clear,
+#mfcs-event-search-0-form #search-advanced-submit-clear,
+#mfcs-event-search-0-form #search-advanced-submit-reset {
   color: #000000;
   background-color: #99b2ee;
 }
 
-#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:focus,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:focus,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:focus,
-#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:hover,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:hover,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:hover {
+#mfcs-event-search-0-form #search-simple-submit-clear:focus,
+#mfcs-event-search-0-form #search-advanced-submit-clear:focus,
+#mfcs-event-search-0-form #search-advanced-submit-reset:focus,
+#mfcs-event-search-0-form #search-simple-submit-clear:hover,
+#mfcs-event-search-0-form #search-advanced-submit-clear:hover,
+#mfcs-event-search-0-form #search-advanced-submit-reset:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -179,9 +179,9 @@
   border: 1px outset #333333
 }
 
-#mcneese-event-workflow-event-search-0-form #search-simple-submit-clear:active,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-clear:active,
-#mcneese-event-workflow-event-search-0-form #search-advanced-submit-reset:active {
+#mfcs-event-search-0-form #search-simple-submit-clear:active,
+#mfcs-event-search-0-form #search-advanced-submit-clear:active,
+#mfcs-event-search-0-form #search-advanced-submit-reset:active {
   background: #666666;
   color: #ffffff;
   border-color: #555555;
@@ -191,52 +191,52 @@
 
 
 /*** History ***/
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items {
   margin-bottom: 15px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title {
   display: inline-block;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title > .history_items-title {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .fieldset-title > .history_items-title {
   font-size: 16px;
   line-height: 20px;
 
   letter-spacing: 1px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .summary {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > legend > .fieldset-legend > .summary {
   display: none;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label {
   margin: 10px 0px 0px 0px;
 }
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label:first-of-type {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label:first-of-type {
   margin: 0px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-label {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-label {
   margin: 5px 0px 0px 0px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label .updater_id {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label .updater_id {
   font-size: 9px;
   vertical-align: top;
   letter-spacing: 1px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .updater_name,
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_group,
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_name {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .updater_name,
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_group,
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .field_name {
   text-transform: capitalize;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value {
   margin-left: 20px;
 }
 
-#mcneese-event-workflow-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value {
+#mfcs-event-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value {
   margin-left: 20px;
 }
