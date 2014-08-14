@@ -229,11 +229,11 @@
   margin: 0px auto;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .use_fees {
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements {
   margin: 10px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .use_fees > .fieldset-wrapper > .form-item {
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 }
@@ -246,7 +246,7 @@
   margin: 10px 0px 5px 0px;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-usage_fees {
+#mcneese-event-workflow-event-view-0-page .event-section-review-operations > .fieldset-wrapper > .event-section-review-operations-requirements {
   color: #004cb6;
 
   font-weight: bold;
@@ -299,7 +299,7 @@
 
 }
 
-#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-bill,
+#mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-agreement,
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-history,
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-edit,
 #mcneese-event-workflow-event-view-0-page .event-field_groups > .group > .section-event > .section-event-label-wrapper > .section-event-clone {
@@ -446,28 +446,28 @@
   background-color: #f4f4f4;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
   padding: 3px 0px 0px 0px;
 }
 
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees > .item-label,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees > .item-label {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
   display: inline-block;
   font-weight: bold;
 }
 
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-fees > .item-value,
-#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-fees > .item-value {
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
+#mcneese-event-workflow-event-view-0-page .event-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
   display: inline-block;
 }
 
 
 
-/*** Bill ***/
-#mcneese_event_workflow-event_request-bill,
-.mcneese.alias-part-1-bill_0.alias-part-3-pdf #mcneese-page-content > .page-title {
+/*** Facilities Use Agreement ***/
+#mcneese_event_workflow-event_request-agreement,
+.mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
   display: block;
 
   width: 610px;
@@ -478,20 +478,20 @@
   margin-right: auto;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header {
+#mcneese_event_workflow-event_request-agreement > .agreement-header {
   padding-bottom: 5px;
   border-bottom: 3px solid #000000;
   margin-bottom: 5px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-logo,
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-address,
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-date {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-logo,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-date {
   display: inline-block;
   vertical-align: top;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-logo {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-logo {
   padding: 10px;
 
   width: 80px;
@@ -503,7 +503,7 @@
   max-height: 80px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-address {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address {
   width: 405px;
   min-width: 405px;
   max-width: 405px;
@@ -511,13 +511,13 @@
   padding-top: 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-address > .bill-header-address-line-0 {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-header > .bill-header-date {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-date {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
@@ -525,13 +525,13 @@
   padding-top: 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-information {
+#mcneese_event_workflow-event_request-agreement > .agreement-information {
   padding-bottom: 10px;
   border-bottom: 3px solid #000000;
   margin-bottom: 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-information > .bill-information-line > .bill-information-label {
+#mcneese_event_workflow-event_request-agreement > .agreement-information > .agreement-information-line > .agreement-information-label {
   display: inline-block;
   vertical-align: top;
 
@@ -545,7 +545,7 @@
   margin-right: 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-information > .bill-information-line > .bill-information-value {
+#mcneese_event_workflow-event_request-agreement > .agreement-information > .agreement-information-line > .agreement-information-value {
   display: inline-block;
   vertical-align: top;
 
@@ -559,7 +559,7 @@
   margin-right: 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table {
+#mcneese_event_workflow-event_request-agreement > .agreement-table {
   display: table;
 
   width: 590px;
@@ -571,15 +571,15 @@
   border: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-header {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header {
   display: table-header-group;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-header > .bill-table-header-row {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row {
   display: table-row;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-header > .bill-table-header-row > .bill-table-header-cell {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
   display: table-cell;
 
   font-weight: bold;
@@ -589,8 +589,8 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-header > .bill-table-header-row > .column-1,
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-header > .bill-table-header-row > .column-2 {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
@@ -600,31 +600,31 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body {
   display: table-row-group;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row {
   display: table-row;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row > .bill-table-body-row-cell {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
   display: table-cell;
 
   padding: 2px 4px;
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row:last-of-type > .bill-table-body-row-cell {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row:last-of-type > .agreement-table-body-row-cell {
   border-bottom: 0px none;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row > .column-0 > .item-value {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
   padding-left: 16px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row > .column-1,
-#mcneese_event_workflow-event_request-bill > .bill-table > .bill-table-body > .bill-table-body-row > .column-2 {
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
+#mcneese_event_workflow-event_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
   vertical-align: bottom;
 
   width: 100px;
@@ -636,7 +636,7 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-amount_due {
+#mcneese_event_workflow-event_request-agreement > .agreement-amount_due {
   width: 210px;
   min-width: 210px;
   max-width: 210px;
@@ -645,7 +645,7 @@
   margin-right: 8px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-amount_due > .bill-amount_due-label {
+#mcneese_event_workflow-event_request-agreement > .agreement-amount_due > .agreement-amount_due-label {
   display: table-cell;
 
   font-weight: bold;
@@ -655,7 +655,7 @@
   max-width: 100px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-amount_due > .bill-amount_due-value {
+#mcneese_event_workflow-event_request-agreement > .agreement-amount_due > .agreement-amount_due-value {
   display: table-cell;
 
   width: 106px;
@@ -667,44 +667,44 @@
   border: 2px solid #505050;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information {
   margin: 10px 10px 0px 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-header-wrapper > .bill-payment_information-header {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-header-wrapper > .agreement-payment_information-header {
   font-size: 14px;
   line-height: 18px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices {
   border: 0px none;
   padding: 0px;
   margin: 0px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-checks_payable_to {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-checks_payable_to {
   float: right;
   margin: 0px 10px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-checks_payable_to > .bill-checks_payable_to-message {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-checks_payable_to > .agreement-checks_payable_to-message {
   font-weight: bold;
   font-style: italic;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information  > .bill-payment_information-choices > .bill-checks_payable_to > .bill-checks_payable_to-address > .bill-checks_payable_to-address-line-0 {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information  > .agreement-payment_information-choices > .agreement-checks_payable_to > .agreement-checks_payable_to-address > .agreement-checks_payable_to-address-line-0 {
   font-weight: bold;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice {
   padding: 2px 4px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-input {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-input {
   display: inline-block;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-label {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-label {
   display: inline-block;
 
   font-weight: normal;
@@ -712,17 +712,17 @@
   padding: 0px 4px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-name-label,
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-number-label,
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-expiration-label {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-name-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-number-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-expiration-label {
   width: 110px;
   min-width: 110px;
   max-width: 110px;
 }
 
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-name-input,
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-number-input,
-#mcneese_event_workflow-event_request-bill > .bill-payment_information > .bill-payment_information-choices > .bill-payment_information-choice > .bill-payment_information-choice-credit_card-expiration-input {
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-name-input,
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-number-input,
+#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-expiration-input {
   border: 0px none;
   border-bottom: 1px solid #000000;
 
@@ -731,6 +731,6 @@
   max-width: 300px;
 }
 
-#mcneese_event_workflow-event_request-bill #bill-submit {
+#mcneese_event_workflow-event_request-agreement #agreement-submit {
   margin: 10px;
 }

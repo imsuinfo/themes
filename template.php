@@ -149,12 +149,12 @@ function mcneese_event_workflow_render_page() {
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Request History">' . "Request History" . '</a>';
             $rebuild_breadcrumb = TRUE;
           }
-          elseif ($path_parts[1] == 'bill-0' && cf_is_integer($path_parts[2])) {
+          elseif ($path_parts[1] == 'agreement-0' && cf_is_integer($path_parts[2])) {
             $cf['data']['page']['precrumb'] = '<div class="crumb-event_id">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/view-0/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Estimated Bill of Charges">' . "View Bill" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'events/' . $path_parts[1] . '/' . $path_parts[2] . '" title="Facilities Use Agreement">' . "View Agreement" . '</a>';
             $rebuild_breadcrumb = TRUE;
           }
         }
