@@ -478,36 +478,19 @@
   margin-right: auto;
 }
 
+#mcneese_event_workflow-event_request-agreement {
+  position: relative;
+}
+
 #mcneese_event_workflow-event_request-agreement > .agreement-header {
+  position: relative;
+
   padding-bottom: 5px;
   border-bottom: 3px solid #000000;
   margin-bottom: 5px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-logo,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address,
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-date {
-  display: inline-block;
-  vertical-align: top;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-logo {
-  padding: 10px;
-
-  width: 80px;
-  min-width: 80px;
-  max-width: 80px;
-
-  height: 80px;
-  min-height: 80px;
-  max-height: 80px;
-}
-
 #mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-address {
-  width: 405px;
-  min-width: 405px;
-  max-width: 405px;
-
   padding-top: 10px;
 }
 
@@ -517,46 +500,25 @@
   line-height: 20px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-date {
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
-
-  padding-top: 10px;
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-information {
-  padding-bottom: 10px;
-  border-bottom: 3px solid #000000;
-  margin-bottom: 10px;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-information > .agreement-information-line > .agreement-information-label {
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-value,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-value {
   display: inline-block;
   vertical-align: top;
-
-  width: 120px;
-  min-width: 120px;
-  max-width: 120px;
-
-  overflow: hidden;
-
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-information > .agreement-information-line > .agreement-information-value {
-  display: inline-block;
-  vertical-align: top;
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
+  font-weight: bold;
 
-  width: 445px;
-  min-width: 445px;
-  max-width: 445px;
-
-  overflow: hidden;
-
-  margin-left: 10px;
-  margin-right: 10px;
+  min-width: 90px;
 }
 
 #mcneese_event_workflow-event_request-agreement > .agreement-table {
@@ -566,7 +528,7 @@
   min-width: 590px;
   max-width: 590px;
 
-  margin: 0px 10px;
+  margin: 10px 10px 0px 10px;
 
   border: 1px solid #c0c0c0;
 }
@@ -667,68 +629,35 @@
   border: 2px solid #505050;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information {
-  margin: 10px 10px 0px 10px;
+#mcneese_event_workflow-event_request-agreement > .agreement-signature {
+  margin: 10px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-header-wrapper > .agreement-payment_information-header {
-  font-size: 14px;
-  line-height: 18px;
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field {
+  margin: 10px 0px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices {
-  border: 0px none;
-  padding: 0px;
-  margin: 0px;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-checks_payable_to {
-  float: right;
-  margin: 0px 10px;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-checks_payable_to > .agreement-checks_payable_to-message {
-  font-weight: bold;
-  font-style: italic;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information  > .agreement-payment_information-choices > .agreement-checks_payable_to > .agreement-checks_payable_to-address > .agreement-checks_payable_to-address-line-0 {
-  font-weight: bold;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice {
-  padding: 2px 4px;
-}
-
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-input {
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   display: inline-block;
+  vertical-align: bottom;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-label {
-  display: inline-block;
-
-  font-weight: normal;
-
-  padding: 0px 4px;
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
+  min-width: 100px;
 }
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-name-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-number-label,
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-expiration-label {
-  width: 110px;
-  min-width: 110px;
-  max-width: 110px;
-}
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
 
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-name-input,
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-number-input,
-#mcneese_event_workflow-event_request-agreement > .agreement-payment_information > .agreement-payment_information-choices > .agreement-payment_information-choice > .agreement-payment_information-choice-credit_card-expiration-input {
   border: 0px none;
   border-bottom: 1px solid #000000;
+}
 
-  width: 300px;
-  min-width: 300px;
-  max-width: 300px;
+#mcneese_event_workflow-event_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
+  min-height: 2em;
 }
 
 #mcneese_event_workflow-event_request-agreement #agreement-submit {
