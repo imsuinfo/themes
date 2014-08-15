@@ -2,30 +2,30 @@
 
 
 /*** Global ***/
-.request_request-listing-page-navigator,
-.request_request-history-page-navigator,
+.request-listing-page-navigator,
+.request-history-page-navigator,
 #search-simple-results-navigation {
   position: relative;
 
   min-height: 18px;
 }
 
-.request_request-listing-page-navigator > .request_request-listing-page-choice,
-.request_request-history-page-navigator > .request_request-history-page-choice,
+.request-listing-page-navigator > .request-listing-page-choice,
+.request-history-page-navigator > .request-history-page-choice,
 #search-simple-results-navigation > .search-simple-results-navigation-choice {
   display: inline-block;
   position: absolute;
   vertical-align: top;
 }
 
-.request_request-listing-page-navigator > .request_request-listing-page-previous,
-.request_request-history-page-navigator > .request_request-history-page-previous,
+.request-listing-page-navigator > .request-listing-page-previous,
+.request-history-page-navigator > .request-history-page-previous,
 #search-simple-results-navigation > .search-simple-results-navigation-previous {
   left: 0px;
 }
 
-.request_request-listing-page-navigator > .request_request-listing-page-next,
-.request_request-history-page-navigator > .request_request-history-page-next,
+.request-listing-page-navigator > .request-listing-page-next,
+.request-history-page-navigator > .request-history-page-next,
 #search-simple-results-navigation > .search-simple-results-navigation-next {
   right: 0px;
 }

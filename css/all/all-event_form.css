@@ -466,7 +466,7 @@
 
 
 /*** Facilities Use Agreement ***/
-#mfcs-request_request-agreement,
+#mfcs-request-agreement,
 .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
   display: block;
 
@@ -478,11 +478,11 @@
   margin-right: auto;
 }
 
-#mfcs-request_request-agreement {
+#mfcs-request-agreement {
   position: relative;
 }
 
-#mfcs-request_request-agreement > .agreement-header {
+#mfcs-request-agreement > .agreement-header {
   position: relative;
 
   padding-bottom: 5px;
@@ -490,38 +490,38 @@
   margin-bottom: 5px;
 }
 
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-address {
+#mfcs-request-agreement > .agreement-header > .agreement-header-address {
   padding-top: 10px;
 }
 
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
+#mfcs-request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
 
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information {
+#mfcs-request-agreement > .agreement-header > .agreement-header-information {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-value,
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-value {
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-value,
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-value {
   display: inline-block;
   vertical-align: top;
 }
 
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
-#mfcs-request_request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
   font-weight: bold;
 
   min-width: 90px;
 }
 
-#mfcs-request_request-agreement > .agreement-table {
+#mfcs-request-agreement > .agreement-table {
   display: table;
 
   width: 590px;
@@ -533,15 +533,15 @@
   border: 1px solid #c0c0c0;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-header {
+#mfcs-request-agreement > .agreement-table > .agreement-table-header {
   display: table-header-group;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row {
+#mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row {
   display: table-row;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
+#mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
   display: table-cell;
 
   font-weight: bold;
@@ -551,8 +551,8 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
+#mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
+#mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
   width: 100px;
   min-width: 100px;
   max-width: 100px;
@@ -562,31 +562,31 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body {
   display: table-row-group;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row {
   display: table-row;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
   display: table-cell;
 
   padding: 2px 4px;
   border-bottom: 1px solid #c0c0c0;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row:last-of-type > .agreement-table-body-row-cell {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row:last-of-type > .agreement-table-body-row-cell {
   border-bottom: 0px none;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
   padding-left: 16px;
 }
 
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
-#mfcs-request_request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
   vertical-align: bottom;
 
   width: 100px;
@@ -598,7 +598,7 @@
   border-left: 1px solid #c0c0c0;
 }
 
-#mfcs-request_request-agreement > .agreement-amount_due {
+#mfcs-request-agreement > .agreement-amount_due {
   width: 210px;
   min-width: 210px;
   max-width: 210px;
@@ -607,7 +607,7 @@
   margin-right: 8px;
 }
 
-#mfcs-request_request-agreement > .agreement-amount_due > .agreement-amount_due-label {
+#mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-label {
   display: table-cell;
 
   font-weight: bold;
@@ -617,7 +617,7 @@
   max-width: 100px;
 }
 
-#mfcs-request_request-agreement > .agreement-amount_due > .agreement-amount_due-value {
+#mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-value {
   display: table-cell;
 
   width: 106px;
@@ -629,25 +629,25 @@
   border: 2px solid #505050;
 }
 
-#mfcs-request_request-agreement > .agreement-signature {
+#mfcs-request-agreement > .agreement-signature {
   margin: 10px;
 }
 
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field {
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field {
   margin: 10px 0px;
 }
 
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   display: inline-block;
   vertical-align: bottom;
 }
 
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
   min-width: 100px;
 }
 
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   width: 400px;
   min-width: 400px;
   max-width: 400px;
@@ -656,10 +656,10 @@
   border-bottom: 1px solid #000000;
 }
 
-#mfcs-request_request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
   min-height: 2em;
 }
 
-#mfcs-request_request-agreement #agreement-submit {
+#mfcs-request-agreement #agreement-submit {
   margin: 10px;
 }
