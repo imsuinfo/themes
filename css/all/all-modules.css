@@ -149,3 +149,25 @@
 .mcneese #mcneese-content-main .webform-client-form .webform-component-option-inline > fieldset > .form-item {
   display: inline-block;
 }
+
+
+
+/*** Ctools ***/
+#ctools-export-ui-list-form .form-item {
+  display: inline-block;
+  vertical-align: baseline;
+
+  float: none;
+
+  padding: 0px;
+  margin: 5px;
+}
+
+#ctools-export-ui-list-form .form-submit {
+  display: inline-block;
+  vertical-align: baseline;
+
+  float: none;
+
+  margin: 5px;
+}
