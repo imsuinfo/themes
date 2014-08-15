@@ -3,7 +3,7 @@
 
 /*** View ***/
 #mcneese-page-content > .page-title > .html_tag-hgroup > .page-title,
-#mcneese-page-content .event-section-review-log .event-section-review-log-page_title {
+#mcneese-page-content .request-section-review-log .request-section-review-log-page_title {
   font-size: 20px;
   line-height: 24px;
 
@@ -19,45 +19,45 @@
   display: none;
 }
 
-#mfcs-event-view-0-page .event-section-review-operations {
+#mfcs-request-view-0-page .request-section-review-operations {
   display: none;
 }
 
-#mfcs-event-view-0-page .event-review-log-submit {
+#mfcs-request-view-0-page .request-review-log-submit {
   display: none;
 }
 
-#mfcs-event-view-0-page .event-section-display,
-#mfcs-event-view-0-page .event-section-review-operations,
-#mfcs-event-view-0-page .event-section-review-log {
+#mfcs-request-view-0-page .request-section-display,
+#mfcs-request-view-0-page .request-section-review-operations,
+#mfcs-request-view-0-page .request-section-review-log {
   border: 0px none;
   padding: 0px;
   margin: 0px;
   outline: 0px;
 }
 
-#mfcs-event-view-0-page .event-section-display > legend,
-#mfcs-event-view-0-page .event-section-review-operations > legend,
-#mfcs-event-view-0-page .event-section-review-log > legend {
+#mfcs-request-view-0-page .request-section-display > legend,
+#mfcs-request-view-0-page .request-section-review-operations > legend,
+#mfcs-request-view-0-page .request-section-review-log > legend {
   display: none;
 }
 
-#mfcs-event-view-0-page .event-field_groups > .group {
+#mfcs-request-view-0-page .request-field_groups > .group {
   page-break-inside: avoid;
 }
 
-#mfcs-event-view-0-page .event-field_groups > .group > .section-event > .field-event-item-information-user_id > .field-event-item-values > .field-event-item-values-value > .field-event-item-values-value-value > a {
+#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .field-request-item-information-user_id > .field-request-item-values > .field-request-item-values-value > .field-request-item-values-value-value > a {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
 }
 
-#mfcs-event-view-0-page .event-section-review-log.mode-0 {
+#mfcs-request-view-0-page .request-section-review-log.mode-0 {
   page-break-before: always;
 }
 
-#mfcs-event-view-0-page .event-section-review-log,
-#mfcs-event-view-0-page .event-section-review-operations {
+#mfcs-request-view-0-page .request-section-review-log,
+#mfcs-request-view-0-page .request-section-review-operations {
   width: 960px;
   min-width: 960px;
   max-width: 960px;

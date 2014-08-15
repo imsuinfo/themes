@@ -160,7 +160,7 @@ function mfcs_render_page() {
         }
 
         if (!$rebuild_breadcrumb) {
-          $title = "Event Requests Dashboard";
+          $title = "Requests Dashboard";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
