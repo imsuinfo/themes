@@ -1,0 +1,50 @@
+@media (orientation:portrait) {
+
+
+
+  /*** Calendar - Month ***/
+  .mcneese .calendar-month-wrapper > .calendar-month {
+    width: 730px;
+    min-width: 730px;
+    max-width: 730px;
+
+    margin: 5px auto;
+
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title,
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title > h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+    width: 103px;
+    min-width: 103px;
+    max-width: 103px;
+
+    padding: 3px 0px;
+  }
+
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
+    min-height: 96px;
+    min-width: 730px;
+  }
+
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+    min-height: 96px;
+
+    width: 103px;
+    min-width: 103px;
+    max-width: 103px;
+  }
+
+  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+    padding: 2px 4px;
+
+    font-size: 11px;
+    line-height: 15px;
+  }
+}

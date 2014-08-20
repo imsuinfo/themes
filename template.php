@@ -22,6 +22,19 @@ function mfcs_preprocess_page(&$vars) {
   if (empty($cf)) {
     mcneese_initialize_variables($vars);
   }
+
+  // provide margin information in the printer-friendly version of the page.
+  $print_css = '@page { ' . "\n";
+  $print_css .= '  size: A4 portrait;' . "\n";
+  $print_css .= '  margin: 30px 30px 30px 30px;' . "\n";
+
+  $page_title = drupal_get_title();
+
+  // note: @top-left, and @top-right are currently not supported by most major browsers.
+  $print_css .= '  @top-left { content: "' . $page_title . '"; }' . "\n";
+  $print_css .= '  @top-right { content: "Page " counter(page); }' . "\n";
+  $print_css .= '}' . "\n";
+  drupal_add_css($print_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 10, 'media' => 'print', 'preprocess' => FALSE));
 }
 
 

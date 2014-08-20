@@ -1,3 +1,7 @@
+
+
+
+/*** Global ***/
 .mcneese.is-flex_width {
   min-width: 960px;
 }
@@ -13,4 +17,68 @@
 .mcneese.is-flex_width #mcneese-skip_nav:focus,
 .mcneese.is-flex_width #mcneese-skip_nav:hover {
   min-width: 960px;
+}
+
+
+
+/*** Calendar - Month ***/
+.mcneese .calendar-month-wrapper > .calendar-month {
+  width: 924px;
+  min-width: 924px;
+  max-width: 924px;
+
+  margin: 5px auto;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-title,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-title > h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
+  position: absolute;
+  top: 5px;
+
+  width: 924px;
+  min-width: 924px;
+  max-width: 924px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-previous {
+  position: absolute;
+  left: 0px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-next {
+  position: absolute;
+  right: 0px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
+
+  padding: 3px 0px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
+  min-height: 96px;
+  min-width: 924px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+  min-height: 96px;
+
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  padding: 3px 6px;
+
+  font-size: 12px;
+  line-height: 16px;
 }

@@ -10,51 +10,21 @@
 
 
 /*** Calendar - Month ***/
-.mcneese .calendar-month-wrapper {
-}
-
 .mcneese .calendar-month-wrapper > .calendar-month {
   display: table;
   position: relative;
   box-sizing: border-box;
-
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
-
-  margin: 5px auto;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title,
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title > h3 {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
 
   text-align: center;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title {
   display: table-caption;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
-  position: absolute;
-  top: 5px;
-
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-previous {
-  position: absolute;
-  left: 0px;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation > .calendar-navigation-next {
-  position: absolute;
-  right: 0px;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper {
@@ -77,11 +47,6 @@
   font-weight: bold;
   text-align: center;
 
-  width: 132px;
-  min-width: 132px;
-  max-width: 132px;
-
-  padding: 3px 0px;
   border: 1px solid;
   border-left: 0px none;
 
@@ -105,9 +70,6 @@
   vertical-align: top;
   box-sizing: border-box;
 
-  min-height: 96px;
-  min-width: 924px;
-
   border-bottom: 1px solid;
 }
 
@@ -119,12 +81,6 @@
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-
-  min-height: 96px;
-
-  width: 132px;
-  min-width: 132px;
-  max-width: 132px;
 
   border-right: 1px solid;
 }
@@ -155,14 +111,9 @@
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
-  padding: 3px 6px;
-
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
-  font-size: 12px;
-  line-height: 16px;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a {

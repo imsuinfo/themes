@@ -1,8 +1,33 @@
 
 
 
+/*** Global ***/
+#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
+  font-size: 16px;
+  line-height: 20px;
+
+  font-weight: bold;
+
+  margin: 0px auto;
+  padding: 0px;
+}
+
+
+
 /*** Development Module ***/
 .mcneese > .dev-query,
 #mcneese-page > .dev-query {
   display: none;
+}
+
+
+
+/*** Calendar - Month ***/
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
+  display: none;
+}
+
+.mcneese .calendar-month-wrapper a {
+  text-decoration: none;
+  color: inherit;
 }
