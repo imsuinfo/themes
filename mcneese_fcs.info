@@ -20,6 +20,8 @@ stylesheets[braille,speech,tty][] = css/braille/braille-interface.css
 stylesheets[print,embossed,tv][] = css/print/print-common.css
 stylesheets[print,embossed,tv][] = css/print/print-front.css
 stylesheets[print,embossed,tv][] = css/print/print-event_form.css
+stylesheets[print,embossed,tv][] = css/print/print-event_form-portrait.css
+stylesheets[print,embossed,tv][] = css/print/print-event_form-landscape.css
 stylesheets[print,embossed,tv][] = css/print/print-interface.css
 
 stylesheets[screen,handheld,projection][] = css/screen/screen-common.css

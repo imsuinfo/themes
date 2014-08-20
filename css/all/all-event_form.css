@@ -7,16 +7,6 @@
   margin: 0px;
 }
 
-#mfcs-request-create-0-form .form-item-wrapper,
-#mfcs-request-edit-0-form .form-item-wrapper {
-  margin: 8px 0px;
-}
-
-#mfcs-request-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio,
-#mfcs-request-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio {
-  margin: 6px 0px;
-}
-
 #mfcs-request-create-0-form #section-request-dates #buttons-request-add_remove_date,
 #mfcs-request-edit-0-form #section-request-dates #buttons-request-add_remove_date {
   display: block;
@@ -31,6 +21,7 @@
 #mfcs-request-edit-0-form #section-request-dates #submit-request-remove-date {
   display: inline-block;
 }
+
 
 /** Location **/
 #mfcs-request-create-0-form #field-request-location-0 > .location-image,
@@ -49,20 +40,11 @@
 }
 
 
-
 /** Room **/
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
   display: inline-block;
   vertical-align: top;
-
-  width: 460px;
-
-  min-height: 48px;
-
-  border: 1px outset;
-  padding: 4px;
-  margin: 2px;
 }
 
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
@@ -70,22 +52,12 @@
   display: inline-block;
   vertical-align: middle;
   float: left;
-
-  width: 16px;
-  min-width: 16px;
-  max-width: 16px;
-
-  margin: 2px;
 }
 
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
   display: inline-block;
   vertical-align: middle;
-
-  width: 440px;
-  min-width: 440px;
-  max-width: 440px;
 }
 
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
@@ -111,22 +83,17 @@
 }
 
 
-
 /** Dates **/
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .field-request-item,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .field-request-item {
   display: inline-block;
   vertical-align: top;
-
-  margin: 4px;
 }
 
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date {
   display: inline-block;
   vertical-align: top;
-
-  margin: 22px 12px;
 }
 
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button,
@@ -162,16 +129,12 @@
 }
 
 
-
 /** Venue Coordinator **/
 #mfcs-request-create-0-form #section-request-venue_coordinator > .fieldset-wrapper > .form-wrapper,
 #mfcs-request-edit-0-form #section-request-venue_coordinator > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
-
-  margin: 4px;
 }
-
 
 
 /** Request Coordinator **/
@@ -179,10 +142,7 @@
 #mfcs-request-edit-0-form #section-request-request_coordinator > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
-
-  margin: 4px;
 }
-
 
 
 /** Information **/
@@ -190,60 +150,14 @@
 #mfcs-request-edit-0-form #section-request-information > .fieldset-wrapper > .form-wrapper {
   display: inline-block;
   vertical-align: top;
-
-  margin: 4px;
 }
 
 
 
 /*** View ***/
-#mfcs-request-view-0-page {
-}
-
-#mfcs-request-view-0-page .request-section-display,
-#mfcs-request-view-0-page .request-section-review-operations,
-#mfcs-request-view-0-page .request-section-review-log {
-  min-width: 960px;
-
-  padding: 5px 0px;
-  border-width: 0px;
-  border-top-width: 1px;
-}
-
-#mfcs-request-view-0-page #request-review-log,
-#mfcs-request-view-0-page #request-review-operations {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-#mfcs-request-view-0-page .request-section-review {
-  margin: 10px 0px;
-}
-
-#mfcs-request-view-0-page .request-section-review-log > .fieldset-wrapper,
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
-
-  margin: 0px auto;
-}
-
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .requirements {
-  margin: 10px 0px;
-}
-
 #mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
-}
-
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-as_reviewer > .request-section-review-operations-as_reviewer-message {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
-
-  margin: 10px 0px 5px 0px;
 }
 
 #mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-requirements {
@@ -251,14 +165,6 @@
 
   font-weight: bold;
   font-style: italic;
-}
-
-#mfcs-request-view-0-page .request-field_groups {
-  margin: 0px auto;
-
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
 }
 
 #mfcs-request-view-0-page .request-field_groups > .group {
@@ -272,31 +178,16 @@
   vertical-align: top;
   box-sizing: border-box;
 
-  width: 478px;
-  min-width: 478px;
-  max-width: 478px;
-
-  min-height: 200px;
-
-  margin: 5px;
-  border: 1px outset;
-
   overflow: auto;
 }
 
 #mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper {
   background-color: #d0d0d0;
 
-  padding: 0px 5px;
-  margin: 0px;
   border-top: 1px outset #a0a0a0;
   border-left: 1px outset #a0a0a0;
   border-bottom: 1px outset #a0a0a0;
   border-right: 1px outset #a0a0a0;
-}
-
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-label {
-
 }
 
 #mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
@@ -304,8 +195,6 @@
 #mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
 #mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
   float: right;
-
-  padding-left: 6px;
 }
 
 #mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request {
@@ -313,9 +202,6 @@
 
   clear: both;
 
-  min-height: 18px;
-
-  padding: 10px 5px 5px 5px;
   border-bottom: 1px dotted #707070;
 
   font-family: monospace;
@@ -356,31 +242,9 @@
   display: block;
 }
 
-#mfcs-request-view-0-page .request-display-submit {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
-
-  margin: 5px auto;
-}
-
-#mfcs-request-view-0-page .request-section-review-log-submit,
-#mfcs-request-view-0-page .request-section-review-operations-submit {
-  margin: 5px 0px;
-}
-
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item {
-  margin: 10px 0px;
-}
-
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item {
-  margin: 10px auto;
-}
-
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label {
   background-color: #d0d0d0;
 
-  padding: 5px;
   margin: 0px;
   border-top: 1px outset #a0a0a0;
   border-left: 1px outset #a0a0a0;
@@ -399,11 +263,7 @@
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
 #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
-  max-width: 740px;
-
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
@@ -413,8 +273,6 @@
 
   font-family: monospace;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
 }
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
@@ -424,9 +282,7 @@
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
 #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
-  font-size: 9px;
   vertical-align: top;
-  letter-spacing: 1px;
 }
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
@@ -438,19 +294,10 @@
 #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
   position: relative;
 
-  min-height: 18px;
-
-  padding: 5px;
   border: 1px dotted #707070;
 
   background-color: #f4f4f4;
 }
-
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
-  padding: 3px 0px 0px 0px;
-}
-
 
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
 #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
@@ -470,10 +317,6 @@
 .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
   display: block;
 
-  width: 610px;
-  min-width: 610px;
-  max-width: 610px;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -484,26 +327,14 @@
 
 #mfcs-request-agreement > .agreement-header {
   position: relative;
-
-  padding-bottom: 5px;
-  border-bottom: 3px solid #000000;
-  margin-bottom: 5px;
-}
-
-#mfcs-request-agreement > .agreement-header > .agreement-header-address {
-  padding-top: 10px;
-}
-
-#mfcs-request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 #mfcs-request-agreement > .agreement-header > .agreement-header-information {
   position: absolute;
-  top: 10px;
-  right: 10px;
+}
+
+#mfcs-request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
+  font-weight: bold;
 }
 
 #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
@@ -517,18 +348,10 @@
 #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
 #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label {
   font-weight: bold;
-
-  min-width: 90px;
 }
 
 #mfcs-request-agreement > .agreement-table {
   display: table;
-
-  width: 590px;
-  min-width: 590px;
-  max-width: 590px;
-
-  margin: 10px 10px 0px 10px;
 
   border: 1px solid #c0c0c0;
 }
@@ -546,17 +369,11 @@
 
   font-weight: bold;
 
-  padding: 2px 4px;
-
   border-bottom: 1px solid #c0c0c0;
 }
 
 #mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
 #mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
-
   text-align: center;
 
   border-left: 1px solid #c0c0c0;
@@ -573,7 +390,6 @@
 #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
   display: table-cell;
 
-  padding: 2px 4px;
   border-bottom: 1px solid #c0c0c0;
 }
 
@@ -581,60 +397,27 @@
   border-bottom: 0px none;
 }
 
-#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
-  padding-left: 16px;
-}
-
 #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
 #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
   vertical-align: bottom;
-
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
 
   text-align: center;
 
   border-left: 1px solid #c0c0c0;
 }
 
-#mfcs-request-agreement > .agreement-amount_due {
-  width: 210px;
-  min-width: 210px;
-  max-width: 210px;
-
-  margin-left: 392px;
-  margin-right: 8px;
-}
-
 #mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-label {
   display: table-cell;
 
   font-weight: bold;
-
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
 }
 
 #mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-value {
   display: table-cell;
 
-  width: 106px;
-  min-width: 106px;
-  max-width: 106px;
-
   text-align: center;
 
   border: 2px solid #505050;
-}
-
-#mfcs-request-agreement > .agreement-signature {
-  margin: 10px;
-}
-
-#mfcs-request-agreement > .agreement-signature > .agreement-signature-field {
-  margin: 10px 0px;
 }
 
 #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label,
@@ -643,23 +426,11 @@
   vertical-align: bottom;
 }
 
-#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
-  min-width: 100px;
-}
-
 #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
-  width: 400px;
-  min-width: 400px;
-  max-width: 400px;
-
   border: 0px none;
   border-bottom: 1px solid #000000;
 }
 
 #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
   min-height: 2em;
-}
-
-#mfcs-request-agreement #agreement-submit {
-  margin: 10px;
 }
