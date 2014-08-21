@@ -58,10 +58,14 @@ menu, dd        { margin: 0px; padding: 0px 0px 0px 40px; }
 ol ul, ul ol,
 ul ul, ol ol    { margin-top: 0px; margin-bottom: 0px; }
 u, ins          { text-decoration: underline; }
-br:before       { content: ""; white-space: pre-line; }
 center          { text-align: center; }
 a:link, a:visited { text-decoration: underline; }
 a:focus          { outline: thin dotted invert; }
+
+.mcneese.agent-name-ie br:before {
+  content: "";
+  white-space: pre-line;
+}
 
 /* Begin bidirectionality settings (do not change) */
 BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override; }
