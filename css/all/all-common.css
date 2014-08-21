@@ -37,15 +37,8 @@
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
-  display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-
-  font-weight: bold;
-  text-align: center;
 
   border: 1px solid;
   border-left: 0px none;
@@ -53,8 +46,16 @@
   background-color: #e6efff;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type > .calendar-day {
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type {
   border-left: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+  display: inline-block;
+
+
+  font-weight: bold;
+  text-align: center;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper {
@@ -75,14 +76,27 @@
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
-  display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
 
   border-right: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type {
+  border-left: 1px solid;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper.month-previous,
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper.month-next {
+  background-color: #f0f0f0;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper.month-current {
+  background-color: #ffffc0;
+}
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+  display: inline-block;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-label {
@@ -95,19 +109,6 @@
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-previous > .calendar-label,
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-next > .calendar-label {
   color: #505050;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper:first-of-type > .calendar-day {
-  border-left: 1px solid;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-previous,
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-next {
-  background-color: #f0f0f0;
-}
-
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day.month-current {
-  background-color: #ffffc0;
 }
 
 .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
