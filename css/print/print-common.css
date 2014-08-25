@@ -31,3 +31,9 @@
   text-decoration: none;
   color: inherit;
 }
+
+.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: visible;
+}
