@@ -23,6 +23,16 @@ function mfcs_preprocess_page(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
+  $mfcs_canonical = &drupal_static('mfcs_canonical', array());
+
+  if (!empty($mfcs_canonical)) {
+    if (!isset($cf['link'])) {
+      $cf['link'] = array();
+    }
+
+    $cf['link'] = array_merge($cf['link'], $mfcs_canonical);
+  }
+
   // provide margin information in the printer-friendly version of the page.
   $print_css = '@page { ' . "\n";
   $print_css .= '  size: A4 portrait;' . "\n";
