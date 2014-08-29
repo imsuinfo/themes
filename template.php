@@ -34,9 +34,10 @@ function mfcs_preprocess_page(&$vars) {
   }
 
   // provide margin information in the printer-friendly version of the page.
+  // (A4 = 210mm x 297mm) (US-Letter = 216mm x 279mm)
   $print_css = '@page { ' . "\n";
-  $print_css .= '  size: A4;' . "\n";
-  $print_css .= '  margin: 30px 30px 30px 30px;' . "\n";
+  $print_css .= '  size: US-Letter;' . "\n";
+  $print_css .= '  margin: 10mm 10mm 10mm 10mm;' . "\n";
 
   $page_title = drupal_get_title();
 
