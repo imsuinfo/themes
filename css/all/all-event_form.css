@@ -242,6 +242,10 @@
   display: block;
 }
 
+#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value > .item-value-instance-dates-category {
+  font-size: 12px;
+}
+
 #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label {
   background-color: #d0d0d0;
 
