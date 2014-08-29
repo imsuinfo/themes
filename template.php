@@ -35,7 +35,7 @@ function mfcs_preprocess_page(&$vars) {
 
   // provide margin information in the printer-friendly version of the page.
   $print_css = '@page { ' . "\n";
-  $print_css .= '  size: A4 portrait;' . "\n";
+  $print_css .= '  size: A4;' . "\n";
   $print_css .= '  margin: 30px 30px 30px 30px;' . "\n";
 
   $page_title = drupal_get_title();
