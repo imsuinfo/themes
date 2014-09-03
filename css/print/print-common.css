@@ -23,17 +23,29 @@
 
 
 /*** Calendar - Month ***/
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-navigation {
+.mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-navigation {
   display: none;
 }
 
-.mcneese .calendar-month-wrapper a {
+.mcneese #mfcs-calendar-0-month a {
   text-decoration: none;
   color: inherit;
 }
 
-.mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+.mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
   white-space: normal;
   text-overflow: ellipsis;
   overflow: visible;
+}
+
+
+
+/*** Calendar - Month ***/
+.mcneese #mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
+  display: none;
+}
+
+.mcneese #mfcs-calendar-0-day a {
+  text-decoration: none;
+  color: inherit;
 }

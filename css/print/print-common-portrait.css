@@ -3,7 +3,7 @@
 
 
   /*** Calendar - Month ***/
-  .mcneese .calendar-month-wrapper > .calendar-month {
+  .mcneese #mfcs-calendar-0-month > .calendar-month {
     width: 730px;
     min-width: 730px;
     max-width: 730px;
@@ -14,13 +14,13 @@
     line-height: 15px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title,
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-title > h3 {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-title,
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-title > h3 {
     font-size: 12px;
     line-height: 16px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
     width: 103px;
     min-width: 103px;
     max-width: 103px;
@@ -28,24 +28,24 @@
     padding: 3px 0px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
     min-height: 96px;
     min-width: 730px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
     width: 103px;
     min-width: 103px;
     max-width: 103px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
     min-height: 96px;
 
     max-width: 103px;
   }
 
-  .mcneese .calendar-month-wrapper > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  .mcneese #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
     padding: 2px 4px;
 
     font-size: 11px;
