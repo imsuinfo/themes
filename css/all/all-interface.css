@@ -157,7 +157,8 @@
 
 #mfcs-request-search-0-form #search-simple-submit-clear,
 #mfcs-request-search-0-form #search-advanced-submit-clear,
-#mfcs-request-search-0-form #search-advanced-submit-reset {
+#mfcs-request-search-0-form #search-advanced-submit-reset,
+#mfcs-request-reviewers-0-form #submit-reviewer-recheck {
   color: #000000;
   background-color: #99b2ee;
 }
