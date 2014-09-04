@@ -344,3 +344,19 @@
 
   z-index: 2;
 }
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-normal {
+  z-index: 5;
+  border: 1px outset;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-bottom {
+  z-index: 3;
+  border: 1px inset;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-top {
+  z-index: 7;
+
+  border: 3px outset;
+}
