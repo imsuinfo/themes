@@ -13,7 +13,6 @@
 #mfcs-calendar-0-month > .calendar-month {
   display: table;
   position: relative;
-  box-sizing: border-box;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-title,
@@ -38,11 +37,10 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
   vertical-align: top;
-  box-sizing: border-box;
 
   text-align: center;
 
-  border: 1px solid;
+  border: 1px solid #00335b;
   border-left: 0px none;
 
   background-color: #e6efff;
@@ -71,7 +69,6 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
   display: inline-block;
   vertical-align: top;
-  box-sizing: border-box;
 
   border-bottom: 1px solid;
 }
@@ -79,7 +76,6 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
   vertical-align: top;
-  box-sizing: border-box;
 
   border-right: 1px solid;
 }
@@ -130,7 +126,6 @@
 #mfcs-calendar-0-day > .calendar-day {
   display: table;
   position: relative;
-  box-sizing: border-box;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-title,
@@ -155,18 +150,22 @@
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-all_day > .calendar-header > .calendar-day-wrapper > .calendar-day {
   display: table-cell;
   vertical-align: top;
-  box-sizing: border-box;
 
   font-weight: bold;
   text-align: center;
 
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
+  width: 912px;
+  min-width: 912px;
+  max-width: 912px;
 
-  border: 1px solid;
+  padding: 3px 5px;
+  border: 1px solid #00335b;
 
-  background-color: #e6efff;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: #00477f;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper {
@@ -184,27 +183,26 @@
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-all_day > .calendar-body > .calendar-item-wrapper > .calendar-item {
   display: table-cell;
   vertical-align: top;
-  box-sizing: border-box;
 
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
+  width: 912px;
+  min-width: 912px;
+  max-width: 912px;
 
   padding: 3px 5px;
 
   font-size: 12px;
   line-height: 16px;
 
-  border: 1px solid;
+  border: 1px solid #00335b;
   border-top: 0px none;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-all_day > .calendar-body > .calendar-item-wrapper.even > .calendar-item {
-  background-color: #ffffc0;
+  background-color: #ececec;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-all_day > .calendar-body > .calendar-item-wrapper.odd > .calendar-item {
-  background-color: #ffffe0;
+  background-color: #dedede;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper {
@@ -225,7 +223,6 @@
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
   display: table-cell;
   vertical-align: top;
-  box-sizing: border-box;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
@@ -233,7 +230,8 @@
   font-weight: bold;
   text-align: center;
 
-  background-color: #e6efff;
+  color: #ffffff;
+  background-color: #00477f;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
@@ -242,26 +240,30 @@
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper.even > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
-  background-color: #eeee9e;
+  background-color: #aecae0;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper.odd > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
-  background-color: #eeeebc;
+  background-color: #9bb3c7;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper.even > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
-  background-color: #ffffc0;
+  background-color: #ececec;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper.odd > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
-  background-color: #ffffe0;
+  background-color: #dedede;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
-  border: 1px solid;
-  padding: 3px 6px;
+  border: 1px solid #00335b;
+  border-bottom: 0px none;
 
+  padding: 3px 5px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
   font-size: 12px;
   line-height: 16px;
 }
@@ -272,10 +274,13 @@
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
-  border: 1px solid;
+  border: 1px solid #00335b;
+  border-bottom: 0px none;
 
-  padding: 3px 6px;
+  padding: 3px 5px;
+}
 
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
   font-size: 12px;
   line-height: 16px;
 }
@@ -284,32 +289,50 @@
   border-top: 0px none;
 }
 
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper:last-of-type {
+  border-bottom: 1px solid #00335b;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper {
+  width: 104px;
+  min-width: 104px;
+  max-width: 104px;
+}
+
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
   display: block;
 
-  width: 124px;
-  min-width: 124px;
-  max-width: 124px;
+  width: 92px;
+  min-width: 92px;
+  max-width: 92px;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
-  min-height: 70px;
+  min-height: 72px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper {
+  width: 819px;
+  min-width: 819px;
+  max-width: 819px;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
   display: block;
 
-  width: 800px;
-  min-width: 800px;
-  max-width: 800px;
+  width: 809px;
+  min-width: 809px;
+  max-width: 809px;
 
   border-left: 0px none;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
-  min-height: 70px;
+  min-height: 72px;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
@@ -321,32 +344,30 @@
   vertical-align: top;
   position: absolute;
 
-  border: 1px outset;
+  border: 2px outset;
 
-  min-height: 20px;
+  min-height: 48px;
 
-  width: 128px;
-  min-width: 128px;
-  max-width: 128px;
-
-  padding: 4px;
+  width: 148px;
+  min-width: 148px;
+  max-width: 148px;
 
   word-wrap: break-word;
   word-break: break-word;
 
-  overflow: visible;
+  overflow: auto;
 
   background-color: #ffffff;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-normal {
   z-index: 5;
-  border: 1px outset;
+  border: 2px outset;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-bottom {
   z-index: 3;
-  border: 1px inset;
+  border: 2px inset;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.item-zindex-top {
@@ -354,3 +375,319 @@
 
   border: 3px outset;
 }
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-link-wrapper {
+  padding: 2px 4px;
+  margin-bottom: 2px;
+  min-height: 16px;
+
+  text-align: center;
+
+  background-color: #ececec;
+
+  border-bottom: 2px solid #dedede;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper {
+  padding: 0px 4px;
+  min-height: 16px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+  font-size: 10px;
+}
+
+
+/** Item Type: Athletics (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 {
+  color: #000000;
+  background-color: #f9c7c7;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #803333;
+
+  border-bottom: 2px solid #522121;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Banquet (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 {
+  color: #000000;
+  background-color: #cdcd81;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #4d4d1f;
+
+  border-bottom: 2px solid #34340a;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Ceremony / Presentation (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 {
+  color: #000000;
+  background-color: #aedeae;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #265726;
+
+  border-bottom: 2px solid #1b3d1b;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Fair / Expo (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 {
+  color: #000000;
+  background-color: #deacde;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #7c1e7c;
+
+  border-bottom: 2px solid #631863;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Lecture (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 {
+  color: #000000;
+  background-color: #ecc3ae;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #753c21;
+
+  border-bottom: 2px solid #472514;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Meeting (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 {
+  color: #000000;
+  background-color: #add3e3;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #164659;
+
+  border-bottom: 2px solid #0a2029;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Other (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 {
+  color: #000000;
+  background-color: #9ed0d0;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #155454;
+
+  border-bottom: 2px solid #0e3b3b;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Performance (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 {
+  color: #000000;
+  background-color: #c8c8e3;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #33337d;
+
+  border-bottom: 2px solid #0e0e42;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Quick Meeting (142) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 {
+  color: #000000;
+  background-color: #cddeae;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #404f23;
+
+  border-bottom: 2px solid #191f0e;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Reception (60) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 {
+  color: #000000;
+  background-color: #f1b157;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #5e3700;
+
+  border-bottom: 2px solid #241500;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Talent / Variety Show (63) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 {
+  color: #000000;
+  background-color: #ee8fab;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #830a2c;
+
+  border-bottom: 2px solid #4f061b;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
+/** Item Type: Workshop (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 {
+  color: #000000;
+  background-color: #a2b9df;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper {
+  color: #ffee05;
+  background-color: #22488a;
+
+  border-bottom: 2px solid #17315e;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper a,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper a:visited {
+  color: #ffee05;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper a:active,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper a:hover,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-link-wrapper a:focus {
+  color: #ffffff;
+}
+
