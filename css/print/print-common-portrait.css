@@ -63,41 +63,41 @@
     margin: 5px auto;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-all_day > .calendar-header > .calendar-day-wrapper > .calendar-day {
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-header-wrapper > .calendar-header > .calendar-day-wrapper > .calendar-day {
     width: 718px;
     min-width: 718px;
     max-width: 718px;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-all_day > .calendar-body {
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-body-wrapper > .calendar-body {
     width: 718px;
     min-width: 718px;
     max-width: 718px;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper,
-  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper {
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper {
     width: 82px;
     min-width: 82px;
     max-width: 82px;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
-  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
     width: 70px;
     min-width: 70px;
     max-width: 70px;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
-  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper {
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper {
     width: 647px;
     min-width: 647px;
     max-width: 647px;
   }
 
-  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper.calendar-range > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
-  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper.calendar-range > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
     width: 637px;
     min-width: 637px;
     max-width: 637px;
