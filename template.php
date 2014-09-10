@@ -245,12 +245,6 @@ function mfcs_preprocess_toolbar(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
-  $requests_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests'),
-    'min_depth' => 1,
-    'max_depth' => 1,
-  ));
-
   if (!function_exists('toolbar_menu_navigation_links')) {
     return;
   }
@@ -259,12 +253,24 @@ function mfcs_preprocess_toolbar(&$vars) {
     return;
   }
 
+  $requests_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests'),
+    'min_depth' => 1,
+    'max_depth' => 1,
+  ));
+
+  $management_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests/management'),
+    'min_depth' => 1,
+    'max_depth' => 1,
+  ));
+
   $toolbar_tree = toolbar_get_menu_tree();
-  $tree = array_merge($requests_tree, $toolbar_tree);
+  $tree = array_merge($management_tree, $toolbar_tree);
+  $tree = array_merge($requests_tree, $tree);
 
   $links = toolbar_menu_navigation_links($tree);
   $vars['toolbar']['toolbar_menu']['#links'] = $links;
-
 }
 
 /**
