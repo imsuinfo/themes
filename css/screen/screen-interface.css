@@ -16,9 +16,9 @@
 
 
 /*** Management ***/
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_1,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_2,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_3 {
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_1,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_2,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_3 {
   display: inline-block;
   vertical-align: top;
 
@@ -29,15 +29,15 @@
   padding: 0px 5px 5px 5px;
 }
 
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_1 > .item-list > ul,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_2 > .item-list > ul,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_3 > .item-list > ul {
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_1 > .item-list > ul,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_2 > .item-list > ul,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_3 > .item-list > ul {
   margin: 0px;
 }
 
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_1 > .item-list > ul > li,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_2 > .item-list > ul > li,
-#mfcs-management_page-choices > .mfcs-management_page-choices-list_3 > .item-list > ul > li {
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_1 > .item-list > ul > li,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_2 > .item-list > ul > li,
+#mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_3 > .item-list > ul > li {
   min-height: 70px;
 }
 
