@@ -211,6 +211,14 @@
   display: none;
 }
 
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-view_revision-link {
+  display: inline-block;
+  vertical-align: top;
+
+  float: right;
+  clear: both;
+}
+
 #mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label {
   margin: 10px 0px 0px 0px;
 }
