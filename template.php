@@ -136,15 +136,37 @@ function mfcs_render_page() {
           $dont_append_title = TRUE;
         }
         elseif ($path_parts[1] == 'calendar-0') {
-          if ($count_parts > 2) {
+          if ($count_parts > 2 && ($path_parts[2] == 'month' || $path_parts[2] == 'day')) {
             $title = "Request Calendar";
+
+            if ($path_parts[2] == 'month') {
+              $title = "Request Calendar - Month";
+            }
+            elseif ($path_parts[2] == 'day') {
+              $title = "Request Calendar - Day";
+            }
 
             $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            if ($count_parts == 2) {
-              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $new_breadcrumb = array();
+            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '" title="' . $title . '">' . $title . '</a>';
+
+            if ($count_parts > 4 && $path_parts[2] == 'month') {
+              $date_string = date('F Y', strtotime($path_parts[4] . ' 1, ' . $path_parts[3]));
+              $title = "Monthly Calendar for " . $date_string;
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '" title="' . $title . '">' . $date_string . '</a>';
             }
+            elseif ($count_parts > 5 && $path_parts[2] == 'day') {
+              $date_string = date('F j, Y', strtotime($path_parts[4] . ' ' . $path_parts[5] . ', ' . $path_parts[3]));
+              $title = "Daily Calendar for " . $date_string;
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '/' . $path_parts[5] . '" title="' . $title . '">' . $date_string . '</a>';
+            }
+
+            // original breadcrumb gets overriden to remove extra/invalid url paths.
+            $cf['page']['breadcrumb'] = $new_breadcrumb;
 
             $rebuild_breadcrumb = TRUE;
             $dont_append_title = TRUE;
