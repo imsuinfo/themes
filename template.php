@@ -197,13 +197,31 @@ function mfcs_render_page() {
               $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '" title="View Request">' . "View Request" . '</a>';
               $rebuild_breadcrumb = TRUE;
             }
-            else {
-              if ($path_parts[3] == 2) {
+            elseif ($count_parts == 4) {
+              if ($path_parts[3] == 'display') {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '" title="Request (Display)">' . "Request (Display)" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+              elseif ($path_parts[3] == 'log') {
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '" title="Review Log">' . "Review Log" . '</a>';
                 $rebuild_breadcrumb = TRUE;
               }
-              elseif ($path_parts[3] == 3) {
+              elseif ($path_parts[3] == 'operations') {
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '" title="Review Operations">' . "Review Operations" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+            }
+            elseif (cf_is_integer($path_parts[4])) {
+              if ($path_parts[3] == 'normal') {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '" title="Request Revision">' . "Request Revision" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+              elseif ($path_parts[3] == 'display') {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '" title="Request Revision (Display)">' . "Request Revision (Display)" . '</a>';
+                $rebuild_breadcrumb = TRUE;
+              }
+              elseif ($path_parts[3] == 'log') {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '" title="Revision Review Log">' . "Revision Review Log" . '</a>';
                 $rebuild_breadcrumb = TRUE;
               }
             }
