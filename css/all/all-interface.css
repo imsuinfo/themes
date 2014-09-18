@@ -249,3 +249,28 @@
 #mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value {
   margin-left: 20px;
 }
+
+
+
+/*** Statistics ***/
+#mfcs-statistics-page > .statistics-title {
+  margin: 1em 0px;
+}
+
+#mfcs-statistics-page > .statistics-title > .statistics-title-text > .statistics-title-text-note {
+  font-size: 14px;
+}
+
+#mfcs-statistics-page > .statistics-block > .statistics-block-chart,
+#mfcs-statistics-page > .statistics-block > .statistics-block-text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-statistics-page > .statistics-block > .statistics-block-text {
+  margin-top: 1em;
+}
+
+#mfcs-statistics-page > .statistics-block > .statistics-block-text > .statistics-block-text-item-type-request_classification {
+  margin-top: 1em;
+}

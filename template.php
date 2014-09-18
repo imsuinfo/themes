@@ -69,6 +69,8 @@ function mfcs_render_page() {
     $path_parts = explode('/', $cf['at']['path']);
     $count_parts = count($path_parts);
 
+    $pre_crumb_title = "Requests Dashboard";
+
     if ($count_parts > 0 && $path_parts[0] == 'requests') {
       if ($count_parts == 1) {
         if ($path_parts[0] == 'requests') {
@@ -77,7 +79,8 @@ function mfcs_render_page() {
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
-          $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests" title="' . $title . '">' . drupal_get_title() . '</a>';
+          $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests" title="' . $title . '">' . $title . '</a>';
+
           $rebuild_breadcrumb = TRUE;
           $dont_append_title = TRUE;
         }
@@ -90,7 +93,13 @@ function mfcs_render_page() {
           $cf['show']['page']['precrumb'] = TRUE;
 
           if ($count_parts == 2) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
+          }
+          elseif ($count_parts == 3) {
+            array_pop($cf['page']['breadcrumb']);
+
+            $title = "Copy Request";
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
           }
 
           $rebuild_breadcrumb = TRUE;
@@ -103,7 +112,7 @@ function mfcs_render_page() {
           $cf['show']['page']['precrumb'] = TRUE;
 
           if ($count_parts == 2) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
           }
 
           $rebuild_breadcrumb = TRUE;
@@ -116,7 +125,7 @@ function mfcs_render_page() {
           $cf['show']['page']['precrumb'] = TRUE;
 
           if ($count_parts == 2) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
           }
 
           $rebuild_breadcrumb = TRUE;
@@ -124,13 +133,23 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'reviewers-0') {
           $title = "Manage Reviewers";
+          $pre_crumb_title = "Requests Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
-          if ($count_parts == 2) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($count_parts == 5) {
+            $title = drupal_get_title();
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '" title="' . $title . '">' . $title . '</a>';
           }
+
+          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
 
           $rebuild_breadcrumb = TRUE;
           $dont_append_title = TRUE;
@@ -179,8 +198,44 @@ function mfcs_render_page() {
           $cf['show']['page']['precrumb'] = TRUE;
 
           if ($count_parts == 2) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
           }
+
+          $rebuild_breadcrumb = TRUE;
+          $dont_append_title = TRUE;
+        }
+        elseif ($path_parts[1] == 'statistics-0') {
+          $title = "Request Statistics";
+          $pre_crumb_title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
+
+          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+
+          $rebuild_breadcrumb = TRUE;
+          $dont_append_title = TRUE;
+        }
+        elseif ($path_parts[1] == 'management') {
+          $title = "Requests Management";
+          $pre_crumb_title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
+
+          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
 
           $rebuild_breadcrumb = TRUE;
           $dont_append_title = TRUE;
@@ -255,13 +310,12 @@ function mfcs_render_page() {
         }
 
         if (!$rebuild_breadcrumb) {
-          $title = "Requests Dashboard";
 
-          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $pre_crumb_title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
           if (!$dont_append_title) {
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests" title="' . $title . '">' . drupal_get_title() . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
           }
 
           $rebuild_breadcrumb = TRUE;
