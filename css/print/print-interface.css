@@ -1,3 +1,13 @@
 #mfcs-dashboard_page-choices {
   display: none;
 }
+
+.mcneese.alias-part-0-requests .html_tag-header.page-title {
+  display: none;
+}
+
+.mcneese.alias-part-0-requests.alias-part-1-view_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-history_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-agreement_0 .html_tag-header.page-title {
+  display: inherit;
+}

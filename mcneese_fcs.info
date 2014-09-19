@@ -25,6 +25,8 @@ stylesheets[print,embossed,tv][] = css/print/print-event_form.css
 stylesheets[print,embossed,tv][] = css/print/print-event_form-portrait.css
 stylesheets[print,embossed,tv][] = css/print/print-event_form-landscape.css
 stylesheets[print,embossed,tv][] = css/print/print-interface.css
+stylesheets[print,embossed,tv][] = css/print/print-interface-portrait.css
+stylesheets[print,embossed,tv][] = css/print/print-interface-landscape.css
 
 stylesheets[screen,handheld,projection][] = css/screen/screen-common.css
 stylesheets[screen,handheld,projection][] = css/screen/screen-front.css

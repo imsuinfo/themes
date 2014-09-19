@@ -253,24 +253,50 @@
 
 
 /*** Statistics ***/
+#mfcs-statistics-page {
+  margin: 0px 5px;
+}
+
 #mfcs-statistics-page > .statistics-title {
-  margin: 1em 0px;
+  display: inline-block;
+  vertical-align: top;
+
+  width: 950px;
+  min-width: 950px;
+  max-width: 950px;
+
+  margin: 0px auto;
 }
 
 #mfcs-statistics-page > .statistics-title > .statistics-title-text > .statistics-title-text-note {
   font-size: 14px;
 }
 
+#mfcs-statistics-page > .statistics-block {
+  width: 950px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #mfcs-statistics-page > .statistics-block > .statistics-block-chart,
 #mfcs-statistics-page > .statistics-block > .statistics-block-text {
   display: inline-block;
   vertical-align: top;
+
+  width: 470px;
+  min-width: 470px;
+  max-width: 470px;
 }
 
 #mfcs-statistics-page > .statistics-block > .statistics-block-text {
   margin-top: 1em;
 }
 
-#mfcs-statistics-page > .statistics-block > .statistics-block-text > .statistics-block-text-item-type-request_classification {
-  margin-top: 1em;
+#mfcs-statistics-page > .statistics-block > .statistics-block-text > .statistics-block-text-item {
+  padding: 3px 0px;
+}
+
+#mfcs-statistics-page > .statistics-block > .statistics-block-text > .statistics-block-text-item-created {
+  margin-bottom: 1em;
 }

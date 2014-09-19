@@ -1,0 +1,37 @@
+@media (orientation:portrait) {
+
+
+
+  /*** Statistics ***/
+  #mfcs-statistics-page > .statistics-title {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 730px;
+    min-width: 730px;
+    max-width: 730px;
+
+    margin: 1em 0px;
+  }
+
+  #mfcs-statistics-page > .statistics-block {
+    width: 730px;
+    min-width: 730px;
+    max-width: 730px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #mfcs-statistics-page > .statistics-block > .statistics-block-chart {
+    width: 453px;
+    min-width: 453px;
+    max-width: 453px;
+  }
+
+  #mfcs-statistics-page > .statistics-block > .statistics-block-text {
+    width: 267px;
+    min-width: 267px;
+    max-width: 267px;
+  }
+}
