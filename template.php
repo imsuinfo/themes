@@ -48,7 +48,6 @@ function mfcs_preprocess_page(&$vars) {
   drupal_add_css($print_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 10, 'media' => 'print', 'preprocess' => FALSE));
 }
 
-
 /**
  * Render all data for: page.
  */
