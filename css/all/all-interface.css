@@ -2,30 +2,34 @@
 
 
 /*** Global ***/
-.request-listing-page-navigator,
-.request-history-page-navigator,
+.mcneese .request-listing-page-navigator-bottom,
+.mcneese .request-history-page-navigator,
 #search-simple-results-navigation {
   position: relative;
 
   min-height: 18px;
 }
 
-.request-listing-page-navigator > .request-listing-page-choice,
-.request-history-page-navigator > .request-history-page-choice,
+.mcneese .request-listing-page-navigator-top {
+  position: relative;
+}
+
+.mcneese .request-listing-page-navigator > .request-listing-page-choice,
+.mcneese .request-history-page-navigator > .request-history-page-choice,
 #search-simple-results-navigation > .search-simple-results-navigation-choice {
   display: inline-block;
   position: absolute;
   vertical-align: top;
 }
 
-.request-listing-page-navigator > .request-listing-page-previous,
-.request-history-page-navigator > .request-history-page-previous,
+.mcneese .request-listing-page-navigator > .request-listing-page-previous,
+.mcneese .request-history-page-navigator > .request-history-page-previous,
 #search-simple-results-navigation > .search-simple-results-navigation-previous {
   left: 0px;
 }
 
-.request-listing-page-navigator > .request-listing-page-next,
-.request-history-page-navigator > .request-history-page-next,
+.mcneese .request-listing-page-navigator > .request-listing-page-next,
+.mcneese .request-history-page-navigator > .request-history-page-next,
 #search-simple-results-navigation > .search-simple-results-navigation-next {
   right: 0px;
 }
