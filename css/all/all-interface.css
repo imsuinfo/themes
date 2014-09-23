@@ -277,6 +277,11 @@
   padding: 4px;
 }
 
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-deleted > .history_item-message-preserved,
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-deleted > .history_item-signature-preserved {
+  margin: 0px 0px 8px 0px;
+}
+
 
 
 /*** Statistics ***/
