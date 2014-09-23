@@ -167,12 +167,28 @@
   background-color: #99b2ee;
 }
 
+#mfcs-request-delete-0-form #request-delete-submit-no,
+#mfcs-request-delete-0-form #request-delete-submit-no:visited {
+  color: #000000;
+  background-color: #cecece;
+}
+
+#mfcs-request-delete-0-form #request-delete-submit-yes,
+#mfcs-request-delete-0-form #request-delete-submit-yes:visited {
+  color: #000000;
+  background-color: #e86f69;
+}
+
 #mfcs-request-search-0-form #search-simple-submit-clear:focus,
 #mfcs-request-search-0-form #search-advanced-submit-clear:focus,
 #mfcs-request-search-0-form #search-advanced-submit-reset:focus,
+#mfcs-request-delete-0-form #request-delete-submit-no:focus,
+#mfcs-request-delete-0-form #request-delete-submit-yes:focus,
 #mfcs-request-search-0-form #search-simple-submit-clear:hover,
 #mfcs-request-search-0-form #search-advanced-submit-clear:hover,
-#mfcs-request-search-0-form #search-advanced-submit-reset:hover {
+#mfcs-request-search-0-form #search-advanced-submit-reset:hover,
+#mfcs-request-delete-0-form #request-delete-submit-no:hover,
+#mfcs-request-delete-0-form #request-delete-submit-yes:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -186,10 +202,12 @@
 
 #mfcs-request-search-0-form #search-simple-submit-clear:active,
 #mfcs-request-search-0-form #search-advanced-submit-clear:active,
-#mfcs-request-search-0-form #search-advanced-submit-reset:active {
+#mfcs-request-search-0-form #search-advanced-submit-reset:active,
+#mfcs-request-delete-0-form #request-delete-submit-no:active,
+#mfcs-request-delete-0-form #request-delete-submit-yes:active {
   background: #666666;
   color: #ffffff;
-  border-color: #555555;
+  border: 1px inset #555555;
   text-shadow: #222222 0px -1px 0px;
 }
 
@@ -252,6 +270,11 @@
 
 #mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value {
   margin-left: 20px;
+}
+
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-deleted {
+  border: 1px inset;
+  padding: 4px;
 }
 
 
