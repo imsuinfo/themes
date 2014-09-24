@@ -22,7 +22,8 @@
 
 
 /*** Calendar - Month ***/
-#mfcs-calendar-0-month > .calendar-month {
+#mfcs-calendar-0-month > .calendar-month,
+#mfcs-calendar-0-month > .calendar-ical-links {
   width: 924px;
   min-width: 924px;
   max-width: 924px;
@@ -34,6 +35,25 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-title > h3 {
   font-size: 16px;
   line-height: 20px;
+}
+
+#mfcs-calendar-0-month > .calendar-ical-links > h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item {
+  padding: 1px 0px;
+}
+
+#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item > .calendar-ical-links-list-item-label {
+  display: inline-block;
+  min-width: 40px;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-navigation {
@@ -95,7 +115,8 @@
 
 
 /*** Calendar - Day ***/
-#mfcs-calendar-0-day > .calendar-day {
+#mfcs-calendar-0-day > .calendar-day,
+#mfcs-calendar-0-day > .calendar-ical-links {
   width: 924px;
   min-width: 924px;
   max-width: 924px;
@@ -107,6 +128,25 @@
 #mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
   font-size: 16px;
   line-height: 20px;
+}
+
+#mfcs-calendar-0-day > .calendar-ical-links > h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item {
+  padding: 1px 0px;
+}
+
+#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item > .calendar-ical-links-list-item-label {
+  display: inline-block;
+  min-width: 40px;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
