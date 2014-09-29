@@ -361,8 +361,15 @@ function mfcs_preprocess_toolbar(&$vars) {
     'max_depth' => 1,
   ));
 
-  $toolbar_tree = toolbar_get_menu_tree();
-  $tree = array_merge($management_tree, $toolbar_tree);
+  $review_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests/review-0'),
+    'min_depth' => 2,
+    'max_depth' => 2,
+  ));
+
+  $tree = toolbar_get_menu_tree();
+  $tree = array_merge($review_tree, $tree);
+  $tree = array_merge($management_tree, $tree);
   $tree = array_merge($requests_tree, $tree);
 
   $links = toolbar_menu_navigation_links($tree);
