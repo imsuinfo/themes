@@ -261,8 +261,8 @@
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
@@ -305,12 +305,6 @@
   border: 2px outset;
   margin: 0px 2px;
 
-  min-height: 48px;
-
-  width: 148px;
-  min-width: 148px;
-  max-width: 148px;
-
   word-wrap: break-word;
   word-break: break-word;
 
@@ -344,10 +338,13 @@
   padding: 2px 4px;
   margin-bottom: 2px;
 
-  min-height: 16px;
-  max-height: 40px;
+  min-height: 15px;
+  max-height: 30px;
+  line-height: 15px;
 
-  overflow: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
 
   text-align: center;
 
