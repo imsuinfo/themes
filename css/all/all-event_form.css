@@ -155,25 +155,25 @@
 
 
 /*** View ***/
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
 }
 
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-requirements {
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-requirements {
   color: #004cb6;
 
   font-weight: bold;
   font-style: italic;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group {
+#mfcs-request-view-0-form .request-field_groups > .group {
   display: table;
 
   margin: 10px 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request {
   display: table-cell;
   vertical-align: top;
   box-sizing: border-box;
@@ -181,7 +181,7 @@
   overflow: auto;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper {
   background-color: #d0d0d0;
 
   border-top: 1px outset #a0a0a0;
@@ -190,15 +190,15 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
   float: right;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request {
   position: relative;
 
   clear: both;
@@ -208,46 +208,46 @@
   font-family: monospace;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.even {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.even {
   background-color: #f4f4f4;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.odd {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.odd {
   background-color: #ffffff;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-label {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-label {
   display: block;
   float: left;
 
   font-weight: bold;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-large > .item-label {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-large > .item-label {
   display: block;
 
   font-weight: bold;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request > .item-label:after {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-label:after {
   content: ': ';
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value {
   display: block;
 
   text-align: right;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-large > .item-value {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-large > .item-value {
   display: block;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value > .item-value-instance-dates-category {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value > .item-value-instance-dates-category {
   font-size: 12px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
   background-color: #d0d0d0;
 
   margin: 0px;
@@ -257,22 +257,22 @@
   border-right: 1px outset #a0a0a0;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
   display: inline-block;
   vertical-align: top;
   margin: 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
   font-weight: normal;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
   display: inline;
   vertical-align: top;
 
@@ -280,23 +280,23 @@
   font-weight: normal;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
   display: inline;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
   vertical-align: top;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-date,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-date {
   float: right;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
   position: relative;
 
   border: 1px dotted #707070;
@@ -304,14 +304,14 @@
   background-color: #f4f4f4;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
   display: inline-block;
   font-weight: bold;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
   display: inline-block;
 }
 

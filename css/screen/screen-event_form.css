@@ -77,9 +77,9 @@
 
 
 /*** View ***/
-#mfcs-request-view-0-page .request-section-display,
-#mfcs-request-view-0-page .request-section-review-operations,
-#mfcs-request-view-0-page .request-section-review-log {
+#mfcs-request-view-0-form .request-section-display,
+#mfcs-request-view-0-form .request-section-review-operations,
+#mfcs-request-view-0-form .request-section-review-log {
   min-width: 960px;
 
   padding: 5px 0px;
@@ -87,18 +87,18 @@
   border-top-width: 1px;
 }
 
-#mfcs-request-view-0-page #request-review-log,
-#mfcs-request-view-0-page #request-review-operations {
+#mfcs-request-view-0-form #request-review-log,
+#mfcs-request-view-0-form #request-review-operations {
   font-size: 20px;
   line-height: 24px;
 }
 
-#mfcs-request-view-0-page .request-section-review {
+#mfcs-request-view-0-form .request-section-review {
   margin: 10px 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log > .fieldset-wrapper,
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper {
+#mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper,
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -106,11 +106,11 @@
   margin: 0px auto;
 }
 
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .requirements {
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements {
   margin: 10px 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-as_reviewer > .request-section-review-operations-as_reviewer-message {
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .request-section-review-operations-as_reviewer > .request-section-review-operations-as_reviewer-message {
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -118,7 +118,7 @@
   margin: 10px 0px 5px 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups {
+#mfcs-request-view-0-form .request-field_groups {
   margin: 0px auto;
 
   width: 960px;
@@ -126,11 +126,11 @@
   max-width: 960px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group {
+#mfcs-request-view-0-form .request-field_groups > .group {
   margin: 10px 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request {
   width: 478px;
   min-width: 478px;
   max-width: 478px;
@@ -141,26 +141,26 @@
   border: 1px outset;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper {
   padding: 0px 5px;
   margin: 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
   padding-left: 6px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request {
   min-height: 18px;
 
   padding: 10px 5px 5px 5px;
 }
 
-#mfcs-request-view-0-page .request-display-submit {
+#mfcs-request-view-0-form .request-display-submit {
   width: 960px;
   min-width: 960px;
   max-width: 960px;
@@ -168,57 +168,57 @@
   margin: 5px auto;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-submit,
-#mfcs-request-view-0-page .request-section-review-operations-submit {
+#mfcs-request-view-0-form .request-section-review-log-submit,
+#mfcs-request-view-0-form .request-section-review-operations-submit {
   margin: 5px 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item {
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item {
   margin: 10px 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item {
   margin: 10px auto;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
   padding: 5px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
   max-width: 740px;
 
   font-size: 14px;
   line-height: 18px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title {
   display: inline;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
   font-size: 10px;
   line-height: 14px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
   font-size: 9px;
 }
 
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
   min-height: 18px;
 
   padding: 5px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
   padding: 3px 0px 0px 0px;
 }
 

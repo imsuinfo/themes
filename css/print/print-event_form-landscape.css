@@ -3,12 +3,12 @@
 
 
   /*** View ***/
-  #mfcs-request-view-0-page .request-section-display,
-  #mfcs-request-view-0-page .request-section-review-log {
+  #mfcs-request-view-0-form .request-section-display,
+  #mfcs-request-view-0-form .request-section-review-log {
     min-width: 940px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log > .fieldset-wrapper {
+  #mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper {
     width: 940px;
     min-width: 940px;
     max-width: 940px;
@@ -16,7 +16,7 @@
     margin: 0px auto;
   }
 
-  #mfcs-request-view-0-page .request-field_groups {
+  #mfcs-request-view-0-form .request-field_groups {
     margin: 0px auto;
 
     width: 940px;
@@ -24,41 +24,41 @@
     max-width: 940px;
   }
 
-  #mfcs-request-view-0-page .request-field_groups > .group > .section-request {
+  #mfcs-request-view-0-form .request-field_groups > .group > .section-request {
     width: 470px;
     min-width: 470px;
     max-width: 470px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
-  #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
     max-width: 720px;
 
     font-size: 12px;
     line-height: 14px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
-  #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
     font-size: 9px;
     line-height: 12px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
-  #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
     font-size: 9px;
     line-height: 14px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message,
-  #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
     min-height: 12px;
 
     padding: 3px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
-  #mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
     padding: 3px 0px 0px 0px;
   }
 
@@ -67,7 +67,7 @@
     max-width: 940px;
   }
 
-  #mfcs-request-view-0-page .request-section-review-log {
+  #mfcs-request-view-0-form .request-section-review-log {
     width: 940px;
     min-width: 940px;
     max-width: 940px;

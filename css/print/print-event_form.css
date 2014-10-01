@@ -101,110 +101,110 @@
   line-height: 20px;
 }
 
-#mfcs-request-view-0-page .request-section-review-operations {
+#mfcs-request-view-0-form .request-section-review-operations {
   display: none;
 }
 
-#mfcs-request-view-0-page .request-review-log-submit {
+#mfcs-request-view-0-form .request-review-log-submit {
   display: none;
 }
 
-#mfcs-request-view-0-page .request-section-display,
-#mfcs-request-view-0-page .request-section-review-operations,
-#mfcs-request-view-0-page .request-section-review-log {
+#mfcs-request-view-0-form .request-section-display,
+#mfcs-request-view-0-form .request-section-review-operations,
+#mfcs-request-view-0-form .request-section-review-log {
   border: 0px none;
   padding: 0px;
   margin: 0px;
   outline: 0px;
 }
 
-#mfcs-request-view-0-page .request-section-display > legend,
-#mfcs-request-view-0-page .request-section-review-operations > legend,
-#mfcs-request-view-0-page .request-section-review-log > legend {
+#mfcs-request-view-0-form .request-section-display > legend,
+#mfcs-request-view-0-form .request-section-review-operations > legend,
+#mfcs-request-view-0-form .request-section-review-log > legend {
   display: none;
 }
 
-#mfcs-request-view-0-page .request-section-display,
-#mfcs-request-view-0-page #request-review-operation,
-#mfcs-request-view-0-page .request-section-review-log {
+#mfcs-request-view-0-form .request-section-display,
+#mfcs-request-view-0-form #request-review-operation,
+#mfcs-request-view-0-form .request-section-review-log {
   font-size: 12px;
   line-height: 16px;
 }
 
-#mfcs-request-view-0-page .request-section-review {
+#mfcs-request-view-0-form .request-section-review {
   margin: 5px 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group {
+#mfcs-request-view-0-form .request-field_groups > .group {
   page-break-inside: avoid;
 
   margin: 5px 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request {
   min-height: 150px;
 
   margin: 3px;
   border: 1px outset;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper {
   background-color: #d0d0d0;
 
   padding: 0px 2px;
   margin: 0px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
   padding-left: 2px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-label {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-label {
   font-size: 16px;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .field-request-item-information-user_id > .field-request-item-values > .field-request-item-values-value > .field-request-item-values-value-value > a {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .field-request-item-information-user_id > .field-request-item-values > .field-request-item-values-value > .field-request-item-values-value-value > a {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
 }
 
-#mfcs-request-view-0-page .request-field_groups > .group > .section-request > .item-request {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request {
   min-height: 20px;
 
   padding: 5px 2px 2px 5px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .fieldset-wrapper > .review-item {
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item {
   margin: 5px 0px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item {
   margin: 5px auto;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-history > .review-item > .review-item-label {
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
   padding: 3px;
 }
 
-#mfcs-request-view-0-page .request-section-review-log.mode-normal {
+#mfcs-request-view-0-form .request-section-review-log.mode-normal {
   page-break-before: always;
 }
 
-#mfcs-request-view-0-page .request-section-review-log,
-#mfcs-request-view-0-page .request-section-review-operations {
+#mfcs-request-view-0-form .request-section-review-log,
+#mfcs-request-view-0-form .request-section-review-operations {
   margin: 0px auto;
 }
 
-#mfcs-request-view-0-page .request-display-submit {
+#mfcs-request-view-0-form .request-display-submit {
   display: none;
 }
 
-#mfcs-request-view-0-page .request-section-review-log-submit {
+#mfcs-request-view-0-form .request-section-review-log-submit {
   display: none;
 }
 

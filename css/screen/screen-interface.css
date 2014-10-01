@@ -72,18 +72,18 @@
 
 
 /*** View ***/
-#mfcs-request-view-0-page #request-display-submit-uncancel,
-#mfcs-request-view-0-page #request-display-submit-cancel {
+#mfcs-request-view-0-form #request-display-submit-uncancel,
+#mfcs-request-view-0-form #request-display-submit-cancel {
   color: #000000;
   background-color: #e86f69;
 }
 
-#mfcs-request-view-0-page #request-display-submit-uncancel:focus,
-#mfcs-request-view-0-page #request-display-submit-uncancel:active,
-#mfcs-request-view-0-page #request-display-submit-uncancel:hover,
-#mfcs-request-view-0-page #request-display-submit-cancel:focus,
-#mfcs-request-view-0-page #request-display-submit-cancel:active,
-#mfcs-request-view-0-page #request-display-submit-cancel:hover {
+#mfcs-request-view-0-form #request-display-submit-uncancel:focus,
+#mfcs-request-view-0-form #request-display-submit-uncancel:active,
+#mfcs-request-view-0-form #request-display-submit-uncancel:hover,
+#mfcs-request-view-0-form #request-display-submit-cancel:focus,
+#mfcs-request-view-0-form #request-display-submit-cancel:active,
+#mfcs-request-view-0-form #request-display-submit-cancel:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -98,23 +98,23 @@
 
 
 /*** Cancel / Uncancel ***/
-#mfcs-request-view-0-page #request-uncancel-submit-yes,
+#mfcs-request-view-0-form #request-uncancel-submit-yes,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-yes,
-#mfcs-request-view-0-page #request-cancel-submit-yes,
+#mfcs-request-view-0-form #request-cancel-submit-yes,
 #mfcs-request-cancel-0-form #request-cancel-submit-yes {
   color: #000000;
   background-color: #e86f69;
 }
 
-#mfcs-request-view-0-page #request-uncancel-submit-yes:focus,
-#mfcs-request-view-0-page #request-uncancel-submit-yes:active,
-#mfcs-request-view-0-page #request-uncancel-submit-yes:hover,
+#mfcs-request-view-0-form #request-uncancel-submit-yes:focus,
+#mfcs-request-view-0-form #request-uncancel-submit-yes:active,
+#mfcs-request-view-0-form #request-uncancel-submit-yes:hover,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-yes:focus,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-yes:active,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-yes:hover,
-#mfcs-request-view-0-page #request-cancel-submit-yes:focus,
-#mfcs-request-view-0-page #request-cancel-submit-yes:active,
-#mfcs-request-view-0-page #request-cancel-submit-yes:hover,
+#mfcs-request-view-0-form #request-cancel-submit-yes:focus,
+#mfcs-request-view-0-form #request-cancel-submit-yes:active,
+#mfcs-request-view-0-form #request-cancel-submit-yes:hover,
 #mfcs-request-cancel-0-form #request-cancel-submit-yes:focus,
 #mfcs-request-cancel-0-form #request-cancel-submit-yes:active,
 #mfcs-request-cancel-0-form #request-cancel-submit-yes:hover {
@@ -129,23 +129,23 @@
   border: 1px outset #333333;
 }
 
-#mfcs-request-view-0-page #request-cancel-submit-no,
+#mfcs-request-view-0-form #request-cancel-submit-no,
 #mfcs-request-cancel-0-form #request-cancel-submit-no,
-#mfcs-request-view-0-page #request-uncancel-submit-no,
+#mfcs-request-view-0-form #request-uncancel-submit-no,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-no {
   color: #000000;
   background-color: #cecece;
 }
 
-#mfcs-request-view-0-page #request-uncancel-submit-no:focus,
-#mfcs-request-view-0-page #request-uncancel-submit-no:active,
-#mfcs-request-view-0-page #request-uncancel-submit-no:hover,
+#mfcs-request-view-0-form #request-uncancel-submit-no:focus,
+#mfcs-request-view-0-form #request-uncancel-submit-no:active,
+#mfcs-request-view-0-form #request-uncancel-submit-no:hover,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-no:focus,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-no:active,
 #mfcs-request-uncancel-0-form #request-uncancel-submit-no:hover,
-#mfcs-request-view-0-page #request-cancel-submit-no:focus,
-#mfcs-request-view-0-page #request-cancel-submit-no:active,
-#mfcs-request-view-0-page #request-cancel-submit-no:hover,
+#mfcs-request-view-0-form #request-cancel-submit-no:focus,
+#mfcs-request-view-0-form #request-cancel-submit-no:active,
+#mfcs-request-view-0-form #request-cancel-submit-no:hover,
 #mfcs-request-cancel-0-form #request-cancel-submit-no:focus,
 #mfcs-request-cancel-0-form #request-cancel-submit-no:active,
 #mfcs-request-cancel-0-form #request-cancel-submit-no:hover {
