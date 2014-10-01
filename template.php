@@ -1617,10 +1617,18 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
       break;
 
     case 'ie':
-      drupal_add_http_header('X-UA-Compatible', 'IE=Edge');
-
-      $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge';
       $cf['is']['in_ie_normal_mode'] = TRUE;
+
+      if ($cf['is']['html5']) {
+        drupal_add_http_header('X-UA-Compatible', 'IE=Edge,chrome=1');
+
+        $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge,chrome=1';
+      }
+      else {
+        drupal_add_http_header('X-UA-Compatible', 'IE=Edge');
+
+        $cf['meta']['http-equiv']['X-UA-Compatible'] = 'IE=Edge';
+      }
 
 
       $custom_css = array();
