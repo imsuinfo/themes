@@ -6,7 +6,10 @@
   display: none;
 }
 
+
 .mcneese.alias-part-0-requests.alias-part-1-view_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-print_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-pdf_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-history_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-agreement_0 .html_tag-header.page-title {
   display: inherit;
