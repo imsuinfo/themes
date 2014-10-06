@@ -294,6 +294,10 @@ function mcneese_www_preprocess_page(&$vars) {
 
       if ($type == 731) {
         $vars['mcneese_bulletin_mode'] = 1;
+
+        if (!empty($node->field_bulletin['und'][0]['safe_value'])) {
+          $cf['page']['bulletin'] = $node->field_bulletin['und'][0]['safe_value'];
+        }
       }
 
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
