@@ -19,6 +19,11 @@
   min-width: 960px;
 }
 
+.mcneese.is-flex_width #mcneese-page,
+.mcneese.is-fixed_width #mcneese-page {
+  margin-bottom: 16px;
+}
+
 
 
 /*** Calendar - Month ***/
