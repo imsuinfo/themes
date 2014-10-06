@@ -2636,7 +2636,7 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
 
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']) . "\n");
       print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<h2 class="html_tag-heading">Bulletin</h2>' . "\n");
+      print('<h2 class="html_tag-heading element-invisible">Bulletin</h2>' . "\n");
       print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']) . "\n");
 
