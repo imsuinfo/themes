@@ -26,9 +26,11 @@
 
 
 
-/*** Calendar - Month ***/
+/*** Calendar - Month/Day ***/
 #mfcs-calendar-0-month > .calendar-month,
-#mfcs-calendar-0-month > .calendar-ical-links {
+#mfcs-calendar-0-month > .calendar-links-wrapper,
+#mfcs-calendar-0-day > .calendar-day,
+#mfcs-calendar-0-day > .calendar-links-wrapper {
   width: 924px;
   min-width: 924px;
   max-width: 924px;
@@ -37,31 +39,15 @@
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-title,
-#mfcs-calendar-0-month > .calendar-month > .calendar-title > h3 {
+#mfcs-calendar-0-month > .calendar-month > .calendar-title > h3,
+#mfcs-calendar-0-day > .calendar-day > .calendar-title,
+#mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
   font-size: 16px;
   line-height: 20px;
 }
 
-#mfcs-calendar-0-month > .calendar-ical-links > h3 {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item {
-  padding: 1px 0px;
-}
-
-#mfcs-calendar-0-month > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item > .calendar-ical-links-list-item-label {
-  display: inline-block;
-  min-width: 40px;
-}
-
-#mfcs-calendar-0-month > .calendar-month > .calendar-navigation {
+#mfcs-calendar-0-month > .calendar-month > .calendar-navigation,
+#mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
   position: absolute;
   top: 5px;
 
@@ -71,20 +57,25 @@
 }
 
 /* workaround: links on opera end up unclickable */
-.mcneese.agent-engine-presto #mfcs-calendar-0-month > .calendar-month > .calendar-navigation {
+.mcneese.agent-engine-presto #mfcs-calendar-0-month > .calendar-month > .calendar-navigation,
+.mcneese.agent-engine-presto .calendar-day-wrapper > .calendar-day > .calendar-navigation {
   z-index: 1;
 }
 
-#mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-previous {
+#mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-previous,
+#mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-previous {
   position: absolute;
   left: 0px;
 }
 
-#mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-next {
+#mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-next,
+#mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-next {
   position: absolute;
   right: 0px;
 }
 
+
+/** Calendar - Month **/
 #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   width: 132px;
   min-width: 132px;
@@ -118,66 +109,7 @@
 }
 
 
-
-/*** Calendar - Day ***/
-#mfcs-calendar-0-day > .calendar-day,
-#mfcs-calendar-0-day > .calendar-ical-links {
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
-
-  margin: 5px auto;
-}
-
-#mfcs-calendar-0-day > .calendar-day > .calendar-title,
-#mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
-  font-size: 16px;
-  line-height: 20px;
-}
-
-#mfcs-calendar-0-day > .calendar-ical-links > h3 {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item {
-  padding: 1px 0px;
-}
-
-#mfcs-calendar-0-day > .calendar-ical-links > .calendar-ical-links-list > .calendar-ical-links-list-item > .calendar-ical-links-list-item-label {
-  display: inline-block;
-  min-width: 40px;
-}
-
-#mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
-  position: absolute;
-  top: 5px;
-
-  width: 924px;
-  min-width: 924px;
-  max-width: 924px;
-}
-
-/* workaround: links on opera end up unclickable */
-.mcneese.agent-engine-presto .calendar-day-wrapper > .calendar-day > .calendar-navigation {
-  z-index: 1;
-}
-
-#mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-previous {
-  position: absolute;
-  left: 0px;
-}
-
-#mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-next {
-  position: absolute;
-  right: 0px;
-}
-
+/** Calendar - Day **/
 #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-header-wrapper > .calendar-header > .calendar-day-wrapper > .calendar-day {
   width: 912px;
   min-width: 912px;
@@ -216,6 +148,42 @@
   width: 809px;
   min-width: 809px;
   max-width: 809px;
+}
+
+
+/** Calendar Links **/
+#mfcs-calendar-0-month > .calendar-links-wrapper,
+#mfcs-calendar-0-day > .calendar-links-wrapper {
+  position: relative;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links,
+#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-right: 10px;
+}
+
+#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links > .calendar-links-title,
+#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links > .calendar-links-title {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item,
+#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item {
+  padding: 1px 0px;
+}
+
+#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item > .calendar-links-list-item-label,
+#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item > .calendar-links-list-item-label {
+  display: inline-block;
+  min-width: 40px;
 }
 
 
