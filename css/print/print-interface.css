@@ -24,7 +24,30 @@
 
 
 /*** Statistics Page ***/
-.mcneese #mfcs-statistics-page {
+#mfcs-statistics-page {
   font-size: 12px;
   line-height: 16px;
+}
+
+
+
+/*** E-mail Log Page ***/
+#mfcs-request-email_log-0-page {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#mfcs-request-email_log-0-page .email_log-headers-wrapper.collapsed {
+  display: none;
+}
+
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:visited,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:focus,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:active,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:hover {
+  color: inherit;
+  background-color: inherit;
+
+  text-decoration: none;
 }

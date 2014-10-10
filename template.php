@@ -222,6 +222,30 @@ function mfcs_render_page() {
           $rebuild_breadcrumb = TRUE;
           $dont_append_title = TRUE;
         }
+        elseif ($path_parts[1] == 'email_log-0') {
+          $title = "E-mail Log";
+          $pre_crumb_title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
+
+          if (count($path_parts) > 3 && $path_parts[2] == 'view' && cf_is_integer($path_parts[3])) {
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/view/' . $path_parts[3] . '" title="View E-mail Log">View E-mail Log</a>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">E-mail ' . $path_parts[3] . '</div>';
+          }
+
+          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+
+          $rebuild_breadcrumb = TRUE;
+          $dont_append_title = TRUE;
+        }
         elseif ($path_parts[1] == 'management') {
           $title = "Requests Management";
           $pre_crumb_title = "Requests Management";
