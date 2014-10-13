@@ -28,9 +28,9 @@
 
 /*** Calendar - Month/Day ***/
 #mfcs-calendar-0-month > .calendar-month,
-#mfcs-calendar-0-month > .calendar-links-wrapper,
+#mfcs-calendar-0-month > .links_and_filters-wrapper,
 #mfcs-calendar-0-day > .calendar-day,
-#mfcs-calendar-0-day > .calendar-links-wrapper {
+#mfcs-calendar-0-day > .links_and_filters-wrapper {
   width: 924px;
   min-width: 924px;
   max-width: 924px;
@@ -41,21 +41,13 @@
   margin: 5px auto;
 }
 
-#mfcs-calendar-0-month > .calendar-links-wrapper,
-#mfcs-calendar-0-day > .calendar-links-wrapper {
+#mfcs-calendar-0-month > .links_and_filters-wrapper,
+#mfcs-calendar-0-day > .links_and_filters-wrapper {
   width: 924px;
   min-width: 924px;
   max-width: 924px;
 
   margin: 10px auto 5px auto;
-}
-
-#mfcs-calendar-0-month > .calendar-month > .calendar-title,
-#mfcs-calendar-0-month > .calendar-month > .calendar-title > h3,
-#mfcs-calendar-0-day > .calendar-day > .calendar-title,
-#mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-navigation,
@@ -163,37 +155,38 @@
 }
 
 
-/** Calendar Links **/
-#mfcs-calendar-0-month > .calendar-links-wrapper,
-#mfcs-calendar-0-day > .calendar-links-wrapper {
+/** Links and Filters **/
+#mfcs-links_and_filters > .calendar-day > .calendar-title,
+#mfcs-links_and_filters > .calendar-day > .calendar-title > h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#mfcs-links_and_filters {
   position: relative;
 
   font-size: 12px;
   line-height: 16px;
 }
 
-#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links,
-#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links {
+#mfcs-links_and_filters > .links_and_filters-group {
   display: inline-block;
   vertical-align: top;
 
   margin-right: 10px;
 }
 
-#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links > .calendar-links-title,
-#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links > .calendar-links-title {
+#mfcs-links_and_filters > .links_and_filters-group > .links_and_filters > .links_and_filters-title {
   font-size: 14px;
   line-height: 18px;
 }
 
 
-#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item,
-#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item {
+#mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.ical > .links_and_filters-list > .links_and_filters-list-item {
   padding: 1px 0px;
 }
 
-#mfcs-calendar-0-month > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item > .calendar-links-list-item-label,
-#mfcs-calendar-0-day > .calendar-links-wrapper > .calendar-links.ical > .calendar-links-list > .calendar-links-list-item > .calendar-links-list-item-label {
+#mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.ical > .links_and_filters-list > .links_and_filters-list-item > .links_and_filters-list-item-label {
   display: inline-block;
   min-width: 40px;
 }
