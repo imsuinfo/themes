@@ -41,6 +41,14 @@
   margin: 5px auto;
 }
 
+#mfcs-calendar-0-month > .calendar-month > .calendar-title,
+#mfcs-calendar-0-month > .calendar-month > .calendar-title > h3,
+#mfcs-calendar-0-day > .calendar-day > .calendar-title,
+#mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
 #mfcs-calendar-0-month > .links_and_filters-wrapper,
 #mfcs-calendar-0-day > .links_and_filters-wrapper {
   width: 924px;
@@ -156,12 +164,6 @@
 
 
 /** Links and Filters **/
-#mfcs-links_and_filters > .calendar-day > .calendar-title,
-#mfcs-links_and_filters > .calendar-day > .calendar-title > h3 {
-  font-size: 16px;
-  line-height: 20px;
-}
-
 #mfcs-links_and_filters {
   position: relative;
 
@@ -180,7 +182,6 @@
   font-size: 14px;
   line-height: 18px;
 }
-
 
 #mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.ical > .links_and_filters-list > .links_and_filters-list-item {
   padding: 1px 0px;
