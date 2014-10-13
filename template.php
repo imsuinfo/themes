@@ -236,7 +236,7 @@ function mfcs_render_page() {
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '" title="' . $title . '">' . $title . '</a>';
 
           if (count($path_parts) > 3 && $path_parts[2] == 'view' && cf_is_integer($path_parts[3])) {
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/view/' . $path_parts[3] . '" title="View E-mail Logs">View E-mail Logs</a>';
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/view/' . $path_parts[3] . '" title="View E-mail Logs">View E-mail Log</a>';
             $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">E-mail ' . $path_parts[3] . '</div>';
           }
 
