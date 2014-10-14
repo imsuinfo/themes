@@ -85,16 +85,11 @@ function mfcs_render_page() {
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
 
-          $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests' . $url_arguments .'" title="' . $title . '">' . $title . '</a>';
-
           $rebuild_breadcrumb = TRUE;
           $dont_append_title = TRUE;
         }
       }
       else {
-        $title = "Requests Dashboard";
-        $cf['page']['breadcrumb'][1] = '<a href="' . $base_path . 'requests' . $url_arguments .'" title="' . $title . '">' . $title . '</a>';
-
         $rebuild_breadcrumb = TRUE;
         $dont_append_title = TRUE;
 
@@ -113,6 +108,8 @@ function mfcs_render_page() {
             $title = "Copy Request";
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title .'">' . $title . '</a>';
           }
+
+          unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'list-0') {
           $title = "List Requests";
@@ -123,6 +120,8 @@ function mfcs_render_page() {
           if ($count_parts == 2) {
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments .'" title="' . $title . '">' . $title . '</a>';
           }
+
+          unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'review-0') {
           $title = "Review Requests";
@@ -133,6 +132,8 @@ function mfcs_render_page() {
           if ($count_parts == 2) {
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
+
+          unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'reviewers-0') {
           $title = "Manage Reviewers";
@@ -151,7 +152,7 @@ function mfcs_render_page() {
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
-          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'calendar-0') {
@@ -170,7 +171,6 @@ function mfcs_render_page() {
 
             $new_breadcrumb = array();
             $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
             if ($count_parts > 4 && $path_parts[2] == 'month') {
@@ -184,7 +184,7 @@ function mfcs_render_page() {
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $date_string . '</a>';
             }
 
-            // original breadcrumb gets overriden to remove extra/invalid url paths.
+            // original breadcrumb gets overridden to remove extra/invalid url paths.
             $cf['page']['breadcrumb'] = $new_breadcrumb;
           }
         }
@@ -197,6 +197,8 @@ function mfcs_render_page() {
           if ($count_parts == 2) {
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
+
+          unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'statistics-0') {
           $title = "Request Statistics";
@@ -211,7 +213,7 @@ function mfcs_render_page() {
 
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'email_log-0') {
@@ -232,7 +234,7 @@ function mfcs_render_page() {
             $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">E-mail ' . $path_parts[3] . '</div>';
           }
 
-          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'management') {
@@ -246,8 +248,11 @@ function mfcs_render_page() {
           $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-          // original breadcrumb gets overriden to remove extra/invalid url paths.
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
+        }
+        else {
+          unset($cf['page']['breadcrumb'][1]);
         }
 
         if ($count_parts > 2) {
@@ -402,11 +407,30 @@ function mfcs_preprocess_toolbar(&$vars) {
     $url_arguments .= '?' . $mfcs_determined['complete'];
   }
 
-  foreach ($links as &$link) {
-    $link['href'] .= $url_arguments;
+  foreach ($links as $key => $link) {
+    if (empty($link['href'])) continue;
+
+    $links[$key]['href'] .= $url_arguments;
   }
 
   $vars['toolbar']['toolbar_menu']['#links'] = $links;
+
+  if (!empty($vars['toolbar']['toolbar_user']['#links'])) {
+    foreach ($vars['toolbar']['toolbar_user']['#links'] as $key => $link) {
+      if (empty($link['href'])) continue;
+      if ($link['href'] == 'user/logout') continue;
+
+      $vars['toolbar']['toolbar_user']['#links'][$key]['href'] .= $url_arguments;
+    }
+  }
+
+  if (!empty($vars['toolbar']['toolbar_drawer'][0]['shortcuts'])) {
+    foreach ($vars['toolbar']['toolbar_drawer'][0]['shortcuts'] as $key => $link) {
+      if (empty($link['#href'])) continue;
+
+      $vars['toolbar']['toolbar_drawer'][0]['shortcuts'][$key]['#href'] .= $url_arguments;
+    }
+  }
 }
 
 /**
