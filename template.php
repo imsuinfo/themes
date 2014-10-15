@@ -151,6 +151,30 @@ function mfcs_render_page() {
             $title = drupal_get_title();
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
+          elseif ($count_parts == 4 && $path_parts[2] == 'delete') {
+            $title = "Delete Reviewer";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+        }
+        elseif ($path_parts[1] == 'proxy-0') {
+          $title = "Manage Proxies";
+          $pre_crumb_title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($count_parts == 4 && $path_parts[2] == 'delete') {
+            $title = "Delete Proxy";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
 
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
