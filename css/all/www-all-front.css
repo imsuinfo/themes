@@ -794,7 +794,7 @@
 .mcneese #mcneese-front_page-featured > .mcneese-front_page-featured-image > .mcneese-front_page-featured-image-overlay {
   display: inline-block;
   vertical-align: top;
-  position: relative;
+  position: absolute;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -810,16 +810,13 @@
 
   font-weight: bold;
 
-  top: -60px;
+  bottom: 0px;
+  left: 0px;
   z-index: 200;
 
   width: 690px;
   min-width: 690px;
   max-width: 690px;
-
-  height: 60px;
-  min-height: 60px;
-  max-height: 60px;
 
   pading: 2px;
 
