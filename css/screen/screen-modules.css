@@ -673,3 +673,12 @@
 .mcneese #accessibility-console .accessibility-console-content {
   overflow: auto;
 }
+
+
+
+/*** Cron ***/
+.mcneese.alias-admin_config_system_cron_jobs #ctools-export-ui-list-items > tbody > .ctools-export-ui-enabled > .ctools-export-ui-operations > .ctools-dropbutton {
+  position: relative;
+
+  margin-left: 7px;
+}
