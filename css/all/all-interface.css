@@ -46,9 +46,13 @@
   position: relative;
 }
 
+#mfcs-request-search-0-form #search-simple-fieldset > .fieldset-wrapper > .search-simple-field-text {
+  margin-top: 0px;
+}
+
 #mfcs-request-search-0-form #search-simple-fieldset > .fieldset-wrapper > .search-simple-field-sensitive {
   position: absolute;
-  top: 0px;
+  top: -0.5em;
   right: 0px;
 
   margin: 8px;
@@ -60,7 +64,7 @@
 
 #mfcs-request-search-0-form #search-advanced-fieldset > .fieldset-wrapper > .search-advanced-field-sensitive {
   position: absolute;
-  top: 0px;
+  top: -1.5em;
   right: 0px;
 
   margin: 8px;
