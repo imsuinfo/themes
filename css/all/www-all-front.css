@@ -1340,6 +1340,10 @@
   min-height: 175px;
 }
 
+.mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event.mcneese-front_page-spotlight-event-no_image {
+  min-height: 130px;
+}
+
 .mcneese #mcneese-front_page-spotlight > .mcneese-front_page-spotlight-event-even {
   padding: 7px 15px;
 }
