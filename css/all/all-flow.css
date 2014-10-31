@@ -276,6 +276,19 @@
 
 
 
+/*** Lists ***/
+.mcneese .item-list .pager {
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.mcneese .item-list .pager .li {
+  padding: 5px;
+}
+
+
+
 /*** Content Specific Style: list-box ***/
 .mcneese .list-box {
   display: block;
