@@ -138,6 +138,12 @@
   margin: 0px 1px;
 }
 
+.mcneese #views-ui-edit-form .ctools-dropbutton,
+.mcneese #views-ui-edit-form .ctools-button {
+  position: relative;
+  float: right;
+}
+
 
 
 /*** Views - Misc ***/
