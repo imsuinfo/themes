@@ -30,3 +30,12 @@
 .mcneese #mcneese-page-side {
   display: none;
 }
+
+
+
+/*** Tables (DataTable) ***/
+.mcneese .dataTables_wrapper > .dataTables_length,
+.mcneese .dataTables_wrapper > .dataTables_filter,
+.mcneese .dataTables_wrapper > .dataTables_paginate {
+  display: none;
+}
