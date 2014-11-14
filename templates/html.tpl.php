@@ -19,10 +19,18 @@
   <title><?php print($head_title); ?></title>
   <?php print($styles . "\n"); ?>
   <?php print($scripts . "\n");?>
+  <script>
+    // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.
+    // This allows for CSS code to react to whether or not javascript is enabled.
+    function mcneese_html_body_javascript_detection() {
+      document.body.removeAttribute('onLoad');
+      document.body.className = document.body.className.replace(/\bno-script\b/i, 'script');
+    }
+  </script>
   <!--(end-head)-->
 </head>
 
-<body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
+<body class="mcneese no-script <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
 <?php if (!$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
   <!--(begin-skipnav)-->
   <a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
