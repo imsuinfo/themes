@@ -63,3 +63,10 @@
 
   text-decoration: none;
 }
+
+
+
+/*** Reviewers Page ***/
+#mfcs-request-reviewers-0-form #reviewers-reviewer {
+  display: none;
+}
