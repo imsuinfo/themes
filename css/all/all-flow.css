@@ -103,7 +103,7 @@
 
 
 /*** Table ***/
-.mcneese table {
+.mcneese table:not(.no_default) {
   background-color: #eaeaea;
 
   border: 1px solid #a9a9a9;
@@ -112,7 +112,7 @@
   width: 100%;
 }
 
-.mcneese table > thead > tr > th {
+.mcneese table:not(.no_default) > thead > tr > th {
   color: #ffffff;
   background-color: #00477f;
 
@@ -126,9 +126,9 @@
   border: 1px solid #bebfb9;
 }
 
-.mcneese table.table-style-1 > thead > tr > th,
-.mcneese table.table-style-3 > thead > tr > th,
-.mcneese table.table-style-4 > thead > tr > th {
+.mcneese table:not(.no_default).table-style-1 > thead > tr > th,
+.mcneese table:not(.no_default).table-style-3 > thead > tr > th,
+.mcneese table:not(.no_default).table-style-4 > thead > tr > th {
   color: inherit;
   background-color: inherit;
 
@@ -137,8 +137,8 @@
   text-transform: inherit;
 }
 
-.mcneese table.table-style-2 > tbody > tr > th,
-.mcneese table.table-style-3 > tbody > tr > th {
+.mcneese table:not(.no_default).table-style-2 > tbody > tr > th,
+.mcneese table:not(.no_default).table-style-3 > tbody > tr > th {
   color: #ffffff;
   background-color: #00477f;
 
@@ -152,7 +152,7 @@
   border: 1px solid #bebfb9;
 }
 
-.mcneese table.table-style-4 > tbody > tr > th {
+.mcneese table:not(.no_default).table-style-4 > tbody > tr > th {
   color: inherit;
   background-color: inherit;
 
@@ -161,7 +161,7 @@
   text-transform: inherit;
 }
 
-.mcneese table > thead > tr > th > a {
+.mcneese table:not(.no_default) > thead > tr > th > a {
   display: block;
   position: relative;
 
@@ -170,33 +170,33 @@
   padding: 0px;
 }
 
-.mcneese table > thead > tr > th > a,
-.mcneese table > thead > tr > th > a:visited {
+.mcneese table:not(.no_default) > thead > tr > th > a,
+.mcneese table:not(.no_default) > thead > tr > th > a:visited {
   color: #fff703;
   text-decoration: none;
 }
 
-.mcneese table > thead > tr > th > a:hover,
-.mcneese table > thead > tr > th > a:focus {
+.mcneese table:not(.no_default) > thead > tr > th > a:hover,
+.mcneese table:not(.no_default) > thead > tr > th > a:focus {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.mcneese table > thead > tr > th > a:active {
+.mcneese table:not(.no_default) > thead > tr > th > a:active {
   color: #ff0000;
   text-decoration: underline;
 }
 
-.mcneese table > thead > tr > th.active {
+.mcneese table:not(.no_default) > thead > tr > th.active {
   background-color: #235e8a;
 }
 
-.mcneese table > thead > tr > th > a > img {
+.mcneese table:not(.no_default) > thead > tr > th > a > img {
   float: right;
 }
 
-.mcneese table > tbody > tr.even,
-.mcneese table > tbody > tr.odd {
+.mcneese table:not(.no_default) > tbody > tr.even,
+.mcneese table:not(.no_default) > tbody > tr.odd {
   border-color: #bebfb9;
   border-style: solid;
   border-width: 0px 1px;
@@ -204,24 +204,24 @@
   padding: 1px 8px;
 }
 
-.mcneese table > tbody > tr.even {
+.mcneese table:not(.no_default) > tbody > tr.even {
   background-color: #f3f4ee;
 }
 
-.mcneese table > tbody > tr.odd {
+.mcneese table:not(.no_default) > tbody > tr.odd {
   background-color: #ffffff;
 }
 
-.mcneese table > tbody > tr.drag {
+.mcneese table:not(.no_default) > tbody > tr.drag {
   background-color: #fe7fe7;
 }
 
-.mcneese table > tbody > tr.drag-previous {
+.mcneese table:not(.no_default) > tbody > tr.drag-previous {
   background-color: #ffbffb;
 }
 
-.mcneese table > tbody > tr > td,
-.mcneese table > tbody > tr > th {
+.mcneese table:not(.no_default) > tbody > tr > td,
+.mcneese table:not(.no_default) > tbody > tr > th {
   padding: 2px 5px;
 
   border-top: 1px solid #a9a9a9;
@@ -230,47 +230,47 @@
   border-left: 0px none;
 }
 
-.mcneese table > tbody > tr.even > td.active {
+.mcneese table:not(.no_default) > tbody > tr.even > td.active {
   background-color: #e9e9dd;
 }
 
-.mcneese table > tbody > tr.odd > td.active {
+.mcneese table:not(.no_default) > tbody > tr.odd > td.active {
   background-color: #e9e9dd;
 }
 
-.mcneese table > tbody > tr.selected > td,
-.mcneese table > tbody > tr.selected > td.active {
+.mcneese table:not(.no_default) > tbody > tr.selected > td,
+.mcneese table:not(.no_default) > tbody > tr.selected > td.active {
   background-color: #ffffcc;
 
   border-color: #eeeebb;
 }
 
-.mcneese table > tbody > tr > td {
+.mcneese table:not(.no_default) > tbody > tr > td {
   word-wrap: break-word;
 }
 
-.mcneese table > tbody > tr > td > a {
+.mcneese table:not(.no_default) > tbody > tr > td > a {
   word-wrap: break-word;
 }
 
-.mcneese table > tbody > tr > td > .indentation,
-.mcneese table > tbody > tr > td > a.tabledrag-handle,
-.mcneese table > tbody > tr > td > a.tabledrag-handle > .handle {
+.mcneese table:not(.no_default) > tbody > tr > td > .indentation,
+.mcneese table:not(.no_default) > tbody > tr > td > a.tabledrag-handle,
+.mcneese table:not(.no_default) > tbody > tr > td > a.tabledrag-handle > .handle {
   height: auto;
 }
 
-.mcneese table > tbody > tr > td > .indentation {
+.mcneese table:not(.no_default) > tbody > tr > td > .indentation {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-.mcneese table > caption {
+.mcneese table:not(.no_default) > caption {
   font-weight: bold;
 }
 
-.mcneese table.update > tbody > tr.warning {
+.mcneese table:not(.no_default).update > tbody > tr.warning {
    background-color: #fffce5;
 }
 
