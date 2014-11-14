@@ -10,6 +10,23 @@
   font-style: italic;
 }
 
+#mcneese-a_to_z_listing-content > .a_to_z_listing-list > .a_to_z_listing-item,
+#mcneese-a_to_z_listing-group > .a_to_z_listing-list > .a_to_z_listing-item,
+#mcneese-a_to_z_listing-webform > .a_to_z_listing-list > .a_to_z_listing-item {
+  margin-bottom: 5px;
+}
+
+#mcneese-a_to_z_listing-content > .a_to_z_listing-list > .a_to_z_listing-item > .item-group,
+#mcneese-a_to_z_listing-content > .a_to_z_listing-list > .a_to_z_listing-item > .item-event_datetime,
+#mcneese-a_to_z_listing-group > .a_to_z_listing-list > .a_to_z_listing-item > .item-group,
+#mcneese-a_to_z_listing-group > .a_to_z_listing-list > .a_to_z_listing-item > .item-event_datetime,
+#mcneese-a_to_z_listing-webform > .a_to_z_listing-list > .a_to_z_listing-item > .item-group,
+#mcneese-a_to_z_listing-webform > .a_to_z_listing-list > .a_to_z_listing-item > .item-event_datetime {
+  color: #303030;
+  font-size: 0.80em;
+  font-style: italic;
+}
+
 
 
 /*** Unsupported Notice ***/
