@@ -1,6 +1,12 @@
 
 
 
+/*** Global ***/
+.mcneese .table_listing-navigator > .table_listing-choice {
+  display: none;
+}
+
+
 /*** Dashboard ***/
 #mfcs-dashboard_page-choices {
   display: none;

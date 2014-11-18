@@ -2,6 +2,7 @@
 
 
 /*** Global ***/
+.mcneese .table_listing-navigator-bottom,
 .mcneese .request-listing-page-navigator-bottom,
 .mcneese .request-email_log-page-navigator-bottom,
 .mcneese .request-history-page-navigator,
@@ -9,13 +10,21 @@
   position: relative;
 
   min-height: 1.4em;
+
+  margin: 5px 0px;
 }
 
+.mcneese.script .table_listing-navigator {
+  display: none;
+}
+
+.mcneese .table_listing-navigator-top,
 .mcneese .request-listing-page-navigator-top,
 .mcneese .request-email_log-page-navigator-top {
   position: relative;
 }
 
+.mcneese .table_listing-navigator > .table_listing-choice,
 .mcneese .request-listing-page-navigator > .request-listing-page-choice,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-choice,
 .mcneese .request-history-page-navigator > .request-history-page-choice,
@@ -25,6 +34,13 @@
   vertical-align: top;
 }
 
+.mcneese .table_listing-navigator-bottom > .table_listing-choice-previous {
+  position: relative;
+
+  margin-right: 1.4em;
+}
+
+.mcneese .table_listing-navigator > .table_listing-choice-previous,
 .mcneese .request-listing-page-navigator > .request-listing-page-previous,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-previous,
 .mcneese .request-history-page-navigator > .request-history-page-previous,
@@ -32,11 +48,21 @@
   left: 0px;
 }
 
-.mcneese .request-listing-page-navigator > .request-listing-page-next,
+.mcneese .table_listing-navigator > .table_listing-choice-next,
+.mcneese .request-reviewers-page-navigator > .request-reviewers-page-next,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-next,
 .mcneese .request-history-page-navigator > .request-history-page-next,
 #search-simple-results-navigation > .search-simple-results-navigation-next {
   right: 0px;
+}
+
+.mcneese .table_listing-navigator > .table_listing-comment {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mcneese .table_listing-navigator > .table_listing-comment + .table_listing-next {
+  clear: both;
 }
 
 
