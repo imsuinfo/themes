@@ -276,6 +276,28 @@
 
 
 
+/*** Tables (datatables) ***/
+.mcneese.no-script table.dataTable.stripe > tbody > tr.odd,
+.mcneese .dataTables_wrapper > table.dataTable.stripe > tbody > tr.odd {
+  background-color: #f0f0f0;
+}
+
+.mcneese.no-script table.dataTable.stripe > tbody > tr.odd > td.sorting_1,
+.mcneese .dataTables_wrapper > table.dataTable.stripe > tbody > tr.odd > td.sorting_1 {
+  background-color: #e0e0e0;
+}
+
+.mcneese.no-script table.dataTable.stripe > tbody > tr.even > td.sorting_1,
+.mcneese .dataTables_wrapper > table.dataTable.stripe > tbody > tr.even > td.sorting_1 {
+  background-color: #f3f3f3;
+}
+
+.mcneese.no-script table.dataTable {
+  border-bottom: 1px solid #111111;
+}
+
+
+
 /*** Lists ***/
 .mcneese .item-list .pager {
   overflow: hidden;
