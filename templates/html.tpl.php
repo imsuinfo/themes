@@ -18,7 +18,6 @@
   <?php print($cf['headers'] . "\n"); ?>
   <title><?php print($head_title); ?></title>
   <?php print($styles . "\n"); ?>
-  <?php print($scripts . "\n");?>
   <script>
     // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.
     // This allows for CSS code to react to whether or not javascript is enabled.
@@ -27,6 +26,7 @@
       document.body.className = document.body.className.replace(/\bno-script\b/i, 'script');
     }
   </script>
+  <?php print($scripts . "\n");?>
   <!--(end-head)-->
 </head>
 
