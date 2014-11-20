@@ -18,7 +18,7 @@
   <?php print($cf['headers'] . "\n"); ?>
   <title><?php print($head_title); ?></title>
   <?php print($styles . "\n"); ?>
-  <script>
+  <script type="text/javascript">
     // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.
     // This allows for CSS code to react to whether or not javascript is enabled.
     function mcneese_html_body_javascript_detection() {
