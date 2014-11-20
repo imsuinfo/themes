@@ -40,3 +40,8 @@
 .mcneese .dataTables_wrapper > .dataTables_paginate {
   display: none;
 }
+
+.mcneese ul.dataTables.ColVis_collection,
+.mcneese div.dataTables.ColVis_catcher {
+  display: none !important;
+}
