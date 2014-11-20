@@ -27,6 +27,50 @@
   border: none;
 }
 
+.mcneese.script .script-invisible,
+.mcneese.no-script .no-script-invisible {
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.mcneese.script .script-hidden,
+.mcneese.no-script .no-script-hidden {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+
+  font-size: 0px;
+  line-height: 0px;
+
+  width: 0px;
+  min-width: 0px;
+  max-width: 0px;
+
+  height: 0px;
+  min-height: 0px;
+  max-height: 0px;
+
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
 .mcneese .node-unpublished {
   background-color: inherit;
 }
