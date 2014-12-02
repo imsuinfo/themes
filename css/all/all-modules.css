@@ -171,3 +171,10 @@
 
   margin: 5px;
 }
+
+
+
+/*** ckeditor ***/
+.mcneese table.cke_dialog:not(.no_default) {
+  width: inherit;
+}
