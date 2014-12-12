@@ -6,7 +6,8 @@
 .mcneese .request-listing-page-navigator-bottom,
 .mcneese .request-email_log-page-navigator-bottom,
 .mcneese .request-history-page-navigator,
-#search-simple-results-navigation {
+#search-simple-results-navigation,
+#search-advanced-results-navigation {
   position: relative;
 
   min-height: 1.4em;
@@ -28,7 +29,8 @@
 .mcneese .request-listing-page-navigator > .request-listing-page-choice,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-choice,
 .mcneese .request-history-page-navigator > .request-history-page-choice,
-#search-simple-results-navigation > .search-simple-results-navigation-choice {
+#search-simple-results-navigation > .search-simple-results-navigation-choice,
+#search-advanced-results-navigation > .search-advanced-results-navigation-choice {
   display: inline-block;
   position: absolute;
   vertical-align: top;
@@ -44,7 +46,8 @@
 .mcneese .request-listing-page-navigator > .request-listing-page-previous,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-previous,
 .mcneese .request-history-page-navigator > .request-history-page-previous,
-#search-simple-results-navigation > .search-simple-results-navigation-previous {
+#search-simple-results-navigation > .search-simple-results-navigation-previous,
+#search-advanced-results-navigation > .search-advanced-results-navigation-previous {
   left: 0px;
 }
 
@@ -52,7 +55,8 @@
 .mcneese .request-reviewers-page-navigator > .request-reviewers-page-next,
 .mcneese .request-email_log-page-navigator > .request-email_log-page-next,
 .mcneese .request-history-page-navigator > .request-history-page-next,
-#search-simple-results-navigation > .search-simple-results-navigation-next {
+#search-simple-results-navigation > .search-simple-results-navigation-next,
+#search-advanced-results-navigation > .search-advanced-results-navigation-next {
   right: 0px;
 }
 
