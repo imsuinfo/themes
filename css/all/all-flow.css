@@ -277,6 +277,11 @@
 
 
 /*** Tables (datatables) ***/
+.mcneese .dataTables_wrapper > .dataTable {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
 .mcneese.no-script table.dataTable.stripe > tbody > tr.odd,
 .mcneese .dataTables_wrapper > table.dataTable.stripe > tbody > tr.odd {
   background-color: #f0f0f0;
