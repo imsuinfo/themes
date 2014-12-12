@@ -159,3 +159,20 @@
 
   border: 1px outset #333333;
 }
+
+
+
+/*** Search DataTable ***/
+#mfcs-search_0-advanced_table_wrapper.dataTables_wrapper > table.dataTable > caption,
+#mfcs-search_0-simple_table_wrapper.dataTables_wrapper > table.dataTable > caption {
+  margin-top: 10px;
+}
+
+#mfcs-search_0-advanced_table_wrapper.dataTables_wrapper > .ColVis,
+#mfcs-search_0-simple_table_wrapper.dataTables_wrapper > .ColVis {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+
+  float: none;
+}
