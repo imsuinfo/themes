@@ -69,6 +69,11 @@
   clear: both;
 }
 
+.mcneese #edit-simple-results > .table_listing-comment,
+.mcneese #edit-advanced-results > .table_listing-comment {
+  margin-top: 5px;
+}
+
 
 
 /*** Search ***/
