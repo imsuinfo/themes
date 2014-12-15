@@ -110,9 +110,12 @@
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  border-bottom: 1px dotted #444444;
+  margin: 2px;
+}
+
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item:last-of-type {
+  border-bottom: 0px none;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a {
