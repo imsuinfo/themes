@@ -38,6 +38,10 @@
   overflow: visible;
 }
 
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  page-break-inside: avoid;
+}
+
 
 
 /*** Calendar - Day ***/
