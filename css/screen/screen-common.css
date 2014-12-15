@@ -80,6 +80,12 @@
   left: 0px;
 }
 
+#mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-this,
+#mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-this {
+  position: absolute;
+  left: 100px;
+}
+
 #mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-next,
 #mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-next {
   position: absolute;
