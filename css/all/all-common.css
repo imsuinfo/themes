@@ -367,7 +367,8 @@
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper,
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper {
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-id-wrapper {
   padding: 0px 4px;
   min-height: 16px;
 }
@@ -376,6 +377,13 @@
   font-style: italic;
 
   margin-bottom: 18px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-id-wrapper {
+  position: absolute;
+  bottom: 0px;
+
+  font-size: 10px;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper {
