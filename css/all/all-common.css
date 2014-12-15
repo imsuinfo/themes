@@ -13,6 +13,7 @@
 #mfcs-calendar-0-month > .calendar-month {
   display: table;
   position: relative;
+  box-sizing: border-box;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-title,
@@ -37,6 +38,7 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
   vertical-align: top;
+  box-sizing: border-box;
 
   text-align: center;
 
@@ -76,6 +78,7 @@
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
   display: table-cell;
   vertical-align: top;
+  box-sizing: border-box;
 
   border-right: 1px solid;
 }
@@ -91,6 +94,12 @@
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper.month-current {
   background-color: #ffffc0;
+}
+
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper.month-current.today {
+  border: 1px solid #000000;
+  border-right: 2px solid #000000;
+  background-color: #ffffd9;
 }
 
 #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
