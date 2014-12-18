@@ -176,8 +176,8 @@
   }
 
   #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
-    width: 400px;
-    min-width: 400px;
-    max-width: 400px;
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
   }
 }

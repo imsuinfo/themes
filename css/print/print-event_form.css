@@ -212,3 +212,8 @@
 #mfcs-request-agreement #agreement-submit {
   display: none;
 }
+
+#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+  font-size: 12px;
+  line-height: 16px;
+}

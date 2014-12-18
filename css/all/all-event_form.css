@@ -434,8 +434,6 @@
 #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
   border: 0px none;
   border-bottom: 1px solid #000000;
-}
 
-#mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-signature-input {
   min-height: 2em;
 }
