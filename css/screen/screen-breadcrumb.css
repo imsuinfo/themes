@@ -137,7 +137,7 @@
 .mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:hover,
 .mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:active,
 .mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb > a:focus {
-  z-index: 200;
+  z-index: 2000;
 }
 
 .mcneese #mcneese-breadcrumb.fixed.collapsed {

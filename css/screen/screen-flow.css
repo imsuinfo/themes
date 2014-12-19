@@ -613,7 +613,7 @@
   margin: 0px;
   padding: 0px;
 
-  z-index: 50;
+  z-index: 500;
   overflow: visible;
 }
 
@@ -627,7 +627,7 @@
   margin: 0px;
   padding: 0px;
 
-  z-index: 50;
+  z-index: 500;
   overflow: visible;
 }
 
@@ -650,7 +650,7 @@
 
 .mcneese #mcneese-float-left > .fixed.expanded,
 .mcneese #mcneese-float-right > .fixed.expanded {
-  z-index: 200;
+  z-index: 2000;
 }
 
 .mcneese #mcneese-float-left > .fixed {
@@ -706,7 +706,7 @@
   max-width: auto;
 
   overflow: visible;
-  z-index: 200;
+  z-index: 2000;
 }
 
 .mcneese #mcneese-float-left > .fixed.collapsed:active > .html_tag-header,
@@ -765,7 +765,7 @@
   max-width: 75%;
   width: auto;
 
-  z-index: 200;
+  z-index: 2000;
 
   overflow: auto;
   resize: both;

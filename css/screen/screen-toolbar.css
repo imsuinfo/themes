@@ -24,7 +24,7 @@
 .mcneese #mcneese-toolbar.fixed {
   position: fixed;
 
-  z-index: 100;
+  z-index: 10000;
 }
 
 .mcneese #mcneese-toolbar.relative {

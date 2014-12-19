@@ -282,7 +282,7 @@
   color: #f7ff00;
   background-color: #2970a0;
 
-  z-index: 200;
+  z-index: 2000;
 }
 
 .mcneese #mcneese-tabs.fixed > .navigation_list > .tab > a:active,

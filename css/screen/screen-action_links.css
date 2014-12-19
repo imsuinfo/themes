@@ -107,7 +107,7 @@
   color: #f7ff00;
   background-color: #2970a0;
 
-  z-index: 200;
+  z-index: 2000;
 }
 
 .mcneese #mcneese-action_links.fixed > .navigation_list > li > a,
