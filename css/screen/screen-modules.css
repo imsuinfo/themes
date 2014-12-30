@@ -683,8 +683,10 @@
 
 
 /*** Cron ***/
+.mcneese.alias-part-0-admin.alias-part-1-config.alias-part-2-system.alias-part-3-cron #ctools-export-ui-list-items > tbody > .ctools-export-ui-disabled > .ctools-export-ui-operations > .ctools-dropbutton,
 .mcneese.alias-part-0-admin.alias-part-1-config.alias-part-2-system.alias-part-3-cron #ctools-export-ui-list-items > tbody > .ctools-export-ui-enabled > .ctools-export-ui-operations > .ctools-dropbutton {
   position: relative;
+  right: inherit;
 
   margin-left: 7px;
 }
