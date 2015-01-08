@@ -417,3 +417,16 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+
+
+/*** Proxy Page ***/
+#mfcs-request-proxy-0-form #proxy > .fieldset-wrapper > .form-item-proxy-user_id,
+#mfcs-request-proxy-0-form #proxy > .fieldset-wrapper > .form-item-proxy-new_user {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-request-proxy-0-form #proxy > .fieldset-wrapper > .form-item-proxy-new_user {
+  margin: 22px 0px 0px 20px;
+}

@@ -76,3 +76,10 @@
 #mfcs-request-reviewers-0-form #reviewers-reviewer {
   display: none;
 }
+
+
+
+/*** Proxy Page ***/
+#mfcs-request-proxy-0-form #proxy {
+  display: none;
+}
