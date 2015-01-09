@@ -118,7 +118,7 @@
 .mcneese #mcneese-toolbar.collapsed:hover > .mcneese-toolbar-menu,
 .mcneese #mcneese-toolbar.collapsed:active > .mcneese-toolbar-menu,
 .mcneese #mcneese-toolbar.collapsed:focus > .mcneese-toolbar-menu {
-  display: block;
+  display: inline-block;
 
   min-height: 25px;
 }
