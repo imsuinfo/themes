@@ -53,3 +53,11 @@
 .mcneese #mcneese-work_area_menu > .html_tag-list > .html_tag-list_item > #mcneese-work_area_menu-page_width.work_area-state-off {
   background-image: url(../../images/toggle-page_width-fixed.png);
 }
+
+
+/*** Hide Workarea Menu on low resolutions ***/
+@media (max-width: 1090px) {
+  .mcneese #mcneese-work_area_menu {
+    display: none !important;
+  }
+}
