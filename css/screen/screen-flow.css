@@ -559,7 +559,7 @@
 
 .mcneese .mcneese-content,
 .mcneese .mcneese-content-main {
-  display: block;
+  display: inline;
   overflow-x: auto;
 
   margin: 0px;
