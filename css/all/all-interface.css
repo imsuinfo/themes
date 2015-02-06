@@ -288,6 +288,7 @@
 #mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label {
   margin: 10px 0px 0px 0px;
 }
+
 #mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-label:first-of-type {
   margin: 0px;
 }
@@ -321,9 +322,28 @@
   padding: 4px;
 }
 
-#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-deleted > .history_item-message-preserved,
-#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-deleted > .history_item-signature-preserved {
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-message,
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-signature {
+  margin: 0px 0px 0px 20px;
+}
+
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-signature {
+  margin-right: 20px;
+}
+
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-message > .history_item-message-preserved,
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-signature > .fieldset-wrapper > .history_item-signature-preserved {
   margin: 0px 0px 8px 0px;
+}
+
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-message > .history_item-message-preserved {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-signature > .fieldset-wrapper > .history_item-signature-preserved {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 
@@ -433,4 +453,15 @@
 
 #mfcs-request-proxy-0-form #proxy > .fieldset-wrapper > .form-item-proxy-new_user {
   margin: 22px 0px 0px 20px;
+}
+
+
+
+/*** Troubleshooting Page ***/
+#mfcs-request-troubleshoot-0-form .troubleshoot-code > .form-submit {
+  margin: 10px;
+}
+
+#mfcs-request-troubleshoot-0-form .troubleshoot-code > .code-separator {
+  margin-bottom: 20px;
 }
