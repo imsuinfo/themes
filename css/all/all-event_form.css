@@ -155,6 +155,11 @@
 
 
 /*** View ***/
+#mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper > .request-section-review-log-yet_to_review > .yet_to_review-list > .yet_to_review-list_item > .details_list > .details_list-item > .details_list-user > .details_list-user_id {
+  vertical-align: top;
+  font-size: 9px;
+}
+
 #mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
   display: inline-block;
   vertical-align: top;
