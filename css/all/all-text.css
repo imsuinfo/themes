@@ -29,6 +29,8 @@
 .mcneese .fake_link:visited {
   color: #00477f;
   text-decoration: underline;
+
+  cursor: pointer;
 }
 
 .mcneese .fake_link.improper_link,
