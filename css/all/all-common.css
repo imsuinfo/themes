@@ -425,25 +425,31 @@
   text-overflow: ellipsis;
 }
 
-
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper > .calendar-item-location {
   font-style: italic;
 }
 
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-id-wrapper {
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper {
   position: absolute;
   bottom: 0px;
 
   font-size: 10px;
+  line-height: 11px;
+
+  width: 100%;
 }
 
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-id-wrapper {
+  float: left;
 
-  font-size: 10px;
+  padding: 1px 3px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-type-wrapper {
+  float: right;
+
+  padding: 1px 3px;
 }
 
 #mfcs-calendar-0-day > .calendar-all_day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper {
@@ -458,6 +464,7 @@
 
 
 /** Item Type: Athletics (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-66 {
   color: #000000;
   background-color: #f9c7c7;
@@ -482,6 +489,7 @@
 }
 
 /** Item Type: Banquet (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-61 {
   color: #000000;
   background-color: #cdcd81;
@@ -510,6 +518,7 @@
 }
 
 /** Item Type: Ceremony / Presentation (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-64 {
   color: #000000;
   background-color: #aedeae;
@@ -534,6 +543,7 @@
 }
 
 /** Item Type: Fair / Expo (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-65 {
   color: #000000;
   background-color: #deacde;
@@ -558,6 +568,7 @@
 }
 
 /** Item Type: Lecture (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-59 {
   color: #000000;
   background-color: #ecc3ae;
@@ -582,6 +593,7 @@
 }
 
 /** Item Type: Meeting (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-57 {
   color: #000000;
   background-color: #add3e3;
@@ -606,6 +618,7 @@
 }
 
 /** Item Type: Other (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-67 {
   color: #000000;
   background-color: #9ed0d0;
@@ -630,6 +643,7 @@
 }
 
 /** Item Type: Performance (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-58 {
   color: #000000;
   background-color: #c8c8e3;
@@ -654,6 +668,7 @@
 }
 
 /** Item Type: Quick Meeting (142) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-142 {
   color: #000000;
   background-color: #cddeae;
@@ -678,6 +693,7 @@
 }
 
 /** Item Type: Reception (60) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-60 {
   color: #000000;
   background-color: #f1b157;
@@ -702,6 +718,7 @@
 }
 
 /** Item Type: Talent / Variety Show (63) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-63 {
   color: #000000;
   background-color: #ee8fab;
@@ -726,6 +743,7 @@
 }
 
 /** Item Type: Workshop (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-62 {
   color: #000000;
   background-color: #a2b9df;

@@ -77,12 +77,23 @@
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper,
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper,
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-type-wrapper,
-#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-id-wrapper {
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper {
   padding: 0px 4px;
   min-height: 14px;
   max-height: 16px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-type-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-id-wrapper {
+  padding: 1px 3px;
+  min-height: 10px;
+  max-height: 12px;
+
+  font-size: 9px;
+  line-height: 10px;
 
   overflow: hidden;
   text-overflow: ellipsis;
