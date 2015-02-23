@@ -155,13 +155,6 @@
   max-width: 104px;
 }
 
-#mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
-#mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
-  width: 92px;
-  min-width: 92px;
-  max-width: 92px;
-}
-
 #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
 #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper {
   width: 819px;
