@@ -378,7 +378,7 @@ function mcneese_fcs_breadcrumb($vars) {
   $breadcrumb = (array) $vars['breadcrumb'];
   $output = '';
 
-  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home" title="Home">' . t("Home") . '</a>';
+  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home" title="Requests Dashboard">' . t("Requests Dashboard") . '</a>';
 
   $count = 0;
   $total = count($breadcrumb);
