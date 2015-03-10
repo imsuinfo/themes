@@ -301,7 +301,7 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'troubleshoot-0') {
-          $title = "Troubleshooting";
+          $title = "Troubleshooting Tools";
           $pre_crumb_title = "Requests Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
