@@ -417,6 +417,7 @@
 
 #mfcs-request-email_log-0-page > .email_log-headers-wrapper,
 #mfcs-request-email_log-0-page > .email_log-raw_body-wrapper,
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper,
 #mfcs-request-email_log-0-page > .email_log-body-wrapper {
   margin-top: 1em;
 }
@@ -427,6 +428,7 @@
 
 #mfcs-request-email_log-0-page > .email_log-headers-wrapper > legend > .fieldset-legend > .fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-raw_body-wrapper > legend > .fieldset-legend > .fieldset-title,
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper > legend > .fieldset-legend > .fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-body-wrapper > legend > .fieldset-legend > .fieldset-title {
   display: inline-block;
 
@@ -435,11 +437,27 @@
 
 #mfcs-request-email_log-0-page > .email_log-headers-wrapper > legend > .fieldset-legend > .fieldset-title > .email_log-fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-raw_body-wrapper > legend > .fieldset-legend > .fieldset-title > .email_log-fieldset-title,
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper > legend > .fieldset-legend > .fieldset-title > .email_log-fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-body-wrapper > legend > .fieldset-legend > .fieldset-title > .email_log-fieldset-title {
   margin: 0px;
 
   font-size: 16px;
   line-height: 20px;
+}
+
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper > .fieldset-wrapper > .email_log-operations > .email_log-operations-operation {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 0px 10px;
+}
+
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper > .fieldset-wrapper > .email_log-operations > .email_log-operations-operation:first-of-type {
+  margin-left: 0px;
+}
+
+#mfcs-request-email_log-0-page > .email_log-operations-wrapper > .fieldset-wrapper > .email_log-operations > .email_log-operations-operation:last-of-type {
+  margin-right: 0px;
 }
 
 
