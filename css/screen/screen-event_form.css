@@ -369,7 +369,7 @@
 
 
 /*** Breadcrumb ***/
-.mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-request_id {
+.mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-right_side {
   display: inline-block;
 
   vertical-align: top;
@@ -381,7 +381,7 @@
   float: right;
 }
 
-.mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb-request_id {
+.mcneese #mcneese-breadcrumb.fixed > .navigation_list > .crumb-right_side {
   display: block;
 
   color: #ffffff;
