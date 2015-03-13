@@ -259,6 +259,72 @@
   min-width: 40px;
 }
 
+/*** Menu Link Adjustments ***/
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper > a.menu_link {
+  min-width: 60px;
+
+  text-align: center;
+}
+
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
+
+  line-height: 24px;
+
+  height: 24px;
+  min-height: 24px;
+  max-height: 24px;
+}
+
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout.menu_link-create_request-wrapper > a.menu_link {
+  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link,
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link,
+.mcneese.path-requests_calendar_0_month #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_month-wrapper > a.menu_link,
+.mcneese.path-requests_calendar_0_month #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_month-wrapper > a.menu_link,
+.mcneese.path-requests_calendar_0_day #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_day-wrapper > a.menu_link,
+.mcneese.path-requests_calendar_0_day #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_day-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-help_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-help-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-help_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-help-wrapper > a.menu_link {
+  color: #00477f;
+  background-color: #fad703;
+
+  font-weight: bold;
+}
+
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:hover,
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:active,
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link:focus,
+.mcneese.path-requests_calendar_0_month #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_month-wrapper > a.menu_link:hover,
+.mcneese.path-requests_calendar_0_month #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_month-wrapper > a.menu_link:active,
+.mcneese.path-requests_calendar_0_month #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_month-wrapper > a.menu_link:focus,
+.mcneese.path-requests_calendar_0_day #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_day-wrapper > a.menu_link:hover,
+.mcneese.path-requests_calendar_0_day #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_day-wrapper > a.menu_link:active,
+.mcneese.path-requests_calendar_0_day #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-this_day-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-help_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-help-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-help_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-help-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-help_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-help-wrapper > a.menu_link:focus   {
+  color: #ffffff;
+  background-color: #00234b;
+
+  font-weight: bold;
+}
+
 
 
 /*** sandbox.mcneese.edu-specific ***/

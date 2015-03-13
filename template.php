@@ -94,7 +94,7 @@ function mfcs_render_page() {
         $dont_append_title = TRUE;
 
         if ($path_parts[1] == 'create-0') {
-          $title = "New Request";
+          $title = "Create Request";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-request_id">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -381,6 +381,42 @@ function mfcs_render_page() {
   if ($rebuild_breadcrumb) {
     $cf['data']['page']['breadcrumb'] = theme('breadcrumb', array('breadcrumb' => $cf['page']['breadcrumb']));
   }
+
+
+  // overrride and replace header_menu_1 with custom header menu.
+  $markup = '<nav class="menu html_tag-nav">' . "\n";
+  $markup .= '  <ul class="navigation_list html_tag-list">' . "\n";
+  if (isset($cf['user']['object']) && is_object($cf['user']['object']) && $cf['user']['object']->uid == 0) {
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-login-wrapper first"><a class="menu_link menu_link-login" href="' . $base_path . 'login" title="Login to the System">Login</a></li>' . "\n";
+  }
+  else {
+    if (!isset($path_parts)) {
+      $path_parts = explode('/', $cf['at']['path']);
+      $count_parts = count($path_parts);
+    }
+
+    if ($count_parts >= 3 && $path_parts[0] == 'requests' && $path_parts[1] == 'create-0' && is_numeric($path_parts[2])) {
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Copy an Existing Request">Copy Request</a></li>' . "\n";
+    }
+    else {
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Create a New Request">Create Request</a></li>' . "\n";
+    }
+
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>' . "\n";
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>' . "\n";
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>' . "\n";
+  }
+
+  $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="https://mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>' . "\n";
+
+
+  $markup .= '  </ul>' . "\n";
+  $markup .= '</nav>' . "\n";
+
+  $cf['data']['page']['header_menu_1'] = $markup;
+  $cf['show']['page']['header_menu_1'] = TRUE;
+  $cf['show']['page']['header'] = TRUE;
+  unset($markup);
 }
 
 /**
