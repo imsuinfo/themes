@@ -438,7 +438,12 @@ function mfcs_render_page() {
 
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>' . "\n";
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>' . "\n";
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>' . "\n";
+
+    // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
+    // make it available only when directly accessing the help url.
+    if (isset($path_parts[1]) && $path_parts[1] == 'help-0') {
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>' . "\n";
+    }
   }
 
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="https://mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>' . "\n";
