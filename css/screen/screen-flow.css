@@ -255,6 +255,7 @@
   bottom: 0px;
 
   overflow: hidden;
+  z-index: 1;
 }
 
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li,
