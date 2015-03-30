@@ -571,6 +571,10 @@
   -webkit-box-sizing: border-box;
 }
 
+.mcneese.mcneese-ckeditor > .mcneese-content-main {
+  display: block;
+}
+
 
 
 /*** User Profile ***/
