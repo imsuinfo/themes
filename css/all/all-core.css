@@ -78,6 +78,11 @@
 
 
 /*** Basic Style Notation Overrides ***/
+.mcneese sub,
+.mcneese sup {
+  font-size: 0.7em;
+}
+
 .mcneese p.text {
   display: inline;
 }
