@@ -12,9 +12,8 @@
 }
 
 .mcneese #mcneese-bulletin-wrapper-outer {
-  background-color: #ffffff !important;
+  background-color: #f0f0f0;
   display: table;
-  margin-bottom: 15px;
   position: relative;
 }
 
@@ -23,6 +22,12 @@
   left: 39px;
   position: absolute;
   z-index: 9;
+}
+
+.mcneese #mcneese-bulletin-wrapper {
+  display: block;
+  background-color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .mcneese #mcneese-bulletin-wrapper-inner {
@@ -58,18 +63,6 @@
 
 /* General Tweaks
 ======================================== */
-.mcneese.node-theme-page-731 #mcneese-page {
-  background: none;
-}
-
-.mcneese.node-theme-page-731 #mcneese-page-content {
-  background-color: #ffffff !important;
-}
-
-.mcneese.node-theme-page-731 #mcneese-page {
-  background: none;
-}
-
 .mcneese.node-theme-page-731 h2 {
   margin: 0;
 }

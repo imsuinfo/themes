@@ -42,13 +42,15 @@
   <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
 
   <div id="mcneese-bulletin-wrapper-outer">
-    <div id="mcneese-bulletin-wrapper-inner">
-      <div id="mcneese-bulletin-page_title">
-        <?php mcneese_do_print($cf, 'page_title'); ?>
-      </div>
+    <div id="mcneese-bulletin-wrapper">
+      <div id="mcneese-bulletin-wrapper-inner">
+        <div id="mcneese-bulletin-page_title">
+          <?php mcneese_do_print($cf, 'page_title'); ?>
+        </div>
 
-      <div id="mcneese-bulletin-content">
-        <?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
+        <div id="mcneese-bulletin-content">
+          <?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
+        </div>
       </div>
     </div>
   </div>
