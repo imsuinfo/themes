@@ -200,6 +200,20 @@
   margin: 0px auto;
 }
 
+.mcneese.alias-part-0-future_students #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-future_students > a,
+.mcneese.alias-part-0-future_students #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-future_students > a:visited,
+.mcneese.alias-part-0-current_students #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-current_students > a,
+.mcneese.alias-part-0-current_students #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-current_students > a:visited,
+.mcneese.alias-part-0-alearn #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-online_learning > a,
+.mcneese.alias-part-0-alearn #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-online_learning > a:visited,
+.mcneese.alias-part-0-faculty_staff #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-faculty_staff > a,
+.mcneese.alias-part-0-faculty_staff #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-faculty_staff > a:visited,
+.mcneese.alias-part-0-alumni_friends #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-alumni_friends > a,
+.mcneese.alias-part-0-alumni_friends #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li.menu_link-alumni_friends > a:visited {
+  color: #00477f;
+  background-color: #fad703;
+}
+
 
 
 /*** Calendar Specific ***/

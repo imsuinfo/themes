@@ -15,6 +15,21 @@
     $cf['headers'] = '';
   }
 
+  mcneese_render_page();
+  mcneese_www_render_page();
+
+  $float_side = in_array('fixed', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
+  $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);
+
+  $group_image_width = '';
+  if (!empty($cf['data']['page']['group_image']['width'])) {
+    $group_image_width = ' width="' . $cf['data']['page']['group_image']['width'] . '"';
+  }
+  $group_image_height = '';
+  if (!empty($cf['data']['page']['group_image']['height'])) {
+    $group_image_height = ' height="' . $cf['data']['page']['group_image']['height'] . '"';
+  }
+
   $stp = base_path() . drupal_get_path('theme', 'mcneese_www');
 
   print($cf['agent']['doctype'] . "\n");
@@ -26,12 +41,19 @@
   <?php print($cf['headers'] . "\n"); ?>
   <title><?php print($head_title); ?></title>
   <?php print($styles . "\n"); ?>
+  <script type="text/javascript">
+    // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.
+    // This allows for CSS code to react to whether or not javascript is enabled.
+    function mcneese_html_body_javascript_detection() {
+      document.body.removeAttribute('onLoad');
+      document.body.className = document.body.className.replace(/\bno-script\b/i, 'script');
+    }
+  </script>
   <?php print($scripts . "\n");?>
   <!--(end-head)-->
 </head>
 
-<?php if (function_exists('menu_local_actions')) { ?>
-  <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?>>
+<body class="mcneese no-script <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <?php if (isset($cf['is']['overlay']) && !$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
     <div id="mcneese-skip_nav">
       <!--(begin-skipnav)-->
@@ -41,188 +63,124 @@
   <?php } ?>
 
   <!--(begin-body)-->
-  <div id="mcneese-top">
+  <div id="mcneese-top" class="mcneese-top">
     <!--(begin-page_top)-->
     <?php if (isset($page_top)) print($page_top . "\n"); ?>
-    <!--(end-page_top)-->
+    <?php mcneese_do_print($cf, 'top'); ?>
+    <!--(end-top)-->
   </div>
 
-  <div id="mcneese-page" >
+  <div id="mcneese-page" class="mcneese-page">
     <!--(begin-page)-->
     <?php print(theme('page', $cf['is_data']['maintenance']['vars']) . "\n"); ?>
     <!--(end-page)-->
   </div>
 
-  <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_open']) . "\n"); ?>
-    <!--(begin-www-footer)-->
-    <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_heading_open']) . "\n"); ?>
-      <h2>Website Footer</h2>
-    <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_heading_close']) . "\n"); ?>
+<?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_open']) . "\n"); ?>
+  <!--(begin-www-footer)-->
+  <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_heading_open']) . "\n"); ?>
+    <h2>Website Footer</h2>
+  <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_heading_close']) . "\n"); ?>
 
-    <div class="columns columns-right">
-      <div class="column column-1">
-        <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
-      </div>
-
-      <div class="column column-2">
-        <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-          <h3 class="column-header">Contact Information</h3>
-        <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-        <ul>
-          <li>Campus: 4205 Ryan Street</li>
-          <li>Lake Charles, LA</li>
-          <li>Tel: 337-475-5000,</li>
-          <li>or 800.622.3352</li>
-        </ul>
-      </div>
-
-      <div class="column column-3">
-        <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
-          <h3 class="column-header">Map &amp; Directions</h3>
-        <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
-        <ul>
-          <li>
-            <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
-              <img alt="Snippet of Google Map for Campus" src="<?php print($stp); ?>/images/footer_map.png">
-            </a>
-          </li>
-        </ul>
-      </div>
+  <div class="columns columns-right">
+    <div class="column column-1">
+      <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
     </div>
 
-    <div class="columns columns-left">
+    <div class="column column-2">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Contact Information</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li>Campus: 4205 Ryan Street</li>
+        <li>Lake Charles, LA</li>
+        <li>Tel: 337-475-5000,</li>
+        <li>or 800.622.3352</li>
+      </ul>
     </div>
 
-    <div class="copyright">
-      <img class="copyright-logo" alt="McNeese Footer Logo" src="<?php print($stp); ?>/images/footer-logo.png" title="McNeese State University">
-      <div class="copyright-menus">
-      </div>
+    <div class="column column-3">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Map &amp; Directions</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li>
+          <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
+            <img alt="Snippet of Google Map for Campus" src="<?php print($stp); ?>/images/footer_map.png">
+          </a>
+        </li>
+      </ul>
     </div>
-    <!--(end-www-footer)-->
-  <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_close']) . "\n"); ?>
-
-  <div id="mcneese-bottom">
-    <!--(begin-page_bottom)-->
-    <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
-    <!--(end-page_bottom)-->
   </div>
-  <!--(end-body)-->
-  </body>
-<?php } else { ?>
-  <body class="mcneese <?php print($cf['markup_css']['body']['class']); ?> is-html5 is-fixed_width" <?php print($attributes);?>>
-    <div id="mcneese-skip_nav">
-      <!--(begin-skipnav)-->
-      <a href="#mcneese-content-main">Skip to main content</a>
-      <!--(end-skipnav)-->
+
+  <div class="columns columns-left">
+    <div class="column column-1">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header"><a href="/node/5683" title="Application">Apply Now</a></h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
     </div>
 
-    <!--(begin-body)-->
-    <div id="mcneese-top">
-      <!--(begin-page_top)-->
-      <!--(end-page_top)-->
+    <div class="column column-2">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Courses</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li><a href="/node/1117">Catalog</a></li>
+        <li><a href="/node/412">Schedule</a></li>
+      </ul>
     </div>
 
-    <div id="mcneese-page">
-      <!--(begin-page)-->
-
-      <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
-        <!--(begin-page-header)-->
-        <div class="header-section header-top">
-          <div id="mcneese-site-logo"><a href="/" class="site-logo" title="McNeese State University" role="img"><?php print($head_title); ?></a></div>
-        <?php print('<div id="mcneese-site-logo"><a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a></div>' . "\n"); ?>
-        </div>
-        <div class="header-separator"></div>
-        <div class="header-section header-bottom"></div>
-        <!--(end-page-header)-->
-      </aside>
-
-      <?php if (!empty($messages)) { ?>
-        <aside title="Messages" class="relative html_tag-aside expanded" id="mcneese-messages">
-          <!--(begin-page-messages)-->
-          <?php print($messages); ?>
-          <!--(end-page-messages)-->
-        </aside>
-      <?php } ?>
-
-      <div id="mcneese-float-right" class="expanded fixed"></div>
-      <div id="mcneese-page-content" class="full" role="main">
-        <header class="page-title html_tag-header ">
-          <hgroup class="html_tag-hgroup ">
-            <!--(begin-page-title)-->
-            <h1 class="page-title html_tag-heading">Failed to Connect to the Database</h1>
-            <!--(end-page-title)-->
-          </hgroup>
-        </header>
-
-        <div id="mcneese-float-left" class="expanded fixed"></div>
-
-        <div id="mcneese-content-main" role="main">
-          <!--(begin-page-main)-->
-          The website is unable to connect to the database.<br>
-          Please contact the site administrator.
-          <!--(end-page-main)-->
-        </div>
-      </div>
-
-      <aside id="mcneese-footer" class="expanded noscript html_tag-aside ">
-        <!--(begin-page-footer)-->
-        <!--(end-page-footer)-->
-      </aside>
-      <!--(end-page)-->
+    <div class="column column-3">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Explore</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li><a href="/node/250">History</a></li>
+        <li><a href="/node/3287">Quick Facts</a></li>
+        <li><a href="/node/5530">Campus Maps</a></li>
+        <li><a href="/node/251">Mission</a></li>
+        <li><a href="/node/5675">A-Z Index</a></li>
+      </ul>
     </div>
-    <aside id="mcneese-www-footer" class="html_tag-aside " role="navigation">
-      <!--(begin-www-footer)-->
-      <header class="element-invisible html_tag-header ">
-        <h2>Website Footer</h2>
-      </header>
 
-      <div class="columns columns-right">
-        <div class="column column-1">
-          <img src="<?php print($stp); ?>/images/footer-columns-right.png" alt="" width="3" height="169">
-        </div>
-
-        <div class="column column-2">
-          <header class="column-heading html_tag-header ">
-            <h3 class="column-header">Contact Information</h3>
-          </header>
-          <ul>
-            <li>Campus: 4205 Ryan Street</li>
-            <li>Lake Charles, LA</li>
-            <li>Tel: 337-475-5000,</li>
-            <li>or 800.622.3352</li>
-          </ul>
-        </div>
-
-        <div class="column column-3">
-          <header class="column-heading html_tag-header ">
-            <h3 class="column-header">Map &amp; Directions</h3>
-          </header>
-          <ul>
-            <li>
-              <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">
-                <img alt="Snippet of Google Map for Campus" src="<?php print($stp); ?>/images/footer_map.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="columns columns-left">
-      </div>
-
-      <div class="copyright">
-        <img class="copyright-logo" alt="McNeese Footer Logo" src="<?php print($stp); ?>/images/footer-logo.png" title="McNeese State University">
-        <div class="copyright-menus">
-        </div>
-      </div>
-      <!--(end-www-footer)-->
-    </aside>
-
-    <div id="mcneese-bottom">
-      <!--(begin-page_bottom)-->
-      <!--(end-page_bottom)-->
+    <div class="column column-4">
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']) . "\n"); ?>
+        <h3 class="column-header">Social Connection</h3>
+      <?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']) . "\n"); ?>
+      <ul>
+        <li class="social facebook"><a href="http://www.facebook.com/McNeeseStateU"><img alt="Facebook Icon" src="<?php print($stp); ?>/images/facebook_icon.png" title="Facebook"></a></li>
+        <li class="social twitter"><a href="http://twitter.com/#!/McNeese"><img alt="Twitter Icon" src="<?php print($stp); ?>/images/twitter_icon.png" title="Twitter"></a></li>
+        <li class="social linked_ln"><a href="http://www.linkedin.com/edu/mcneese-state-university-18431"><img alt="LinkedIn Icon" src="<?php print($stp); ?>/images/linkedin_icon.png" title="LinkedIn"></a></li>
+        <li class="social google_plus"><a href="https://plus.google.com/101409453884998941600" rel="noreferrer"><img alt="Google+ Icon" src="<?php print($stp); ?>/images/google_plus.png" title="Google+"></a></li>
+      </ul>
     </div>
-    <!--(end-body)-->
-  </body>
-<?php } ?>
+  </div>
+
+  <div class="copyright">
+    <img class="copyright-logo" alt="McNeese Footer Logo" src="<?php print($stp); ?>/images/footer-logo.png" title="McNeese State University">
+    <div class="copyright-menus">
+      <ul class="copyright-menu copyright-menu-1">
+        <li><a href="/node/269">EOE/AA/ADA</a> |</li>
+        <li><a href="http://www.ulsystem.net/" title="University of Louisiana System">a member of the University of Louisiana System</a> |</li>
+        <li><a href="/node/524">Web Disclaimer</a></li>
+      </ul>
+
+      <ul class="copyright-menu copyright-menu-2">
+        <li><a href="/policy" title="Policy Statements">Policy Statements</a> |</li>
+        <li><a href="/node/1064">University Status &amp; Emergency Preparedness</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--(end-www-footer)-->
+<?php print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_close']) . "\n"); ?>
+
+<div id="mcneese-bottom" class="mcneese-bottom">
+  <!--(begin-bottom)-->
+  <?php mcneese_do_print($cf, 'bottom'); ?>
+  <?php if (isset($page_bottom)) print($page_bottom . "\n"); ?>
+  <!--(end-bottom)-->
+</div>
+
+<!--(end-body)-->
+</body>
 </html>
