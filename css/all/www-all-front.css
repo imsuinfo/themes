@@ -699,6 +699,10 @@
   overflow: hidden;
 }
 
+.mcneese.no-script #mcneese-front_page-featured > .mcneese-front_page-featured-image {
+  height: 379px;
+}
+
 .mcneese #mcneese-front_page-featured > .mcneese-front_page-featured-image {
   display: inline-block;
   vertical-align: top;
