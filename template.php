@@ -12,6 +12,7 @@
  * Provides the www.mcneese.edu mcneese theme.
  */
 
+
 /**
  * Implements hook_mcneese_get_variables_alter().
  */
@@ -81,6 +82,14 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
  */
 function mcneese_www_preprocess_maintenance_page(&$vars) {
   mcneese_www_preprocess_html($vars);
+
+  $cf = & drupal_static('cf_theme_get_variables', array());
+
+  if (empty($cf)) {
+    mcneese_initialize_variables($vars);
+  }
+
+  $cf['markup_css']['body']['class'] .= ' is-html5 is-fixed_width';
 
   // always show header for maintenance mode pages.
   $cf['show']['page']['header'] = TRUE;
@@ -311,7 +320,7 @@ function mcneese_www_render_page() {
 
 
   // node-specific content
-  if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
+  if (isset($cf['is']['node']) && $cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     $node = &$cf['is_data']['node']['object'];
 
 
@@ -462,21 +471,23 @@ function mcneese_www_render_page() {
 
 
   // build the search box and append it to the 'header' region'.
-  $sbf = (array) drupal_get_form('search_block_form');
-  $markup = '  <div id="mcneese-search-box">' . "\n";
-  $markup .= '    <div class="search_box-links">' . "\n";
-  $markup .= '      <ul class="navigation_list">' . "\n";
-  $markup .= '        <li class="search_form-top_box_links-ada"><a href="/ada">ADA</a></li>' . "\n";
-  $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
-  $markup .= '        <li class="search_form-top_box_links-staff"><a href="/search/people">Faculty &amp; Staff Search</a></li>' . "\n";
-  $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
-  $markup .= '        <li class="search_form-top_box_links-index"><a href="/index">A-Z Index</a></li>' . "\n";
-  $markup .= '      </ul>' . "\n";
-  $markup .= '    </div>' . "\n";
-  $markup .= '    <div class="search_box-box">' . "\n";
-  $markup .= '      ' . drupal_render($sbf) . "\n";
-  $markup .= '    </div>' . "\n";
-  $markup .= '  </div>' . "\n";
+  if (function_exists('drupal_get_form')) {
+    $sbf = (array) drupal_get_form('search_block_form');
+    $markup = '  <div id="mcneese-search-box">' . "\n";
+    $markup .= '    <div class="search_box-links">' . "\n";
+    $markup .= '      <ul class="navigation_list">' . "\n";
+    $markup .= '        <li class="search_form-top_box_links-ada"><a href="/ada">ADA</a></li>' . "\n";
+    $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
+    $markup .= '        <li class="search_form-top_box_links-staff"><a href="/search/people">Faculty &amp; Staff Search</a></li>' . "\n";
+    $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
+    $markup .= '        <li class="search_form-top_box_links-index"><a href="/index">A-Z Index</a></li>' . "\n";
+    $markup .= '      </ul>' . "\n";
+    $markup .= '    </div>' . "\n";
+    $markup .= '    <div class="search_box-box">' . "\n";
+    $markup .= '      ' . drupal_render($sbf) . "\n";
+    $markup .= '    </div>' . "\n";
+    $markup .= '  </div>' . "\n";
+  }
 
   unset($sbf);
 
