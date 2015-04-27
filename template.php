@@ -43,7 +43,7 @@ function mcneese_preprocess_maintenance_page(&$vars) {
   // there are certain cases where maintenance mode is not detectable but in use.
   // the end result is that some of the variables are not defined, but should be.
   // this will attempt to fix the situation.
-  if (!$cf['is']['maintenance']) {
+  if (!isset($cf['is']['maintenance']) || !$cf['is']['maintenance']) {
     $cf['is']['maintenance'] = TRUE;
     $cf['is_data']['maintenance']['mode'] = FALSE;
     $cf['is_data']['maintenance']['type'] = 'unknown';
