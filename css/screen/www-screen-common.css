@@ -176,8 +176,7 @@
   margin: 0px 64px;
 }
 
-.mcneese.is-overlay #mcneese-www-footer,
-.mcneese.is-emergency #mcneese-www-footer {
+.mcneese.is-overlay #mcneese-www-footer {
   display: none;
 
   width: 0px;
@@ -728,11 +727,15 @@
   max-height: 29px;
 }
 
+.mcneese.is-maintenance #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a {
   color: #00477f;
   background-color: #fad703;
 }
 
+.mcneese.is-maintenance #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
+.mcneese.is-maintenance #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
+.mcneese.is-maintenance #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:hover,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:active,
 .mcneese.is-front #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-apply-now > a:focus {
