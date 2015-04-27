@@ -128,7 +128,9 @@
   min-width: 100%;
   max-width: 100%;
 
+  overflow: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .mcneese #mcneese-header > .header-separator {
@@ -252,10 +254,10 @@
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  bottom: -1px;
 
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
 }
 
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > li,
@@ -275,7 +277,7 @@
   text-decoration: none;
   line-height: 18px;
 
-  padding: 10px;
+  padding: 10px 10px 11px 10px;
   margin: 0px;
 
   border-top-left-radius: 5px;
