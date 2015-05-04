@@ -25,8 +25,10 @@
 
   // when the database is not available or the site is in maintenance mode, provide a custom page that includes common links and critical pages.
   $service_unavailable = FALSE;
+  $is_unavailable = "";
   if (!function_exists('menu_local_tabs')) {
     $service_unavailable = TRUE;
+    $is_unavailable = "is-unavailable ";
   }
   elseif (isset($cf['is']['maintenance']) && $cf['is']['maintenance']) {
     $service_unavailable = TRUE;
@@ -114,7 +116,7 @@
   <!--(end-head)-->
 </head>
 
-<body class="mcneese no-script <?php print($at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
+<body class="mcneese no-script is-maintenance <?php print($is_unavailable . $at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <div id="mcneese-skip_nav">
     <!--(begin-skipnav)-->
     <a href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>

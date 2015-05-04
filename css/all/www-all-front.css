@@ -75,6 +75,10 @@
   display: box;
 }
 
+.mcneese.is-unavailable .mcneese-content-main > .node-id-819 {
+  display: block;
+}
+
 .mcneese.path-preview_front #mcneese-breadcrumb {
   display: none;
 }
