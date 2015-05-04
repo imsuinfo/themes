@@ -19,8 +19,6 @@
 
   mcneese_render_page();
 
-  $stp = base_path() . drupal_get_path('theme', 'mcneese_fcs');
-
 
   // when the database is not available or the site is in maintenance mode, provide a custom page that includes common links and critical pages.
   $service_unavailable = FALSE;
@@ -104,69 +102,70 @@
       }
       else {
     ?>
-        <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
-          <!--(begin-page-header)-->
-          <div class="header-section header-top">
-            <div id="mcneese-site-logo"><a href="/" class="site-logo" title="McNeese State University" role="img">McNeese State University</a></div>
-            <div role="navigation" class="header-menu header-menu-1">
-              <nav class="menu html_tag-nav">
-                <ul class="navigation_list html_tag-list">
-                  <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a title="Go Back to MyMcNeese Portal" href="https://mymcneese.mcneese.edu/" class="menu_link menu_link-my_mcneese">MyMcneese</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="header-separator"></div>
-          <div class="header-section header-bottom">
-            <div class="header-menu header-menu-2" role="navigation">
-            </div>
-          </div>
-          <!--(end-page-header)-->
-        </aside>
+    <aside id="mcneese-header" class="noscript relative expanded html_tag-aside " role="banner">
+      <!--(begin-page-header)-->
+      <div class="header-section header-top">
+        <div id="mcneese-site-logo"><a href="/" class="site-logo" title="McNeese State University" role="img">McNeese State University</a></div>
+        <div role="navigation" class="header-menu header-menu-1">
+          <nav class="menu html_tag-nav">
+            <ul class="navigation_list html_tag-list">
+              <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a title="Go Back to MyMcNeese Portal" href="https://mymcneese.mcneese.edu/" class="menu_link menu_link-my_mcneese">MyMcneese</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-separator"></div>
+      <div class="header-section header-bottom">
+        <div class="header-menu header-menu-2" role="navigation">
+        </div>
+      </div>
+      <!--(end-page-header)-->
+    </aside>
 
-        <?php if (!empty($messages)) { ?>
-          <aside title="Messages" class="relative html_tag-aside expanded" id="mcneese-messages">
-            <!--(begin-page-messages)-->
-            <?php print($messages); ?>
-            <!--(end-page-messages)-->
-          </aside>
-        <?php } ?>
+    <?php if (!empty($messages)) { ?>
+      <aside title="Messages" class="relative html_tag-aside expanded" id="mcneese-messages">
+        <!--(begin-page-messages)-->
+        <?php print($messages); ?>
+        <!--(end-page-messages)-->
+      </aside>
+    <?php } ?>
 
-        <div id="mcneese-page-content" class="mcneese-content full" role="main">
-          <div id="mcneese-float-left" class="expanded fixed">
-          </div>
+    <div id="mcneese-page-content" class="mcneese-content full" role="main">
+      <!--(begin-node_content)-->
+      <header class="node-header html_tag-header ">
+        <hgroup class="html_tag-hgroup ">
+          <!--(begin-node_title)-->
+          <h1 class="node-title html_tag-heading">Website Currently Unavailable</h1>
+          <!--(end-node_title)-->
+        </hgroup>
+      </header>
+
+      <div id="mcneese-float-left" class="expanded fixed">
+      </div>
+
+      <div id="mcneese-content-main" role="main">
+        <!--(begin-page-main)-->
+        <section class="html_tag-section">
           <!--(begin-node_content)-->
-          <header class="node-header html_tag-header ">
+          <header class="node-header element-invisible html_tag-header ">
             <hgroup class="html_tag-hgroup ">
               <!--(begin-node_title)-->
-              <h1 class="node-title html_tag-heading">Website Currently Unavailable</h1>
+              <h2 class="node-title html_tag-heading">Website Currently Unavailable</h2>
               <!--(end-node_title)-->
             </hgroup>
           </header>
-
-        <div id="mcneese-content-main" role="main">
-          <!--(begin-page-main)-->
-          <section class="html_tag-section">
-            <!--(begin-node_content)-->
-            <header class="node-header element-invisible html_tag-header ">
-              <hgroup class="html_tag-hgroup ">
-                <!--(begin-node_title)-->
-                <h2 class="node-title html_tag-heading">Website Currently Unavailable</h2>
-                <!--(end-node_title)-->
-              </hgroup>
-            </header>
-            <div>
-              The Facilities Use and Special Event Request Website is not available at this time. A small set of links are provided below.  We apologize for any inconvenience. <br>
-              <br>
-              <ul class="inline-block vertical-align-top margin-left-44 margin-right-44 margin-bottom-25">
-                <li><a href="http://www.mcneese.edu/">McNeese Website</a></li>
-                <li><a href="https://mymcneese.mcneese.edu/">MyMcNeese Portal</a></li>
-              </ul>
-            </div>
-            <!--(end-page-main)-->
-          </section>
-        </div>
+          <div>
+            The Facilities Use and Special Event Request Website is not available at this time. A small set of links are provided below. We apologize for any inconvenience.<br>
+            <br>
+            <ul class="inline-block vertical-align-top margin-left-44 margin-right-44 margin-bottom-25">
+              <li><a href="http://www.mcneese.edu/">McNeese Website</a></li>
+              <li><a href="https://mymcneese.mcneese.edu/">MyMcNeese Portal</a></li>
+            </ul>
+          </div>
+          <!--(end-page-main)-->
+        </section>
       </div>
+    </div>
     <?php
       }
     ?>
