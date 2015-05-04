@@ -280,7 +280,13 @@
 
         <?php if (is_null($path)) { ?>
           <br>
-          <h1 style="text-align: center;">Website Currently Unvailable</h1>
+          <header class="page-title html_tag-header ">
+            <hgroup class="html_tag-hgroup ">
+              <!--(begin-page-title)-->
+              <h1 style="text-align: center;">Website Currently Unvailable</h1>
+              <!--(end-page-title)-->
+            </hgroup>
+          </header>
           <div>
             The McNeese State University Website is not available at this time. A small set of links are provided below.  We apologize for any inconvenience. <br>
             <br>
