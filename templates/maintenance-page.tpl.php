@@ -25,15 +25,21 @@
 
   // when the database is not available or the site is in maintenance mode, provide a custom page that includes common links and critical pages.
   $service_unavailable = FALSE;
+  $is_unavailable = "";
+  $is_maintenance = FALSE;
+  $body_class = "";
   if (!function_exists('menu_local_tabs')) {
     $service_unavailable = TRUE;
+    $is_unavailable = "is-unavailable ";
   }
   elseif (isset($cf['is']['maintenance']) && $cf['is']['maintenance']) {
     $service_unavailable = TRUE;
+    $is_maintenance = TRUE;
   }
 
   if ($service_unavailable) {
-    // determine url path.
+    drupal_set_title(t('Site Under Maintenance'));
+
     $path = NULL;
     $cf['is']['front'] = TRUE;
     $show_breadcrumb = FALSE;
@@ -89,8 +95,15 @@
       }
     }
 
-    drupal_add_http_header('Status', '503 Service Unavailable');
-    drupal_send_headers();
+    if (!$is_maintenance) {
+      drupal_add_http_header('Status', '503 Service Unavailable', FALSE, 503);
+      drupal_send_headers();
+    }
+  }
+  else {
+    if (isset($cf['markup_css']['body']['class'])) {
+      $body_class = $cf['markup_css']['body']['class'];
+    }
   }
 
   print($cf['agent']['doctype'] . "\n");
@@ -114,7 +127,7 @@
   <!--(end-head)-->
 </head>
 
-<body class="mcneese no-script <?php print($at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
+<body class="mcneese no-script is-maintenance <?php print($is_unavailable . $at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <div id="mcneese-skip_nav">
     <!--(begin-skipnav)-->
     <a href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
@@ -280,7 +293,13 @@
 
         <?php if (is_null($path)) { ?>
           <br>
-          <h1 style="text-align: center;">Website Currently Unvailable</h1>
+          <header class="page-title html_tag-header ">
+            <hgroup class="html_tag-hgroup ">
+              <!--(begin-page-title)-->
+              <h1 style="text-align: center;">Website Currently Unvailable</h1>
+              <!--(end-page-title)-->
+            </hgroup>
+          </header>
           <div>
             The McNeese State University Website is not available at this time. A small set of links are provided below.  We apologize for any inconvenience. <br>
             <br>
