@@ -48,7 +48,7 @@
   <!--(begin-page_top)-->
   <?php if (isset($page_top)) print($page_top . "\n"); ?>
   <?php mcneese_do_print($cf, 'top'); ?>
-  <!--(end-top)-->
+  <!--(end-page_top)-->
 </div>
 
 <div id="mcneese-page" class="mcneese-page">
