@@ -562,11 +562,14 @@
 
 .mcneese .mcneese-content,
 .mcneese .mcneese-content-main {
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
   overflow-x: auto;
 
   margin: 0px;
   padding: 0px;
+
+  width: 100%;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
