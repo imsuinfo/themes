@@ -562,7 +562,7 @@
 
 .mcneese .mcneese-content,
 .mcneese .mcneese-content-main {
-  display: inline;
+  display: block;
   overflow-x: auto;
 
   margin: 0px;
