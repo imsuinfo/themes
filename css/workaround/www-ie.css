@@ -143,3 +143,15 @@
   min-height: 200px;
   max-height: 200px;
 }
+
+.mcneese.agent-name-ie.agent-major_version-8 #mcneese-front_page-events > .mcneese-front_page-events-event-1.mcneese-front_page-events-event-has_image > .mcneese-front_page-events-event-body_wrapper {
+  width: 275px;
+  min-width: 275px;
+  max-width: 275px;
+}
+
+.mcneese.agent-name-ie.agent-major_version-6.is-front .mcneese-content-main,
+.mcneese.agent-name-ie.agent-major_version-7.is-front .mcneese-content-main,
+.mcneese.agent-name-ie.agent-major_version-8.is-front .mcneese-content-main {
+  overflow: hidden;
+}
