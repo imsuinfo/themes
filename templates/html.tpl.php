@@ -30,7 +30,7 @@
   <!--(end-head)-->
 </head>
 
-<body class="mcneese no-script <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
+<body id="mcneese-body" class="mcneese no-script <?php print($cf['markup_css']['body']['class']); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <?php if (!$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
     <!--(begin-skipnav)-->
     <a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
