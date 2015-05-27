@@ -332,7 +332,7 @@
 }
 
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .views-label,
-.mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .field-content {
+.mcneese.node-path-police_complaint_log.view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .field-content {
   display: inline-block;
 }
 
@@ -349,6 +349,37 @@
 
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-disposition,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-off-loc {
+  background-color: #fcfcfc;
+}
+
+.mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-title {
+  font-size: 22px;
+  line-height: 1.2em;
+
+  margin: 3px 0px;
+}
+
+.mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block {
+  background-color: #eaeaea;
+
+  border: 1px solid #a9a9a9;
+  padding: 4px;
+}
+
+.mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item {
+  margin: 0px;
+  padding: 5px 3px;
+}
+
+.mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item > .police_complaint_log-item-label {
+  font-size: 14px;
+  line-height: 18px;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item-even {
   background-color: #fcfcfc;
 }
 
