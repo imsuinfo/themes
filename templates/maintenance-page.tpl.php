@@ -127,7 +127,7 @@
   <!--(end-head)-->
 </head>
 
-<body class="mcneese no-script is-maintenance <?php print($is_unavailable . $at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
+<body id="mcneese-body" class="mcneese no-script is-maintenance <?php print($is_unavailable . $at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <div id="mcneese-skip_nav">
     <!--(begin-skipnav)-->
     <a href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
