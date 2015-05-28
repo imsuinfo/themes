@@ -24,6 +24,11 @@
   margin-bottom: 16px;
 }
 
+.mcneese .mcneese-content,
+.mcneese .mcneese-content-main {
+  overflow-x: inherit;
+}
+
 
 
 /*** Calendar - Month/Day ***/
