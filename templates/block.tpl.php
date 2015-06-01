@@ -5,8 +5,12 @@
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
   mcneese_render_block();
+
+  if (!isset($cf['generic']['tags'])) {
+    mcneese_initialize_generic_tags($cf);
+  }
 ?>
-<?php if ($cf['show']['block']['content']) { ?>
+<?php if ($cf['show']['block']['content'] && isset($cf['data']['block']['content'])) { ?>
   <?php if (isset($cf['block']['tags']['mcneese_block_open'])) print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_open']) . "\n"); ?>
   <!--(begin-block_content)-->
   <?php if ($cf['show']['block']['header']) { ?>
