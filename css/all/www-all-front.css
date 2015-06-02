@@ -61,6 +61,10 @@
   position: relative;
 }
 
+.mcneese.is-front .mcneese-content-main {
+  margin-top: 5px;
+}
+
 .mcneese.path-preview_front .block-name-block-views-ef77b6dc6bf8433a0b7707f740043636,
 .mcneese .block-name-block-views-front-page-front-page-featured {
   margin-bottom: 5px;
