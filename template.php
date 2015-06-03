@@ -258,6 +258,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
 
   switch($cf['agent']['machine_name']){
     case 'firefox':
+      $cf['is']['unsupported'] = FALSE;
       break;
     case 'mozilla':
       $matches = array();
@@ -314,6 +315,8 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     case 'chrome':
     case 'safari':
     case 'midori':
+      $cf['is']['unsupported'] = FALSE;
+
       $custom_css = array();
       $custom_css['data'] = $cf['theme']['path'] . '/css/webkit.css';
       $custom_css['options'] = array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 2, 'media' => 'all');
@@ -325,6 +328,7 @@ function mcneese_drupal_cf_theme_get_variables_alter(&$cf, $variables){
     default:
       switch($cf['agent']['engine']){
         case 'webkit':
+          $cf['is']['unsupported'] = FALSE;
 
           $custom_css = array();
           $custom_css['data'] = $cf['theme']['path'] . '/css/webkit.css';
