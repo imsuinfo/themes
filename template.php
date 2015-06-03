@@ -17,6 +17,8 @@
  * Implements hook_mcneese_get_variables_alter().
  */
 function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
+  global $base_path;
+
   $cf['subtheme']['path'] = base_path() . drupal_get_path('theme', 'mcneese_www');
   $cf['subtheme']['machine_name'] = 'mcneese_www';
   $cf['subtheme']['human_name'] = t("McNeese WWW");
@@ -27,9 +29,30 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
     $cf['is']['flex_width'] = FALSE;
   }
 
+  $rss_feed = NULL;
+
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     $node = &$cf['is_data']['node']['object'];
+
+    if (isset($node->field_group['und']) && is_array($node->field_group['und'])) {
+      $group_ids = array();
+      foreach ($node->field_group['und'] as $field_group) {
+        if (!cf_is_integer($field_group['tid']) || $field_group['tid'] < 1) {
+          continue;
+        }
+
+        $group_ids[$field_group['tid']] = $field_group['tid'];
+      }
+
+      if (!empty($group_ids)) {
+        $rss_feed = array(
+          'rel' => 'alternate',
+          'href' => $base_path . 'rss/feed/group/' . implode(',', $group_ids),
+          'type' => 'application/rss+xml',
+        );
+      }
+    }
 
     // web form
     if ($node->type == 'webform') {
@@ -74,6 +97,23 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
         }
       }
     }
+  }
+
+
+
+  // Provide RSS feed links for front page.
+  if ($cf['is']['front']) {
+    $rss_feed = array(
+      'rel' => 'alternate',
+      'href' => $base_path . 'rss/feed/news',
+      'type' => 'application/rss+xml',
+      'title' => "Follow McNeese News",
+    );
+  }
+
+  // Add the RSS Feed.
+  if (is_array($rss_feed)) {
+    $cf['link'][] = $rss_feed;
   }
 }
 
