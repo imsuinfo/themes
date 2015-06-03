@@ -3,10 +3,6 @@
 
 /* General Tweaks
 ==================================== */
-.mcneese.node-theme-page-731 .mcneese.at-wwwdev_mcneese_edu, .mcneese.at-wwwdev2_mcneese_edu, .mcneese.at-wwwdev, .mcneese.at-wwwdev2 {
-  background-color: #f0f0f0;
-}
-
 .mcneese.node-theme-page-731 #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home {
   background-image: url(../../images/home-blue.png);
 }

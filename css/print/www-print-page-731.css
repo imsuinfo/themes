@@ -9,7 +9,7 @@
 
 
 /*** Bulletin ***/
-.mcneese #mcneese-bulletin-page_title {
+.mcneese.node-theme-page-731 #mcneese-bulletin-page_title {
   display: table-cell;
 
   width: 100%;
@@ -20,6 +20,6 @@
   word-wrap: break-word;
 }
 
-.mcneese #mcneese-bulletin-content {
+.mcneese.node-theme-page-731 #mcneese-bulletin-content {
   display: none;
 }

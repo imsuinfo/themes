@@ -3,7 +3,7 @@
 
 /* Bulletin
 ======================================== */
-.mcneese .bulletin-wrapper {
+.mcneese.node-theme-page-731 .bulletin-wrapper {
   color: #383838;
   line-height: 28px;
   padding: 10px 20px;
@@ -11,32 +11,32 @@
   margin-top: 30px;
 }
 
-.mcneese #mcneese-bulletin-wrapper-outer {
+.mcneese.node-theme-page-731 #mcneese-bulletin-wrapper-outer {
   background-color: #f0f0f0;
   display: table;
   position: relative;
 }
 
-.mcneese #mcneese-bulletin-wrapper-outer .down-arrow {
+.mcneese.node-theme-page-731 #mcneese-bulletin-wrapper-outer .down-arrow {
   bottom: -15px;
   left: 39px;
   position: absolute;
   z-index: 9;
 }
 
-.mcneese #mcneese-bulletin-wrapper {
+.mcneese.node-theme-page-731 #mcneese-bulletin-wrapper {
   display: block;
   background-color: #ffffff;
   margin-bottom: 15px;
 }
 
-.mcneese #mcneese-bulletin-wrapper-inner {
+.mcneese.node-theme-page-731 #mcneese-bulletin-wrapper-inner {
   display: table-row;
-  background: url(/f/c/2a199ff1);
+  background: url(../../images/bulletin-background.png);
   height: 188px;
 }
 
-.mcneese #mcneese-bulletin-page_title {
+.mcneese.node-theme-page-731 #mcneese-bulletin-page_title {
   display: table-cell;
 
   width: 260px;
@@ -47,7 +47,7 @@
   word-wrap: break-word;
 }
 
-.mcneese #mcneese-bulletin-content {
+.mcneese.node-theme-page-731 #mcneese-bulletin-content {
   display: table-cell;
 
   width: 100%;
@@ -58,7 +58,9 @@
   word-wrap: break-word;
 }
 
-.mcneese .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title { margin: 4px 20px !important; }
+.mcneese.node-theme-page-731 .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
+  margin: 4px 20px !important;
+}
 
 
 /* General Tweaks
@@ -67,7 +69,9 @@
   margin: 0;
 }
 
-.mcneese.node-theme-page-731 .mcneese a:focus, .mcneese a:active, .mcneese a:hover {
+.mcneese.node-theme-page-731 a:focus,
+.mcneese.node-theme-page-731 a:active,
+.mcneese.node-theme-page-731 a:hover {
   color: #0591ff;
   text-decoration: underline;
 }
@@ -106,7 +110,7 @@
   line-height: 16px;
 }
 
-.mcneese #mcneese-header > .header-bottom {
+.mcneese.node-theme-page-731 #mcneese-header > .header-bottom {
   border-radius: 0px !important;
   margin-bottom: 0px !important;
 }
@@ -207,17 +211,20 @@
   float: right;
 }
 
-.mcneese.node-theme-page-731 .list-box > .list-box-body > ul, .mcneese .list-box > .list-box-body > ol {
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul,
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ol {
   padding: 0px;
   margin: 0px;
 }
 
-.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a, .mcneese .list-box > .list-box-body > li {
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a,
+.mcneese.node-theme-page-731 .list-box > .list-box-body > li {
   margin-bottom: 12px;
   line-height: 18px;
 }
 
-.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a, .mcneese .list-box > .list-box-body > ol > li > a {
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ul > li > a,
+.mcneese.node-theme-page-731 .list-box > .list-box-body > ol > li > a {
   display: block;
   padding: 0 0 0 10px;
   line-height: 21px;
@@ -227,25 +234,25 @@
 
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
+.mcneese.node-theme-page-731 .clearfix:before,
+.mcneese.node-theme-page-731 .clearfix:after,
+.mcneese.node-theme-page-731 .row:before,
+.mcneese.node-theme-page-731 .row:after {
   content: '\0020';
   display: block;
   overflow: hidden;
   visibility: hidden;
   width: 0;
   height: 0; }
-.row:after,
-.clearfix:after {
+.mcneese.node-theme-page-731 .row:after,
+.mcneese.node-theme-page-731 .clearfix:after {
   clear: both; }
-.row,
-.clearfix {
+.mcneese.node-theme-page-731 .row,
+.mcneese.node-theme-page-731 .clearfix {
   zoom: 1; }
 
 /* You can also use a <br class="clear" /> to clear columns */
-.clear {
+.mcneese.node-theme-page-731 .clear {
   clear: both;
   display: block;
   overflow: hidden;
