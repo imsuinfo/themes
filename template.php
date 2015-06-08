@@ -18,6 +18,7 @@
  */
 function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
   global $base_path;
+  global $conf;
 
   $cf['subtheme']['path'] = base_path() . drupal_get_path('theme', 'mcneese_www');
   $cf['subtheme']['machine_name'] = 'mcneese_www';
@@ -31,6 +32,11 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
 
   $rss_feed = NULL;
 
+  $rss_feed_groups_blacklist = array();
+  if (isset($conf['feed_groups_blacklist']['groups']) && is_array($conf['feed_groups_blacklist']['groups'])) {
+    $rss_feed_groups_blacklist = $conf['feed_groups_blacklist']['groups'];
+  }
+
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     $node = &$cf['is_data']['node']['object'];
@@ -39,6 +45,10 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
       $group_ids = array();
       foreach ($node->field_group['und'] as $field_group) {
         if (!cf_is_integer($field_group['tid']) || $field_group['tid'] < 1) {
+          continue;
+        }
+
+        if (array_key_exists($field_group['tid'], $rss_feed_groups_blacklist)) {
           continue;
         }
 
