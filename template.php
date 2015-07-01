@@ -359,6 +359,14 @@ function mcneese_www_preprocess_page(&$vars) {
         }
       }
 
+      if ($type == 744) {
+        $cf['page']['menus'] = array();
+        $cf['page']['asides'] = array();
+
+        $cf['show']['page']['menus'] = FALSE;
+        $cf['show']['page']['asides'] = FALSE;
+      }
+
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ((isset($cf['is']['node-view']) && $cf['is']['node-view']) || (isset($cf['is']['node-draft']) && $cf['is']['node-draft']) || (isset($cf['is']['node-view-revision']) && $cf['is']['node-view-revision'])) {
         if ($type == 718) {
