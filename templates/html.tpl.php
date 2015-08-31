@@ -121,6 +121,7 @@
         <li><a href="/node/5530">Campus Maps</a></li>
         <li><a href="/node/251">Mission</a></li>
         <li><a href="/node/5675">A-Z Index</a></li>
+        <li><a href="/node/8713">Consumer Disclosures</a></li>
       </ul>
     </div>
 
