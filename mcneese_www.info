@@ -81,7 +81,7 @@ stylesheets[screen,handheld,projection][] = css/screen/www-screen-page-718.css
 stylesheets[screen,handheld,projection][] = css/screen/www-screen-page-731.css
 
 scripts[] = js/document-outline.js
-scripts[] = js/75th.js
+# scripts[] = js/75th.js
 
 regions[top]           = Top
 regions[header]        = Header

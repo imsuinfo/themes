@@ -529,18 +529,20 @@ function mcneese_www_render_page() {
   $cf['show']['page']['header'] = TRUE;
 
 
+  // jira: ucs-1484: disable 75th links and references, but leave code just in case it needs to be brought back.
   // build the 75th anniversary and prepend it to the 'top' region.
-  $markup = '<div class="noscript no-print" id="the_75th_anniversary_banner">' . "\n";
-  $markup .= '  <div class="top_padding"></div>' . "\n";
-  $markup .= '<a class="learn_more" href="http://75th.mcneese.edu/">Learn More</a></div>' . "\n";
-
-  if (isset($cf['data']['page']['top'])) {
-    $cf['data']['page']['top'] = $markup . $cf['data']['page']['top'];
-  }
-  else {
-    $cf['data']['page']['top'] = $markup;
-  }
-  $cf['show']['page']['top'] = TRUE;
+  #$markup = '<div class="noscript no-print" id="the_75th_anniversary_banner">' . "\n";
+  #$markup .= '  <div class="top_padding"></div>' . "\n";
+  #$markup .= '<a class="learn_more" href="http://75th.mcneese.edu/">Learn More</a></div>' . "\n";
+  #
+  #if (isset($cf['data']['page']['top'])) {
+  #  $cf['data']['page']['top'] = $markup . $cf['data']['page']['top'];
+  #}
+  #else {
+  #  $cf['data']['page']['top'] = $markup;
+  #}
+  #
+  #$cf['show']['page']['top'] = TRUE;
 
 
   // build the search box and append it to the 'header' region'.
