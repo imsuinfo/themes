@@ -23,7 +23,7 @@
   <?php print($head . "\n"); ?>
   <?php print($cf['headers'] . "\n"); ?>
   <title><?php print($head_title); ?></title>
-  <meta name="viewport" content="width=device-width, maxiumum-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <?php print($styles . "\n"); ?>
   <script type="text/javascript">
     // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.
