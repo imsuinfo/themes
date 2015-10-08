@@ -15,6 +15,7 @@ dependencies[] = mcneese_templates
 dependencies[] = mcneese_management
 
 stylesheets[all][] = css/all/all-reset.css
+stylesheets[all][] = css/all/all-fonts.css
 stylesheets[all][] = css/all/all-flow.css
 stylesheets[all][] = css/all/all-text.css
 stylesheets[all][] = css/all/all-core.css

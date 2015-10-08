@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), url(../../fonts/oswald-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), url(../../fonts/indie_flower.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), url(../../fonts/lato-hairline.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), url(../../fonts/lato-light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), url(../../fonts/lato-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), url(../../fonts/lato-bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), url(../../fonts/lato-black.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), url(../../fonts/lato-hairline-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), url(../../fonts/lato-light-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), url(../../fonts/lato-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), url(../../fonts/lato-bold-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), url(../../fonts/lato-black-italic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url(../../fonts/open_sans.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC'), url(../../fonts/amatic_sc.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), url(../../fonts/amatic_sc-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Architects Daughter';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Architects Daughter'), url(../../fonts/architects_daughter.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Coming Soon'), url(../../fonts/coming_soon.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Courgette Regular'), url(../../fonts/courgette-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Covered By Your Grace';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Covered By Your Grace'), url(../../fonts/covered_by_your_grace.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cutive Mono'), url(../../fonts/cutive_mono.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dancing Script'), url(../../fonts/dancing_script.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dancing Script Bold'), url(../../fonts/dancing_script-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), url(../../fonts/great_vibes.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), url(../../fonts/kaushan_script.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), url(../../fonts/pacifico-regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pinyon Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pinyon Script'), url(../../fonts/pinyon_script.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Shadows Into Light';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light'), url(../../fonts/shadows_into_light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Source Code Pro ExtraLight'), url(../../fonts/source_code_pro-extra_light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Code Pro Light'), url(../../fonts/source_code_pro-light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), url(../../fonts/source_code_pro.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Source Code Pro Medium'), url(../../fonts/source_code_pro-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Code Pro Semibold'), url(../../fonts/source_code_pro-semi_bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Code Pro Bold'), url(../../fonts/source_code_pro-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Code Pro Black'), url(../../fonts/source_code_pro-black.ttf) format('truetype');
+}
