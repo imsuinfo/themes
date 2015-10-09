@@ -30,7 +30,7 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
     $cf['is']['flex_width'] = FALSE;
   }
 
-  $rss_feed = NULL;
+  $rss_feeds = array();
 
   $rss_feed_groups_blacklist = array();
   if (isset($conf['feed_groups_blacklist']['groups']) && is_array($conf['feed_groups_blacklist']['groups'])) {
@@ -56,7 +56,7 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
       }
 
       if (!empty($group_ids)) {
-        $rss_feed = array(
+        $rss_feeds[] = array(
           'rel' => 'alternate',
           'href' => $base_path . 'rss/feed/group/' . implode(',', $group_ids),
           'type' => 'application/rss+xml',
@@ -113,17 +113,38 @@ function mcneese_www_mcneese_get_variables_alter(&$cf, $vars) {
 
   // Provide RSS feed links for front page.
   if ($cf['is']['front']) {
-    $rss_feed = array(
+    $rss_feeds = array();
+    $rss_feeds[] = array(
+      'rel' => 'alternate',
+      'href' => $base_path . 'rss/feed/featured',
+      'type' => 'application/rss+xml',
+      'title' => "Follow McNeese Featured",
+    );
+    $rss_feeds[] = array(
       'rel' => 'alternate',
       'href' => $base_path . 'rss/feed/news',
       'type' => 'application/rss+xml',
-      'title' => "Follow McNeese News",
+      'title' => "Follow McNeese News & Events",
+    );
+    $rss_feeds[] = array(
+      'rel' => 'alternate',
+      'href' => $base_path . 'rss/feed/spotlight',
+      'type' => 'application/rss+xml',
+      'title' => "Follow McNeese Spotlight",
+    );
+    $rss_feeds[] = array(
+      'rel' => 'alternate',
+      'href' => $base_path . 'rss/feed/lagniappe',
+      'type' => 'application/rss+xml',
+      'title' => "Follow McNeese Lagniappe",
     );
   }
 
   // Add the RSS Feed.
-  if (is_array($rss_feed)) {
-    $cf['link'][] = $rss_feed;
+  if (!empty($rss_feeds)) {
+    foreach ($rss_feeds as $rss_feed) {
+      $cf['link'][] = $rss_feed;
+    }
   }
 }
 
