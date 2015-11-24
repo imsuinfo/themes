@@ -69,6 +69,14 @@
 
 
 /*** Content Specific Style: csf ***/
+.alias-part-0-csf #mcneese-content-main > section > div.notice {
+  background: #F1B9B9;
+  border: 2px dashed #AC6666;
+  color: #623838;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
 .mcneese .mcneese-content .csf_wrap ul {
   list-style: none outside none;
 }
@@ -220,7 +228,8 @@
 .mcneese.alias-csf_macpro_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
 .mcneese.alias-csf_imac_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
 .mcneese.alias-csf_macmini_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
-.mcneese.alias-csf_macbookpro_node_draft .mcneese-content tbody tr:nth-of-type(2n+1) {
+.mcneese.alias-csf_macbookpro_node_draft .mcneese-content tbody tr:nth-of-type(2n+1),
+.mcneese.alias-csf_aio .mcneese-content tbody tr:nth-of-type(2n+1) {
     background: none repeat scroll 0px 0px #D1D1D1;
 }
 
