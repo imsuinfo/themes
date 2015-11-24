@@ -427,6 +427,12 @@
   background-color: #108f00;
 }
 
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 {
+  color: #ffffff;
+  background-color: #970038;
+ } 
+
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a,
@@ -435,14 +441,17 @@
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a:visited,
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a:visited,
 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a:visited,
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a,
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a:visited
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a:visited
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a:visited
-.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:visited {
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:visited
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:visited {
   color: #ffffff;
 }
 
