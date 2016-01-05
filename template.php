@@ -135,6 +135,20 @@ function mfcs_render_page() {
 
           unset($cf['page']['breadcrumb'][1]);
         }
+        elseif ($path_parts[1] == 'cancelling-0') {
+          if ($count_parts >= 3) {
+            $title = "Cancelling Request";
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['show']['page']['precrumb'] = TRUE;
+
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/cancelling-0/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            unset($cf['page']['breadcrumb'][1]);
+          }
+        }
         elseif ($path_parts[1] == 'reviewers-0') {
           $title = "Manage Reviewers";
           $pre_crumb_title = "Requests Management";

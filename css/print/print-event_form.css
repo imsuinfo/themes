@@ -153,6 +153,8 @@
   margin: 0px;
 }
 
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-cancel,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-uncancel,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,

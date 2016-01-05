@@ -195,6 +195,8 @@
   border-right: 1px outset #a0a0a0;
 }
 
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-cancel,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-uncancel,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
@@ -244,12 +246,21 @@
   text-align: right;
 }
 
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value.item-cancelled > .item-value-instance {
+  text-decoration: line-through;
+}
+
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-large > .item-value {
   display: block;
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value > .item-value-instance-dates-category {
   font-size: 12px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance-cancelled {
+  font-size: 0.8em;
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
@@ -441,4 +452,17 @@
   border-bottom: 1px solid #000000;
 
   min-height: 2em;
+}
+
+
+
+/*** Cancellable ***/
+#mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .form-type-select,
+#mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .cancelling-item-message {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .cancelling-item-message {
+  margin: 8px;
 }

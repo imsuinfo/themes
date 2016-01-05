@@ -351,6 +351,10 @@
   line-height: 12px;
 }
 
+#mfcs-request-history-0-form > .form-wrapper-inner > .history_items > .fieldset-wrapper > .history_item-values > .history_item-value .item-value.item-cancelled > .item-link {
+  text-decoration: line-through;
+}
+
 
 
 /*** Statistics ***/
