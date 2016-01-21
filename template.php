@@ -465,7 +465,7 @@ function mcneese_www_render_page() {
     // group image
     if (property_exists($node, 'field_group_image_show') && is_array($node->field_group_image_show) && isset($node->field_group_image_show['und'][0]['value']) && $node->field_group_image_show['und'][0]['value']) {
       // assign default 'simple background image' from the dbu.
-      $image_url = 'dbu://c/043e94d1/group_image.png';
+      $image_url = 'dbu://c/043e94d1/simple_background.png';
       $image_alt = '';
       $image_tooltip = '';
 
