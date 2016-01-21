@@ -259,6 +259,7 @@
 .mcneese.node-theme-page-751 .v-list-item {
   padding: 5px;
   border: 1px solid #d0d0d0;
+  min-height: 180px;
 }
 
 .mcneese.node-theme-page-751 .v-list-item a {
