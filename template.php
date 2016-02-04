@@ -300,6 +300,22 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
+        elseif ($path_parts[1] == 'synchronize-0') {
+          $title = "Synchronize";
+          $pre_crumb_title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+        }
         elseif ($path_parts[1] == 'management') {
           $title = "Requests Management";
           $pre_crumb_title = "Requests Management";
