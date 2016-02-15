@@ -1549,7 +1549,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
   $cf['subtheme'] = array();
 
-  $cf['meta']['name']['copyright'] = "2014© McNeese State University";
+  $cf['meta']['name']['copyright'] = "2016© McNeese State University";
   $cf['meta']['name']['description'] = "McNeese State University Website";
   $cf['meta']['name']['distribution'] = "web";
 
