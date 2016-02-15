@@ -492,3 +492,37 @@
 #mfcs-request-troubleshoot-0-form .troubleshoot-code > .code-separator {
   margin-bottom: 20px;
 }
+
+
+
+/*** Datatable Customizations ***/
+.mcneese .dataTables_wrapper > .ColVis > .ColVis_Button,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
+  margin: 0px 5px;
+}
+
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests {
+  position: relative;
+
+  color: #000000;
+  background: #ffffff none repeat scroll 0% 0%;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  padding: 3px 4px;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #cccccc;
+
+  white-space: nowrap;
+}
+
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:active,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:focus,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:hover {
+  text-shadow: none;
+
+  background-color: #f0f0f0;
+  border: 1px solid #666666;
+}
