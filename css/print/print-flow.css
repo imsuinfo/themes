@@ -37,6 +37,7 @@
 .mcneese .dataTables_wrapper > .dataTables_length,
 .mcneese .dataTables_wrapper > .dataTables_filter,
 .mcneese .dataTables_wrapper > .ColVis,
+.mcneese .dataTables_wrapper > .dt-buttons,
 .mcneese .dataTables_wrapper > .dataTables_paginate {
   display: none;
 }
