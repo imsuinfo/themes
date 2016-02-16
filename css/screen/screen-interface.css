@@ -258,3 +258,11 @@
 
   float: none;
 }
+
+
+
+/*** Misc Datatable ***/
+*.mcneese .dataTables_wrapper > .dataTable > tbody > tr > .column-operations > a {
+  padding: 0px 3px;
+  line-height: 1.5em;
+}
