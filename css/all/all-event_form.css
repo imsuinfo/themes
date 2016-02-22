@@ -477,3 +477,8 @@
   padding: 3px;
   border: 1px dotted #e8c169;
 }
+
+#mfcs-markup-request-message {
+  margin: 2px;
+  padding: 3px;
+}
