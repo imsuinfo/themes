@@ -466,3 +466,14 @@
 #mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .cancelling-item-message {
   margin: 8px;
 }
+
+
+
+/*** Request Form ***/
+#mfcs-markup-request-services-alcohol_note {
+  color: #000000;
+  background-color: #dfe869;
+
+  padding: 3px;
+  border: 1px dotted #e8c169;
+}
