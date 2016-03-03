@@ -256,6 +256,16 @@
   padding: 3px 0px 0px 0px;
 }
 
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .warning-holidays {
+  margin: 10px 5px;
+
+  color: #884400;
+  background-color: #fffce5;
+
+  padding: 6px;
+  border: 2px solid #eedd55;
+}
+
 
 
 /*** Facilities Use Agreement ***/
