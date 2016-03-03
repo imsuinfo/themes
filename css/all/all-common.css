@@ -815,6 +815,21 @@
   color: #ffffff;
 }
 
+/** Item Type: Holiday (holiday) (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-holiday > .calendar-item > .calendar-item-footer-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-holiday {
+  color: #000000;
+  background-color: #d0d0d0;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-holiday > .calendar-item > .calendar-item-link-wrapper {
+  color: #000000;
+  background-color: #a0a0a0;
+
+  border-bottom: 2px solid #757575;
+
+  font-weight: bold;
+}
 
 
 

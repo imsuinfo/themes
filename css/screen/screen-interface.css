@@ -262,7 +262,34 @@
 
 
 /*** Misc Datatable ***/
-*.mcneese .dataTables_wrapper > .dataTable > tbody > tr > .column-operations > a {
+.mcneese .dataTables_wrapper > .dataTable > tbody > tr > .column-operations > a {
   padding: 0px 3px;
   line-height: 1.5em;
+}
+
+
+
+
+/*** Holiday ***/
+#mfcs-holiday-edit-submit-cancel,
+#mfcs-holiday-delete-submit-no {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-holiday-edit-submit-cancel:focus,
+#mfcs-holiday-edit-submit-cancel:active,
+#mfcs-holiday-edit-submit-cancel:hover,
+#mfcs-holiday-delete-submit-no:focus,
+#mfcs-holiday-delete-submit-no:active,
+#mfcs-holiday-delete-submit-no:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
 }

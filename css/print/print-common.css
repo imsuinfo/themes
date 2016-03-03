@@ -99,6 +99,15 @@
   text-overflow: ellipsis;
 }
 
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-description-wrapper {
+  padding: 0px 4px;
+  min-height: 14px;
+  max-height: 42px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper {
   max-height: inherit;
 }
