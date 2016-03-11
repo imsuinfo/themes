@@ -4529,3 +4529,31 @@
 .mcneese .font-size-em-9_9 {
   font-size: 9.9em;
 }
+
+.mcneese .white-space-inherit {
+  white-space: inherit;
+}
+
+.mcneese .white-space-initial {
+  white-space: initial;
+}
+
+.mcneese .white-space-normal {
+  white-space: normal;
+}
+
+.mcneese .white-space-nowrap {
+  white-space: nowrap;
+}
+
+.mcneese .white-space-pre {
+  white-space: pre;
+}
+
+.mcneese .white-space-pre-line {
+  white-space: pre-line;
+}
+
+.mcneese .white-space-pre-wrap {
+  white-space: pre-wrap;
+}
