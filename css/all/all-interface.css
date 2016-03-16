@@ -495,12 +495,94 @@
 
 
 
+/*** Troubleshooting Page - Locations, Buildings, Rooms ***/
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 3px;
+  padding: 3px;
+  border: 1px solid #999999;
+
+  min-width: 450px;
+
+  background-color: #f5f5f5;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-title,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-title,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-title {
+  padding: 2px 5px;
+  margin: 0px;
+
+  background-color: #cfcfcf;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list {
+  padding: 0px 5px;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item {
+  display: block;
+  position: relative;
+
+  line-height: 22px;
+
+  border-bottom: 1px dotted;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item.even,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item.even,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item.even {
+  background-color: #ffffff;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item:last-of-type,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item:last-of-type,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item:last-of-type {
+  border-bottom: 0px none;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-name,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-name,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-name {
+  display: inline-block;
+  vertical-align: baseline;
+
+  font-weight: bold;
+
+  margin-right: 5px;
+}
+
+#mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-value,
+#mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-value,
+#mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-value {
+  display: inline-block;
+  vertical-align: baseline;
+
+  clear: both;
+  float: right;
+}
+
+
+
 /*** Datatable Customizations ***/
+.mcneese .dataTables_wrapper > .ColVis > .ColVis_Button, .mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
+  line-height: 16px;
+}
+
 .mcneese .dataTables_wrapper > .ColVis > .ColVis_Button,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
   margin: 0px 5px;
 }
 
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests {
   position: relative;
 
@@ -518,6 +600,9 @@
   white-space: nowrap;
 }
 
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored:active,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored:focus,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored:hover,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:active,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:focus,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:hover {
@@ -525,4 +610,32 @@
 
   background-color: #f0f0f0;
   border: 1px solid #666666;
+}
+
+
+
+/*** Problems ***/
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-extra-conflict-items > .request_problem-extra-conflict-item {
+  margin: 7px 0px 5px 0px;
+}
+
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row {
+  margin: 4px 0px;
+}
+
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 120px;
+
+  font-weight: bold;
+}
+
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
 }

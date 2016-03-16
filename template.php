@@ -189,10 +189,18 @@ function mfcs_render_page() {
             $title = "User Problems";
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
+          elseif ($count_parts > 2 && $path_parts[2] == 'requests') {
+            $title = "Request Problems";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
 
           if ($count_parts > 4 && $path_parts[3] == 'user') {
             $title = "User Problem";
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/user/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+          elseif ($count_parts > 4 && $path_parts[3] == 'request') {
+            $title = "Request Problem";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/request/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
           // original breadcrumb gets overridden to remove extra/invalid url paths.
@@ -410,6 +418,19 @@ function mfcs_render_page() {
           $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($count_parts > 2 && $path_parts[2] == 'locations') {
+            $title = "Locations";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+          elseif ($count_parts > 2 && $path_parts[2] == 'buildings') {
+            $title = "Buildings";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+          elseif ($count_parts > 2 && $path_parts[2] == 'rooms') {
+            $title = "Rooms";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
 
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
