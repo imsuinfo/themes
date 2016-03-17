@@ -1,4 +1,4 @@
-name        = McNeese Drupal
+name        = McNeese Drupal (2.0)
 description = "This is the standard McNeese Drupal theme for content editing. This uses HTML5."
 version     = "7.x-2.0"
 core        = 7.x
