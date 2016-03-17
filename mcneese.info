@@ -1,4 +1,4 @@
-name = McNeese Theme
+name = McNeese Theme (3.0)
 description = "This is the baseline McNeese theme. It utilized HTML 5 and falls back to pre-HTML5 code for known older browsers, namely IE-8."
 version = "7.x-3.0"
 core = 7.x
