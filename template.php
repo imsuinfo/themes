@@ -774,15 +774,15 @@ function mcneese_www_process_side_panel(&$cf) {
     $markup .= '    <div class="download-is-box margin-bottom-10">' . "\n";
     $markup .= '      <h3>Featured Downloads</h3>' . "\n";
     $markup .= '      <a href="https://www.eff.org/https-everywhere" target="_blank"><img src="' . $base_path . 'f/f/12497" height="38" width="185" alt="HTTPS Everywhere" title="Encrypt the Web"></a><br>' . "\n";
-    $markup .= '      <a href="https://pack.resetthenet.org/" target="_blank" rel="noreferrer"><img alt="Reset The Net" title="Privacy Pack" height="38" width="185" src="/f/f/12498"></a>';
+    $markup .= '      <a href="https://pack.resetthenet.org/" target="_blank" rel="noreferrer"><img alt="Reset The Net" title="Privacy Pack" height="38" width="185" src="' . $base_path . 'f/f/12498"></a>';
     $markup .= '    </div>' . "\n";
 
     // apparently browsers give whitespace space (when they otherwise should not) causing images to wrap/overflow due to invisible/unprinted space.
     $markup .= '<div class="margin-top-20 margin-bottom-10">';
-    $markup .= '<a href="https://twitter.com/McNeeseInfoSec" target="_blank" rel="noreferrer"><img alt="@McNeeseInfoSec" title="@McNeeseInfoSec" height="47" width="47" style="width: 47px; height: 47px;" src="/f/f/12499"></a>';
-    $markup .= '<a href="https://www.staysafeonline.org/ncsam/champions/all-champions/" target="_blank" rel="noreferrer"><img alt="National Cyber Security Awareness Month" title="Free Security Check Ups" height="47" width="47" src="/f/f/12500" style="width: 47px; height: 47px;"></a>';
-    $markup .= '<a href="https://www.staysafeonline.org/data-privacy-day/check-your-privacy-settings/" target="_blank" rel="noreferrer"><img alt="Data Privacy Day" title="Check Your Privacy Settings" height="47" width="47" src="/f/f/12501" style="width: 47px; height: 47px;"></a>';
-    $markup .= '<a href="http://stopthinkconnect.org/tips-and-advice/overview/" target="_blank" rel="noreferrer"><img alt="Stop | Think | Connect" title="Tips &amp; Advice" height="47" width="47" src="/f/f/12502" style="width: 47px; height: 47px;"></a>';
+    $markup .= '<a href="https://twitter.com/McNeeseInfoSec" target="_blank" rel="noreferrer"><img alt="@McNeeseInfoSec" title="@McNeeseInfoSec" height="47" width="47" style="width: 47px; height: 47px;" src="' . $base_path . 'f/f/12499"></a>';
+    $markup .= '<a href="https://www.staysafeonline.org/ncsam/champions/all-champions/" target="_blank" rel="noreferrer"><img alt="National Cyber Security Awareness Month" title="Free Security Check Ups" height="47" width="47" src="' . $base_path . 'f/f/12500" style="width: 47px; height: 47px;"></a>';
+    $markup .= '<a href="https://www.staysafeonline.org/data-privacy-day/check-your-privacy-settings/" target="_blank" rel="noreferrer"><img alt="Data Privacy Day" title="Check Your Privacy Settings" height="47" width="47" src="' . $base_path . 'f/f/12501" style="width: 47px; height: 47px;"></a>';
+    $markup .= '<a href="http://stopthinkconnect.org/tips-and-advice/overview/" target="_blank" rel="noreferrer"><img alt="Stop | Think | Connect" title="Tips &amp; Advice" height="47" width="47" src="' . $base_path . 'f/f/12502" style="width: 47px; height: 47px;"></a>';
     $markup .= '</div>' . "\n";
 
     $markup .= '  </div>' . "\n";
