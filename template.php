@@ -826,14 +826,20 @@ function mcneese_www_process_javascript(&$cf) {
 
 
   // NS Dorms javascript
-  if ($uri_fixed == 'ns/dorms' || (isset($sources[1]['ns/dorms']))) {
+  if ($uri_fixed == 'ns/dorms' || (isset($sources[1]['ns/dorms']) && !isset($sources[2]))) {
     drupal_add_js($base_path . $theme_path . '/js/ns-dorms.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
   }
 
 
   // NS Helpdesk javascript
-  if ($uri_fixed == 'ns/helpdesk' || (isset($sources[1]['ns/helpdesk']))) {
+  if ($uri_fixed == 'ns/helpdesk' || (isset($sources[1]['ns/helpdesk']) && !isset($sources[2]))) {
     drupal_add_js($base_path . $theme_path . '/js/ns-helpdesk.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+  }
+
+
+  // IS Twitter javascript
+  if ($uri_fixed == 'is' || (isset($sources[0]['is']) && !isset($sources[1]))) {
+    drupal_add_js($base_path . $theme_path . '/js/is-twitter.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
   }
 }
 
