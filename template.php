@@ -268,6 +268,17 @@ function mcneese_www_preprocess_page(&$vars) {
   }
 
 
+  // additional functions for eliminating side panel blocks.
+  $side_panel_markup = mcneese_www_process_side_panel($cf);
+  if (is_string($side_panel_markup)) {
+    $cf['page']['asides']['mcneese_www_process_side_panel'] = array(
+      '#type' => 'markup',
+      '#markup' => $side_panel_markup,
+    );
+    $cf['show']['page']['asides'] = TRUE;
+  }
+
+
   // node-specific content
   if ($cf['is']['node'] && !($cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access'])) {
     $node = &$cf['is_data']['node']['object'];
@@ -689,6 +700,56 @@ function mcneese_www_preprocess_menu_link(&$vars) {
   }
 
   $vars['element']['#attributes']['class'][] = 'menu_link-' . strtolower(drupal_clean_css_identifier($vars['element']['#title'], array(' ' => '-', '_' => '_', '/' => '-', '[' => '-', ']' => '')));
+}
+
+/**
+ * Build the side panel.
+ *
+ * This is also added by the global conf 'error_document_functions' option.
+ * Example:
+ *  $conf['error_document_functions'] = array(
+ *    'mcneese_www_process_side_panel',
+ *  );
+ *
+ * @param array|null $cf
+ *   The cf array that is available for modification.
+ *   The error document pages must set this to NULL because the cf data is not available during the static error pages.
+ *   Make sure to check if this is an array before operating on inside this function.
+ *
+ * @return string|null
+ *   NULL should be returned when there is no data to present.
+ *   Otherwise, a string containing the renderred panel data should be returned.
+ */
+function mcneese_www_process_side_panel(&$cf) {
+  global $base_path;
+  global $conf;
+
+
+  // Do nothing when under maintenance.
+  if (is_array($cf) && $cf['is']['maintenance'] && !$cf['is_data']['maintenance']['access']) {
+    return NULL;
+  }
+
+  $markup = NULL;
+
+  $uri = request_uri();
+  $uri_parts = explode('/', preg_replace('/^' . preg_quote($base_path, '/') . '/i', '', $uri));
+  $uri_parts_total = count($uri_parts);
+
+
+  // NTAS Widget Block
+  if (isset($uri_parts[0]) && $uri_parts[0] == 'police') {
+    if (function_exists('mcneese_functions_embed_ntas_widget')) {
+      $markup .= '<div id="national_terrorism_advisory_system">' . "\n";
+      $markup .= mcneese_functions_embed_ntas_widget(NULL, '+1 minutes', TRUE);
+      $markup .= '</div>' . "\n";
+    }
+  }
+
+
+  // add custom blocks here.
+
+  return $markup;
 }
 
 /**
