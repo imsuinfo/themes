@@ -762,7 +762,7 @@ function mcneese_www_process_side_panel(&$cf) {
     // was block 27.
     if ($uri_parts_total == 1) {
       $markup .= '<div class="block block-id-1 block-name-block-block-27 odd html_tag-div">' . "\n";
-      $markup .= '  <div class="align_center padding-top-8 padding-bottom-8">' . "\n";
+      $markup .= '  <div class="align_center padding-top-12 padding-bottom-4">' . "\n";
       $markup .= '    <a class="twitter-timeline" data-aria-polite="assertive" data-chrome="nofooter noborders transparent noscrollbar" data-widget-id="397859780779196416" href="https://twitter.com/McNeeseInfoSec" rel="noreferrer">Follow @McNeeseInfoSec</a>' . "\n";
       $markup .= '  </div>' . "\n";
       $markup .= '</div>' . "\n";
