@@ -1,0 +1,81 @@
+
+
+/*** Alias: csf ***/
+.mcneese.alias-csf_aio .mcneese-content table th {
+    background: none repeat scroll 0px 0px #FFFFFF;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mcneese.alias-csf_aio .mcneese-content table td {
+    padding: 8px;
+}
+
+.mcneese.alias-csf_aio .mcneese-content table tr {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.mcneese.alias-csf_aio .mcneese-content tbody tr:nth-of-type(2n) {
+    background: none repeat scroll 0px 0px #EEEEEE;
+}
+
+.mcneese.alias-csf_aio .mcneese-content tbody tr:nth-of-type(2n+1) {
+    background: none repeat scroll 0px 0px #D1D1D1;
+}
+
+.mcneese.alias-csf_aio .csf-price {
+    font-size: 14px; }
+
+.mcneese.alias-csf_aio .notice {
+    background: #F1B9B9;
+    border: 2px dashed #AC6666;
+    color: #623838;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+
+/*** Alias: future_students ***/
+.mcneese.alias-part-0-future_students .tour-banner {
+    background: url(/f/c/5eaaac6d ) no-repeat center right;
+    background-color: #00477f;
+    height: 104px !important;
+    margin: 5px 0;
+    width: 960px !important;
+}
+
+/*FIXED - PE 09/04/15 */
+.mcneese.alias-part-0-future_students .tour-banner img {
+    float: left;
+    padding: 10px;
+}
+
+.mcneese.alias-part-0-future_students h3.banner {
+    color: #ffffff;
+    display: inline-block !important;
+    font-family: sans-serif;
+    margin:0;
+    padding: 38px 20px 0 20px;
+}
+
+.mcneese.alias-part-0-future_students .tour {
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.mcneese.alias-part-0-future_students a.tour {
+    color: #ffffff !important;
+    border: 2px solid #fad703;
+    text-decoration: none;
+}
+
+.mcneese.alias-part-0-future_students a.tour:hover {
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    text-decoration: underline;
+}

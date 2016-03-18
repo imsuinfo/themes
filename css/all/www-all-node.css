@@ -1,0 +1,66 @@
+
+
+
+/*** Node: 5508 ***/
+/* Note: this is a workaround intended to be replaced once problem is resolved. */
+.mcneese.node-id-5508 input.form-submit.submit-upload {
+  display: none;
+}
+
+
+
+/*** Node: 5541 ***/
+.mcneese
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 {
+  background-color: #003354;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 {
+  background-color: #095000;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 {
+  color: #ffffff;
+  background-color: #970038;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a:visited,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:visited {
+  color: #ffffff;
+}
+
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a:focus,
+.mcneese.node-id-5541 .mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-725 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-726 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-727 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-728 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .event-item.event-737 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:focus,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:active,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-725 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-726 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-727 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-728 > a:hover,
+.mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:hover {
+  color: #fffab9;
+}

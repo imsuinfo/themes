@@ -11,6 +11,8 @@ version = "7.x-1.0"
 
 stylesheets[all][] = css/all/www-all-common.css
 stylesheets[all][] = css/all/www-all-front.css
+stylesheets[all][] = css/all/www-all-alias.css
+stylesheets[all][] = css/all/www-all-node.css
 stylesheets[all][] = css/all/www-all-web_document.css
 stylesheets[all][] = css/all/www-all-web_document-637.css
 stylesheets[all][] = css/all/www-all-web_document-638.css
