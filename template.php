@@ -268,6 +268,10 @@ function mcneese_www_preprocess_page(&$vars) {
   }
 
 
+  // additional javascript functions.
+  mcneese_www_process_javascript($cf);
+
+
   // additional functions for eliminating side panel blocks.
   $side_panel_markup = mcneese_www_process_side_panel($cf);
   if (is_string($side_panel_markup)) {
@@ -796,6 +800,44 @@ function mcneese_www_process_side_panel(&$cf) {
 }
 
 /**
+ * Loads additional javascript.
+ *
+ * @param array $cf
+ *   The cf array that is available for modification.
+ */
+function mcneese_www_process_javascript(&$cf) {
+  global $base_path;
+  global $theme_path;
+
+  $uri = request_uri();
+  $uri_parts = explode('/', preg_replace('/^' . preg_quote($base_path, '/') . '/i', '', $uri));
+  $uri_parts_total = count($uri_parts);
+  if (isset($uri_parts[($uri_parts_total - 1)])) {
+    $uri_parts[($uri_parts_total - 1)] = preg_replace('/([^\?]*)\?.*$/i', '$1', $uri_parts[($uri_parts_total - 1)]);
+  }
+  $uri_fixed = implode('/', $uri_parts);
+
+
+  // process nodes, whose url paths may be /node/X but the published path are the desired aliases (such as /my/alias).
+  $sources = array();
+  if (isset($uri_parts[0]) && $uri_parts[0] == 'node' && isset($uri_parts[1]) && is_numeric($uri_parts[1])) {
+    $sources = mcneese_www_process_build_node_source_parts($uri_parts[1]);
+  }
+
+
+  // NS Dorms javascript
+  if ($uri_fixed == 'ns/dorms' || (isset($sources[1]['ns/dorms']))) {
+    drupal_add_js($base_path . $theme_path . '/js/ns-dorms.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+  }
+
+
+  // NS Helpdesk javascript
+  if ($uri_fixed == 'ns/helpdesk' || (isset($sources[1]['ns/helpdesk']))) {
+    drupal_add_js($base_path . $theme_path . '/js/ns-helpdesk.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+  }
+}
+
+/**
  * Given a source url, loads and identifies all distinct parts.
  *
  * @param string $source
@@ -809,7 +851,12 @@ function mcneese_www_process_build_node_source_parts($node_id) {
     return array();
   }
 
-  $sources = array(
+  $sources = &drupal_static(__function__);
+  if (isset($sources[$node_id])) {
+    return $sources[$node_id];
+  }
+
+  $sources[$node_id] = array(
   );
 
   try {
@@ -825,15 +872,23 @@ function mcneese_www_process_build_node_source_parts($node_id) {
 
       $count = 0;
       $total_parts = count($result_parts);
+      $previous = NULL;
       for (; $count < $total_parts; $count++) {
-        $sources[$count][$result_parts[$count]] = $result->pid;
+        if (is_null($previous)) {
+          $previous = $result_parts[$count];
+        }
+        else {
+          $previous .= '/' . $result_parts[$count];
+        }
+
+        $sources[$node_id][$count][$previous] = $result->pid;
       }
     }
   }
   catch (Exception $ex) {
   }
 
-  return $sources;
+  return $sources[$node_id];
 }
 
 /**
