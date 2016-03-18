@@ -735,10 +735,20 @@ function mcneese_www_process_side_panel(&$cf) {
   $uri = request_uri();
   $uri_parts = explode('/', preg_replace('/^' . preg_quote($base_path, '/') . '/i', '', $uri));
   $uri_parts_total = count($uri_parts);
+  if (isset($uri_parts[($uri_parts_total - 1)])) {
+    $uri_parts[($uri_parts_total - 1)] = preg_replace('/([^\?]*)\?.*$/i', '$1', $uri_parts[($uri_parts_total - 1)]);
+  }
+
+
+  // process nodes, whose url paths may be /node/X but the published path are the desired aliases (such as /my/alias).
+  $sources = array();
+  if (isset($uri_parts[0]) && $uri_parts[0] == 'node' && isset($uri_parts[1]) && is_numeric($uri_parts[1])) {
+    $sources = mcneese_www_process_build_node_source_parts($uri_parts[1]);
+  }
 
 
   // NTAS Widget Block
-  if (isset($uri_parts[0]) && $uri_parts[0] == 'police') {
+  if ((isset($uri_parts[0]) && $uri_parts[0] == 'police') || isset($sources[0]['police'])) {
     if (function_exists('mcneese_functions_embed_ntas_widget')) {
       $markup .= '<div id="national_terrorism_advisory_system">' . "\n";
       $markup .= mcneese_functions_embed_ntas_widget(NULL, '+1 minutes', TRUE);
@@ -747,9 +757,83 @@ function mcneese_www_process_side_panel(&$cf) {
   }
 
 
+  // IS Block
+  if ((isset($uri_parts[0]) && $uri_parts[0] == 'is') || isset($sources[0]['is'])) {
+    // was block 27.
+    if ($uri_parts_total == 1) {
+      $markup .= '<div class="block block-id-1 block-name-block-block-27 odd html_tag-div">' . "\n";
+      $markup .= '  <div class="align_center padding-top-8 padding-bottom-8">' . "\n";
+      $markup .= '    <a class="twitter-timeline" data-aria-polite="assertive" data-chrome="nofooter noborders transparent noscrollbar" data-widget-id="397859780779196416" href="https://twitter.com/McNeeseInfoSec" rel="noreferrer">Follow @McNeeseInfoSec</a>' . "\n";
+      $markup .= '  </div>' . "\n";
+      $markup .= '</div>' . "\n";
+    }
+
+    // was block 26.
+    $markup .= '<div class="block block-id-2 block-name-block-block-26 even html_tag-div">' . "\n";
+    $markup .= '  <div class="align_center margin-top-10 margin-bottom-10">' . "\n";
+    $markup .= '    <div class="download-is-box margin-bottom-10">' . "\n";
+    $markup .= '      <h3>Featured Downloads</h3>' . "\n";
+    $markup .= '      <a href="https://www.eff.org/https-everywhere" target="_blank"><img src="' . $base_path . 'f/f/12497" height="38" width="185" alt="HTTPS Everywhere" title="Encrypt the Web"></a><br>' . "\n";
+    $markup .= '      <a href="https://pack.resetthenet.org/" target="_blank" rel="noreferrer"><img alt="Reset The Net" title="Privacy Pack" height="38" width="185" src="/f/f/12498"></a>';
+    $markup .= '    </div>' . "\n";
+
+    // apparently browsers give whitespace space (when they otherwise should not) causing images to wrap/overflow due to invisible/unprinted space.
+    $markup .= '<div class="margin-top-20 margin-bottom-10">';
+    $markup .= '<a href="https://twitter.com/McNeeseInfoSec" target="_blank" rel="noreferrer"><img alt="@McNeeseInfoSec" title="@McNeeseInfoSec" height="47" width="47" style="width: 47px; height: 47px;" src="/f/f/12499"></a>';
+    $markup .= '<a href="https://www.staysafeonline.org/ncsam/champions/all-champions/" target="_blank" rel="noreferrer"><img alt="National Cyber Security Awareness Month" title="Free Security Check Ups" height="47" width="47" src="/f/f/12500" style="width: 47px; height: 47px;"></a>';
+    $markup .= '<a href="https://www.staysafeonline.org/data-privacy-day/check-your-privacy-settings/" target="_blank" rel="noreferrer"><img alt="Data Privacy Day" title="Check Your Privacy Settings" height="47" width="47" src="/f/f/12501" style="width: 47px; height: 47px;"></a>';
+    $markup .= '<a href="http://stopthinkconnect.org/tips-and-advice/overview/" target="_blank" rel="noreferrer"><img alt="Stop | Think | Connect" title="Tips &amp; Advice" height="47" width="47" src="/f/f/12502" style="width: 47px; height: 47px;"></a>';
+    $markup .= '</div>' . "\n";
+
+    $markup .= '  </div>' . "\n";
+    $markup .= '</div>' . "\n";
+  }
+
+
   // add custom blocks here.
 
   return $markup;
+}
+
+/**
+ * Given a source url, loads and identifies all distinct parts.
+ *
+ * @param string $source
+ *   The source url string to search for.
+ *
+ * @return array
+ *   An array of possible values.
+ */
+function mcneese_www_process_build_node_source_parts($node_id) {
+  if (!is_numeric($node_id) || $node_id < 1) {
+    return array();
+  }
+
+  $sources = array(
+  );
+
+  try {
+    $query = db_select('url_alias', 'ua');
+    $query->addField('ua', 'pid', 'pid');
+    $query->addField('ua', 'alias', 'alias');
+    $query->condition('ua.source', 'node/' . $node_id);
+
+    $results = $query->execute()->fetchAll();
+
+    foreach ($results as $result) {
+      $result_parts = explode('/', $result->alias);
+
+      $count = 0;
+      $total_parts = count($result_parts);
+      for (; $count < $total_parts; $count++) {
+        $sources[$count][$result_parts[$count]] = $result->pid;
+      }
+    }
+  }
+  catch (Exception $ex) {
+  }
+
+  return $sources;
 }
 
 /**
