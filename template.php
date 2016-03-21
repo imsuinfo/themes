@@ -841,6 +841,18 @@ function mcneese_www_process_javascript(&$cf) {
   if ($uri_fixed == 'is' || (isset($sources[0]['is']) && !isset($sources[1]))) {
     drupal_add_js($base_path . $theme_path . '/js/is-twitter.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
   }
+
+
+  // Bookstore javascript
+  if ($uri_fixed == 'bookstore' || (isset($sources[0]['bookstore']) && !isset($sources[1]))) {
+    if (function_exists('mcneese_third_party_add_facebook_connect_legacy_js')) {
+      mcneese_third_party_add_facebook_connect_legacy_js();
+
+      if (function_exists('mcneese_third_party_do_facebook_connect_js')) {
+        mcneese_third_party_do_facebook_connect_js('71065ce9bc688916c2ab0496f7a6db0f');
+      }
+    }
+  }
 }
 
 /**
