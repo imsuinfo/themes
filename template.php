@@ -268,6 +268,10 @@ function mcneese_www_preprocess_page(&$vars) {
   }
 
 
+  // process blocks.
+  //mcneese_www_process_blocks($cf);
+
+
   // additional javascript functions.
   mcneese_www_process_javascript($cf);
 
@@ -929,6 +933,60 @@ function mcneese_www_process_javascript(&$cf) {
     unset($remarketing);
   }
 }
+
+/**
+ * Processes blocks when the block module is disabled.
+ *
+ * Known modules designed for block presentation should still be provided when block module is disabled.
+ * This provides a fallback for when the block module does not exist.
+ *
+ * Currently disabled.
+ *
+ * @param array $cf
+ *   The cf array that is available for modification.
+ *
+ * return bool
+ *   TRUE on success (when block is disabled).
+ *   FALSE otherwise.
+ */
+/*
+function mcneese_www_process_blocks(&$cf) {
+  if (function_exists('block_page_build')) {
+    return FALSE;
+  }
+
+  global $user;
+
+  if (function_exists('workbench_block_view')) {
+    // only call workbench block information for logged in users.
+    if ($user->uid > 0) {
+      $block = workbench_block_view();
+
+      if (is_array($block)) {
+        $cf['show']['page']['information'] = TRUE;
+        if (!isset($cf['page']['information'])) {
+          $cf['page']['information'] = array();
+        }
+        $cf['page']['information']['workbench_block_view'] = array(
+          '#type' => 'container',
+          '#attributes' => array(
+            'class' => array(
+              'block',
+              'block-id-1',
+              'block-name-block-workbench-block',
+              'html_tag-div',
+            ),
+          ),
+        );
+        $cf['page']['information']['workbench_block_view']['block'] = $block;
+      }
+      unset($block);
+    }
+  }
+
+  return TRUE;
+}
+*/
 
 /**
  * Given a source url, loads and identifies all distinct parts.
