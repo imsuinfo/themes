@@ -6,3 +6,122 @@
 .mcneese.node-id-5508 input.form-submit.submit-upload {
   display: none;
 }
+
+
+
+/*** Node: Policy Nodes ***/
+/* Note: this is also done the wrong way because the policy section was setup to have custom theme designed and css should be designed around that. */
+.mcneese.node-id-7464 .list-box,
+.mcneese.node-id-7473 .list-box,
+.mcneese.node-id-7920 .list-box,
+.mcneese.node-id-7921 .list-box,
+.mcneese.node-id-7922 .list-box,
+.mcneese.node-id-7923 .list-box,
+.mcneese.node-id-7924 .list-box,
+.mcneese.node-id-7925 .list-box,
+.mcneese.node-id-7926 .list-box,
+.mcneese.node-id-7927 .list-box,
+.mcneese.node-id-7928 .list-box {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 0px;
+}
+
+.mcneese.node-id-7464 .list-box .list-box-title,
+.mcneese.node-id-7473 .list-box .list-box-title,
+.mcneese.node-id-7920 .list-box .list-box-title,
+.mcneese.node-id-7921 .list-box .list-box-title,
+.mcneese.node-id-7922 .list-box .list-box-title,
+.mcneese.node-id-7923 .list-box .list-box-title,
+.mcneese.node-id-7924 .list-box .list-box-title,
+.mcneese.node-id-7925 .list-box .list-box-title,
+.mcneese.node-id-7926 .list-box .list-box-title,
+.mcneese.node-id-7927 .list-box .list-box-title,
+.mcneese.node-id-7928 .list-box .list-box-title {
+  background-color: #00477f;
+  border: medium none;
+  color: #ffffff;
+  font-size: 11px;
+  margin: 0;
+  padding: 4px;
+  text-transform: uppercase;
+}
+
+.mcneese.node-id-7464 .list-box .list-box-title-nested,
+.mcneese.node-id-7473 .list-box .list-box-title-nested,
+.mcneese.node-id-7920 .list-box .list-box-title-nested,
+.mcneese.node-id-7921 .list-box .list-box-title-nested,
+.mcneese.node-id-7922 .list-box .list-box-title-nested,
+.mcneese.node-id-7923 .list-box .list-box-title-nested,
+.mcneese.node-id-7924 .list-box .list-box-title-nested,
+.mcneese.node-id-7925 .list-box .list-box-title-nested,
+.mcneese.node-id-7926 .list-box .list-box-title-nested,
+.mcneese.node-id-7927 .list-box .list-box-title-nested,
+.mcneese.node-id-7928 .list-box .list-box-title-nested {
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+.mcneese.node-id-7464 .list-box .list-box-body,
+.mcneese.node-id-7473 .list-box .list-box-body,
+.mcneese.node-id-7920 .list-box .list-box-body,
+.mcneese.node-id-7921 .list-box .list-box-body,
+.mcneese.node-id-7922 .list-box .list-box-body,
+.mcneese.node-id-7923 .list-box .list-box-body,
+.mcneese.node-id-7924 .list-box .list-box-body,
+.mcneese.node-id-7925 .list-box .list-box-body,
+.mcneese.node-id-7926 .list-box .list-box-body,
+.mcneese.node-id-7927 .list-box .list-box-body,
+.mcneese.node-id-7928 .list-box .list-box-body {
+  background: linear-gradient(to bottom, #f0f0f0 30%, #ffffff 70%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  border: medium none;
+  font-size: 11px;
+  padding: 0px;
+  line-height: 1.1em;
+}
+
+.mcneese.node-id-7464 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7473 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7920 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7921 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7922 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7923 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7924 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7925 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7926 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7927 .view-display-id-category .view-content > .item-list > ul,
+.mcneese.node-id-7928 .view-display-id-category .view-content > .item-list > ul {
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+.mcneese.node-id-7464 .view-display-id-category a:link,
+.mcneese.node-id-7473 .view-display-id-category a:link,
+.mcneese.node-id-7920 .view-display-id-category a:link,
+.mcneese.node-id-7921 .view-display-id-category a:link,
+.mcneese.node-id-7922 .view-display-id-category a:link,
+.mcneese.node-id-7923 .view-display-id-category a:link,
+.mcneese.node-id-7924 .view-display-id-category a:link,
+.mcneese.node-id-7925 .view-display-id-category a:link,
+.mcneese.node-id-7926 .view-display-id-category a:link,
+.mcneese.node-id-7927 .view-display-id-category a:link,
+.mcneese.node-id-7928 .view-display-id-category a:link {
+  text-decoration: none;
+}
+
+.mcneese.node-id-7464 #mcneese-content-main,
+.mcneese.node-id-7473 #mcneese-content-main,
+.mcneese.node-id-7920 #mcneese-content-main,
+.mcneese.node-id-7921 #mcneese-content-main,
+.mcneese.node-id-7922 #mcneese-content-main,
+.mcneese.node-id-7923 #mcneese-content-main,
+.mcneese.node-id-7924 #mcneese-content-main,
+.mcneese.node-id-7925 #mcneese-content-main,
+.mcneese.node-id-7926 #mcneese-content-main,
+.mcneese.node-id-7927 #mcneese-content-main,
+.mcneese.node-id-7928 #mcneese-content-main {
+  overflow: hidden;
+}

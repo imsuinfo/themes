@@ -79,3 +79,18 @@
     border: 2px solid #ffffff;
     text-decoration: underline;
 }
+
+
+
+/*** Alias: videos ***/
+.mcneese.alias-part-0-videos .campus-tours {
+  width: 100%;
+}
+
+.mcneese.alias-part-0-videos .campus-tours h1 {
+  text-align: center;
+}
+
+.mcneese.alias-part-0-videos .campus-tours iframe {
+  text-align: center;
+}
