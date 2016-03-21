@@ -853,6 +853,81 @@ function mcneese_www_process_javascript(&$cf) {
       }
     }
   }
+
+
+  // "Remarketing" javascript (jira tickets: www-1062, www-914)
+  {
+    $remarketing = FALSE;
+
+    if ($uri_fixed == 'nursing' || (isset($sources[0]['nursing']) && !isset($sources[1]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'nursing/family_nurse_practitioner_curriculum' || (isset($sources[1]['nursing/family_nurse_practitioner_curriculum']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'nursing/family_pychiatric/mental_health_nurse_practition' || (isset($sources[2]['nursing/family_pychiatric/mental_health_nurse_practition']) && !isset($sources[3]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'nursing/nurse_executive_curriculum' || (isset($sources[1]['nursing/nurse_executive_curriculum']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'nursing/graduate' || (isset($sources[1]['nursing/graduate']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'nursing/rn-to-bsn_online' || (isset($sources[1]['nursing/rn-to-bsn_online']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'dore/exed/nurse-cm' || (isset($sources[2]['dore/exed/nurse-cm']) && !isset($sources[3]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn' || (isset($sources[0]['alearn']) && !isset($sources[1]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn/cjus' || (isset($sources[1]['alearn/cjus']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn/fcst' || (isset($sources[1]['alearn/fcst']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn/mgmo' || (isset($sources[1]['alearn/mgmo']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn/psco' || (isset($sources[1]['alearn/psco']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'alearn/sociology' || (isset($sources[1]['alearn/sociology']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+    elseif ($uri_fixed == 'socsi/mscj' || (isset($sources[1]['socsi/mscj']) && !isset($sources[2]))) {
+      $remarketing = TRUE;
+    }
+
+    if ($remarketing) {
+      // using JS_THEME to make sure these get processed after all other js.
+      // using defer to ensure that the javascript is only processed after the entire page is loaded.
+      // cache is set to false to prevent unintended cache load.
+      drupal_add_js($base_path . $theme_path . '/js/google-remarketing.js', array('type' => 'file', 'group' => JS_THEME, 'preprocess' => TRUE, 'defer' => TRUE, 'cache' => FALSE));
+
+      // leave the external js files as external so that client can choose how they want to react to these.
+      drupal_add_js('//www.googleadservices.com/pagead/conversion.js', array('type' => 'external', 'group' => JS_THEME, 'preprocess' => TRUE, 'defer' => TRUE, 'cache' => FALSE));
+
+      // double-click clickware is apparently needed by googleadservices.
+      $double_click = '<noscript>';
+      $double_click .= '<div class="element-invisible">';
+      $double_click .= '<img class="element-invisible" height="1" width="1" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980647790/?value=0&label=8OQlCIqCrwgQ7v7N0wM&guid=ON&script=0">';
+      $double_click .= '</div>';
+      $double_click .= '</noscript>';
+
+      $cf['show']['page']['bottom'] = TRUE;
+      if (!isset($cf['page']['bottom'])) {
+        $cf['page']['bottom'] = array();
+      }
+      $cf['page']['bottom']['remarketing']['#markup'] = $double_click;
+      unset($double_click);
+    }
+
+    unset($remarketing);
+  }
 }
 
 /**
