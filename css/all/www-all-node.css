@@ -11,6 +11,22 @@
 
 /*** Node: Policy Nodes ***/
 /* Note: this is also done the wrong way because the policy section was setup to have custom theme designed and css should be designed around that. */
+.mcneese.node-id-7464 div.layout-column_2,
+.mcneese.node-id-7473 div.layout-column_2,
+.mcneese.node-id-7920 div.layout-column_2,
+.mcneese.node-id-7921 div.layout-column_2,
+.mcneese.node-id-7922 div.layout-column_2,
+.mcneese.node-id-7923 div.layout-column_2,
+.mcneese.node-id-7924 div.layout-column_2,
+.mcneese.node-id-7925 div.layout-column_2,
+.mcneese.node-id-7926 div.layout-column_2,
+.mcneese.node-id-7927 div.layout-column_2,
+.mcneese.node-id-7928 div.layout-column_2 {
+    float: left;
+    width: 49.8%;
+    padding-left: .2%;
+}
+
 .mcneese.node-id-7464 .list-box,
 .mcneese.node-id-7473 .list-box,
 .mcneese.node-id-7920 .list-box,
