@@ -831,19 +831,19 @@ function mcneese_www_process_javascript(&$cf) {
 
   // NS Dorms javascript
   if ($uri_fixed == 'ns/dorms' || (isset($sources[1]['ns/dorms']) && !isset($sources[2]))) {
-    drupal_add_js($base_path . $theme_path . '/js/ns-dorms.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+    drupal_add_js($base_path . $theme_path . '/js/ns-dorms.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => FALSE));
   }
 
 
   // NS Helpdesk javascript
   if ($uri_fixed == 'ns/helpdesk' || (isset($sources[1]['ns/helpdesk']) && !isset($sources[2]))) {
-    drupal_add_js($base_path . $theme_path . '/js/ns-helpdesk.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+    drupal_add_js($base_path . $theme_path . '/js/ns-helpdesk.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => FALSE));
   }
 
 
   // IS Twitter javascript
   if ($uri_fixed == 'is' || (isset($sources[0]['is']) && !isset($sources[1]))) {
-    drupal_add_js($base_path . $theme_path . '/js/is-twitter.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => TRUE));
+    drupal_add_js($base_path . $theme_path . '/js/is-twitter.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => FALSE));
   }
 
 
@@ -910,10 +910,10 @@ function mcneese_www_process_javascript(&$cf) {
       // using JS_THEME to make sure these get processed after all other js.
       // using defer to ensure that the javascript is only processed after the entire page is loaded.
       // cache is set to false to prevent unintended cache load.
-      drupal_add_js($base_path . $theme_path . '/js/google-remarketing.js', array('type' => 'file', 'group' => JS_THEME, 'preprocess' => TRUE, 'defer' => TRUE, 'cache' => FALSE));
+      drupal_add_js($base_path . $theme_path . '/js/google-remarketing.js', array('type' => 'file', 'group' => JS_THEME, 'preprocess' => FALSE, 'defer' => TRUE, 'cache' => FALSE));
 
       // leave the external js files as external so that client can choose how they want to react to these.
-      drupal_add_js('//www.googleadservices.com/pagead/conversion.js', array('type' => 'external', 'group' => JS_THEME, 'preprocess' => TRUE, 'defer' => TRUE, 'cache' => FALSE));
+      drupal_add_js('//www.googleadservices.com/pagead/conversion.js', array('type' => 'external', 'group' => JS_THEME, 'preprocess' => FALSE, 'defer' => TRUE, 'cache' => FALSE));
 
       // double-click clickware is apparently needed by googleadservices.
       $double_click = '<noscript>';
