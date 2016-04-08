@@ -533,36 +533,36 @@ function mcneese_www_render_page() {
   // ensure that the primary and secondary navigations work properly by manually overriding the header menus.
   // this allows for the menus to be presented when in maintenance mode or when the database is unavailable.
   // be sure to edit the www-screen-common.css to simulate the active menu item for when the path matches.
-  $markup = '<nav class="menu html_tag-nav">' . "\n";
-  $markup .= '  <ul class="navigation_list html_tag-list">' . "\n";
-  $markup .= '    <li class="first leaf menu_link-apply-now menu_link-apply_now menu-link-name-menu-primary-navigation menu-link-mlid-4682 id-menu-link-menu-primary-navigation-4682"><a title="" href="/node/5683">Apply Now</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-future_students menu-link-name-menu-primary-navigation menu-link-mlid-799 id-menu-link-menu-primary-navigation-799"><a title="" href="/future-students">Future Students</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-current_students menu-link-name-menu-primary-navigation menu-link-mlid-898 id-menu-link-menu-primary-navigation-898"><a title="" href="/current-students">Students</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/alearn">Online Learning</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-faculty_staff menu-link-name-menu-primary-navigation menu-link-mlid-385 id-menu-link-menu-primary-navigation-385"><a href="/faculty-staff">Faculty &amp; Staff</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-alumni_friends menu-link-name-menu-primary-navigation menu-link-mlid-1273 id-menu-link-menu-primary-navigation-1273"><a title="" href="/alumni-friends">Alumni &amp; Donors</a></li>' . "\n";
-  $markup .= '    <li class="last leaf menu_link-my_mcneese menu-link-name-menu-primary-navigation menu-link-mlid-388 id-menu-link-menu-primary-navigation-388"><a title="" href="https://mymcneese.mcneese.edu/">MyMcNeese</a></li>' . "\n";
-  $markup .= '  </ul>' . "\n";
-  $markup .= '</nav>' . "\n";
+  $markup = '<nav class="menu html_tag-nav">';
+  $markup .= '  <ul class="navigation_list html_tag-list">';
+  $markup .= '    <li class="first leaf menu_link-apply-now menu_link-apply_now menu-link-name-menu-primary-navigation menu-link-mlid-4682 id-menu-link-menu-primary-navigation-4682"><a title="" href="/node/5683">Apply Now</a></li>';
+  $markup .= '    <li class="leaf menu_link-future_students menu-link-name-menu-primary-navigation menu-link-mlid-799 id-menu-link-menu-primary-navigation-799"><a title="" href="/future-students">Future Students</a></li>';
+  $markup .= '    <li class="leaf menu_link-current_students menu-link-name-menu-primary-navigation menu-link-mlid-898 id-menu-link-menu-primary-navigation-898"><a title="" href="/current-students">Students</a></li>';
+  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/alearn">Online Learning</a></li>';
+  $markup .= '    <li class="leaf menu_link-faculty_staff menu-link-name-menu-primary-navigation menu-link-mlid-385 id-menu-link-menu-primary-navigation-385"><a href="/faculty-staff">Faculty &amp; Staff</a></li>';
+  $markup .= '    <li class="leaf menu_link-alumni_friends menu-link-name-menu-primary-navigation menu-link-mlid-1273 id-menu-link-menu-primary-navigation-1273"><a title="" href="/alumni-friends">Alumni &amp; Donors</a></li>';
+  $markup .= '    <li class="last leaf menu_link-my_mcneese menu-link-name-menu-primary-navigation menu-link-mlid-388 id-menu-link-menu-primary-navigation-388"><a title="" href="https://mymcneese.mcneese.edu/">MyMcNeese</a></li>';
+  $markup .= '  </ul>';
+  $markup .= '</nav>';
 
   $cf['data']['page']['header_menu_1'] = $markup;
   $cf['show']['page']['header_menu_1'] = TRUE;
   $cf['show']['page']['header'] = TRUE;
 
-  $markup = '<nav class="menu html_tag-nav">' . "\n";
-  $markup .= '  <ul class="navigation_list html_tag-list">' . "\n";
-  $markup .= '    <li class="first leaf menu_link-academics menu-link-name-menu-secondary-navigation menu-link-mlid-849 id-menu-link-menu-secondary-navigation-849"><a href="/academics">Academics</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-athletics menu-link-name-menu-secondary-navigation menu-link-mlid-850 id-menu-link-menu-secondary-navigation-850"><a href="/athletics">Athletics</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-bookstore menu-link-name-menu-secondary-navigation menu-link-mlid-851 id-menu-link-menu-secondary-navigation-851"><a href="/bookstore">Bookstore</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-calendar menu-link-name-menu-secondary-navigation menu-link-mlid-2210 id-menu-link-menu-secondary-navigation-2210"><a title="" href="/calendar">Calendar</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-campus-map menu-link-name-menu-secondary-navigation menu-link-mlid-852 id-menu-link-menu-secondary-navigation-852"><a title="" href="/campusmaps">Campus Map</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-catalog menu-link-name-menu-secondary-navigation menu-link-mlid-6058 id-menu-link-menu-secondary-navigation-6058"><a title="" href="/catalog">Catalog</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-employment menu-link-name-menu-secondary-navigation menu-link-mlid-853 id-menu-link-menu-secondary-navigation-853"><a href="/hr/employment">Employment</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-library menu-link-name-menu-secondary-navigation menu-link-mlid-854 id-menu-link-menu-secondary-navigation-854"><a href="/library">Library</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-research menu-link-name-menu-secondary-navigation menu-link-mlid-858 id-menu-link-menu-secondary-navigation-858"><a href="/research">Research</a></li>' . "\n";
-  $markup .= '    <li class="last leaf menu_link-presidents-message menu-link-name-menu-secondary-navigation menu-link-mlid-1564 id-menu-link-menu-secondary-navigation-1564"><a title="" href="/president">President\'s Message</a></li>' . "\n";
-  $markup .= '  </ul>' . "\n";
-  $markup .= '</nav>' . "\n";
+  $markup = '<nav class="menu html_tag-nav">';
+  $markup .= '  <ul class="navigation_list html_tag-list">';
+  $markup .= '    <li class="first leaf menu_link-academics menu-link-name-menu-secondary-navigation menu-link-mlid-849 id-menu-link-menu-secondary-navigation-849"><a href="/academics">Academics</a></li>';
+  $markup .= '    <li class="leaf menu_link-athletics menu-link-name-menu-secondary-navigation menu-link-mlid-850 id-menu-link-menu-secondary-navigation-850"><a href="/athletics">Athletics</a></li>';
+  $markup .= '    <li class="leaf menu_link-bookstore menu-link-name-menu-secondary-navigation menu-link-mlid-851 id-menu-link-menu-secondary-navigation-851"><a href="/bookstore">Bookstore</a></li>';
+  $markup .= '    <li class="leaf menu_link-calendar menu-link-name-menu-secondary-navigation menu-link-mlid-2210 id-menu-link-menu-secondary-navigation-2210"><a title="" href="/calendar">Calendar</a></li>';
+  $markup .= '    <li class="leaf menu_link-campus-map menu-link-name-menu-secondary-navigation menu-link-mlid-852 id-menu-link-menu-secondary-navigation-852"><a title="" href="/campusmaps">Campus Map</a></li>';
+  $markup .= '    <li class="leaf menu_link-catalog menu-link-name-menu-secondary-navigation menu-link-mlid-6058 id-menu-link-menu-secondary-navigation-6058"><a title="" href="/catalog">Catalog</a></li>';
+  $markup .= '    <li class="leaf menu_link-employment menu-link-name-menu-secondary-navigation menu-link-mlid-853 id-menu-link-menu-secondary-navigation-853"><a href="/hr/employment">Employment</a></li>';
+  $markup .= '    <li class="leaf menu_link-library menu-link-name-menu-secondary-navigation menu-link-mlid-854 id-menu-link-menu-secondary-navigation-854"><a href="/library">Library</a></li>';
+  $markup .= '    <li class="leaf menu_link-research menu-link-name-menu-secondary-navigation menu-link-mlid-858 id-menu-link-menu-secondary-navigation-858"><a href="/research">Research</a></li>';
+  $markup .= '    <li class="last leaf menu_link-presidents-message menu-link-name-menu-secondary-navigation menu-link-mlid-1564 id-menu-link-menu-secondary-navigation-1564"><a title="" href="/president">President\'s Message</a></li>';
+  $markup .= '  </ul>';
+  $markup .= '</nav>';
 
   $cf['data']['page']['header_menu_2'] = $markup;
   $cf['show']['page']['header_menu_2'] = TRUE;
@@ -571,9 +571,9 @@ function mcneese_www_render_page() {
 
   // jira: ucs-1484: disable 75th links and references, but leave code just in case it needs to be brought back.
   // build the 75th anniversary and prepend it to the 'top' region.
-  #$markup = '<div class="noscript no-print" id="the_75th_anniversary_banner">' . "\n";
-  #$markup .= '  <div class="top_padding"></div>' . "\n";
-  #$markup .= '<a class="learn_more" href="http://75th.mcneese.edu/">Learn More</a></div>' . "\n";
+  #$markup = '<div class="noscript no-print" id="the_75th_anniversary_banner">';
+  #$markup .= '  <div class="top_padding"></div>';
+  #$markup .= '<a class="learn_more" href="http://75th.mcneese.edu/">Learn More</a></div>';
   #
   #if (isset($cf['data']['page']['top'])) {
   #  $cf['data']['page']['top'] = $markup . $cf['data']['page']['top'];
@@ -588,20 +588,20 @@ function mcneese_www_render_page() {
   // build the search box and append it to the 'header' region'.
   if (function_exists('drupal_get_form')) {
     $sbf = (array) drupal_get_form('search_block_form');
-    $markup = '  <div id="mcneese-search-box">' . "\n";
-    $markup .= '    <div class="search_box-links">' . "\n";
-    $markup .= '      <ul class="navigation_list">' . "\n";
-    $markup .= '        <li class="search_form-top_box_links-ada"><a href="/ada">ADA</a></li>' . "\n";
-    $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
-    $markup .= '        <li class="search_form-top_box_links-staff"><a href="/search/people">Faculty &amp; Staff Search</a></li>' . "\n";
-    $markup .= '        <div class="search_form-top_box_links-bar">|</div>' . "\n";
-    $markup .= '        <li class="search_form-top_box_links-index"><a href="/index">A-Z Index</a></li>' . "\n";
-    $markup .= '      </ul>' . "\n";
-    $markup .= '    </div>' . "\n";
-    $markup .= '    <div class="search_box-box">' . "\n";
-    $markup .= '      ' . drupal_render($sbf) . "\n";
-    $markup .= '    </div>' . "\n";
-    $markup .= '  </div>' . "\n";
+    $markup = '  <div id="mcneese-search-box">';
+    $markup .= '    <div class="search_box-links">';
+    $markup .= '      <ul class="navigation_list">';
+    $markup .= '        <li class="search_form-top_box_links-ada"><a href="/ada">ADA</a></li>';
+    $markup .= '        <div class="search_form-top_box_links-bar">|</div>';
+    $markup .= '        <li class="search_form-top_box_links-staff"><a href="/search/people">Faculty &amp; Staff Search</a></li>';
+    $markup .= '        <div class="search_form-top_box_links-bar">|</div>';
+    $markup .= '        <li class="search_form-top_box_links-index"><a href="/index">A-Z Index</a></li>';
+    $markup .= '      </ul>';
+    $markup .= '    </div>';
+    $markup .= '    <div class="search_box-box">';
+    $markup .= '      ' . drupal_render($sbf);
+    $markup .= '    </div>';
+    $markup .= '  </div>';
   }
 
   unset($sbf);
@@ -758,9 +758,9 @@ function mcneese_www_process_side_panel(&$cf) {
   // NTAS Widget Block
   if ((isset($uri_parts[0]) && $uri_parts[0] == 'police') || isset($sources[0]['police'])) {
     if (function_exists('mcneese_functions_embed_ntas_widget')) {
-      $markup .= '<div id="national_terrorism_advisory_system">' . "\n";
+      $markup .= '<div id="national_terrorism_advisory_system">';
       $markup .= mcneese_functions_embed_ntas_widget(NULL, '+1 minutes', TRUE);
-      $markup .= '</div>' . "\n";
+      $markup .= '</div>';
     }
   }
 
@@ -769,21 +769,21 @@ function mcneese_www_process_side_panel(&$cf) {
   if ((isset($uri_parts[0]) && $uri_parts[0] == 'is') || isset($sources[0]['is'])) {
     // was block 27.
     if ($uri_parts_total == 1) {
-      $markup .= '<div class="block block-id-1 block-name-block-block-27 odd html_tag-div">' . "\n";
-      $markup .= '  <div class="align_center padding-top-12 padding-bottom-4">' . "\n";
-      $markup .= '    <a class="twitter-timeline" data-aria-polite="assertive" data-chrome="nofooter noborders transparent noscrollbar" data-widget-id="397859780779196416" href="https://twitter.com/McNeeseInfoSec" rel="noreferrer">Follow @McNeeseInfoSec</a>' . "\n";
-      $markup .= '  </div>' . "\n";
-      $markup .= '</div>' . "\n";
+      $markup .= '<div class="block block-id-1 block-name-block-block-27 odd html_tag-div">';
+      $markup .= '  <div class="align_center padding-top-12 padding-bottom-4">';
+      $markup .= '    <a class="twitter-timeline" data-aria-polite="assertive" data-chrome="nofooter noborders transparent noscrollbar" data-widget-id="397859780779196416" href="https://twitter.com/McNeeseInfoSec" rel="noreferrer">Follow @McNeeseInfoSec</a>';
+      $markup .= '  </div>';
+      $markup .= '</div>';
     }
 
     // was block 26.
-    $markup .= '<div class="block block-id-2 block-name-block-block-26 even html_tag-div">' . "\n";
-    $markup .= '  <div class="align_center margin-top-10 margin-bottom-10">' . "\n";
-    $markup .= '    <div class="download-is-box margin-bottom-10">' . "\n";
-    $markup .= '      <h3>Featured Downloads</h3>' . "\n";
-    $markup .= '      <a href="https://www.eff.org/https-everywhere" target="_blank"><img src="' . $base_path . 'f/f/12497" height="38" width="185" alt="HTTPS Everywhere" title="Encrypt the Web"></a><br>' . "\n";
+    $markup .= '<div class="block block-id-2 block-name-block-block-26 even html_tag-div">';
+    $markup .= '  <div class="align_center margin-top-10 margin-bottom-10">';
+    $markup .= '    <div class="download-is-box margin-bottom-10">';
+    $markup .= '      <h3>Featured Downloads</h3>';
+    $markup .= '      <a href="https://www.eff.org/https-everywhere" target="_blank"><img src="' . $base_path . 'f/f/12497" height="38" width="185" alt="HTTPS Everywhere" title="Encrypt the Web"></a><br>';
     $markup .= '      <a href="https://pack.resetthenet.org/" target="_blank" rel="noreferrer"><img alt="Reset The Net" title="Privacy Pack" height="38" width="185" src="' . $base_path . 'f/f/12498"></a>';
-    $markup .= '    </div>' . "\n";
+    $markup .= '    </div>';
 
     // apparently browsers give whitespace space (when they otherwise should not) causing images to wrap/overflow due to invisible/unprinted space.
     $markup .= '<div class="margin-top-20 margin-bottom-10">';
@@ -791,10 +791,10 @@ function mcneese_www_process_side_panel(&$cf) {
     $markup .= '<a href="https://www.staysafeonline.org/ncsam/champions/all-champions/" target="_blank" rel="noreferrer"><img alt="National Cyber Security Awareness Month" title="Free Security Check Ups" height="47" width="47" src="' . $base_path . 'f/f/12500" style="width: 47px; height: 47px;"></a>';
     $markup .= '<a href="https://www.staysafeonline.org/data-privacy-day/check-your-privacy-settings/" target="_blank" rel="noreferrer"><img alt="Data Privacy Day" title="Check Your Privacy Settings" height="47" width="47" src="' . $base_path . 'f/f/12501" style="width: 47px; height: 47px;"></a>';
     $markup .= '<a href="http://stopthinkconnect.org/tips-and-advice/overview/" target="_blank" rel="noreferrer"><img alt="Stop | Think | Connect" title="Tips &amp; Advice" height="47" width="47" src="' . $base_path . 'f/f/12502" style="width: 47px; height: 47px;"></a>';
-    $markup .= '</div>' . "\n";
+    $markup .= '</div>';
 
-    $markup .= '  </div>' . "\n";
-    $markup .= '</div>' . "\n";
+    $markup .= '  </div>';
+    $markup .= '</div>';
   }
 
 
