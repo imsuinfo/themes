@@ -219,21 +219,21 @@
   font-weight: bold;
 }
 
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
+  color: #2d2d2d;
+  background-color: #fad703;
+}
+
 .mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:hover,
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:hover,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:focus {
   color: #ffffff;
   background-color: #00335b;
 }
 
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
-  color: #ffffff;
-  background-color: #00477f;
-}
-
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:hover,
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:active,
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:focus {
-  color: #2d2d2d;
-  background-color: #fad703;
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:active {
+  color: #fff1d2;
+  background-color: #00335b;
 }
