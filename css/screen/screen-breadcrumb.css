@@ -16,16 +16,16 @@
 .mcneese #mcneese-breadcrumb.relative {
   position: relative;
 
-  color: #0c5a9c;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #00335b;
 
   font-family: Arial,Helvetica,Sans-Serif,Sans;
   font-size: 12px;
 
   min-height: 24px;
 
-  margin: 0px;
-  padding: 10px 10px 0px 10px;
+  margin: 0px 0px 4px 0px;
+  padding: 0px 3px;
 }
 
 .mcneese #mcneese-breadcrumb.relative > .html_tag-header {
@@ -64,8 +64,7 @@
 
   vertical-align: top;
 
-  color: #0c5a9c;
-  background-color: #ffffff;
+  color: #ffffff;
   text-decoration: none;
 
   padding: 3px;
