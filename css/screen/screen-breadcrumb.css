@@ -78,7 +78,7 @@
 }
 
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home {
-  background-image: url(../../images/home-blue.png);
+  background-image: url(../../images/home.png);
   background-repeat: no-repeat;
   background-position: 5px 6px;
 
@@ -96,7 +96,7 @@
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus {
-  background-image: url(../../images/home-gray.png);
+  background-image: url(../../images/home-black.png);
 }
 
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-node_id,
