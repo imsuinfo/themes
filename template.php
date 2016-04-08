@@ -538,10 +538,10 @@ function mfcs_render_page() {
 
 
   // overrride and replace header_menu_1 with custom header menu.
-  $markup = '<nav class="menu html_tag-nav">' . "\n";
-  $markup .= '  <ul class="navigation_list html_tag-list">' . "\n";
+  $markup = '<nav class="menu html_tag-nav">';
+  $markup .= '  <ul class="navigation_list html_tag-list">';
   if (isset($cf['user']['object']) && is_object($cf['user']['object']) && $cf['user']['object']->uid == 0) {
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-login-wrapper first"><a class="menu_link menu_link-login" href="' . $base_path . 'login" title="Login to the System">Login</a></li>' . "\n";
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-login-wrapper first"><a class="menu_link menu_link-login" href="' . $base_path . 'login" title="Login to the System">Login</a></li>';
   }
   else {
     if (!isset($path_parts)) {
@@ -550,28 +550,28 @@ function mfcs_render_page() {
     }
 
     if ($count_parts >= 3 && $path_parts[0] == 'requests' && $path_parts[1] == 'create-0' && is_numeric($path_parts[2])) {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Copy an Existing Request">Copy Request</a></li>' . "\n";
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Copy an Existing Request">Copy Request</a></li>';
     }
     else {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Create a New Request">Create Request</a></li>' . "\n";
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Create a New Request">Create Request</a></li>';
     }
 
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>' . "\n";
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>' . "\n";
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
 
     // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
     // make it available only when directly accessing the help url.
     if (isset($path_parts[1]) && $path_parts[1] == 'help-0') {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>' . "\n";
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>';
     }
   }
 
-  $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="https://www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>' . "\n";
-  $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="https://mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>' . "\n";
+  $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="https://www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>';
+  $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="https://mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>';
 
 
-  $markup .= '  </ul>' . "\n";
-  $markup .= '</nav>' . "\n";
+  $markup .= '  </ul>';
+  $markup .= '</nav>';
 
   $cf['data']['page']['header_menu_1'] = $markup;
   $cf['show']['page']['header_menu_1'] = TRUE;
