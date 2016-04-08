@@ -18,4 +18,3 @@
       print(theme('mcneese_tag', $cf['field']['tags']['mcneese_field__body_close']) . "\n");
     }
   }
-?>

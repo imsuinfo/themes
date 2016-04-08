@@ -4,27 +4,39 @@
  * Search results theme implementation.
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
-?>
-<?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_section_open']) . "\n"); ?>
-  <?php if (empty($search_results)) { ?>
-    <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']) . "\n"); ?>
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
-        <h3 class="html_tag-heading"><?php print t("Your search yielded no results"); ?></h3>
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
-    <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']) . "\n"); ?>
 
-    <?php print search_help('search#noresults', drupal_help_arg()); ?>
-  <?php } else { ?>
-    <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']) . "\n"); ?>
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
-        <h3 class="html_tag-heading"><?php print t("Search Results"); ?></h3>
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
-    <?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']) . "\n"); ?>
+  print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_section_open']));
 
-    <ol class="search_results <?php print($module); ?>-results">
-      <?php print($search_results); ?>
-    </ol>
+  if (empty($search_results)) {
+    print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']));
+    print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
 
-    <?php print($pager); ?>
-  <?php } ?>
-<?php print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_section_close']) . "\n"); ?>
+    print('<h3 class="html_tag-heading">');
+    print("Your search yielded no results");
+    print('</h3>');
+
+    print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+    print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']));
+
+    print search_help('search#noresults', drupal_help_arg());
+  } else {
+    print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_open']));
+    print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+
+    print('<h3 class="html_tag-heading">');
+    print("Search Results");
+    print('</h3>');
+
+    print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+    print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_header_close']));
+
+    print('<ol class="search_results ');
+    print($module);
+    print('-results">');
+    print($search_results);
+    print('</ol>');
+
+    print($pager);
+  }
+
+  print(theme('mcneese_tag', $cf['search_results']['tags']['mcneese_search_results_section_close']));

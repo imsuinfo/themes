@@ -9,23 +9,32 @@
   if (!isset($cf['generic']['tags'])) {
     mcneese_initialize_generic_tags($cf);
   }
-?>
-<?php if ($cf['show']['block']['content'] && isset($cf['data']['block']['content'])) { ?>
-  <?php if (isset($cf['block']['tags']['mcneese_block_open'])) print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_open']) . "\n"); ?>
-  <!--(begin-block_content)-->
-  <?php if ($cf['show']['block']['header']) { ?>
-    <?php print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_header_open']) . "\n"); ?>
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n"); ?>
-        <!--(begin-block_title)-->
-        <?php if ($cf['show']['block']['title_prefix']) print($cf['data']['block']['title_prefix'] . "\n"); ?>
-        <h<?php print($cf['block']['heading']); ?> class="block-title html_tag-heading"><?php print($cf['data']['block']['header']); ?></h<?php print($cf['block']['heading']); ?>>
-        <?php if ($cf['show']['block']['title_suffix']) print($cf['data']['block']['title_suffix'] . "\n"); ?>
-        <!--(end-block_title)-->
-      <?php print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n"); ?>
-    <?php print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_header_close']) . "\n"); ?>
-  <?php } ?>
 
-  <?php print($cf['data']['block']['content'] . "\n"); ?>
-  <!--(end-block_content)-->
-  <?php if (isset($cf['block']['tags']['mcneese_block_close'])) print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_close']) . "\n"); ?>
-<?php } ?>
+  if ($cf['show']['block']['content'] && isset($cf['data']['block']['content'])) {
+    if (isset($cf['block']['tags']['mcneese_block_open'])) print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_open']));
+    print('<!--(begin-block_content)-->');
+    if ($cf['show']['block']['header']) {
+      print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_header_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<!--(begin-block_title)-->');
+      if ($cf['show']['block']['title_prefix']) print($cf['data']['block']['title_prefix']);
+
+      print('<h');
+      print($cf['block']['heading']);
+      print(' class="block-title html_tag-heading">');
+      print($cf['data']['block']['header']);
+      print('</h');
+      print($cf['block']['heading']);
+      print('>');
+
+      if ($cf['show']['block']['title_suffix']) print($cf['data']['block']['title_suffix']);
+
+      print('<!--(end-block_title)-->');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_header_close']));
+    }
+
+    print($cf['data']['block']['content']);
+    print('<!--(end-block_content)-->');
+    if (isset($cf['block']['tags']['mcneese_block_close'])) print(theme('mcneese_tag', $cf['block']['tags']['mcneese_block_close']));
+  }

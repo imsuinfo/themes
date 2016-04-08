@@ -9,60 +9,58 @@
 
   $float_side = in_array('fixed', $cf['page']['tags']['mcneese_page_side_open']['attributes']['class']);
   $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);
-?>
 
-<?php mcneese_do_print($cf, 'page_header'); ?>
+  mcneese_do_print($cf, 'page_header');
+  mcneese_do_print($cf, 'messages', FALSE);
+  mcneese_do_print($cf, 'bulletin', FALSE);
+  mcneese_do_print($cf, 'help', FALSE);
+  mcneese_do_print($cf, 'information', FALSE);
 
-<?php mcneese_do_print($cf, 'messages', FALSE); ?>
-<?php mcneese_do_print($cf, 'bulletin', FALSE); ?>
-<?php mcneese_do_print($cf, 'help', FALSE); ?>
-<?php mcneese_do_print($cf, 'information', FALSE); ?>
+  print('<div id="mcneese-float-right" class="expanded fixed">');
+  mcneese_do_print($cf, 'messages', TRUE, TRUE);
+  mcneese_do_print($cf, 'help', TRUE, TRUE);
+  mcneese_do_print($cf, 'information', TRUE, TRUE);
+  mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE);
+  print('</div>');
 
-<div id="mcneese-float-right" class="expanded fixed">
-  <?php mcneese_do_print($cf, 'messages', TRUE, TRUE); ?>
-  <?php mcneese_do_print($cf, 'help', TRUE, TRUE); ?>
-  <?php mcneese_do_print($cf, 'information', TRUE, TRUE); ?>
-  <?php mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE); ?>
-</div>
+  if ($split_page) {
+    print('<div id="mcneese-page-content" class="mcneese-content split" role="main">');
+    mcneese_do_print($cf, 'side', FALSE);
+    print('<div class="column-2">');
+  }
+  else {
+    print('<div id="mcneese-page-content" class="mcneese-content full" role="main">');
+  }
 
-<?php if ($split_page) { ?>
-  <div id="mcneese-page-content" class="mcneese-content split" role="main">
-    <?php mcneese_do_print($cf, 'side', FALSE); ?>
+  mcneese_do_print($cf, 'page_title');
 
-    <div class="column-2">
-<?php } else { ?>
-  <div id="mcneese-page-content" class="mcneese-content full" role="main">
-<?php } ?>
+  print('<div id="mcneese-float-left" class="expanded fixed">');
+  mcneese_do_print($cf, 'menu_tabs');
+  mcneese_do_print($cf, 'action_links');
+  mcneese_do_print($cf, 'breadcrumb');
+  mcneese_do_print($cf, 'side');
+  print('</div>');
 
-  <?php mcneese_do_print($cf, 'page_title'); ?>
+  mcneese_do_print($cf, 'menu_tabs', FALSE);
+  mcneese_do_print($cf, 'breadcrumb', FALSE);
+  mcneese_do_print($cf, 'action_links', FALSE);
+  mcneese_do_print($cf, 'watermarks-pre');
 
-  <div id="mcneese-float-left" class="expanded fixed">
-    <?php mcneese_do_print($cf, 'menu_tabs'); ?>
-    <?php mcneese_do_print($cf, 'action_links'); ?>
-    <?php mcneese_do_print($cf, 'breadcrumb'); ?>
-    <?php mcneese_do_print($cf, 'side'); ?>
-  </div>
+  print('<div id="mcneese-content-main" class="mcneese-content-main" role="main">');
+  print('<!--(begin-page-main)-->');
+  if ($cf['show']['page']['content']) {
+    print($cf['data']['page']['content']);
+  }
+  print('<!--(end-page-main)-->');
+  print('</div>');
 
-  <?php mcneese_do_print($cf, 'menu_tabs', FALSE); ?>
-  <?php mcneese_do_print($cf, 'breadcrumb', FALSE); ?>
-  <?php mcneese_do_print($cf, 'action_links', FALSE); ?>
-  <?php mcneese_do_print($cf, 'watermarks-pre'); ?>
+  mcneese_do_print($cf, 'watermarks-post');
 
-  <div id="mcneese-content-main" class="mcneese-content-main" role="main">
-    <!--(begin-page-main)-->
-    <?php if ($cf['show']['page']['content']) { ?>
-      <?php print($cf['data']['page']['content']); ?>
-    <?php } ?>
-    <!--(end-page-main)-->
-  </div>
+  if ($split_page) {
+    print('</div></div>');
+  }
+  else {
+    print('</div>');
+  }
 
-  <?php mcneese_do_print($cf, 'watermarks-post'); ?>
-
-<?php if ($split_page) { ?>
-    </div>
-  </div>
-<?php } else { ?>
-  </div>
-<?php } ?>
-
-<?php mcneese_do_print($cf, 'page_footer'); ?>
+  mcneese_do_print($cf, 'page_footer');

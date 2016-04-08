@@ -1670,10 +1670,10 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
     $cf['is_data']['maintenance']['title'] = t("Site Under Maintenance.");
     $cf['is_data']['maintenance']['body'] = variable_get('maintenance_mode_message', "This website is under maintenance.");
-    $cf['is_data']['maintenance']['message'] = 'This website is operating in <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>.<br>' . "\n";
+    $cf['is_data']['maintenance']['message'] = 'This website is operating in <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>.<br>';
 
     if (user_access('administer site configuration')) {
-      $cf['is_data']['maintenance']['message'] .= 'To exit <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>, <a href="' . url('admin/config/development/maintenance') . '">go online</a>.' . "\n";
+      $cf['is_data']['maintenance']['message'] .= 'To exit <span class="maintenance_mode-notice-maintenance_mode">Maintenance Mode</span>, <a href="' . url('admin/config/development/maintenance') . '">go online</a>.';
     }
 
     if (function_exists('mcneese_management_get_emergency_mode')) {
@@ -1696,8 +1696,8 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
             $cf['is_data']['emergency']['title'] = $loaded_node->title;
             $cf['is_data']['emergency']['body'] = $loaded_node->body['und']['0']['value'];
 
-            $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>' . "\n";
-            $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must <a href="@emergency_manage_path">disable the emergency mode</a>.', array('@emergency_manage_path' => base_path() . 'admin/content/management/emergency')) . "\n";
+            $cf['is_data']['emergency']['message'] = 'This website is operating in <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>.<br>';
+            $cf['is_data']['emergency']['message'] .= t('To exit <span class="emergency_mode-notice-emergency_mode">Emergency Mode</span>, a privileged user must <a href="@emergency_manage_path">disable the emergency mode</a>.', array('@emergency_manage_path' => base_path() . 'admin/content/management/emergency'));
           }
 
           if (!$cf['is']['logged_in']) {
@@ -2564,16 +2564,16 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_open']) . "\n");
-      print('<!--(begin-page-messages)-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_open']));
+      print('<!--(begin-page-messages)-->');
       if (isset($cf['data']['page'][$target]['renderred'])) {
-        print($cf['data']['page'][$target]['renderred'] . "\n");
+        print($cf['data']['page'][$target]['renderred']);
       }
       if (!empty($cf['data']['page'][$target]['blocks'])) {
-        print(render($cf['data']['page'][$target]['blocks']) . "\n");
+        print(render($cf['data']['page'][$target]['blocks']));
       }
-      print('<!--(end-page-messages)-->' . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_close']) . "\n");
+      print('<!--(end-page-messages)-->');
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_close']));
     }
   }
   else if ($target == 'bulletin') {
@@ -2583,23 +2583,23 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<h2 class="html_tag-heading element-invisible">Bulletin</h2>' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<h2 class="html_tag-heading element-invisible">Bulletin</h2>');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_open']) . "\n");
-      print('<!--(begin-page-' . $target . ')-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_open']));
+      print('<!--(begin-page-' . $target . ')-->');
       if (isset($cf['data']['page'][$target])) {
-        print($cf['data']['page'][$target] . "\n");
+        print($cf['data']['page'][$target]);
       }
-      print('<!--(end-page-' . $target . ')-->' . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_close']) . "\n");
+      print('<!--(end-page-' . $target . ')-->');
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_close']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']));
     }
   }
   else if ($target == 'help' || $target == 'information') {
@@ -2616,23 +2616,23 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<h2 class="html_tag-heading">' . $friendly . '</h2>' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<h2 class="html_tag-heading">' . $friendly . '</h2>');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_header_close']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_open']) . "\n");
-      print('<!--(begin-page-' . $target . ')-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_open']));
+      print('<!--(begin-page-' . $target . ')-->');
       if (isset($cf['data']['page'][$target])) {
-        print($cf['data']['page'][$target] . "\n");
+        print($cf['data']['page'][$target]);
       }
-      print('<!--(end-page-' . $target . ')-->' . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_close']) . "\n");
+      print('<!--(end-page-' . $target . ')-->');
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_wrapper_close']));
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']));
     }
   }
   else if ($target == 'work_area_menu') {
@@ -2642,25 +2642,25 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_open']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_open']));
 
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<h2 class="html_tag-heading">Work Area Menu</h2>' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n");
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<h2 class="html_tag-heading">Work Area Menu</h2>');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']));
 
-      print('<ul class="navigation_list html_tag-list">' . "\n");
-      print('  <!--(begin-page-work_area_menu)-->' . "\n");
+      print('<ul class="navigation_list html_tag-list">');
+      print('  <!--(begin-page-work_area_menu)-->');
 
       if ($cf['data']['page']['work_area_menu']['page_width-toggle']) {
-        print('  <li class="html_tag-list_item"><a id="mcneese-work_area_menu-page_width" class="' . $cf['data']['page']['work_area_menu']['page_width'] . '" title="Toggle Page Width">Toggle Page Width</a></li>' . "\n");
+        print('  <li class="html_tag-list_item"><a id="mcneese-work_area_menu-page_width" class="' . $cf['data']['page']['work_area_menu']['page_width'] . '" title="Toggle Page Width">Toggle Page Width</a></li>');
       }
 
-      print('  <!--(end-page-work_area_menu)-->' . "\n");
-      print('</ul>' . "\n");
+      print('  <!--(end-page-work_area_menu)-->');
+      print('</ul>');
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_close']));
     }
   }
   else if ($target == 'menu_tabs' || $target == 'action_links') {
@@ -2677,23 +2677,23 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
 
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<h2 class="html_tag-heading">' . $friendly . '</h2>' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n");
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<h2 class="html_tag-heading">' . $friendly . '</h2>');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']));
 
-      print('<!--(begin-page-' . $target . ')-->' . "\n");
-      print('  <ul class="navigation_list html_tag-list">' . "\n");
+      print('<!--(begin-page-' . $target . ')-->');
+      print('  <ul class="navigation_list html_tag-list">');
       if (isset($cf['data']['page'][$target])) {
-        print($cf['data']['page'][$target] . "\n");
+        print($cf['data']['page'][$target]);
       }
-      print('  </ul>' . "\n");
-      print('<!--(end-page-' . $target . ')-->' . "\n");
+      print('  </ul>');
+      print('<!--(end-page-' . $target . ')-->');
 
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']));
     }
   }
   else if ($target == 'breadcrumb') {
@@ -2704,39 +2704,39 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
           $cf['ie8']['float_right-counter']++;
         }
 
-        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
+        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
 
-        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']) . "\n");
-        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-        print('<h2 class="html_tag-heading">Breadcrumb</h2>' . "\n");
-        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']) . "\n");
+        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']));
+        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+        print('<h2 class="html_tag-heading">Breadcrumb</h2>');
+        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+        print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_close']));
 
-        print('<!--(begin-page-' . $target . ')-->' . "\n");
-        print('  <ul class="navigation_list html_tag-list">' . "\n");
+        print('<!--(begin-page-' . $target . ')-->');
+        print('  <ul class="navigation_list html_tag-list">');
 
         if ($cf['show']['page']['precrumb']) {
-          print('<!--(begin-page-precrumb)-->' . "\n");
-          print($cf['data']['page']['precrumb'] . "\n");
-          print('<!--(end-page-precrumb)-->' . "\n");
+          print('<!--(begin-page-precrumb)-->');
+          print($cf['data']['page']['precrumb']);
+          print('<!--(end-page-precrumb)-->');
         }
 
         if ($cf['show']['page']['breadcrumb']) {
-          print('<!--(begin-page-breadcrumb)-->' . "\n");
-          print($cf['data']['page']['breadcrumb'] . "\n");
-          print('<!--(end-page-breadcrumb)-->' . "\n");
+          print('<!--(begin-page-breadcrumb)-->');
+          print($cf['data']['page']['breadcrumb']);
+          print('<!--(end-page-breadcrumb)-->');
         }
 
         if ($cf['show']['page']['postcrumb']) {
-          print('<!--(begin-page-postcrumb)-->' . "\n");
-          print($cf['data']['page']['postcrumb'] . "\n");
-          print('<!--(end-page-postcrumb)-->' . "\n");
+          print('<!--(begin-page-postcrumb)-->');
+          print($cf['data']['page']['postcrumb']);
+          print('<!--(end-page-postcrumb)-->');
         }
 
-        print('  </ul>' . "\n");
-        print('<!--(end-page-' . $target . ')-->' . "\n");
+        print('  </ul>');
+        print('<!--(end-page-' . $target . ')-->');
 
-        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
+        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']));
       }
     }
   }
@@ -2748,10 +2748,10 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       }
 
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
-        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']) . "\n");
-        print('<div class="side_panel-simulated_heading">Side Panel</div>' . "\n");
+        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
+        print('<div class="side_panel-simulated_heading">Side Panel</div>');
 
-        print('<!--(begin-page-' . $target . ')-->' . "\n");
+        print('<!--(begin-page-' . $target . ')-->');
 
         if ($cf['show']['page']['menus']) {
           print($cf['data']['page']['menus']);
@@ -2761,98 +2761,98 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
           print($cf['data']['page']['asides']);
         }
 
-        print('<!--(end-page-' . $target . ')-->' . "\n");
-        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']) . "\n");
+        print('<!--(end-page-' . $target . ')-->');
+        print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_close']));
       }
     }
   }
   else if ($target == 'page_header') {
     if ($cf['show']['page']['header']) {
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_open']) . "\n");
-      print('<!--(begin-page-header)-->' . "\n");
-      print('<div class="header-section header-top">' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_open']));
+      print('<!--(begin-page-header)-->');
+      print('<div class="header-section header-top">');
 
       if ($cf['show']['page']['logo']) {
-        print('<div id="mcneese-site-logo"><a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a></div>' . "\n");
+        print('<div id="mcneese-site-logo"><a href="' .  $cf['data']['page']['logo']['href'] . '" class="site-logo" title="' . $cf['data']['page']['logo']['alt'] . '" role="img">' . $cf['data']['page']['logo']['alt'] . '</a></div>');
       }
 
-      print($cf['data']['page']['header'] . "\n");
+      print($cf['data']['page']['header']);
 
       if ($cf['show']['page']['header_menu_1']) {
-        print('<div class="header-menu header-menu-1" role="navigation">' . "\n");
-        print($cf['data']['page']['header_menu_1'] . "\n");
-        print('</div>' . "\n");
+        print('<div class="header-menu header-menu-1" role="navigation">');
+        print($cf['data']['page']['header_menu_1']);
+        print('</div>');
       }
 
-      print('</div>' . "\n");
-      print('<div class="header-separator"></div>' . "\n");
-      print('<div class="header-section header-bottom">' . "\n");
+      print('</div>');
+      print('<div class="header-separator"></div>');
+      print('<div class="header-section header-bottom">');
 
       if ($cf['show']['page']['header_menu_2']) {
-        print('<div class="header-menu header-menu-2" role="navigation">' . "\n");
-        print($cf['data']['page']['header_menu_2'] . "\n");
-        print('</div>' . "\n");
+        print('<div class="header-menu header-menu-2" role="navigation">');
+        print($cf['data']['page']['header_menu_2']);
+        print('</div>');
       }
 
-      print('</div>' . "\n");
-      print('<!--(end-page-header)-->' . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_close']) . "\n");
+      print('</div>');
+      print('<!--(end-page-header)-->');
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_header_close']));
     }
   }
   else if ($target == 'page_title') {
     if ($cf['show']['page']['title']) {
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_open']) . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']) . "\n");
-      print('<!--(begin-page-title)-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_open']));
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_open']));
+      print('<!--(begin-page-title)-->');
 
       if ($cf['show']['page']['title_prefix']) {
-        print($cf['data']['page']['title_prefix'] . "\n");
+        print($cf['data']['page']['title_prefix']);
       }
 
-      print('<h1 class="page-title html_tag-heading">' . $cf['data']['page']['title'] . '</h1>' . "\n");
+      print('<h1 class="page-title html_tag-heading">' . $cf['data']['page']['title'] . '</h1>');
 
       if ($cf['show']['page']['title_suffix']) {
-        print($cf['data']['page']['title_suffix'] . "\n");
+        print($cf['data']['page']['title_suffix']);
       }
 
-      print('<!--(end-page-title)-->' . "\n");
-      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']) . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_close']) . "\n");
+      print('<!--(end-page-title)-->');
+      print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_hgroup_close']));
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_title_close']));
     }
   }
   else if ($target == 'watermarks-pre' || $target == 'watermarks-post') {
     if ($cf['show']['page'][$target]) {
-      print('<div id="mcneese-page-' . $target . '">' . "\n");
+      print('<div id="mcneese-page-' . $target . '">');
       if (isset($cf['data']['page'][$target])) {
         print($cf['data']['page'][$target]);
       }
-      print('</div>' . "\n");
+      print('</div>');
     }
   }
   else if ($target == 'page_footer') {
     if ($cf['show']['page']['footer']) {
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_open']) . "\n");
-      print('<!--(begin-page-footer)-->' . "\n");
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_open']));
+      print('<!--(begin-page-footer)-->');
 
       if (isset($cf['data']['page']['footer'])) {
-        print($cf['data']['page']['footer'] . "\n");
+        print($cf['data']['page']['footer']);
       }
 
-      print('<!--(end-page-footer)-->' . "\n");
-      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_close']) . "\n");
+      print('<!--(end-page-footer)-->');
+      print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_footer_close']));
     }
   }
   else if ($target == 'top') {
     if ($cf['show']['page']['top']) {
       if (isset($cf['data']['page']['top'])) {
-        print($cf['data']['page']['top'] . "\n");
+        print($cf['data']['page']['top']);
       }
     }
   }
   else if ($target == 'bottom') {
     if ($cf['show']['page']['bottom']) {
       if (isset($cf['data']['page']['bottom'])) {
-        print($cf['data']['page']['bottom'] . "\n");
+        print($cf['data']['page']['bottom']);
       }
     }
   }
