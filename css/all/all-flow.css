@@ -730,6 +730,13 @@
 
 
 
+/*** Main Content Section ***/
+.mcneese .mcneese-content-main {
+  line-height: 22px;
+}
+
+
+
 /*** Login Page ***/
 .mcneese .mcneese-content-main > .user_login,
 .mcneese .mcneese-content-main > .html_tag-section.block-id-2 {
@@ -741,4 +748,75 @@
 .mcneese .mcneese-content-main > .user_login > .form-wrapper-inner > .form-item > .description,
 .mcneese .mcneese-content-main > .html_tag-section.block-id-2 > .user_login_block > .form-wrapper-inner > .item-list {
   display: none;
+}
+
+
+
+/*** Skeleton Grid Based Framework Fluid Widths ***/
+.mcneese .msu-column,
+.mcneese .msu-columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.mcneese .msu-column,
+.mcneese .msu-columns {
+  margin-left: 4%;
+}
+
+.mcneese .msu-column:first-child,
+.mcneese .msu-columns:first-child {
+  margin-left: 0;
+}
+
+
+
+/*** Accordion Styles ***/
+.mcneese .ui-accordion .ui-accordion-header {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 1em .5em 1em 2em;
+}
+
+.mcneese .ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+
+.mcneese .ui-state-default {
+  color: #ffffff;
+  background: none;
+  background-color: #00477f;
+
+  border: 0px;
+}
+
+.mcneese .ui-widget {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.mcneese .ui-widget-content {
+  border: 0px;
+}
+
+.mcneese .ui-state-default:hover {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese .ui-state-active {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese .ui-state-active:hover {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese .ui-corner-all,
+.mcneese .ui-corner-top,
+.mcneese .ui-corner-bottom {
+  border-radius: 0px;
 }

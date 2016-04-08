@@ -6,7 +6,7 @@
   position: relative;
 
   color: #000000;
-  background-color: #dadada;
+  background-color: #f0f0f0;
 }
 
 .mcneese .no-screen {
@@ -115,6 +115,9 @@
   width: 100%;
   min-width: 100%;
   max-width: 100%;
+
+  border-radius: 0px;
+  margin-bottom: 0px;
 }
 
 .mcneese #mcneese-header > .header-top {
@@ -153,9 +156,6 @@
   max-width: 100%;
 
   margin-bottom: 5px;
-
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .mcneese #mcneese-header a {
@@ -298,11 +298,6 @@
 
   padding: 4px 8px;
 }
-
-.mcneese #mcneese-header > .header-section > .header-menu-2 > .html_tag-nav > .navigation_list > li:first-child > a {
-  border-bottom-left-radius: 5px;
-}
-
 
 
 /*** Page Footer ***/
@@ -528,6 +523,7 @@
   max-width: 190px;
 
   margin: 0px 15px 15px 0px;
+  padding: 0px 5px 5px 5px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -566,7 +562,7 @@
   overflow-x: auto;
 
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
