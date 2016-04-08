@@ -599,7 +599,12 @@ function mcneese_fcs_breadcrumb($vars) {
   $breadcrumb = (array) $vars['breadcrumb'];
   $output = '';
 
-  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home" title="Requests Dashboard">' . t("Requests Dashboard") . '</a>';
+  $extra_class = '';
+  if (count($breadcrumb) < 2) {
+    $extra_class = ' display_home_text';
+  }
+
+  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home' . $extra_class . '" title="Facilities Use System Dashboard">' . "Facilities Use System Dashboard" . '</a>';
 
   $count = 0;
   $total = count($breadcrumb);
