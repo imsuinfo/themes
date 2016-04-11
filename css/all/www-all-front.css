@@ -1,3 +1,7 @@
+.mcneese.is-front #mcneese-page-content {
+  padding: 5px;
+}
+
 .mcneese.is-front .mcneese-content > .page-title {
   display: block;
   visibility: hidden;
