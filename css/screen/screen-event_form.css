@@ -80,7 +80,7 @@
 #mfcs-request-view-0-form .request-section-display,
 #mfcs-request-view-0-form .request-section-review-operations,
 #mfcs-request-view-0-form .request-section-review-log {
-  min-width: 960px;
+  min-width: 940px;
 
   padding: 5px 0px;
   border-width: 0px;
@@ -99,9 +99,9 @@
 
 #mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper,
 #mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 940px;
+  min-width: 940px;
+  max-width: 940px;
 
   margin: 0px auto;
 }
@@ -155,9 +155,9 @@
 #mfcs-request-view-0-form .request-field_groups {
   margin: 0px auto;
 
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 940px;
+  min-width: 940px;
+  max-width: 940px;
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group {
@@ -165,9 +165,9 @@
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request {
-  width: 478px;
-  min-width: 478px;
-  max-width: 478px;
+  width: 473px;
+  min-width: 473px;
+  max-width: 473px;
 
   min-height: 200px;
 
@@ -197,9 +197,9 @@
 }
 
 #mfcs-request-view-0-form .request-display-submit {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 940px;
+  min-width: 940px;
+  max-width: 940px;
 
   margin: 5px auto;
 }
@@ -273,9 +273,9 @@
 /*** Facilities Use Agreement ***/
 #mfcs-request-agreement,
 .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 940px;
+  min-width: 940px;
+  max-width: 940px;
 }
 
 #mfcs-request-agreement > .agreement-header {
