@@ -63,6 +63,7 @@
   }
 
   #mcneese-page-content > .page-title > .html_tag-hgroup > .page-title,
+  #mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
   #mcneese-page-content .request-section-review-log .request-section-review-log-page_title {
     max-width: 740px;
   }
@@ -77,6 +78,7 @@
 
   /*** Facilities Use Agreement ***/
   #mfcs-request-agreement,
+  .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-bulletin-page_title > .page-title,
   .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
     width: 740px;
     min-width: 740px;

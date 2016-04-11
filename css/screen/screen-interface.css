@@ -5,6 +5,9 @@
 #mfcs-manage_reviewers > .mfcs-manage_reviewers-manage {
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
   width: 460px;
   min-width: 460px;
@@ -21,6 +24,9 @@
 #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_3 {
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
   width: 460px;
   min-width: 460px;
@@ -33,6 +39,7 @@
 #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_2 > .item-list > ul,
 #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_3 > .item-list > ul {
   margin: 0px;
+  padding: 0px;
 }
 
 #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-list_1 > .item-list > ul > li,
@@ -49,6 +56,9 @@
 #mfcs-management_page-choices > .mfcs-management_page-choices-list_3 {
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
   width: 460px;
   min-width: 460px;
@@ -61,6 +71,7 @@
 #mfcs-management_page-choices > .mfcs-management_page-choices-list_2 > .item-list > ul,
 #mfcs-management_page-choices > .mfcs-management_page-choices-list_3 > .item-list > ul {
   margin: 0px;
+  padding: 0px;
 }
 
 #mfcs-management_page-choices > .mfcs-management_page-choices-list_1 > .item-list > ul > li,

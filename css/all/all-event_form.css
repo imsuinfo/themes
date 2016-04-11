@@ -182,6 +182,8 @@
   display: table-cell;
   vertical-align: top;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 
   overflow: auto;
 }
@@ -335,6 +337,7 @@
 
 /*** Facilities Use Agreement ***/
 #mfcs-request-agreement,
+.mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-bulletin-page_title > .page-title,
 .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
   display: block;
 
