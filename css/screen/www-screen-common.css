@@ -12,12 +12,12 @@
 }
 
 .mcneese #mcneese-top {
-  padding: 0px 5px;
+  padding: 0px;
 }
 
 .mcneese #mcneese-page {
   overflow-x: auto;
-  padding: 0px 5px 5px 5px;
+  padding: 0px;
 
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -39,7 +39,7 @@
   max-height: 188px;
 
   border-top: 1px solid #e2edfa;
-  padding: 0px 5px 5px 5px;
+  padding: 0px;
 
   overflow: hidden;
 
@@ -488,6 +488,62 @@
 .mcneese #mcneese-page .view .calendar > .contents > .views-field > .field-content > .event-item.event-737 > a:hover {
   color: #fffab9;
 }
+
+
+
+/*** Bulletin ***/
+.mcneese .bulletin-wrapper {
+  color: #383838;
+  line-height: 1.6;
+  padding: 10px 20px;
+  border-left: 1px solid #dcdcdc;
+  margin-top: 30px;
+}
+
+.mcneese #mcneese-bulletin-wrapper-outer {
+  background-color: #f0f0f0;
+  display: table;
+  position: relative;
+}
+
+.mcneese #mcneese-bulletin-wrapper-outer .down-arrow {
+  bottom: -15px;
+  left: 39px;
+  position: absolute;
+  z-index: 9;
+}
+
+.mcneese #mcneese-bulletin-wrapper {
+  display: block;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.mcneese #mcneese-bulletin-wrapper-inner {
+  display: table-row;
+  background: url(../../images/bulletin-background.png);
+  height: 188px;
+}
+
+.mcneese #mcneese-bulletin-page_title {
+  display: table-cell;
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+.mcneese #mcneese-bulletin-content {
+  display: table-cell;
+  width: 100%;
+  min-width: 700px;
+  max-width: 100%;
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+
 
 /*** wwwdev.mcneese.edu-specific ***/
 .mcneese.at-wwwdev_mcneese_edu,
