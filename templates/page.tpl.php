@@ -23,14 +23,9 @@
   $split_page = !$float_side && ($cf['show']['page']['menus'] || $cf['show']['page']['asides']);
 
 
+  // page header
   mcneese_do_print($cf, 'page_header');
 
-  print('<div id="mcneese-float-right" class="expanded fixed">');
-  mcneese_do_print($cf, 'messages', TRUE, TRUE);
-  mcneese_do_print($cf, 'help', TRUE, TRUE);
-  mcneese_do_print($cf, 'information', TRUE, TRUE);
-  mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE);
-  print('</div>');
 
   // bulletin
   print('<div id="mcneese-bulletin-wrapper-outer" class="');
@@ -56,23 +51,40 @@
   print('</div>');
   print('</div>');
 
+
+  // float regions - right
+  print('<div id="mcneese-float-right" class="expanded fixed">');
+  mcneese_do_print($cf, 'messages', TRUE, TRUE);
+  mcneese_do_print($cf, 'help', TRUE, TRUE);
+  mcneese_do_print($cf, 'information', TRUE, TRUE);
+  mcneese_do_print($cf, 'work_area_menu', TRUE, TRUE);
+  print('</div>');
+
+
+  // information and control regions
   mcneese_do_print($cf, 'messages', FALSE);
   mcneese_do_print($cf, 'help', FALSE);
+  mcneese_do_print($cf, 'menu_tabs', FALSE);
   mcneese_do_print($cf, 'information', FALSE);
 
+
+  // main content
   if ($split_page) {
     print('<div id="mcneese-page-content" class="mcneese-content split" role="main">');
+    mcneese_do_print($cf, 'breadcrumb', FALSE);
     mcneese_do_print($cf, 'side', FALSE);
 
     print('<div class="column-2">');
   } else {
     print('<div id="mcneese-page-content" class="mcneese-content full" role="main">');
+    mcneese_do_print($cf, 'breadcrumb', FALSE);
   }
 
   if (is_null($mcneese_bulletin_mode)) {
     mcneese_do_print($cf, 'page_title');
   }
 
+  // float regions - left
   print('<div id="mcneese-float-left" class="expanded fixed">');
   mcneese_do_print($cf, 'menu_tabs');
   mcneese_do_print($cf, 'action_links');
@@ -80,11 +92,11 @@
   mcneese_do_print($cf, 'side');
   print('</div>');
 
-  mcneese_do_print($cf, 'menu_tabs', FALSE);
-  mcneese_do_print($cf, 'breadcrumb', FALSE);
+  // other regions - first
   mcneese_do_print($cf, 'action_links', FALSE);
   mcneese_do_print($cf, 'watermarks-pre');
 
+  // main content - inner
   print('<div id="mcneese-content-main" class="mcneese-content-main" role="main">');
   print('<!--(begin-page-main)-->');
   if ($cf['show']['page']['content']) {
@@ -93,6 +105,7 @@
   print('<!--(end-page-main)-->');
   print('</div>');
 
+  // other regions - last
   mcneese_do_print($cf, 'watermarks-post');
 
   if ($split_page) {
