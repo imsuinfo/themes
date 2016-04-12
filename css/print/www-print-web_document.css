@@ -67,3 +67,10 @@
 .mcneese.node-type-document .mcneese-content-main .break_after-avoid {
   page-break-after: avoid;
 }
+
+
+
+/*** Page Document Outline Region ***/
+.mcneese.node-type-document #mcneese-page-document-outline {
+  display: none;
+}

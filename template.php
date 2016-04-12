@@ -228,7 +228,7 @@ function mcneese_www_preprocess_page(&$vars) {
 
 
   // define the bulletin default settings.
-  $vars['mcneese_bulletin_mode'] = NULL;
+  $vars['mcneese_bulletin_mode'] = 2; // mode 1 was used from original design as a sub-theme, so mode 2 represents operating as a hard-coded value.
 
 
   foreach (array('group_image', 'document_header', 'document_outline', 'document_footer') as $key) {
@@ -293,6 +293,9 @@ function mcneese_www_preprocess_page(&$vars) {
 
     // web documents
     if ($node->type == 'document') {
+      // disable bulletin.
+      $vars['mcneese_bulletin_mode'] = NULL;
+
       // only provide styles during node view, but the only way to determine if this is a node view is to guess based on the absolute paths.
       if ($cf['is']['node-view'] || $cf['is']['node-draft'] || $cf['is']['node-view-revision']) {
         if (property_exists($node, 'field_document_theme') && !empty($node->field_document_theme['und'][0]['tid'])) {
