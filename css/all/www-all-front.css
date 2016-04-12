@@ -50,9 +50,13 @@
 .mcneese.is-front.is-logged_in #mcneese-bottom,
 .mcneese.is-front.is-logged_in #mcneese-www-footer,
 .mcneese.is-front.is-logged_in > .dev-query {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  width: 970px;
+  min-width: 970px;
+  max-width: 970px;
 
   margin-left: auto;
   margin-right: auto;
