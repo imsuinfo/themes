@@ -87,8 +87,8 @@
   // information and control regions
   mcneese_do_print($cf, 'messages', FALSE);
   mcneese_do_print($cf, 'help', FALSE);
-  mcneese_do_print($cf, 'menu_tabs', FALSE);
   mcneese_do_print($cf, 'information', FALSE);
+  mcneese_do_print($cf, 'menu_tabs', FALSE);
 
 
   // main content - outer
