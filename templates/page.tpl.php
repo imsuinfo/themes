@@ -12,12 +12,17 @@
     $mcneese_bulletin_mode = NULL;
   }
 
-  if ($cf['is']['front']) {
+  if (isset($cf['is']['front']) && $cf['is']['front']) {
     $mcneese_bulletin_mode = NULL;
   }
 
-  $bulletin_css = ' no_additional';
+  if (isset($cf['show']['page']['title']) && !$cf['show']['page']['title']) {
+    $mcneese_bulletin_mode = NULL;
+  }
+
+  $bulletin_css = '';
   if (!is_null($mcneese_bulletin_mode)) {
+    $bulletin_css = ' no_additional';
     if (!empty($cf['data']['page']['bulletin'])) {
       $bulletin_css = ' additional';
     }
@@ -47,7 +52,7 @@
 
 
   // bulletin
-  if (!$cf['is']['front']) {
+  if (!$cf['is']['front'] && !is_null($mcneese_bulletin_mode)) {
     print('<div id="mcneese-bulletin-wrapper-outer" class="');
     print($bulletin_css);
     print('">');
@@ -57,13 +62,11 @@
     print('<div id="mcneese-bulletin-wrapper-inner" class="');
     print($bulletin_css);
     print('">');
-    if (!is_null($mcneese_bulletin_mode)) {
-      print('<div id="mcneese-bulletin-page_title" class="');
-      print($bulletin_css);
-      print('">');
-      mcneese_do_print($cf, 'page_title');
-      print('</div>');
-    }
+    print('<div id="mcneese-bulletin-page_title" class="');
+    print($bulletin_css);
+    print('">');
+    mcneese_do_print($cf, 'page_title');
+    print('</div>');
     print('<div id="mcneese-bulletin-content" class="');
     print($bulletin_css);
     print('">');
@@ -85,7 +88,6 @@
 
 
   // information and control regions
-  mcneese_do_print($cf, 'messages', FALSE);
   mcneese_do_print($cf, 'help', FALSE);
   mcneese_do_print($cf, 'information', FALSE);
   mcneese_do_print($cf, 'menu_tabs', FALSE);
@@ -97,7 +99,11 @@
 
     if (!$cf['is']['front']) {
       mcneese_do_print($cf, 'breadcrumb', FALSE);
+      mcneese_do_print($cf, 'messages', FALSE);
       mcneese_do_print($cf, 'side', FALSE);
+    }
+    else {
+      mcneese_do_print($cf, 'messages', FALSE);
     }
 
     print('<div class="column-2">');
@@ -106,6 +112,7 @@
     if (!$cf['is']['front']) {
       mcneese_do_print($cf, 'breadcrumb', FALSE);
     }
+    mcneese_do_print($cf, 'messages', FALSE);
   }
 
   // group image
