@@ -530,6 +530,36 @@ function mfcs_render_page() {
         }
       }
     }
+    elseif ($count_parts > 0) {
+      if ($path_parts[0] == 'user' && isset($path_parts[1]) && is_numeric($path_parts[1])) {
+        $rebuild_breadcrumb = TRUE;
+
+        $title = "View User";
+        $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'user/' . $path_parts[1] . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
+
+        if (isset($path_parts[2])) {
+          $title = $path_parts[2] . ' User';
+          $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'user/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
+        }
+      }
+      elseif ($path_parts[0] == 'file' && isset($path_parts[1]) && $path_parts[1] == 'add') {
+        $rebuild_breadcrumb = TRUE;
+
+        $title = "Add File";
+        $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'file/add' . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
+
+        if (isset($path_parts[2]) && $path_parts[2] == 'upload' && isset($path_parts[3]) && $path_parts[3] == 'archive') {
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = $cf['page']['breadcrumb'][0];
+
+          $title = "Add Archive File";
+          $new_breadcrumb[] = '<a href="' . $base_path . 'file/add/upload/archive' . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
+
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+          unset($new_breadcrumb);
+        }
+      }
+    }
   }
 
   if ($rebuild_breadcrumb) {
