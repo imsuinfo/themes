@@ -1,4 +1,9 @@
 /*** General Overrides ***/
+
+.mcneese.node-theme-page-731.node-id-502 #mcneese-page-side.relative { /*disables menu for /node/502*/
+    display: none;
+}
+
 .mcneese.node-theme-page-731 {
     background-color: #f0f0f0;
 }
@@ -28,6 +33,7 @@
 }
 
 .mcneese.node-theme-page-731 .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
+    display: block;
     margin: 4px 20px !important;
 }
 
@@ -338,10 +344,28 @@
 
 
 /*** Accordion Styles ***/
+.mcneese.node-theme-page-731 .ui-accordion .ui-icon {
+    display: none;
+}
+
+.mcneese.node-theme-page-731 .ui-widget h4.ui-state-default:after  {
+    content: "✛";
+    margin: 0;
+    position: absolute;
+    right: 10px;
+}
+
+.mcneese.node-theme-page-731 .ui-widget h4.ui-state-active:after {
+    content: "✕" !important;
+    margin: 0;
+    position: absolute;
+    right: 10px;    
+}
+
 .mcneese.node-theme-page-731 .ui-accordion .ui-accordion-header {
     font-size: 14px;
     font-weight: normal;
-    padding: 1em .5em 1em 2em;
+    padding: 1em .5em;
 }
 
 .mcneese.node-theme-page-731 .ui-accordion .ui-accordion-content {
