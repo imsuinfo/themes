@@ -6,6 +6,57 @@
 
 
 
+/*** Accordion Styles ***/
+.mcneese.node-theme-page-731 .ui-accordion .ui-accordion-header {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 1em .5em 1em 2em;
+}
+
+.mcneese.node-theme-page-731 .ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+
+.mcneese.node-theme-page-731 .ui-state-default {
+  color: #ffffff;
+  background: none;
+  background-color: #00477f;
+
+  border: 0px;
+}
+
+.mcneese.node-theme-page-731 .ui-widget {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.mcneese.node-theme-page-731 .ui-widget-content {
+  border: 0px;
+}
+
+.mcneese.node-theme-page-731 .ui-state-default:hover {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese.node-theme-page-731 .ui-state-active {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese.node-theme-page-731 .ui-state-active:hover {
+  color: #2d2d2d;
+  background-color: #eeeeee;
+}
+
+.mcneese.node-theme-page-731 .ui-corner-all,
+.mcneese.node-theme-page-731 .ui-corner-top,
+.mcneese.node-theme-page-731 .ui-corner-bottom {
+  border-radius: 0px;
+}
+
+
+
 /*** Skeleton Grid Based Framework Fluid Widths ***/
 .mcneese.node-theme-page-731 .msu-column,
 .mcneese.node-theme-page-731 .msu-columns {
