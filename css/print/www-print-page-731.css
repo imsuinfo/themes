@@ -1,25 +1,238 @@
+/*** General Overrides ***/
 
+.mcneese.node-theme-page-731 {
+    background-color: #ffffff !important;
+    font-size: 10px;
+}
 
+.mcneese.node-theme-page-731 h2,
+.mcneese.node-theme-page-731 h3 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
 
-/*** Print Types Common Code ***/
-.mcneese.node-theme-page-731 #mcneese-bulletin {
-  display: none;
+.mcneese.node-theme-page-731 .row {
+    margin: 0;
+    padding: 0;
 }
 
 
 
 /*** Bulletin ***/
+
+.mcneese.node-theme-page-731 #mcneese-bulletin {
+    display: none;
+}
+
+.mcneese.node-theme-page-731 #mcneese-bulletin-wrapper-outer {
+    display: none;
+}
+
 .mcneese.node-theme-page-731 #mcneese-bulletin-page_title {
-  display: table-cell;
-
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-
-  overflow: visible;
-  word-wrap: break-word;
+    display: none;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    word-wrap: break-word;
 }
 
 .mcneese.node-theme-page-731 #mcneese-bulletin-content {
-  display: none;
+    display: none;
+}
+
+
+
+/*** Zebra Stripe Checklist nth-child method ***/
+
+.mcneese.node-theme-page-731 ol.checklist > li > ol,
+.mcneese.node-theme-page-731 ul.checklist > li > ul {
+    list-style-type: lower-alpha;
+}
+
+.mcneese.node-theme-page-731 ol.checklist,
+.mcneese.node-theme-page-731 ul.checklist {
+    padding: 0 0 0 0;
+    list-style-position: inside;
+}
+
+.mcneese.node-theme-page-731 ol.checklist > li,
+.mcneese.node-theme-page-731 ul.checklist > li {
+    padding: 4px 10px;
+}
+
+.mcneese.node-theme-page-731 ul.checklist,
+.mcneese.node-theme-page-731 ol.checklist {
+    list-style-type: none;
+}
+
+.mcneese.node-theme-page-731 ul.checklist > li:before,
+.mcneese.node-theme-page-731 ol.checklist > li:before {
+    content: "◯";
+    margin-right: 10px;
+}
+
+.mcneese.node-theme-page-731 table:not(.no_default) ul > li > ul {
+    list-style-type: lower-alpha;
+}
+
+
+
+/*** Table Styles ***/
+
+.mcneese.node-theme-page-731 table:not(.no_default) {
+    background-color: #ffffff;
+    font-size: 10px !important;
+}
+
+.mcneese.node-theme-page-731 tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+.mcneese.node-theme-page-731 table:not(.no_default) > thead > tr > th {
+    background-color: #f9f9f9;
+    border: none !important;
+    color: #2d2d2d;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-transform: capitalize;
+}
+
+.mcneese.node-theme-page-731 table:not(.no_default) > tbody > tr > td {
+    padding: 0px 15px !important;
+}
+
+.mcneese.node-theme-page-731 table:not(.no_default) > tbody > tr > td:nth-child(1) {
+    width: 30%;
+}
+
+.mcneese.node-theme-page-731 .accessories > table:not(.no_default) > tbody > tr > td:nth-child(1) {
+    width: 70%;
+}
+
+.mcneese.node-theme-page-731 table.cke_editor > tbody > tr > td {
+    padding: 0px !important;
+}
+
+.mcneese.node-theme-page-731 table.cke_editor:not(.no_default) {
+    background-color: #eaeaea;
+}
+
+
+
+/*** Accordion Styles ***/
+
+.mcneese.node-theme-page-731 .ui-accordion .ui-icon {
+    display: none;
+}
+
+.mcneese.node-theme-page-731 .ui-widget h4.ui-state-default:after {
+    content: "✛";
+    margin: 0;
+    position: absolute;
+    right: 10px;
+}
+
+.mcneese.node-theme-page-731 .ui-widget h4.ui-state-active:after {
+    content: "✕" !important;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+}
+
+.mcneese.node-theme-page-731 .ui-accordion .ui-accordion-header {
+    font-size: 12px;
+    font-weight: normal;
+    padding: .3em .2em;
+}
+
+.mcneese.node-theme-page-731 .ui-accordion .ui-accordion-content {
+    padding: 0px;
+}
+
+.mcneese.node-theme-page-731 .ui-state-default {
+    background: none;
+    background-color: #eaeaea;
+    border: 0px;
+    color: #2d2d2d;
+}
+
+.mcneese.node-theme-page-731 .ui-widget {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.mcneese.node-theme-page-731 .ui-widget-content {
+    border: 0px;
+}
+
+.mcneese.node-theme-page-731 .ui-widget-content p {
+    line-height: 1.6;
+}
+
+.mcneese.node-theme-page-731 .ui-state-default:hover {
+    background-color: #00335b;
+    color: #ffffff;
+}
+
+.mcneese.node-theme-page-731 .ui-state-active {
+    background-color: #fad703 !important;
+    color: #2d2d2d;
+}
+
+.mcneese.node-theme-page-731 .ui-state-active:hover {
+    background-color: #ffdb00 !important;
+    color: #2d2d2d;
+}
+
+.mcneese.node-theme-page-731 .ui-corner-all,
+.ui-corner-top,
+.ui-corner-bottom {
+    border-radius: 0px;
+}
+
+.mcneese.node-theme-page-731 .row.lite {
+    /* Background Color Option when Accordion is Expanded */
+    background-color: #eee;
+}
+
+
+
+/*** Notifications ***/
+
+.mcneese.node-theme-page-731 .info-red {
+    background-color: #ffc3c3 !important;
+    border: 1px solid #e30000 !important;
+    color: #a10404 !important;
+    padding: 3px !important;
+}
+
+.mcneese.node-theme-page-731 .info-green {
+    background-color: #dded9d !important;
+    border: 1px solid #97bd00 !important;
+    color: #313d03 !important;
+    padding: 3px !important;
+}
+
+.mcneese.node-theme-page-731 .info-blue {
+    background-color: #deebfa;
+    border: 1px solid #7ba0cb;
+    color: #111111;
+    margin: 10px 0;
+    padding: 3px;
+}
+
+.mcneese.node-theme-page-731 .info-yellow {
+    background-color: #fdf5d3;
+    border: 1px solid #fae27e;
+    color: #111111;
+    padding: 3px;
+}
+
+.mcneese.node-theme-page-731 .divider {
+    border-bottom: 1px solid #afc1cb;
+    margin: 10px 0;
+    padding: 3px 0;
 }

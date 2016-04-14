@@ -539,7 +539,7 @@
 
 .mcneese.node-theme-page-731 ul.checklist > li:before,
 .mcneese.node-theme-page-731 ol.checklist > li:before {
-    content: "\2713";
+    content: "◯";
     margin-right: 10px;
 }
 
@@ -559,11 +559,14 @@
 }
 
 .mcneese.node-theme-page-731 table:not(.no_default) > thead > tr > th {
-    background-color: #00477f;
-    color: #ffffff;
+    background-color: #f9f9f9;
+    border: none !important;
+    color: #2d2d2d;
+    font-weight: bold;
     padding: 10px 10px;
     text-transform: capitalize;
 }
+
 
 .mcneese.node-theme-page-731 table:not(.no_default) > tbody > tr > td {
     padding: 20px 15px;
