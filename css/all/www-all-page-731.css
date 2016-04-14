@@ -393,17 +393,17 @@
 }
 
 .mcneese.node-theme-page-731 .ui-state-default:hover {
-    background-color: #eeeeee;
-    color: #2d2d2d;
+    background-color: #00335b;
+    color: #ffffff;
 }
 
 .mcneese.node-theme-page-731 .ui-state-active {
-    background-color: #eeeeee !important;
+    background-color: #fad703 !important;
     color: #2d2d2d;
 }
 
 .mcneese.node-theme-page-731 .ui-state-active:hover {
-    background-color: #eeeeee !important;
+    background-color: #ffdb00 !important;
     color: #2d2d2d;
 }
 
