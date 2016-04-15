@@ -1,7 +1,10 @@
+
+
+
 /*** General Overrides ***/
 
 .mcneese.node-theme-page-731.node-id-502 #mcneese-page-side.relative { /*disables menu for /node/502*/
-    display: none;
+    display: none !important;
 }
 
 .mcneese.node-theme-page-731 {
@@ -33,7 +36,6 @@
 }
 
 .mcneese.node-theme-page-731 .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
-    display: block;
     margin: 4px 20px !important;
 }
 
