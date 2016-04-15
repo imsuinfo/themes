@@ -1,6 +1,18 @@
 
 
 
+/*** Review Operations ***/
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-section-review-operations .instructions-issues {
+  margin: 6px 0px;
+  padding: 4px;
+  border: 1px solid #464701;
+
+  color: #3f4001;
+  background-color: #fdffc1;
+}
+
+
+
 /*** Reviewers ***/
 #mfcs-manage_reviewers > .mfcs-manage_reviewers-manage {
   display: inline-block;
