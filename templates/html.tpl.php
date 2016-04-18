@@ -104,7 +104,7 @@
   print('<ul>');
   print('<li>');
   print('<a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=52.107327,76.992187&amp;ie=UTF8&amp;hq=McNeese+State+University,+Ryan+Street,+Lake+Charles,+LA&amp;z=15&amp;iwloc=A&amp;ved=0CDQQpQY&amp;sa=X&amp;ei=uX8kTpXcK5OSsAOqs6nZAw" title="Google Map of McNeese State University">');
-  print('<img alt="Snippet of Google Map for Campus" src="print($stp); /images/footer_map.png">');
+  print('<img alt="Snippet of Google Map for Campus" src="' . $stp . '/images/footer_map.png">');
   print('</a>');
   print('</li>');
   print('</ul>');
