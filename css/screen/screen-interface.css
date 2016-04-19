@@ -11,6 +11,12 @@
   background-color: #fdffc1;
 }
 
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-section-review-operations .form-item-review-operations-message_is_reviewers_only {
+  float: right;
+
+  margin: 0px;
+}
+
 
 
 /*** Reviewers ***/
