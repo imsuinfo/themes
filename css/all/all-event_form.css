@@ -269,7 +269,29 @@
   font-size: 0.8em;
 }
 
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-restricted {
+  position: relative;
+
+  color: #000000;
+  background-color: #dbd87b;
+
+  margin: 0px;
+  border-top: 1px outset #c4c05a;
+  border-left: 1px outset #c4c05a;
+  border-right: 1px outset #c4c05a;
+  border-bottom: 0px none;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-restricted > .review-item-restricted-message {
+  text-align: right;
+
+  font-weight: bold;
+
+  padding: 2px 4px;
+}
+
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
+  color: #000000;
   background-color: #d0d0d0;
 
   margin: 0px;
@@ -277,6 +299,22 @@
   border-left: 1px outset #a0a0a0;
   border-bottom: 1px outset #a0a0a0;
   border-right: 1px outset #a0a0a0;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-restricted + .review-item-label {
+  clear: both;
+
+  color: #000000;
+  background-color: #dbd87b;
+
+  border-top: 0px none;
+  border-color: #c4c05a;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-restricted + .review-item-label + .review-item-message {
+  color: #000000;
+  background-color: #f7f5c8;
+  border-color: #c4c05a;
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
