@@ -63,6 +63,11 @@
   display: none;
 }
 
+.mcneese #mcneese-tabs.relative > .navigation_list > .tab,
+.mcneese #mcneese-tabs.relative > .navigation_list > .tab.leaf {
+  margin-right: 6px;
+}
+
 .mcneese #mcneese-tabs.relative.collapsed > .navigation_list > .tab-command-1 {
   display: inline-block;
 }
