@@ -3,10 +3,6 @@
 
 /*** General Overrides ***/
 
-.mcneese.node-theme-page-731.node-id-502 #mcneese-page-side.relative { /*disables menu for /node/502*/
-  display: none !important;
-}
-
 .mcneese.node-theme-page-731 figure {
   -webkit-margin-start: 0px !important;
   -moz-margin-start: 0px !important;
