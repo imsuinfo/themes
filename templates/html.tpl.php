@@ -48,6 +48,7 @@
 
   print('<body id="mcneese-body" class="mcneese no-script ');
   print($cf['markup_css']['body']['class']);
+  print('" ');
   print($attributes);
   print('" onload="mcneese_html_body_javascript_detection();">');
 
