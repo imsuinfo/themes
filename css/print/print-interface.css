@@ -24,26 +24,22 @@
 .mcneese.alias-part-0-requests.alias-part-1-pdf_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-history_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-agreement_0 .html_tag-header.page-title,
-.mcneese.alias-part-0-requests.alias-part-1-problems_0 .html_tag-header.page-title {
+.mcneese.alias-part-0-requests.alias-part-1-holiday .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-management .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 .html_tag-header.page-title {
   display: inherit;
 }
 
 
 
 /*** Statistics Page ***/
-#mfcs-statistics-page {
-  font-size: 12px;
-  line-height: 16px;
-}
 
 
 
 /*** E-mail Log Page ***/
-#mfcs-request-email_log-0-page {
-  font-size: 12px;
-  line-height: 16px;
-}
-
 #mfcs-request-email_log-0-page .email_log-headers-wrapper.collapsed,
 #mfcs-request-email_log-0-page .email_log-raw_body-wrapper.collapsed,
 #mfcs-request-email_log-0-page .email_log-body-wrapper.collapsed {
@@ -94,4 +90,14 @@
 
 #mfcs-request-problems-0-request-form .form-item-request_problems-actions-list {
   display: none;
+}
+
+
+/*** Troubleshoot ***/
+#mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .form-submit {
+  display: none;
+}
+
+#mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .code-separator {
+  margin-bottom: 5px;
 }

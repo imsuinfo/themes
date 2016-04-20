@@ -29,4 +29,15 @@
     min-width: 459px;
     max-width: 459px;
   }
+
+
+
+  /*** Troubleshoot ***/
+  #mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry,
+  #mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry,
+  #mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry {
+    width: 475px;
+    min-width: 475px;
+    max-width: 475px;
+  }
 }

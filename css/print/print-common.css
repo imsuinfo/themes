@@ -2,12 +2,49 @@
 
 
 /*** Global ***/
-#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
-  font-size: 16px;
-  line-height: 20px;
+.mcneese {
+  font-size: 12px;
+  line-height: 16px;
+}
 
+.mcneese h1 {
   font-weight: bold;
+  font-size: 1.6em;
+  line-height: 1.7em;
+}
 
+.mcneese h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+.mcneese h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.mcneese h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+.mcneese h5 {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.mcneese h6 {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
+#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
   margin: 0px auto;
   padding: 0px;
 }
