@@ -48,7 +48,8 @@
 
   print('<body id="mcneese-body" class="mcneese no-script ');
   print($cf['markup_css']['body']['class']);
-  print('"  print($attributes); onload="mcneese_html_body_javascript_detection();">');
+  print($attributes);
+  print('" onload="mcneese_html_body_javascript_detection();">');
 
   if (!$cf['is']['overlay'] && $cf['show']['skipnav']) {
     print('<!--(begin-skipnav)-->');
