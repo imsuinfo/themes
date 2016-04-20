@@ -50,7 +50,7 @@
   print($cf['markup_css']['body']['class']);
   print('" ');
   print($attributes);
-  print('" onload="mcneese_html_body_javascript_detection();">');
+  print(' onload="mcneese_html_body_javascript_detection();">');
 
   if (!$cf['is']['overlay'] && $cf['show']['skipnav']) {
     print('<!--(begin-skipnav)-->');
