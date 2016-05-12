@@ -34,12 +34,12 @@
   print($styles);
 
   print('<script type="text/javascript">');
-  print('  // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.');
-  print('  // This allows for CSS code to react to whether or not javascript is enabled.');
-  print('  function mcneese_html_body_javascript_detection() {');
-  print('    document.body.removeAttribute(\'onLoad\');');
-  print('    document.body.className = document.body.className.replace(/\bno-script\b/i, \'script\');');
-  print('  }');
+  print('  // This script detects whether or not javascript is enabled and if it does, removes the no-script from the body class.' . "\n");
+  print('  // This allows for CSS code to react to whether or not javascript is enabled.' . "\n");
+  print('  function mcneese_html_body_javascript_detection() {' . "\n");
+  print('    document.body.removeAttribute(\'onLoad\');' . "\n");
+  print('    document.body.className = document.body.className.replace(/\bno-script\b/i, \'script\');' . "\n");
+  print('  }' . "\n");
   print('</script>');
 
   print($scripts);
