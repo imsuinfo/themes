@@ -469,6 +469,49 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
+        elseif ($path_parts[1] == 'users-0') {
+          $pre_crumb_title = "Manage Users";
+          $title = "Requests Management";
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $title = $pre_crumb_title;
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($count_parts == 3) {
+            if ($path_parts[2] == 'add') {
+              $title = "Add User";
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+            }
+          }
+          elseif ($count_parts > 3 && cf_is_integer($path_parts[3])) {
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "User " . $path_parts[3] . '</div>';
+
+            if ($path_parts[2] == 'view') {
+              $title = "View User";
+            }
+            elseif ($path_parts[2] == 'edit') {
+              $title = "View User";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/view/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $title = "Edit User";
+            }
+            elseif ($path_parts[2] == 'delete') {
+              $title = "Delete User";
+            }
+
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+        }
         else {
           unset($cf['page']['breadcrumb'][1]);
         }

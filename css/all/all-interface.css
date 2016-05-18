@@ -639,3 +639,40 @@
 
 #mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
 }
+
+
+
+/*** Users ***/
+#mfcs-request-users-view-page > .view_user-group {
+  display: inline-block;
+  vertical-align: top;
+  position: relataive;
+  box-sizing: border-box;
+
+  margin: 5px 10px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-group-header {
+  border-bottom: 1px solid #000000;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item {
+  box-sizing: border-box;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-basic,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-venue,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-special,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-administer {
+  display: list-item;
+
+  margin-left: 15px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item > .item-label,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item > .item-value {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 80px;
+}

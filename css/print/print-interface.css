@@ -19,6 +19,10 @@
   display: none;
 }
 
+.mcneese.alias-part-0-requests .html_tag-header.page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
+  display: none;
+}
+
 .mcneese.alias-part-0-requests.alias-part-1-view_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-print_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-pdf_0 .html_tag-header.page-title,
@@ -29,6 +33,7 @@
 .mcneese.alias-part-0-requests.alias-part-1-problems_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-email_log_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-synchronize_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 .html_tag-header.page-title {
   display: inherit;
 }
@@ -93,6 +98,7 @@
 }
 
 
+
 /*** Troubleshoot ***/
 #mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .form-submit {
   display: none;
@@ -100,4 +106,11 @@
 
 #mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .code-separator {
   margin-bottom: 5px;
+}
+
+
+
+/*** Users ***/
+#mfcs-request-users-view-page > .view_user-buttons {
+  display: none;
 }
