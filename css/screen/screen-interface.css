@@ -102,7 +102,9 @@
 
 /*** View ***/
 #mfcs-request-view-0-form #request-display-submit-uncancel,
-#mfcs-request-view-0-form #request-display-submit-cancel {
+#mfcs-request-view-0-form #request-display-submit-cancel,
+#mfcs-request-users-0-add-form #submit-buttons-cancel,
+#mfcs-request-users-0-edit-form #submit-buttons-cancel {
   color: #000000;
   background-color: #e86f69;
 }
@@ -112,7 +114,13 @@
 #mfcs-request-view-0-form #request-display-submit-uncancel:hover,
 #mfcs-request-view-0-form #request-display-submit-cancel:focus,
 #mfcs-request-view-0-form #request-display-submit-cancel:active,
-#mfcs-request-view-0-form #request-display-submit-cancel:hover {
+#mfcs-request-view-0-form #request-display-submit-cancel:hover,
+#mfcs-request-users-0-add-form #submit-buttons-cancel:focus,
+#mfcs-request-users-0-add-form #submit-buttons-cancel:active,
+#mfcs-request-users-0-add-form #submit-buttons-cancel:hover,
+#mfcs-request-users-0-edit-form #submit-buttons-cancel:focus,
+#mfcs-request-users-0-edit-form #submit-buttons-cancel:active,
+#mfcs-request-users-0-edit-form #submit-buttons-cancel:hover {
   text-decoration: underline;
 
   color: #ffffff;
