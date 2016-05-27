@@ -408,7 +408,7 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'troubleshoot-0') {
-          $title = "Troubleshooting Tools";
+          $title = "Manage Problems";
           $pre_crumb_title = "Requests Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
@@ -417,6 +417,9 @@ function mfcs_render_page() {
           $new_breadcrumb = array();
           $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/problems-0' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $title = "Troubleshooting Tools";
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
           if ($count_parts > 2 && $path_parts[2] == 'locations') {
