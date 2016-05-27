@@ -481,7 +481,7 @@ function mfcs_render_page() {
 
           $new_breadcrumb = array();
           $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
           $title = $pre_crumb_title;
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
