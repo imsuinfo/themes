@@ -161,6 +161,30 @@
   display: inherit;
 }
 
+.mcneese .position-absolute {
+  position: absolute;
+}
+
+.mcneese .position-fixed {
+  position: fixed;
+}
+
+.mcneese .position-inherit {
+  position: inherit;
+}
+
+.mcneese .position-initial {
+  position: initial;
+}
+
+.mcneese .position-relative {
+  position: relative;
+}
+
+.mcneese .position-static {
+  position: static;
+}
+
 .mcneese .vertical-align-baseline {
   vertical-align: baseline;
 }
