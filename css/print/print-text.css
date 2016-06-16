@@ -26,6 +26,12 @@
   text-decoration: none;
 }
 
+.mcneese input#edit-linkit-insert.no-print,
+.mcneese input.form-submit.no-print,
+.mcneese .form-submit.no-print {
+  display: none;
+}
+
 
 
 /*** Form fields ***/
