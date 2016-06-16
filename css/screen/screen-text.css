@@ -93,6 +93,7 @@ table.system-status-report > tbody > tr.ok,
 
 
 /*** Shortcuts ***/
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts {
   display: inline-block;
   vertical-align: top;
@@ -100,6 +101,7 @@ table.system-status-report > tbody > tr.ok,
   padding: 0px;
 }
 
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a {
   display: inline-block;
   vertical-align: top;
@@ -107,18 +109,24 @@ table.system-status-report > tbody > tr.ok,
   line-height: 30px;
 }
 
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .text,
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .text,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon {
   float: none;
   vertical-align: middle;
 }
 
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a > .icon {
   display: inline-block;
 
   margin-left: 0px;
 }
 
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:active > .text,
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:focus > .text,
+.mcneese .mcneese-content > .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:hover > .text,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:active > .text,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:focus > .text,
 .mcneese .html_tag-header > .html_tag-hgroup > .add-or-remove-shortcuts > a:hover > .text {
