@@ -173,6 +173,20 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
+        elseif ($path_parts[1] == 'reassign-0') {
+          if ($count_parts >= 3) {
+            $title = "Override Request";
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['show']['page']['precrumb'] = TRUE;
+
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/reassign-0/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            unset($cf['page']['breadcrumb'][1]);
+          }
+        }
         elseif ($path_parts[1] == 'problems-0') {
           $title = "Manage Problems";
           $pre_crumb_title = "Requests Management";
