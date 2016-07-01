@@ -676,3 +676,86 @@
 
   min-width: 80px;
 }
+
+
+
+/*** Manage Request ***/
+#mfcs-request-manage-0-page > .section {
+  display: inline-block;
+  vertical-align: top;
+  position: relataive;
+  box-sizing: border-box;
+
+  margin: 5px 10px 15px 10px;
+}
+
+#mfcs-request-manage-0-page > .section > .header {
+  border-bottom: 1px solid #000000;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item {
+  box-sizing: border-box;
+
+  min-width: 320px;
+  max-width: 450px;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-label,
+#mfcs-request-manage-0-page > .section > .content > .item > .item-value {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-label {
+  min-width: 160px;
+  max-width: 160px;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-value {
+  min-width: 160px;
+  max-width: 290px;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-message {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 320px;
+  max-width: 450px;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-label {
+  font-weight: bold;
+}
+
+#mfcs-request-manage-0-page > .section > .content > .item > .item-value .user_id {
+  vertical-align: top;
+
+  font-size: 9px;
+  line-height: 1em;
+}
+
+#mfcs-request-manage-0-page > .section-user_information > .content > .item > .item-label {
+  min-width: 220px;
+  max-width: 220px;
+}
+
+#mfcs-request-manage-0-page > .section-user_information > .content > .item > .item-value {
+  min-width: 100px;
+  max-width: 230px;
+}
+
+#mfcs-request-manage-0-page > .section-request_history > .content > .item,
+#mfcs-request-manage-0-page > .section-management_actions > .content > .item {
+  box-sizing: border-box;
+
+  min-width: 700px;
+  max-width: 700px;
+}
+
+#mfcs-request-manage-0-page > .section-request_history > .content > .item > .item-value,
+#mfcs-request-manage-0-page > .section-management_actions > .content > .item > .item-value {
+  min-width: 700px;
+  max-width: 700px;
+}

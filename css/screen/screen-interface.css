@@ -153,6 +153,27 @@
   border: 1px outset #333333;
 }
 
+#mfcs-request-view-0-form #request-display-submit-manage {
+  float: right;
+
+  color: #000000;
+  background-color: #cc9926;
+}
+
+#mfcs-request-view-0-form #request-display-submit-manage:focus,
+#mfcs-request-view-0-form #request-display-submit-manage:active,
+#mfcs-request-view-0-form #request-display-submit-manage:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
 
 
 /*** Cancel / Uncancel ***/
@@ -221,7 +242,7 @@
 
 /*** Re-Assign ***/
 #mfcs-request-view-0-form #request-reassign-submit-yes,
-#mfcs-request-reassign-0-form #request-reassign-submit-yes {
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes {
   color: #000000;
   background-color: #e86f69;
 }
@@ -229,9 +250,9 @@
 #mfcs-request-view-0-form #request-reassign-submit-yes:focus,
 #mfcs-request-view-0-form #request-reassign-submit-yes:active,
 #mfcs-request-view-0-form #request-reassign-submit-yes:hover,
-#mfcs-request-reassign-0-form #request-reassign-submit-yes:focus,
-#mfcs-request-reassign-0-form #request-reassign-submit-yes:active,
-#mfcs-request-reassign-0-form #request-reassign-submit-yes:hover {
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:focus,
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:active,
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -244,7 +265,7 @@
 }
 
 #mfcs-request-view-0-form #request-reassign-submit-no,
-#mfcs-request-reassign-0-form #request-reassign-submit-no {
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-no {
   color: #000000;
   background-color: #cecece;
 }
@@ -252,9 +273,9 @@
 #mfcs-request-view-0-form #request-reassign-submit-no:focus,
 #mfcs-request-view-0-form #request-reassign-submit-no:active,
 #mfcs-request-view-0-form #request-reassign-submit-no:hover,
-#mfcs-request-reassign-0-form #request-reassign-submit-no:focus,
-#mfcs-request-reassign-0-form #request-reassign-submit-no:active,
-#mfcs-request-reassign-0-form #request-reassign-submit-no:hover {
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:focus,
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:active,
+#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -277,6 +298,34 @@
   text-shadow: none;
 
   border-style: dotted;
+}
+
+
+
+/*** Manage Request ***/
+#mfcs-request-manage-0-page {
+}
+
+
+
+/*** Override Request ***/
+#mfcs-request-manage-0-override-form #request-override-submit-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-manage-0-override-form #request-override-submit-cancel:focus,
+#mfcs-request-manage-0-override-form #request-override-submit-cancel:active,
+#mfcs-request-manage-0-override-form #request-override-submit-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
 }
 
 
