@@ -24,18 +24,18 @@
 
 
 /** Location **/
-#mfcs-request-create-0-form #field-request-location-0 > .location-image,
-#mfcs-request-edit-0-form #field-request-location-0 > .location-image {
+#mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image,
+#mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image {
   float: right;
 }
 
-#mfcs-request-create-0-form #field-request-location-0 > .location-image-invisible,
-#mfcs-request-edit-0-form #field-request-location-0 > .location-image-invisible {
+#mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image-invisible,
+#mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image-invisible {
   display: none;
 }
 
-#mfcs-request-create-0-form #field-request-location-0 > .location-image-visible,
-#mfcs-request-edit-0-form #field-request-location-0 > .location-image-visible {
+#mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image-visible,
+#mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image-visible {
   display: inline-block;
 }
 
