@@ -663,6 +663,36 @@ function mfcs_render_page() {
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>';
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
 
+    if (function_exists('mfcs_page_request_access')) {
+      $user_is_manager = user_access('mfcs manage');
+      $user_is_administer = user_access('mfcs administer');
+
+      $display_manage_link = FALSE;
+      if ($user_is_manager || $user_is_administer) {
+        $display_manage_link = TRUE;
+      }
+      else {
+        $can_review = mfcs_page_request_access('review');
+        $can_manage_requests = mfcs_page_request_access('manage');
+
+        if ($can_review || $can_manage_requests) {
+          $display_manage_link = TRUE;
+        }
+
+        unset($can_review);
+        unset($can_manage_requests);
+      }
+
+      unset($user_is_manager);
+      unset($user_is_administer);
+
+      if ($display_manage_link) {
+        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Manage Requests</a></li>';
+      }
+
+      unset($display_manage_link);
+    }
+
     // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
     // make it available only when directly accessing the help url.
     if (isset($path_parts[1]) && $path_parts[1] == 'help-0') {

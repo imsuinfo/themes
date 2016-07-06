@@ -314,6 +314,30 @@
   font-weight: bold;
 }
 
+.mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link {
+  color: #00477f;
+  background-color: #fad703;
+}
+
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:hover,
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:active,
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-login-wrapper > a.menu_link:focus,
@@ -333,6 +357,41 @@
   background-color: #00234b;
 
   font-weight: bold;
+}
+
+
+.mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus {
+  color: #ffffff;
+  background-color: #00234b;
 }
 
 
