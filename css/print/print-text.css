@@ -19,7 +19,12 @@
 .mcneese .no_print_links_as_link a:visited,
 .mcneese .no_print_links_as_link a:focus,
 .mcneese .no_print_links_as_link a:active,
-.mcneese .no_print_links_as_link a:hover {
+.mcneese .no_print_links_as_link a:hover,
+.mcneese a.no_print_links_as_link,
+.mcneese a.no_print_links_as_link:visited,
+.mcneese a.no_print_links_as_link:focus,
+.mcneese a.no_print_links_as_link:active,
+.mcneese a.no_print_links_as_link:hover {
   color: inherit;
   background-color: inherit;
 
