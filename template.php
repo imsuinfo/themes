@@ -1574,7 +1574,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
     $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   }
   else {
-    $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate, post-check=0, pre-check=0';
+    $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate';
 
     $cf['is']['fixed_width'] = FALSE;
     $cf['is']['flex_width'] = TRUE;
@@ -1689,7 +1689,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
             $date_value = strtotime('+900 seconds', $cf['request']);
             $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
             $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-            $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate, post-check=0, pre-check=0';
+            $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate';
 
             $cf['is']['emergency'] = TRUE;
             $cf['is_data']['emergency'] = array();
@@ -2880,7 +2880,7 @@ function mcneese_prepare_maintenance_mode_variables(&$cf, &$vars) {
   $date_value = strtotime('+1800 seconds', $cf['request']);
   $cf['meta']['name']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
   $cf['meta']['http-equiv']['expires'] = gmdate('D, d M Y H:i:s T', $date_value);
-  $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate, post-check=0, pre-check=0';
+  $cf['meta']['http-equiv']['cache-control'] = 'no-cache, must-revalidate';
 
 
   // register that this is a maintenance page
