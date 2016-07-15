@@ -133,10 +133,22 @@
   border-bottom: 0px none;
 }
 
-#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a {
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a,
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item > a:visited {
   text-decoration: none;
 }
 
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item.calendar-unavailable > a,
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item.calendar-unavailable > a:visited {
+  font-style: italic;
+  color: #600000;
+}
+
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item.calendar-unavailable > a:focus,
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item.calendar-unavailable > a:active,
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item.calendar-unavailable > a:hover {
+  color: #a50000;
+}
 
 
 
@@ -417,6 +429,11 @@
   height: 90px;
   min-height: 90px;
   max-height: 90px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper {
+  display: inline-block;
+  vertical-align: top;
 }
 
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
@@ -835,7 +852,7 @@
   color: #ffffff;
 }
 
-/** Item Type: Holiday (holiday) (day) **/
+/** Item Type: Holiday (day) **/
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-holiday > .calendar-item > .calendar-item-footer-wrapper,
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-holiday {
   color: #000000;
@@ -849,6 +866,27 @@
   border-bottom: 2px solid #757575;
 
   font-weight: bold;
+}
+
+/** Item Type: Unavailable (day) **/
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable {
+  border-style: dotted;
+
+  background-color: #fff8ea;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable.slot-start {
+  border-top-style: dotted;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable.slot-stop {
+  border-bottom-style: dotted;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable > .calendar-item > .calendar-item-link-wrapper {
+  border-bottom-style: dotted;
+
+  background-color: #ffe9ca;
 }
 
 

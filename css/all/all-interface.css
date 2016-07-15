@@ -759,3 +759,91 @@
   min-width: 700px;
   max-width: 700px;
 }
+
+
+
+/*** Room Unavailability ***/
+#mfcs-unavailable_0-manage_room-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-manage_room-page > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-label,
+#mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-value,
+#mfcs-unavailable_0-view-page > .room_information-status > .room_information-status-label,
+#mfcs-unavailable_0-view-page > .room_information-status > .room_information-status-value,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-value {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-unavailable_0-manage_room-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-label,
+#mfcs-unavailable_0-view-page > .room_information-status > .room_information-status-label,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > .room_information-wrapper > .room_information-item > .room_information-item-label {
+  font-weight: bold;
+
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+}
+
+#mfcs-unavailable_0-manage_room-page > .room_information-wrapper,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > .room_information-wrapper,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > .room_information-wrapper,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > .room_information-wrapper,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > .room_information-wrapper {
+  margin-bottom: 8px;
+}
+
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .fieldset-description ,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .fieldset-description,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .fieldset-description   {
+  margin: 0px;
+}
+
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-time,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-time,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-time,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-time,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-time,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-time,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-time,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-time {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-create-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-edit-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-copy-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_start > .fieldset-wrapper > .form-item-unavailable-date_start-day,
+#mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day {
+  margin-right: 20px;
+}

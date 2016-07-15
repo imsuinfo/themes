@@ -463,3 +463,38 @@
 #mfcs-request-users-view-page > .view_user-buttons > .view_user-button:active {
   border: 1px inset #333333;
 }
+
+
+
+
+/*** Room Unavailability ***/
+#mfcs-unavailable_0-create-page #mfcs-unavailable-edit-submit-cancel,
+#mfcs-unavailable_0-edit-page #mfcs-unavailable-edit-submit-cancel,
+#mfcs-unavailable_0-copy-page #mfcs-unavailable-edit-submit-cancel,
+#mfcs-unavailable_0-delete-page #mfcs-unavailable-delete-submit-no {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-unavailable-0-create-form #mfcs-unavailable-edit-submit-cancel:focus,
+#mfcs-request-unavailable-0-create-form #mfcs-unavailable-edit-submit-cancel:active,
+#mfcs-request-unavailable-0-create-form #mfcs-unavailable-edit-submit-cancel:hover,
+#mfcs-request-unavailable-0-edit-form #mfcs-unavailable-edit-submit-cancel:focus,
+#mfcs-request-unavailable-0-edit-form #mfcs-unavailable-edit-submit-cancel:active,
+#mfcs-request-unavailable-0-edit-form #mfcs-unavailable-edit-submit-cancel:hover,
+#mfcs-request-unavailable-0-copy-form #mfcs-unavailable-edit-submit-cancel:focus,
+#mfcs-request-unavailable-0-copy-form #mfcs-unavailable-edit-submit-cancel:active,
+#mfcs-request-unavailable-0-copy-form #mfcs-unavailable-edit-submit-cancel:hover,
+#mfcs-request-unavailable-0-delete-form #mfcs-unavailable-delete-submit-no:focus,
+#mfcs-request-unavailable-0-delete-form #mfcs-unavailable-delete-submit-no:active,
+#mfcs-request-unavailable-0-delete-form #mfcs-unavailable-delete-submit-no:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}

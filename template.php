@@ -352,73 +352,102 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
-        elseif ($path_parts[1] == 'holiday') {
-          $title = "Requests Management";
-          $pre_crumb_title = "Requests Management";
-
-          if (isset($path_parts[2])) {
-            if ($path_parts[2] == 'year-0') {
-              if (isset($path_parts[3])) {
-                $year = $path_parts[3];
-              }
-              else {
-                $year = date('Y');
-              }
-
-              $title = "Holidays " . $year;
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-              $cf['show']['page']['precrumb'] = TRUE;
-
-              $new_breadcrumb = array();
-              $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
-
-              if (isset($path_parts[3])) {
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-              }
-              else {
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-              }
-
-              if (isset($path_parts[4]) && ($path_parts[4] == 'view' || $path_parts[4] == 'edit' || $path_parts[4] == 'delete' || $path_parts[4] == 'import')) {
-                if ($path_parts[4] == 'view') {
-                  if (isset($path_parts[5])) {
-                    $title = "View Holiday";
-                    $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[5] . '</div>';
-
-                    $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . '/view/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-                  }
-                }
-                elseif ($path_parts[4] == 'edit') {
-                  if (isset($path_parts[5])) {
-                    $title = "Edit Holiday";
-                    $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[5] . '</div>';
-
-                    $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . '/edit/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-                  }
-                  else {
-                    $title = "Create Holiday";
-                    $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . '/edit' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-                  }
-                }
-                elseif ($path_parts[4] == 'delete') {
-                  if (isset($path_parts[5])) {
-                    $title = "Delete Holiday";
-                    $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[5] . '</div>';
-
-                    $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . '/delete/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-                  }
-                }
-                elseif ($path_parts[4] == 'import') {
-                  $title = "Import Holidays";
-                  $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/year-0/' . $path_parts[3] . '/import' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-                }
-              }
-
-              // original breadcrumb gets overridden to remove extra/invalid url paths.
-              $cf['page']['breadcrumb'] = $new_breadcrumb;
+        elseif ($path_parts[1] == 'holiday-0') {
+          $year = NULL;
+          $type = 0;
+          if ($count_parts == 2) {
+            $year = date('Y');
+          }
+          elseif ($count_parts > 2) {
+            if ($count_parts == 3) {
+              $year = (int) $path_parts[2];
             }
+            else {
+              if ($path_parts[2] == 'view') {
+                if ($count_parts == 5) {
+                  $type = 2;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'create') {
+                if ($count_parts == 4) {
+                  $type = 3;
+                  $year = (int) $path_parts[3];
+                }
+                elseif ($count_parts == 5) {
+                  $type = 3;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'edit') {
+                if ($count_parts == 5) {
+                  $type = 4;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'delete') {
+                if ($count_parts == 5) {
+                  $type = 5;
+                  $year = (int) $path_parts[3];
+                }
+              }
+            }
+          }
+
+          if (!is_null($year)) {
+            $cf['show']['page']['precrumb'] = TRUE;
+
+            $new_breadcrumb = array();
+            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+
+            $title = "Requests Management";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $title = "Holidays " . $year;
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            if ($type == 0) {
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+            }
+
+            if ($type == 2) {
+              $title = "View Holiday";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+            }
+
+            if ($type == 3) {
+              if (isset($path_parts[5])) {
+                $title = "Copy Holiday";
+                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Copy Holiday " . $path_parts[4] . '</div>';
+              }
+              else {
+                $title = "Create Holiday";
+                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Create Holiday" . '</div>';
+              }
+            }
+
+            if ($type == 4) {
+              $title = "Edit Holiday";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+            }
+
+            if ($type == 5) {
+              $title = "Delete Holiday";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+            }
+
+            // original breadcrumb gets overridden to remove extra/invalid url paths.
+            $cf['page']['breadcrumb'] = $new_breadcrumb;
           }
         }
         elseif ($path_parts[1] == 'management') {
@@ -465,6 +494,125 @@ function mfcs_render_page() {
 
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
+        }
+        elseif ($path_parts[1] == 'unavailable-0') {
+          $year = NULL;
+          $type = 0;
+          $room_id = NULL;
+          if ($count_parts == 2) {
+            $year = date('Y');
+          }
+          elseif ($count_parts > 2) {
+            if ($count_parts < 5) {
+              $type = 1;
+
+              if ($count_parts == 4) {
+                $year = (int) $path_parts[2];
+                $room_id = (int) $path_parts[3];
+              }
+              else {
+                $year = date('Y');
+                $room_id = (int) $path_parts[2];
+              }
+            }
+            elseif ($count_parts > 4) {
+              $room_id = (int) $path_parts[4];
+
+              if ($path_parts[2] == 'view') {
+                if ($count_parts == 6) {
+                  $type = 2;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'create') {
+                if ($count_parts == 5) {
+                  $type = 3;
+                  $year = (int) $path_parts[3];
+                }
+                elseif ($count_parts == 6) {
+                  $type = 3;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'edit') {
+                if ($count_parts == 6) {
+                  $type = 4;
+                  $year = (int) $path_parts[3];
+                }
+              }
+              elseif ($path_parts[2] == 'delete') {
+                if ($count_parts == 6) {
+                  $type = 5;
+                  $year = (int) $path_parts[3];
+                }
+              }
+            }
+          }
+
+          if (!is_null($year)) {
+            $cf['show']['page']['precrumb'] = TRUE;
+
+            $new_breadcrumb = array();
+            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+
+            $title = "Requests Management";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $title = "Room Unavailability";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            if ($type == 0) {
+              $pre_crumb_title = "Room Unavailability";
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
+            }
+            else {
+              $title = "Room " . $room_id . ", Year " . $year;
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+            }
+
+            if ($type == 1) {
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Room " . $room_id . ", Year " . $year . '</div>';
+            }
+
+            if ($type == 2) {
+              $title = "View Unavailability";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+            }
+
+            if ($type == 3) {
+              if (isset($path_parts[5])) {
+                $title = "Copy Unavailability";
+                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Copy Unavailability " . $path_parts[5] . '</div>';
+              }
+              else {
+                $title = "Create Unavailability";
+                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Create Unavailability" . '</div>';
+              }
+            }
+
+            if ($type == 4) {
+              $title = "Edit Unavailability";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+            }
+
+            if ($type == 5) {
+              $title = "Delete Unavailability";
+              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+            }
+
+            // original breadcrumb gets overridden to remove extra/invalid url paths.
+            $cf['page']['breadcrumb'] = $new_breadcrumb;
+          }
         }
         elseif ($path_parts[1] == 'help-0') {
           $title = "Help";
@@ -664,33 +812,17 @@ function mfcs_render_page() {
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
 
     if (function_exists('mfcs_page_request_access')) {
-      $user_is_manager = user_access('mfcs manage');
-      $user_is_administer = user_access('mfcs administer');
+      $is_manager = user_access('mfcs manage');
+      $is_reviewer = user_access('mfcs review');
+      $is_administer = user_access('mfcs administer');
 
-      $display_manage_link = FALSE;
-      if ($user_is_manager || $user_is_administer) {
-        $display_manage_link = TRUE;
-      }
-      else {
-        $can_review = mfcs_page_request_access('review');
-        $can_manage_requests = mfcs_page_request_access('manage');
-
-        if ($can_review || $can_manage_requests) {
-          $display_manage_link = TRUE;
-        }
-
-        unset($can_review);
-        unset($can_manage_requests);
-      }
-
-      unset($user_is_manager);
-      unset($user_is_administer);
-
-      if ($display_manage_link) {
+      if ($is_manager || $is_reviewer || $is_administer) {
         $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Manage Requests</a></li>';
       }
 
-      unset($display_manage_link);
+      unset($is_manager);
+      unset($is_reviewer);
+      unset($is_administer);
     }
 
     // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
@@ -719,7 +851,7 @@ function mfcs_render_page() {
  * This removes the breadcrumb wrapper, requiring the theme to specify the
  * wrapper tag.
  *
- * @see theme_breadcrumb()
+ * @see: theme_breadcrumb()
  */
 function mcneese_fcs_breadcrumb($vars) {
   global $mfcs_determined;
