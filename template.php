@@ -940,7 +940,7 @@ function mcneese_preprocess_page(&$vars) {
   $cf['page']['watermarks-post'] = '';
 
 
-  if (isset($cf['is']['user_settings-watermarks']) && $cf['is']['user_settings-watermarks'] && $cf['is']['node'] && $cf['user']['object']->uid > 0) {
+  if (isset($cf['is']['user_settings-watermarks']) && $cf['is']['user_settings-watermarks'] && $cf['is']['node'] && isset($cf['user']['object']->uid) && $cf['user']['object']->uid > 0) {
     if (isset($cf['is']['workbench-moderated']) && $cf['is']['workbench-moderated']) {
       if (empty($cf['is']['workbench-moderated-published'])) {
         $cf['page']['watermarks-pre'] .= '<div class="watermark-unpublished">Unpublished</div>';
@@ -1129,7 +1129,7 @@ function mcneese_preprocess_node(&$vars) {
   }
 
   // only display uid if the user is logged in
-  if ($cf['user']['object']->uid > 0) {
+  if (isset($cf['user']['object']->uid) && $cf['user']['object']->uid > 0) {
     $attributes['class'][] = 'node-owner_id-' . check_plain($vars['node']->uid);
   }
 
@@ -1711,7 +1711,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
   if ($process_toolbar) {
     $cf['is']['toolbar'] = user_access('access toolbar');
 
-    if ($cf['is']['toolbar'] && $cf['user']['object']->uid > 0) {
+    if ($cf['is']['toolbar'] && isset($cf['user']['object']->uid) && $cf['user']['object']->uid > 0) {
       $cf['is']['toolbar-expanded'] = TRUE;
       $cf['is']['toolbar-collapsed'] = FALSE;
       $cf['is']['toolbar-sticky'] = FALSE;
@@ -1749,7 +1749,7 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
 
   // workbench moderation support (only show for logged in accounts)
-  if ($cf['is']['node'] && $cf['user']['object']->uid > 0) {
+  if ($cf['is']['node'] && isset($cf['user']['object']->uid)  && $cf['user']['object']->uid > 0) {
     if (property_exists($cf['is_data']['node']['object'], 'workbench_moderation')) {
       $cf['is']['workbench-moderated'] = TRUE;
       $cf['is']['workbench-moderated-published'] = FALSE;
