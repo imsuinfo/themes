@@ -811,13 +811,8 @@ function mfcs_render_page() {
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>';
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
 
-    if (function_exists('mfcs_page_request_access')) {
-      $is_requester = user_access('mfcs request');
-      $is_manager = user_access('mfcs manage');
-      $is_reviewer = user_access('mfcs review');
-      $is_administer = user_access('mfcs administer');
-
-      if ($is_requester || $is_manager || $is_reviewer || $is_administer) {
+    if (function_exists('mfcs_management_page_access')) {
+      if (mfcs_management_page_access()) {
         $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Requests Management</a></li>';
       }
 
