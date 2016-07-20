@@ -357,12 +357,16 @@
 
 
 /*** Holiday ***/
+#mfcs-holiday-copy-submit-cancel,
 #mfcs-holiday-edit-submit-cancel,
 #mfcs-holiday-delete-submit-no {
   color: #000000;
   background-color: #e86f69;
 }
 
+#mfcs-holiday-copy-submit-cancel:focus,
+#mfcs-holiday-copy-submit-cancel:active,
+#mfcs-holiday-copy-submit-cancel:hover,
 #mfcs-holiday-edit-submit-cancel:focus,
 #mfcs-holiday-edit-submit-cancel:active,
 #mfcs-holiday-edit-submit-cancel:hover,
