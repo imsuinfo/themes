@@ -818,7 +818,7 @@ function mfcs_render_page() {
       $is_administer = user_access('mfcs administer');
 
       if ($is_requester || $is_manager || $is_reviewer || $is_administer) {
-        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Manage Requests</a></li>';
+        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Requests Management</a></li>';
       }
 
       unset($is_manager);
