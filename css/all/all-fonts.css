@@ -235,3 +235,101 @@
   font-weight: 900;
   src: local('Source Code Pro Black'), url(../../fonts/source_code_pro-black.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Sans Caption'), url(../../fonts/PTC55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Caption Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Sans Caption Bold'), url(../../fonts/PTC75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Serif'), url(../../fonts/PTF55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Serif Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Serif Bold'), url(../../fonts/PTF75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Mono'), url(../../fonts/PTM55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Mono Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Mono Bold'), url(../../fonts/PTM75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Sans Narrow'), url(../../fonts/PTN55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Sans Narrow Bold'), url(../../fonts/PTN75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Sans Regular'), url(../../fonts/PTS55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Regular Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Sans Regular Bold'), url(../../fonts/PTS75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Regular';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Sans Regular'), url(../../fonts/PTS55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Regular Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Sans Regular Bold'), url(../../fonts/PTS75F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Serif Caption';
+  font-style: normal;
+  font-weight: 500;
+  src: local('PT Serif Caption'), url(../../fonts/PTZ55F.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Serif Caption Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('PT Serif Caption Bold'), url(../../fonts/PTZ75F.ttf) format('truetype');
+}
