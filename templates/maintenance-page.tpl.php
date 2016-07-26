@@ -44,7 +44,7 @@
     $cf['is']['front'] = TRUE;
     $show_breadcrumb = FALSE;
     $show_title = FALSE;
-    $page_title = "Website Currently Unvailable";
+    $page_title = "Website Currently Unavailable";
     $section_class = "node node-id-819 node-revision-47097 node-type-system_page node-published system_page_type-default html_tag-section";
     $body_class = "is-front is-node is-anonymous is-published is-html5 is-node-view is-fixed_width path-node_819 node-id-819 node-type-system_page system_page_type-default";
 
