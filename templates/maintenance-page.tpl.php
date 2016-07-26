@@ -109,7 +109,8 @@
         <div role="navigation" class="header-menu header-menu-1">
           <nav class="menu html_tag-nav">
             <ul class="navigation_list html_tag-list">
-              <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a title="Go Back to MyMcNeese Portal" href="https://mymcneese.mcneese.edu/" class="menu_link menu_link-my_mcneese">MyMcneese</a></li>
+              <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="//www.mcneese.edu/node/7378" title="Facilities Use Information">Facilities Use Information</a></li>
+              <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a title="Go Back to MyMcNeese Portal" href="//mymcneese.mcneese.edu/" class="menu_link menu_link-my_mcneese">MyMcneese</a></li>
             </ul>
           </nav>
         </div>
@@ -158,8 +159,13 @@
             The Facilities Use and Special Event Request Website is not available at this time. A small set of links are provided below. We apologize for any inconvenience.<br>
             <br>
             <ul class="inline-block vertical-align-top margin-left-44 margin-right-44 margin-bottom-25">
-              <li><a href="http://www.mcneese.edu/">McNeese Website</a></li>
-              <li><a href="https://mymcneese.mcneese.edu/">MyMcNeese Portal</a></li>
+              <li class="padding-2">
+                <a href="//www.mcneese.edu/">McNeese Website</a>
+                <ul class="padding-top-2">
+                  <li class="padding-2"><a href="//www.mcneese.edu/node/7378">Facilities Use Page</a></li>
+                </ul>
+              </li>
+              <li class="padding-2"><a href="//mymcneese.mcneese.edu/">MyMcNeese Portal</a></li>
             </ul>
           </div>
           <!--(end-page-main)-->
