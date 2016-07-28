@@ -75,12 +75,12 @@ function mfcs_render_page() {
     $path_parts = explode('/', $cf['at']['path']);
     $count_parts = count($path_parts);
 
-    $pre_crumb_title = "Requests Dashboard";
+    $pre_crumb_title = "Dashboard";
 
     if ($count_parts > 0 && $path_parts[0] == 'requests') {
       if ($count_parts == 1) {
         if ($path_parts[0] == 'requests') {
-          $title = "Requests Dashboard";
+          $title = "Dashboard";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -124,7 +124,7 @@ function mfcs_render_page() {
           unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'review-0') {
-          $title = "Review Requests";
+          $title = "Review";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -151,7 +151,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'reviewers-0') {
           $title = "Manage Reviewers";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -203,7 +203,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'problems-0') {
           $title = "Manage Problems";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -236,7 +236,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'proxy-0') {
           $title = "Manage Proxies";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -301,7 +301,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'statistics-0') {
           $title = "Request Statistics";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -317,7 +317,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'email_log-0') {
           $title = "E-mail Logs";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -338,7 +338,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'synchronize-0') {
           $title = "Synchronize";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -400,7 +400,7 @@ function mfcs_render_page() {
             $new_breadcrumb = array();
             $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
 
-            $title = "Requests Management";
+            $title = "Management";
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
             $title = "Holidays " . $year;
@@ -451,8 +451,8 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'management') {
-          $title = "Requests Management";
-          $pre_crumb_title = "Requests Management";
+          $title = "Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -466,7 +466,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'troubleshoot-0') {
           $title = "Manage Problems";
-          $pre_crumb_title = "Requests Management";
+          $pre_crumb_title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -555,7 +555,7 @@ function mfcs_render_page() {
             $new_breadcrumb = array();
             $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
 
-            $title = "Requests Management";
+            $title = "Management";
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
             $title = "Room Unavailability";
@@ -650,7 +650,7 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'users-0') {
           $pre_crumb_title = "Manage Users";
-          $title = "Requests Management";
+          $title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -813,7 +813,7 @@ function mfcs_render_page() {
 
     if (function_exists('mfcs_management_page_access')) {
       if (mfcs_management_page_access()) {
-        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Requests Management Dashboard">Requests Management</a></li>';
+        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Management Dashboard">Management</a></li>';
       }
 
       unset($is_manager);
@@ -909,8 +909,8 @@ function mfcs_preprocess_toolbar(&$vars) {
 
   $management_tree = menu_build_tree('navigation', array(
     'conditions' => array('ml.link_path' => 'requests/management'),
-    'min_depth' => 1,
-    'max_depth' => 1,
+    'min_depth' => 2,
+    'max_depth' => 2,
   ));
 
   $review_tree = menu_build_tree('navigation', array(
