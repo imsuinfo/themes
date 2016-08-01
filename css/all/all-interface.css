@@ -572,6 +572,34 @@
 
 
 
+/*** Troubleshooting Page - Edit Location ***/
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-summary > .locations-edit_name-summary_row {
+  margin: 4px 0px;
+}
+
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-summary > .locations-edit_name-summary_row > .locations-edit_name-summary_row-label {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 120px;
+
+  font-weight: bold;
+}
+
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-summary > .locations-edit_name-summary_row > .locations-edit_name-summary_row-vaue {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit {
+  margin: 15px 0px;
+}
+
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit > input {
+  margin-right: 15px;
+}
+
+
 /*** Datatable Customizations ***/
 .mcneese .dataTables_wrapper > .ColVis > .ColVis_Button, .mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
   line-height: 16px;
@@ -632,14 +660,10 @@
   font-weight: bold;
 }
 
-#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
+#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-value {
   display: inline-block;
   vertical-align: top;
 }
-
-#mfcs-request-problems-0-request-form > .form-wrapper-inner > .request_problem-summary > .request_problem-summary_row > .request_problem-summary_row-label {
-}
-
 
 
 /*** Users ***/

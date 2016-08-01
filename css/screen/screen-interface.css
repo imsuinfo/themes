@@ -502,3 +502,25 @@
 
   border: 1px outset #333333;
 }
+
+
+
+/*** Troubleshoot ***/
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit > .form-submit.submit-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit > .form-submit.submit-cancel:focus,
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit > .form-submit.submit-cancel:active,
+#mfcs-request-troubleshoot-0-locations-edit-name-form > .form-wrapper-inner > .locations-edit_name-submit > .form-submit.submit-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
