@@ -164,8 +164,21 @@
   font-size: 9px;
 }
 
-#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .form-item {
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .group > .form-item {
   display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .group {
+  margin: 3px;
+  padding: 3px;
+  border: 1px solid #c8c585;
+
+  background-color: #f2f1d3;
+}
+
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .requirements > .fieldset-wrapper > .group_post > .form-item {
+  display: block;
   vertical-align: top;
 }
 
@@ -506,6 +519,10 @@
   text-align: center;
 
   border-left: 1px solid #c0c0c0;
+}
+
+#mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell > .item-value > .other_expenses-description {
+  padding: 0px 20px;
 }
 
 #mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-label {
