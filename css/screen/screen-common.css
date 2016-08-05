@@ -2,6 +2,14 @@
 
 
 /*** Global ***/
+.mcneese #mcneese-header,
+.mcneese #mcneese-bulletin-wrapper-outer,
+.mcneese #mcneese-bulletin-wrapper,
+.mcneese #mcneese-body,
+.mcneese #mcneese-page-content {
+  min-width: 600px;
+}
+
 .mcneese.is-flex_width {
   min-width: 960px;
 }
