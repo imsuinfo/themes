@@ -352,6 +352,28 @@
 
 
 
+/*** Unavailability ***/
+#mfcs-unavailable_0-copy-page #mfcs-unavailable-copy-submit-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-unavailable_0-copy-page #mfcs-unavailable-copy-submit-cancel:focus,
+#mfcs-unavailable_0-copy-page #mfcs-unavailable-copy-submit-cancel:active,
+#mfcs-unavailable_0-copy-page #mfcs-unavailable-copy-submit-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+
+
 /*** Search DataTable ***/
 #mfcs-search_0-advanced_table_wrapper.dataTables_wrapper > table.dataTable > caption,
 #mfcs-search_0-simple_table_wrapper.dataTables_wrapper > table.dataTable > caption {
