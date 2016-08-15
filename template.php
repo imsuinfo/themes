@@ -509,10 +509,18 @@ function mfcs_render_page() {
               if ($count_parts == 4) {
                 $year = (int) $path_parts[2];
                 $room_id = (int) $path_parts[3];
+
+                if ($path_parts[3] == 'all') {
+                  $room_id = 'all';
+                }
               }
               else {
                 $year = date('Y');
                 $room_id = (int) $path_parts[2];
+
+                if ($path_parts[2] == 'all') {
+                  $room_id = 'all';
+                }
               }
             }
             elseif ($count_parts > 4) {
@@ -566,12 +574,22 @@ function mfcs_render_page() {
               $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
             }
             else {
-              $title = "Room " . $room_id . ", Year " . $year;
+              if (is_numeric($room_id)) {
+                $title = "Room " . $room_id . ", Year " . $year;
+              }
+              elseif ($room_id == 'all') {
+                $title = "All Rooms, Year " . $year;
+              }
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
             }
 
             if ($type == 1) {
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Room " . $room_id . ", Year " . $year . '</div>';
+              if (is_numeric($room_id)) {
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Room " . $room_id . ", Year " . $year . '</div>';
+              }
+              elseif ($room_id == 'all') {
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "All Rooms, Year " . $year . '</div>';
+              }
             }
 
             if ($type == 2) {
