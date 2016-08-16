@@ -23,7 +23,8 @@
   display: none;
 }
 
-.mcneese.alias-part-0-requests.alias-part-1-unavailability_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-manage_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-view_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-print_0 .html_tag-header.page-title,
@@ -38,6 +39,13 @@
 .mcneese.alias-part-0-requests.alias-part-1-users_0 .html_tag-header.page-title,
 .mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 .html_tag-header.page-title {
   display: inherit;
+}
+
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0.alias-requests_holiday_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-requests_unavailable_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-part-2-all .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-part-3-all .html_tag-header.page-title {
+  display: none;
 }
 
 
