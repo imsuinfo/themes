@@ -673,7 +673,7 @@
   position: relataive;
   box-sizing: border-box;
 
-  margin: 5px 10px;
+  margin: 5px 8px;
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-group-header {
@@ -684,10 +684,18 @@
   box-sizing: border-box;
 }
 
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-banner_role,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-basic,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-venue,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-special,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-administer {
+  display: list-item;
+
+  margin-left: 15px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-proxy-as > .view_user-item-proxy-item,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-proxy-by > .view_user-item-proxy-item {
   display: list-item;
 
   margin-left: 15px;
