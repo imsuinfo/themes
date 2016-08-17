@@ -538,7 +538,7 @@ function mcneese_www_render_page() {
   $markup .= '    <li class="first leaf menu_link-apply-now menu_link-apply_now menu-link-name-menu-primary-navigation menu-link-mlid-4682 id-menu-link-menu-primary-navigation-4682"><a title="" href="/node/5683">Apply Now</a></li>';
   $markup .= '    <li class="leaf menu_link-future_students menu-link-name-menu-primary-navigation menu-link-mlid-799 id-menu-link-menu-primary-navigation-799"><a title="" href="/future-students">Future Students</a></li>';
   $markup .= '    <li class="leaf menu_link-current_students menu-link-name-menu-primary-navigation menu-link-mlid-898 id-menu-link-menu-primary-navigation-898"><a title="" href="/current-students">Students</a></li>';
-  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/alearn">Online Learning</a></li>';
+  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/online">Online Learning</a></li>';
   $markup .= '    <li class="leaf menu_link-faculty_staff menu-link-name-menu-primary-navigation menu-link-mlid-385 id-menu-link-menu-primary-navigation-385"><a href="/faculty-staff">Faculty &amp; Staff</a></li>';
   $markup .= '    <li class="leaf menu_link-alumni_friends menu-link-name-menu-primary-navigation menu-link-mlid-1273 id-menu-link-menu-primary-navigation-1273"><a title="" href="/alumni-friends">Alumni &amp; Donors</a></li>';
   $markup .= '    <li class="last leaf menu_link-my_mcneese menu-link-name-menu-primary-navigation menu-link-mlid-388 id-menu-link-menu-primary-navigation-388"><a title="" href="https://mymcneese.mcneese.edu/">MyMcNeese</a></li>';
@@ -775,26 +775,6 @@ function mcneese_www_process_side_panel(&$cf) {
       $markup .= '  </div>';
       $markup .= '</div>';
     }
-
-    // was block 26.
-    $markup .= '<div class="block block-id-2 block-name-block-block-26 even html_tag-div">';
-    $markup .= '  <div class="align_center margin-top-10 margin-bottom-10">';
-    $markup .= '    <div class="download-is-box margin-bottom-10">';
-    $markup .= '      <h3>Featured Downloads</h3>';
-    $markup .= '      <a href="https://www.eff.org/https-everywhere" target="_blank"><img src="' . $base_path . 'f/f/12497" height="38" width="185" alt="HTTPS Everywhere" title="Encrypt the Web"></a><br>';
-    $markup .= '      <a href="https://pack.resetthenet.org/" target="_blank" rel="noreferrer"><img alt="Reset The Net" title="Privacy Pack" height="38" width="185" src="' . $base_path . 'f/f/12498"></a>';
-    $markup .= '    </div>';
-
-    // apparently browsers give whitespace space (when they otherwise should not) causing images to wrap/overflow due to invisible/unprinted space.
-    $markup .= '<div class="margin-top-20 margin-bottom-10">';
-    $markup .= '<a href="https://twitter.com/McNeeseInfoSec" target="_blank" rel="noreferrer"><img alt="@McNeeseInfoSec" title="@McNeeseInfoSec" height="47" width="47" style="width: 47px; height: 47px;" src="' . $base_path . 'f/f/12499"></a>';
-    $markup .= '<a href="https://www.staysafeonline.org/ncsam/champions/all-champions/" target="_blank" rel="noreferrer"><img alt="National Cyber Security Awareness Month" title="Free Security Check Ups" height="47" width="47" src="' . $base_path . 'f/f/12500" style="width: 47px; height: 47px;"></a>';
-    $markup .= '<a href="https://www.staysafeonline.org/data-privacy-day/check-your-privacy-settings/" target="_blank" rel="noreferrer"><img alt="Data Privacy Day" title="Check Your Privacy Settings" height="47" width="47" src="' . $base_path . 'f/f/12501" style="width: 47px; height: 47px;"></a>';
-    $markup .= '<a href="http://stopthinkconnect.org/tips-and-advice/overview/" target="_blank" rel="noreferrer"><img alt="Stop | Think | Connect" title="Tips &amp; Advice" height="47" width="47" src="' . $base_path . 'f/f/12502" style="width: 47px; height: 47px;"></a>';
-    $markup .= '</div>';
-
-    $markup .= '  </div>';
-    $markup .= '</div>';
   }
 
 
@@ -884,22 +864,22 @@ function mcneese_www_process_javascript(&$cf) {
     elseif ($uri_fixed == 'dore/exed/nurse-cm' || (isset($sources[2]['dore/exed/nurse-cm']) && !isset($sources[3]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn' || (isset($sources[0]['alearn']) && !isset($sources[1]))) {
+    elseif ($uri_fixed == 'online' || (isset($sources[0]['online']) && !isset($sources[1]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/cjus' || (isset($sources[1]['alearn/cjus']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/cjus' || (isset($sources[1]['online/cjus']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/fcst' || (isset($sources[1]['alearn/fcst']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/fcst' || (isset($sources[1]['online/fcst']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/mgmo' || (isset($sources[1]['alearn/mgmo']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/mgmo' || (isset($sources[1]['online/mgmo']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/psco' || (isset($sources[1]['alearn/psco']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/psco' || (isset($sources[1]['online/psco']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/sociology' || (isset($sources[1]['alearn/sociology']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/sociology' || (isset($sources[1]['online/sociology']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
     elseif ($uri_fixed == 'socsi/mscj' || (isset($sources[1]['socsi/mscj']) && !isset($sources[2]))) {
