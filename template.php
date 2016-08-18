@@ -538,7 +538,7 @@ function mcneese_www_render_page() {
   $markup .= '    <li class="first leaf menu_link-apply-now menu_link-apply_now menu-link-name-menu-primary-navigation menu-link-mlid-4682 id-menu-link-menu-primary-navigation-4682"><a title="" href="/node/5683">Apply Now</a></li>';
   $markup .= '    <li class="leaf menu_link-future_students menu-link-name-menu-primary-navigation menu-link-mlid-799 id-menu-link-menu-primary-navigation-799"><a title="" href="/future-students">Future Students</a></li>';
   $markup .= '    <li class="leaf menu_link-current_students menu-link-name-menu-primary-navigation menu-link-mlid-898 id-menu-link-menu-primary-navigation-898"><a title="" href="/current-students">Students</a></li>';
-  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/alearn">Online Learning</a></li>';
+  $markup .= '    <li class="leaf menu_link-online_learning menu-link-name-menu-primary-navigation menu-link-mlid-6060 id-menu-link-menu-primary-navigation-6060"><a title="" href="/online">Online Learning</a></li>';
   $markup .= '    <li class="leaf menu_link-faculty_staff menu-link-name-menu-primary-navigation menu-link-mlid-385 id-menu-link-menu-primary-navigation-385"><a href="/faculty-staff">Faculty &amp; Staff</a></li>';
   $markup .= '    <li class="leaf menu_link-alumni_friends menu-link-name-menu-primary-navigation menu-link-mlid-1273 id-menu-link-menu-primary-navigation-1273"><a title="" href="/alumni-friends">Alumni &amp; Donors</a></li>';
   $markup .= '    <li class="last leaf menu_link-my_mcneese menu-link-name-menu-primary-navigation menu-link-mlid-388 id-menu-link-menu-primary-navigation-388"><a title="" href="https://mymcneese.mcneese.edu/">MyMcNeese</a></li>';
@@ -864,22 +864,22 @@ function mcneese_www_process_javascript(&$cf) {
     elseif ($uri_fixed == 'dore/exed/nurse-cm' || (isset($sources[2]['dore/exed/nurse-cm']) && !isset($sources[3]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn' || (isset($sources[0]['alearn']) && !isset($sources[1]))) {
+    elseif ($uri_fixed == 'online' || (isset($sources[0]['online']) && !isset($sources[1]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/cjus' || (isset($sources[1]['alearn/cjus']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/cjus' || (isset($sources[1]['online/cjus']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/fcst' || (isset($sources[1]['alearn/fcst']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/fcst' || (isset($sources[1]['online/fcst']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/mgmo' || (isset($sources[1]['alearn/mgmo']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/mgmo' || (isset($sources[1]['online/mgmo']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/psco' || (isset($sources[1]['alearn/psco']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/psco' || (isset($sources[1]['online/psco']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
-    elseif ($uri_fixed == 'alearn/sociology' || (isset($sources[1]['alearn/sociology']) && !isset($sources[2]))) {
+    elseif ($uri_fixed == 'online/sociology' || (isset($sources[1]['online/sociology']) && !isset($sources[2]))) {
       $remarketing = TRUE;
     }
     elseif ($uri_fixed == 'socsi/mscj' || (isset($sources[1]['socsi/mscj']) && !isset($sources[2]))) {
