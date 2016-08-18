@@ -667,7 +667,7 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'users-0') {
-          $pre_crumb_title = "Manage Users";
+          $pre_crumb_title = "Users";
           $title = "Management";
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
@@ -833,10 +833,6 @@ function mfcs_render_page() {
       if (mfcs_management_page_access()) {
         $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Management Dashboard">Management</a></li>';
       }
-
-      unset($is_manager);
-      unset($is_reviewer);
-      unset($is_administer);
     }
 
     // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
