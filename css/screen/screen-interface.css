@@ -568,3 +568,37 @@
 
   border: 1px outset #333333;
 }
+
+
+
+/*** Move Request ***/
+#mfcs-request-manage-0-move-form {
+  position: relative;
+}
+
+#mfcs-request-manage-0-move-form #request-move-submit {
+  margin-top: 10px;
+}
+
+#mfcs-request-manage-0-move-form #request-move-submit > .form-submit {
+  margin-right: 15px;
+}
+
+#mfcs-request-manage-0-move-form #request-move-submit > .form-submit.submit-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-manage-0-move-form #request-move-submit > .form-submit.submit-cancel:focus,
+#mfcs-request-manage-0-move-form #request-move-submit > .form-submit.submit-cancel:active,
+#mfcs-request-manage-0-move-form #request-move-submit > .form-submit.submit-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}

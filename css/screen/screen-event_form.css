@@ -14,6 +14,7 @@
 
 
 /** Room **/
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
   width: 460px;
@@ -25,6 +26,7 @@
   margin: 2px;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio {
   width: 16px;
@@ -34,6 +36,7 @@
   margin: 2px;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
   width: 440px;

@@ -879,3 +879,34 @@
 #mfcs-unavailable_0-delete-page > .form-wrapper-inner > #section-unavailable-date_stop > .fieldset-wrapper > .form-item-unavailable-date_stop-day {
   margin-right: 20px;
 }
+
+
+
+/*** Move Request ***/
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-column {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 49%;
+}
+
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-column > .move_request-markup-column-label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-column > .move_request-markup-column-rows > .move_request-markup-column-row > .move_request-markup-column-row-label,
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-column > .move_request-markup-column-rows > .move_request-markup-column-row > .move_request-markup-column-row-value {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-column > .move_request-markup-column-rows > .move_request-markup-column-row > .move_request-markup-column-row-label {
+  font-weight: bold;
+
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+
+  margin-left: 5px;
+}

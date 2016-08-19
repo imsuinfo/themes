@@ -175,3 +175,10 @@
 #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper {
   page-break-inside: avoid;
 }
+
+
+
+/*** Move Request ***/
+#mfcs-request-manage-0-move-form #request-move-submit {
+  display: none;
+}

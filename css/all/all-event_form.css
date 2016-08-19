@@ -24,16 +24,19 @@
 
 
 /** Location **/
+#mfcs-request-manage-0-move-form #field-request-location-0 > .location-image-link > .location-image,
 #mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image,
 #mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image {
   float: right;
 }
 
+#mfcs-request-manage-0-move-form #field-request-location-0 > .location-image-link > .location-image-invisible,
 #mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image-invisible,
 #mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image-invisible {
   display: none;
 }
 
+#mfcs-request-manage-0-move-form #field-request-location-0 > .location-image-link > .location-image-visible,
 #mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image-visible,
 #mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image-visible {
   display: inline-block;
@@ -41,12 +44,14 @@
 
 
 /** Room **/
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
   display: inline-block;
   vertical-align: top;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio {
   display: inline-block;
@@ -54,29 +59,34 @@
   float: left;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
   display: inline-block;
   vertical-align: middle;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc {
   font-weight: bold;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number {
   clear: both;
   float: right;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity {
   clear: both;
   float: right;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_description > .room_description-data {
   display: block;
