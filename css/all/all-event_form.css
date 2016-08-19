@@ -284,7 +284,10 @@
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value > .item-value-instance-dates-category {
-  font-size: 12px;
+  display: block;
+
+  font-size: 11px;
+  line-height: 12px;
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance,
