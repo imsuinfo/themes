@@ -779,6 +779,7 @@
   max-width: 230px;
 }
 
+#mfcs-request-manage-0-page > .section-request_problems > .content > .item,
 #mfcs-request-manage-0-page > .section-request_history > .content > .item,
 #mfcs-request-manage-0-page > .section-management_actions > .content > .item {
   box-sizing: border-box;
@@ -787,8 +788,12 @@
   max-width: 700px;
 }
 
+#mfcs-request-manage-0-page > .section-request_problems > .content > .item > .item-value,
 #mfcs-request-manage-0-page > .section-request_history > .content > .item > .item-value,
-#mfcs-request-manage-0-page > .section-management_actions > .content > .item > .item-value {
+#mfcs-request-manage-0-page > .section-management_actions > .content > .item > .item-value,
+#mfcs-request-manage-0-page > .section-request_problems > .content > .item > .item-message,
+#mfcs-request-manage-0-page > .section-request_history > .content > .item > .item-message,
+#mfcs-request-manage-0-page > .section-management_actions > .content > .item > .item-message {
   min-width: 700px;
   max-width: 700px;
 }
