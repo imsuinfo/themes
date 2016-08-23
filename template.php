@@ -194,7 +194,7 @@ function mfcs_render_page() {
               }
               elseif ($path_parts[2] == 'reassign') {
                 $title = "Re-assign Request";
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/coordinator/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
               }
             }
 
