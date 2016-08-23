@@ -271,6 +271,16 @@
   border: 2px solid #eedd55;
 }
 
+#mfcs-request-view-0-form .request-section-review-operations > .fieldset-wrapper > .error-unavailabilities {
+  margin: 10px 5px;
+
+  color: #8c2e0b;
+  background-color: #fef5f1;
+
+  padding: 6px;
+  border: 2px solid #ed541d;
+}
+
 
 
 /*** Facilities Use Agreement ***/
