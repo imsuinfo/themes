@@ -684,6 +684,7 @@
   box-sizing: border-box;
 }
 
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-problems,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-banner_role,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-basic,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-venue,
