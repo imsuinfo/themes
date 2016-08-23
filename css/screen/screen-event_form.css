@@ -17,7 +17,7 @@
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
-  width: 460px;
+  width: 455px;
 
   min-height: 48px;
 
@@ -39,9 +39,9 @@
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
-  width: 440px;
-  min-width: 440px;
-  max-width: 440px;
+  width: 435px;
+  min-width: 435px;
+  max-width: 435px;
 }
 
 
