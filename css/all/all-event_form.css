@@ -330,6 +330,8 @@
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
+  position: relative;
+
   color: #000000;
   background-color: #d0d0d0;
 
