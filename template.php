@@ -185,16 +185,27 @@ function mfcs_render_page() {
               $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
             }
             else {
-              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[3] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
-              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
               if ($path_parts[2] == 'override') {
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[3] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
                 $title = "Override Request";
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/override/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
               }
-              elseif ($path_parts[2] == 'reassign') {
-                $title = "Re-assign Request";
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/coordinator/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+              elseif ($path_parts[2] == 'reassign' && isset($path_parts[4])) {
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[4] . '</div>';
+
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[4] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+                if ($path_parts[3] == 'requester') {
+                  $title = "Re-assign Requester";
+                  $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/requester/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+                }
+                elseif ($path_parts[3] == 'coordinator') {
+                  $title = "Re-assign Coordinator";
+                  $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/coordinator/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+                }
               }
             }
 
