@@ -1,5 +1,9 @@
 /*** General Overrides ***/
 
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
+  color: #2d2d2d;
+  background-color: inherit;
+}
 
 .mcneese.node-theme-page-731 .highlight > h5 {
     background: #fad703;
@@ -21,6 +25,14 @@
 
 .mcneese.node-theme-page-731 #mcneese-page-side.relative {
     padding: 0 0 0 10px;
+}
+
+.mcneese.node-theme-page-731 a {
+    color: #2d2d2d;
+}
+
+.mcneese.node-theme-page-731 a:hover {
+    color: #7f0000;
 }
 
 .mcneese.node-theme-page-731 a:focus { 
@@ -95,10 +107,59 @@
     padding: 15px;
 }
 
+.mcneese.node-theme-page-731 .info-grey {
+    background-color: #f3f2ed;
+    border: 1px solid #dad9d3;
+    color: #111111;
+    padding: 15px;
+}
+
 .mcneese.node-theme-page-731 .divider {
     border-bottom: 1px solid #afc1cb;
     margin-top: 20px 0;
     padding: 15px 0;
+}
+
+
+/* Button Styles */
+.mcneese.node-theme-page-731 .msu-button {
+    display: block;
+    height: 50px; /* needs to match line-height */
+    padding: 0 10px;
+    color: #555;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 50px; /* needs to match height */
+    letter-spacing: .1rem;
+    margin: 15px 0 0 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: wrap;
+    background-color: transparent;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.mcneese.node-theme-page-731 .msu-button:hover,
+.mcneese.node-theme-page-731 .msu-button:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+.mcneese.node-theme-page-731 .msu-button.button-primary {
+    color: #2d2d2d;
+    background-color: #f3f2ed;
+    border-color: #2d2d2d;
+}
+
+.mcneese.node-theme-page-731 .msu-button.button-primary:hover,
+.mcneese.node-theme-page-731 .msu-button.button-primary:focus {
+    color: #ffffff;
+    background-color: #00477f;
+    border-color: #00477f;
 }
 
 
@@ -261,6 +322,17 @@
 }
 
 
+/* Self Clearing Goodness */
+
+.mcneese.node-theme-page-731 .container:after,
+.mcneese.node-theme-page-731 .row:after,
+.mcneese.node-theme-page-731 .u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /*** Bulletin ***/
 
 .mcneese.node-theme-page-731 .bulletin-wrapper {
@@ -402,7 +474,7 @@
 }
 
 .mcneese.node-theme-page-731 .checklist-accordion .ui-state-disabled:hover a {
-    color: #005090;
+    color: #7f0000;
 }
 
 
@@ -482,7 +554,9 @@
     background-color: #eee;
 }
 
+
 /*** Side Navigation Reset ***/
+
 
 .mcneese.node-theme-page-731 .workbench_menu:nth-child(1) {
     border-top: none !important;
@@ -490,7 +564,6 @@
 
 .mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu {
     border-bottom: none;
-    font-weight: bold;
     letter-spacing: normal;
     line-height: 24px;
 }
@@ -514,18 +587,24 @@
 
 /*** Side Navigation Styles ***/
 
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded a,
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed a {
+    font-weight: bold;
+} 
 
-.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > ul li a:before {
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded a:before,
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed a:before {
     content: "\203A \00a0";
 }
 
-.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-expand-expand_always .expanded > .menu_item-text:before{
-    content:  "\203A"
-    display: inline-block;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);       
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf a:before {
+    content: none;
 }
 
+.mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf a {
+    content: none;
+    font-weight: normal;
+}
 
 /*** Definition Styles ***/
 
@@ -646,6 +725,16 @@
     text-transform: uppercase;
 }
 
+.mcneese.node-theme-page-731 .list-box > h4 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mcneese.node-theme-page-731 .list-box > h4 a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .mcneese.node-theme-page-731 .list-box h4.gold {
     color: #393939;
     background-color: #fad703;
@@ -715,17 +804,6 @@
     line-height: 21px;
     font-weight: bold;
     font-size: 12px;
-}
-
-
-/* Self Clearing Goodness */
-
-.mcneese.node-theme-page-731 .container:after,
-.mcneese.node-theme-page-731 .row:after,
-.mcneese.node-theme-page-731 .u-cf {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 
