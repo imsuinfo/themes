@@ -241,41 +241,22 @@
 
 
 /*** Re-Assign ***/
-#mfcs-request-view-0-form #request-reassign-submit-yes,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes {
+#mfcs-request-view-0-form #request-reassign-submit-no,
+#mfcs-request-manage-0-reassign-coordinator-form #request-reassign-submit-no,
+#mfcs-request-manage-0-reassign-requester-form #request-reassign-submit-cancel {
   color: #000000;
   background-color: #e86f69;
-}
-
-#mfcs-request-view-0-form #request-reassign-submit-yes:focus,
-#mfcs-request-view-0-form #request-reassign-submit-yes:active,
-#mfcs-request-view-0-form #request-reassign-submit-yes:hover,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:focus,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:active,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-yes:hover {
-  text-decoration: underline;
-
-  color: #ffffff;
-  text-shadow: 0px 0px 3px #000000;
-
-  background-image: none;
-  background-color: #666666;
-
-  border: 1px outset #333333;
-}
-
-#mfcs-request-view-0-form #request-reassign-submit-no,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-no {
-  color: #000000;
-  background-color: #cecece;
 }
 
 #mfcs-request-view-0-form #request-reassign-submit-no:focus,
 #mfcs-request-view-0-form #request-reassign-submit-no:active,
 #mfcs-request-view-0-form #request-reassign-submit-no:hover,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:focus,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:active,
-#mfcs-request-manage-0-reassign-form #request-reassign-submit-no:hover {
+#mfcs-request-manage-0-reassign-coordinator-form #request-reassign-submit-no:focus,
+#mfcs-request-manage-0-reassign-coordinator-form #request-reassign-submit-no:active,
+#mfcs-request-manage-0-reassign-coordinator-form #request-reassign-submit-no:hover,
+#mfcs-request-manage-0-reassign-requester-form #request-reassign-submit-cancel:focus,
+#mfcs-request-manage-0-reassign-requester-form #request-reassign-submit-cancel:active,
+#mfcs-request-manage-0-reassign-requester-form #request-reassign-submit-cancel:hover {
   text-decoration: underline;
 
   color: #ffffff;
