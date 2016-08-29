@@ -338,8 +338,10 @@
 .mcneese.alias-part-0-requests.alias-part-1-synchronize_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
-.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
-.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link {
   color: #00477f;
@@ -392,9 +394,12 @@
 .mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
 .mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
 .mcneese.alias-part-0-requests.alias-part-1-statistics_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
-.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
-.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
-.mcneese.alias-part-0-requests.alias-part-1-holiday #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus,
 .mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:hover,
 .mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:active,
 .mcneese.alias-part-0-requests.alias-part-1-management #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link:focus {
