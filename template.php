@@ -926,29 +926,100 @@ function mfcs_preprocess_toolbar(&$vars) {
     return;
   }
 
-  $requests_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests'),
-    'min_depth' => 1,
-    'max_depth' => 1,
-  ));
+  global $user;
 
-  $management_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests/management'),
-    'min_depth' => 2,
-    'max_depth' => 2,
-  ));
+  $is_manager = user_access('mfcs manage', $user);
+  $is_administer = user_access('mfcs administer', $user);
+  $is_requester = user_access('mfcs request', $user);
 
-  $review_tree = menu_build_tree('navigation', array(
+  $tree = toolbar_get_menu_tree();
+
+  if ($is_manager && !$is_administer) {
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/troubleshoot-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/unavailable-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/holiday-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/users-0/list'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/proxy-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/reviewers-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+  }
+  elseif (!$is_administer && $is_requester) {
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/unavailable-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/holiday-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+  }
+
+  $custom_tree = menu_build_tree('navigation', array(
     'conditions' => array('ml.link_path' => 'requests/review-0'),
     'min_depth' => 2,
     'max_depth' => 2,
   ));
+  $tree = array_merge($custom_tree, $tree);
 
-  $tree = toolbar_get_menu_tree();
+  $custom_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests/list-0'),
+    'min_depth' => 2,
+    'max_depth' => 2,
+  ));
+  $tree = array_merge($custom_tree, $tree);
 
-  $tree = array_merge($review_tree, $tree);
-  $tree = array_merge($management_tree, $tree);
-  $tree = array_merge($requests_tree, $tree);
+  $custom_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests/management'),
+    'min_depth' => 2,
+    'max_depth' => 2,
+  ));
+  $tree = array_merge($custom_tree, $tree);
+
+  $custom_tree = menu_build_tree('navigation', array(
+    'conditions' => array('ml.link_path' => 'requests'),
+    'min_depth' => 1,
+    'max_depth' => 1,
+  ));
+  $tree = array_merge($custom_tree, $tree);
 
   $links = toolbar_menu_navigation_links($tree);
 
