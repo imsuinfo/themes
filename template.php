@@ -823,7 +823,7 @@ function mfcs_render_page() {
   $markup = '<nav class="menu html_tag-nav">';
   $markup .= '  <ul class="navigation_list html_tag-list">';
   if (isset($cf['user']['object']) && is_object($cf['user']['object']) && $cf['user']['object']->uid == 0) {
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-login-wrapper first"><a class="menu_link menu_link-login" href="' . $base_path . 'login" title="Login to the System">Login</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-login-wrapper first"><a class="menu_link menu_link-login" href="' . $base_path . 'login' . $url_arguments . '" title="Login to the System">Login</a></li>';
   }
   else {
     if (!isset($path_parts)) {
@@ -832,20 +832,14 @@ function mfcs_render_page() {
     }
 
     if ($count_parts >= 3 && $path_parts[0] == 'requests' && $path_parts[1] == 'create-0' && is_numeric($path_parts[2])) {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Copy an Existing Request">Copy Request</a></li>';
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Copy an Existing Request">Copy Request</a></li>';
     }
     else {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0" title="Create a New Request">Create Request</a></li>';
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Create a New Request">Create Request</a></li>';
     }
 
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>';
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
-
-    if ($user->uid > 0 && function_exists('mfcs_management_page_access')) {
-      if (mfcs_management_page_access()) {
-        $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Management Dashboard">Management</a></li>';
-      }
-    }
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month' . $url_arguments . '" title="View Calendar for This Month">This Month</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day' . $url_arguments . '" title="View Calendar for Today">This Day</a></li>';
   }
 
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="//www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>';
@@ -853,7 +847,7 @@ function mfcs_render_page() {
 
   // show help tab for logged in users.
   if ($user->uid > 0) {
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0' . $url_arguments . '" title="View Online Documentation">Help</a></li>';
   }
 
 
@@ -926,15 +920,17 @@ function mfcs_preprocess_toolbar(&$vars) {
     return;
   }
 
+  global $base_path;
   global $user;
 
+  $is_requester = user_access('mfcs request', $user);
+  $is_reviewer = user_access('mfcs review', $user);
   $is_manager = user_access('mfcs manage', $user);
   $is_administer = user_access('mfcs administer', $user);
-  $is_requester = user_access('mfcs request', $user);
 
   $tree = toolbar_get_menu_tree();
 
-  if ($is_manager && !$is_administer) {
+  if ($is_manager || $is_administer) {
     $custom_tree = menu_build_tree('navigation', array(
       'conditions' => array('ml.link_path' => 'requests/troubleshoot-0'),
       'min_depth' => 2,
@@ -963,21 +959,24 @@ function mfcs_preprocess_toolbar(&$vars) {
     ));
     $tree = array_merge($custom_tree, $tree);
 
-    $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/proxy-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
-    ));
-    $tree = array_merge($custom_tree, $tree);
+    // do not add proxy and reviewers to admin menus because there is simply not enough room.
+    if (!$is_administer) {
+      $custom_tree = menu_build_tree('navigation', array(
+        'conditions' => array('ml.link_path' => 'requests/proxy-0'),
+        'min_depth' => 2,
+        'max_depth' => 2,
+      ));
+      $tree = array_merge($custom_tree, $tree);
 
-    $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/reviewers-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
-    ));
-    $tree = array_merge($custom_tree, $tree);
+      $custom_tree = menu_build_tree('navigation', array(
+        'conditions' => array('ml.link_path' => 'requests/reviewers-0'),
+        'min_depth' => 2,
+        'max_depth' => 2,
+      ));
+      $tree = array_merge($custom_tree, $tree);
+    }
   }
-  elseif (!$is_administer && $is_requester) {
+  elseif ($is_requester) {
     $custom_tree = menu_build_tree('navigation', array(
       'conditions' => array('ml.link_path' => 'requests/unavailable-0'),
       'min_depth' => 2,
@@ -993,33 +992,30 @@ function mfcs_preprocess_toolbar(&$vars) {
     $tree = array_merge($custom_tree, $tree);
   }
 
-  $custom_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests/review-0'),
-    'min_depth' => 2,
-    'max_depth' => 2,
-  ));
-  $tree = array_merge($custom_tree, $tree);
+  if (($is_reviewer || $is_manager) && !$is_administer) {
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/review-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+  }
 
-  $custom_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests/list-0'),
-    'min_depth' => 2,
-    'max_depth' => 2,
-  ));
-  $tree = array_merge($custom_tree, $tree);
+  if ($is_requester) {
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/list-0'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
 
-  $custom_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests/management'),
-    'min_depth' => 2,
-    'max_depth' => 2,
-  ));
-  $tree = array_merge($custom_tree, $tree);
-
-  $custom_tree = menu_build_tree('navigation', array(
-    'conditions' => array('ml.link_path' => 'requests'),
-    'min_depth' => 1,
-    'max_depth' => 1,
-  ));
-  $tree = array_merge($custom_tree, $tree);
+    $custom_tree = menu_build_tree('navigation', array(
+      'conditions' => array('ml.link_path' => 'requests/management'),
+      'min_depth' => 2,
+      'max_depth' => 2,
+    ));
+    $tree = array_merge($custom_tree, $tree);
+  }
 
   $links = toolbar_menu_navigation_links($tree);
 
@@ -1043,7 +1039,7 @@ function mfcs_preprocess_toolbar(&$vars) {
       if (empty($link['href'])) continue;
       if ($link['href'] == 'user/logout') continue;
 
-      $vars['toolbar']['toolbar_user']['#links'][$key]['href'] .= $url_arguments;
+      $vars['toolbar']['toolbar_user']['#links'][$key]['href'] = 'requests/users-0/view/' . $user->uid . $url_arguments;
     }
   }
 
@@ -1054,6 +1050,16 @@ function mfcs_preprocess_toolbar(&$vars) {
       $vars['toolbar']['toolbar_drawer'][0]['shortcuts'][$key]['#href'] .= $url_arguments;
     }
   }
+
+  // Build a custom home link.
+  $vars['toolbar']['custom_home_link'] = array();
+  $vars['toolbar']['custom_home_link']['attributes'] = array();
+  $vars['toolbar']['custom_home_link']['attributes']['class'] = array();
+  $vars['toolbar']['custom_home_link']['attributes']['class'][] = 'mfcs-toolbar-dashboard';
+  $vars['toolbar']['custom_home_link']['attributes']['class'][] = 'mcneese-toolbar-home';
+  $vars['toolbar']['custom_home_link']['attributes']['class'][] = 'item';
+  $vars['toolbar']['custom_home_link']['attributes']['title'] = 'View your dashboard.';
+  $vars['toolbar']['custom_home_link']['markup'] = '<a href="' . $base_path . 'requests' . $url_arguments . '" class="link noscript" tabindex="1">View Dashboard</a>';
 }
 
 /**
