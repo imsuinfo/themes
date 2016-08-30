@@ -106,7 +106,6 @@ function mcneese_preprocess_toolbar(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
-
   // replace the original toolbar elements with our own custom generated ones.
   $vars['mcneese_toolbar'] = array();
   $vars['mcneese_toolbar']['menu'] = array('items' => array());
@@ -157,14 +156,21 @@ function mcneese_preprocess_toolbar(&$vars) {
 
 
   // add the custom home button
-  $item = array();
-  $item['attributes'] = array();
-  $item['attributes']['class'] = array();
-  $item['attributes']['class'][] = 'mcneese-toolbar-home';
-  $item['attributes']['class'][] = 'item';
-  $item['attributes']['title'] = t("Home");
-  $item['markup'] = '<a href="' . base_path() . '" class="link noscript" tabindex="' . $tab_index . '">Home Page</a>';
-  $vars['mcneese_toolbar']['menu']['items'][] = $item;
+  if (isset($vars['toolbar']['custom_home_link']) && $vars['toolbar']['custom_home_link'] !== FALSE) {
+    if (is_array($vars['toolbar']['custom_home_link'])) {
+      $vars['mcneese_toolbar']['menu']['items'][] = $vars['toolbar']['custom_home_link'];
+    }
+  }
+  elseif (!isset($vars['toolbar']['custom_home_link']) || $vars['toolbar']['custom_home_link'] === TRUE) {
+    $item = array();
+    $item['attributes'] = array();
+    $item['attributes']['class'] = array();
+    $item['attributes']['class'][] = 'mcneese-toolbar-home';
+    $item['attributes']['class'][] = 'item';
+    $item['attributes']['title'] = t("Home");
+    $item['markup'] = '<a href="' . base_path() . '" class="link noscript" tabindex="' . $tab_index . '">Home Page</a>';
+    $vars['mcneese_toolbar']['menu']['items'][] = $item;
+  }
 
 
   // populate the toolbar menu
