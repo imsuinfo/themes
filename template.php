@@ -1649,12 +1649,14 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
 
   // toolbar support (only show for logged in accounts)
-  foreach (array('toolbar', 'toolbar-autoshow', 'toolbar-autohide', 'toolbar-fixed', 'toolbar-relative', 'toolbar-expanded', 'toolbar-collapsed', 'toolbar-shortcuts-expanded', 'toolbar-shortcuts-collapsed') as $key) {
-    $cf['is'][$key] = FALSE;
-    $cf['is_data'][$key] = array();
+  $process_toolbar = FALSE;
+  if (function_exists('toolbar_view')) {
+    foreach (array('toolbar', 'toolbar-autoshow', 'toolbar-autohide', 'toolbar-fixed', 'toolbar-relative', 'toolbar-expanded', 'toolbar-collapsed', 'toolbar-shortcuts-expanded', 'toolbar-shortcuts-collapsed') as $key) {
+      $cf['is'][$key] = FALSE;
+      $cf['is_data'][$key] = array();
+    }
+    $process_toolbar = TRUE;
   }
-
-  $process_toolbar = TRUE;
 
   if ($cf['is']['maintenance']) {
     mcneese_prepare_maintenance_mode_variables($cf, $vars);
