@@ -278,12 +278,6 @@
 }
 
 /*** Menu Link Adjustments ***/
-.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper > a.menu_link {
-  min-width: 60px;
-
-  text-align: center;
-}
-
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link {
   font-size: 14px;
   font-weight: bold;

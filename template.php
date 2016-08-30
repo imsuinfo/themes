@@ -54,6 +54,7 @@ function mfcs_preprocess_page(&$vars) {
 function mfcs_render_page() {
   global $base_path;
   global $mfcs_determined;
+  global $user;
 
   $url_arguments = '';
   if (!empty($mfcs_determined['complete'])) {
@@ -644,9 +645,9 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'help-0') {
-          $title = "Help";
-          $title_tag = "Help";
-          $pre_crumb_title = "Help";
+          $title = 'Help';
+          $title_tag = 'Help';
+          $pre_crumb_title = 'Help';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -840,21 +841,20 @@ function mfcs_render_page() {
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month" title="View Calendar for This Month">This Month</a></li>';
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day" title="View Calendar for Today">This Day</a></li>';
 
-    if (function_exists('mfcs_management_page_access')) {
+    if ($user->uid > 0 && function_exists('mfcs_management_page_access')) {
       if (mfcs_management_page_access()) {
         $markup .= '    <li class="leaf menu_link-wrapper menu_link-manage_requests-wrapper"><a class="menu_link menu_link-manage_requests" href="' . $base_path . 'requests/management" title="Access the Management Dashboard">Management</a></li>';
       }
-    }
-
-    // temporarily hide the help menu from the primary navigation while help/documentation is being developed.
-    // make it available only when directly accessing the help url.
-    if (isset($path_parts[1]) && $path_parts[1] == 'help-0') {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>';
     }
   }
 
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="//www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>';
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="//mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>';
+
+  // show help tab for logged in users.
+  if ($user->uid > 0) {
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0" title="View Online Documentation">Help</a></li>';
+  }
 
 
   $markup .= '  </ul>';
