@@ -89,12 +89,11 @@
   padding: 0px 5px;
 }
 
-.mcneese #mcneese-header > .header-section > .header-menu > .block-name-block-masquerade-masquerade .form-item-masquerade_user_field > #autocomplete {
+.mcneese.is-toolbar #mcneese-header > .header-section > .header-menu > .block-name-block-masquerade-masquerade .form-item-masquerade_user_field > #autocomplete {
   position: fixed !important;
   float: none !important;
 
   left: auto !important;
-  top: 102px !important;
 
   box-sizing: border-box;
 
@@ -110,6 +109,14 @@
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
+}
+
+.mcneese.is-toolbar.is-toolbar-shortcuts-collapsed #mcneese-header > .header-section > .header-menu > .block-name-block-masquerade-masquerade .form-item-masquerade_user_field > #autocomplete {
+  top: 77px !important;
+}
+
+.mcneese.is-toolbar.is-toolbar-shortcuts-expanded #mcneese-header > .header-section > .header-menu > .block-name-block-masquerade-masquerade .form-item-masquerade_user_field > #autocomplete {
+  top: 105px !important;
 }
 
 .mcneese #mcneese-header > .header-section > .header-menu > .block-name-block-masquerade-masquerade > .html_tag-header > .html_tag-hgroup > h2 {
