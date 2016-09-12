@@ -673,7 +673,7 @@
   position: relataive;
   box-sizing: border-box;
 
-  margin: 5px 8px;
+  margin: 5px;
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-group-header {
@@ -710,6 +710,11 @@
   vertical-align: top;
 
   min-width: 80px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-email > .item-value,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-updated_on > .item-value {
+  font-size: 0.9em;
 }
 
 
