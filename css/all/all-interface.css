@@ -717,6 +717,19 @@
   font-size: 0.9em;
 }
 
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-duplicate > .item-information-duplicate > .item-information-duplicate-list {
+  padding-left: 10px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-duplicate > .item-information-duplicate > .item-information-duplicate-list > .item-information-duplicate-list-item {
+  display: list-item;
+
+  margin-left: 15px;
+
+  font-size: 0.9em;
+}
+
+
 
 
 /*** Manage Request ***/
