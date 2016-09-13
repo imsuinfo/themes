@@ -471,6 +471,12 @@
   -webkit-appearance: button;
 }
 
+#mfcs-request-users-view-page > .view_user-buttons > .view_user-check,
+#mfcs-request-users-view-page > .view_user-buttons > .view_user-check:visited  {
+  color: #000000;
+  background-color: #99b2ee;
+}
+
 #mfcs-request-users-view-page > .view_user-buttons {
   margin: 5px 0px;
 }
