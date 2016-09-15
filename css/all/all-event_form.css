@@ -265,10 +265,6 @@
   font-weight: bold;
 }
 
-#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-label:after {
-  content: ': ';
-}
-
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value {
   display: block;
 
