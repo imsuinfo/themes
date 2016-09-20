@@ -37,6 +37,11 @@
   overflow-x: inherit;
 }
 
+.mcneese .html_tag-header.page-title > .html_tag-hgroup > .html_tag-heading.page-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
 
 
 /*** Calendar - Month/Day ***/
