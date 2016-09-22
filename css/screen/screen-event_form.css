@@ -313,7 +313,8 @@
 
 #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
 #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
-#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-revision > .agreement-header-revision-label {
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-revision > .agreement-header-revision-label,
+#mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-requester > .agreement-header-requester-label {
   min-width: 90px;
 }
 
