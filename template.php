@@ -763,7 +763,20 @@ function mfcs_render_page() {
             $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="Edit Request">' . "Edit Request" . '</a>';
+            $new_breadcrumb = array();
+            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
+
+            $edit_region = 'requests';
+            if (!empty($path_parts[3])) {
+              $edit_region = $path_parts[3];
+            }
+
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $edit_region . $url_arguments . '" title="Edit Request">' . "Edit Request" . '</a>';
+            unset($edit_region);
+
+            $cf['page']['breadcrumb'] = $new_breadcrumb;
+            unset($new_breadcrumb);
           }
           elseif ($path_parts[1] == 'history-0' && cf_is_integer($path_parts[2])) {
             $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';

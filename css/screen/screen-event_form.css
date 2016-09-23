@@ -12,6 +12,25 @@
   margin: 6px 0px;
 }
 
+#mfcs-request-edit-0-form #submit-request-cancel {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-edit-0-form #submit-request-cancel:focus,
+#mfcs-request-edit-0-form #submit-request-cancel:active,
+#mfcs-request-edit-0-form #submit-request-cancel:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
 
 /** Room **/
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item,
