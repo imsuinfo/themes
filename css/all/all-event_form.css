@@ -451,13 +451,13 @@
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
 #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-label {
-  display: inline-block;
+  display: inline;
   font-weight: bold;
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-value,
 #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements > .item-value {
-  display: inline-block;
+  display: inline;
 }
 
 
