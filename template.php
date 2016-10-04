@@ -107,7 +107,7 @@ function mfcs_render_page() {
             array_pop($cf['page']['breadcrumb']);
 
             $title = "Copy Request";
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title .'">' . $title . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title .'">' . $title . '</a>';
           }
 
           unset($cf['page']['breadcrumb'][1]);
