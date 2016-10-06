@@ -613,6 +613,7 @@
 
 /*** Request Form ***/
 #mfcs-markup-request-presentation-technical_equipment_note,
+#mfcs-markup-request-services-open_flames_note,
 #mfcs-markup-request-services-alcohol_note {
   color: #000000;
   background-color: #dfe869;
@@ -624,4 +625,17 @@
 #mfcs-markup-request-message {
   margin: 2px;
   padding: 3px;
+}
+
+#mfcs-markup-request-title_display-note-setup_other_tables,
+#mfcs-markup-request-title_display-note-setup_security,
+#mfcs-markup-request-title_display-note-presentation_technical_equipment,
+#mfcs-markup-request-title_display-note-services_food_served,
+#mfcs-markup-request-title_display-note-services_open_flames {
+  vertical-align: top;
+
+  color: #04548c;
+
+  font-size: 0.85em;
+  line-height: 0.85em;
 }
