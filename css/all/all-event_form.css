@@ -330,6 +330,21 @@
   border-bottom: 0px none;
 }
 
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-4 > .review-item-restricted,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-5 > .review-item-restricted,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-6 > .review-item-restricted {
+  position: relative;
+
+  color: #000000;
+  background-color: #8bbdf0;
+
+  margin: 0px;
+  border-top: 1px outset #1061b1;
+  border-left: 1px outset #1061b1;
+  border-right: 1px outset #1061b1;
+  border-bottom: 0px none;
+}
+
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-restricted > .review-item-restricted-message {
   text-align: right;
 
@@ -379,6 +394,18 @@
 
   border-top: 0px none;
   border-color: #b11010;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-4 > .review-item-label,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-5 > .review-item-label,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-6 > .review-item-label {
+  clear: both;
+
+  color: #000000;
+  background-color: #8bbdf0;
+
+  border-top: 0px none;
+  border-color: #1061b1;
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
@@ -447,6 +474,17 @@
   color: #000000;
   background-color: #ffe7e7;
   border-color: #b11010;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-4 > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item.restriction-4 > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-5 > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item.restriction-5 > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item.restriction-6 > .review-item-message,
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item.restriction-6 > .review-item-message {
+  color: #000000;
+  background-color: #e7f3ff;
+  border-color: #1061b1;
 }
 
 #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements > .item-label,
