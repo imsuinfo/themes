@@ -759,7 +759,7 @@ function mcneese_www_process_side_panel(&$cf) {
   if ((isset($uri_parts[0]) && $uri_parts[0] == 'police') || isset($sources[0]['police'])) {
     if (function_exists('mcneese_functions_embed_ntas_widget')) {
       $markup .= '<div id="national_terrorism_advisory_system">';
-      $markup .= mcneese_functions_embed_ntas_widget(NULL, '+1 minutes', TRUE);
+      $markup .= mcneese_functions_embed_ntas_widget('mcneese_functions_embed_ntas_widget', '+3 minutes', TRUE);
       $markup .= '</div>';
     }
   }
