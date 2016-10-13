@@ -96,28 +96,68 @@
 /** Dates **/
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .field-request-item,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .field-request-item {
-  display: inline-block;
-  vertical-align: top;
+  display: table-cell;
+
+  min-width: 150px;
+}
+
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .field-request-item-dates-category,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .field-request-item-dates-category {
+  display: table-cell;
+
+  min-width: 175px;
 }
 
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date {
-  display: inline-block;
-  vertical-align: top;
+  display: table-cell;
+}
+
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container {
+  display: table-cell;
+}
+
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date,
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container #mfcs-markup-request-dates-date_note,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container #mfcs-markup-request-dates-date_note {
+  display: block;
+}
+
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container #mfcs-markup-request-dates-date_note,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container #mfcs-markup-request-dates-date_note {
+  font-size: 0.9em;
+  line-height: 1.1em;
+
+  color: #000000;
+  background-color: #dfe869;
+
+  padding: 3px;
+  border: 1px dotted #e8c169;
+  margin: 3px;
 }
 
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button,
-#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button {
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button,
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button {
   color: #000000;
   background-color: #e86f69;
 }
 
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:active,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:active,
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:active,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:active,
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:focus,
 #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:focus,
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:focus,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:focus,
 #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:hover,
-#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:hover {
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date > .buttons-request-remove-date-button:hover,
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:hover,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container > .buttons-request-remove-date > .buttons-request-remove-date-button:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -652,6 +692,7 @@
 /*** Request Form ***/
 #mfcs-markup-request-plans-note,
 #mfcs-markup-request-presentation-technical_equipment_note,
+#mfcs-markup-request-setup-special_requests_note,
 #mfcs-markup-request-services-open_flames_note,
 #mfcs-markup-request-services-alcohol_note {
   color: #000000;
@@ -675,6 +716,15 @@
 
   color: #04548c;
 
+  font-size: 0.85em;
+  line-height: 0.85em;
+}
+
+#mfcs-markup-request-title_display-note-setup_road_closures_details,
+#mfcs-markup-request-title_display-note-setup_special_requests {
+  color: #04548c;
+
+  font-weight: bold;
   font-size: 0.85em;
   line-height: 0.85em;
 }
