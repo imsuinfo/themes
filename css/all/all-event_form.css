@@ -735,3 +735,7 @@
   font-size: 0.85em;
   line-height: 0.85em;
 }
+
+#field-request-information-attendance > .form-item > .form-number {
+  min-width: 40px;
+}
