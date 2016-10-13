@@ -9,7 +9,17 @@
 
 #mfcs-request-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio,
 #mfcs-request-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio {
-  margin: 6px 0px;
+  margin: 10px 0px;
+}
+
+#mfcs-request-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio:first-of-type,
+#mfcs-request-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio:first-of-type {
+  margin-top: 6px;
+}
+
+#mfcs-request-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio:last-of-type,
+#mfcs-request-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio:last-of-type {
+  margin-bottom: 6px;
 }
 
 #mfcs-request-edit-0-form #submit-request-cancel {
