@@ -644,40 +644,6 @@ function mfcs_render_page() {
             $cf['page']['breadcrumb'] = $new_breadcrumb;
           }
         }
-        elseif ($path_parts[1] == 'help-0') {
-          $title = 'Help';
-          $title_tag = 'Help';
-          $pre_crumb_title = 'Help';
-
-          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-          $cf['show']['page']['precrumb'] = TRUE;
-
-          $new_breadcrumb = array();
-          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
-
-          if ($count_parts > 2) {
-            $title = ucfirst($path_parts[2]);
-            $title_tag .= " - " . ucfirst($path_parts[2]);
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
-          }
-
-          if ($count_parts > 3) {
-            $title = ucfirst($path_parts[3]);
-            $title_tag .= " - " . ucfirst($path_parts[3]);
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
-          }
-
-          if ($count_parts > 4) {
-            $title = ucfirst($path_parts[4]);
-            $title_tag .= " - " . ucfirst($path_parts[4]);
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
-          }
-
-          // original breadcrumb gets overridden to remove extra/invalid url paths.
-          $cf['page']['breadcrumb'] = $new_breadcrumb;
-        }
         elseif ($path_parts[1] == 'users-0') {
           $pre_crumb_title = "Users";
           $title = "Management";
@@ -824,6 +790,43 @@ function mfcs_render_page() {
           unset($new_breadcrumb);
         }
       }
+      elseif ($path_parts[0] == 'help-0') {
+        $title = 'Help';
+        $title_tag = 'Help';
+        $pre_crumb_title = 'Help';
+
+        $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+        $cf['show']['page']['precrumb'] = TRUE;
+
+        $new_breadcrumb = array();
+        $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+
+        $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+
+        if ($count_parts > 1) {
+          $title = ucfirst($path_parts[1]);
+          $title_tag .= ' - ' . $title;
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
+        }
+
+        if ($count_parts > 2) {
+          $title = ucfirst($path_parts[2]);
+          $title_tag .= ' - ' . $title;
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
+        }
+
+        if ($count_parts > 3) {
+          $title = ucfirst($path_parts[3]);
+          $title_tag .= ' - ' . $title;
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
+        }
+
+        // original breadcrumb gets overridden to remove extra/invalid url paths.
+        $cf['page']['breadcrumb'] = $new_breadcrumb;
+        unset($new_breadcrumb);
+
+        $rebuild_breadcrumb = TRUE;
+      }
     }
   }
 
@@ -860,7 +863,7 @@ function mfcs_render_page() {
 
   // show help tab for logged in users.
   if ($user->uid > 0) {
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'requests/help-0' . $url_arguments . '" title="View Online Documentation">Help</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'help-0' . $url_arguments . '" title="View Online Documentation">Help</a></li>';
   }
 
 
