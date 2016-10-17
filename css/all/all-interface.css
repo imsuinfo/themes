@@ -937,3 +937,68 @@
 
   margin-left: 5px;
 }
+
+
+
+/*** Help ***/
+.mcneese.alias-part-0-help_0 #mcneese-bulletin-page_title > .page-title {
+  display: none;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .help-navigation_link {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .link-previous {
+  margin-right: 40px;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .link-top {
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .link-next {
+  float: right;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers {
+  clear: both;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .topic,
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
+  text-align: center;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
+  font-size: 1.7em;
+  line-height: 1.2em;
+
+  margin: 0px;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .topic {
+  font-size: 1.5em;
+  line-height: 1.2em;
+
+  margin: 0px 0px 12px 0px;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .help-headers.section > .help-headers_group > .section,
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .section {
+  font-size: 1.3em;
+  line-height: 1.2em;
+
+  margin: 0px;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .term {
+  color: #004274;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .abbreviation {
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .paragraph {
+}
+

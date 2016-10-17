@@ -804,19 +804,19 @@ function mfcs_render_page() {
         $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
 
         if ($count_parts > 1) {
-          $title = ucfirst($path_parts[1]);
+          $title = mcneese_fcs_url_cleanup_for_title($path_parts[1]);
           $title_tag .= ' - ' . $title;
           $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
         }
 
         if ($count_parts > 2) {
-          $title = ucfirst($path_parts[2]);
+          $title = mcneese_fcs_url_cleanup_for_title($path_parts[2]);
           $title_tag .= ' - ' . $title;
           $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
         }
 
         if ($count_parts > 3) {
-          $title = ucfirst($path_parts[3]);
+          $title = mcneese_fcs_url_cleanup_for_title($path_parts[3]);
           $title_tag .= ' - ' . $title;
           $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title_tag . '">' . $title . '</a>';
         }
@@ -874,6 +874,56 @@ function mfcs_render_page() {
   $cf['show']['page']['header_menu_1'] = TRUE;
   $cf['show']['page']['header'] = TRUE;
   unset($markup);
+}
+
+/**
+ * Converts a given text message into a more title-friendly format.
+ *
+ * Underscores are converted to spaces.
+ * Dashes have spaces added to either side.
+ *
+ * @return string
+ *   A converted string.
+ */
+function mcneese_fcs_url_cleanup_for_title($text) {
+  if (!is_string($text)) {
+    return '';
+  }
+
+  // remove leading and trailing spaces.
+  $text = trim($text);
+
+  // add spacing before and after dashes.
+  $text = str_replace('-', ' - ', $text);
+
+  // replace underscores with spaces
+  $text = str_replace('_', ' ', $text);
+
+  // replace all consecutive spaces with a single space (also replacing tabs and other whitespace with a single space).
+  $text = preg_replace('/\s+/i', ' ', $text);
+
+  // convert each word to have the first character uppercased.
+  $parts = explode(' ', $text);
+
+  if (empty($parts)) {
+    return ucfirst($text);
+  }
+
+  $text = NULL;
+  foreach ($parts as $part) {
+    if (is_null($text)) {
+      $text = '';
+    }
+    else {
+      $text .= ' ';
+    }
+
+    $text .= ucfirst($part);
+  }
+  unset($part);
+  unset($parts);
+
+  return $text;
 }
 
 /**
