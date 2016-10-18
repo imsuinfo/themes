@@ -79,6 +79,27 @@
   font-weight: bold;
 }
 
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image-link > .room_image,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image-link >.room_image,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image-link >.room_image,
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_image {
+  display: inline-block;
+  vertical-align: top;
+
+  float: right;
+
+  border: 1px solid #606060;
+  margin-left: 3px;
+}
+
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes {
+  float: right;
+}
+
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number {
