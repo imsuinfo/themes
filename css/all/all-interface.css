@@ -1002,3 +1002,34 @@
 .mcneese.alias-part-0-help_0 #mfcs-section-help-main .paragraph {
 }
 
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .note:before {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+
+  background-color: #00477f;
+  color: #ffffff;
+
+  content: 'Note';
+
+  font-weight: bold;
+  font-family: monospace;
+
+  line-height: 1em;
+  letter-spacing: 2px;
+
+  border: 1px solid #000000;
+  padding: 3px;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-section-help-main .note {
+  display: inline-block;
+  position: relative;
+
+  background-color: #e3ea9a;
+
+  border: 1px solid #00477f;
+  margin: 12px 15px;
+  padding: 10px;
+}
+
