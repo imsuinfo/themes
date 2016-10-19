@@ -97,19 +97,29 @@
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes,
 #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes {
+  position: relative;
+
   float: right;
+
+  margin-left: 1em;
 }
 
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
-#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number {
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number {
   clear: both;
   float: right;
 }
 
 #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
 #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
-#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity {
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_capacity,
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity {
   clear: both;
   float: right;
 }
