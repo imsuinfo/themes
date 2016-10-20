@@ -961,48 +961,48 @@
   float: right;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers {
+#mfcs-section-help-main > .help-headers {
   clear: both;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .topic,
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
+#mfcs-section-help-main > .help-headers > .help-headers_group > .topic,
+#mfcs-section-help-main > .help-headers > .help-headers_group > .title {
   text-align: center;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
+#mfcs-section-help-main > .help-headers > .help-headers_group > .title {
   font-size: 1.7em;
   line-height: 1.2em;
 
   margin: 0px;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .topic {
+#mfcs-section-help-main > .help-headers > .help-headers_group > .topic {
   font-size: 1.5em;
   line-height: 1.2em;
 
   margin: 0px 0px 12px 0px;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .help-headers.section > .help-headers_group > .section,
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main > .help-headers > .help-headers_group > .section {
+#mfcs-section-help-main .help-headers.section > .help-headers_group > .section,
+#mfcs-section-help-main > .help-headers > .help-headers_group > .section {
   font-size: 1.3em;
   line-height: 1.2em;
 
   margin: 0px;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .term {
+#mfcs-section-help-main .term {
   color: #004274;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .abbreviation {
+#mfcs-section-help-main .abbreviation {
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .paragraph {
+#mfcs-section-help-main .paragraph {
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .note:before {
+#mfcs-section-help-main .note:before {
   position: absolute;
   left: -10px;
   top: -10px;
@@ -1022,7 +1022,7 @@
   padding: 3px;
 }
 
-.mcneese.alias-part-0-help_0 #mfcs-section-help-main .note {
+#mfcs-section-help-main .note {
   display: inline-block;
   position: relative;
 
@@ -1031,5 +1031,29 @@
   border: 1px solid #00477f;
   margin: 12px 15px;
   padding: 10px;
+}
+
+
+
+/*** Help ***/
+#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section {
+  display: block;
+
+  border: 1px solid #d6d977;
+  padding: 4px;
+  margin: 4px;
+
+  color: #000000;
+  background-color: #f2f5cd;
+}
+
+#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see {
+  font-size: 0.9em;
+  line-height: 1.1em;
+}
+
+#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see_also {
+  font-size: 0.9em;
+  line-height: 1.1em;
 }
 
