@@ -600,7 +600,7 @@
 
 #mfcs-request-cancelling-0-form #cancelling-cancel:focus,
 #mfcs-request-cancelling-0-form #cancelling-cancel:active,
-#mfcs-request-cancelling-0-form #cancelling-cancel:hover{
+#mfcs-request-cancelling-0-form #cancelling-cancel:hover {
   text-decoration: underline;
 
   color: #ffffff;
@@ -610,4 +610,15 @@
   background-color: #666666;
 
   border: 1px outset #333333;
+}
+
+
+
+/*** Help ***/
+#mfcs-section-help-main.section-help-presentation-single .section-help > .help-headers > .help-headers_group > .section {
+  margin-top: 2em;
+}
+
+#mfcs-section-help-main.section-help-presentation-single .section-help:first-of-type > .help-headers > .help-headers_group > .section {
+  margin-top: 4px;
 }

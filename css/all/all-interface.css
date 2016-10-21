@@ -961,6 +961,14 @@
   float: right;
 }
 
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .link-pdf {
+  float: right;
+}
+
+.mcneese.alias-part-0-help_0 #mfcs-help-navigation_links > .link-next + .link-pdf {
+  margin: 0px 12px;
+}
+
 #mfcs-section-help-main > .help-headers {
   clear: both;
 }
@@ -1000,6 +1008,21 @@
 }
 
 #mfcs-section-help-main .paragraph {
+  margin-bottom: 1em;
+}
+
+#mfcs-section-help-main .paragraph:last-of-type {
+  margin-bottom: none;
+}
+
+#mfcs-section-help-main .paragraph-user_guides,
+#mfcs-section-help-main .paragraph-documentation,
+#mfcs-section-help-main .paragraph-presentation {
+  display: inline-block;
+  display: inline-flex;
+  vertical-align: top;
+
+  min-width: 30%;
 }
 
 #mfcs-section-help-main .note:before {
@@ -1016,7 +1039,7 @@
   font-family: monospace;
 
   line-height: 1em;
-  letter-spacing: 2px;
+  letter-spacing: normal;
 
   border: 1px solid #000000;
   padding: 3px;
@@ -1033,9 +1056,6 @@
   padding: 10px;
 }
 
-
-
-/*** Help ***/
 #mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section {
   display: block;
 
@@ -1055,5 +1075,9 @@
 #mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see_also {
   font-size: 0.9em;
   line-height: 1.1em;
+}
+
+#mfcs-section-help-main.section-help-presentation-single > .section-help-child > .help-headers > .help-headers_group > .section {
+  text-align: center;
 }
 

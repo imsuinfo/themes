@@ -124,3 +124,36 @@
 #mfcs-request-users-view-page > .view_user-buttons {
   display: none;
 }
+
+
+
+/*** Help ***/
+#mfcs-section-help-main .no-print {
+  display: none;
+}
+
+#mfcs-section-help-main .paragraph {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .paragraph.user_guides,
+#mfcs-section-help-main .paragraph.documentation,
+#mfcs-section-help-main .paragraph.presentation {
+  page-break-before: avoid;
+}
+
+#mfcs-section-help-main .term {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .note {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .section-help-break {
+  page-break-before: always;
+}
+
+#mfcs-section-help-main .section-help-break:first-of-type {
+  page-break-before: avoid;
+}
