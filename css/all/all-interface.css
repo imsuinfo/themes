@@ -1023,7 +1023,7 @@
 }
 
 #mfcs-section-help-main .note {
-  display: inline-block;
+  display: block;
   position: relative;
 
   background-color: #e3ea9a;
