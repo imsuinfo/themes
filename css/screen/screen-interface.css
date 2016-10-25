@@ -619,6 +619,6 @@
   margin-top: 2em;
 }
 
-#mfcs-section-help-main.section-help-presentation-single .section-help:first-of-type > .help-headers > .help-headers_group > .section {
+#mfcs-section-help-main.section-help-presentation-single > .section-help:first-of-type > .help-headers > .help-headers_group > .section {
   margin-top: 4px;
 }
