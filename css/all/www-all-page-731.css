@@ -12,6 +12,7 @@
 
 .mcneese.node-theme-page-731 p {
     line-height: 1.6;
+    margin: 5px 0 5px 0;
 }
 
 .mcneese.node-theme-page-731 ul {
@@ -73,7 +74,7 @@
 .mcneese.node-theme-page-731 .info-red {
     background-color: #ffc3c3 !important;
     border: 1px solid #e30000 !important;
-    color: #820303 !important;
+    color: #522c2c !important;
     padding: 15px !important;
 }
 
@@ -105,37 +106,135 @@
     padding: 15px;
 }
 
+.mcneese.node-theme-page-731 .info-focus {
+    background-color: #ffffff;
+    border: 1px dashed #00477f;
+    color: #111111;
+    padding: 15px;
+    text-align: center;
+}
+
 .mcneese.node-theme-page-731 .divider {
     border-bottom: 1px solid #afc1cb;
     margin-top: 20px 0;
     padding: 15px 0;
 }
 
+/* Cycle2 Styles */
 
-/* Button Styles */
-.mcneese.node-theme-page-731 .msu-button {
-    display: block;
-    height: 50px; /* needs to match line-height */
-    padding: 0 10px;
-    color: #555;
-    text-align: center;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 50px; /* needs to match height */
-    letter-spacing: .1em;
-    margin: 15px auto 0 auto;
-    max-width: 240px;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: wrap;
-    background-color: transparent;
-    border: 1px solid #cecece;
-    cursor: pointer;
-    box-sizing: border-box;
+.mcneese.node-theme-page-731 .slide-overlay {
+    position: relative;
 }
 
+.mcneese.node-theme-page-731 .cycle-pager { 
+    text-align: center; 
+    width: 100%; 
+    z-index: 600; 
+    position: absolute; 
+    bottom: -5px; 
+    overflow: hidden;
+}
+
+.mcneese.node-theme-page-731 .cycle-pager span { 
+    font-family: arial; 
+    font-size: 50px; 
+    width: 18px; 
+    height: 18px; 
+    display: inline-block; 
+    color: #ffffff; 
+    cursor: pointer; 
+}
+
+.mcneese.node-theme-page-731 .cycle-pager span.cycle-pager-active { 
+    color: #fad703;
+}
+.mcneese.node-theme-page-731 .cycle-pager > * { 
+    cursor: pointer;
+}
+
+.mcneese.node-theme-page-731 .cycle-background {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+
+    position: absolute;
+    bottom: 0;
+    height: 84px;
+    z-index: 500;
+    width: 100%;
+    opacity: .4;
+}
+
+/* Estimator Styles */
+
+.mcneese.node-theme-page-731 #regularFees,
+.mcneese.node-theme-page-731 #nonResidentFees,
+.mcneese.node-theme-page-731 #graduateFees,
+.mcneese.node-theme-page-731 #nonResGraduateFees {
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+.mcneese.node-theme-page-731 .cost-box.blue {
+    background-color: #0080E5;
+    margin-bottom: 20px;
+}
+
+.mcneese.node-theme-page-731 .cost-box.darkblue {
+    background-color: #08487b;    
+}
+
+.mcneese.node-theme-page-731 .cost-box {
+    height: 95px;
+    padding: 10px;
+
+}
+
+.mcneese.node-theme-page-731 .cost-box form span {
+    color: #ffffff;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+.mcneese.node-theme-page-731 .cost-box label {
+    color: #ffffff;
+    font-size: 1.26em;
+    margin: 0 0 7px 0;
+}
+
+.mcneese.node-theme-page-731 .cost-box select {
+    width: 100%;
+}
+
+
+
+/* Button Styles */
+
+
+.mcneese.node-theme-page-731 .msu-button,
+.mcneese.node-theme-page-731 button,
+input[type="button"] {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
 .mcneese.node-theme-page-731 .msu-button:before {
-    content: "➞"
+    content: "➞ "
 }
 
 .mcneese.node-theme-page-731 .msu-button:hover,
@@ -146,8 +245,8 @@
 }
 
 .mcneese.node-theme-page-731 .msu-button.button-primary {
-    color: #1d1d1d;
-    background-color: #efefef;
+    color: #333;
+    background-color: #fad703;
     border-color: #acacac;
 }
 
@@ -382,6 +481,46 @@
     word-wrap: break-word;
 }
 
+/*** Focus Layout ***/
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav {
+    background: #efefef;
+    width: 100%;
+}
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #c4c4c4;
+    margin: 0px;
+    width: 16.667%; /* Fallback for older browsers */
+    width: calc(100% / 6);
+    box-sizing: border-box;
+}
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav ul li:first-child {
+    border-left: none;
+}
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #2d2d2d;
+    padding: 10px 0;
+}
+
+.mcneese.node-theme-page-731 .row.focus-menu > nav ul li a:hover {
+    background-color: #00477f;
+    color: #ffffff;
+}
+
 
 /*** Microsite Styles ***/
 
@@ -391,7 +530,7 @@
 
 .mcneese.node-theme-page-731 .box {
     background-color: #ffffff;
-    border: 1px dashed #000;
+    border: 1px dashed #2d2d2d;
 }
 
 .mcneese.node-theme-page-731 .box ul {
@@ -471,6 +610,31 @@
 
 .mcneese.node-theme-page-731 .checklist-accordion .ui-state-disabled:hover a {
     color: #7f0000;
+}
+
+/*** Accordion Focus Styles ***/
+
+.mcneese.node-theme-page-731 .focus .ui-state-default {
+    background: none;
+    background-color: #00477f;
+    border: 1px dashed #00477f;
+    color: #ffffff;
+}
+
+.mcneese.node-theme-page-731 .focus .ui-state-default:hover {
+    background-color: #ffffff !important;
+    border: 1px dashed #00477f;
+    color: #00477f;
+}
+
+.mcneese.node-theme-page-731 .focus .ui-state-active {
+    background-color: #00477f !important;
+    color: #ffffff;
+}
+
+.mcneese.node-theme-page-731 .focus .ui-state-active:hover {
+    background-color: #00477f !important;
+    color: #ffffff;
 }
 
 
@@ -656,9 +820,9 @@
     -webkit-transition: all 120ms linear;      
 }
 
+
 .mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item .menu_item.expanded a,
 .mcneese.node-theme-page-731 #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item .menu_item.collapsed a {
-    color: #00477f;
     font-weight: bold;
 }
 
@@ -804,6 +968,14 @@
 
 
 /*** Future Students and Current Students Page ***/
+
+.mcneese.node-theme-page-731 .list-box a {
+    text-decoration: none;
+}
+
+.mcneese.node-theme-page-731 .list-box a:hover {
+    text-decoration: underline;
+}
 
 .mcneese.node-theme-page-731 .list-box {
     background: #f0f0f0;
