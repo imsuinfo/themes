@@ -622,3 +622,7 @@
 #mfcs-section-help-main.section-help-presentation-single .section-help:first-of-type > .help-headers > .help-headers_group > .section {
   margin-top: 4px;
 }
+
+#mfcs-section-help-main.section-help-presentation-single .section-help.no_first_of_type:first-of-type > .help-headers > .help-headers_group > .section {
+  margin-top: 2em;
+}
