@@ -1056,7 +1056,7 @@
   padding: 10px;
 }
 
-#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section {
+#mfcs-help-documentation-terminology .definition_list-definition > .see_section {
   display: block;
 
   border: 1px solid #d6d977;
@@ -1067,12 +1067,12 @@
   background-color: #f2f5cd;
 }
 
-#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see {
+#mfcs-help-documentation-terminology .definition_list-definition > .see_section > .see {
   font-size: 0.9em;
   line-height: 1.1em;
 }
 
-#mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see_also {
+#mfcs-help-documentation-terminology .definition_list-definition > .see_section > .see_also {
   font-size: 0.9em;
   line-height: 1.1em;
 }
