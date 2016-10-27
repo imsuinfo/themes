@@ -80,7 +80,9 @@
 <body class="mcneese no-script is-maintenance <?php print($is_unavailable . $at_sitename . ' ' . $body_class); ?>" <?php print($attributes);?> onload="mcneese_html_body_javascript_detection();">
   <?php if (isset($cf['is']['overlay']) && !$cf['is']['overlay'] && $cf['show']['skipnav']){ ?>
     <!--(begin-skipnav)-->
+    <span id="mcneese-skip_nav-container" class="mcneese-skip_nav-container" role="navigation">
     <a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main"><?php print t("Skip to main content"); ?></a>
+    </span>
     <!--(end-skipnav)-->
   <?php } ?>
 
