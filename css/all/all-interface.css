@@ -1075,7 +1075,7 @@
 }
 
 #mfcs-section-help-main.topic-terminology .definition_list-definition > .see_section > .see_also,
-#help-documentation-topic-terminology.section-help-topic-terminology > .definition_list-definition > .see_section > .see_also {
+#help-documentation-topic-terminology.section-help-topic-terminology .definition_list-definition > .see_section > .see_also {
   font-size: 0.9em;
   line-height: 1.1em;
 }
