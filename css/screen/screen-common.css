@@ -273,10 +273,12 @@
   line-height: 18px;
 }
 
+#mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.openpgp > .links_and_filters-list > .links_and_filters-list-item,
 #mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.ical > .links_and_filters-list > .links_and_filters-list-item {
   padding: 1px 0px;
 }
 
+#mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.openpgp > .links_and_filters-list > .links_and_filters-list-item > .links_and_filters-list-item-label,
 #mfcs-links_and_filters > .links_and_filters-group > .links_and_filters.ical > .links_and_filters-list > .links_and_filters-list-item > .links_and_filters-list-item-label {
   display: inline-block;
   min-width: 40px;
