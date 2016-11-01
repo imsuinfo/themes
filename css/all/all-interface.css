@@ -973,9 +973,18 @@
   clear: both;
 }
 
+#mfcs-section-help-main > .help-headers > .help-headers_group > .section,
 #mfcs-section-help-main > .help-headers > .help-headers_group > .topic,
 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
   text-align: center;
+}
+
+#mfcs-section-help-main.NULL-sub_section > .help-headers > .help-headers_group > .section {
+  text-align: inherit;
+}
+
+#mfcs-section-help-main > .help-headers > .help-headers_group > .sub_section {
+  text-align: left;
 }
 
 #mfcs-section-help-main > .help-headers > .help-headers_group > .title {
@@ -989,14 +998,33 @@
   font-size: 1.5em;
   line-height: 1.2em;
 
+  margin: 0px;
+}
+
+#mfcs-section-help-main.NULL-sub_section > .help-headers > .help-headers_group > .topic {
   margin: 0px 0px 12px 0px;
 }
 
-#mfcs-section-help-main .help-headers.section > .help-headers_group > .section,
 #mfcs-section-help-main > .help-headers > .help-headers_group > .section {
   font-size: 1.3em;
   line-height: 1.2em;
+}
 
+#mfcs-section-help-main > .help-headers > .help-headers_group > .sub_section {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+
+#mfcs-section-help-main > .help-headers > .help-headers_group > .section {
+  margin: 0px 0px 12px 0px;
+}
+
+#mfcs-section-help-main.NULL-sub_section > .help-headers > .help-headers_group > .section,
+#mfcs-section-help-main > .help-headers > .help-headers_group > .sub_section {
+  margin: 0px;
+}
+
+#mfcs-section-help-main .help-headers.section > .help-headers_group > .section {
   margin: 0px;
 }
 
