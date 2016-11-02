@@ -431,6 +431,12 @@
   margin-top: 1em;
 }
 
+#mfcs-request-email_log-0-page > .email_log-section-top > .email_log-destination-wrapper > .email_log-destination > .email_log-destination-invalid {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #900000;
+}
+
 #mfcs-request-email_log-0-page > .email_log-headers-wrapper > legend > .fieldset-legend > .fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-raw_body-wrapper > legend > .fieldset-legend > .fieldset-title,
 #mfcs-request-email_log-0-page > .email_log-operations-wrapper > legend > .fieldset-legend > .fieldset-title,
