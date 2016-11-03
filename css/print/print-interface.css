@@ -136,6 +136,30 @@
   page-break-inside: avoid;
 }
 
+#mfcs-section-help-main .help-headers.page-break-after-auto-1 {
+  page-break-after: avoid;
+}
+
+#mfcs-section-help-main .paragraph.page-break-auto-1,
+#mfcs-section-help-main .paragraph.page-break-auto-1,
+#mfcs-section-help-main .paragraph ul,
+#mfcs-section-help-main .paragraph ol,
+#mfcs-section-help-main .paragraph.page-break-auto-2 ul,
+#mfcs-section-help-main .paragraph.page-break-auto-2 ol {
+  page-break-inside: auto;
+}
+
+#mfcs-section-help-main .paragraph.page-break-avoid-1,
+#mfcs-section-help-main .paragraph.page-break-avoid-1,
+#mfcs-section-help-main .help-headers +
+#mfcs-section-help-main .paragraph:first-of-type ul,
+#mfcs-section-help-main .help-headers +
+#mfcs-section-help-main .paragraph:first-of-type ol,
+#mfcs-section-help-main .paragraph.page-break-avoid-2 ul,
+#mfcs-section-help-main .paragraph.page-break-avoid-2 ol {
+  page-break-before: avoid;
+}
+
 #mfcs-section-help-main .paragraph.user_guides,
 #mfcs-section-help-main .paragraph.documentation,
 #mfcs-section-help-main .paragraph.presentation {
