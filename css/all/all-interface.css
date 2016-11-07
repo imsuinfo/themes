@@ -1049,6 +1049,18 @@
   margin-bottom: none;
 }
 
+#mfcs-section-help-main .paragraph-clear {
+  clear: both;
+}
+
+#mfcs-section-help-main .paragraph-clear-left {
+  clear: left;
+}
+
+#mfcs-section-help-main .paragraph-clear-right {
+  clear: right;
+}
+
 #mfcs-section-help-main .paragraph-user_guides,
 #mfcs-section-help-main .paragraph-documentation,
 #mfcs-section-help-main .paragraph-presentation {
@@ -1118,3 +1130,32 @@
   text-align: center;
 }
 
+#mfcs-section-help-main .image-wrapper > .image-user_guide,
+#mfcs-section-help-main .image-wrapper > .image-link > .image-user_guide {
+  margin: 2px 4px;
+  border: 1px solid black;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-center {
+  text-align: center;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-float-left {
+  float: left;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-float-right {
+  float: right;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-clear-left {
+  clear: left;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-clear-right {
+  clear: right;
+}
+
+#mfcs-section-help-main .image-wrapper.image-wrapper-clear-both {
+  clear: both;
+}
