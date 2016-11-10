@@ -946,6 +946,28 @@
 
 
 
+/*** Statistics ***/
+#mfcs-statistics-page > .statistics-navigation {
+  display: block;
+  position: relative;
+
+  clear: both;
+}
+
+#mfcs-statistics-page > .statistics-navigation > .statistics-navigation-link {
+  display: inline-block;
+}
+
+#mfcs-statistics-page > .statistics-navigation > .statistics-navigation-link.link-next,
+#mfcs-statistics-page > .statistics-navigation > .statistics-navigation-link.link-pdf {
+  float: right;
+}
+
+#mfcs-statistics-page > .statistics-navigation > .statistics-navigation-link.link-next + .statistics-navigation-link.link-pdf {
+  margin: 0px 12px;
+}
+
+
 /*** Help ***/
 .mcneese.alias-part-0-help_0 #mcneese-bulletin-page_title > .page-title {
   display: none;
@@ -1158,4 +1180,36 @@
 
 #mfcs-section-help-main .image-wrapper.image-wrapper-clear-both {
   clear: both;
+}
+
+
+
+/*** View Request Navigation ***/
+#mfcs-request-view-0-form .request-section-display {
+  clear: both;
+}
+
+#mfcs-request-view-0-form > .request-navigation,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation {
+  display: block;
+  position: relative;
+
+  clear: both;
+}
+
+#mfcs-request-view-0-form > .request-navigation > .request-navigation-link,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation > .request-navigation-link {
+  display: inline-block;
+}
+
+#mfcs-request-view-0-form > .request-navigation > .request-navigation-link.link-next,
+#mfcs-request-view-0-form > .request-navigation > .request-navigation-link.link-pdf,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation > .request-navigation-link.link-next,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation > .request-navigation-link.link-pdf {
+  float: right;
+}
+
+#mfcs-request-view-0-form > .request-navigation > .request-navigation-link.link-next + .request-navigation-link.link-pdf,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation > .request-navigation-link.link-next + .request-navigation-link.link-pdf {
+  margin: 0px 12px;
 }
