@@ -212,6 +212,7 @@
   margin: 0px;
 }
 
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-pdf,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-cancel,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-uncancel,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
@@ -219,7 +220,11 @@
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
-  padding-left: 6px;
+  margin-left: 6px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-pdf {
+  padding-top: 2px;
 }
 
 #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request {
