@@ -626,3 +626,17 @@
 #mfcs-section-help-main.section-help-presentation-single .section-help.no_first_of_type:first-of-type > .help-headers > .help-headers_group > .section {
   margin-top: 2em;
 }
+
+
+
+/*** Datatables @media Replacements ***/
+@media screen and (max-width: 640px) {
+  .dataTables_wrapper .dataTables_length {
+    float: left;
+    text-align: inherit;
+  }
+  .dataTables_wrapper .dataTables_filter {
+    float: right;
+    margin-top: 0px;
+  }
+}
