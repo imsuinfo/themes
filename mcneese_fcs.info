@@ -32,6 +32,7 @@ stylesheets[screen][] = css/screen/screen-common.css
 stylesheets[screen][] = css/screen/screen-front.css
 stylesheets[screen][] = css/screen/screen-event_form.css
 stylesheets[screen][] = css/screen/screen-interface.css
+stylesheets[screen][] = css/screen/screen-widths.css
 
 regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
