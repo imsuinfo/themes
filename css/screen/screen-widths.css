@@ -1,10 +1,14 @@
 @media screen and (max-width: 640px) {
-  /*** Global ***/
+  /*** Global Adjustments ***/
   .mcneese #mcneese-header,
   .mcneese #mcneese-bulletin-wrapper-outer,
   .mcneese #mcneese-bulletin-wrapper,
   .mcneese #mcneese-body,
   .mcneese #mcneese-page-content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: 320px;
     max-width: 640px;
@@ -15,6 +19,10 @@
   }
 
   .mcneese.is-flex_width {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: 320px;
     max-width: 640px;
@@ -24,6 +32,10 @@
   .mcneese.is-flex_width #mcneese-page,
   .mcneese.is-flex_width #mcneese-bottom,
   .mcneese.is-flex_width > .dev-query {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: 320px;
     max-width: 640px;
@@ -44,6 +56,10 @@
 
   .mcneese #mcneese-header #mcneese-site-logo,
   .mcneese #mcneese-header #mcneese-site-logo > .site-logo {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     height: 42px;
     min-height: 42px;
     max-height: 42px;
@@ -82,7 +98,7 @@
     min-height: initial;
   }
 
-  /*** Pages that have to have a larger minimum size ***/
+  /*** Pages that have to have a larger minimum size Adjustments ***/
   .mcneese.path-requests #mcneese-header,
   .mcneese.path-requests #mcneese-bulletin-wrapper-outer,
   .mcneese.path-requests #mcneese-bulletin-wrapper,
@@ -93,6 +109,10 @@
   .mcneese.path-requests.is-flex_width #mcneese-page,
   .mcneese.path-requests.is-flex_width #mcneese-bottom,
   .mcneese.path-requests.is-flex_width > .dev-query {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     min-width: 490px;
   }
 
@@ -102,17 +122,75 @@
     min-width: 490px;
   }
 
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-header,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-bulletin-wrapper-outer,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-bulletin-wrapper,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-body,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-page-content,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-top,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-page,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-bottom,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width > .dev-query {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    min-width: 490px;
+  }
+
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-skip_nav:active,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-skip_nav:focus,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month.is-flex_width #mcneese-skip_nav:hover {
+    min-width: 490px;
+  }
+
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-header,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-bulletin-wrapper-outer,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-bulletin-wrapper,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-body,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-page-content,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-top,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-page,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-bottom,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width > .dev-query {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    min-width: 490px;
+  }
+
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-skip_nav:active,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-skip_nav:focus,
+  .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day.is-flex_width #mcneese-skip_nav:hover {
+    min-width: 490px;
+  }
+
 
   /*** Header Adjustments ***/
   .mcneese #mcneese-header > .header-top {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     min-height: 78px;
   }
 
   .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     max-height: 26px;
   }
 
   .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     font-size: 9px;
     font-weight: bold;
     text-align: center;
@@ -128,11 +206,28 @@
     max-height: 16px;
   }
 
+  .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link-create_request,
+  .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link-copy_request {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    height: 25px;
+    min-height: 25px;
+    max-height: 25px;
+
+    line-height: 11px;
+  }
+
   .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout.menu_link-create_request-wrapper {
     max-height: 30px;
   }
 
   .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout.menu_link-create_request-wrapper > a.menu_link {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 40px;
     min-width: 40px;
     max-width: 40px;
@@ -204,6 +299,10 @@
   }
 
   .mcneese #mcneese-content-main .dataTables_wrapper > .dataTables_paginate > .paginate_input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 120px;
   }
 
@@ -231,16 +330,20 @@
     margin-left: 4px;
   }
 
-  /*** Request View Form ***/
+  /*** Request View Form Adjustments ***/
   #mfcs-request-view-0-form .request-section-display, #mfcs-request-view-0-form .request-section-review-operations, #mfcs-request-view-0-form .request-section-review-log {
     min-width: 320px;
     padding: 0px;
   }
 
   #mfcs-request-view-0-form .request-field_groups {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: 320px;
-    max-width: 640px;
+    max-width: 620px;
   }
 
   #mfcs-request-view-0-form .request-field_groups > .group {
@@ -282,7 +385,9 @@
   #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone,
   #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
   #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
-  #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement {
+  #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
+  #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
+  #mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-cancel {
     font-size: 10px;
     line-height: 12px;
   }
@@ -370,6 +475,10 @@
   #mfcs-request-manage-0-page > .section-request_problems > .content > .item > .item-message,
   #mfcs-request-manage-0-page > .section-request_history > .content > .item > .item-message,
   #mfcs-request-manage-0-page > .section-management_actions > .content > .item > .item-message {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: initial;
     max-width: initial;
@@ -378,12 +487,16 @@
   #mfcs-request-manage-0-page > .section-request_problems > .content > .item,
   #mfcs-request-manage-0-page > .section-request_history > .content > .item,
   #mfcs-request-manage-0-page > .section-management_actions > .content > .item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
     min-width: initial;
     max-width: initial;
   }
 
-  /*** Agreement Form ***/
+  /*** Agreement Form Adjustments ***/
   #mfcs-request-agreement,
   .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title,
   #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input,
@@ -430,25 +543,48 @@
   #mfcs-calendar-0-month > .links_and_filters-wrapper,
   #mfcs-calendar-0-day > .calendar-day,
   #mfcs-calendar-0-day > .links_and_filters-wrapper {
-    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: initial;
     min-width: 490px;
     max-width: 620px;
   }
 
   #mfcs-calendar-0-month > .calendar-month > .calendar-navigation,
   #mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
-    width: 100%;
+    top: 18px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-navigation,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-navigation {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: initial;
     min-width: 490px;
     max-width: 620px;
   }
 
-  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
-    width: 100%;
+  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week,
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-header-wrapper > .calendar-header > .calendar-day-wrapper > .calendar-day,
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-body-wrapper > .calendar-body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: initial;
     min-width: 490px;
     max-width: 620px;
   }
 
   #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 70px;
     min-width: 70px;
     max-width: 70px;
@@ -458,11 +594,58 @@
   }
 
   #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 70px;
     min-width: 70px;
     max-width: 70px;
 
     overflow: hidden;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper,
+   #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: 420px;
+    min-width: 420px;
+    max-width: 420px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-label,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    height: 144px;
+    min-height: 144px;
+    max-height: 144px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper {
+    max-height: 24px;
   }
 
   #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
@@ -472,9 +655,15 @@
     padding: 1px 2px;
   }
 
-  #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper {
+  #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-header-wrapper {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-title > h3,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-title > h3 {
+    margin-bottom: 18px;
   }
 
   #mfcs-calendar-0-month > .calendar-month > .calendar-title,
@@ -488,12 +677,60 @@
   #mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-previous,
   #mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-previous,
   #mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-next,
-  #mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-next {
+  #mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-next,
+  #mfcs-calendar-0-month > .calendar-month > .calendar-navigation > .calendar-navigation-this,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-navigation > .calendar-navigation-this {
     line-height: 16px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    max-width: 105px;
+
+  }
+  #mfcs-calendar-0-day > .calendar-all_day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper {
+    height: 144px;
+    min-height: 144px;
+    max-height: 144px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-description-wrapper,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-id-wrapper {
+    display: none;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper > .calendar-item-time {
+    font-size: 11px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop.constraint-height > .calendar-item > .calendar-item-location-wrapper,
+  #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop.constraint-height > .calendar-item > .calendar-item-location-wrapper > .calendar-item-location {
+    max-height: inherit;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-links-wrapper {
+    margin: 2px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-links-wrapper > .calendar-time_slot-link {
+    font-size: 12px;
+    line-height: 14px;
   }
 
   /*** Search Form Adjustments ***/
   #mfcs-request-search-0-form #search-simple-text {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 220px;
   }
 
@@ -505,9 +742,13 @@
   #mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry,
   #mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry,
   #mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: 95%;
     min-width: 320px;
-    max-width: 640px;
+    max-width: 620px;
   }
 
   #mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-name,
@@ -521,5 +762,112 @@
   #mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry > .information_page-entry-list > .information_page-entry-list-item > .information_page-entry-list-item-value {
     display: block;
     float: none;
+  }
+
+  /*** Create Form Adjustments ***/
+  #mfcs-request-create-0-form,
+  #mfcs-request-edit-0-form {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: initial;
+    min-width: 320px;
+    max-width: 640px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-location-0,
+  #mfcs-request-create-0-form #field-request-location-0,
+  #mfcs-request-edit-0-form #field-request-location-0 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-location-0 > .location-image-link > .location-image-visible,
+  #mfcs-request-create-0-form #field-request-location-0 > .location-image-link > .location-image-visible,
+  #mfcs-request-edit-0-form #field-request-location-0 > .location-image-link > .location-image-visible {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-location-0 #field-request-location-0-image-0,
+  #mfcs-request-create-0-form #field-request-location-0 #field-request-location-0-image-0,
+  #mfcs-request-edit-0-form #field-request-location-0 #field-request-location-0-image-0 {
+    width: 203px;
+    height: 98px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-location-0 #field-request-location-0-image-1,
+  #mfcs-request-create-0-form #field-request-location-0 #field-request-location-0-image-1,
+  #mfcs-request-edit-0-form #field-request-location-0 #field-request-location-0-image-1 {
+    width: 203px;
+    height: 112px;
+  }
+
+
+  #mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .field-request-item,
+  #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .field-request-item {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #mfcs-request-create-0-form #group-request-dates-date > .group-field-container,
+  #mfcs-request-edit-0-form #group-request-dates-date > .group-field-container {
+    border-bottom: 1px dotted;
+    padding-bottom: 6px;
+    margin-bottom: 3px;
+  }
+
+  #mfcs-request-create-0-form #buttons-request-add-date,
+  #mfcs-request-edit-0-form #buttons-request-add-date {
+    border-top: 1px dotted;
+    padding-top: 6px;
+    margin-top: 3px;
+  }
+
+  #mfcs-request-create-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .field-request-item > .form-type-textfield > .form-text,
+  #mfcs-request-edit-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .field-request-item > .form-type-textfield > .form-text,
+  #mfcs-request-create-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .field-request-item > .form-type-emailfield > .form-email,
+  #mfcs-request-edit-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .field-request-item > .form-type-emailfield > .form-email {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    max-width: 250px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item,
+  #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: 98%;
+    min-width: 320px;
+    max-width: 620px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
+  #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: 95%;
+    min-width: 320px;
+    max-width: 620px;
+  }
+
+  #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
+  #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
+  #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
+  #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number {
+    font-size: 12px;
+    line-height: 14px;
   }
 }

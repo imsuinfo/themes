@@ -848,7 +848,7 @@ function mfcs_render_page() {
     }
 
     if ($count_parts >= 3 && $path_parts[0] == 'requests' && $path_parts[1] == 'create-0' && is_numeric($path_parts[2])) {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Copy an Existing Request">Copy Request</a></li>';
+      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-copy_request-wrapper first"><a class="menu_link menu_link-copy_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Copy an Existing Request">Copy Request</a></li>';
     }
     else {
       $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Create a New Request">Create Request</a></li>';

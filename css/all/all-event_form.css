@@ -718,12 +718,16 @@
 /*** Cancellable ***/
 #mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .form-type-select,
 #mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .cancelling-item-message {
-  display: inline-block;
+  display: table-cell;
   vertical-align: middle;
 }
 
+#mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .form-type-select > .cancelling-item-select {
+  margin-right: 8px;
+}
+
 #mfcs-request-cancelling-0-form #edit-dates > .cancelling-items > .cancelling-item-message {
-  margin: 8px;
+
 }
 
 
