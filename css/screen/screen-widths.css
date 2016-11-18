@@ -50,6 +50,21 @@
     min-width: 320px;
   }
 
+  .mcneese.is-fixed_width #mcneese-top,
+  .mcneese.is-fixed_width #mcneese-page,
+  .mcneese.is-fixed_width #mcneese-bottom,
+  .mcneese.is-fixed_width > .dev-query {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    width: initial;
+    min-width: 320px;
+    max-width: 640px;
+
+    margin: 0px;
+  }
+
   .mcneese #mcneese-header #mcneese-site-logo {
     margin: 9px 0px 0px 10px;
   }
