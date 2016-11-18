@@ -409,6 +409,23 @@
   border: 1px outset #333333;
 }
 
+#mfcs-holiday_page-view .operation-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-holiday_page-view .operation-wrapper-edit {
+  float: left;
+
+  margin-right: 8px;
+}
+
+#mfcs-holiday_page-view .operation-wrapper-delete {
+  float: right;
+
+  margin-left: 8px;
+}
+
 
 
 /*** Problems ***/
@@ -532,6 +549,23 @@
   background-color: #666666;
 
   border: 1px outset #333333;
+}
+
+#mfcs-unavailable_0-view-page .operation-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#mfcs-unavailable_0-view-page .operation-wrapper-edit {
+  float: left;
+
+  margin-right: 8px;
+}
+
+#mfcs-unavailable_0-view-page .operation-wrapper-delete {
+  float: right;
+
+  margin-left: 8px;
 }
 
 

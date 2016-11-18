@@ -76,6 +76,17 @@
     padding-left: 10px;
   }
 
+  .mcneese h3,
+  .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h2,
+  .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h3,
+  .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h4,
+  .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h5,
+  .mcneese .html_tag-section > .html_tag-section > .html_tag-header > .html_tag-hgroup > h6 {
+    font-size: 19px;
+    line-height: 1.2em;
+    margin: 2px 0px;
+  }
+
   /*** Dashboard ***/
   #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-header {
     font-size: 19px;
@@ -869,5 +880,78 @@
   #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  /*** User Create/Edit Form Adjustments ***/
+  #mfcs-request-users-0-add-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .form-item > .form-text,
+  #mfcs-request-users-0-edit-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .form-item > .form-text {
+    max-width: 250px;
+  }
+
+  /*** Holiday Form and Page Adjustments ***/
+  #mfcs-request-holiday-0-edit-form > .form-wrapper-inner > .form-item > .form-text {
+    max-width: 250px;
+  }
+
+  #mfcs-holiday_page-view .operation-wrapper {
+    margin: 4px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    max-width: 110px;
+  }
+
+  /*** Unavailability Create/Edit Form Adjustments ***/
+  #mfcs-unavailable_0-create-page > .form-wrapper-inner > .form-item > .form-text,
+  #mfcs-unavailable_0-edit-page > .form-wrapper-inner > .form-item > .form-text,
+  #mfcs-unavailable_0-copy-page > .form-wrapper-inner > .form-item > .form-text {
+    max-width: 250px;
+  }
+
+  #mfcs-unavailable_0-view-page .unavailability_page-operations > .operation-wrapper {
+    margin: 4px;
+
+    font-size: 12px;
+    line-height: 14px;
+
+    max-width: 90px;
+  }
+
+  /*** Reviewers/Proxy Form Adjustments ***/
+  #mfcs-request-proxy-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .form-item > .form-text,
+  #mfcs-request-reviewers-0-form > .form-wrapper-inner > .form-wrapper > .fieldset-wrapper > .form-item > .form-text {
+    max-width: 250px;
+  }
+
+  /*** Management Page Adjustments ***/
+  #mfcs-management_page-choices > .mfcs-management_page-choices-list_1,
+  #mfcs-management_page-choices > .mfcs-management_page-choices-list_2,
+  #mfcs-management_page-choices > .mfcs-management_page-choices-list_3 {
+    width: initial;
+    min-width: 320px;
+    max-width: 620px;
+  }
+
+  /*** Request Statistics Page Adjustments ***/
+  #mfcs-statistics-page > .statistics-title {
+    width: initial;
+    min-width: 320px;
+    max-width: 620px;
+  }
+
+  #mfcs-statistics-page > .statistics-block,
+  #mfcs-statistics-page > .statistics-block > .statistics-block-chart,
+  #mfcs-statistics-page > .statistics-block > .statistics-block-text {
+    display: block;
+
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+  }
+
+  #mfcs-statistics-page > .statistics-block > .statistics-block-chart > svg {
+    width: 320px;
+    height: auto;
   }
 }
