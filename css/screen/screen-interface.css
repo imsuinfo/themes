@@ -688,6 +688,27 @@
   padding-bottom: 0px;
 }
 
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date.item-date-hidden {
+  display: none;
+}
+
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle {
+  color: #00477f;
+  text-decoration: underline;
+}
+
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:focus,
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:active,
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:hover {
+  color: #0591ff;
+
+  cursor: pointer;
+}
+
+#mfcs-list_0-requests > tbody > tr.child > td.child > ul > li > .dtr-data > .item-date-visibility-toggle {
+  display: none;
+}
+
 #mfcs-holiday_form > tbody > tr > .column-operations > .item-operations,
 #mfcs-email_log_form > tbody > tr > .column-operations > .item-operations,
 #mfcs-list_0-requests > tbody > tr > .column-operations > .item-operations {

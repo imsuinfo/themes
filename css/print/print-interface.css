@@ -196,3 +196,10 @@
 #mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation {
   display: none;
 }
+
+
+
+/*** Requests Listing ***/
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle {
+  display: none;
+}
