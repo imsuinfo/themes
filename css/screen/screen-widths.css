@@ -109,6 +109,26 @@
     padding-right: 3px;
   }
 
+  .mcneese #mcneese-header > .header-separator {
+    height: 4px;
+    min-height: 4px;
+    max-height: 4px;
+  }
+
+  .mcneese #mcneese-header > .header-separator {
+    height: 4px;
+    min-height: 4px;
+    max-height: 4px;
+  }
+
+  .mcneese #mcneese-header > .header-bottom {
+    min-height: 6px;
+  }
+
+  .mcneese #mcneese-bulletin-wrapper {
+    margin-bottom: 8px;
+  }
+
   /*** Dashboard ***/
   #mfcs-dashboard_page-choices > .mfcs-dashboard_page-choices-header {
     font-size: 19px;
