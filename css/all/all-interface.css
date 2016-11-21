@@ -1217,10 +1217,16 @@
 
 
 /*** Request Listing and Other Datatables Listings ***/
+#mfcs-search_0-simple_table > tbody > tr > .column-date,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date,
 #mfcs-list_0-requests > tbody > tr > .column-date {
   min-width: 90px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-submitted_on,
+#mfcs-search_0-simple_table > tbody > tr > .column-date,
+#mfcs-search_0-advanced_table > tbody > tr > .column-submitted_on,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date,
 #mfcs-holiday_form > tbody > tr > .column-date,
 #mfcs-email_log_form > tbody > tr > .column-date,
 #mfcs-list_0-requests > tbody > tr > .column-submitted_on,
@@ -1229,12 +1235,16 @@
   line-height: 15px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date {
   border-bottom: 1px dotted #303030;
   margin-bottom: 3px;
   padding-bottom: 3px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date:last-of-type,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date:last-of-type,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date:last-of-type {
   border-bottom: 0px;
   margin-bottom: 0px;

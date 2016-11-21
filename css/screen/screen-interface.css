@@ -664,15 +664,25 @@
 
 
 /*** Request Listing and Other Datatables Listings ***/
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date.item-date-hidden,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date.item-date-hidden,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date.item-date-hidden {
   display: none;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date-visibility-toggle,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date-visibility-toggle,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle {
   color: #00477f;
   text-decoration: underline;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date-visibility-toggle:focus,
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date-visibility-toggle:active,
+#mfcs-search_0-simple_table > tbody > tr > .column-date > .item-date-visibility-toggle:hover,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date-visibility-toggle:focus,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date-visibility-toggle:active,
+#mfcs-search_0-advanced_table > tbody > tr > .column-date > .item-date-visibility-toggle:hover,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:focus,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:active,
 #mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle:hover {
@@ -681,10 +691,14 @@
   cursor: pointer;
 }
 
+#mfcs-search_0-simple_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-date-visibility-toggle,
+#mfcs-search_0-advanced_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-date-visibility-toggle,
 #mfcs-list_0-requests > tbody > tr.child > td.child > ul > li > .dtr-data > .item-date-visibility-toggle {
   display: none;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-operations > .item-operations,
+#mfcs-search_0-advanced_table > tbody > tr > .column-operations > .item-operations,
 #mfcs-holiday_form > tbody > tr > .column-operations > .item-operations,
 #mfcs-email_log_form > tbody > tr > .column-operations > .item-operations,
 #mfcs-list_0-requests > tbody > tr > .column-operations > .item-operations {
@@ -695,6 +709,9 @@
   padding-right: 8px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr > .column-operations > .item-operations:last-of-type,
+#mfcs-search_0-advanced_table > tbody > tr > .column-operations > .item-operations:last-of-type,
+#mfcs-search_0-simple_table > tbody > tr > .column-operations > .item-operations:last-of-type,
 #mfcs-holiday_form > tbody > tr > .column-operations > .item-operations:last-of-type,
 #mfcs-email_log_form > tbody > tr > .column-operations > .item-operations:last-of-type,
 #mfcs-list_0-requests > tbody > tr > .column-operations > .item-operations:last-of-type {
@@ -702,12 +719,16 @@
   padding-right: 0px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations,
+#mfcs-search_0-advanced_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations,
 #mfcs-holiday_form > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations,
 #mfcs-email_log_form > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations,
 #mfcs-list_0-requests > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations {
   margin-bottom: 8px;
 }
 
+#mfcs-search_0-simple_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations:last-of-type,
+#mfcs-search_0-advanced_table > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations:last-of-type,
 #mfcs-holiday_form > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations:last-of-type,
 #mfcs-email_log_form > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations:last-of-type,
 #mfcs-list_0-requests > tbody > tr.child > td.child > ul > li > .dtr-data > .item-operations:last-of-type {
