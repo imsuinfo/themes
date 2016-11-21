@@ -1,5 +1,6 @@
 @media screen and (max-width: 640px) {
   /*** Global Adjustments ***/
+  #mcneese-body,
   .mcneese #mcneese-header,
   .mcneese #mcneese-bulletin-wrapper-outer,
   .mcneese #mcneese-bulletin-wrapper,
@@ -63,6 +64,7 @@
     max-width: 640px;
 
     margin: 0px;
+    padding: 0px;
   }
 
   .mcneese #mcneese-header #mcneese-site-logo {
@@ -100,6 +102,11 @@
     font-size: 19px;
     line-height: 1.2em;
     margin: 2px 0px;
+  }
+
+  .mcneese #mcneese-content-main {
+    padding-left: 3px;
+    padding-right: 3px;
   }
 
   /*** Dashboard ***/
@@ -358,7 +365,7 @@
 
   /*** Request View Form Adjustments ***/
   #mfcs-request-view-0-form .request-section-display, #mfcs-request-view-0-form .request-section-review-operations, #mfcs-request-view-0-form .request-section-review-log {
-    min-width: 320px;
+    min-width: 314px;
     padding: 0px;
   }
 
@@ -368,7 +375,7 @@
     -webkit-box-sizing: border-box;
 
     width: initial;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -393,7 +400,7 @@
     -webkit-box-sizing: border-box;
 
     width: initial;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -528,7 +535,7 @@
   #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input,
   #mfcs-request-agreement > .agreement-table {
     width: 100%;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -764,6 +771,46 @@
     position: static;
   }
 
+  #mfcs-request-search-0-form #search-simple-fieldset > .fieldset-wrapper > .search-simple-field-sensitive {
+    position: relative;
+    top: initial;
+    right: initial;
+  }
+
+  #mfcs-request-search-0-form #search-advanced-search-controls-possible_targets-select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    text-overflow: ellipsis;
+    max-width: 280px;
+  }
+
+  #mfcs-request-search-0-form #search-advanced-search-controls-possible_targets-select > option {
+    text-overflow: ellipsis;
+  }
+
+  #mfcs-request-search-0-form #search-advanced-search-controls-manage-existing-select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    text-overflow: ellipsis;
+    max-width: 250px;
+  }
+
+  #mfcs-request-search-0-form #search-advanced-search-controls-manage-new-human_name,
+  #mfcs-request-search-0-form #search-advanced-targets-targets-mer-location-0-search,
+  #mfcs-request-search-0-form #search-advanced-targets-targets-mer-building-0-search,
+  #mfcs-request-search-0-form #search-advanced-targets-targets-mer-room-0-search {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    text-overflow: ellipsis;
+    max-width: 250px;
+  }
+
   /*** Locations, Buildings, Rooms Banner Information Page Adjustments ***/
   #mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry,
   #mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry,
@@ -773,7 +820,7 @@
     -webkit-box-sizing: border-box;
 
     width: 95%;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -798,7 +845,7 @@
     -webkit-box-sizing: border-box;
 
     width: initial;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 640px;
   }
 
@@ -871,7 +918,7 @@
     -webkit-box-sizing: border-box;
 
     width: 98%;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -883,7 +930,7 @@
     -webkit-box-sizing: border-box;
 
     width: 95%;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
@@ -943,30 +990,238 @@
   #mfcs-management_page-choices > .mfcs-management_page-choices-list_1,
   #mfcs-management_page-choices > .mfcs-management_page-choices-list_2,
   #mfcs-management_page-choices > .mfcs-management_page-choices-list_3 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
   /*** Request Statistics Page Adjustments ***/
   #mfcs-statistics-page > .statistics-title {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     width: initial;
-    min-width: 320px;
+    min-width: 314px;
     max-width: 620px;
   }
 
   #mfcs-statistics-page > .statistics-block,
   #mfcs-statistics-page > .statistics-block > .statistics-block-chart,
   #mfcs-statistics-page > .statistics-block > .statistics-block-text {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
     display: block;
 
-    width: 320px;
-    min-width: 320px;
-    max-width: 320px;
+    width: 314px;
+    min-width: 314px;
+    max-width: 314px;
   }
 
   #mfcs-statistics-page > .statistics-block > .statistics-block-chart > svg {
-    width: 320px;
+    width: 314px;
     height: auto;
+  }
+
+  /*** Help / Documentation Adjustments ***/
+  .mcneese #image-navigate_the_system-1 {
+    width: 300px;
+    height: 119px;
+  }
+
+  .mcneese #image-navigate_the_system-2 {
+    width: 225px;
+    height: 38px;
+  }
+
+  .mcneese #image-navigate_the_system-3 {
+    width: 300px;
+    height: 41px;
+  }
+
+  .mcneese #image-navigate_the_system-4 {
+    width: 300px;
+    height: 152px;
+  }
+
+  .mcneese #image-navigate_the_system-5 {
+    width: 300px;
+    height: 118px;
+  }
+
+  .mcneese #image-navigate_the_system-6 {
+    width: 300px;
+    height: 79px;
+  }
+
+  .mcneese #image-create_a_request-2 {
+    width: 300px;
+    height: 106px;
+  }
+
+  .mcneese #image-create_a_request-3 {
+    width: 300px;
+    height: 282px;
+  }
+
+  .mcneese #image-create_a_request-4 {
+    width: 300px;
+    height: 115px;
+  }
+
+  .mcneese #image-create_a_request-5 {
+    width: 300px;
+    height: 130px;
+  }
+
+  .mcneese #image-create_a_request-6 {
+    width: 300px;
+    height: 146px;
+  }
+
+  .mcneese #image-create_a_request-7 {
+    width: 300px;
+    height: 62px;
+  }
+
+  .mcneese #image-edit_a_request-1 {
+    width: 300px;
+    height: 162px;
+  }
+
+  .mcneese #image-edit_a_request-2 {
+    width: 300px;
+    height: 112px;
+  }
+
+  .mcneese #image-cancel_a_request-2 {
+    width: 300px;
+    height: 170px;
+  }
+
+  .mcneese #image-uncancel_a_request-2 {
+    width: 300px;
+    height: 144px;
+  }
+
+  .mcneese #image-copy_a_request-1 {
+    width: 300px;
+    height: 131px;
+  }
+
+  .mcneese #image-find_a_request-1 {
+    width: 300px;
+    height: 96px;
+  }
+
+  .mcneese #image-find_a_request-2 {
+    width: 300px;
+    height: 212px;
+  }
+
+  .mcneese #image-find_a_request-3 {
+    width: 300px;
+    height: 137px;
+  }
+
+  .mcneese #image-find_a_request-4 {
+    width: 300px;
+    height: 298px;
+  }
+
+  .mcneese #image-find_a_request-5 {
+    width: 300px;
+    height: 240px;
+  }
+
+  .mcneese #image-review_a_request-2 {
+    width: 300px;
+    height: 102px;
+  }
+
+  .mcneese #image-review_a_request-3 {
+    width: 300px;
+    height: 139px;
+  }
+
+  .mcneese #image-review_a_request-4 {
+    width: 300px;
+    height: 381px;
+  }
+
+  .mcneese #image-manage_a_request-1 {
+    width: 300px;
+    height: 72px;
+  }
+
+  .mcneese #image-manage_a_request-2 {
+    width: 300px;
+    height: 213px;
+  }
+
+  .mcneese #image-manage_a_request-4 {
+    width: 300px;
+    height: 123px;
+  }
+
+  .mcneese #image-manage_a_holiday-1 {
+    width: 300px;
+    height: 158px;
+  }
+
+  .mcneese #image-manage_a_room_unavailability-1 {
+    width: 300px;
+    height: 83px;
+  }
+
+  .mcneese #image-manage_a_room_unavailability-2 {
+    width: 300px;
+    height: 86px;
+  }
+
+  .mcneese #image-manage_a_room_unavailability-3 {
+    width: 300px;
+    height: 422px;
+  }
+
+  .mcneese #image-troubleshoot_requests_and_users-1 {
+    width: 300px;
+    height: 22px;
+  }
+
+  .mcneese #image-troubleshoot_requests_and_users-2 {
+    width: 300px;
+    height: 258px;
+  }
+
+  .mcneese #image-troubleshoot_requests_and_users-3 {
+    width: 300px;
+    height: 330px;
+  }
+
+  .mcneese #image-using_the_calendar-1 {
+    width: 300px;
+    height: 145px;
+  }
+
+  .mcneese #image-using_the_calendar-2 {
+    width: 300px;
+    height: 130px;
+  }
+
+  .mcneese #image-using_the_calendar-4 {
+    width: 300px;
+    height: 144px;
+  }
+
+  .mcneese #image-exporting_the_calendar-2 {
+    width: 300px;
+    height: 150px;
   }
 }

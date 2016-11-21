@@ -1,6 +1,14 @@
 
 
 
+/*** Special Case Tags ***/
+.mcneese .text-link {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+
+
 /*** Fieldset Checkboxes ***/
 .mcneese fieldset.form-item.form-type-checkbox > legend > .fieldset-legend {
   background: inherit;
