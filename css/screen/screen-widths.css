@@ -151,7 +151,7 @@
     min-height: initial;
   }
 
-  /*** Pages that have to have a larger minimum size Adjustments ***/
+  /*** Pages that have to have size Adjustments ***/
   .mcneese.path-requests #mcneese-header,
   .mcneese.path-requests #mcneese-bulletin-wrapper-outer,
   .mcneese.path-requests #mcneese-bulletin-wrapper,
@@ -776,6 +776,10 @@
   #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-links-wrapper > .calendar-time_slot-link {
     font-size: 12px;
     line-height: 14px;
+  }
+
+  #mfcs-links_and_filters > .links_and_filters-group > .links_and_filters > .links_and_filters-list > .links_and_filters-list-item {
+    margin-bottom: 12px;
   }
 
   /*** Search Form Adjustments ***/
