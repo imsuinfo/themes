@@ -152,6 +152,7 @@
   }
 
   /*** Pages that have to have size Adjustments ***/
+  #mcneese-body.mcneese.path-requests #mcneese-header,
   .mcneese.path-requests #mcneese-header,
   .mcneese.path-requests #mcneese-bulletin-wrapper-outer,
   .mcneese.path-requests #mcneese-bulletin-wrapper,
@@ -175,6 +176,7 @@
     min-width: 490px;
   }
 
+  #mcneese-body.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-header,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-bulletin-wrapper-outer,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-month #mcneese-bulletin-wrapper,
@@ -198,6 +200,7 @@
     min-width: 490px;
   }
 
+  #mcneese-body.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-header,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-bulletin-wrapper-outer,
   .mcneese.alias-part-0-requests.alias-part-1-calendar_0.alias-part-2-day #mcneese-bulletin-wrapper,
