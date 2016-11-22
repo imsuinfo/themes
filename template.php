@@ -76,12 +76,12 @@ function mfcs_render_page() {
     $path_parts = explode('/', $cf['at']['path']);
     $count_parts = count($path_parts);
 
-    $pre_crumb_title = "Dashboard";
+    $pre_crumb_title = 'Dashboard';
 
     if ($count_parts > 0 && $path_parts[0] == 'requests') {
       if ($count_parts == 1) {
         if ($path_parts[0] == 'requests') {
-          $title = "Dashboard";
+          $title = 'Dashboard';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -95,7 +95,7 @@ function mfcs_render_page() {
         $dont_append_title = TRUE;
 
         if ($path_parts[1] == 'create-0') {
-          $title = "Create Request";
+          $title = 'Create Request';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -106,14 +106,14 @@ function mfcs_render_page() {
           elseif ($count_parts == 3) {
             array_pop($cf['page']['breadcrumb']);
 
-            $title = "Copy Request";
+            $title = 'Copy Request';
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title .'">' . $title . '</a>';
           }
 
           unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'list-0') {
-          $title = "List Requests";
+          $title = 'List Requests';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -125,7 +125,7 @@ function mfcs_render_page() {
           unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'review-0') {
-          $title = "Review";
+          $title = 'Review';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -138,12 +138,12 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'cancelling-0') {
           if ($count_parts >= 3) {
-            $title = "Cancelling Request";
+            $title = 'Cancelling Request';
 
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
 
             $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/cancelling-0/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
@@ -151,8 +151,8 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'reviewers-0') {
-          $title = "Manage Reviewers";
-          $pre_crumb_title = "Management";
+          $title = 'Manage Reviewers';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -167,7 +167,7 @@ function mfcs_render_page() {
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
           elseif ($count_parts == 4 && $path_parts[2] == 'delete') {
-            $title = "Delete Reviewer";
+            $title = 'Delete Reviewer';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
@@ -176,35 +176,35 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'manage-0') {
           if ($count_parts > 2) {
-            $title = "Manage Request";
+            $title = 'Manage Request';
 
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             if ($count_parts == 3) {
-              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
               $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
             }
             else {
               if ($path_parts[2] == 'override') {
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[3] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[3] . $url_arguments . '" title="View Request">View Request</a>';
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-                $title = "Override Request";
+                $title = 'Override Request';
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/override/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
               }
               elseif ($path_parts[2] == 'reassign' && isset($path_parts[4])) {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[4] . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[4] . '</div>';
 
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[4] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[4] . $url_arguments . '" title="View Request">View Request</a>';
                 $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
                 if ($path_parts[3] == 'requester') {
-                  $title = "Re-assign Requester";
+                  $title = 'Re-assign Requester';
                   $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/requester/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
                 }
                 elseif ($path_parts[3] == 'coordinator') {
-                  $title = "Re-assign Coordinator";
+                  $title = 'Re-assign Coordinator';
                   $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/manage-0/reassign/coordinator/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
                 }
               }
@@ -214,8 +214,8 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'problems-0') {
-          $title = "Manage Problems";
-          $pre_crumb_title = "Management";
+          $title = 'Manage Problems';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -226,20 +226,20 @@ function mfcs_render_page() {
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
           if ($count_parts > 2 && $path_parts[2] == 'users') {
-            $title = "User Problems";
+            $title = 'User Problems';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
           elseif ($count_parts > 2 && $path_parts[2] == 'requests') {
-            $title = "Request Problems";
+            $title = 'Request Problems';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
           if ($count_parts > 4 && $path_parts[3] == 'user') {
-            $title = "User Problem";
+            $title = 'User Problem';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/user/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
           elseif ($count_parts > 4 && $path_parts[3] == 'request') {
-            $title = "Request Problem";
+            $title = 'Request Problem';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/request/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
@@ -247,8 +247,8 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'proxy-0') {
-          $title = "Manage Proxies";
-          $pre_crumb_title = "Management";
+          $title = 'Manage Proxies';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -259,7 +259,7 @@ function mfcs_render_page() {
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
           if ($count_parts == 4 && $path_parts[2] == 'delete') {
-            $title = "Delete Proxy";
+            $title = 'Delete Proxy';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
@@ -268,13 +268,13 @@ function mfcs_render_page() {
         }
         elseif ($path_parts[1] == 'calendar-0') {
           if ($count_parts > 2 && ($path_parts[2] == 'month' || $path_parts[2] == 'day')) {
-            $title = "Request Calendar";
+            $title = 'Request Calendar';
 
             if ($path_parts[2] == 'month') {
-              $title = "Request Calendar - Month";
+              $title = 'Request Calendar - Month';
             }
             elseif ($path_parts[2] == 'day') {
-              $title = "Request Calendar - Day";
+              $title = 'Request Calendar - Day';
             }
 
             $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
@@ -286,12 +286,12 @@ function mfcs_render_page() {
 
             if ($count_parts > 4 && $path_parts[2] == 'month') {
               $date_string = date('F Y', strtotime($path_parts[4] . ' 1, ' . $path_parts[3]));
-              $title = "Monthly Calendar for " . $date_string;
+              $title = 'Monthly Calendar for ' . $date_string;
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $date_string . '</a>';
             }
             elseif ($count_parts > 5 && $path_parts[2] == 'day') {
               $date_string = date('l, F j, Y', strtotime($path_parts[4] . ' ' . $path_parts[5] . ', ' . $path_parts[3]));
-              $title = "Daily Calendar for " . $date_string;
+              $title = 'Daily Calendar for ' . $date_string;
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $date_string . '</a>';
             }
 
@@ -300,7 +300,7 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'search-0') {
-          $title = "Search Requests";
+          $title = 'Search Requests';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -312,8 +312,8 @@ function mfcs_render_page() {
           unset($cf['page']['breadcrumb'][1]);
         }
         elseif ($path_parts[1] == 'statistics-0') {
-          $title = "Request Statistics";
-          $pre_crumb_title = "Management";
+          $title = 'Request Statistics';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -328,8 +328,8 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'email_log-0') {
-          $title = "E-mail Logs";
-          $pre_crumb_title = "Management";
+          $title = 'E-mail Logs';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -349,8 +349,8 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'synchronize-0') {
-          $title = "Synchronize";
-          $pre_crumb_title = "Management";
+          $title = 'Synchronize';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -412,10 +412,10 @@ function mfcs_render_page() {
             $new_breadcrumb = array();
             $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
 
-            $title = "Management";
+            $title = 'Management';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-            $title = "Holidays " . $year;
+            $title = 'Holidays ' . $year;
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
             if ($type == 0) {
@@ -423,39 +423,39 @@ function mfcs_render_page() {
             }
 
             if ($type == 2) {
-              $title = "View Holiday";
+              $title = 'View Holiday';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
             }
 
             if ($type == 3) {
               if (isset($path_parts[5])) {
-                $title = "Copy Holiday";
+                $title = 'Copy Holiday';
                 $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Copy Holiday " . $path_parts[4] . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Holiday ' . $path_parts[4] . '</div>';
               }
               else {
-                $title = "Create Holiday";
+                $title = 'Create Holiday';
                 $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Create Holiday" . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Holiday</div>';
               }
             }
 
             if ($type == 4) {
-              $title = "Edit Holiday";
+              $title = 'Edit Holiday';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
             }
 
             if ($type == 5) {
-              $title = "Delete Holiday";
+              $title = 'Delete Holiday';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Holiday " . $path_parts[4] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
             }
 
             // original breadcrumb gets overridden to remove extra/invalid url paths.
@@ -463,8 +463,8 @@ function mfcs_render_page() {
           }
         }
         elseif ($path_parts[1] == 'management') {
-          $title = "Management";
-          $pre_crumb_title = "Management";
+          $title = 'Management';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -477,8 +477,8 @@ function mfcs_render_page() {
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
         elseif ($path_parts[1] == 'troubleshoot-0') {
-          $title = "Manage Problems";
-          $pre_crumb_title = "Management";
+          $title = 'Manage Problems';
+          $pre_crumb_title = 'Management';
 
           $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
           $cf['show']['page']['precrumb'] = TRUE;
@@ -488,19 +488,19 @@ function mfcs_render_page() {
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/problems-0' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-          $title = "Troubleshooting Tools";
+          $title = 'Troubleshooting Tools';
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
           if ($count_parts > 2 && $path_parts[2] == 'locations') {
-            $title = "Locations";
+            $title = 'Locations';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
           elseif ($count_parts > 2 && $path_parts[2] == 'buildings') {
-            $title = "Buildings";
+            $title = 'Buildings';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
           elseif ($count_parts > 2 && $path_parts[2] == 'rooms') {
-            $title = "Rooms";
+            $title = 'Rooms';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
 
@@ -575,69 +575,69 @@ function mfcs_render_page() {
             $new_breadcrumb = array();
             $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
 
-            $title = "Management";
+            $title = 'Management';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-            $title = "Room Unavailability";
+            $title = 'Room Unavailability';
             $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
             if ($type == 0) {
-              $pre_crumb_title = "Room Unavailability";
+              $pre_crumb_title = 'Room Unavailability';
               $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
             }
             else {
               if (is_numeric($room_id)) {
-                $title = "Room " . $room_id . ", Year " . $year;
+                $title = 'Room ' . $room_id . ', Year ' . $year;
               }
               elseif ($room_id == 'all') {
-                $title = "All Rooms, Year " . $year;
+                $title = 'All Rooms, Year ' . $year;
               }
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
             }
 
             if ($type == 1) {
               if (is_numeric($room_id)) {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Room " . $room_id . ", Year " . $year . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Room ' . $room_id . ', Year ' . $year . '</div>';
               }
               elseif ($room_id == 'all') {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "All Rooms, Year " . $year . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">All Rooms, Year ' . $year . '</div>';
               }
             }
 
             if ($type == 2) {
-              $title = "View Unavailability";
+              $title = 'View Unavailability';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
             }
 
             if ($type == 3) {
               if (isset($path_parts[5])) {
-                $title = "Copy Unavailability";
+                $title = 'Copy Unavailability';
                 $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Copy Unavailability " . $path_parts[5] . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Unavailability ' . $path_parts[5] . '</div>';
               }
               else {
-                $title = "Create Unavailability";
+                $title = 'Create Unavailability';
                 $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Create Unavailability" . '</div>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Unavailability</div>';
               }
             }
 
             if ($type == 4) {
-              $title = "Edit Unavailability";
+              $title = 'Edit Unavailability';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
             }
 
             if ($type == 5) {
-              $title = "Delete Unavailability";
+              $title = 'Delete Unavailability';
               $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Unavailability " . $path_parts[5] . '</div>';
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
             }
 
             // original breadcrumb gets overridden to remove extra/invalid url paths.
@@ -650,40 +650,40 @@ function mfcs_render_page() {
 
         if ($count_parts > 2) {
           if ($path_parts[1] == 'view-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             if ($count_parts == 3) {
-              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
+              $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
             }
             elseif ($count_parts == 4) {
               if ($path_parts[3] == 'display') {
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Request (Display)">' . "Request (Display)" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Request (Display)">Request (Display)</a>';
               }
               elseif ($path_parts[3] == 'log') {
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Review Log">' . "Review Log" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Review Log">Review Log</a>';
               }
               elseif ($path_parts[3] == 'operations') {
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Review Operations">' . "Review Operations" . '</a>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="Review Operations">Review Operations</a>';
               }
             }
             elseif (cf_is_integer($path_parts[4])) {
               if ($path_parts[3] == 'normal') {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Request Revision">' . "Request Revision" . '</a>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . 'Request ' . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Request Revision">Request Revision</a>';
               }
               elseif ($path_parts[3] == 'display') {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Request Revision (Display)">' . "Request Revision (Display)" . '</a>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . 'Request ' . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Request Revision (Display)">Request Revision (Display)</a>';
               }
               elseif ($path_parts[3] == 'log') {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
-                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Revision Review Log">' . "Revision Review Log" . '</a>';
+                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . 'Request ' . $path_parts[2] . ', Revision ' . $path_parts[4] . '</div>';
+                $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . '/' . $path_parts[4] . $url_arguments . '" title="Revision Review Log">Revision Review Log</a>';
               }
             }
           }
           elseif ($path_parts[1] == 'edit-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
             $new_breadcrumb = array();
@@ -695,25 +695,25 @@ function mfcs_render_page() {
               $edit_region = $path_parts[3];
             }
 
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $edit_region . $url_arguments . '" title="Edit Request">' . "Edit Request" . '</a>';
+            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $edit_region . $url_arguments . '" title="Edit Request">Edit Request</a>';
             unset($edit_region);
 
             $cf['page']['breadcrumb'] = $new_breadcrumb;
             unset($new_breadcrumb);
           }
           elseif ($path_parts[1] == 'history-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="Request History">' . "Request History" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="Request History">Request History</a>';
           }
           elseif ($path_parts[1] == 'agreement-0' && cf_is_integer($path_parts[2])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "Request " . $path_parts[2] . '</div>';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request ' . $path_parts[2] . '</div>';
             $cf['show']['page']['precrumb'] = TRUE;
 
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">' . "View Request" . '</a>';
-            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="Facilities Use Agreement">' . "View Agreement" . '</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/view-0/' . $path_parts[2] . $url_arguments . '" title="View Request">View Request</a>';
+            $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="Facilities Use Agreement">View Agreement</a>';
           }
         }
       }
@@ -722,7 +722,7 @@ function mfcs_render_page() {
       if ($path_parts[0] == 'user' && isset($path_parts[1]) && is_numeric($path_parts[1])) {
         $rebuild_breadcrumb = TRUE;
 
-        $title = "View User";
+        $title = 'View User';
         $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'user/' . $path_parts[1] . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
 
         if (isset($path_parts[2])) {
@@ -733,14 +733,14 @@ function mfcs_render_page() {
       elseif ($path_parts[0] == 'file' && isset($path_parts[1]) && $path_parts[1] == 'add') {
         $rebuild_breadcrumb = TRUE;
 
-        $title = "Add File";
+        $title = 'Add File';
         $cf['page']['breadcrumb'][] = '<a href="' . $base_path . 'file/add' . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
 
         if (isset($path_parts[2]) && $path_parts[2] == 'upload' && isset($path_parts[3]) && $path_parts[3] == 'archive') {
           $new_breadcrumb = array();
           $new_breadcrumb[] = $cf['page']['breadcrumb'][0];
 
-          $title = "Add Archive File";
+          $title = 'Add Archive File';
           $new_breadcrumb[] = '<a href="' . $base_path . 'file/add/upload/archive' . $url_arguments . '" title="' . $title  .'">' . $title . '</a>';
 
           $cf['page']['breadcrumb'] = $new_breadcrumb;
@@ -785,8 +785,8 @@ function mfcs_render_page() {
         $rebuild_breadcrumb = TRUE;
       }
       elseif ($path_parts[0] == 'users-0') {
-        $pre_crumb_title = "Users";
-        $title = "Management";
+        $pre_crumb_title = 'Users';
+        $title = 'Management';
 
         $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
         $cf['show']['page']['precrumb'] = TRUE;
@@ -800,25 +800,25 @@ function mfcs_render_page() {
 
         if ($count_parts == 2) {
           if ($path_parts[1] == 'add') {
-            $title = "Add User";
+            $title = 'Add User';
             $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
             $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/add' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
           }
         }
         elseif ($count_parts > 2 && cf_is_integer($path_parts[2])) {
-          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "User " . $path_parts[2] . '</div>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">User ' . $path_parts[2] . '</div>';
 
           if ($path_parts[1] == 'view') {
-            $title = "View User";
+            $title = 'View User';
           }
           elseif ($path_parts[1] == 'edit') {
-            $title = "View User";
+            $title = 'View User';
             $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/view/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
 
-            $title = "Edit User";
+            $title = 'Edit User';
           }
           elseif ($path_parts[1] == 'delete') {
-            $title = "Delete User";
+            $title = 'Delete User';
           }
 
           $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
@@ -952,7 +952,7 @@ function mcneese_fcs_breadcrumb($vars) {
     $extra_class = ' display_home_text';
   }
 
-  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home' . $extra_class . '" title="Facilities Use System Dashboard">' . "Facilities Use System Dashboard" . '</a>';
+  $breadcrumb[0] = '<a href="' . base_path() . 'requests' . $url_arguments . '" class="link-home' . $extra_class . '" title="Facilities Use System Dashboard">Facilities Use System Dashboard</a>';
 
   $count = 0;
   $total = count($breadcrumb);
