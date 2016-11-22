@@ -644,49 +644,6 @@ function mfcs_render_page() {
             $cf['page']['breadcrumb'] = $new_breadcrumb;
           }
         }
-        elseif ($path_parts[1] == 'users-0') {
-          $pre_crumb_title = "Users";
-          $title = "Management";
-
-          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
-          $cf['show']['page']['precrumb'] = TRUE;
-
-          $new_breadcrumb = array();
-          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          $title = $pre_crumb_title;
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          if ($count_parts == 3) {
-            if ($path_parts[2] == 'add') {
-              $title = "Add User";
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-            }
-          }
-          elseif ($count_parts > 3 && cf_is_integer($path_parts[3])) {
-            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "User " . $path_parts[3] . '</div>';
-
-            if ($path_parts[2] == 'view') {
-              $title = "View User";
-            }
-            elseif ($path_parts[2] == 'edit') {
-              $title = "View User";
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/view/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $title = "Edit User";
-            }
-            elseif ($path_parts[2] == 'delete') {
-              $title = "Delete User";
-            }
-
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-
-          // original breadcrumb gets overridden to remove extra/invalid url paths.
-          $cf['page']['breadcrumb'] = $new_breadcrumb;
-        }
         else {
           unset($cf['page']['breadcrumb'][1]);
         }
@@ -825,6 +782,50 @@ function mfcs_render_page() {
         $cf['page']['breadcrumb'] = $new_breadcrumb;
         unset($new_breadcrumb);
 
+        $rebuild_breadcrumb = TRUE;
+      }
+      elseif ($path_parts[0] == 'users-0') {
+        $pre_crumb_title = "Users";
+        $title = "Management";
+
+        $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
+        $cf['show']['page']['precrumb'] = TRUE;
+
+        $new_breadcrumb = array();
+        $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+        $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+        $title = $pre_crumb_title;
+        $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/list' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+        if ($count_parts == 2) {
+          if ($path_parts[1] == 'add') {
+            $title = "Add User";
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+            $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/add' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+        }
+        elseif ($count_parts > 2 && cf_is_integer($path_parts[2])) {
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . "User " . $path_parts[2] . '</div>';
+
+          if ($path_parts[1] == 'view') {
+            $title = "View User";
+          }
+          elseif ($path_parts[1] == 'edit') {
+            $title = "View User";
+            $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/view/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $title = "Edit User";
+          }
+          elseif ($path_parts[1] == 'delete') {
+            $title = "Delete User";
+          }
+
+          $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+        }
+
+        // original breadcrumb gets overridden to remove extra/invalid url paths.
+        $cf['page']['breadcrumb'] = $new_breadcrumb;
         $rebuild_breadcrumb = TRUE;
       }
     }
@@ -1019,7 +1020,7 @@ function mfcs_preprocess_toolbar(&$vars) {
     $tree = array_merge($custom_tree, $tree);
 
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/users-0/list'),
+      'conditions' => array('ml.link_path' => 'users-0/list'),
       'min_depth' => 2,
       'max_depth' => 2,
     ));
@@ -1105,7 +1106,7 @@ function mfcs_preprocess_toolbar(&$vars) {
       if (empty($link['href'])) continue;
       if ($link['href'] == 'user/logout') continue;
 
-      $vars['toolbar']['toolbar_user']['#links'][$key]['href'] = 'requests/users-0/view/' . $user->uid . $url_arguments;
+      $vars['toolbar']['toolbar_user']['#links'][$key]['href'] = 'users-0/view/' . $user->uid . $url_arguments;
     }
   }
 
