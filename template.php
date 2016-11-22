@@ -1021,8 +1021,8 @@ function mfcs_preprocess_toolbar(&$vars) {
 
     $custom_tree = menu_build_tree('navigation', array(
       'conditions' => array('ml.link_path' => 'users-0/list'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
 
