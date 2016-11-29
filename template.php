@@ -818,7 +818,16 @@ function mfcs_render_page() {
             $title = 'Edit User';
           }
           elseif ($path_parts[1] == 'delete') {
+            $title = 'View User';
+            $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/view/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
             $title = 'Delete User';
+          }
+          elseif ($path_parts[1] == 'customize') {
+            $title = 'View User';
+            $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/view/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $title = 'Customize User';
           }
 
           $new_breadcrumb[] = '<a href="' . $base_path . 'users-0/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
