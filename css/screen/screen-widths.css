@@ -980,6 +980,8 @@
     width: 95%;
     min-width: 314px;
     max-width: 620px;
+
+    padding-right: 4px;
   }
 
   #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
@@ -987,9 +989,12 @@
   #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_number,
   #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
   #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
-  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number {
-    font-size: 12px;
-    line-height: 14px;
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_number,
+  #mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity,
+  #mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity,
+  #mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .room_notes > .room_capacity {
+    font-size: 11px;
+    line-height: 13px;
   }
 
   /*** User Create/Edit Form Adjustments ***/
