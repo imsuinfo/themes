@@ -923,6 +923,425 @@
 }
 
 
+/*** Calendar - Month - Full Calendar ***/
+#mfcs-calendar-0-month.calendar-month-fullcalendar {
+  border: 0px;
+  margin: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar table {
+  background-color: initial;
+  border: 0px none;
+  margin: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > th {
+  font-weight: bold;
+  text-transform: initial;
+
+  color: initial;
+  background-color: initial;
+
+  border: initial;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a:visited {
+  color: #0c5a9c;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a:active,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a:hover,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a:focus {
+  color: #000000;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > th,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > td,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > tbody > tr > th,
+#mfcs-calendar-0-month.calendar-month-fullcalendar table > tbody > tr > td {
+  border-color: #dddddd;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar th,
+#mfcs-calendar-0-month.calendar-month-fullcalendar td {
+  vertical-align: top;
+
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar td.fc-day-top > .fc-day-number {
+  max-height: 1.2em;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar td.fc-today {
+  border-style: double;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-limited {
+  display: none;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-row {
+  border-style: solid;
+  border-width: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-row table {
+  border-left: 0 hidden transparent;
+  border-right: 0 hidden transparent;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-row:first-child table {
+  border-top: 0 hidden transparent;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller {
+  height: auto !important;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton > table > tbody > tr > td {
+  vertical-align: top;
+
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton {
+  padding-bottom: 0px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container {
+  padding-bottom: 8px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton tr:last-of-type > .fc-event-container:last-of-type {
+  padding-bottom: 2px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-more-popover .fc-event-container > .fc-day-grid-event {
+  margin-bottom: 8px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-more-popover tr:last-of-type > .fc-event-container:last-of-type > .fc-day-grid-event {
+  margin-bottom: 2px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > a.calendar-item,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > a.calendar-item:visited {
+  color: #000000;
+
+  text-decoration: none;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > a.calendar-item.calendar-event > .fc-content > .fc-title,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > a.calendar-item.calendar-event:visited > .fc-content > .fc-title {
+  text-decoration: underline;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-widget-content > .fc-day-grid-container > .fc-day-grid > .fc-row > .fc-bg > table > tbody > tr > .fc-day {
+  border: 0px none;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-time,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-marker {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title > a:focus,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title > a:active,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title > a:hover {
+  color: #00477f;
+}
+
+/** Item: Holiday **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-holiday {
+  background-color: #ffffa3;
+  border-color: #b1b13e;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-holiday > .fc-content > .fc-time {
+  color: #000000;
+  background-color: #e7e793;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker {
+  color: #000000;
+  background-color: #ffffa3;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker >  .fc-event-dot {
+  background-color: #b1b13e;
+}
+
+/** Item Type: Athletic **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-1 {
+  background-color: #f9c7c7;
+  border-color: #803333;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-1 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #803333;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-1> .fc-list-item-marker {
+  color: #000000;
+  background-color: #f9c7c7;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-1> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #803333;
+}
+
+/** Item Type: Banquet **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-2 {
+  background-color: #cdcd81;
+  border-color: #4d4d1f;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-2 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #4d4d1f;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-2> .fc-list-item-marker {
+  color: #000000;
+  background-color: #cdcd81;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-2> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #4d4d1f;
+}
+
+/** Item Type: Ceremony **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-3 {
+  background-color: #aedeae;
+  border-color: #265726;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-3 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #265726;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-3> .fc-list-item-marker {
+  color: #000000;
+  background-color: #aedeae;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-3> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #265726;
+}
+
+/** Item Type: Fair **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-4 {
+  background-color: #deacde;
+  border-color: #7c1e7c;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-4 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #7c1e7c;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-4> .fc-list-item-marker {
+  color: #000000;
+  background-color: #deacde;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-4> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #7c1e7c;
+}
+
+/** Item Type: Lecture **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-5 {
+  background-color: #ecc3ae;
+  border-color: #753c21;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-5 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #753c21;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-5> .fc-list-item-marker {
+  color: #000000;
+  background-color: #ecc3ae;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-5> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #753c21;
+}
+
+/** Item Type: Meeting **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-6 {
+  background-color: #add3e3;
+  border-color: #164659;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-6 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #164659;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-6> .fc-list-item-marker {
+  color: #000000;
+  background-color: #add3e3;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-6> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #164659;
+}
+
+/** Item Type: Other **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-7 {
+  background-color: #9ed0d0;
+  border-color: #155454;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-7 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #155454;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-7> .fc-list-item-marker {
+  color: #000000;
+  background-color: #9ed0d0;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-7> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #155454;
+}
+
+/** Item Type: Performance **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-8 {
+  background-color: #c8c8e3;
+  border-color: #33337d;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-8 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #33337d;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-8> .fc-list-item-marker {
+  color: #000000;
+  background-color: #c8c8e3;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-8> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #33337d;
+}
+
+/** Item Type: Quick Meeting **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-9 {
+  background-color: #cddeae;
+  border-color: #404f23;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-9 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #404f23;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-9> .fc-list-item-marker {
+  color: #000000;
+  background-color: #cddeae;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-9> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #404f23;
+}
+
+/** Item Type: Reception **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-10 {
+  background-color: #f1b157;
+  border-color: #5e3700;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-10 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #5e3700;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-10> .fc-list-item-marker {
+  color: #000000;
+  background-color: #f1b157;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-10> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #5e3700;
+}
+
+/** Item Type: Talent **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-11 {
+  background-color: #ee8fab;
+  border-color: #830a2c;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-11 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #830a2c;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-11> .fc-list-item-marker {
+  color: #000000;
+  background-color: #ee8fab;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-11> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #830a2c;
+}
+
+/** Item Type: Workshop **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-12 {
+  background-color: #a2b9df;
+  border-color: #22488a;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-12 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #22488a;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-12> .fc-list-item-marker {
+  color: #000000;
+  background-color: #a2b9df;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-12> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #22488a;
+}
+
+/** Item Type: Club Meeting **/
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-item.type-13 {
+  background-color: #add3e3;
+  border-color: #164659;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-item.type-13 > .fc-content > .fc-time {
+  color: #ffee05;
+  background-color: #164659;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-13> .fc-list-item-marker {
+  color: #000000;
+  background-color: #ffee05;
+}
+
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.type-13> .fc-list-item-marker >  .fc-event-dot {
+  background-color: #164659;
+}
+
 
 /*** Datatable ***/
 .mcneese .dataTables_wrapper > .dataTable > tbody > tr > th,
