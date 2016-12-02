@@ -948,6 +948,10 @@
   border: initial;
 }
 
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-day.fc-today {
+  background-color: inherit;
+}
+
 #mfcs-calendar-0-day.calendar-day-fullcalendar table > thead > tr > .fc-day-header > a,
 #mfcs-calendar-0-day.calendar-day-fullcalendar table > thead > tr > .fc-day-header > a:visited,
 #mfcs-calendar-0-month.calendar-month-fullcalendar table > thead > tr > .fc-day-header > a,
