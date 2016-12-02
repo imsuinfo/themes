@@ -908,6 +908,10 @@
   background-color: #fff8ea;
 }
 
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable.slot-none {
+  border-width: 2px;
+}
+
 #mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable.slot-start {
   border-top-style: dotted;
 }
@@ -920,6 +924,10 @@
   border-bottom-style: dotted;
 
   background-color: #ffdcab;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.type-unavailable > .calendar-item > .calendar-item-description-wrapper {
+  overflow: hidden;
 }
 
 

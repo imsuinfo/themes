@@ -114,6 +114,7 @@
 
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-footer,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-footer {
   position: relative;
 
@@ -122,10 +123,13 @@
   margin-top: 10px;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type {
   float: right;
+
+  padding-left: 3px;
 }
 
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-holiday,
