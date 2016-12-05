@@ -99,12 +99,12 @@
 }
 
 /*** Calendar - Month/Day - Tooltips ***/
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-building > .tooltip-item-name,
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-room > .tooltip-item-name,
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-room > .tooltip-item-name,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-room > .tooltip-item-name {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-building > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-room > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-room > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-room > .tooltip-item-name {
   display: inline-block;
 
   font-weight: bold;
@@ -112,10 +112,10 @@
   min-width: 52px;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer,
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-footer,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-footer {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-footer,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-footer {
   position: relative;
 
   font-weight: bold;
@@ -123,10 +123,10 @@
   margin-top: 10px;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type {
   float: right;
 
   padding-left: 3px;
@@ -145,185 +145,185 @@
   background-color: #e7e793;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable {
   color: #000000;
   background-color: #fff8ea;
   border-color: #ffdcab;
   border-style: dotted;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-unavailable > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-unavailable > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-titlebar {
   color: #000000;
   background-color: #ffdcab;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-1,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-1 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-1,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-1 {
   color: #000000;
   background-color: #f9c7c7;
   border-color: #803333;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-1 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-1 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-1 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-1 > .qtip-titlebar {
   color: #ffee05;
   background-color: #803333;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-2,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-2 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-2,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-2 {
   color: #000000;
   background-color: #cdcd81;
   border-color: #4d4d1f;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-2 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-2 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-2 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-2 > .qtip-titlebar {
   color: #ffee05;
   background-color: #4d4d1f;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-3,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-3 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-3,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-3 {
   color: #000000;
   background-color: #aedeae;
   border-color: #265726;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-3 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-3 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-3 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-3 > .qtip-titlebar {
   color: #ffee05;
   background-color: #265726;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-4,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-4 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-4,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-4 {
   color: #000000;
   background-color: #deacde;
   border-color: #7c1e7c;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-4 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-4 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-4 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-4 > .qtip-titlebar {
   color: #ffee05;
   background-color: #7c1e7c;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-5,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-5 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-5,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-5 {
   color: #000000;
   background-color: #ecc3ae;
   border-color: #753c21;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-5 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-5 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-5 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-5 > .qtip-titlebar {
   color: #ffee05;
   background-color: #753c21;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-6,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-6 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-6,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-6 {
   color: #000000;
   background-color: #add3e3;
   border-color: #164659;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-6 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-6 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-6 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-6 > .qtip-titlebar {
   color: #ffee05;
   background-color: #164659;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-7,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-7 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-7,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-7 {
   color: #000000;
   background-color: #9ed0d0;
   border-color: #155454;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-7 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-7 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-7 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-7 > .qtip-titlebar {
   color: #ffee05;
   background-color: #155454;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-8,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-8 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-8,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-8 {
   color: #000000;
   background-color: #c8c8e3;
   border-color: #33337d;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-8 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-8 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-8 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-8 > .qtip-titlebar {
   color: #ffee05;
   background-color: #33337d;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-9,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-9 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-9,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-9 {
   color: #000000;
   background-color: #cddeae;
   border-color: #404f23;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-9 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-9 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-9 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-9 > .qtip-titlebar {
   color: #ffee05;
   background-color: #404f23;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-10,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-10 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-10,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-10 {
   color: #000000;
   background-color: #f1b157;
   border-color: #5e3700;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-10 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-10 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-10 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-10 > .qtip-titlebar {
   color: #ffee05;
   background-color: #5e3700;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-11,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-11 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-11,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-11 {
   color: #000000;
   background-color: #ee8fab;
   border-color: #830a2c;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-11 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-11 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-11 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-11 > .qtip-titlebar {
   color: #ffee05;
   background-color: #830a2c;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-12,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-12 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-12,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-12 {
   color: #000000;
   background-color: #a2b9df;
   border-color: #22488a;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-12 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-12 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-12 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-12 > .qtip-titlebar {
   color: #ffee05;
   background-color: #22488a;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-13,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-13 {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-13,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-13 {
   color: #000000;
   background-color: #add3e3;
   border-color: #164659;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-event.tooltip-type-13 > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-event.tooltip-type-13 > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event.tooltip-type-13 > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event.tooltip-type-13 > .qtip-titlebar {
   color: #ffee05;
   background-color: #164659;
 }
