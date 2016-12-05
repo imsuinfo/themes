@@ -716,7 +716,12 @@
   display: inline-block;
   vertical-align: top;
 
-  min-width: 80px;
+  min-width: 90px;
+}
+
+#mfcs-request-users-view-page > .view_user-group-customization > .view_user-item > .item-label,
+#mfcs-request-users-view-page > .view_user-group-customization > .view_user-item > .item-value {
+  min-width: 114px;
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-email > .item-value,
