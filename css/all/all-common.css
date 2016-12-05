@@ -1114,26 +1114,26 @@
 }
 
 /** Item: Holiday **/
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-holiday,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .calendar-holiday {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .is-holiday,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-event-container > .is-holiday {
   background-color: #ffffa3;
   border-color: #b1b13e;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-holiday > .fc-content > .fc-time,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.calendar-holiday > .fc-content > .fc-time {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.is-holiday > .fc-content > .fc-time,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-view .fc-content-skeleton .fc-event-container > .fc-time-grid-event.is-holiday > .fc-content > .fc-time {
   color: #000000;
   background-color: #e7e793;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.is-holiday > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.is-holiday > .fc-list-item-marker {
   color: #000000;
   background-color: #ffffa3;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-holiday > .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.is-holiday > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.is-holiday > .fc-list-item-marker > .fc-event-dot {
   background-color: #b1b13e;
 }
 

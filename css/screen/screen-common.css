@@ -132,15 +132,15 @@
   padding-left: 3px;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-holiday,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-holiday {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-holiday,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-holiday {
   color: #000000;
   background-color: #ffffa3;
   border-color: #b1b13e;
 }
 
-.mcneese > .qtip.tooltip-calendar-daily.tooltip-calendar-holiday > .qtip-titlebar,
-.mcneese > .qtip.tooltip-calendar-monthly.tooltip-calendar-holiday > .qtip-titlebar {
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-holiday > .qtip-titlebar,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-holiday > .qtip-titlebar {
   color: #000000;
   background-color: #e7e793;
 }
