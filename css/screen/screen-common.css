@@ -103,6 +103,8 @@
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-room > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-room > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-building > .tooltip-item-name,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-room > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-room > .tooltip-item-name {
   display: inline-block;
