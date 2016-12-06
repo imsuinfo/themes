@@ -1255,3 +1255,43 @@
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
+
+
+
+/*** User Customize ***/
+#mfcs-request-users-0-customize-form #edit-form-settings-calendar-filter-by-classification-wrapper-filter-by-classification > .form-item {
+  display: inline-block;
+  vertical-align: top;
+
+  padding-right: 10px;
+
+  margin: 6px 0px;
+}
+
+#mfcs-request-users-0-customize-form #edit-form-settings-calendar-filter-by-classification-wrapper-filter-by-classification > .form-item:last-of-type {
+  padding-right: 0px;
+}
+
+#mfcs-request-users-0-customize-form #edit-form-settings-calendar-filter-by-type-wrapper-filter-by-type > .form-item {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 200px;
+  max-width: 200px;
+
+  word-wrap: break-word;
+
+  margin: 6px 0px;
+}
+
+#mfcs-request-users-0-customize-form #edit-form-settings-calendar-filter-by-building-wrapper-filter-by-building > .form-item {
+  display: inline-block;
+  vertical-align: top;
+
+  min-width: 250px;
+  max-width: 250px;
+
+  word-wrap: break-word;
+
+  margin: 6px 0px;
+}
