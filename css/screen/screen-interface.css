@@ -758,6 +758,61 @@
 
 
 
+/*** Tooltip: Request Item - Room ***/
+#mcneese-body > .request_item-tooltip-room {
+  min-width: 280px;
+  max-width: 310px;
+
+  color: #000000;
+  background-color: #f4f4f4;
+  border-color: #afafaf;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-titlebar {
+  color: #000000;
+  background-color: #d0d0d0;
+  border-color: #afafaf;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .building_desc {
+  font-weight: bold;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_image,
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_image-link > .room_image {
+  display: inline-block;
+  vertical-align: top;
+
+  float: right;
+
+  border: 1px solid #606060;
+  margin-left: 3px;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_notes {
+  position: relative;
+
+  float: right;
+
+  margin-left: 1em;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_number {
+  clear: both;
+  float: right;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_capacity {
+  clear: both;
+  float: right;
+}
+
+#mcneese-body > .request_item-tooltip-room > .qtip-content > .room_description-data {
+  display: block;
+}
+
+
+
 /*** Datatables @media Replacements ***/
 @media screen and (max-width: 640px) {
   .dataTables_wrapper .dataTables_length {
