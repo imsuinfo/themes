@@ -73,9 +73,9 @@
   vertical-align: middle;
 }
 
-#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
-#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc,
-#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_desc {
+#mfcs-request-manage-0-move-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_name,
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_name,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label > .building_name {
   font-weight: bold;
 }
 
