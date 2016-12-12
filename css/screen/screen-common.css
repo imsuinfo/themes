@@ -114,8 +114,10 @@
   min-width: 52px;
 }
 
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-holiday > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-footer,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-holiday > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-footer {
   position: relative;
@@ -125,8 +127,10 @@
   margin-top: 10px;
 }
 
+.mcneese > .qtip.tooltip-calendar-daily.tooltip-is-holiday > .qtip-content > .tooltip-item-footer > .tooltip-item-holiday_type,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type,
+.mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-holiday > .qtip-content > .tooltip-item-footer > .tooltip-item-holiday_type,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-unavailable > .qtip-content > .tooltip-item-footer > .tooltip-item-unavailability_type,
 .mcneese > .qtip.tooltip-calendar-monthly.tooltip-is-event > .qtip-content > .tooltip-item-footer > .tooltip-item-request_type {
   float: right;
