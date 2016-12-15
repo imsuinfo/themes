@@ -409,143 +409,6 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
-        elseif ($path_parts[1] == 'unavailable-0') {
-          $year = NULL;
-          $type = 0;
-          $room_id = NULL;
-          if ($count_parts == 2) {
-            $year = date('Y');
-          }
-          elseif ($count_parts > 2) {
-            if ($count_parts < 5) {
-              $type = 1;
-
-              if ($count_parts == 4) {
-                $year = (int) $path_parts[2];
-                $room_id = (int) $path_parts[3];
-
-                if ($path_parts[3] == 'all') {
-                  $room_id = 'all';
-                }
-              }
-              else {
-                $year = date('Y');
-                $room_id = (int) $path_parts[2];
-
-                if ($path_parts[2] == 'all') {
-                  $room_id = 'all';
-                }
-              }
-            }
-            elseif ($count_parts > 4) {
-              $room_id = (int) $path_parts[4];
-
-              if ($path_parts[2] == 'view') {
-                if ($count_parts == 6) {
-                  $type = 2;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'create') {
-                if ($count_parts == 5) {
-                  $type = 3;
-                  $year = (int) $path_parts[3];
-                }
-                elseif ($count_parts == 6) {
-                  $type = 3;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'edit') {
-                if ($count_parts == 6) {
-                  $type = 4;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'delete') {
-                if ($count_parts == 6) {
-                  $type = 5;
-                  $year = (int) $path_parts[3];
-                }
-              }
-            }
-          }
-
-          if (!is_null($year)) {
-            $cf['show']['page']['precrumb'] = TRUE;
-
-            $new_breadcrumb = array();
-            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-
-            $title = 'Management';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-            $title = 'Room Unavailability';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-            if ($type == 0) {
-              $pre_crumb_title = 'Room Unavailability';
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
-            }
-            else {
-              if (is_numeric($room_id)) {
-                $title = 'Room ' . $room_id . ', Year ' . $year;
-              }
-              elseif ($room_id == 'all') {
-                $title = 'All Rooms, Year ' . $year;
-              }
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-            }
-
-            if ($type == 1) {
-              if (is_numeric($room_id)) {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Room ' . $room_id . ', Year ' . $year . '</div>';
-              }
-              elseif ($room_id == 'all') {
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">All Rooms, Year ' . $year . '</div>';
-              }
-            }
-
-            if ($type == 2) {
-              $title = 'View Unavailability';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
-            }
-
-            if ($type == 3) {
-              if (isset($path_parts[5])) {
-                $title = 'Copy Unavailability';
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Unavailability ' . $path_parts[5] . '</div>';
-              }
-              else {
-                $title = 'Create Unavailability';
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Unavailability</div>';
-              }
-            }
-
-            if ($type == 4) {
-              $title = 'Edit Unavailability';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
-            }
-
-            if ($type == 5) {
-              $title = 'Delete Unavailability';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year . '/' . $room_id . '/' . $path_parts[5] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[5] . '</div>';
-            }
-
-            // original breadcrumb gets overridden to remove extra/invalid url paths.
-            $cf['page']['breadcrumb'] = $new_breadcrumb;
-          }
-        }
         else {
           unset($cf['page']['breadcrumb'][1]);
         }
@@ -851,6 +714,157 @@ function mfcs_render_page() {
           $rebuild_breadcrumb = TRUE;
         }
       }
+      elseif ($path_parts[0] == 'unavailable-0') {
+        $year = NULL;
+        $type = 0;
+        $room_id = NULL;
+        if ($count_parts == 1) {
+          $year = date('Y');
+        }
+        elseif ($count_parts > 1) {
+          if ($count_parts < 4) {
+            $type = 1;
+
+            if ($count_parts == 3) {
+              $year = (int) $path_parts[1];
+              $room_id = (int) $path_parts[2];
+
+              if ($path_parts[2] == 'all') {
+                $room_id = 'all';
+              }
+            }
+            else {
+              $year = date('Y');
+              $room_id = (int) $path_parts[1];
+
+              if ($path_parts[1] == 'all') {
+                $room_id = 'all';
+              }
+            }
+          }
+          elseif ($count_parts > 3) {
+            $room_id = (int) $path_parts[3];
+
+            if ($path_parts[1] == 'view') {
+              if ($count_parts == 5) {
+                $type = 2;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'create') {
+              if ($count_parts == 4) {
+                $type = 3;
+                $year = (int) $path_parts[2];
+              }
+              elseif ($count_parts == 5) {
+                $type = 3;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'edit') {
+              if ($count_parts == 5) {
+                $type = 4;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'delete') {
+              if ($count_parts == 5) {
+                $type = 5;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'copy') {
+              if ($count_parts == 4) {
+                $type = 6;
+                $year = (int) $path_parts[2];
+              }
+            }
+          }
+        }
+
+        if (!is_null($year)) {
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+
+          $title = 'Management';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $title = 'Room Unavailability';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($type == 0) {
+            $pre_crumb_title = 'Room Unavailability';
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $pre_crumb_title . '</div>';
+          }
+          else {
+            if (is_numeric($room_id)) {
+              $title = 'Room ' . $room_id . ', Year ' . $year;
+            }
+            elseif ($room_id == 'all') {
+              $title = 'All Rooms, Year ' . $year;
+            }
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          }
+
+          if ($type == 1) {
+            if (is_numeric($room_id)) {
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Room ' . $room_id . ', Year ' . $year . '</div>';
+            }
+            elseif ($room_id == 'all') {
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">All Rooms, Year ' . $year . '</div>';
+            }
+          }
+
+          if ($type == 2) {
+            $title = 'View Unavailability';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/view/' . $year . '/' . $room_id . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[4] . '</div>';
+          }
+
+          if ($type == 3) {
+            if (isset($path_parts[5])) {
+              $title = 'Copy Unavailability';
+              $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/create/' . $year . '/' . $room_id . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Unavailability ' . $path_parts[4] . '</div>';
+            }
+            else {
+              $title = 'Create Unavailability';
+              $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/create/' . $year . '/' . $room_id . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Unavailability</div>';
+            }
+          }
+
+          if ($type == 4) {
+            $title = 'Edit Unavailability';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/edit/' . $year . '/' . $room_id . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[4] . '</div>';
+          }
+
+          if ($type == 5) {
+            $title = 'Delete Unavailability';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/delete/' . $year . '/' . $room_id . '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Unavailability ' . $path_parts[4] . '</div>';
+          }
+
+          if ($type == 6) {
+            $title = 'Copy Unavailabilities';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/copy/' . $year . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Room ' . $room_id . ', Year ' . $year . '</div>';
+          }
+
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+          $rebuild_breadcrumb = TRUE;
+        }
+      }
     }
   }
 
@@ -1029,9 +1043,9 @@ function mfcs_preprocess_toolbar(&$vars) {
     $tree = array_merge($custom_tree, $tree);
 
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/unavailable-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'conditions' => array('ml.link_path' => 'unavailable-0'),
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
 
@@ -1068,9 +1082,9 @@ function mfcs_preprocess_toolbar(&$vars) {
   }
   elseif ($is_requester) {
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/unavailable-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'conditions' => array('ml.link_path' => 'unavailable-0'),
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
 
