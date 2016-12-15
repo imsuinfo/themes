@@ -364,104 +364,6 @@ function mfcs_render_page() {
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
         }
-        elseif ($path_parts[1] == 'holiday-0') {
-          $year = NULL;
-          $type = 0;
-          if ($count_parts == 2) {
-            $year = date('Y');
-          }
-          elseif ($count_parts > 2) {
-            if ($count_parts == 3) {
-              $year = (int) $path_parts[2];
-            }
-            else {
-              if ($path_parts[2] == 'view') {
-                if ($count_parts == 5) {
-                  $type = 2;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'create') {
-                if ($count_parts == 4) {
-                  $type = 3;
-                  $year = (int) $path_parts[3];
-                }
-                elseif ($count_parts == 5) {
-                  $type = 3;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'edit') {
-                if ($count_parts == 5) {
-                  $type = 4;
-                  $year = (int) $path_parts[3];
-                }
-              }
-              elseif ($path_parts[2] == 'delete') {
-                if ($count_parts == 5) {
-                  $type = 5;
-                  $year = (int) $path_parts[3];
-                }
-              }
-            }
-          }
-
-          if (!is_null($year)) {
-            $cf['show']['page']['precrumb'] = TRUE;
-
-            $new_breadcrumb = array();
-            $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-
-            $title = 'Management';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-            $title = 'Holidays ' . $year;
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-            if ($type == 0) {
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-            }
-
-            if ($type == 2) {
-              $title = 'View Holiday';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/view/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
-            }
-
-            if ($type == 3) {
-              if (isset($path_parts[5])) {
-                $title = 'Copy Holiday';
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Holiday ' . $path_parts[4] . '</div>';
-              }
-              else {
-                $title = 'Create Holiday';
-                $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/create/' . $year. $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-                $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Holiday</div>';
-              }
-            }
-
-            if ($type == 4) {
-              $title = 'Edit Holiday';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/edit/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
-            }
-
-            if ($type == 5) {
-              $title = 'Delete Holiday';
-              $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1]  . '/delete/' . $year. '/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[4] . '</div>';
-            }
-
-            // original breadcrumb gets overridden to remove extra/invalid url paths.
-            $cf['page']['breadcrumb'] = $new_breadcrumb;
-          }
-        }
         elseif ($path_parts[1] == 'management') {
           $title = 'Management';
           $pre_crumb_title = 'Management';
@@ -837,6 +739,118 @@ function mfcs_render_page() {
         $cf['page']['breadcrumb'] = $new_breadcrumb;
         $rebuild_breadcrumb = TRUE;
       }
+      elseif ($path_parts[0] == 'holiday-0') {
+        $year = NULL;
+        $type = 0;
+        if ($count_parts == 1) {
+          $year = date('Y');
+        }
+        elseif ($count_parts > 1) {
+          if ($count_parts == 2) {
+            $year = (int) $path_parts[1];
+          }
+          else {
+            if ($path_parts[1] == 'view') {
+              if ($count_parts == 4) {
+                $type = 2;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'create') {
+              if ($count_parts == 3) {
+                $type = 3;
+                $year = (int) $path_parts[2];
+              }
+              elseif ($count_parts == 4) {
+                $type = 3;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'edit') {
+              if ($count_parts == 4) {
+                $type = 4;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'delete') {
+              if ($count_parts == 4) {
+                $type = 5;
+                $year = (int) $path_parts[2];
+              }
+            }
+            elseif ($path_parts[1] == 'copy') {
+              if ($count_parts == 3) {
+                $type = 6;
+                $year = (int) $path_parts[2];
+              }
+            }
+          }
+        }
+
+        if (!is_null($year)) {
+          $cf['show']['page']['precrumb'] = TRUE;
+
+          $new_breadcrumb = array();
+          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+
+          $title = 'Management';
+          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $title = 'Holidays ' . $year;
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          if ($type == 0) {
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+          }
+
+          if ($type == 2) {
+            $title = 'View Holiday';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/view/' . $year. '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[3] . '</div>';
+          }
+
+          if ($type == 3) {
+            if (isset($path_parts[3])) {
+              $title = 'Copy Holiday';
+              $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/create/' . $year. '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Copy Holiday ' . $path_parts[3] . '</div>';
+            }
+            else {
+              $title = 'Create Holiday';
+              $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/create/' . $year. $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+              $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Create Holiday</div>';
+            }
+          }
+
+          if ($type == 4) {
+            $title = 'Edit Holiday';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/edit/' . $year. '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[3] . '</div>';
+          }
+
+          if ($type == 5) {
+            $title = 'Delete Holiday';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/delete/' . $year. '/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holiday ' . $path_parts[3] . '</div>';
+          }
+
+          if ($type == 6) {
+            $title = 'Copy Holidays';
+            $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0]  . '/copy/' . $year . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+            $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Holidays ' . $year . '</div>';
+          }
+
+          // original breadcrumb gets overridden to remove extra/invalid url paths.
+          $cf['page']['breadcrumb'] = $new_breadcrumb;
+          $rebuild_breadcrumb = TRUE;
+        }
+      }
     }
   }
 
@@ -1022,9 +1036,9 @@ function mfcs_preprocess_toolbar(&$vars) {
     $tree = array_merge($custom_tree, $tree);
 
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/holiday-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'conditions' => array('ml.link_path' => 'holiday-0'),
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
 
@@ -1061,9 +1075,9 @@ function mfcs_preprocess_toolbar(&$vars) {
     $tree = array_merge($custom_tree, $tree);
 
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/holiday-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'conditions' => array('ml.link_path' => 'holiday-0'),
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
   }
