@@ -213,39 +213,6 @@ function mfcs_render_page() {
             unset($cf['page']['breadcrumb'][1]);
           }
         }
-        elseif ($path_parts[1] == 'problems-0') {
-          $title = 'Manage Problems';
-          $pre_crumb_title = 'Management';
-
-          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-          $cf['show']['page']['precrumb'] = TRUE;
-
-          $new_breadcrumb = array();
-          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          if ($count_parts > 2 && $path_parts[2] == 'users') {
-            $title = 'User Problems';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-          elseif ($count_parts > 2 && $path_parts[2] == 'requests') {
-            $title = 'Request Problems';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-
-          if ($count_parts > 4 && $path_parts[3] == 'user') {
-            $title = 'User Problem';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/user/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-          elseif ($count_parts > 4 && $path_parts[3] == 'request') {
-            $title = 'Request Problem';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . '/request/' . $path_parts[4] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-
-          // original breadcrumb gets overridden to remove extra/invalid url paths.
-          $cf['page']['breadcrumb'] = $new_breadcrumb;
-        }
         elseif ($path_parts[1] == 'proxy-0') {
           $title = 'Manage Proxies';
           $pre_crumb_title = 'Management';
@@ -374,37 +341,6 @@ function mfcs_render_page() {
           $new_breadcrumb = array();
           $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
           $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          // original breadcrumb gets overridden to remove extra/invalid url paths.
-          $cf['page']['breadcrumb'] = $new_breadcrumb;
-        }
-        elseif ($path_parts[1] == 'troubleshoot-0') {
-          $title = 'Manage Problems';
-          $pre_crumb_title = 'Management';
-
-          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
-          $cf['show']['page']['precrumb'] = TRUE;
-
-          $new_breadcrumb = array();
-          $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/problems-0' . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          $title = 'Troubleshooting Tools';
-          $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-
-          if ($count_parts > 2 && $path_parts[2] == 'locations') {
-            $title = 'Locations';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-          elseif ($count_parts > 2 && $path_parts[2] == 'buildings') {
-            $title = 'Buildings';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
-          elseif ($count_parts > 2 && $path_parts[2] == 'rooms') {
-            $title = 'Rooms';
-            $new_breadcrumb[] = '<a href="' . $base_path . 'requests/' . $path_parts[1] . '/' . $path_parts[2] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
-          }
 
           // original breadcrumb gets overridden to remove extra/invalid url paths.
           $cf['page']['breadcrumb'] = $new_breadcrumb;
@@ -865,6 +801,82 @@ function mfcs_render_page() {
           $rebuild_breadcrumb = TRUE;
         }
       }
+      elseif ($path_parts[0] == 'problems-0') {
+        $title = 'Manage Problems';
+        $pre_crumb_title = 'Management';
+
+        $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+        $cf['show']['page']['precrumb'] = TRUE;
+
+        $new_breadcrumb = array();
+        $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+        $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+        $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+        if ($count_parts > 1 && $path_parts[1] == 'users') {
+          $title = 'User Problems';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">User Problems</div>';
+        }
+        elseif ($count_parts > 1 && $path_parts[1] == 'requests') {
+          $title = 'Request Problems';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request Problems</div>';
+        }
+
+        if ($count_parts > 3 && $path_parts[2] == 'user') {
+          $title = 'User Problem';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/user/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">User Problem ' . $path_parts[3] . '</div>';
+        }
+        elseif ($count_parts > 3 && $path_parts[2] == 'request') {
+          $title = 'Request Problem';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . '/request/' . $path_parts[3] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Request Problem ' . $path_parts[3] . '</div>';
+        }
+
+        // original breadcrumb gets overridden to remove extra/invalid url paths.
+        $cf['page']['breadcrumb'] = $new_breadcrumb;
+        $rebuild_breadcrumb = TRUE;
+      }
+      elseif ($path_parts[0] == 'troubleshoot-0') {
+        $title = 'Troubleshooting Tools';
+        $pre_crumb_title = 'Management';
+
+        $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">' . $title . '</div>';
+        $cf['show']['page']['precrumb'] = TRUE;
+
+        $new_breadcrumb = array();
+        $new_breadcrumb[] = array_shift($cf['page']['breadcrumb']);
+        $new_breadcrumb[] = '<a href="' . $base_path . 'requests/management' . $url_arguments . '" title="' . $pre_crumb_title . '">' . $pre_crumb_title . '</a>';
+        $new_breadcrumb[] = '<a href="' . $base_path . 'problems-0' . $url_arguments . '" title="Manage Problems">Manage Problems</a>';
+
+        $title = 'Troubleshooting Tools';
+        $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+        if ($count_parts > 1 && $path_parts[1] == 'locations') {
+          $title = 'Locations';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Troubleshoot Locations</div>';
+        }
+        elseif ($count_parts > 1 && $path_parts[1] == 'buildings') {
+          $title = 'Buildings';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Troubleshoot Buildings</div>';
+        }
+        elseif ($count_parts > 1 && $path_parts[1] == 'rooms') {
+          $title = 'Rooms';
+          $new_breadcrumb[] = '<a href="' . $base_path . $path_parts[0] . '/' . $path_parts[1] . $url_arguments . '" title="' . $title . '">' . $title . '</a>';
+
+          $cf['data']['page']['precrumb'] = '<div class="crumb-right_side">Troubleshoot Rooms</div>';
+        }
+
+        // original breadcrumb gets overridden to remove extra/invalid url paths.
+        $cf['page']['breadcrumb'] = $new_breadcrumb;
+        $rebuild_breadcrumb = TRUE;
+      }
     }
   }
 
@@ -1036,9 +1048,9 @@ function mfcs_preprocess_toolbar(&$vars) {
 
   if ($is_manager || $is_administer) {
     $custom_tree = menu_build_tree('navigation', array(
-      'conditions' => array('ml.link_path' => 'requests/troubleshoot-0'),
-      'min_depth' => 2,
-      'max_depth' => 2,
+      'conditions' => array('ml.link_path' => 'troubleshoot-0'),
+      'min_depth' => 1,
+      'max_depth' => 1,
     ));
     $tree = array_merge($custom_tree, $tree);
 
