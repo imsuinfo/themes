@@ -822,6 +822,23 @@
 
 
 
+/*** Statistics Pages ***/
+#mfcs-statistics-page > .statistics-navigation > .link-extras {
+  font-size: 12px;
+
+  margin: 0px 6px;
+}
+
+#mfcs-statistics-page > .statistics-navigation > .link-extras > .link-extra {
+  margin-left: 6px;
+}
+
+#mfcs-statistics-page > .statistics-navigation > .link-extras > .link-extra:first-of-type {
+  margin-left: 0px;
+}
+
+
+
 /*** Datatables @media Replacements ***/
 @media screen and (max-width: 640px) {
   .dataTables_wrapper .dataTables_length {
