@@ -903,8 +903,11 @@ function mcneese_www_process_javascript(&$cf) {
       $double_click .= '</noscript>';
 
       $cf['show']['page']['bottom'] = TRUE;
-      if (!isset($cf['page']['bottom'])) {
+      if (!isset($cf['page']['bottom']) || !is_array($cf['page']['bottom'])) {
         $cf['page']['bottom'] = array();
+      }
+      if (!isset($cf['page']['bottom']['remarketing'])) {
+        $cf['page']['bottom']['remarketing'] = array();
       }
       $cf['page']['bottom']['remarketing']['#markup'] = $double_click;
       unset($double_click);
