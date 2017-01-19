@@ -54,7 +54,7 @@
   print(' onload="mcneese_html_body_javascript_detection();">');
   if (!$cf['is']['overlay'] && $cf['show']['skipnav']){
     print('<!--(begin-skipnav)-->');
-    print('<a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main">');
+    print('<a id="mcneese-skip_nav" class="mcneese-skip_nav" href="#mcneese-content-main" role="navigation">');
     print("Skip to main content");
     print('</a>');
     print('<!--(end-skipnav)-->');
