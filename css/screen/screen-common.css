@@ -644,6 +644,13 @@
 
 
 
+/*** Timepicker adjustments ***/
+.mcneese .ui-timepicker-wrapper > .ui-timepicker-list {
+  padding: 0px;
+}
+
+
+
 /*** sandbox.mcneese.edu-specific ***/
 .mcneese.at-sandbox_mcneese_edu_fcs #mcneese-header #mcneese-site-logo > .site-logo {
   background-image: url(../../images/sandbox.png);
