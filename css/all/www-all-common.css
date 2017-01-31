@@ -190,7 +190,8 @@
 }
 
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-disposition,
-.mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-off-loc {
+.mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field_occured_date,
+.mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field_police_synopsis {
   background-color: #fcfcfc;
 }
 
