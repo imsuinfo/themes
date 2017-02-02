@@ -146,6 +146,17 @@
 
   print('<div class="column column-4">');
   print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']));
+  print('<h3 class="column-header">Quick Links</h3>');
+  print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']));
+  print('<ul>');
+  print('<li><a href="/node/507">Research</a></li>');
+  print('<li><a href="/node/582">Employment</a></li>');
+  print('<li><a href="/node/5530">Campus Maps</a></li>');
+  print('</ul>');
+  print('</div>');
+
+  print('<div class="column column-5">');
+  print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_open']));
   print('<h3 class="column-header">Social Connection</h3>');
   print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']));
   print('<ul>');
