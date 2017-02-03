@@ -169,9 +169,9 @@
   print('<li class="social linked_ln"><a href="http://www.linkedin.com/edu/mcneese-state-university-18431"><img alt="LinkedIn Icon" src="');
   print($stp);
   print('/images/linkedin_icon.png" title="LinkedIn"></a></li>');
-  print('<li class="social google_plus"><a href="https://plus.google.com/101409453884998941600" rel="noreferrer"><img alt="Google+ Icon" src="');
+  print('<li class="social youtube"><a href="https://www.youtube.com/user/McNeeseStateU"><img alt="YouTube Icon" src="');
   print($stp);
-  print('/images/google_plus.png" title="Google+"></a></li>');
+  print('/images/youtube_icon.png" title="YouTube"></a></li>');
   print('</ul>');
   print('</div>');
   print('</div>');
