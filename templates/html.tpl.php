@@ -149,7 +149,7 @@
   print('<h3 class="column-header">Quick Links</h3>');
   print(theme('mcneese_tag', $cf['html']['tags']['mcneese_www_html_footer_column_heading_close']));
   print('<ul>');
-  print('<li><a href="/node/507">Research</a></li>');
+  print('<li><a href="/node/407">Research</a></li>');
   print('<li><a href="/node/582">Employment</a></li>');
   print('<li><a href="/node/5530">Campus Maps</a></li>');
   print('</ul>');
