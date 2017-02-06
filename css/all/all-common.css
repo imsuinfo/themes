@@ -1020,6 +1020,11 @@
   border-width: 0px;
 }
 
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-event,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-event {
+  min-width: 1em;
+}
+
 #mfcs-calendar-0-day.calendar-day-fullcalendar .fc-row table,
 #mfcs-calendar-0-month.calendar-month-fullcalendar .fc-row table {
   border-left: 0 hidden transparent;
