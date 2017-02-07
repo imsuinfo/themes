@@ -160,10 +160,12 @@
 
 
 /*** Police Complaint Log Specific ***/
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table {
   margin-bottom: 20px;
 }
 
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > caption,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > caption {
   text-align: left;
 
@@ -173,28 +175,36 @@
   margin: 3px 0px;
 }
 
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .views-label,
+.mcneese.path-police_complaint_log_clery.view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .field-content,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .views-label,
 .mcneese.node-path-police_complaint_log.view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .field-content {
   display: inline-block;
 }
 
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .views-label,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field > .views-label {
   font-weight: bold;
   min-width: 180px;
 }
 
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field {
   letter-spacing: 1px;
 
   padding: 3px;
 }
 
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-disposition,
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-occured-date,
+.mcneese.path-police_complaint_log_clery .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-synopsis,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-disposition,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-occured-date,
 .mcneese.node-path-police_complaint_log .view-university-police-complaint-log > .view-content > table > tbody > tr > td > .views-field-field-police-synopsis {
   background-color: #fcfcfc;
 }
 
+.mcneese.path-police_complaint_log_clery #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-title,
 .mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-title {
   font-size: 22px;
   line-height: 1.2em;
@@ -202,6 +212,7 @@
   margin: 3px 0px;
 }
 
+.mcneese.path-police_complaint_log_clery #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block,
 .mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block {
   background-color: #eaeaea;
 
@@ -209,11 +220,13 @@
   padding: 4px;
 }
 
+.mcneese.path-police_complaint_log_clery #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item,
 .mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item {
   margin: 0px;
   padding: 5px 3px;
 }
 
+.mcneese.path-police_complaint_log_clery #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item > .police_complaint_log-item-labe,
 .mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item > .police_complaint_log-item-label {
   font-size: 14px;
   line-height: 18px;
@@ -222,6 +235,7 @@
   padding: 0px;
 }
 
+.mcneese.path-police_complaint_log_clery #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item-even,
 .mcneese.node-type-university_police_complaint_log #mcneese-content-main > .police_complaint_log-entry > .police_complaint_log-block > .police_complaint_log-item-even {
   background-color: #fcfcfc;
 }
