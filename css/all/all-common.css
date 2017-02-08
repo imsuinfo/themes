@@ -45,13 +45,16 @@
   min-width: 44px;
 }
 
-#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra {
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra {
   font-size: 11px;
   line-height: 14px;
 }
 
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-name,
-#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name {
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-name,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name {
   display: inline-block;
 
   font-weight: bold;
@@ -59,19 +62,26 @@
   min-width: 52px;
 }
 
-#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer {
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer {
   font-weight: bold;
 }
 
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_id,
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_text,
-#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_text {
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_text,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_id,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_text,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_text {
   float: left;
 }
 
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_type,
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_type,
-#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_type {
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_type,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_type,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_type,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_type {
   float: right;
 }
 
@@ -1152,8 +1162,6 @@
   border: 0px none;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-time,
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title,
 #mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-time,
 #mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title {
   padding-left: 4px;
@@ -1173,6 +1181,14 @@
 #mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title > a:active,
 #mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item > .fc-list-item-title > a:hover {
   color: #00477f;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item > .fc-list-item-title > a {
+  display: block;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  font-size: 12px;
 }
 
 /** Item: Holiday **/
@@ -1238,14 +1254,14 @@
   background-color: #803333;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1 > .fc-list-item-marker {
   color: #000000;
   background-color: #f9c7c7;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-1 > .fc-list-item-marker > .fc-event-dot {
   background-color: #803333;
 }
 
@@ -1262,14 +1278,14 @@
   background-color: #4d4d1f;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2 > .fc-list-item-marker {
   color: #000000;
   background-color: #cdcd81;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-2 > .fc-list-item-marker > .fc-event-dot {
   background-color: #4d4d1f;
 }
 
@@ -1286,14 +1302,14 @@
   background-color: #265726;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3 > .fc-list-item-marker {
   color: #000000;
   background-color: #aedeae;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-3 > .fc-list-item-marker > .fc-event-dot {
   background-color: #265726;
 }
 
@@ -1310,14 +1326,14 @@
   background-color: #7c1e7c;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4 > .fc-list-item-marker {
   color: #000000;
   background-color: #deacde;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-4 > .fc-list-item-marker > .fc-event-dot {
   background-color: #7c1e7c;
 }
 
@@ -1334,14 +1350,14 @@
   background-color: #753c21;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5 > .fc-list-item-marker {
   color: #000000;
   background-color: #ecc3ae;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-5 > .fc-list-item-marker > .fc-event-dot {
   background-color: #753c21;
 }
 
@@ -1358,14 +1374,14 @@
   background-color: #164659;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6 > .fc-list-item-marker {
   color: #000000;
   background-color: #add3e3;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-6 > .fc-list-item-marker > .fc-event-dot {
   background-color: #164659;
 }
 
@@ -1382,14 +1398,14 @@
   background-color: #155454;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7 > .fc-list-item-marker {
   color: #000000;
   background-color: #9ed0d0;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-7 > .fc-list-item-marker > .fc-event-dot {
   background-color: #155454;
 }
 
@@ -1406,14 +1422,14 @@
   background-color: #33337d;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8 > .fc-list-item-marker {
   color: #000000;
   background-color: #c8c8e3;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-8 > .fc-list-item-marker > .fc-event-dot {
   background-color: #33337d;
 }
 
@@ -1430,14 +1446,14 @@
   background-color: #404f23;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9> .fc-list-item-marker,
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9 > .fc-list-item-marker,
 #mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9> .fc-list-item-marker {
   color: #000000;
   background-color: #cddeae;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-9 > .fc-list-item-marker > .fc-event-dot {
   background-color: #404f23;
 }
 
@@ -1454,14 +1470,14 @@
   background-color: #5e3700;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10 > .fc-list-item-marker {
   color: #000000;
   background-color: #f1b157;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-10 > .fc-list-item-marker > .fc-event-dot {
   background-color: #5e3700;
 }
 
@@ -1478,14 +1494,14 @@
   background-color: #830a2c;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11 > .fc-list-item-marker {
   color: #000000;
   background-color: #ee8fab;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-11 > .fc-list-item-marker > .fc-event-dot {
   background-color: #830a2c;
 }
 
@@ -1502,14 +1518,14 @@
   background-color: #22488a;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12 > .fc-list-item-marker {
   color: #000000;
   background-color: #a2b9df;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-12 > .fc-list-item-marker > .fc-event-dot {
   background-color: #22488a;
 }
 
@@ -1526,14 +1542,14 @@
   background-color: #164659;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13> .fc-list-item-marker,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13> .fc-list-item-marker {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13 > .fc-list-item-marker,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13 > .fc-list-item-marker {
   color: #000000;
   background-color: #ffee05;
 }
 
-#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13> .fc-list-item-marker > .fc-event-dot,
-#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13> .fc-list-item-marker > .fc-event-dot {
+#mfcs-calendar-0-day.calendar-day-fullcalendar > .fc-view-container > .fc-listDay-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13 > .fc-list-item-marker > .fc-event-dot,
+#mfcs-calendar-0-month.calendar-month-fullcalendar > .fc-view-container > .fc-listMonth-view > .fc-scroller > .fc-list-table > tbody > .fc-list-item.calendar-item.is-event.type-13 > .fc-list-item-marker > .fc-event-dot {
   background-color: #164659;
 }
 
