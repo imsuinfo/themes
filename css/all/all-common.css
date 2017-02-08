@@ -55,11 +55,30 @@
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name,
 #mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-name,
 #mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name {
-  display: inline-block;
+  display: table-cell;
 
   font-weight: bold;
 
-  min-width: 52px;
+  min-width: 70px;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer .tooltip-item-request_id > .tooltip-item-request_id-name,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer .tooltip-item-request_id > .tooltip-item-request_id-name {
+  display: table-cell;
+  min-width: 70px;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer .tooltip-item-request_id > .tooltip-item-request_id-value,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-footer .tooltip-item-request_id > .tooltip-item-request_id-value {
+display: table-cell;
+  font-weight: normal;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-value,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-value,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-value,
+#mfcs-calendar-0-month .fc-listMonth-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-value {
+  display: table-cell;
 }
 
 #mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer,
