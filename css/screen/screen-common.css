@@ -99,33 +99,6 @@
 }
 
 /*** Calendar - Month/Day - Tooltips ***/
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body {
-  font-size: 10px;
-
-  min-width: 200px;
-}
-
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name {
-  margin-top: 5px;
-}
-
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name,
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-room > .tooltip-item-name,
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-date,
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-times {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name,
-#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-room > .tooltip-item-name {
-  display: inline-block;
-
-  font-weight: bold;
-
-  min-width: 44px;
-}
-
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-building > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-unavailable > .qtip-content > .tooltip-item-room > .tooltip-item-name,
 .mcneese > .qtip.tooltip-calendar-daily.tooltip-is-event > .qtip-content > .tooltip-item-building > .tooltip-item-name,

@@ -18,6 +18,63 @@
 
 
 /*** Calendar - Month ***/
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body {
+  font-size: 10px;
+
+  min-width: 200px;
+}
+
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name {
+  margin-top: 5px;
+}
+
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name,
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-room > .tooltip-item-name,
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-date,
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-times {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-building > .tooltip-item-name,
+#mfcs-calendar-0-day .fc-agendaDay-view .fc-event .fc-body .tooltip-item-room > .tooltip-item-name {
+  display: inline-block;
+
+  font-weight: bold;
+
+  min-width: 44px;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-building > .tooltip-item-name,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-room > .tooltip-item-name {
+  display: inline-block;
+
+  font-weight: bold;
+
+  min-width: 52px;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer {
+  font-weight: bold;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_id,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_text,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_text {
+  float: left;
+}
+
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-request_type,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-unavailability_type,
+#mfcs-calendar-0-day .fc-listDay-view .fc-list-item-extra .tooltip-item-footer > .tooltip-item-holiday_type {
+  float: right;
+}
+
 #mfcs-calendar-0-month > .calendar-month {
   display: table;
   position: relative;
