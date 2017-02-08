@@ -853,6 +853,17 @@
   vertical-align: top;
 }
 
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item {
+  display: table-row;
+}
+
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
+#mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-value,
+#mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-label,
+#mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-value {
+  display: table-cell;
+}
+
 #mfcs-unavailable_0-manage_room-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
 #mfcs-unavailable_0-view-page > .room_information-wrapper > .room_information-item > .room_information-item-label,
 #mfcs-unavailable_0-view-page > .room_information-description > .room_information-description-label,
