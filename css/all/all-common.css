@@ -1006,6 +1006,12 @@
   margin: 0px;
 }
 
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-list-item-time,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-list-item-time {
+  min-width: 80px;
+  white-space: initial;
+}
+
 #mfcs-calendar-0-day.calendar-day-fullcalendar table,
 #mfcs-calendar-0-month.calendar-month-fullcalendar table {
   background-color: initial;
