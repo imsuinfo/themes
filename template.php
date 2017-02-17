@@ -587,11 +587,6 @@ function mcneese_www_render_page() {
   if (function_exists('drupal_get_form')) {
     $sbf = (array) drupal_get_form('search_block_form');
 
-    if (isset($sbf['search_block_form']) && is_array($sbf['search_block_form'])) {
-      // use the #id as the #name attribute for consistency.
-      $sbf['search_block_form']['#name'] = $sbf['search_block_form']['#id'];
-    }
-
     $markup = '  <div id="mcneese-search-box">';
     $markup .= '    <div class="search_box-links">';
     $markup .= '      <ul class="navigation_list">';
