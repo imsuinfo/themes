@@ -842,49 +842,6 @@ function mcneese_www_process_javascript(&$cf) {
   {
     $remarketing = FALSE;
 
-    if ($uri_fixed == 'nursing' || (isset($sources[0]['nursing']) && !isset($sources[1]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'nursing/family_nurse_practitioner_curriculum' || (isset($sources[1]['nursing/family_nurse_practitioner_curriculum']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'nursing/family_pychiatric/mental_health_nurse_practition' || (isset($sources[2]['nursing/family_pychiatric/mental_health_nurse_practition']) && !isset($sources[3]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'nursing/nurse_executive_curriculum' || (isset($sources[1]['nursing/nurse_executive_curriculum']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'nursing/graduate' || (isset($sources[1]['nursing/graduate']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'nursing/rn-to-bsn_online' || (isset($sources[1]['nursing/rn-to-bsn_online']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'dore/exed/nurse-cm' || (isset($sources[2]['dore/exed/nurse-cm']) && !isset($sources[3]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online' || (isset($sources[0]['online']) && !isset($sources[1]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online/cjus' || (isset($sources[1]['online/cjus']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online/fcst' || (isset($sources[1]['online/fcst']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online/mgmo' || (isset($sources[1]['online/mgmo']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online/psco' || (isset($sources[1]['online/psco']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'online/sociology' || (isset($sources[1]['online/sociology']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-    elseif ($uri_fixed == 'socsi/mscj' || (isset($sources[1]['socsi/mscj']) && !isset($sources[2]))) {
-      $remarketing = TRUE;
-    }
-
     if ($remarketing) {
       // using JS_THEME to make sure these get processed after all other js.
       // using defer to ensure that the javascript is only processed after the entire page is loaded.
