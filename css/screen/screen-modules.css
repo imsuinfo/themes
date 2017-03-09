@@ -644,7 +644,7 @@
 .mcneese.is-media_browser_page #media-browser-library-list > li {
   display: inline-block;
   float: none;
-  vertical-align: bottom;
+  vertical-align: top;
 
   word-wrap: break-word;
 }
