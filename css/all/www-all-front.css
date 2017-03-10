@@ -826,6 +826,7 @@
   padding: 5px 5px 0px 5px;
 }
 
+.mcneese #mcneese-front_page-featured > .mcneese-front_page-featured-image > .mcneese-front_page-featured-image-overlay > .mcneese-front_page-featured-image-overlay-title > .no_link,
 .mcneese #mcneese-front_page-featured > .mcneese-front_page-featured-image > .mcneese-front_page-featured-image-overlay > .mcneese-front_page-featured-image-overlay-title > a,
 .mcneese #mcneese-front_page-featured > .mcneese-front_page-featured-image > .mcneese-front_page-featured-image-overlay > .mcneese-front_page-featured-image-overlay-title > a:visited {
   text-decoration: none;
