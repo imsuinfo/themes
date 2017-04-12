@@ -4,7 +4,7 @@
  * Html theme implementation.
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
-  global $base_url;
+  global $base_root;
   $uri = request_uri();
 
   if (!isset($cf['generic']['tags'])) {
@@ -28,7 +28,7 @@
   print('>');
   print('<head>');
   print('<!--(begin-head)-->');
-  print('<base href="' . $base_url . $uri . '">');
+  print('<base href="' . $base_root . $uri . '">');
   print($head . "\n");
   print($cf['headers'] . "\n");
   print('<title>');
