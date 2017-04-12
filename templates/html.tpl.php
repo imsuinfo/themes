@@ -5,6 +5,7 @@
  */
   $cf = & drupal_static('cf_theme_get_variables', array());
   global $base_url;
+  $uri = request_uri();
 
   if (!isset($cf['generic']['tags'])) {
     mcneese_initialize_generic_tags($cf);
@@ -27,7 +28,7 @@
   print('>');
   print('<head>');
   print('<!--(begin-head)-->');
-  print('<base href="' . $base_url . '">');
+  print('<base href="' . $base_url . $uri . '">');
   print($head . "\n");
   print($cf['headers'] . "\n");
   print('<title>');
