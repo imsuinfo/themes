@@ -826,6 +826,12 @@ function mcneese_www_process_javascript(&$cf) {
   }
 
 
+  // Acalog javascript, jira ticket: www-1653
+  if ($uri_fixed == 'catalog' || isset($sources[0]['catalog'])) {
+    drupal_add_js($base_path . $theme_path . '/js/acalog.js', array('type' => 'file', 'group' => JS_DEFAULT, 'preprocess' => FALSE));
+  }
+
+
   // Bookstore javascript
   if ($uri_fixed == 'bookstore' || (isset($sources[0]['bookstore']) && !isset($sources[1]))) {
     if (function_exists('mcneese_third_party_add_facebook_connect_legacy_js')) {
