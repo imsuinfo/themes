@@ -153,6 +153,7 @@
   print('<li><a href="/node/407">Research</a></li>');
   print('<li><a href="/node/582">Employment</a></li>');
   print('<li><a href="/node/5530">Campus Maps</a></li>');
+  print('<li><a href="/node/2932">Gainful Employment</a></li>');
   print('</ul>');
   print('</div>');
 
