@@ -397,6 +397,10 @@ function mcneese_www_preprocess_page(&$vars) {
         if (!empty($node->field_bulletin['und'][0]['safe_value'])) {
           $cf['page']['bulletin'] = $node->field_bulletin['und'][0]['safe_value'];
         }
+        elseif (!empty($node->field_bulletin['und'][0]['value'])) {
+          // provided as a failsafe, but requires the 'full_html' filter to exist.
+          $cf['page']['bulletin'] = check_markup($node->field_bulletin['und'][0]['value'], 'full_html');
+        }
       }
 
       if ($type == 744) {
