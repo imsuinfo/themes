@@ -282,14 +282,14 @@
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 500;
-  src: local('PT Sans Narrow'), url(../../fonts/PTN55F.ttf) format('truetype');
+  src: local('PT Sans Narrow'), url(../../fonts/PTN57F.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'PT Sans Narrow Bold';
   font-style: normal;
   font-weight: 800;
-  src: local('PT Sans Narrow Bold'), url(../../fonts/PTN75F.ttf) format('truetype');
+  src: local('PT Sans Narrow Bold'), url(../../fonts/PTN77F.ttf) format('truetype');
 }
 
 @font-face {
@@ -328,8 +328,8 @@
 }
 
 @font-face {
-  font-family: 'PT Serif Caption Bold';
-  font-style: normal;
-  font-weight: 800;
-  src: local('PT Serif Caption Bold'), url(../../fonts/PTZ75F.ttf) format('truetype');
+  font-family: 'PT Serif Caption Italic';
+  font-style: italic;
+  font-weight: 500;
+  src: local('PT Serif Caption Italic'), url(../../fonts/PTZ56F.ttf) format('truetype');
 }
