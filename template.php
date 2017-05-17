@@ -909,11 +909,17 @@ function mfcs_render_page() {
   }
 
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="//www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>';
-  $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper last"><a class="menu_link menu_link-my_mcneese" href="//mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>';
+
+  $mymcneese_last = ' last';
+  if ($user->uid > 0) {
+    $mymcneese_last = '';
+  }
+
+  $markup .= '    <li class="leaf menu_link-wrapper menu_link-my_mcneese-wrapper' . $mymcneese_last . '"><a class="menu_link menu_link-my_mcneese" href="//mymcneese.mcneese.edu/" title="Go Back to MyMcNeese Portal">MyMcneese</a></li>';
 
   // show help tab for logged in users.
   if ($user->uid > 0) {
-    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper"><a class="menu_link menu_link-help" href="' . $base_path . 'help-0' . $url_arguments . '" title="View Online Documentation">Help</a></li>';
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-help-wrapper last"><a class="menu_link menu_link-help" href="' . $base_path . 'help-0' . $url_arguments . '" title="View Online Documentation">Help</a></li>';
   }
 
 
