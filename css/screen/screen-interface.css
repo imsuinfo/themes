@@ -661,6 +661,32 @@
 
 
 
+/*** Synchronize ***/
+#mfcs-request-synchronize-0-create-form #mfcs-synchronize-create-submit-cancel,
+#mfcs-request-synchronize-0-delete-form #mfcs-synchronize-delete-submit-no {
+  color: #000000;
+  background-color: #e86f69;
+}
+
+#mfcs-request-synchronize-0-create-form #mfcs-synchronize-create-submit-cancel:focus,
+#mfcs-request-synchronize-0-create-form #mfcs-synchronize-create-submit-cancel:active,
+#mfcs-request-synchronize-0-create-form #mfcs-synchronize-create-submit-cancel:hover,
+#mfcs-request-synchronize-0-delete-form #mfcs-synchronize-delete-submit-no:focus,
+#mfcs-request-synchronize-0-delete-form #mfcs-synchronize-delete-submit-no:active,
+#mfcs-request-synchronize-0-delete-form #mfcs-synchronize-delete-submit-no:hover {
+  text-decoration: underline;
+
+  color: #ffffff;
+  text-shadow: 0px 0px 3px #000000;
+
+  background-image: none;
+  background-color: #666666;
+
+  border: 1px outset #333333;
+}
+
+
+
 /*** Help ***/
 #mfcs-section-help-main.section-help-presentation-single .section-help > .help-headers > .help-headers_group > .section {
   margin-top: 2em;
