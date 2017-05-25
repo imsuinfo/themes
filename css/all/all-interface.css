@@ -725,7 +725,8 @@
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-email > .item-value,
-#mfcs-request-users-view-page > .view_user-group > .view_user-item-updated_on > .item-value {
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-updated_on > .item-value,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-last_login > .item-value {
   font-size: 0.9em;
 }
 
