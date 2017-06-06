@@ -353,6 +353,10 @@
     width: 100px;
   }
 
+  .mcneese #mcneese-content-main .dataTables_wrapper > .dt-buttons {
+    clear: both;
+  }
+
   .mcneese #mcneese-content-main .dataTables_wrapper > .ColVis {
     clear: both;
   }
@@ -362,6 +366,10 @@
   }
 
   .mcneese #mcneese-content-main .dataTables_wrapper > .dt-buttons > .datatable-showing_requests {
+    margin-top: 7px;
+  }
+
+  .mcneese #mcneese-content-main .dataTables_wrapper > .dt-buttons > .dt-button.buttons-colvis {
     margin-top: 7px;
   }
 

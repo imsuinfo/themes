@@ -607,7 +607,8 @@
 
 
 /*** Datatable Customizations ***/
-.mcneese .dataTables_wrapper > .ColVis > .ColVis_Button, .mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
+.mcneese .dataTables_wrapper > .ColVis > .ColVis_Button,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button {
   line-height: 16px;
 }
 
@@ -616,12 +617,32 @@
   margin: 0px 5px;
 }
 
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.buttons-colvis {
+  position: relative;
+
+  font-size: 11px;
+  white-space: nowrap;
+
+  color: #000000;
+  background: #ffffff;
+
+  text-decoration: none;
+
+  padding: 3px 4px;
+  margin: 0px 8px;
+
+  border: 1px solid #999999;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px #cccccc;
+}
+
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests {
   position: relative;
 
   color: #000000;
   background: #ffffff none repeat scroll 0% 0%;
+  text-decoration: none;
 
   font-size: 11px;
   line-height: 16px;
