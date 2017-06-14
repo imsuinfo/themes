@@ -722,11 +722,20 @@
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-unavailable,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-basic,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-venue,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-review > .items-review-request,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-special,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-administer {
   display: list-item;
 
   margin-left: 15px;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-review > .items-review-classification {
+  font-weight: bold;
+}
+
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-roles-review > .items-review-request {
+  font-size: 0.9em;
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-proxy-as > .view_user-item-proxy-item,
@@ -750,6 +759,7 @@
 }
 
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-email > .item-value,
+#mfcs-request-users-view-page > .view_user-group > .view_user-item-created_on > .item-value,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-updated_on > .item-value,
 #mfcs-request-users-view-page > .view_user-group > .view_user-item-last_login > .item-value {
   font-size: 0.9em;
