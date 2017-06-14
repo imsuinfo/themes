@@ -6,6 +6,15 @@
   display: none;
 }
 
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
+#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
+  margin: 0px;
+}
+
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
+  display: none;
+}
+
 
 
 /*** Create/Edit ***/
