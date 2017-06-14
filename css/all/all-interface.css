@@ -637,7 +637,8 @@
 }
 
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored,
-.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests {
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests-reviewable {
   position: relative;
 
   color: #000000;
@@ -660,7 +661,10 @@
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-including_ignored:hover,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:active,
 .mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:focus,
-.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:hover {
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests:hover,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests-reviewable:active,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests-reviewable:focus,
+.mcneese .dataTables_wrapper > .dt-buttons > .dt-button.datatable-showing_requests-reviewable:hover {
   text-shadow: none;
 
   background-color: #f0f0f0;
