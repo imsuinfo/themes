@@ -965,6 +965,19 @@
   margin-right: 20px;
 }
 
+#mfcs-unavailable_0-view-page > .conflict_messages {
+  color: #884400;
+  background-color: #fffce5;
+  background-image: url(../../images/message_icons/message-24-warning.png);
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+
+  border: 1px solid #eedd55;
+
+  margin: 6px 2px;
+  padding: 5px 5px 5px 40px;
+}
+
 
 
 /*** Move Request ***/
