@@ -965,7 +965,8 @@
   margin-right: 20px;
 }
 
-#mfcs-unavailable_0-view-page > .conflict_messages {
+#mfcs-unavailable_0-view-page > .conflict_messages,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-warnings {
   color: #884400;
   background-color: #fffce5;
   background-image: url(../../images/message_icons/message-24-warning.png);
