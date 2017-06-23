@@ -420,6 +420,8 @@
     margin-left: 4px;
   }
 
+
+
   /*** Request View Form Adjustments ***/
   #mfcs-request-view-0-form .request-section-display, #mfcs-request-view-0-form .request-section-review-operations, #mfcs-request-view-0-form .request-section-review-log {
     min-width: 314px;
@@ -459,6 +461,9 @@
     width: initial;
     min-width: 314px;
     max-width: 620px;
+
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #mfcs-request-view-0-form .request-display-submit {
@@ -627,6 +632,23 @@
   #mfcs-request-agreement > .agreement-signature {
     clear: both;
   }
+
+
+
+  /*** Breadcrumb Adjustments ***/
+  .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-right_side {
+    display: inline-block;
+
+    vertical-align: top;
+
+    font-weight: bold;
+
+    padding: 3px;
+    margin-right: 6px;
+
+    float: right;
+  }
+
 
   /*** Calendar Adjustments ***/
   #mfcs-calendar-0-month > .calendar-month,
