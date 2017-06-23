@@ -271,7 +271,7 @@ html,
   unicode-bidi: bidi-override;
 }
 
-.mcneese *[DIR="ltr"] { 
+.mcneese *[DIR="ltr"] {
   direction: ltr;
   unicode-bidi: embed;
 }

@@ -730,15 +730,45 @@
 
 
 
+/*** Main Content Section ***/
+.mcneese .mcneese-content-main {
+  line-height: 22px;
+}
+
+
+
 /*** Login Page ***/
 .mcneese .mcneese-content-main > .user_login,
-.mcneese .mcneese-content-main > .html_tag-section.block-id-2 {
+.mcneese .mcneese-content-main > .block-name-block-user-login {
   margin: 0px auto;
 
   text-align: center;
 }
 
 .mcneese .mcneese-content-main > .user_login > .form-wrapper-inner > .form-item > .description,
-.mcneese .mcneese-content-main > .html_tag-section.block-id-2 > .user_login_block > .form-wrapper-inner > .item-list {
+.mcneese .mcneese-content-main > .block-name-block-user-login > .user_login_block > .form-wrapper-inner > .item-list {
   display: none;
+}
+
+
+
+/*** Skeleton Grid Based Framework Fluid Widths ***/
+.mcneese .msu-column,
+.mcneese .msu-columns {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  width: 100%;
+  float: left;
+}
+
+.mcneese .msu-column,
+.mcneese .msu-columns {
+  margin-left: 4%;
+}
+
+.mcneese .msu-column:first-child,
+.mcneese .msu-columns:first-child {
+  margin-left: 0;
 }

@@ -16,16 +16,16 @@
 .mcneese #mcneese-breadcrumb.relative {
   position: relative;
 
-  color: #ffffff;
-  background-color: #00335b;
+  color: #0c5a9c;
+  background-color: #ffffff;
 
   font-family: Arial,Helvetica,Sans-Serif,Sans;
   font-size: 12px;
 
-  min-height: 24px;
+  min-height: 26px;
 
-  margin: 0px 0px 4px 0px;
-  padding: 0px 3px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mcneese #mcneese-breadcrumb.relative > .html_tag-header {
@@ -49,6 +49,17 @@
   border: none;
 }
 
+.mcneese.is-user_settings-background_colors.is-workbench-moderated-draft #mcneese-breadcrumb.relative  {
+  color: #0c5491;
+  background-color: #edf5fa;
+}
+
+.mcneese.is-user_settings-background_colors.is-node.is-unpublished:not(.is-workbench-moderated) #mcneese-breadcrumb.relative ,
+.mcneese.is-user_settings-background_colors.is-node.is-unpublished.is-workbench-moderated-live #mcneese-breadcrumb.relative  {
+  color: 0c538f;
+  background-color: #ffeeee;
+}
+
 .mcneese #mcneese-breadcrumb.relative > .navigation_list {
   display: inline;
 }
@@ -64,7 +75,8 @@
 
   vertical-align: top;
 
-  color: #ffffff;
+  color: inherit;
+  background-color: inherit;
   text-decoration: none;
 
   padding: 3px;
@@ -78,7 +90,7 @@
 }
 
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home {
-  background-image: url(../../images/home.png);
+  background-image: url(../../images/home-blue.png);
   background-repeat: no-repeat;
   background-position: 5px 6px;
 
@@ -93,10 +105,23 @@
   overflow: hidden;
 }
 
+.mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home.display_home_text {
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 14px;
+
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+
+  padding-left: 20px;
+}
+
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:active,
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:hover,
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb > .link-home:focus {
-  background-image: url(../../images/home-black.png);
+  background-image: url(../../images/home-gray.png);
 }
 
 .mcneese #mcneese-breadcrumb.relative > .navigation_list > .crumb-node_id,

@@ -583,6 +583,24 @@
 
 
 
+/*** Rules Log ***/
+.mcneese #mcneese-information .rules-debug-log {
+  font: inherit;
+
+  margin: 0px 0px 4px 0px;
+}
+
+.mcneese #mcneese-information .rules-debug-log > .rules-debug-log-head {
+  font-size: 20px;
+}
+
+.mcneese #mcneese-information .rules-debug-log > div > .rules-debug-block {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+
 /*** Ckeditor ***/
 .mcneese .cke_dialog > tbody > tr > td {
   border: 0;

@@ -43,7 +43,7 @@
 .mcneese #mcneese-page-side.fixed.collapsed:focus {
   background-color: #ffffff;
 
-  padding: 5px 10px;
+  padding: 5px 0px;
   border: 1px ridge #504b2f;
 
   height: auto;
@@ -83,7 +83,7 @@
 
   font-weight: bold;
 
-  margin: 0px 0px 0px 32px;
+  margin: 0px 0px 0px 42px;
 }
 
 
@@ -126,9 +126,8 @@
   letter-spacing: 1.4px;
 
   margin: 0px;
-  padding: 10px 0px;
 
-  border-bottom: 1px solid #888888;
+  border-bottom: 0px;
 }
 
 .mcneese #mcneese-page-side .workbench_menu > .html_tag-header {
@@ -164,13 +163,14 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 
-  margin: 0px 0px 0px 5px;
-  padding: 0px 0px 0px 12px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 {
   margin: 0px;
   padding: 0px;
+  border: 0px;
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item.expanded > .menu_item-children {
@@ -182,63 +182,82 @@
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text {
-  display: inline-block;
   position: relative;
 
-  width: 100%;
-
-  margin: 1px 0px;
-  padding: 2px 4px;
+  margin: 0px;
+  border-top: 1px solid #eaeaea;
 
   text-decoration: none;
 }
 
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
-  display: inline-block;
-}
-
 .mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.collapsed {
-  background-image: url(../../images/arrow-single-right.png);
-  background-repeat: no-repeat;
-  background-position: 0px 3px;
-}
-
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.expanded {
-  background-image: url(../../images/arrow-single-down.png);
-  background-repeat: no-repeat;
-  background-position: 0px 3px;
+  padding: 0px 0px 0px 12px;
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-children .menu_item.leaf {
-  background-image: url(../../images/arrow-single-right.png);
-  background-repeat: no-repeat;
-  background-position: 0px 3px;
+  padding: 0px 0px 0px 12px;
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item.active > .menu_item-text {
-  color: #fad703;
-  background-color: #00335b;
+  color: #2d2d2d;
+  background-color: #fad703;
 }
 
 .mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text {
+  color: #2d2d2d;
+  background-color: #eaeaea;
   font-weight: bold;
 }
 
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
-  color: #00477f;
-  background-color: inherit;
-}
-
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:hover,
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus,
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:hover,
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:focus {
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
+.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:focus {
   color: #ffffff;
   background-color: #00335b;
 }
 
-.mcneese #mcneese-page-side .workbench_menu .menu_item > .menu_item-text:active,
-.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0 > .menu_item-text:active {
-  color: #ffaa00;
-  background-color: #00335b;
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text {
+  color: #ffffff;
+  background-color: #00477f;
+}
+
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:hover,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:active,
+.mcneese #mcneese-page-side .workbench_menu .menu_item.depth-0.active > .menu_item-text:focus {
+  color: #2d2d2d;
+  background-color: #fad703;
+}
+
+
+
+/*** Workbench Menu - Relative ***/
+.mcneese #mcneese-page-side.relative .workbench_menu {
+  padding: 10px 0px;
+}
+
+.mcneese #mcneese-page-side.relative .workbench_menu .menu_item > .menu_item-text {
+  display: inline-block;
+
+  width: 100%;
+
+  padding: 12px 6px;
+}
+
+.mcneese #mcneese-page-side.relative .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
+  display: inline-block;
+}
+
+
+
+/*** Workbench Menu - Fixed ***/
+.mcneese #mcneese-page-side.fixed .workbench_menu {
+  padding: 0px;
+}
+
+.mcneese #mcneese-page-side.fixed .workbench_menu .menu_item > .menu_item-text {
+  padding: 6px 3px;
+}
+
+.mcneese #mcneese-page-side.fixed .workbench_menu .menu_item > .menu_item-text,
+.mcneese #mcneese-page-side.fixed .workbench_menu .menu_item > .menu_item-children .menu_item > .menu_item-text {
+  display: block;
 }

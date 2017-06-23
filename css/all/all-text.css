@@ -10,7 +10,7 @@
 .mcneese a:focus,
 .mcneese a:active,
 .mcneese a:hover {
-  color: #7f0000;
+  color: #0591ff;
 }
 
 .mcneese a[name],
@@ -68,6 +68,61 @@
 
 .mcneese fieldset.form-item > legend > .fieldset-legend {
   font-weight: bold;
+}
+
+.mcneese .info-red {
+  color: #820404 !important;
+  background-color: #ffc3c3 !important;
+
+  border: 1px solid #e30000 !important;
+  padding: 15px !important;
+}
+
+.mcneese .info-green {
+  background-color: #dded9d !important;
+  border: 1px solid #97bd00 !important;
+  color: #313d03 !important;
+  padding: 15px !important;
+}
+
+.mcneese .info-blue {
+  color: #111111;
+  background-color: #deebfa;
+
+  border: 1px solid #7ba0cb;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.mcneese .info-yellow {
+  color: #111111;
+  background-color: #fdf5d3;
+
+  border: 1px solid #fae27e;
+  padding: 15px;
+}
+
+.mcneese .divider {
+  border-bottom: 1px solid #afc1cb;
+  padding: 15px 0;
+  margin-top: 20px 0;
+}
+
+
+
+/*** Definition Styles ***/
+.mcneese dl {
+  padding: 15px;
+}
+
+.mcneese dt {
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.mcneese dd {
+  padding: 10px;
 }
 
 

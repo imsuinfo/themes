@@ -15,7 +15,7 @@
   display: inline-block;
   position: relative;
 
-  margin: 0px;
+  margin: 4px 0px 0px 0px;
   padding: 0px;
 }
 
@@ -110,8 +110,8 @@
 .mcneese #mcneese-tabs.relative > .navigation_list > .tab > a {
   font-size: 12px;
 
-  min-height: 16px;
-  line-height: 16px;
+  min-height: 18px;
+  line-height: 18px;
   letter-spacing: 0.5px;
 
   padding: 2px 5px 0px 5px;

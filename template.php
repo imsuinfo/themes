@@ -360,6 +360,9 @@ function mcneese_preprocess_page(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
+  // define the bulletin default settings.
+  $vars['mcneese_bulletin_mode'] = 2; // mode 1 was used from original design as a sub-theme, so mode 2 represents operating as a hard-coded value.
+
   $cf['page']['tags'] = array();
 
   if (!isset($cf['data']['page'])) {
@@ -540,7 +543,7 @@ function mcneese_preprocess_page(&$vars) {
   $attributes['id'] = 'mcneese-bulletin';
   $attributes['class'] = array();
   $attributes['class'][] = 'noscript';
-  $attributes['title'] = t("Bulleting");
+  $attributes['title'] = t("Bulletin");
 
   if ($cf['is']['html5']) {
     $attributes['class'][] = $bulletin_sticky;
@@ -2572,6 +2575,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
+      // do not display title for fixed regions.
+      if ($fixed === FALSE) {
+        unset($cf['page']['tags']['mcneese_page_messages_open']['attributes']['title']);
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_messages_open']));
       print('<!--(begin-page-messages)-->');
       if (isset($cf['data']['page'][$target]['renderred'])) {
@@ -2589,6 +2597,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
         $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
         $cf['ie8']['float_right-counter']++;
+      }
+
+      // do not display title for fixed regions.
+      if ($fixed === FALSE) {
+        unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
       }
 
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
@@ -2616,6 +2629,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
     }
     else if ($target == 'information') {
       $friendly = 'Information';
+    }
+
+    // do not display title for fixed regions.
+    if ($fixed === FALSE) {
+      unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
     }
 
     if ($fixed === in_array('fixed', $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class']) && $cf['show']['page'][$target]) {
@@ -2648,6 +2666,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
         $cf['page']['tags']['mcneese_page_work_area_menu_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
         $cf['ie8']['float_right-counter']++;
+      }
+
+      // do not display title for fixed regions.
+      if ($fixed === FALSE) {
+        unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
       }
 
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_work_area_menu_open']));
@@ -2685,6 +2708,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         $cf['ie8']['float_right-counter']++;
       }
 
+      // do not display title for fixed regions.
+      if ($fixed === FALSE) {
+        unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
+      }
+
       print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
 
       print(theme('mcneese_tag', $cf['generic']['tags']['mcneese_header_open']));
@@ -2710,6 +2738,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
         if ($fixed && $float_right && $cf['agent']['machine_name'] == 'ie' && $cf['agent']['major_version'] <= 8) {
           $cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['class'][] = 'float_right-' . $cf['ie8']['float_right-counter'];
           $cf['ie8']['float_right-counter']++;
+        }
+
+        // do not display title for fixed regions.
+        if ($fixed === FALSE) {
+          unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
         }
 
         print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
@@ -2756,6 +2789,11 @@ function mcneese_do_print(&$cf, $target, $fixed = TRUE, $float_right = FALSE) {
       }
 
       if ($cf['show']['page']['menus'] || $cf['show']['page']['asides']) {
+        // do not display title for fixed regions.
+        if ($fixed === FALSE) {
+          unset($cf['page']['tags']['mcneese_page_' . $target . '_open']['attributes']['title']);
+        }
+
         print(theme('mcneese_tag', $cf['page']['tags']['mcneese_page_' . $target . '_open']));
         print('<div class="side_panel-simulated_heading">Side Panel</div>');
 

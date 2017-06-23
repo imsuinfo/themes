@@ -6,7 +6,7 @@
   position: relative;
 
   color: #000000;
-  background-color: #dadada;
+  background-color: #f0f0f0;
 }
 
 .mcneese .no-screen {
@@ -19,15 +19,17 @@
 }
 
 .mcneese #mcneese-page {
-  color: #000000;
-  background-color: #ffffff;
-
-  min-height: 600px;
-
   padding: 0px 5px 5px 5px;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.mcneese #mcneese-page-content {
+  color: #000000;
+  background-color: #ffffff;
+
+  min-height: 400px;
 }
 
 .mcneese #mcneese-bottom {
@@ -82,9 +84,9 @@
 .mcneese.is-fixed_width #mcneese-page,
 .mcneese.is-fixed_width #mcneese-bottom,
 .mcneese.is-fixed_width > .dev-query {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 970px;
+  min-width: 970px;
+  max-width: 970px;
 
   margin-left: auto;
   margin-right: auto;
@@ -93,9 +95,9 @@
 .mcneese.is-fixed_width #mcneese-skip_nav:active,
 .mcneese.is-fixed_width #mcneese-skip_nav:focus,
 .mcneese.is-fixed_width #mcneese-skip_nav:hover {
-  width: 960px;
-  min-width: 960px;
-  max-width: 960px;
+  width: 970px;
+  min-width: 970px;
+  max-width: 970px;
 
   margin-left: auto;
   margin-right: auto;
@@ -115,6 +117,8 @@
   width: 100%;
   min-width: 100%;
   max-width: 100%;
+
+  margin-bottom: 0px;
 }
 
 .mcneese #mcneese-header > .header-top {
@@ -147,15 +151,6 @@
   background-color: #00335b;
 
   min-height: 25px;
-
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-
-  margin-bottom: 5px;
-
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 }
 
 .mcneese #mcneese-header a {
@@ -297,10 +292,6 @@
   letter-spacing: 1px;
 
   padding: 4px 8px;
-}
-
-.mcneese #mcneese-header > .header-section > .header-menu-2 > .html_tag-nav > .navigation_list > li:first-child > a {
-  border-bottom-left-radius: 5px;
 }
 
 
@@ -527,7 +518,7 @@
   min-width: 190px;
   max-width: 190px;
 
-  margin: 0px 15px 15px 0px;
+  margin: 0px 5px 5px 5px;
 
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -565,9 +556,6 @@
   display: block;
   overflow-x: auto;
 
-  margin: 0px;
-  padding: 0px;
-
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -575,6 +563,116 @@
 
 .mcneese.mcneese-ckeditor > .mcneese-content-main {
   display: block;
+}
+
+.mcneese .mcneese-content {
+  padding: 10px;
+}
+
+
+
+/*** Messages ***/
+.mcneese #mcneese-messages {
+  color: #000000;
+  background-color: #ffffff;
+
+  padding: 2px 0px;
+}
+
+
+
+/*** Bulletin ***/
+.mcneese #mcneese-bulletin-wrapper-outer {
+  position: relative;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.mcneese #mcneese-bulletin-wrapper {
+  margin-bottom: 15px;
+}
+
+.mcneese #mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title {
+  margin: 4px 20px;
+}
+
+
+
+/*** Bulletin - Additional ***/
+.mcneese #mcneese-bulletin-wrapper-outer.additional .down-arrow {
+  position: absolute;
+  bottom: -15px;
+  left: 39px;
+
+  z-index: 9;
+}
+
+.mcneese #mcneese-bulletin-wrapper-inner.additional {
+  background-image: url(../../images/bulletin-background.png);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+
+  height: 188px;
+  min-height: 188px;
+  max-height: 188px;
+
+  overflow: hidden;
+}
+
+.mcneese #mcneese-bulletin-page_title.additional,
+.mcneese #mcneese-bulletin-content.additional {
+  display: table-cell;
+}
+
+.mcneese #mcneese-bulletin-page_title.additional {
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+.mcneese #mcneese-bulletin-content.additional {
+  width: 100%;
+  min-width: 700px;
+  max-width: 100%;
+
+  line-height: 22.5px;
+
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+.mcneese #mcneese-bulletin-content.additional > #mcneese-bulletin > .bulletin-wrapper {
+  color: #383838;
+
+  margin-top: 30px;
+
+  padding: 10px 20px;
+  border-left: 1px solid #dcdcdc;
+}
+
+
+
+/*** Bulletin - No Additional ***/
+.mcneese #mcneese-bulletin-wrapper-inner.no_additional {
+  background-image: url(../../images/bulletin-background-small.png);
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+.mcneese #mcneese-bulletin-page_title.no_additional {
+  padding: 10px 0px;
 }
 
 
