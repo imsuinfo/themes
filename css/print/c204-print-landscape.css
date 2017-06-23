@@ -1,0 +1,336 @@
+
+
+
+/*** Calendar Landscape ***/
+@media (orientation:landscape) {
+  /*** Calendar - Month ***/
+  #mfcs-calendar-0-month > .calendar-month {
+    width: 924px;
+    min-width: 924px;
+    max-width: 924px;
+
+    margin: 5px auto;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-title,
+  #mfcs-calendar-0-month > .calendar-month > .calendar-title > h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-header-wrapper > .calendar-header > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
+
+    padding: 3px 0px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week {
+    min-height: 96px;
+    min-width: 924px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper {
+    width: 132px;
+    min-width: 132px;
+    max-width: 132px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day {
+    min-height: 96px;
+
+    max-width: 132px;
+  }
+
+  #mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+    padding: 3px 6px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+
+
+
+  /*** Calendar - Day ***/
+  #mfcs-calendar-0-day > .calendar-day {
+    width: 924px;
+    min-width: 924px;
+    max-width: 924px;
+
+    margin: 5px auto;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-header-wrapper > .calendar-header > .calendar-day-wrapper > .calendar-day {
+    width: 912px;
+    min-width: 912px;
+    max-width: 912px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-all_day > .calendar-body-wrapper > .calendar-body {
+    width: 912px;
+    min-width: 912px;
+    max-width: 912px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper {
+    width: 104px;
+    min-width: 104px;
+    max-width: 104px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-label-wrapper > .calendar-time_slot-label {
+    width: 92px;
+    min-width: 92px;
+    max-width: 92px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper {
+    width: 819px;
+    min-width: 819px;
+    max-width: 819px;
+  }
+
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-header-wrapper > .calendar-header > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request,
+  #mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+    width: 809px;
+    min-width: 809px;
+    max-width: 809px;
+  }
+}
+
+
+
+/*** Event Landscape ***/
+@media (orientation:landscape) {
+  /*** View ***/
+  #mfcs-request-view-0-form .request-section-display,
+  #mfcs-request-view-0-form .request-section-review-log {
+    min-width: 940px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper {
+    width: 940px;
+    min-width: 940px;
+    max-width: 940px;
+
+    margin: 0px auto;
+  }
+
+  #mfcs-request-view-0-form .request-field_groups {
+    margin: 0px auto;
+
+    width: 940px;
+    min-width: 940px;
+    max-width: 940px;
+  }
+
+  #mfcs-request-view-0-form .request-field_groups > .group > .section-request {
+    width: 470px;
+    min-width: 470px;
+    max-width: 470px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
+    max-width: 720px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message {
+    min-height: 12px;
+
+    padding: 3px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
+  #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
+    padding: 3px 0px 0px 0px;
+  }
+
+  #mcneese-page-content > .page-title > .html_tag-hgroup > .page-title,
+  #mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
+  #mcneese-page-content .request-section-review-log .request-section-review-log-page_title {
+    max-width: 940px;
+  }
+
+  #mfcs-request-view-0-form .request-section-review-log {
+    width: 940px;
+    min-width: 940px;
+    max-width: 940px;
+  }
+
+
+
+  /*** Facilities Use Agreement ***/
+  #mfcs-request-agreement,
+  .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-bulletin-page_title > .page-title,
+  .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
+    width: 940px;
+    min-width: 940px;
+    max-width: 940px;
+  }
+
+  #mfcs-request-agreement > .agreement-header {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000000;
+    margin-bottom: 5px;
+  }
+
+  #mfcs-request-agreement > .agreement-header > .agreement-header-address {
+    padding-top: 10px;
+  }
+
+  #mfcs-request-agreement > .agreement-header > .agreement-header-address > .agreement-header-address-line-0 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #mfcs-request-agreement > .agreement-header > .agreement-header-information {
+    top: 10px;
+    right: 10px;
+  }
+
+  #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-date > .agreement-header-date-label,
+  #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-request_id > .agreement-header-request_id-label,
+  #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-revision > .agreement-header-revision-label,
+  #mfcs-request-agreement > .agreement-header > .agreement-header-information > .agreement-header-requester > .agreement-header-requester-label {
+    min-width: 90px;
+  }
+
+  #mfcs-request-agreement > .agreement-table {
+    width: 770px;
+    min-width: 770px;
+    max-width: 770px;
+
+    margin: 10px 10px 0px 10px;
+  }
+
+  #mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .agreement-table-header-cell {
+    padding: 2px 4px;
+  }
+
+  #mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-1,
+  #mfcs-request-agreement > .agreement-table > .agreement-table-header > .agreement-table-header-row > .column-2 {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .agreement-table-body-row-cell {
+    padding: 2px 4px;
+  }
+
+  #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-0 > .item-value {
+    padding-left: 16px;
+  }
+
+  #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-1,
+  #mfcs-request-agreement > .agreement-table > .agreement-table-body > .agreement-table-body-row > .column-2 {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  #mfcs-request-agreement > .agreement-amount_due {
+    width: 210px;
+    min-width: 210px;
+    max-width: 210px;
+
+    margin-left: 572px;
+    margin-right: 8px;
+  }
+
+  #mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-label {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  #mfcs-request-agreement > .agreement-amount_due > .agreement-amount_due-value {
+    width: 106px;
+    min-width: 106px;
+    max-width: 106px;
+  }
+
+  #mfcs-request-agreement > .agreement-signature {
+    margin: 10px;
+  }
+
+  #mfcs-request-agreement > .agreement-signature > .agreement-signature-field {
+    margin: 10px 0px;
+  }
+
+  #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-label {
+    min-width: 100px;
+  }
+
+  #mfcs-request-agreement > .agreement-signature > .agreement-signature-field > .agreement-signature-field-input {
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+  }
+}
+
+
+
+/*** Interface Landscape ***/
+@media (orientation:landscape) {
+  /*** Statistics ***/
+  #mfcs-statistics-page > .statistics-title {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 919px;
+    min-width: 919px;
+    max-width: 919px;
+
+    margin: 1em 0px;
+  }
+
+  #mfcs-statistics-page > .statistics-block {
+    width: 924px;
+    min-width: 924px;
+    max-width: 924px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #mfcs-statistics-page > .statistics-block > .statistics-block-chart,
+  #mfcs-statistics-page > .statistics-block > .statistics-block-text {
+    width: 459px;
+    min-width: 459px;
+    max-width: 459px;
+  }
+
+
+
+  /*** Troubleshoot ***/
+  #mfcs-troubleshoot_0-locations-page > .information_page-section-content > .information_page-entry,
+  #mfcs-troubleshoot_0-buildings-page > .information_page-section-content > .information_page-entry,
+  #mfcs-troubleshoot_0-rooms-page > .information_page-section-content > .information_page-entry {
+    width: 475px;
+    min-width: 475px;
+    max-width: 475px;
+  }
+}

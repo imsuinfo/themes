@@ -1,0 +1,761 @@
+
+
+
+/*** Common Global ***/
+.mcneese {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.mcneese h1 {
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 1.7em;
+}
+
+.mcneese h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+.mcneese h3 {
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.mcneese h4 {
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+.mcneese h5 {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.mcneese h6 {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
+#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+
+
+/*** Development Module ***/
+.mcneese > .dev-query,
+#mcneese-page > .dev-query {
+  display: none;
+}
+
+
+
+/*** Calendar - Month ***/
+#mfcs-calendar-0-month > .calendar-month > .calendar-navigation {
+  display: none;
+}
+
+#mfcs-calendar-0-month a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  white-space: normal;
+  text-overflow: ellipsis;
+  overflow: visible;
+}
+
+#mfcs-calendar-0-month > .calendar-month > .calendar-body-wrapper > .calendar-body > .calendar-week-wrapper > .calendar-week > .calendar-day-wrapper > .calendar-day > .calendar-item {
+  page-break-inside: avoid;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request {
+  font-size: 9px;
+  line-height: 13px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper > .calendar-item-time {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-link-wrapper {
+  padding: 2px 4px;
+  margin-bottom: 2px;
+
+  min-height: 13px;
+  max-height: 26px;
+  line-height: 13px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: no-wrap;
+  word-break: break-word;
+
+  text-align: center;
+
+  background-color: #ececec;
+
+  border-bottom: 2px solid #dedede;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.constraint-height > .calendar-item > .calendar-item-link-wrapper {
+  max-height: 13px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-time-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper {
+  padding: 0px 4px;
+  min-height: 14px;
+  max-height: 16px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-type-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-footer-wrapper > .calendar-item-id-wrapper {
+  padding: 1px 3px;
+  min-height: 10px;
+  max-height: 12px;
+
+  font-size: 9px;
+  line-height: 10px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-description-wrapper {
+  padding: 0px 4px;
+  min-height: 14px;
+  max-height: 42px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper > .calendar-item > .calendar-item-location-wrapper {
+  max-height: inherit;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop > .calendar-item > .calendar-item-location-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop > .calendar-item > .calendar-item-location-wrapper > .calendar-item-location {
+  max-height: 28px;
+}
+
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop.constraint-height > .calendar-item > .calendar-item-location-wrapper,
+#mfcs-calendar-0-day > .calendar-day > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper > .calendar-time_slot > .calendar-time_slot-request-wrapper > .calendar-time_slot-request > .calendar-item-wrapper.slot-start.slot-stop.constraint-height > .calendar-item > .calendar-item-location-wrapper > .calendar-item-location {
+  max-height: 14px;
+}
+
+/*** Calendar - Month/Day - Full Calendar ***/
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-event,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-event {
+  page-break-inside: avoid;
+}
+
+#mfcs-calendar-0-day.calendar-month-fullcalendar .fc-event .fc-resizer,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-event .fc-resizer {
+  display: none;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar th,
+#mfcs-calendar-0-day.calendar-day-fullcalendar td,
+#mfcs-calendar-0-day.calendar-day-fullcalendar hr,
+#mfcs-calendar-0-day.calendar-day-fullcalendar thead,
+#mfcs-calendar-0-day.calendar-day-fullcalendar tbody,
+#mfcs-calendar-0-month.calendar-month-fullcalendar th,
+#mfcs-calendar-0-month.calendar-month-fullcalendar td,
+#mfcs-calendar-0-month.calendar-month-fullcalendar hr,
+#mfcs-calendar-0-month.calendar-month-fullcalendar thead,
+#mfcs-calendar-0-month.calendar-month-fullcalendar tbody {
+  border-color: #cccccc !important;
+  background: #ffffff !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-bg,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-bgevent-skeleton,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-highlight-skeleton,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-helper-skeleton,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-bgevent-container,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-business-container,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-highlight-container,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-helper-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-bg,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-bgevent-skeleton,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-highlight-skeleton,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-helper-skeleton,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-bgevent-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-business-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-highlight-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-helper-container {
+  display: none;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar tbody .fc-row,
+#mfcs-calendar-0-month.calendar-month-fullcalendar tbody .fc-row {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar tbody .fc-row .fc-content-skeleton,
+#mfcs-calendar-0-month.calendar-month-fullcalendar tbody .fc-row .fc-content-skeleton {
+  position: static;
+  padding-bottom: 0 !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar tbody .fc-row .fc-content-skeleton tbody tr:last-child td,
+#mfcs-calendar-0-month.calendar-month-fullcalendar tbody .fc-row .fc-content-skeleton tbody tr:last-child td {
+  padding-bottom: 1em;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar tbody .fc-row .fc-content-skeleton table,
+#mfcs-calendar-0-month.calendar-month-fullcalendar tbody .fc-row .fc-content-skeleton table {
+  height: 1em;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-more-cell,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-more,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-more-cell,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-more {
+  display: none !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc tr.fc-limited,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc tr.fc-limited {
+  display: table-row !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc td.fc-limited,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc td.fc-limited {
+  display: table-cell !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-popover,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-popover {
+  display: none;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event {
+  position: static !important;
+  margin: 3px 2px !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event.fc-not-end,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event.fc-not-end {
+  border-bottom-width: 1px !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event.fc-not-end:after,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event.fc-not-end:after {
+  content: "...";
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event.fc-not-start,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event.fc-not-start {
+  border-top-width: 1px !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event.fc-not-start:before,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event.fc-not-start:before {
+  content: "...";
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event .fc-time,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event .fc-time {
+  white-space: normal !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event .fc-time span,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event .fc-time span {
+  display: none;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid .fc-event .fc-time:after,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid .fc-event .fc-time:after {
+  content: attr(data-full);
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-scroller,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-day-grid-container,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-time-grid-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-scroller,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-day-grid-container,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-time-grid-container {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-row,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-row {
+  border: 0 !important;
+  margin: 0 !important;
+}
+
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-button-group,
+#mfcs-calendar-0-day.calendar-day-fullcalendar .fc-button,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-button-group,
+#mfcs-calendar-0-month.calendar-month-fullcalendar .fc-button {
+  display: none;
+}
+
+
+
+/*** Calendar - Day ***/
+#mfcs-calendar-0-day > .calendar-day > .calendar-navigation,
+#mfcs-calendar-0-day > .calendar-day.calendar-range_links {
+  display: none;
+}
+
+#mfcs-calendar-0-day a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mfcs-calendar-0-day > .calendar-day.calendar-range > .calendar-body-wrapper > .calendar-body > .calendar-time_slot-wrapper {
+  page-break-inside: avoid;
+}
+
+
+
+/*** Move Request ***/
+#mfcs-request-manage-0-move-form #request-move-submit {
+  display: none;
+}
+
+
+
+/*** Event Global ***/
+#mcneese-page-content > .page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
+  display: none;
+}
+
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
+#mcneese-page-content > .page-title > .html_tag-hgroup > .page-title {
+  margin: 0px;
+}
+
+#mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
+  display: none;
+}
+
+
+
+/*** Create/Edit ***/
+#mfcs-request-create-0-form .form-item-wrapper,
+#mfcs-request-edit-0-form .form-item-wrapper {
+  margin: 5px 0px;
+}
+
+#mfcs-request-create-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio,
+#mfcs-request-edit-0-form .form-item-wrapper > .form-type-radios > .form-radios > .form-type-radio {
+  margin: 6px 0px;
+}
+
+
+/** Room **/
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item {
+  width: 460px;
+
+  min-height: 48px;
+
+  border: 1px outset;
+  padding: 4px;
+  margin: 2px;
+}
+
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > .form-radio {
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+
+  margin: 2px;
+}
+
+#mfcs-request-create-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label,
+#mfcs-request-edit-0-form #field-request-room > .form-item > .form-item-delta > .form-item > label {
+  width: 440px;
+  min-width: 440px;
+  max-width: 440px;
+}
+
+
+/** Dates **/
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .field-request-item,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .field-request-item {
+  margin: 4px;
+}
+
+#mfcs-request-create-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date,
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .buttons-request-remove-date {
+  margin: 22px 12px;
+}
+
+
+/** Venue Coordinator **/
+#mfcs-request-create-0-form #section-request-venue_coordinator > .fieldset-wrapper > .form-wrapper,
+#mfcs-request-edit-0-form #section-request-venue_coordinator > .fieldset-wrapper > .form-wrapper {
+  margin: 4px;
+}
+
+
+
+/** Request Coordinator **/
+#mfcs-request-create-0-form #section-request-request_coordinator > .fieldset-wrapper > .form-wrapper,
+#mfcs-request-edit-0-form #section-request-request_coordinator > .fieldset-wrapper > .form-wrapper {
+  margin: 4px;
+}
+
+
+
+/** Information **/
+#mfcs-request-create-0-form #section-request-information > .fieldset-wrapper > .form-wrapper,
+#mfcs-request-edit-0-form #section-request-information > .fieldset-wrapper > .form-wrapper {
+  margin: 4px;
+}
+
+
+
+/*** View ***/
+#mcneese-page-content .request-section-review-log .request-section-review-log-page_title {
+  font-size: 16px;
+  line-height: 20px;
+
+  font-weight: bold;
+
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#mcneese-page-content .request-section-review-log .request-section-review-log-header {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#mfcs-request-view-0-form .request-section-review-operations {
+  display: none;
+}
+
+#mfcs-request-view-0-form .request-review-log-submit {
+  display: none;
+}
+
+#mfcs-request-view-0-form .request-section-display,
+#mfcs-request-view-0-form .request-section-review-operations,
+#mfcs-request-view-0-form .request-section-review-log {
+  border: 0px none;
+  padding: 0px;
+  margin: 0px;
+  outline: 0px;
+}
+
+#mfcs-request-view-0-form .request-section-display > legend,
+#mfcs-request-view-0-form .request-section-review-operations > legend,
+#mfcs-request-view-0-form .request-section-review-log > legend {
+  display: none;
+}
+
+#mfcs-request-view-0-form .request-section-review {
+  margin: 5px 0px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group {
+  page-break-inside: avoid;
+
+  margin: 5px 0px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request {
+  min-height: 150px;
+
+  margin: 3px;
+  border: 1px outset;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper {
+  background-color: #d0d0d0;
+
+  padding: 0px 2px;
+  margin: 0px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-cancel,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-uncancel,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-ical,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-agreement,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-history,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-edit,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-clone {
+  padding-left: 2px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .section-request-label-wrapper > .section-request-label {
+  font-size: 16px;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .field-request-item-information-user_id > .field-request-item-values > .field-request-item-values-value > .field-request-item-values-value-value > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request {
+  min-height: 20px;
+
+  padding: 5px 2px 2px 5px;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item {
+  margin: 5px 0px;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item {
+  margin: 5px auto;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label {
+  padding: 3px;
+}
+
+#mfcs-request-view-0-form .request-section-review-log.mode-normal {
+  page-break-before: always;
+}
+
+#mfcs-request-view-0-form .request-section-review-log,
+#mfcs-request-view-0-form .request-section-review-operations {
+  margin: 0px auto;
+}
+
+#mfcs-request-view-0-form .request-display-submit {
+  display: none;
+}
+
+#mfcs-request-view-0-form .request-section-review-log-submit {
+  display: none;
+}
+
+
+
+/*** Facilities Use Agreement ***/
+#mfcs-request-agreement #agreement-submit {
+  display: none;
+}
+
+
+
+/*** Interface Global ***/
+.mcneese .table_listing-navigator > .table_listing-choice {
+  display: none;
+}
+
+
+/*** Dashboard ***/
+#mfcs-dashboard_page-choices {
+  display: none;
+}
+
+
+
+/*** By Path Alias ***/
+.mcneese.alias-part-0-requests .html_tag-header.page-title {
+  display: none;
+}
+
+.mcneese.alias-part-0-requests .html_tag-header.page-title > .html_tag-hgroup > .add-or-remove-shortcuts {
+  display: none;
+}
+
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-manage_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-view_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-print_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-pdf_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-history_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-agreement_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-holiday .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-management .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-problems_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-email_log_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-synchronize_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-users_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-troubleshoot_0 .html_tag-header.page-title {
+  display: inherit;
+}
+
+.mcneese.alias-part-0-requests.alias-part-1-holiday_0.alias-requests_holiday_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-requests_unavailable_0 .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-part-2-all .html_tag-header.page-title,
+.mcneese.alias-part-0-requests.alias-part-1-unavailable_0.alias-part-3-all .html_tag-header.page-title {
+  display: none;
+}
+
+
+
+/*** Statistics Page ***/
+
+
+
+/*** E-mail Log Page ***/
+#mfcs-request-email_log-0-page .email_log-headers-wrapper.collapsed,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper.collapsed,
+#mfcs-request-email_log-0-page .email_log-body-wrapper.collapsed {
+  display: none;
+}
+
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:visited,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:focus,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:active,
+#mfcs-request-email_log-0-page .email_log-headers-wrapper > legend > .fieldset-legend > a:hover,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper > legend > .fieldset-legend > a,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper > legend > .fieldset-legend > a:visited,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper > legend > .fieldset-legend > a:focus,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper > legend > .fieldset-legend > a:active,
+#mfcs-request-email_log-0-page .email_log-raw_body-wrapper > legend > .fieldset-legend > a:hover,
+#mfcs-request-email_log-0-page .email_log-body-wrapper > legend > .fieldset-legend > a,
+#mfcs-request-email_log-0-page .email_log-body-wrapper > legend > .fieldset-legend > a:visited,
+#mfcs-request-email_log-0-page .email_log-body-wrapper > legend > .fieldset-legend > a:focus,
+#mfcs-request-email_log-0-page .email_log-body-wrapper > legend > .fieldset-legend > a:active,
+#mfcs-request-email_log-0-page .email_log-body-wrapper > legend > .fieldset-legend > a:hover {
+  color: inherit;
+  background-color: inherit;
+
+  text-decoration: none;
+}
+
+
+
+/*** Reviewers Page ***/
+#mfcs-request-reviewers-0-form #reviewers-reviewer {
+  display: none;
+}
+
+
+
+/*** Proxy Page ***/
+#mfcs-request-proxy-0-form #proxy {
+  display: none;
+}
+
+
+
+/*** Problems ***/
+#mfcs-request-problems-0-request-form #request_problems-submit-submit {
+  display: none;
+}
+
+#mfcs-request-problems-0-request-form .form-item-request_problems-actions-list {
+  display: none;
+}
+
+
+
+/*** Troubleshoot ***/
+#mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .form-submit {
+  display: none;
+}
+
+#mfcs-request-troubleshoot-0-form > .form-wrapper-inner > .troubleshoot-code > .code-separator {
+  margin-bottom: 5px;
+}
+
+
+
+/*** Users ***/
+#mfcs-request-users-view-page > .view_user-buttons {
+  display: none;
+}
+
+
+
+/*** Statistics ***/
+#mfcs-statistics-page > .statistics-navigation {
+  display: none;
+}
+
+
+
+/*** Help ***/
+#mfcs-section-help-main .no-print {
+  display: none;
+}
+
+#mfcs-section-help-main .paragraph {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .help-headers.page-break-after-auto-1 {
+  page-break-after: avoid;
+}
+
+#mfcs-section-help-main .paragraph.page-break-auto-1,
+#mfcs-section-help-main .paragraph.page-break-auto-1,
+#mfcs-section-help-main .paragraph ul,
+#mfcs-section-help-main .paragraph ol,
+#mfcs-section-help-main .paragraph.page-break-auto-2 ul,
+#mfcs-section-help-main .paragraph.page-break-auto-2 ol {
+  page-break-inside: auto;
+}
+
+#mfcs-section-help-main .paragraph.page-break-avoid-1,
+#mfcs-section-help-main .paragraph.page-break-avoid-1,
+#mfcs-section-help-main .help-headers +
+#mfcs-section-help-main .paragraph:first-of-type ul,
+#mfcs-section-help-main .help-headers +
+#mfcs-section-help-main .paragraph:first-of-type ol,
+#mfcs-section-help-main .paragraph.page-break-avoid-2 ul,
+#mfcs-section-help-main .paragraph.page-break-avoid-2 ol {
+  page-break-before: avoid;
+}
+
+#mfcs-section-help-main .paragraph.user_guides,
+#mfcs-section-help-main .paragraph.documentation,
+#mfcs-section-help-main .paragraph.presentation {
+  page-break-before: avoid;
+}
+
+#mfcs-section-help-main .term {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .note {
+  page-break-inside: avoid;
+}
+
+#mfcs-section-help-main .section-help-break {
+  page-break-before: always;
+}
+
+#mfcs-section-help-main .section-help-break:first-of-type {
+  page-break-before: avoid;
+}
+
+
+
+/*** View Request Navigation ***/
+#mfcs-request-view-0-form > .request-navigation,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-navigation {
+  display: none;
+}
+
+
+
+/*** Requests Listing ***/
+#mfcs-list_0-requests > tbody > tr > .column-date > .item-date-visibility-toggle {
+  display: none;
+}
