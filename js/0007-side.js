@@ -1,3 +1,7 @@
+
+
+
+/*** Side ***/
 (function ($) {
   Drupal.behaviors.side_click_states = {
     attach:function(context) {

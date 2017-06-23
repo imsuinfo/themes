@@ -1,3 +1,7 @@
+
+
+
+/*** Toolbar ***/
 (function ($) {
   Drupal.behaviors.toolbar_click_states = {
     attach:function(context) {

@@ -1,6 +1,32 @@
 
 
 
+/*** Reset ***/
+.mcneese h1 {
+  page-break-before: avoid;
+}
+
+.mcneese h1,
+.mcneese h2,
+.mcneese h3,
+.mcneese h4,
+.mcneese h5,
+.mcneese h6 {
+  page-break-after: avoid;
+}
+
+.mcneese ul,
+.mcneese ol,
+.mcneese dl {
+  page-break-before: avoid;
+}
+
+body.mcneese:first-child h1 {
+  page-break-before: avoid;
+}
+
+
+
 /*** Common ***/
 .mcneese .no-print {
   display: none;

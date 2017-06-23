@@ -1,3 +1,7 @@
+
+
+
+/*** Work Area Menu ***/
 (function ($) {
   Drupal.behaviors.work_area_menu_click_states = {
     attach:function(context) {

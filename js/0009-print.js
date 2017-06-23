@@ -1,3 +1,7 @@
+
+
+
+/*** Print ***/
 (function ($) {
   Drupal.behaviors.prepare_for_printing = {
     attach:function(context) {

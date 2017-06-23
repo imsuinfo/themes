@@ -1629,8 +1629,8 @@ function mcneese_cf_theme_get_variables_alter(&$cf, $vars) {
 
     if ($cf['agent']['major_version'] != 'unknown' && $cf['agent']['major_version'] <= 8) {
       // add javascript that auto-creates html5 tag names to workaround design flaw in older IE that does not process CSS for unknown tags.
-      drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/0010-ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
-      drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/0011-ie_html5-print.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
+      drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
+      drupal_add_js(drupal_get_path('theme', 'mcneese') . '/js/ie_html5-print.js', array('group' => JS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'weight' => 10, 'preprocess' => TRUE));
 
       $cf['is']['in_ie_compatibility_mode'] = FALSE;
       if (isset($cf['agent']['ie_compatibility']) && $cf['agent']['ie_compatibility']) {

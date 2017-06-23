@@ -1,3 +1,6 @@
+
+
+
 /* Reset CSS derived from "w3c Appendix D. Default style sheet for HTML 4" here: http://www.w3.org/TR/2011/REC-CSS2-20110607/sample.html */
 html,
 .mcneese address,
@@ -279,33 +282,6 @@ html,
 .mcneese *[DIR="rtl"] {
   direction: rtl;
   unicode-bidi: embed;
-}
-
-@media print {
-  .mcneese h1 {
-    page-break-before: avoid;
-  }
-
-  .mcneese h1,
-  .mcneese h2,
-  .mcneese h3,
-  .mcneese h4,
-  .mcneese h5,
-  .mcneese h6 {
-    page-break-after: avoid;
-  }
-
-  .mcneese ul,
-  .mcneese ol,
-  .mcneese dl {
-    page-break-before: avoid;
-  }
-}
-
-@media print {
-  body.mcneese:first-child h1 {
-    page-break-before: avoid;
-  }
 }
 
 /* html5 block tags */
