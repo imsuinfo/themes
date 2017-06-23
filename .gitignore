@@ -2,12 +2,3 @@
 ._*
 .apdisk
 .DS_Store
-
-# known css cache files
-css/all/c000-all.css
-css/screen/c001-screen.css
-css/braille/c002-braille.css
-css/print/c003-print.css
-
-# known js cache files
-js/c000-js.js

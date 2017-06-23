@@ -1,0 +1,15 @@
+
+
+
+/*** Common ***/
+.mcneese .no-braille {
+  display: none;
+}
+
+
+
+/*** Watermarks ***/
+.mcneese #mcneese-page-watermarks-pre,
+.mcneese #mcneese-page-watermarks-post {
+  display: none;
+}
