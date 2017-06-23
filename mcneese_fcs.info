@@ -7,32 +7,30 @@ base theme = mcneese
 screenshot = images/screenshot.png
 
 
-stylesheets[all][] = css/all/all-common.css
-stylesheets[all][] = css/all/all-front.css
-stylesheets[all][] = css/all/all-event_form.css
-stylesheets[all][] = css/all/all-interface.css
+#stylesheets[all][] = css/all/2000-all-common.css
+#stylesheets[all][] = css/all/2001-all-event_form.css
+#stylesheets[all][] = css/all/2002-all-interface.css
+stylesheets[all][] = css/all/c200-all.css
 
-stylesheets[speech][] = css/braille/braille-common.css
-stylesheets[speech][] = css/braille/braille-front.css
-stylesheets[speech][] = css/braille/braille-event_form.css
-stylesheets[speech][] = css/braille/braille-interface.css
+#stylesheets[screen][] = css/screen/2003-screen-common.css
+#stylesheets[screen][] = css/screen/2004-screen-event_form.css
+#stylesheets[screen][] = css/screen/2005-screen-interface.css
+#stylesheets[screen][] = css/screen/2006-screen-widths.css
+stylesheets[screen][] = css/screen/c201-screen.css
 
-stylesheets[print][] = css/print/print-common.css
-stylesheets[print][] = css/print/print-common-portrait.css
-stylesheets[print][] = css/print/print-common-landscape.css
-stylesheets[print][] = css/print/print-front.css
-stylesheets[print][] = css/print/print-event_form.css
-stylesheets[print][] = css/print/print-event_form-portrait.css
-stylesheets[print][] = css/print/print-event_form-landscape.css
-stylesheets[print][] = css/print/print-interface.css
-stylesheets[print][] = css/print/print-interface-portrait.css
-stylesheets[print][] = css/print/print-interface-landscape.css
+#stylesheets[print][] = css/print/2007-print-common.css
+#stylesheets[print][] = css/print/2008-print-common-portrait.css
+#stylesheets[print][] = css/print/2009-print-common-landscape.css
+#stylesheets[print][] = css/print/2010-print-event_form.css
+#stylesheets[print][] = css/print/2011-print-event_form-portrait.css
+#stylesheets[print][] = css/print/2012-print-event_form-landscape.css
+#stylesheets[print][] = css/print/2013-print-interface.css
+#stylesheets[print][] = css/print/2014-print-interface-portrait.css
+#stylesheets[print][] = css/print/2015-print-interface-landscape.css
+stylesheets[print][] = css/print/c202-print.css
+stylesheets[print][] = css/print/c203-print-portrait.css
+stylesheets[print][] = css/print/c204-print-landscape.css
 
-stylesheets[screen][] = css/screen/screen-common.css
-stylesheets[screen][] = css/screen/screen-front.css
-stylesheets[screen][] = css/screen/screen-event_form.css
-stylesheets[screen][] = css/screen/screen-interface.css
-stylesheets[screen][] = css/screen/screen-widths.css
 
 regions[header]        = Header
 regions[header_menu_1] = Header Menu 1
@@ -52,5 +50,3 @@ regions[hidden]  = Hidden
 features[] = name
 features[] = search
 features[] = favicon
-
-

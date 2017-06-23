@@ -1,17 +1,18 @@
-@media (orientation:landscape) {
 
 
 
+/*** Event Portrait ***/
+@media (orientation:portrait) {
   /*** View ***/
   #mfcs-request-view-0-form .request-section-display,
   #mfcs-request-view-0-form .request-section-review-log {
-    min-width: 940px;
+    min-width: 740px;
   }
 
   #mfcs-request-view-0-form .request-section-review-log > .fieldset-wrapper {
-    width: 940px;
-    min-width: 940px;
-    max-width: 940px;
+    width: 740px;
+    min-width: 740px;
+    max-width: 740px;
 
     margin: 0px auto;
   }
@@ -19,20 +20,20 @@
   #mfcs-request-view-0-form .request-field_groups {
     margin: 0px auto;
 
-    width: 940px;
-    min-width: 940px;
-    max-width: 940px;
+    width: 740px;
+    min-width: 740px;
+    max-width: 740px;
   }
 
   #mfcs-request-view-0-form .request-field_groups > .group > .section-request {
-    width: 470px;
-    min-width: 470px;
-    max-width: 470px;
+    width: 370px;
+    min-width: 370px;
+    max-width: 370px;
   }
 
   #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text,
   #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text {
-    max-width: 720px;
+    max-width: 740px;
 
     font-size: 12px;
     line-height: 14px;
@@ -41,7 +42,7 @@
   #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row,
   #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-row {
     font-size: 9px;
-    line-height: 12px;
+    line-height: 14px;
   }
 
   #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-label > .review-item-label-text > .review-item-label-text-title > .updater_id,
@@ -59,19 +60,19 @@
 
   #mfcs-request-view-0-form .request-section-review-log-history > .review-item > .review-item-message > .review-item-message-requirements,
   #mfcs-request-view-0-form .request-section-review-log-history > .fieldset-wrapper > .review-item > .review-item-message > .review-item-message-requirements {
-    padding: 3px 0px 0px 0px;
+    padding: 2px 0px 0px 0px;
   }
 
   #mcneese-page-content > .page-title > .html_tag-hgroup > .page-title,
   #mcneese-bulletin-page_title > .page-title > .html_tag-hgroup > .page-title,
   #mcneese-page-content .request-section-review-log .request-section-review-log-page_title {
-    max-width: 940px;
+    max-width: 740px;
   }
 
   #mfcs-request-view-0-form .request-section-review-log {
-    width: 940px;
-    min-width: 940px;
-    max-width: 940px;
+    width: 740px;
+    min-width: 740px;
+    max-width: 740px;
   }
 
 
@@ -80,9 +81,9 @@
   #mfcs-request-agreement,
   .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-bulletin-page_title > .page-title,
   .mcneese.alias-part-1-agreement_0.alias-part-3-pdf #mcneese-page-content > .page-title {
-    width: 940px;
-    min-width: 940px;
-    max-width: 940px;
+    width: 740px;
+    min-width: 740px;
+    max-width: 740px;
   }
 
   #mfcs-request-agreement > .agreement-header {
@@ -113,9 +114,9 @@
   }
 
   #mfcs-request-agreement > .agreement-table {
-    width: 770px;
-    min-width: 770px;
-    max-width: 770px;
+    width: 590px;
+    min-width: 590px;
+    max-width: 590px;
 
     margin: 10px 10px 0px 10px;
   }
@@ -151,7 +152,7 @@
     min-width: 210px;
     max-width: 210px;
 
-    margin-left: 572px;
+    margin-left: 392px;
     margin-right: 8px;
   }
 

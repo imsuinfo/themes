@@ -1,7 +1,8 @@
+
+
+
+/*** Calendar Landscape ***/
 @media (orientation:landscape) {
-
-
-
   /*** Calendar - Month ***/
   #mfcs-calendar-0-month > .calendar-month {
     width: 924px;
