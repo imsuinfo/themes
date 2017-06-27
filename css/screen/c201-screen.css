@@ -543,6 +543,12 @@
   max-height: 24px;
 }
 
+.mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout > a.menu_link.menu_link-copy_request {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+}
+
 .mcneese #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-wrapper-standout.menu_link-create_request-wrapper {
   max-height: 46px;
 }
