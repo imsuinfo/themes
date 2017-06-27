@@ -242,6 +242,26 @@
 
 
 
+/*** Cancelled Dates ***/
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container.date-is-cancelled .form-item > label {
+  text-decoration: line-through;
+}
+
+#mfcs-request-edit-0-form #group-request-dates-date > .group-field-container > .date_container #mfcs-markup-request-dates-date_note-is_cancelled {
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.1em;
+
+  color: #000000;
+  background-color: #e3be59;
+
+  padding: 3px;
+  border: 1px dotted #75140d;
+  margin: 3px;
+}
+
+
+
 /*** View ***/
 #mfcs-request-view-0-form {
   line-height: 18px;
@@ -350,7 +370,8 @@
   text-align: right;
 }
 
-#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value.item-cancelled > .item-value-instance {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value.item-cancelled > .item-value-instance,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request.item-size-small > .item-value.item-room_unavailable > .item-value-instance {
   text-decoration: line-through;
 }
 
@@ -365,8 +386,10 @@
   line-height: 12px;
 }
 
-#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance,
-#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance-cancelled {
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-cancelled > .item-value-instance-cancelled,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-on_holiday > .item-value-instance-on_holiday,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-room_unavailable > .item-value-instance-room_unavailable,
+#mfcs-request-view-0-form .request-field_groups > .group > .section-request > .item-request > .item-value.item-room_conflict > .item-value-instance-room_conflict {
   font-size: 0.8em;
 }
 

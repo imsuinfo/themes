@@ -1010,6 +1010,23 @@
   margin-left: 5px;
 }
 
+#mfcs-request-manage-0-move-form > .form-wrapper-inner > .move_request-markup > .move_request-markup-row {
+  display: block;
+  box-sizing: border-box;
+  vertical-align: top;
+
+  color: #884400;
+  background-color: #fffce5;
+  background-image: url(../../images/message_icons/message-24-warning.png);
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+
+  border: 1px solid #eedd55;
+
+  margin: 6px 2px;
+  padding: 5px 5px 5px 40px;
+}
+
 
 
 /*** Statistics ***/
