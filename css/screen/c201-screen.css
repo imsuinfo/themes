@@ -575,6 +575,11 @@
   font-weight: bold;
 }
 
+.mcneese.alias-part-0-requests.alias-part-1-create_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-create_request-wrapper > a.menu_link {
+  color: #f2f2f2;
+  background-color: #1e1e1e;
+}
+
 .mcneese.alias-part-0-requests.alias-part-1-reviewers_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-proxy_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,
 .mcneese.alias-part-0-requests.alias-part-1-users_0 #mcneese-header > .header-top > .header-menu-1 > .html_tag-nav > .navigation_list > .menu_link-manage_requests-wrapper > a.menu_link,

@@ -897,15 +897,19 @@ function mfcs_render_page() {
       $count_parts = count($path_parts);
     }
 
+    $inactive_create_request = '';
+    $inactive_create_request_wrapper = '';
     if ($count_parts >= 3 && $path_parts[0] == 'requests' && $path_parts[1] == 'create-0' && is_numeric($path_parts[2])) {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-copy_request-wrapper first"><a class="menu_link menu_link-copy_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Copy an Existing Request">Copy Request</a></li>';
-    }
-    else {
-      $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper first"><a class="menu_link menu_link-create_request" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Create a New Request">Create Request</a></li>';
+      $inactive_create_request = ' menu_link-create_request-inactive';
+      $inactive_create_request_wrapper = ' menu_link-create_request-wrapper-inactive';
     }
 
+    $markup .= '    <li class="leaf menu_link-wrapper menu_link-wrapper-standout menu_link-create_request-wrapper' . $inactive_create_request_wrapper . ' first"><a class="menu_link menu_link-create_request' . $inactive_create_request . '" href="' . $base_path . 'requests/create-0' . $url_arguments . '" title="Create a New Request">Create Request</a></li>';
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_month-wrapper"><a class="menu_link menu_link-this_month" href="' . $base_path . 'requests/calendar-0/month' . $url_arguments . '" title="View Calendar for This Month">This Month</a></li>';
     $markup .= '    <li class="leaf menu_link-wrapper menu_link-this_day-wrapper"><a class="menu_link menu_link-this_day" href="' . $base_path . 'requests/calendar-0/day' . $url_arguments . '" title="View Calendar for Today">This Day</a></li>';
+
+    unset($inactive_create_request);
+    unset($inactive_create_request_wrapper);
   }
 
   $markup .= '    <li class="leaf menu_link-wrapper menu_link-facilities_use_information-wrapper"><a class="menu_link menu_link-facilities_use_information" href="//www.mcneese.edu/facilities/facilitiesuse" title="Facilities Use Information">Facilities Use Information</a></li>';
