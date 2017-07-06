@@ -23,6 +23,11 @@ function mfcs_preprocess_page(&$vars) {
     mcneese_initialize_variables($vars);
   }
 
+  global $meta_robots;
+  if (is_array($meta_robots) && !empty($meta_robots)) {
+    $cf['meta']['name']['robots'] = implode(', ', $meta_robots);
+  }
+
   $mfcs_canonical = &drupal_static('mfcs_canonical', array());
 
   if (!empty($mfcs_canonical)) {
