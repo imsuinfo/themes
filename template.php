@@ -51,6 +51,8 @@ function mfcs_preprocess_page(&$vars) {
   $print_css .= '  @top-right { content: "Page " counter(page); }' . "\n";
   $print_css .= '}' . "\n";
   drupal_add_css($print_css, array('type' => 'inline', 'group' => CSS_THEME, 'weight' => 10, 'media' => 'print', 'preprocess' => FALSE));
+
+  $cf['meta']['name']['description'] = "McNeese State University Facilities Use Reservation System";
 }
 
 /**
