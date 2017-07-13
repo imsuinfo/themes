@@ -3398,6 +3398,8 @@ display: table-cell;
   padding: 5px 5px 5px 40px;
 }
 
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-errors > .request-error > .error-unavailabilities .request_id,
+#mfcs-request-view-0-form > .form-wrapper-inner > .request-errors > .request-error > .error-unavailabilities .unavailability_id,
 #mfcs-request-view-0-form > .form-wrapper-inner > .error-unavailabilities > .problematic_dates-date > .request_id,
 #mfcs-unavailable_0-view-page > .conflict_messages > .unavailable-room_conflicts > .unavailable-room_conflicts-conflict > .request_id {
   font-size: 0.8em;
